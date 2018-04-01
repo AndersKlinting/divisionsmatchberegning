@@ -1,4 +1,4 @@
-bygge ny version
+   bygge ny version
 
 edit assemblyversion og AssemblyFileVersion i AsemblyInfo.cs
 
