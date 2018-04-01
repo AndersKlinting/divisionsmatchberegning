@@ -1,0 +1,3473 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE ResultList SYSTEM "IOFdata.dtd">
+<ResultList status="snapshot"> 
+<IOFVersion version="2.0.3" /> 
+<EventId type="int" idManager="IOF">1-2-3 Divisionsmatch</EventId>
+ <ClassResult>
+<ClassShortName>Beg</ClassShortName>
+<PersonResult>
+ <PersonId>196835</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:30:25">
+<Time timeFormat="H:MM:SS">9:59:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>200480</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:30:40">
+<Time timeFormat="H:MM:SS">9:59:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>132342</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:09:41">
+<Time timeFormat="H:MM:SS">0:21:42</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>192073</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:25:31">
+<Time timeFormat="H:MM:SS">0:23:28</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>163868</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:27:43">
+<Time timeFormat="H:MM:SS">0:24:50</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>139786</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:01:30">
+<Time timeFormat="H:MM:SS">0:25:27</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>149488</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:55:57">
+<Time timeFormat="H:MM:SS">0:26:43</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>199946</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:01:16">
+<Time timeFormat="H:MM:SS">0:27:24</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>125355</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:46:52">
+<Time timeFormat="H:MM:SS">0:31:36</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>121577</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:53:14">
+<Time timeFormat="H:MM:SS">0:31:44</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>159677</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:11:44">
+<Time timeFormat="H:MM:SS">0:34:21</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>179790</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:47:30">
+<Time timeFormat="H:MM:SS">0:37:12</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>183220</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:02:05">
+<Time timeFormat="H:MM:SS">0:38:45</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47309</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:50:21">
+<Time timeFormat="H:MM:SS">0:39:22</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36659</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:50:43">
+<Time timeFormat="H:MM:SS">0:41:39</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>184096</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:58:33">
+<Time timeFormat="H:MM:SS">0:46:04</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>203898</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:50:57">
+<Time timeFormat="H:MM:SS">0:48:36</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>189046</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:46:16">
+<Time timeFormat="H:MM:SS">0:52:39</Time>
+<ResultPosition>16</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-10</ClassShortName>
+<PersonResult>
+ <PersonId>195506</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:40:22">
+<Time timeFormat="H:MM:SS">0:26:06</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>181349</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:16:39">
+<Time timeFormat="H:MM:SS">0:40:50</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-12</ClassShortName>
+<PersonResult>
+ <PersonId>193716</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:40:44">
+<Time timeFormat="H:MM:SS">0:32:21</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>175615</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:40:58">
+<Time timeFormat="H:MM:SS">0:38:26</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>177934</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:49:47">
+<Time timeFormat="H:MM:SS">0:44:31</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-12B</ClassShortName>
+<PersonResult>
+ <PersonId>111198</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:09:28">
+<Time timeFormat="H:MM:SS">0:20:35</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>185440</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:58:03">
+<Time timeFormat="H:MM:SS">0:44:50</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-14</ClassShortName>
+<PersonResult>
+ <PersonId>88717</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:14:48">
+<Time timeFormat="H:MM:SS">10:13:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>104002</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:44:43">
+<Time timeFormat="H:MM:SS">0:40:29</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>183824</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:53:50">
+<Time timeFormat="H:MM:SS">0:46:21</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>177174</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:11:02">
+<Time timeFormat="H:MM:SS">0:48:34</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>182537</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:52:04">
+<Time timeFormat="H:MM:SS">0:49:56</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-14B</ClassShortName>
+<PersonResult>
+ <PersonId>112732</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:48:34">
+<Time timeFormat="H:MM:SS">0:37:17</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-16</ClassShortName>
+<PersonResult>
+ <PersonId>177166</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:48:12">
+<Time timeFormat="H:MM:SS">0:50:48</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>134992</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:00:21">
+<Time timeFormat="H:MM:SS">0:58:05</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>163420</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:03:16">
+<Time timeFormat="H:MM:SS">1:04:59</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>173114</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:17:51">
+<Time timeFormat="H:MM:SS">1:21:29</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-20</ClassShortName>
+<PersonResult>
+ <PersonId>88709</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:38:31">
+<Time timeFormat="H:MM:SS">10:00:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>31477</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:32:06">
+<Time timeFormat="H:MM:SS">0:21:54</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:13:50">
+<Time timeFormat="H:MM:SS">1:09:14</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>60393</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:27:52">
+<Time timeFormat="H:MM:SS">1:15:01</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>406</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:30:00">
+<Time timeFormat="H:MM:SS">1:22:34</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>96447</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:38:53">
+<Time timeFormat="H:MM:SS">1:23:11</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>134984</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:20:32">
+<Time timeFormat="H:MM:SS">1:38:48</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>144686</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:51:47">
+<Time timeFormat="H:MM:SS">1:48:31</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D-20B</ClassShortName>
+<PersonResult>
+ <PersonId>169080</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:09:39">
+<Time timeFormat="H:MM:SS">0:53:18</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D21-</ClassShortName>
+<PersonResult>
+ <PersonId>53835</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:38:52">
+<Time timeFormat="H:MM:SS">10:28:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>60244</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:16:42">
+<Time timeFormat="H:MM:SS">0:55:23</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:17:36">
+<Time timeFormat="H:MM:SS">0:58:49</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>144694</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:26:05">
+<Time timeFormat="H:MM:SS">0:59:23</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:05:37">
+<Time timeFormat="H:MM:SS">1:06:02</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>94425</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:40:03">
+<Time timeFormat="H:MM:SS">1:16:56</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>51144</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:51:59">
+<Time timeFormat="H:MM:SS">1:26:59</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>132657</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:51:33">
+<Time timeFormat="H:MM:SS">1:34:28</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D21-B</ClassShortName>
+<PersonResult>
+ <PersonId>53249</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:06:23">
+<Time timeFormat="H:MM:SS">0:36:40</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>53827</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:01:55">
+<Time timeFormat="H:MM:SS">0:38:33</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>157449</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:12:43">
+<Time timeFormat="H:MM:SS">0:47:29</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>159750</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:08:52">
+<Time timeFormat="H:MM:SS">0:49:26</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D21-C</ClassShortName>
+<PersonResult>
+ <PersonId>201529</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:41:30">
+<Time timeFormat="H:MM:SS">0:27:14</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>194897</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:49:10">
+<Time timeFormat="H:MM:SS">0:28:51</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>197031</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:48:19">
+<Time timeFormat="H:MM:SS">0:31:01</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>175467</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:09:50">
+<Time timeFormat="H:MM:SS">0:34:18</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>204078</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:59:13">
+<Time timeFormat="H:MM:SS">0:35:34</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>63909</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:18:33">
+<Time timeFormat="H:MM:SS">0:38:49</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>189327</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:13:16">
+<Time timeFormat="H:MM:SS">0:40:44</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>118623</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:15:34">
+<Time timeFormat="H:MM:SS">0:48:57</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>168503</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:42:13">
+<Time timeFormat="H:MM:SS">1:00:18</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D35-</ClassShortName>
+<PersonResult>
+ <PersonId>4656</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:58:47">
+<Time timeFormat="H:MM:SS">0:26:13</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30487</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:52:58">
+<Time timeFormat="H:MM:SS">1:16:29</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33267</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:52:26">
+<Time timeFormat="H:MM:SS">1:18:03</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>113946</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:00:07">
+<Time timeFormat="H:MM:SS">2:29:50</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D35-B</ClassShortName>
+<PersonResult>
+ <PersonId>201066</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:29:25">
+<Time timeFormat="H:MM:SS">10:43:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>113194</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:29:53">
+<Time timeFormat="H:MM:SS">11:07:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>109218</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:51:23">
+<Time timeFormat="H:MM:SS">10:58:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62373</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:50:08">
+<Time timeFormat="H:MM:SS">0:45:20</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>118285</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:35:19">
+<Time timeFormat="H:MM:SS">0:48:16</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>201248</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:54:04">
+<Time timeFormat="H:MM:SS">0:52:38</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>52837</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:06:18">
+<Time timeFormat="H:MM:SS">0:52:56</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>195499</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:52:12">
+<Time timeFormat="H:MM:SS">0:54:36</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>89179</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:27:42">
+<Time timeFormat="H:MM:SS">0:56:06</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62191</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:38:19">
+<Time timeFormat="H:MM:SS">1:03:55</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>127260</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:48:36">
+<Time timeFormat="H:MM:SS">1:09:40</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>73403</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:35:29">
+<Time timeFormat="H:MM:SS">1:16:11</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>42474</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:10:12">
+<Time timeFormat="H:MM:SS">1:16:17</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50526</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:04:01">
+<Time timeFormat="H:MM:SS">1:23:41</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>200555</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:57:19">
+<Time timeFormat="H:MM:SS">1:24:09</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>42177</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:34:02">
+<Time timeFormat="H:MM:SS">1:44:47</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40163</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:50:16">
+<Time timeFormat="H:MM:SS">2:33:56</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D40-</ClassShortName>
+<PersonResult>
+ <PersonId>30510</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:59:24">
+<Time timeFormat="H:MM:SS">0:56:01</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>52291</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:24:30">
+<Time timeFormat="H:MM:SS">1:07:13</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:39:20">
+<Time timeFormat="H:MM:SS">1:09:34</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>59924</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:16:53">
+<Time timeFormat="H:MM:SS">1:11:04</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>88692</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:20:37">
+<Time timeFormat="H:MM:SS">1:11:21</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>144678</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:32:07">
+<Time timeFormat="H:MM:SS">1:18:47</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>177140</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:57:33">
+<Time timeFormat="H:MM:SS">1:36:01</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>143068</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:44:12">
+<Time timeFormat="H:MM:SS">1:36:12</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>177926</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:11:29">
+<Time timeFormat="H:MM:SS">2:00:11</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D45-</ClassShortName>
+<PersonResult>
+ <PersonId>166664</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:33:30">
+<Time timeFormat="H:MM:SS">10:19:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>134968</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:15:49">
+<Time timeFormat="H:MM:SS">0:38:11</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>810</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:31:45">
+<Time timeFormat="H:MM:SS">0:52:15</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>46559</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:24:13">
+<Time timeFormat="H:MM:SS">0:53:54</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:35:49">
+<Time timeFormat="H:MM:SS">0:54:07</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>53405</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:30:42">
+<Time timeFormat="H:MM:SS">1:02:36</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50774</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:45:48">
+<Time timeFormat="H:MM:SS">1:11:17</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>164551</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:49:57">
+<Time timeFormat="H:MM:SS">1:13:22</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>32962</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:39:40">
+<Time timeFormat="H:MM:SS">1:17:47</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>82511</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:48:13">
+<Time timeFormat="H:MM:SS">1:21:27</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36188</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:55:55">
+<Time timeFormat="H:MM:SS">1:32:27</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>184830</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:33:38">
+<Time timeFormat="H:MM:SS">2:02:21</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D50-</ClassShortName>
+<PersonResult>
+ <PersonId>120636</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:31:36">
+<Time timeFormat="H:MM:SS">10:28:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>178718</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:07:16">
+<Time timeFormat="H:MM:SS">0:54:26</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50013</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:09:03">
+<Time timeFormat="H:MM:SS">0:54:38</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30700</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:19:00">
+<Time timeFormat="H:MM:SS">0:54:39</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>90770</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:09:28">
+<Time timeFormat="H:MM:SS">0:58:43</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>182389</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:36:26">
+<Time timeFormat="H:MM:SS">1:10:09</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>115843</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:18:05">
+<Time timeFormat="H:MM:SS">1:13:51</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40600</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:37:47">
+<Time timeFormat="H:MM:SS">1:17:30</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>115439</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:44:57">
+<Time timeFormat="H:MM:SS">1:27:42</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>177421</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:40:16">
+<Time timeFormat="H:MM:SS">1:30:58</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>43521</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:59:55">
+<Time timeFormat="H:MM:SS">1:37:35</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62860</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:47:30">
+<Time timeFormat="H:MM:SS">1:39:44</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>81802</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:01:10">
+<Time timeFormat="H:MM:SS">1:42:35</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D55-</ClassShortName>
+<PersonResult>
+ <PersonId>50724</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:33:50">
+<Time timeFormat="H:MM:SS">10:30:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36170</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:27:13">
+<Time timeFormat="H:MM:SS">0:50:34</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>32722</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:28:37">
+<Time timeFormat="H:MM:SS">0:55:12</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62480</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:49:45">
+<Time timeFormat="H:MM:SS">0:57:21</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>42292</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:03:04">
+<Time timeFormat="H:MM:SS">0:57:23</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>69337</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:59:06">
+<Time timeFormat="H:MM:SS">1:00:31</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>42317</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:02:53">
+<Time timeFormat="H:MM:SS">1:00:34</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>59784</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:47:53">
+<Time timeFormat="H:MM:SS">1:02:04</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>70409</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:07:07">
+<Time timeFormat="H:MM:SS">1:02:35</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39174</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:01:24">
+<Time timeFormat="H:MM:SS">1:04:45</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>48183</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:47:20">
+<Time timeFormat="H:MM:SS">1:05:39</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>34463</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:06:53">
+<Time timeFormat="H:MM:SS">1:06:30</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33275</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:00:59">
+<Time timeFormat="H:MM:SS">1:14:15</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40759</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:10:23">
+<Time timeFormat="H:MM:SS">1:14:36</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>102064</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:00:24">
+<Time timeFormat="H:MM:SS">1:17:54</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40197</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:10:01">
+<Time timeFormat="H:MM:SS">1:19:53</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>125553</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:12:37">
+<Time timeFormat="H:MM:SS">1:20:13</Time>
+<ResultPosition>16</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>147979</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:58:33">
+<Time timeFormat="H:MM:SS">1:23:57</Time>
+<ResultPosition>17</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>93378</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:25:21">
+<Time timeFormat="H:MM:SS">1:46:25</Time>
+<ResultPosition>18</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D60-</ClassShortName>
+<PersonResult>
+ <PersonId>42341</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:34:29">
+<Time timeFormat="H:MM:SS">10:01:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>27757</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:02:07">
+<Time timeFormat="H:MM:SS">0:55:56</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>125371</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:11:00">
+<Time timeFormat="H:MM:SS">1:07:22</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40098</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:15:04">
+<Time timeFormat="H:MM:SS">1:07:45</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30792</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:20:04">
+<Time timeFormat="H:MM:SS">1:08:36</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57738</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:30:33">
+<Time timeFormat="H:MM:SS">1:10:13</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>32954</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:29:35">
+<Time timeFormat="H:MM:SS">1:14:54</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D65-</ClassShortName>
+<PersonResult>
+ <PersonId>52978</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:58:20">
+<Time timeFormat="H:MM:SS">0:42:56</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36633</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:31:01">
+<Time timeFormat="H:MM:SS">0:44:52</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36401</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:05:16">
+<Time timeFormat="H:MM:SS">0:47:39</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>60260</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:35:39">
+<Time timeFormat="H:MM:SS">0:52:00</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>103369</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:30:28">
+<Time timeFormat="H:MM:SS">0:56:19</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30297</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:18:39">
+<Time timeFormat="H:MM:SS">0:57:21</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50568</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:35:09">
+<Time timeFormat="H:MM:SS">0:59:48</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36708</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:24:56">
+<Time timeFormat="H:MM:SS">1:01:24</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>27806</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:28:48">
+<Time timeFormat="H:MM:SS">1:02:26</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>37293</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:47:07">
+<Time timeFormat="H:MM:SS">1:04:09</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>53497</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:36:00">
+<Time timeFormat="H:MM:SS">1:04:29</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33283</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:35:30">
+<Time timeFormat="H:MM:SS">1:06:03</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33168</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:47:43">
+<Time timeFormat="H:MM:SS">1:06:45</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62034</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:45:25">
+<Time timeFormat="H:MM:SS">1:06:48</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36104</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:34:42">
+<Time timeFormat="H:MM:SS">1:15:24</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50831</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:14:59">
+<Time timeFormat="H:MM:SS">1:46:58</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>D70-</ClassShortName>
+<PersonResult>
+ <PersonId>44339</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:05:05">
+<Time timeFormat="H:MM:SS">0:37:20</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>58968</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:18:17">
+<Time timeFormat="H:MM:SS">0:44:55</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>64098</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:07:02">
+<Time timeFormat="H:MM:SS">0:50:56</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>42143</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:02:27">
+<Time timeFormat="H:MM:SS">0:52:09</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>29860</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:14:41">
+<Time timeFormat="H:MM:SS">0:53:11</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>32847</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:02:18">
+<Time timeFormat="H:MM:SS">0:57:39</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30362</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="29-08-2016 22:11:05">
+<Time timeFormat="H:MM:SS">0:57:41</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>37144</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:29:24">
+<Time timeFormat="H:MM:SS">0:57:45</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33316</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:14:28">
+<Time timeFormat="H:MM:SS">1:02:01</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>27707</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:14:11">
+<Time timeFormat="H:MM:SS">1:07:56</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:13:39">
+<Time timeFormat="H:MM:SS">1:20:16</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>31097</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:48:03">
+<Time timeFormat="H:MM:SS">1:28:12</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39827</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:37:31">
+<Time timeFormat="H:MM:SS">2:01:01</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-10</ClassShortName>
+<PersonResult>
+ <PersonId>201222</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:25:58">
+<Time timeFormat="H:MM:SS">0:20:20</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>180101</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:12:18">
+<Time timeFormat="H:MM:SS">0:22:42</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>181373</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:41:10">
+<Time timeFormat="H:MM:SS">0:23:31</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>120090</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:54:38">
+<Time timeFormat="H:MM:SS">0:24:07</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>159669</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:45:13">
+<Time timeFormat="H:MM:SS">0:29:50</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>200349</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:12:31">
+<Time timeFormat="H:MM:SS">0:34:53</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>163800</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:51:52">
+<Time timeFormat="H:MM:SS">0:43:37</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-12</ClassShortName>
+<PersonResult>
+ <PersonId>177801</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:31:48">
+<Time timeFormat="H:MM:SS">10:47:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>94417</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:32:08">
+<Time timeFormat="H:MM:SS">10:41:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>149389</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:09:16">
+<Time timeFormat="H:MM:SS">0:24:15</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-14</ClassShortName>
+<PersonResult>
+ <PersonId>169527</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:52:44">
+<Time timeFormat="H:MM:SS">0:48:17</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>139603</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:02:38">
+<Time timeFormat="H:MM:SS">0:55:03</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>111239</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:10:02">
+<Time timeFormat="H:MM:SS">0:56:19</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>173122</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:08:13">
+<Time timeFormat="H:MM:SS">0:57:31</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>193732</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:16:42">
+<Time timeFormat="H:MM:SS">1:45:37</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-14B</ClassShortName>
+<PersonResult>
+ <PersonId>203179</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:11:52">
+<Time timeFormat="H:MM:SS">0:21:24</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>191398</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:25:20">
+<Time timeFormat="H:MM:SS">0:24:28</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>201545</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:37:00">
+<Time timeFormat="H:MM:SS">0:40:40</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>175475</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:41:42">
+<Time timeFormat="H:MM:SS">0:42:01</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-16</ClassShortName>
+<PersonResult>
+ <PersonId>44371</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:32:55">
+<Time timeFormat="H:MM:SS">10:43:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>112865</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:34:49">
+<Time timeFormat="H:MM:SS">10:49:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>175566</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:31:32">
+<Time timeFormat="H:MM:SS">0:44:01</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>521</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:45:12">
+<Time timeFormat="H:MM:SS">0:58:51</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-20</ClassShortName>
+<PersonResult>
+ <PersonId>29927</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:39:19">
+<Time timeFormat="H:MM:SS">10:16:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>128060</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:39:50">
+<Time timeFormat="H:MM:SS">10:12:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>34794</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:07:46">
+<Time timeFormat="H:MM:SS">1:03:25</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>102527</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:21:49">
+<Time timeFormat="H:MM:SS">1:03:36</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>35198</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:21:12">
+<Time timeFormat="H:MM:SS">1:06:22</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>150138</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:19:14">
+<Time timeFormat="H:MM:SS">1:10:47</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>165989</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:22:18">
+<Time timeFormat="H:MM:SS">1:11:52</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>187321</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:21:00">
+<Time timeFormat="H:MM:SS">1:18:05</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>146864</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:23:04">
+<Time timeFormat="H:MM:SS">1:22:16</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>52803</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:36:10">
+<Time timeFormat="H:MM:SS">1:29:52</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-20B</ClassShortName>
+<PersonResult>
+ <PersonId>149818</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:59:57">
+<Time timeFormat="H:MM:SS">0:43:29</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>193287</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:06:51">
+<Time timeFormat="H:MM:SS">0:43:43</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>200258</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:04:27">
+<Time timeFormat="H:MM:SS">0:45:09</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H-20C</ClassShortName>
+<PersonResult>
+ <PersonId>53257</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:43:58">
+<Time timeFormat="H:MM:SS">0:41:10</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H21-</ClassShortName>
+<PersonResult>
+ <PersonId>2056</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:15:20">
+<Time timeFormat="H:MM:SS">0:50:31</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>55716</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:30:16">
+<Time timeFormat="H:MM:SS">0:53:16</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:27:02">
+<Time timeFormat="H:MM:SS">0:55:28</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:38:01">
+<Time timeFormat="H:MM:SS">0:55:38</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>59031</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:31:18">
+<Time timeFormat="H:MM:SS">0:57:06</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>55295</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:50:57">
+<Time timeFormat="H:MM:SS">0:58:41</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47242</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:42:53">
+<Time timeFormat="H:MM:SS">0:59:02</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>101131</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:34:14">
+<Time timeFormat="H:MM:SS">1:03:55</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>137318</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:58:43">
+<Time timeFormat="H:MM:SS">1:12:07</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>106511</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:41:30">
+<Time timeFormat="H:MM:SS">1:12:46</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50089</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:05:15">
+<Time timeFormat="H:MM:SS">1:16:46</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>34942</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:55:19">
+<Time timeFormat="H:MM:SS">1:17:05</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>48414</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:44:45">
+<Time timeFormat="H:MM:SS">1:21:12</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>183006</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:12:07">
+<Time timeFormat="H:MM:SS">1:21:27</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>198401</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:09:07">
+<Time timeFormat="H:MM:SS">1:23:34</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>199037</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:18:32">
+<Time timeFormat="H:MM:SS">1:23:44</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>190093</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:45:34">
+<Time timeFormat="H:MM:SS">1:24:15</Time>
+<ResultPosition>16</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>48224</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:57:45">
+<Time timeFormat="H:MM:SS">1:25:24</Time>
+<ResultPosition>17</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>53124</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:59:43">
+<Time timeFormat="H:MM:SS">1:33:27</Time>
+<ResultPosition>18</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H21-B</ClassShortName>
+<PersonResult>
+ <PersonId>59742</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:08:01">
+<Time timeFormat="H:MM:SS">0:39:13</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39926</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:21:27">
+<Time timeFormat="H:MM:SS">0:46:14</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>108476</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:20:25">
+<Time timeFormat="H:MM:SS">0:55:08</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>82090</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:32:42">
+<Time timeFormat="H:MM:SS">1:01:16</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H21-C</ClassShortName>
+<PersonResult>
+ <PersonId>204010</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:43:45">
+<Time timeFormat="H:MM:SS">0:32:09</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>43670</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:43:29">
+<Time timeFormat="H:MM:SS">0:34:53</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57762</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:42:31">
+<Time timeFormat="H:MM:SS">0:36:25</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30130</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:11:43">
+<Time timeFormat="H:MM:SS">0:49:06</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H35-</ClassShortName>
+<PersonResult>
+ <PersonId>62232</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:40:01">
+<Time timeFormat="H:MM:SS">11:10:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>56334</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:14:18">
+<Time timeFormat="H:MM:SS">1:09:38</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47151</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:26:04">
+<Time timeFormat="H:MM:SS">1:13:32</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>75334</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:14:45">
+<Time timeFormat="H:MM:SS">1:13:57</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>55485</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:15:19">
+<Time timeFormat="H:MM:SS">1:16:20</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>31344</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:26:31">
+<Time timeFormat="H:MM:SS">1:18:15</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>145006</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:37:19">
+<Time timeFormat="H:MM:SS">1:30:47</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>173130</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:30:11">
+<Time timeFormat="H:MM:SS">1:33:57</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>43406</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:52:57">
+<Time timeFormat="H:MM:SS">1:50:41</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H35-B</ClassShortName>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:29:08">
+<Time timeFormat="H:MM:SS">10:43:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>60880</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:24:45">
+<Time timeFormat="H:MM:SS">0:44:11</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>187404</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:48:24">
+<Time timeFormat="H:MM:SS">0:45:32</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:57:27">
+<Time timeFormat="H:MM:SS">0:47:50</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36964</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:39:08">
+<Time timeFormat="H:MM:SS">0:49:35</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>149355</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:00:12">
+<Time timeFormat="H:MM:SS">0:52:41</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>172934</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:00:32">
+<Time timeFormat="H:MM:SS">0:54:18</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47284</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:34:04">
+<Time timeFormat="H:MM:SS">0:56:48</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>192932</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:56:21">
+<Time timeFormat="H:MM:SS">0:57:59</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:09:17">
+<Time timeFormat="H:MM:SS">1:01:29</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36550</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:58:04">
+<Time timeFormat="H:MM:SS">1:05:27</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>55394</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:01:44">
+<Time timeFormat="H:MM:SS">1:06:13</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H40-</ClassShortName>
+<PersonResult>
+ <PersonId>40395</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:38:11">
+<Time timeFormat="H:MM:SS">10:27:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>53009</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:54:07">
+<Time timeFormat="H:MM:SS">0:47:56</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>38126</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:17:07">
+<Time timeFormat="H:MM:SS">0:53:15</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>88684</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:16:33">
+<Time timeFormat="H:MM:SS">1:02:10</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>169519</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:13:01">
+<Time timeFormat="H:MM:SS">1:05:45</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>146062</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:26:40">
+<Time timeFormat="H:MM:SS">1:06:39</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>161953</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:25:46">
+<Time timeFormat="H:MM:SS">1:10:10</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>11213</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:22:29">
+<Time timeFormat="H:MM:SS">1:11:14</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>141153</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:33:30">
+<Time timeFormat="H:MM:SS">1:16:13</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>182644</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:41:54">
+<Time timeFormat="H:MM:SS">1:20:16</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>143646</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:34:26">
+<Time timeFormat="H:MM:SS">1:31:10</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>152134</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:46:53">
+<Time timeFormat="H:MM:SS">1:34:36</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>195481</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:26:46">
+<Time timeFormat="H:MM:SS">1:59:59</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H45-</ClassShortName>
+<PersonResult>
+ <PersonId>1248</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:51:09">
+<Time timeFormat="H:MM:SS">0:51:38</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36683</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:31:09">
+<Time timeFormat="H:MM:SS">0:51:46</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>58330</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:51:21">
+<Time timeFormat="H:MM:SS">0:55:49</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>69816</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:38:39">
+<Time timeFormat="H:MM:SS">0:57:25</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>44537</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:13:02">
+<Time timeFormat="H:MM:SS">0:59:46</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>203161</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:31:55">
+<Time timeFormat="H:MM:SS">1:02:10</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39851</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:39:52">
+<Time timeFormat="H:MM:SS">1:03:56</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>60898</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:03:51">
+<Time timeFormat="H:MM:SS">1:04:17</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>48034</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:57:00">
+<Time timeFormat="H:MM:SS">1:05:16</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>105919</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:22:40">
+<Time timeFormat="H:MM:SS">1:07:23</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>94433</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:55:44">
+<Time timeFormat="H:MM:SS">1:08:20</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>118293</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:58:22">
+<Time timeFormat="H:MM:SS">1:08:56</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33308</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:05:03">
+<Time timeFormat="H:MM:SS">1:09:33</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>52663</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:11:55">
+<Time timeFormat="H:MM:SS">1:10:23</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>128052</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:27:06">
+<Time timeFormat="H:MM:SS">1:15:53</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>34752</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:52:41">
+<Time timeFormat="H:MM:SS">1:19:14</Time>
+<ResultPosition>16</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>110281</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:58:13">
+<Time timeFormat="H:MM:SS">1:20:52</Time>
+<ResultPosition>17</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>180094</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:04:53">
+<Time timeFormat="H:MM:SS">1:21:29</Time>
+<ResultPosition>18</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>144264</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:29:07">
+<Time timeFormat="H:MM:SS">1:21:44</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>191421</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:10:39">
+<Time timeFormat="H:MM:SS">1:23:58</Time>
+<ResultPosition>19</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>171267</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:55:33">
+<Time timeFormat="H:MM:SS">1:24:06</Time>
+<ResultPosition>20</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>63743</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:36:58">
+<Time timeFormat="H:MM:SS">1:33:26</Time>
+<ResultPosition>21</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>119168</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:43:53">
+<Time timeFormat="H:MM:SS">1:38:32</Time>
+<ResultPosition>22</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40816</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:58:03">
+<Time timeFormat="H:MM:SS">1:48:48</Time>
+<ResultPosition>23</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H50-</ClassShortName>
+<PersonResult>
+ <PersonId>47466</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:25:21">
+<Time timeFormat="H:MM:SS">0:45:46</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>44975</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:56:15">
+<Time timeFormat="H:MM:SS">0:46:00</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>42911</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:56:37">
+<Time timeFormat="H:MM:SS">0:48:20</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>93047</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:18:50">
+<Time timeFormat="H:MM:SS">0:48:25</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>48125</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:51:38">
+<Time timeFormat="H:MM:SS">0:50:51</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40147</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:17:55">
+<Time timeFormat="H:MM:SS">0:51:36</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>115819</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:28:19">
+<Time timeFormat="H:MM:SS">0:55:24</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57316</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:11:29">
+<Time timeFormat="H:MM:SS">0:57:00</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30312</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:10:20">
+<Time timeFormat="H:MM:SS">0:57:56</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47135</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:20:49">
+<Time timeFormat="H:MM:SS">0:58:25</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62927</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:05:27">
+<Time timeFormat="H:MM:SS">0:58:46</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>101058</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:30:08">
+<Time timeFormat="H:MM:SS">1:01:15</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:19:51">
+<Time timeFormat="H:MM:SS">1:01:35</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>164220</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:22:47">
+<Time timeFormat="H:MM:SS">1:02:29</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40626</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:24:10">
+<Time timeFormat="H:MM:SS">1:07:50</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>100141</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:17:18">
+<Time timeFormat="H:MM:SS">1:12:39</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:45:27">
+<Time timeFormat="H:MM:SS">1:13:05</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>81795</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:21:38">
+<Time timeFormat="H:MM:SS">1:19:20</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H55-</ClassShortName>
+<PersonResult>
+ <PersonId>64337</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:34:15">
+<Time timeFormat="H:MM:SS">11:35:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>56508</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:33:09">
+<Time timeFormat="H:MM:SS">11:09:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>53207</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:45:59">
+<Time timeFormat="H:MM:SS">0:45:29</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39984</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:18:44">
+<Time timeFormat="H:MM:SS">0:51:23</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>105050</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:55:01">
+<Time timeFormat="H:MM:SS">0:51:43</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>27781</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:25:41">
+<Time timeFormat="H:MM:SS">0:52:24</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50336</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:13:33">
+<Time timeFormat="H:MM:SS">0:53:16</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47169</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:07:55">
+<Time timeFormat="H:MM:SS">0:56:10</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>73180</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:25:51">
+<Time timeFormat="H:MM:SS">0:56:24</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50055</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:37:10">
+<Time timeFormat="H:MM:SS">0:59:45</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>94087</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:24:41">
+<Time timeFormat="H:MM:SS">1:01:07</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>75417</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:10:49">
+<Time timeFormat="H:MM:SS">1:04:17</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>56459</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:58:55">
+<Time timeFormat="H:MM:SS">1:05:13</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57853</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:04:45">
+<Time timeFormat="H:MM:SS">1:05:20</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>74154</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:09:49">
+<Time timeFormat="H:MM:SS">1:06:48</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36443</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:03:17">
+<Time timeFormat="H:MM:SS">1:07:42</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>59958</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:42:06">
+<Time timeFormat="H:MM:SS">1:10:50</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57499</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:39:32">
+<Time timeFormat="H:MM:SS">1:14:02</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>178081</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:12:23">
+<Time timeFormat="H:MM:SS">1:15:12</Time>
+<ResultPosition>16</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>72554</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:36:26">
+<Time timeFormat="H:MM:SS">1:16:53</Time>
+<ResultPosition>17</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47656</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:11:11">
+<Time timeFormat="H:MM:SS">1:19:36</Time>
+<ResultPosition>18</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>178049</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:36:12">
+<Time timeFormat="H:MM:SS">1:20:54</Time>
+<ResultPosition>19</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>106363</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:36:49">
+<Time timeFormat="H:MM:SS">1:23:06</Time>
+<ResultPosition>20</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>64444</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:36:37">
+<Time timeFormat="H:MM:SS">1:29:04</Time>
+<ResultPosition>21</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>78370</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:55:59">
+<Time timeFormat="H:MM:SS">1:38:42</Time>
+<ResultPosition>22</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>156425</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:41:16">
+<Time timeFormat="H:MM:SS">2:00:04</Time>
+<ResultPosition>23</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H60-</ClassShortName>
+<PersonResult>
+ <PersonId>37300</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:51:24">
+<Time timeFormat="H:MM:SS">0:41:59</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>42218</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:56:57">
+<Time timeFormat="H:MM:SS">0:43:42</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33936</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:53:41">
+<Time timeFormat="H:MM:SS">0:48:16</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:49:31">
+<Time timeFormat="H:MM:SS">0:49:58</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>59982</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:52:31">
+<Time timeFormat="H:MM:SS">0:51:11</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>63785</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:49:31">
+<Time timeFormat="H:MM:SS">0:54:08</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>129597</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 10:57:47">
+<Time timeFormat="H:MM:SS">0:54:31</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39918</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:22:03">
+<Time timeFormat="H:MM:SS">0:58:38</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40460</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:20:15">
+<Time timeFormat="H:MM:SS">1:00:45</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>56706</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:08:35">
+<Time timeFormat="H:MM:SS">1:01:06</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39215</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:56:44">
+<Time timeFormat="H:MM:SS">1:05:10</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>182371</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:40:52">
+<Time timeFormat="H:MM:SS">1:22:46</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33126</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:41:04">
+<Time timeFormat="H:MM:SS">1:29:05</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57134</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:04:12">
+<Time timeFormat="H:MM:SS">1:42:50</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H65-</ClassShortName>
+<PersonResult>
+ <PersonId>40121</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:32:27">
+<Time timeFormat="H:MM:SS">11:36:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33431</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:35:27">
+<Time timeFormat="H:MM:SS">11:42:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId></PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:37:08">
+<Time timeFormat="H:MM:SS">11:30:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>73445</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:32:38">
+<Time timeFormat="H:MM:SS">11:34:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>38192</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:36:06">
+<Time timeFormat="H:MM:SS">11:18:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47713</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:35:42">
+<Time timeFormat="H:MM:SS">0:41:15</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47101</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:39:50">
+<Time timeFormat="H:MM:SS">0:47:28</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39306</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:08:20">
+<Time timeFormat="H:MM:SS">0:51:27</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>38168</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:07:23">
+<Time timeFormat="H:MM:SS">0:54:40</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>43919</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:10:31">
+<Time timeFormat="H:MM:SS">0:54:54</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62050</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:39:14">
+<Time timeFormat="H:MM:SS">0:58:50</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62175</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:25:09">
+<Time timeFormat="H:MM:SS">1:00:13</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>26155</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:29:39">
+<Time timeFormat="H:MM:SS">1:00:45</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>39877</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:29:49">
+<Time timeFormat="H:MM:SS">1:08:55</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>176184</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:42:54">
+<Time timeFormat="H:MM:SS">1:10:38</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40692</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:58:53">
+<Time timeFormat="H:MM:SS">1:14:37</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>27765</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:28:55">
+<Time timeFormat="H:MM:SS">1:18:37</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>150617</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:27:53">
+<Time timeFormat="H:MM:SS">1:19:34</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>74120</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:02:37">
+<Time timeFormat="H:MM:SS">1:24:16</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40733</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:20:38">
+<Time timeFormat="H:MM:SS">1:32:17</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>56441</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:20:13">
+<Time timeFormat="H:MM:SS">1:33:57</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>34893</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:26:34">
+<Time timeFormat="H:MM:SS">1:36:20</Time>
+<ResultPosition>16</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30601</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:04:42">
+<Time timeFormat="H:MM:SS">1:38:24</Time>
+<ResultPosition>17</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30958</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 13:01:15">
+<Time timeFormat="H:MM:SS">1:38:57</Time>
+<ResultPosition>18</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+ <ClassResult>
+<ClassShortName>H70-</ClassShortName>
+<PersonResult>
+ <PersonId>30841</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:35:51">
+<Time timeFormat="H:MM:SS">10:14:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>56615</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:35:06">
+<Time timeFormat="H:MM:SS">10:48:00</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Inactive" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>38283</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:35:00">
+<Time timeFormat="H:MM:SS">0:38:29</Time>
+<ResultPosition>1</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>70871</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:11:14">
+<Time timeFormat="H:MM:SS">0:40:27</Time>
+<ResultPosition>2</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>34835</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:41:19">
+<Time timeFormat="H:MM:SS">0:40:39</Time>
+<ResultPosition>3</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>56532</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:53:55">
+<Time timeFormat="H:MM:SS">0:41:35</Time>
+<ResultPosition>4</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>52770</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:32:30">
+<Time timeFormat="H:MM:SS">0:42:15</Time>
+<ResultPosition>5</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>38184</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:01:41">
+<Time timeFormat="H:MM:SS">0:42:31</Time>
+<ResultPosition>6</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33019</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:17:49">
+<Time timeFormat="H:MM:SS">0:42:35</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57473</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:00:35">
+<Time timeFormat="H:MM:SS">0:44:04</Time>
+<ResultPosition>7</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57332</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:25:08">
+<Time timeFormat="H:MM:SS">0:44:39</Time>
+<ResultPosition>8</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>61896</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:00:46">
+<Time timeFormat="H:MM:SS">0:48:23</Time>
+<ResultPosition>9</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>44165</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:04:23">
+<Time timeFormat="H:MM:SS">0:55:53</Time>
+<ResultPosition>10</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57514</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:34:52">
+<Time timeFormat="H:MM:SS">0:56:30</Time>
+<ResultPosition>11</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>37334</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:07:40">
+<Time timeFormat="H:MM:SS">0:56:54</Time>
+<ResultPosition>12</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36873</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:01:04">
+<Time timeFormat="H:MM:SS">0:58:24</Time>
+<ResultPosition>13</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>27690</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:26:18">
+<Time timeFormat="H:MM:SS">0:59:26</Time>
+<ResultPosition>14</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>38332</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:04:39">
+<Time timeFormat="H:MM:SS">1:00:10</Time>
+<ResultPosition>15</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>34992</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:06:03">
+<Time timeFormat="H:MM:SS">1:01:14</Time>
+<ResultPosition>16</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>38259</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:26:28">
+<Time timeFormat="H:MM:SS">1:01:35</Time>
+<ResultPosition>17</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>30263</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:05:29">
+<Time timeFormat="H:MM:SS">1:02:47</Time>
+<ResultPosition>18</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>50401</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:26:52">
+<Time timeFormat="H:MM:SS">1:03:57</Time>
+<ResultPosition>19</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>62620</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:05:47">
+<Time timeFormat="H:MM:SS">1:05:14</Time>
+<ResultPosition>20</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>64428</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:12:04">
+<Time timeFormat="H:MM:SS">1:05:34</Time>
+<ResultPosition>21</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>60624</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:00:04">
+<Time timeFormat="H:MM:SS">1:05:38</Time>
+<ResultPosition>22</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40254</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:16:25">
+<Time timeFormat="H:MM:SS">1:07:22</Time>
+<ResultPosition>23</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>36089</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:22:13">
+<Time timeFormat="H:MM:SS">1:07:35</Time>
+<ResultPosition>24</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>64105</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:29:50">
+<Time timeFormat="H:MM:SS">1:08:14</Time>
+<ResultPosition>25</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>33415</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:15:31">
+<Time timeFormat="H:MM:SS">1:08:47</Time>
+<ResultPosition>26</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47341</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:56:06">
+<Time timeFormat="H:MM:SS">1:11:39</Time>
+<ResultPosition>27</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>93386</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:46:41">
+<Time timeFormat="H:MM:SS">1:13:02</Time>
+<ResultPosition>28</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>47416</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:30:51">
+<Time timeFormat="H:MM:SS">1:13:47</Time>
+<ResultPosition>29</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>37045</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:25:33">
+<Time timeFormat="H:MM:SS">1:15:04</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>44389</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:15:09">
+<Time timeFormat="H:MM:SS">1:16:04</Time>
+<ResultPosition>30</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>57788</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 11:56:32">
+<Time timeFormat="H:MM:SS">1:19:58</Time>
+<ResultPosition>31</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>40684</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:08:06">
+<Time timeFormat="H:MM:SS">1:21:15</Time>
+<ResultPosition>32</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>46864</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:16:57">
+<Time timeFormat="H:MM:SS">1:24:12</Time>
+<ResultPosition>33</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>84765</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:00:45">
+<Time timeFormat="H:MM:SS">1:32:05</Time>
+<ResultPosition>0</ResultPosition>
+<CompetitorStatus value="Disqualified" />
+</Result> 
+</PersonResult>
+<PersonResult>
+ <PersonId>98295</PersonId>
+<Result createDate="13-02-2017 22:17:19" modifyDate="28-08-2016 12:17:30">
+<Time timeFormat="H:MM:SS">1:35:06</Time>
+<ResultPosition>34</ResultPosition>
+<CompetitorStatus value="OK" />
+</Result> 
+</PersonResult>
+</ClassResult>
+</ResultList>

@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <classes>
+    <string />
+    <string> - </string>
+    <string>D-10</string>
+    <string>D-12</string>
+    <string>D-14</string>
+    <string>D-14B</string>
+    <string>D-16</string>
+    <string>D-20C</string>
+    <string>D-20</string>
+    <string>D-20B</string>
+    <string>D21-</string>
+    <string>D21-B</string>
+    <string>D21-C</string>
+    <string>D35-</string>
+    <string>D35-B</string>
+    <string>D40-</string>
+    <string>D45-</string>
+    <string>D50-</string>
+    <string>H-10</string>
+    <string>H-12</string>
+    <string>H-12B</string>
+    <string>H-14</string>
+    <string>H-14B</string>
+    <string>H-16</string>
+    <string>H-16B</string>
+    <string>H-20C</string>
+    <string>H-20</string>
+    <string>H-20B</string>
+    <string>H21-</string>
+    <string>H21-B</string>
+    <string>H21-C</string>
+    <string>H35-</string>
+    <string>H35-B</string>
+    <string>H40-</string>
+    <string>H45-</string>
+    <string>H50-</string>
+    <string>H55-</string>
+    <string>H60-</string>
+    <string>H65-</string>
+    <string>Beg</string>
+    <string>Åben1</string>
+    <string>Åben5</string>
+    <string>Åben2A</string>
+    <string>Åben3A</string>
+    <string>Åben3B</string>
+    <string>Åben4A</string>
+    <string>Åben4B</string>
+    <string>Åben7A</string>
+    <string>Reserve</string>
+  </classes>
+  <divisioner>
+    <division>
+      <nr>1</nr>
+      <beskrivelse>1. division</beskrivelse>
+    </division>
+    <division>
+      <nr>2</nr>
+      <beskrivelse>2. division</beskrivelse>
+    </division>
+    <division>
+      <nr>3</nr>
+      <beskrivelse>3. division</beskrivelse>
+    </division>
+    <division>
+      <nr>4</nr>
+      <beskrivelse>4. division</beskrivelse>
+    </division>
+    <division>
+      <nr>5</nr>
+      <beskrivelse>5. division</beskrivelse>
+    </division>
+    <division>
+      <nr>6</nr>
+      <beskrivelse>6. division</beskrivelse>
+    </division>
+  </divisioner>
+  <selectedDivision>2</selectedDivision>
+  <gruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H -20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H-20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H 21-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H 35-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H 40-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H40-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H 45-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H45-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H -16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H-16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H 50-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H50-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H 55-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H55-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H 60-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H60-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H 65-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H65-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H5</Gruppe>
+      <Klasse>H 70-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H -14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H-14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H -16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H-16B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H -20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H-20B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H 21-B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21-B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H 35-B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35-B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H -12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H-12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H -14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H-14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H -20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H-20C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H 21-C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21-C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D -20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D-20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D 21-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D 35-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D 40-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D40-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D 45-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D45-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D -16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D-16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D 50-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D50-</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D 55-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D 60-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D 65-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D5</Gruppe>
+      <Klasse>D 70-</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D -14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D-14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D -16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D -20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D 21-B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21-B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D 35-B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35-B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D -12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D-12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D -14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D-14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D -20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D-20C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D 21-C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21-C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H -10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H-10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D -10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D-10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H -12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H-12B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D -12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>Begynder</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>Beg</LøbsKlasse>
+    </GruppeOgKlasse>
+  </gruppeOgKlasse>
+  <allClubs>
+    <string>Søllerød OK</string>
+    <string>Farum OK</string>
+    <string>FIF Hillerød Orientering</string>
+    <string>Tisvilde Hegn OK</string>
+    <string>PI-København</string>
+    <string>Ballerup OK</string>
+    <string>Amager OK</string>
+    <string>Køge OK</string>
+    <string>FSK Orientering</string>
+    <string>Fredensborg OK</string>
+    <string>OK73</string>
+    <string>OK Øst Birkerød åben</string>
+    <string>Kildeholm OK</string>
+  </allClubs>
+  <selectedClubs>
+    <string>Allerød OK</string>
+    <string>OK Midtvest</string>
+    <string>OK Roskilde</string>
+    <string>OK Øst Birkerød</string>
+  </selectedClubs>
+  <printerSettings>
+    <Copies>2</Copies>
+    <Collate>false</Collate>
+    <Duplex>Simplex</Duplex>
+    <FromPage>0</FromPage>
+    <MaximumPage>9999</MaximumPage>
+    <MinimumPage>0</MinimumPage>
+    <PrintFileName>dummy.txt</PrintFileName>
+    <PaperSizes>
+      <PaperSize>
+        <Height>1169</Height>
+        <PaperName>A4 (210 x 297 mm)</PaperName>
+        <RawKind>9</RawKind>
+        <Width>827</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1654</Height>
+        <PaperName>A3 (297 x 420 mm)</PaperName>
+        <RawKind>8</RawKind>
+        <Width>1169</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>827</Height>
+        <PaperName>A5 (148 x 210 mm)</PaperName>
+        <RawKind>11</RawKind>
+        <Width>583</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1433</Height>
+        <PaperName>JIS B4 (257 x 364 mm)</PaperName>
+        <RawKind>12</RawKind>
+        <Width>1012</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1012</Height>
+        <PaperName>JIS B5 (182 x 257 mm)</PaperName>
+        <RawKind>13</RawKind>
+        <Width>717</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>583</Height>
+        <PaperName>Postcard (100 x 148 mm)</PaperName>
+        <RawKind>43</RawKind>
+        <Width>394</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>583</Height>
+        <PaperName>A6 (105 x 148 mm)</PaperName>
+        <RawKind>70</RawKind>
+        <Width>413</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>787</Height>
+        <PaperName>Postcard (148 x 200 mm)</PaperName>
+        <RawKind>82</RawKind>
+        <Width>583</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>717</Height>
+        <PaperName>JIS B6 (128 x 182 mm)</PaperName>
+        <RawKind>88</RawKind>
+        <Width>504</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1169</Height>
+        <PaperName>A4 Oversized (223 x 297 mm)</PaperName>
+        <RawKind>139</RawKind>
+        <Width>878</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1772</Height>
+        <PaperName>SRA3 (320 x 450 mm)</PaperName>
+        <RawKind>183</RawKind>
+        <Width>1260</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1240</Height>
+        <PaperName>215 x 315 mm</PaperName>
+        <RawKind>200</RawKind>
+        <Width>846</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1100</Height>
+        <PaperName>Letter (8.5 x 11")</PaperName>
+        <RawKind>1</RawKind>
+        <Width>850</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1400</Height>
+        <PaperName>Legal (8.5 x 14")</PaperName>
+        <RawKind>5</RawKind>
+        <Width>850</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>850</Height>
+        <PaperName>Statement (5.5 x 8.5")</PaperName>
+        <RawKind>6</RawKind>
+        <Width>550</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1050</Height>
+        <PaperName>Executive (7.25 x 10.5")</PaperName>
+        <RawKind>7</RawKind>
+        <Width>725</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1300</Height>
+        <PaperName>8.5 x 13"</PaperName>
+        <RawKind>14</RawKind>
+        <Width>850</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1700</Height>
+        <PaperName>Tabloid (11 x 17")</PaperName>
+        <RawKind>17</RawKind>
+        <Width>1100</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1100</Height>
+        <PaperName>9 x 11"</PaperName>
+        <RawKind>44</RawKind>
+        <Width>900</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>700</Height>
+        <PaperName>5 x 7"</PaperName>
+        <RawKind>142</RawKind>
+        <Width>500</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1000</Height>
+        <PaperName>8 x 10"</PaperName>
+        <RawKind>144</RawKind>
+        <Width>800</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>600</Height>
+        <PaperName>Postcard (4 x 6")</PaperName>
+        <RawKind>163</RawKind>
+        <Width>400</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1800</Height>
+        <PaperName>12 x 18"</PaperName>
+        <RawKind>182</RawKind>
+        <Width>1200</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1900</Height>
+        <PaperName>12 x 19"</PaperName>
+        <RawKind>293</RawKind>
+        <Width>1200</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1500</Height>
+        <PaperName>11 x 15"</PaperName>
+        <RawKind>320</RawKind>
+        <Width>1100</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>866</Height>
+        <PaperName>DL Envelope (110 x 220 mm)</PaperName>
+        <RawKind>27</RawKind>
+        <Width>433</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>902</Height>
+        <PaperName>C5 Envelope (162 x 229 mm)</PaperName>
+        <RawKind>28</RawKind>
+        <Width>638</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1276</Height>
+        <PaperName>C4 Envelope (229 x 324 mm)</PaperName>
+        <RawKind>30</RawKind>
+        <Width>902</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>950</Height>
+        <PaperName>No. 10 Envelope (4.1 x 9.5")</PaperName>
+        <RawKind>20</RawKind>
+        <Width>413</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>750</Height>
+        <PaperName>Monarch Envelope (3.9 x 7.5")</PaperName>
+        <RawKind>37</RawKind>
+        <Width>387</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1200</Height>
+        <PaperName>Envelope (9 x 12")</PaperName>
+        <RawKind>214</RawKind>
+        <Width>900</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>900</Height>
+        <PaperName>Envelope (6 x 9")</PaperName>
+        <RawKind>302</RawKind>
+        <Width>600</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1169</Height>
+        <PaperName>A4</PaperName>
+        <RawKind>9</RawKind>
+        <Width>827</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1654</Height>
+        <PaperName>A3</PaperName>
+        <RawKind>8</RawKind>
+        <Width>1169</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>827</Height>
+        <PaperName>A5</PaperName>
+        <RawKind>11</RawKind>
+        <Width>583</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1433</Height>
+        <PaperName>B4 (JIS)</PaperName>
+        <RawKind>12</RawKind>
+        <Width>1012</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1012</Height>
+        <PaperName>B5 (JIS)</PaperName>
+        <RawKind>13</RawKind>
+        <Width>717</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>866</Height>
+        <PaperName>Envelope DL</PaperName>
+        <RawKind>27</RawKind>
+        <Width>433</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>902</Height>
+        <PaperName>Envelope C5</PaperName>
+        <RawKind>28</RawKind>
+        <Width>638</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1276</Height>
+        <PaperName>Envelope C4</PaperName>
+        <RawKind>30</RawKind>
+        <Width>902</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>583</Height>
+        <PaperName>Japanese Postcard</PaperName>
+        <RawKind>43</RawKind>
+        <Width>394</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>583</Height>
+        <PaperName>A6</PaperName>
+        <RawKind>70</RawKind>
+        <Width>413</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>787</Height>
+        <PaperName>Double Japan Postcard Rotated</PaperName>
+        <RawKind>82</RawKind>
+        <Width>583</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>717</Height>
+        <PaperName>B6 (JIS)</PaperName>
+        <RawKind>88</RawKind>
+        <Width>504</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1169</Height>
+        <PaperName>Oversized A4 (223 x 297 mm)</PaperName>
+        <RawKind>139</RawKind>
+        <Width>878</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1772</Height>
+        <PaperName>SRA3 SEF</PaperName>
+        <RawKind>183</RawKind>
+        <Width>1260</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1100</Height>
+        <PaperName>Letter</PaperName>
+        <RawKind>1</RawKind>
+        <Width>850</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1400</Height>
+        <PaperName>Legal</PaperName>
+        <RawKind>5</RawKind>
+        <Width>850</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>850</Height>
+        <PaperName>Statement</PaperName>
+        <RawKind>6</RawKind>
+        <Width>550</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1050</Height>
+        <PaperName>Executive</PaperName>
+        <RawKind>7</RawKind>
+        <Width>725</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1300</Height>
+        <PaperName>Folio</PaperName>
+        <RawKind>14</RawKind>
+        <Width>850</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1700</Height>
+        <PaperName>11x17</PaperName>
+        <RawKind>17</RawKind>
+        <Width>1100</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>950</Height>
+        <PaperName>Envelope #10</PaperName>
+        <RawKind>20</RawKind>
+        <Width>413</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>750</Height>
+        <PaperName>Envelope Monarch</PaperName>
+        <RawKind>37</RawKind>
+        <Width>387</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1100</Height>
+        <PaperName>9x11</PaperName>
+        <RawKind>44</RawKind>
+        <Width>900</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>600</Height>
+        <PaperName>PostCard (4x6)</PaperName>
+        <RawKind>163</RawKind>
+        <Width>400</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1800</Height>
+        <PaperName>12x18 SEF</PaperName>
+        <RawKind>182</RawKind>
+        <Width>1200</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1200</Height>
+        <PaperName>ARCH A</PaperName>
+        <RawKind>214</RawKind>
+        <Width>900</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>900</Height>
+        <PaperName>6x9 Envelope (6 x 9")</PaperName>
+        <RawKind>302</RawKind>
+        <Width>600</Width>
+      </PaperSize>
+      <PaperSize>
+        <Height>1169</Height>
+        <PaperName>Custom Size</PaperName>
+        <RawKind>256</RawKind>
+        <Width>827</Width>
+      </PaperSize>
+    </PaperSizes>
+    <PaperSources>
+      <PaperSource>
+        <RawKind>15</RawKind>
+        <SourceName>Automatically Select</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>258</RawKind>
+        <SourceName>Tray 5</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>259</RawKind>
+        <SourceName>Tray 4</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>260</RawKind>
+        <SourceName>Tray 3</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>261</RawKind>
+        <SourceName>Tray 2</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>262</RawKind>
+        <SourceName>Tray 1</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9134</RawKind>
+        <SourceName>Transparency</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9138</RawKind>
+        <SourceName>Bond</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9139</RawKind>
+        <SourceName>Labels</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9141</RawKind>
+        <SourceName>Custom Type 1</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9142</RawKind>
+        <SourceName>Custom Type 2</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9143</RawKind>
+        <SourceName>Custom Type 3</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9144</RawKind>
+        <SourceName>Custom Type 4</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9145</RawKind>
+        <SourceName>Custom Type 5</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9146</RawKind>
+        <SourceName>Custom Type 6</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9147</RawKind>
+        <SourceName>Custom Type 7</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9148</RawKind>
+        <SourceName>Plain</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9149</RawKind>
+        <SourceName>Envelope</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9231</RawKind>
+        <SourceName>Heavyweight Reloaded</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9233</RawKind>
+        <SourceName>Heavyweight Gloss Coati</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9234</RawKind>
+        <SourceName>Extra Heavyweight</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9235</RawKind>
+        <SourceName>Heavyweight</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9236</RawKind>
+        <SourceName>Extra Heavyweight Plus</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9240</RawKind>
+        <SourceName>Lightweight</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9241</RawKind>
+        <SourceName>Pre-Printed</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9242</RawKind>
+        <SourceName>Hole Punched</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9244</RawKind>
+        <SourceName>Plain Reloaded</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9245</RawKind>
+        <SourceName>Extra Heavyweight Reloa</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9246</RawKind>
+        <SourceName>Extra Heavyweight Plus </SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9249</RawKind>
+        <SourceName>Gloss Coating</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9250</RawKind>
+        <SourceName>Gloss Coating Reloaded</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9251</RawKind>
+        <SourceName>Heavyweight Gloss Reloa</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9252</RawKind>
+        <SourceName>Extra Heavyweight Gloss</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9253</RawKind>
+        <SourceName>Extra Heavyweight Gloss</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9257</RawKind>
+        <SourceName>Printer Default Type</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9259</RawKind>
+        <SourceName>Recycled</SourceName>
+      </PaperSource>
+      <PaperSource>
+        <RawKind>9262</RawKind>
+        <SourceName>Letterhead</SourceName>
+      </PaperSource>
+    </PaperSources>
+    <PrintRange>AllPages</PrintRange>
+    <PrintToFile>false</PrintToFile>
+    <PrinterName>\\print2\prt237</PrinterName>
+    <PrinterResolutions>
+      <PrinterResolution>
+        <Kind>High</Kind>
+        <X>-4</X>
+        <Y>-1</Y>
+      </PrinterResolution>
+      <PrinterResolution>
+        <Kind>Medium</Kind>
+        <X>-3</X>
+        <Y>-1</Y>
+      </PrinterResolution>
+      <PrinterResolution>
+        <Kind>Low</Kind>
+        <X>-2</X>
+        <Y>-1</Y>
+      </PrinterResolution>
+      <PrinterResolution>
+        <Kind>Draft</Kind>
+        <X>-1</X>
+        <Y>-1</Y>
+      </PrinterResolution>
+      <PrinterResolution>
+        <Kind>Custom</Kind>
+        <X>600</X>
+        <Y>600</Y>
+      </PrinterResolution>
+    </PrinterResolutions>
+    <ToPage>0</ToPage>
+  </printerSettings>
+  <pageSettings>
+    <Color>false</Color>
+    <Landscape>false</Landscape>
+    <Margins>
+      <Left>15</Left>
+      <Right>15</Right>
+      <Top>10</Top>
+      <Bottom>10</Bottom>
+    </Margins>
+    <PaperSize>
+      <Height>1169</Height>
+      <PaperName>A4</PaperName>
+      <RawKind>9</RawKind>
+      <Width>827</Width>
+    </PaperSize>
+    <PaperSource>
+      <RawKind>7</RawKind>
+      <SourceName>unknown</SourceName>
+    </PaperSource>
+    <PrinterResolution>
+      <Kind>Custom</Kind>
+      <X>600</X>
+      <Y>600</Y>
+    </PrinterResolution>
+    <PrinterSettings>
+      <Copies>2</Copies>
+      <Collate>false</Collate>
+      <Duplex>Simplex</Duplex>
+      <FromPage>0</FromPage>
+      <MaximumPage>9999</MaximumPage>
+      <MinimumPage>0</MinimumPage>
+      <PrintFileName>dummy.txt</PrintFileName>
+      <PaperSizes>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>A4 (210 x 297 mm)</PaperName>
+          <RawKind>9</RawKind>
+          <Width>827</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1654</Height>
+          <PaperName>A3 (297 x 420 mm)</PaperName>
+          <RawKind>8</RawKind>
+          <Width>1169</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>827</Height>
+          <PaperName>A5 (148 x 210 mm)</PaperName>
+          <RawKind>11</RawKind>
+          <Width>583</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1433</Height>
+          <PaperName>JIS B4 (257 x 364 mm)</PaperName>
+          <RawKind>12</RawKind>
+          <Width>1012</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1012</Height>
+          <PaperName>JIS B5 (182 x 257 mm)</PaperName>
+          <RawKind>13</RawKind>
+          <Width>717</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>583</Height>
+          <PaperName>Postcard (100 x 148 mm)</PaperName>
+          <RawKind>43</RawKind>
+          <Width>394</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>583</Height>
+          <PaperName>A6 (105 x 148 mm)</PaperName>
+          <RawKind>70</RawKind>
+          <Width>413</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>787</Height>
+          <PaperName>Postcard (148 x 200 mm)</PaperName>
+          <RawKind>82</RawKind>
+          <Width>583</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>717</Height>
+          <PaperName>JIS B6 (128 x 182 mm)</PaperName>
+          <RawKind>88</RawKind>
+          <Width>504</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>A4 Oversized (223 x 297 mm)</PaperName>
+          <RawKind>139</RawKind>
+          <Width>878</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1772</Height>
+          <PaperName>SRA3 (320 x 450 mm)</PaperName>
+          <RawKind>183</RawKind>
+          <Width>1260</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1240</Height>
+          <PaperName>215 x 315 mm</PaperName>
+          <RawKind>200</RawKind>
+          <Width>846</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1100</Height>
+          <PaperName>Letter (8.5 x 11")</PaperName>
+          <RawKind>1</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1400</Height>
+          <PaperName>Legal (8.5 x 14")</PaperName>
+          <RawKind>5</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>850</Height>
+          <PaperName>Statement (5.5 x 8.5")</PaperName>
+          <RawKind>6</RawKind>
+          <Width>550</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1050</Height>
+          <PaperName>Executive (7.25 x 10.5")</PaperName>
+          <RawKind>7</RawKind>
+          <Width>725</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1300</Height>
+          <PaperName>8.5 x 13"</PaperName>
+          <RawKind>14</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1700</Height>
+          <PaperName>Tabloid (11 x 17")</PaperName>
+          <RawKind>17</RawKind>
+          <Width>1100</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1100</Height>
+          <PaperName>9 x 11"</PaperName>
+          <RawKind>44</RawKind>
+          <Width>900</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>700</Height>
+          <PaperName>5 x 7"</PaperName>
+          <RawKind>142</RawKind>
+          <Width>500</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1000</Height>
+          <PaperName>8 x 10"</PaperName>
+          <RawKind>144</RawKind>
+          <Width>800</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>600</Height>
+          <PaperName>Postcard (4 x 6")</PaperName>
+          <RawKind>163</RawKind>
+          <Width>400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1800</Height>
+          <PaperName>12 x 18"</PaperName>
+          <RawKind>182</RawKind>
+          <Width>1200</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1900</Height>
+          <PaperName>12 x 19"</PaperName>
+          <RawKind>293</RawKind>
+          <Width>1200</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1500</Height>
+          <PaperName>11 x 15"</PaperName>
+          <RawKind>320</RawKind>
+          <Width>1100</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>866</Height>
+          <PaperName>DL Envelope (110 x 220 mm)</PaperName>
+          <RawKind>27</RawKind>
+          <Width>433</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>902</Height>
+          <PaperName>C5 Envelope (162 x 229 mm)</PaperName>
+          <RawKind>28</RawKind>
+          <Width>638</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1276</Height>
+          <PaperName>C4 Envelope (229 x 324 mm)</PaperName>
+          <RawKind>30</RawKind>
+          <Width>902</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>950</Height>
+          <PaperName>No. 10 Envelope (4.1 x 9.5")</PaperName>
+          <RawKind>20</RawKind>
+          <Width>413</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>750</Height>
+          <PaperName>Monarch Envelope (3.9 x 7.5")</PaperName>
+          <RawKind>37</RawKind>
+          <Width>387</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1200</Height>
+          <PaperName>Envelope (9 x 12")</PaperName>
+          <RawKind>214</RawKind>
+          <Width>900</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>900</Height>
+          <PaperName>Envelope (6 x 9")</PaperName>
+          <RawKind>302</RawKind>
+          <Width>600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>A4</PaperName>
+          <RawKind>9</RawKind>
+          <Width>827</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1654</Height>
+          <PaperName>A3</PaperName>
+          <RawKind>8</RawKind>
+          <Width>1169</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>827</Height>
+          <PaperName>A5</PaperName>
+          <RawKind>11</RawKind>
+          <Width>583</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1433</Height>
+          <PaperName>B4 (JIS)</PaperName>
+          <RawKind>12</RawKind>
+          <Width>1012</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1012</Height>
+          <PaperName>B5 (JIS)</PaperName>
+          <RawKind>13</RawKind>
+          <Width>717</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>866</Height>
+          <PaperName>Envelope DL</PaperName>
+          <RawKind>27</RawKind>
+          <Width>433</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>902</Height>
+          <PaperName>Envelope C5</PaperName>
+          <RawKind>28</RawKind>
+          <Width>638</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1276</Height>
+          <PaperName>Envelope C4</PaperName>
+          <RawKind>30</RawKind>
+          <Width>902</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>583</Height>
+          <PaperName>Japanese Postcard</PaperName>
+          <RawKind>43</RawKind>
+          <Width>394</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>583</Height>
+          <PaperName>A6</PaperName>
+          <RawKind>70</RawKind>
+          <Width>413</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>787</Height>
+          <PaperName>Double Japan Postcard Rotated</PaperName>
+          <RawKind>82</RawKind>
+          <Width>583</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>717</Height>
+          <PaperName>B6 (JIS)</PaperName>
+          <RawKind>88</RawKind>
+          <Width>504</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>Oversized A4 (223 x 297 mm)</PaperName>
+          <RawKind>139</RawKind>
+          <Width>878</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1772</Height>
+          <PaperName>SRA3 SEF</PaperName>
+          <RawKind>183</RawKind>
+          <Width>1260</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1100</Height>
+          <PaperName>Letter</PaperName>
+          <RawKind>1</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1400</Height>
+          <PaperName>Legal</PaperName>
+          <RawKind>5</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>850</Height>
+          <PaperName>Statement</PaperName>
+          <RawKind>6</RawKind>
+          <Width>550</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1050</Height>
+          <PaperName>Executive</PaperName>
+          <RawKind>7</RawKind>
+          <Width>725</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1300</Height>
+          <PaperName>Folio</PaperName>
+          <RawKind>14</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1700</Height>
+          <PaperName>11x17</PaperName>
+          <RawKind>17</RawKind>
+          <Width>1100</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>950</Height>
+          <PaperName>Envelope #10</PaperName>
+          <RawKind>20</RawKind>
+          <Width>413</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>750</Height>
+          <PaperName>Envelope Monarch</PaperName>
+          <RawKind>37</RawKind>
+          <Width>387</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1100</Height>
+          <PaperName>9x11</PaperName>
+          <RawKind>44</RawKind>
+          <Width>900</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>600</Height>
+          <PaperName>PostCard (4x6)</PaperName>
+          <RawKind>163</RawKind>
+          <Width>400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1800</Height>
+          <PaperName>12x18 SEF</PaperName>
+          <RawKind>182</RawKind>
+          <Width>1200</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1200</Height>
+          <PaperName>ARCH A</PaperName>
+          <RawKind>214</RawKind>
+          <Width>900</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>900</Height>
+          <PaperName>6x9 Envelope (6 x 9")</PaperName>
+          <RawKind>302</RawKind>
+          <Width>600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>Custom Size</PaperName>
+          <RawKind>256</RawKind>
+          <Width>827</Width>
+        </PaperSize>
+      </PaperSizes>
+      <PaperSources>
+        <PaperSource>
+          <RawKind>15</RawKind>
+          <SourceName>Automatically Select</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>258</RawKind>
+          <SourceName>Tray 5</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>259</RawKind>
+          <SourceName>Tray 4</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>260</RawKind>
+          <SourceName>Tray 3</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>261</RawKind>
+          <SourceName>Tray 2</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>262</RawKind>
+          <SourceName>Tray 1</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9134</RawKind>
+          <SourceName>Transparency</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9138</RawKind>
+          <SourceName>Bond</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9139</RawKind>
+          <SourceName>Labels</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9141</RawKind>
+          <SourceName>Custom Type 1</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9142</RawKind>
+          <SourceName>Custom Type 2</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9143</RawKind>
+          <SourceName>Custom Type 3</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9144</RawKind>
+          <SourceName>Custom Type 4</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9145</RawKind>
+          <SourceName>Custom Type 5</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9146</RawKind>
+          <SourceName>Custom Type 6</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9147</RawKind>
+          <SourceName>Custom Type 7</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9148</RawKind>
+          <SourceName>Plain</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9149</RawKind>
+          <SourceName>Envelope</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9231</RawKind>
+          <SourceName>Heavyweight Reloaded</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9233</RawKind>
+          <SourceName>Heavyweight Gloss Coati</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9234</RawKind>
+          <SourceName>Extra Heavyweight</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9235</RawKind>
+          <SourceName>Heavyweight</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9236</RawKind>
+          <SourceName>Extra Heavyweight Plus</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9240</RawKind>
+          <SourceName>Lightweight</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9241</RawKind>
+          <SourceName>Pre-Printed</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9242</RawKind>
+          <SourceName>Hole Punched</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9244</RawKind>
+          <SourceName>Plain Reloaded</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9245</RawKind>
+          <SourceName>Extra Heavyweight Reloa</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9246</RawKind>
+          <SourceName>Extra Heavyweight Plus </SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9249</RawKind>
+          <SourceName>Gloss Coating</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9250</RawKind>
+          <SourceName>Gloss Coating Reloaded</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9251</RawKind>
+          <SourceName>Heavyweight Gloss Reloa</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9252</RawKind>
+          <SourceName>Extra Heavyweight Gloss</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9253</RawKind>
+          <SourceName>Extra Heavyweight Gloss</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9257</RawKind>
+          <SourceName>Printer Default Type</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9259</RawKind>
+          <SourceName>Recycled</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>9262</RawKind>
+          <SourceName>Letterhead</SourceName>
+        </PaperSource>
+      </PaperSources>
+      <PrintRange>AllPages</PrintRange>
+      <PrintToFile>false</PrintToFile>
+      <PrinterName>\\print2\prt237</PrinterName>
+      <PrinterResolutions>
+        <PrinterResolution>
+          <Kind>High</Kind>
+          <X>-4</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Medium</Kind>
+          <X>-3</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Low</Kind>
+          <X>-2</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Draft</Kind>
+          <X>-1</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>600</X>
+          <Y>600</Y>
+        </PrinterResolution>
+      </PrinterResolutions>
+      <ToPage>0</ToPage>
+    </PrinterSettings>
+  </pageSettings>
+  <font>
+    <FontValue>Courier New; 10pt</FontValue>
+  </font>
+</Config>

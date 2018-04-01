@@ -1,0 +1,296 @@
+Matcher (2 division)
+--------------------
+1 : FROS/Melfar - Faaborg OK                       :   121 -   120
+2 : FROS/Melfar - OK Syd                           :   135 -    73
+3 : FROS/Melfar - Odense OK                        :   111 -   116
+4 : Faaborg OK - OK Syd                            :   137 -    82
+5 : Faaborg OK - Odense OK                         :   125 -   106
+6 : OK Syd - Odense OK                             :    79 -   125
+
+Stilling
+--------
+                                               score      point
+Odense OK                                :   347 -   315      4
+FROS/Melfar                              :   367 -   309      4
+Faaborg OK                               :   382 -   309      4
+OK Syd                                   :   234 -   397      0
+
+                          m1      m2     m3      m4     m5     m6    
+                        ------- ------ ------- ------ ------- ------ 
+H1 (H20, H21, H35)       15-23   24-11  14-22   25-12  21-17  10-25  
+H2 (H40, H45)            12-9     9-12  13-8    11-10  12-9   13-8   
+H3 (H16, H50, H55)       13-11   13-8   13-8    15-9   13-11  10-11  
+H4 (H60, H65)             6-4     7-3    3-7     5-5    3-7    3-7   
+H5 (H70)                  4-6     5-5    3-7     6-4    4-6    3-7   
+H6 (H14)                 10-3    10-0    6-7    10-0    5-8    0-10  
+H7 (H20B, H21B, H35B)     6-2     6-3    5-4     3-5    2-6    3-6   
+H8 (H12, H20C, H21C)      6-2     6-2    6-2     2-0    0-2    0-2   
+D1 (D20, D21, D35)        5-17   11-0    5-15   17-0   17-6    0-15  
+D2 (D40, D45)             8-12    8-10   7-13    9-11   9-12   9-11  
+D3 (D16, D50, D55)       17-7    16-8   17-4     8-15  13-5   15-5   
+D4 (D60, D65)             0-7     0-4    0-7     7-2    5-5    2-7   
+D5 (D70)                  6-4     7-3    7-0     5-5    7-0    7-0   
+D6 (D14, D16B)            6-6     6-0    6-0     9-0    9-0    0-0   
+D7 (D20B, D21B, D35B)     4-2     4-0    3-5     2-0    2-5    0-6   
+D8 (D14B, D21C)           0-2     0-2    0-4     0-2    0-4    2-2   
+9  (H10, D10, Begynder)   3-3     3-2    3-3     3-2    3-3    2-3   
+Ialt:                   121-120 135-73 111-116 137-82 125-106 79-125 
+
+Gruppe H1 (H20, H21, H35) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Emma Klingenberg        Faaborg OK      H21-   00:52:00    8              8    8     
+2  Conor Klingenberg       Faaborg OK      H21-   00:53:04    7              7    7     
+3  Rasmus Iversen          Odense OK       H21-   00:56:10              8         6    8
+4  Henrik Steen Andersen   Odense OK       H21-   00:57:15              7         5    7
+5  Anders Winther Mortense Odense OK       H21-   00:57:45              6         4    6
+6  Peter Knudsen           FROS/Melfar     H35-   00:59:22    6    8    5               
+7  Bjarne Skovgaard Knudse Faaborg OK      H21-   00:59:43    5              6    3     
+8  Malte Jensen            FROS/Melfar     H21-   01:04:37    4    7    4               
+9  Bjarne Johannsen        OK Syd          H35-   01:05:26         6         5         5
+10 Thomas Gabs             FROS/Melfar     H35-   01:06:03    3    5    3               
+11 Claus Christensen       FROS/Melfar     H21-   01:06:51    2    4    2               
+12 Jonas Gabs              FROS/Melfar     H21-   01:07:37                              
+13 Gintas Bloze            Odense OK       H35-   01:08:25              1         2    4
+14 John Bargmeyer          OK Syd          H35-   01:14:56         3         4         3
+15 Rasmus Ejlersen         OK Syd          H21-   01:17:41         2         3         2
+16 Daniel Nissen Pedersen  Faaborg OK      H-20   01:20:12    3*             4*   3*    
+17 Mads Mollerup Benfeldt  Odense OK       H21-   01:23:52                              
+18 Anders Rune Damkjær Ped Odense OK       H21-   02:18:29                              
+   Christian Volmar Skovsg Odense OK       H35-       Disk                              
+
+Gruppe H2 (H40, H45) - [6, 5, 4, 3, 2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Vagn Sørensen           Faaborg OK      H45-   00:45:17    6              6    6     
+2  Karsten Jøhnk           OK Syd          H45-   00:50:14         6         5         6
+3  Jonas Hekman            OK Syd          H40-   00:54:19         5         4         5
+4  Esben Blicher           FROS/Melfar     H40-   00:54:25    5    4    6               
+5  Tommy Iversen           Odense OK       H45-   00:54:50              5         5    4
+6  Bo Mønster Jørgensen    FROS/Melfar     H40-   00:55:42    4    3    4               
+7  Uffe Sudergaard         FROS/Melfar     H45-   00:55:57    3    2    3               
+8  Morten Christensen      Faaborg OK      H45-   00:59:11    2              3    4     
+9  Jakob Q Christensen     Odense OK       H40-   00:59:46              2         3    3
+10 Henning Hedemann        Faaborg OK      H45-   01:00:06    1              2    2     
+11 Søren Mikkelsen         FROS/Melfar     H40-   01:00:56                              
+12 Peter Pallesen          OK Syd          H45-   01:04:22         1         1         2
+13 Lars Strøm Hansen       FROS/Melfar     H40-   01:04:34                              
+14 Johnny Rosenkjær        Faaborg OK      H45-   01:04:54                              
+15 Jakob Dreisig           Odense OK       H40-   01:06:36              1         1    1
+16 Carsten Djursaa         Odense OK       H45-   01:09:12                              
+17 Jesper Madsen           FROS/Melfar     H40-   01:09:32                              
+18 Flemming Christiansen   FROS/Melfar     H45-   01:16:09                              
+
+Gruppe H3 (H16, H50, H55) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Gert Pedersen           FROS/Melfar     H55-   00:51:30    6    6    6               
+2  Allan Grundsøe          Odense OK       H55-   00:52:08              5         6    6
+3  Søren Klingenberg       Faaborg OK      H55-   00:53:01    5              6    5     
+4  Michael Termansen       OK Syd          H50-   00:54:23         5         5         5
+5  Terkel Gydesen          FROS/Melfar     H55-   00:54:40    4    4    4               
+6  Thomas Sørensen         FROS/Melfar     H50-   00:54:45    3    3    3               
+7  Lars Madsen             Odense OK       H55-   00:59:13              2         4    4
+8  Oliver Thorsing Christe Faaborg OK      H-16   01:01:20    4*             6*   5*    
+9  Hans Moos               OK Syd          H55-   01:02:12         2         3         3
+10 Bent Mikkelsen          Faaborg OK      H50-   01:02:27    1              2    2     
+11 Ove Petersen            OK Syd          H55-   01:03:37         1         1         2
+12 Peter Modler Hedemann   Faaborg OK      H-16   01:03:51    1*             1*   1*    
+13 Hans Erik Larsen        Faaborg OK      H55-   01:06:09                              
+14 Kurt Madsen             Odense OK       H55-   01:09:17              1         1    1
+15 Kim Lykkegård Christens Odense OK       H50-   01:20:25                              
+   Verner Jensen           FROS/Melfar     H50-       Disk                              
+
+Gruppe H4 (H60, H65) - [4, 3, 2, 1]
+-----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Gerhard Jensen          Odense OK       H65-   00:42:21              4         4    4
+2  Niels Rabølle           Odense OK       H65-   00:42:32              3         3    3
+3  Niels Møller Petersen   FROS/Melfar     H65-   00:44:01    4    4    2               
+4  Leif Skovgaard Knudsen  Faaborg OK      H65-   00:44:17    3              4    2     
+5  Torben Hansen           FROS/Melfar     H60-   00:45:12    2    3    1               
+6  Finn Jørgensen          Odense OK       H65-   00:45:15                              
+7  Kristian Toustrup       OK Syd          H65-   00:46:11         2         3         2
+8  Jørn H. Klausen         OK Syd          H60-   00:46:23         1         2         1
+9  Sven Spangsberg         Odense OK       H60-   00:47:37                              
+10 Claes Ø. Larsen         Odense OK       H60-   00:51:39                              
+11 Kurt Petersen           Faaborg OK      H65-   00:55:06    1              1    1     
+12 Erik Ljungdahl          Faaborg OK      H65-   00:56:02                              
+13 Lars Kvist Olesen       FROS/Melfar     H60-   00:56:39                              
+14 Birger Jønsson          OK Syd          H65-   01:06:41                              
+   Torben Rasmussen        Odense OK       H60-       Disk                              
+   Sven Madsen             FROS/Melfar     H65-       Disk                              
+
+Gruppe H5 (H70) - [4, 3, 2, 1]
+------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Wolfgang Schulz         Odense OK       H70-   00:38:59              4         4    4
+2  Erik Damgaard           Faaborg OK      H70-   00:40:06    4              4    3     
+3  H. V. Jensen            Odense OK       H70-   00:43:12              3         2    3
+4  Ole Hoffmann            FROS/Melfar     H70-   00:44:47    3    4    2               
+5  Mogens E. Thomsen       OK Syd          H70-   00:47:24         3         3         2
+6  Aksel Skovlyst          Faaborg OK      H70-   00:49:12    2              2    1     
+7  Jørgen Olesen           Odense OK       H70-   00:50:45                              
+8  Hans Larsen             Faaborg OK      H70-   00:51:48                              
+9  Palle Møller Nielsen    Odense OK       H70-   00:55:33                              
+10 Frede Jacobsen          OK Syd          H70-   00:58:00         2         1         1
+11 Søren Hviid             FROS/Melfar     H70-   00:59:14    1    1    1               
+12 Holger Mikkelsen        Odense OK       H70-   01:00:51                              
+13 Olav Christoffersen     Faaborg OK      H70-   01:02:23                              
+14 Gunner Aaskov           Odense OK       H70-   01:06:18                              
+15 Finn Hove               OK Syd          H70-   01:24:54                              
+
+Gruppe H6 (H14) - [4, 3, 2, 1] + [2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sebastian Burattini     Odense OK       H-14   00:50:06              6*        6*   6*
+2  Laurits Egdal Kortegård FROS/Melfar     H-14   00:51:20    6*   6*   4*              
+3  Viktor Bro Fejring      FROS/Melfar     H-14   00:57:49    4*   4*   2               
+4  Rasmus Mindegaard       Faaborg OK      H-14   00:59:09    2              6*   4*    
+5  Anton Johansen          Odense OK       H-14   01:21:58              1         2    4*
+6  Mathias Rimmer Andersen Faaborg OK      H-14   01:31:53    1              4*   1     
+
+Gruppe H7 (H20B, H21B, H35B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Carl Christian Valbjørn FROS/Melfar     H-20B  00:44:18    2    2    2               
+2  Jonathan Ramus          FROS/Melfar     H-20B  00:47:26    2    2    2               
+3  Kristian Traberg Larsen Odense OK       H35-B  00:48:21              2         2    2
+4  Jonas Bo Kirk Egdal     FROS/Melfar     H35-B  00:48:55    2    2    1               
+5  Kristian Baden          Odense OK       H21-B  00:49:15              1         2    2
+6  Nicolai Krabek          Odense OK       H21-B  00:51:39              1         2    2
+7  Sune Skousen            FROS/Melfar     H35-B  00:51:57                              
+8  Lars Haastrup           Odense OK       H21-B  00:53:50                              
+9  Harald Schultz          OK Syd          H35-B  00:57:12         1         2         1
+10 Hans-Henrik Hvelplund   OK Syd          H35-B  01:02:01         1         2         1
+11 Peter Mindegaard        Faaborg OK      H35-B  01:03:39    1              2    1     
+12 Peter M. Sigvardt       Odense OK       H21-B  01:06:40                              
+13 Christoffer Nørgaard Je FROS/Melfar     H21-B  01:11:27                              
+14 Kaj Ole Jensby          Faaborg OK      H35-B  01:12:59    1              1    1     
+15 Kasper Dan Jensen       FROS/Melfar     H35-B  01:13:11                              
+16 Jonas Straarup Christen FROS/Melfar     H21-B  01:20:17                              
+17 Sten Olof Jansson       OK Syd          H35-B  01:32:13         1         1         1
+   Palle Rimmer Pedersen   Faaborg OK      H35-B      Disk                              
+
+Gruppe H8 (H12, H20C, H21C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  August Gabs             FROS/Melfar     H-12   00:25:54    4*   4*   4*              
+2  Mathias Birch Christens Odense OK       H-20C  00:29:30              2         2    2
+3  Jesper Beck Tanderup    Faaborg OK      H21-C  00:31:16    2              2          
+4  Martin Thorwest         OK Syd          H21-C  00:32:50         2                    
+5  Steffen Trog            Faaborg OK      H-20C  00:33:36                              
+6  Magnus Fannar Madsen    FROS/Melfar     H-12   00:39:10    2*   2*   2*              
+7  Daniel Mikkelsen        FROS/Melfar     H-12   00:39:25                              
+8  Henning Pedersen        Faaborg OK      H21-C  00:52:12                              
+9  Tobias Rohde Jørgensen  FROS/Melfar     H-12   00:54:41                              
+
+Gruppe D1 (D20, D21, D35) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ita Klingenberg         Faaborg OK      D21-   00:44:18    6              6    6     
+2  Inge S. Knudsen         Faaborg OK      D21-   00:46:57    5              5    5     
+3  Sarah Kathrine Nissen P Faaborg OK      D-20   00:52:09    6*             6*   6*    
+4  Christina Damgaard Niel Odense OK       D21-   00:57:02              6         3    6
+5  Merete Spangsberg Niels Odense OK       D21-   00:57:26              5         2    5
+6  Mette Riis Jensen       Odense OK       D21-   01:16:14              4         1    4
+7  Mette Lindahl           FROS/Melfar     D35-   01:24:01    3    6    3               
+8  Marianne Skousen        FROS/Melfar     D35-   01:24:34    2    5    2               
+
+Gruppe D2 (D40, D45) - [6, 5, 4, 3, 2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lone Fyhn Olesen        Odense OK       D45-   00:55:23              6         6    6
+2  Ulla Pallesen           OK Syd          D45-   01:08:29         6         6         5
+3  Inger Andreasen         FROS/Melfar     D45-   01:09:12    6    5    5               
+4  Helle Termansen         OK Syd          D45-   01:09:55         4         5         4
+5  Karen Bülow-Olsen       Faaborg OK      D40-   01:10:04    5              4    5     
+6  Anni Plauborg           Odense OK       D45-   01:18:47              4         4    3
+7  Heidi Granby            Faaborg OK      D40-   01:21:01    4              3    3     
+8  Rikke Brandt Jespersen  Odense OK       D40-   01:22:17              3         2    2
+9  Anja Modler Hedemann    Faaborg OK      D45-   01:24:58    3              2    1     
+10 Lisette Christiansen    Odense OK       D45-   01:25:10                              
+11 Susanne Knudsen         FROS/Melfar     D45-   01:25:45    2    3    2               
+
+Gruppe D3 (D16, D50, D55) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Matilde Skousen         FROS/Melfar     D-16   00:52:28    8*   8*   8*              
+2  Hanne Ljungberg         OK Syd          D55-   00:53:12         5         6         6
+3  Maya Jensen             FROS/Melfar     D-16   00:57:12    6*   5*   6*              
+4  Ethna Cavanagh          Faaborg OK      D50-   01:00:38    4              5    6     
+5  Lisbeth Skovbjerg       Odense OK       D50-   01:02:11              4         5    5
+6  Lotte Jensen            FROS/Melfar     D50-   01:05:11    3    3    3               
+7  Maria Bargmeyer         OK Syd          D-16   01:05:45         2         6*        6*
+8  Anne-Marie Jensen       OK Syd          D50-   01:07:03         1         3         3
+9  Ellen Møller            Faaborg OK      D55-   01:30:14    2              2    4     
+10 Helle Sørensen          FROS/Melfar     D50-   01:33:31                              
+11 Karen Lise Bøgh         Faaborg OK      D55-   02:06:37    1              1    3     
+
+Gruppe D4 (D60, D65) - [4, 3, 2, 1]
+-----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Inge Price Jensen       Odense OK       D60-   00:36:24              4         4    4
+2  Lis Knudsen             Faaborg OK      D65-   00:48:25    4              4    3     
+3  Lotte Hjort             Faaborg OK      D65-   00:50:06    3              3    2     
+4  Gitte Spangsberg        Odense OK       D60-   01:04:48              3         1    3
+5  Birte Hove              OK Syd          D65-   01:10:21         4         2         2
+
+Gruppe D5 (D70) - [4, 3, 2, 1]
+------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Musse Brage             FROS/Melfar     D70-   00:56:54    4    4    4               
+2  Inger Andersen          Faaborg OK      D70-   00:57:02    3              4    4     
+3  Grethe Hviid            FROS/Melfar     D70-   00:57:15    2    3    3               
+4  Silke Bolbro            OK Syd          D70-   00:58:17         2         3         4
+5  Edit Thomsen            OK Syd          D70-   01:01:06         1         2         3
+6  Tove Skovlyst           Faaborg OK      D70-   01:05:14    1              1    3     
+7  Rita Christoffersen     Faaborg OK      D70-   01:11:13                              
+
+Gruppe D6 (D14, D16B) - [4, 3, 2, 1] + [2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Line Skousen            FROS/Melfar     D-14   00:42:11    6*   6*   6*              
+2  Amanda modler Hedemann  Faaborg OK      D-14   00:43:08    4*             6*   6*    
+3  Lina Granby             Faaborg OK      D-16B  01:05:17    2              3    3     
+
+Gruppe D7 (D20B, D21B, D35B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Katrine Rimmen Thomsen  Odense OK       D-20B  00:45:42              2         2    2
+2  Anne Grethe Eriksen     FROS/Melfar     D35-B  00:52:56    2    2    2               
+3  Anna Klingenberg        Faaborg OK      D-20B  01:01:40    2              2    2     
+4  Pia Damkjær Pedersen    Odense OK       D21-B  01:11:00              2         2    2
+5  Henriette Mikkelsen     FROS/Melfar     D35-B  01:19:44    2    2    1               
+6  Jeanette Dreisig        Odense OK       D35-B  01:42:39              1         1    2
+
+Gruppe D8 (D14B, D21C) - [2, 2, 1, 1]
+-------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Tanja Johannsen         OK Syd          D21-C  00:34:02         2         2         2
+2  Jenni Volmar Skovsgaard Odense OK       D21-C  00:34:30              2         2     
+3  Karen Q Frederiksen     Odense OK       D-14B  00:39:41              2         2    2
+4  Henriette Lunde Ellekil Odense OK       D21-C  00:40:00                              
+5  Karina Bak Olesen       Faaborg OK      D21-C  00:43:48    2                         
+6  Lone Wolff Andersen     Faaborg OK      D21-C  00:50:18                              
+7  Susanne Bargmeyer       OK Syd          D21-C  01:02:58                              
+
+Gruppe 9 (H10, D10, Begynder) - [1, 1, 1, 1, 1, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Carsten Granby          Faaborg OK      Begynd 00:16:21    1              1    1     
+2  Magnus Lindahl          FROS/Melfar     H-10   00:16:30    1    1    1               
+3  Johannes Nørgaard Peuli Faaborg OK      H-10   00:20:18    1              1    1     
+4  Aske Hedemann           Faaborg OK      H-10   00:20:40    1              1    1     
+5  Johanna K. Madsen       FROS/Melfar     D-10   00:24:02    1    1    1               
+6  Augustas Bloze          Odense OK       H-10   00:24:29              1         1    1
+7  Jakob Skousen           FROS/Melfar     H-10   00:27:11    1    1    1               
+8  Sofie Rohde Jørgensen   FROS/Melfar     Begynd 00:31:59                              
+9  Christian Rohde Jørgens FROS/Melfar     Begynd 00:32:02                              
+10 Mette Jensen            FROS/Melfar     D-10   00:34:10                              
+11 Benjamin Krabek         Odense OK       H-10   00:35:28              1         1    1
+12 Anna-Marie Kühl         OK Syd          Begynd 00:35:55         1         1         1
+13 Bente Honnens           OK Syd          Begynd 00:36:58         1         1         1
+14 Bettina Nissen Pedersen Faaborg OK      Begynd 00:37:43                              
+15 Zelda Marie Damkjær Ped Odense OK       D-10   00:40:57              1         1    1
+

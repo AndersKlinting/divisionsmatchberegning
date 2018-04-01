@@ -1,0 +1,10 @@
+Disse test data kan bruges til at simulere et løb idet resultatfiler er gemt løbende (resultat 1-14).
+
+Åbn programmet
+vælg en divi-fil
+vælg resultat.csv
+opsæt autoprint mv
+
+start simulerløb.bat ved at dobbeltklikke.
+Den vil kopiere de forskellige resultatfiler oveni resultat.csv og på den måde simulere at man genererer løbsdata på ny.
+Man skal blot trykke <Enter> imellem hver fil når man er klar til den næste.

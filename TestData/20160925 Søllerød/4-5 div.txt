@@ -1,0 +1,232 @@
+Matcher (4 division)
+--------------------
+1 : Amager OK - OK73                               :    54 -    55
+2 : Amager OK - OK Skærmen Værløse                 :    52 -    58
+3 : Amager OK - PI-København                       :    49 -    54
+4 : OK73 - OK Skærmen Værløse                      :    49 -    55
+5 : OK73 - PI-København                            :    49 -    59
+6 : OK Skærmen Værløse - PI-København              :    49 -    62
+
+Stilling
+--------
+                                               score      point
+PI-København                             :   175 -   147      6
+OK Skærmen Værløse                       :   162 -   163      4
+OK73                                     :   153 -   168      2
+Amager OK                                :   155 -   167      0
+
+                                     m1    m2    m3    m4    m5    m6   
+                                    ----- ----- ----- ----- ----- ----- 
+H1 (H -20, H 21-, H 35-)            15-0  15-3  13-8   0-6   0-15  3-15 
+H2 (H 40-, H 45-)                    6-3   7-2   5-5   4-3   3-6   2-7  
+H3 (H 50-, H 55-)                    5-4   5-5   3-7   3-6   3-6   4-6  
+H4 (H 60-, H 65-)                    5-5   3-7   3-7   5-5   3-7   3-7  
+H5 (H 70-)                           2-7   2-7   4-0   4-6   7-0   7-0  
+H6 (H -14)                           0-0   0-0   0-0   0-0   0-0   0-0  
+H7 (H -20B, H 21-B, H 35-B)          1-4   2-2   1-4   4-1   4-2   1-4  
+H8 (H -12, H -14B, H -20C, H 21-C)   2-1   2-1   2-1   1-2   1-2   2-1  
+D1 (D -20, D 21-, D 35-)             7-0   5-5   5-4   0-7   0-4   5-4  
+D2 (D 40-, D 45-)                    0-4   0-4   0-7   4-3   2-7   2-7  
+D3 (D -16, D 50-, D 55-)             2-7   4-0   4-3   7-0   7-2   0-4  
+D4 (D 60-, D 65-)                    2-7   2-7   4-0   7-3   7-0   7-0  
+D5 (D 70-)                           0-7   0-7   0-0   5-5   7-0   7-0  
+D6 (D -14, D -16B)                   0-0   0-0   0-0   0-0   0-0   0-0  
+D7 (D -20B, D 21-B, D 35-B)          3-3   2-4   2-4   2-4   2-4   2-4  
+D8 (D -12, D -14B, D 21-C)           2-1   1-2   1-2   1-2   1-2   2-1  
+9  (H -10, D -10, H -12B, Begynder)  2-2   2-2   2-2   2-2   2-2   2-2  
+Ialt:                               54-55 52-58 49-54 49-55 49-59 49-62 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [6, 5, 4, 3, 2, 1]
+----------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Arnau Ormella           Amager OK       H21    01:13:22    6    6    6               
+2  Sebastian Bang          PI-København    H21    01:15:52              5         6    6
+3  Lasse Grønnebæk         Amager OK       H21    01:17:21    5    5    4               
+4  Thomas Brinck           Amager OK       H35    01:19:17    4    4    3               
+5  Andreas Schrøder        Amager OK       H20    01:21:23                              
+6  Jakub Jirasek           Amager OK       H21    01:25:16                              
+7  Jacob Furu              PI-København    H21    01:26:42              2         5    5
+8  Bjørn Lind              PI-København    H21    01:33:01              1         4    4
+9  Tobias Hooge            OK Skærmen Værl H35    02:05:08         3         6         3
+   Peter Falch Bache       PI-København    H21      Fejlst                              
+
+Gruppe H2 (H 40-, H 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Christian Olsen         Amager OK       H45    00:52:09    4    4    4               
+2  Jørn Lind               PI-København    H45    00:56:38              3         4    4
+3  Jacob Sucksdorff        OK73            H45    01:08:19    3              4    3     
+4  Jacob Spange Mortensen  PI-København    H40    01:18:08              2         2    3
+5  Peter Rud Frankild      Amager OK       H45    01:27:29    2    3    1               
+6  Lars Christoffersen     OK Skærmen Værl H45    01:28:35         2         3         2
+   Jesper Sørensen         OK Skærmen Værl H45    Ej start                              
+
+Gruppe H3 (H 50-, H 55-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Bruno Stub              PI-København    H55    00:52:37              4         4    4
+2  Michael E. Laustsen     OK Skærmen Værl H50    01:03:13         4         4         3
+3  Michael Hjorth          OK73            H55    01:09:15    4              3    3     
+4  Jan Kofoed Nielsen      PI-København    H50    01:12:28              3         2    2
+5  Ernst Poulsen           Amager OK       H50    01:18:05    3    3    2               
+6  Flemming Sparre Sørense Amager OK       H50    01:25:37    2    2    1               
+7  Niels Hamborg Jensen    OK Skærmen Værl H55    01:31:05         1         2         1
+   Jørn Andreasen          OK73            H55      Fejlst                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Torkil Hansen           PI-København    H60    00:38:04              4         4    4
+2  Peter Sørensen          PI-København    H60    00:39:16              3         3    3
+3  Bent Johansen           OK73            H60    00:45:23    4              4    2     
+4  Hakon Mosbech           OK Skærmen Værl H60    00:49:48         4         3         2
+5  Leif Jensen             OK Skærmen Værl H65    00:50:29         3         2         1
+6  Rolf Andersen           Amager OK       H60    00:54:46    3    2    2               
+7  Peter Hofman-Bang       Amager OK       H65    01:00:14    2    1    1               
+8  Jens Erik Larsen        OK73            H60    01:01:02    1              1    1     
+9  Erik Madsen             OK73            H60    01:01:25                              
+10 Jan Bartnik             Amager OK       H65    01:06:05                              
+11 Henrik Weirauch Kristen OK73            H65    01:19:40                              
+12 Søren Jensen            PI-København    H65    01:25:47                              
+13 Bjarne Sørensen         Amager OK       H65    02:33:16                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mogens Hansen           OK Skærmen Værl H70    00:32:39         4         4         4
+2  Søren Thoustrup Jørgens OK73            H70    00:37:43    4              3    4     
+3  Steen Sørensen          OK Skærmen Værl H70    00:39:36         3         2         3
+4  Gunner Jørgensen        OK73            H70    00:43:02    3              1    3     
+5  Bent Mortensen          OK73            H70    00:47:46                              
+6  Svend Erik Jensen       OK Skærmen Værl H70    00:48:30                              
+7  Knud Torm               OK Skærmen Værl H70    00:49:06                              
+8  Leif Kajberg            OK73            H70    00:49:07                              
+9  Erik Nielsen            Amager OK       H70    01:03:51    2    2    4               
+10 Jørgen Poulsen          OK73            H70    01:13:23                              
+
+Gruppe H6 (H -14) - [2, 1]
+--------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ronnie Hjorth           OK73            H35B   00:42:53    2              2    2     
+2  Martin Hjorth           OK73            H35B   00:42:59    2              2    2     
+3  Henrik Wiberg           PI-København    H35B   00:46:04              2         1    2
+4  Karsten Jørgensen       PI-København    H35B   00:46:45              2         1    2
+5  Niels Dalum Hansen      OK73            H21B   00:49:06                              
+6  Jakub Kolarik           OK73            H35B   00:51:16                              
+7  Søren Christensen       OK Skærmen Værl H35B   00:58:37         2         1         1
+8  Christian Bovet         OK73            H35B   01:03:55                              
+9  Kenn Jakobsen           Amager OK       H35B   01:15:29    1    2    1               
+   Jesper Kracht           PI-København    H35B   Ej start                              
+   Kim Arendal Andersen    Amager OK       H35B     Fejlst                              
+   Tobias Vognsen Bajard   OK Skærmen Værl H20B     Fejlst                              
+   Henrik Jørgensen        OK Skærmen Værl H35B     Fejlst                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Andreas Sparre Højsted  Amager OK       H14B   00:30:12    2    2    2               
+2  Kurt Jensen             OK Skærmen Værl H21C   00:35:18         1         2         2
+3  Michael Bruun-Pedersen  Amager OK       H21C   00:37:42                              
+4  Søren Bloch             PI-København    H21C   00:39:31              1         2    1
+5  Morten Christensen      PI-København    H21C   00:40:26                              
+6  Valdemar Aske Gaardsted Amager OK       H20C   00:43:49                              
+7  Verner Johansen         OK73            H21C   01:11:22    1              1    1     
+8  Wagn Winkel             OK Skærmen Værl H21C   01:58:21                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mette Stub              PI-København    D21    00:53:10              4         4    4
+2  Karoline Hooge          OK Skærmen Værl D21    01:00:34         4         4         3
+3  Julie Keller            Amager OK       D21    01:00:49    4    3    3               
+4  Roser Marre Badallo     Amager OK       D21    01:06:09    3    2    2               
+5  Eva Hemmersam           OK Skærmen Værl D35    01:09:32         1         3         2
+6  Ida Mosbech Smith       OK Skærmen Værl D35    01:16:25                              
+
+Gruppe D2 (D 40-, D 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Elin Nørgård Kracht     PI-København    D45    00:59:24              4         4    4
+2  Camilla Rath Nielsen    PI-København    D40    01:03:28              3         3    3
+3  Camilla Bøgevig Larkai  OK73            D40    01:51:38    4              4    2     
+4  Ulla Jacobsen           OK Skærmen Værl D45    01:57:38         4         3         2
+   Heidi Olander Petersen  Amager OK       D40      Fejlst                              
+   Tina Frølich            Amager OK       D45      Fejlst                              
+
+Gruppe D3 (D -16, D 50-, D 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Else Gudme              OK73            D50    00:53:46    4              4    4     
+2  Anne Mette Oddsen       OK73            D50    01:02:33    3              3    3     
+3  Mette Uhre Lang         Amager OK       D50    01:07:30    2    4    4               
+4  Susan Houmark Stub      PI-København    D55    01:10:28              3         2    4
+   Naja Sørensen           OK Skærmen Værl D50    Ej start                              
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Elsa Bratholm           OK73            D65    00:46:48    4              4    4     
+2  Alice Bech              OK73            D65    00:51:53    3              3    3     
+3  Ulla Hooge              OK Skærmen Værl D65    00:52:03         4         2         4
+4  Vivi Hansen             OK Skærmen Værl D65    01:11:43         3         1         3
+5  Anne Keller             Amager OK       D60    01:49:56    2    2    4               
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Inge Madsen             OK73            D70    00:40:11    4              4    4     
+2  Ruth Hansen             OK Skærmen Værl D70    00:58:10         4         3         4
+3  Kirsten Witt            OK Skærmen Værl D70    01:24:09         3         2         3
+4  Ulla Valnert            OK73            D70    01:33:56    3              1    3     
+
+Gruppe D6 (D -14, D -16B) - [2, 1]
+----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Line Stub               PI-København    D21B   00:36:33              2         2    2
+2  Nikita Bang             PI-København    D21B   00:44:16              2         2    2
+3  Lea Krag Fogh           OK Skærmen Værl D21B   00:47:21         2         2         1
+4  Charlotte Lykke         OK Skærmen Værl D35B   00:55:10         2         2         1
+5  Danja Lykke Kristensen  Amager OK       D35B   00:59:14    2    1    1               
+6  Lone Holm Hansen        OK73            D35B   01:10:27    2              1    1     
+7  Heidi Nielsen           Amager OK       D35B   01:15:10    1    1    1               
+8  Lærke N.Hansen          Amager OK       D21B   01:20:48                              
+9  Henny Rosenberg         OK73            D35B   01:22:26    1              1    1     
+10 Marianne Bredberg       OK Skærmen Værl D35B   01:27:45                              
+11 Inge Christiansen       Amager OK       D35B   01:42:20                              
+   Louise Munch Diemar     OK Skærmen Værl D35B     Fejlst                              
+
+Gruppe D8 (D -12, D -14B, D 21-C) - [2, 1]
+------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Anna Mosbech            OK Skærmen Værl D21C   00:24:34         2         2         2
+2  Joo Carstens            PI-København    D21C   00:32:48              2         2    1
+3  Anni Lind               PI-København    D21C   00:33:59                              
+4  Christina Nilsson       Amager OK       D21C   00:36:12    2    1    1               
+5  Benthe Jensen           OK Skærmen Værl D21C   00:51:43                              
+6  Fie Gudme               OK73            D12    01:00:49    1              1    1     
+7  Gitte Rix               Amager OK       D21C   01:12:37                              
+   Bente Ravn              Amager OK       D21C   Ej start                              
+
+Gruppe 9 (H -10, D -10, H -12B, Begynder) - [1, 1, 1, 1]
+--------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Listbeth Haals          PI-København    Beg    00:23:37              1         1    1
+2  Valdemar Willumsen      OK Skærmen Værl H10    00:24:15         1         1         1
+3  Jørn Clemmensen         OK Skærmen Værl Beg    00:24:23         1         1         1
+4  Silje Oddsen            OK73            Beg    00:24:33    1              1    1     
+5  Sebastian Sparre Højste Amager OK       Beg    00:28:40    1    1    1               
+6  Merete Bech             OK73            Beg    00:31:36    1              1    1     
+7  Freja Gudme             OK73            Beg    00:31:38                              
+8  Nora Marie Poulsen Fugl Amager OK       Beg    00:33:10    1    1    1               
+9  Pernille Sørensen       Amager OK       Beg    00:35:08                              
+10 Bente Dahl              PI-København    Beg    00:48:18              1         1    1
+   Søren Nielsen Ravn      Amager OK       Beg    Ej start                              
+

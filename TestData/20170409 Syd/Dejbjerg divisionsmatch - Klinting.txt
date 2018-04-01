@@ -1,0 +1,330 @@
+Matcher (1 division)
+--------------------
+1 : Kolding OK - OK GORM                           :   144 -   100
+2 : Kolding OK - OK H.T.F.                         :   149 -    95
+3 : Kolding OK - OK Snab                           :   123 -   126
+4 : OK GORM - OK H.T.F.                            :   127 -   111
+5 : OK GORM - OK Snab                              :   106 -   136
+6 : OK H.T.F. - OK Snab                            :   102 -   138
+
+Stilling
+--------
+                                               score      point
+OK Snab                                  :   400 -   331      6
+Kolding OK                               :   416 -   321      4
+OK GORM                                  :   333 -   391      2
+OK H.T.F.                                :   308 -   414      0
+
+                                      m1      m2     m3      m4      m5      m6    
+                                    ------- ------ ------- ------- ------- ------- 
+H1 (H20, H21, H35)                   24-14   28-11  16-23   21-17   10-28   10-29  
+H2 (H40, H45)                        15-6    15-6   10-11   12-9     6-15    6-15  
+H3 (H16, H50, H55)                   17-7    17-7   10-14    9-15    7-17    8-16  
+H4 (H60, H65)                         3-7     3-7    3-7     6-4     7-3     7-3   
+H5 (H70)                              4-6     3-7    5-5     5-5     7-3     7-3   
+H6 (H14, H16B)                       10-3    10-0   10-2     9-0     9-2     0-4   
+H7 (H20B, H21B, H35B)                 4-5     4-5    5-4     5-4     5-4     5-4   
+H8 (H12, H14B, H21C)                  4-3     5-3    4-4     3-4     3-4     4-4   
+D1 (D20, D21, D35)                   13-10   13-11  14-9    11-12   12-9    13-9   
+D2 (D40, D45)                        12-9    12-9   13-7    11-10   13-7    12-8   
+D3 (D16, D50, D55)                   14-10   18-6   13-11   15-6    11-13    6-18  
+D4 (D60, D65)                         0-7     0-4    0-7     5-4     3-7     4-5   
+D5 (D70)                              5-5     5-5    6-3     5-5     6-3     6-3   
+D6 (D14)                              6-0     4-6    4-6     0-6     0-6     4-6   
+D7 (D20B, D21B, D35B)                 6-3     6-3    5-4     4-5     3-6     5-4   
+D8 (D12, D14B, D20C, D21C)            4-3     3-2    2-6     4-2     2-6     2-4   
+9  (H10, D10, H12B, D12B, Begynder)   3-2     3-3    3-3     2-3     2-3     3-3   
+Ialt:                               144-100 149-95 123-126 127-111 106-136 102-138 
+
+Gruppe H1 (H20, H21, H35) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jesper Fenger-Grøn      OK Snab         H21    00:55:43              8         8    8
+2  Søren Eg Staugaard      Kolding OK      H20    00:57:00   10*  10*   9*              
+3  Martin Busch            OK Snab         H35    00:57:43              6         7    7
+4  Kristian Blok           OK Snab         H21    00:58:10              5         6    6
+5  Mathias H. Ringive      OK GORM         H21    00:59:39    7              8    5     
+6  Jacob A. Daugaard       Kolding OK      H21    01:00:22    6    7    4               
+7  Rasmus Rasmussen        OK Snab         H20    01:05:34              4*        6*   7*
+8  Jens Christian Gammeljo OK Snab         H20    01:05:58                        1*   1*
+9  Thomas Blok             OK Snab         H20    01:06:29                              
+10 Peter D. Frandsen       Kolding OK      H21    01:10:38    5    6    2               
+11 Jens Kristian Laursen   OK GORM         H35    01:10:49    4              7    3     
+12 Stig R. Knudsen         OK GORM         H35    01:14:08    3              6    2     
+13 Nicklas Finderup Jessen OK H.T.F.       H21    01:15:47         5         5         4
+14 Kasper Lynge Krogh      Kolding OK      H20    01:16:51    3*   5*   1               
+15 Oskar Schrøder Larsen   OK H.T.F.       H20    01:18:49         3         6*        3
+16 Peter H Juhl            OK H.T.F.       H35    01:23:41         2         3         2
+17 Peter Klogborg          OK H.T.F.       H20    01:24:25         1         3*        1
+18 Kim Karlskov Clausen    OK H.T.F.       H35    01:37:01                              
+   Holger V Petersen       OK GORM         H21        Disk                              
+   Michael Buch Lorenzen   OK GORM         H35        Disk                              
+
+Gruppe H2 (H40, H45) - [6, 5, 4, 3, 2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Torben Kristensen       OK Snab         H45    00:44:53              6         6    6
+2  Anders Dalgaard         Kolding OK      H40    00:46:50    6    6    5               
+3  John Kristensen         OK Snab         H45    00:48:48              4         5    5
+4  Nicolai Wind            Kolding OK      H40    00:48:53    5    5    3               
+5  Henrik Uhlemann         Kolding OK      H45    00:50:12    4    4    2               
+6  Michael Thygesen        OK Snab         H45    00:51:05              1         4    4
+7  Jens Liengård           OK Snab         H45    00:53:58                              
+8  Peter Rene Sebelius     OK H.T.F.       H40    00:54:14         3         6         3
+9  Kristian M. Øllgaard    OK GORM         H40    00:56:18    3              5    3     
+10 Bjarke Wolf             OK GORM         H40    00:56:20    2              4    2     
+11 Lars Pagh               OK Snab         H45    00:58:37                              
+12 Jacob Bang              OK GORM         H45    00:59:25    1              3    1     
+13 Jens Peder Jensen       OK H.T.F.       H40    01:03:01         2         2         2
+14 Lars Klogborg           OK H.T.F.       H45    01:03:48         1         1         1
+15 Martin Ringive          OK GORM         H45    01:09:50                              
+16 Christian Schrøder      OK H.T.F.       H45    01:15:30                              
+   Peter Gammeljord        OK Snab         H45        Disk                              
+
+Gruppe H3 (H16, H50, H55) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Flemming Jørgensen      OK Snab         H50    00:38:13              6         6    6
+2  Jeppe Liengård Casperse OK Snab         H16    00:39:59              7*        7*   7*
+3  Lars Eeg Højholt        Kolding OK      H50    00:40:13    6    6    4               
+4  Gustav Vinther Østermar Kolding OK      H16    00:40:30    7*   7*   4*              
+5  Thomas Uhlemann         Kolding OK      H50    00:42:18    4    4    2               
+6  Jes Aage Henning        Kolding OK      H50    00:43:31                              
+6  Gunnar P. Friis         OK H.T.F.       H50    00:43:31         3         6         4
+8  Niels Nygaard Jensen    OK Snab         H50    00:43:39              1         4    3
+9  Claus Grøn Lyngby       OK GORM         H50    00:43:48    3              5    3     
+10 Per Filskov             OK Snab         H55    00:44:33                              
+11 Arne Bertelsen          OK H.T.F.       H55    00:46:02         2         4         2
+12 Søren Germann           OK GORM         H55    00:47:24    2              3    2     
+13 Karsten Blok            OK Snab         H55    00:48:03                              
+14 Louis H. Jensen         OK H.T.F.       H16    00:49:45         2*        4*        2*
+15 Mathias Finderup Jessen OK H.T.F.       H16    00:49:57                   1*         
+16 Jens Kr. V. Petersen    OK GORM         H16    00:50:32    2*             1    2*    
+17 Per Eg Pedersen         Kolding OK      H50    00:50:46                              
+18 Brian Knudsen           OK Snab         H50    00:52:02                              
+19 Peter Føns Knudsen      OK GORM         H55    00:53:01                              
+20 Erik Krogh              Kolding OK      H55    00:53:56                              
+21 Lars Thaasti            OK Snab         H50    00:55:24                              
+22 Lars T. Munch           OK Snab         H55    01:01:44                              
+23 Søren Bertelsen         OK H.T.F.       H55    01:06:54                              
+24 Alf Holger Petersen     OK GORM         H50    01:16:22                              
+25 Søren Maarup            Kolding OK      H55    11:26:56                              
+   Jørgen Damgaard         OK GORM         H50        Disk                              
+   Frederick Thaasti       OK Snab         H16        Disk                              
+
+Gruppe H4 (H60, H65) - [4, 3, 2, 1]
+-----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ole Binder              OK GORM         H60    00:40:50    4              4    4     
+2  Finn Jørgensen Aaris    OK H.T.F.       H65    00:41:19         4         3         4
+3  Poul Erik Buch          OK GORM         H65    00:41:34    3              2    3     
+4  Søren Dall              OK H.T.F.       H60    00:42:31         3         1         3
+5  Hans Christian Strib    OK GORM         H65    00:43:10                              
+6  Poul A. Christensen     OK Snab         H65    00:44:21              4         2    2
+7  Flemming D. Andersen    OK GORM         H65    00:45:44                              
+8  Ib Jensen               OK GORM         H60    00:47:13                              
+9  Niels Erik Kofoed       OK H.T.F.       H65    00:47:45                              
+10 Keld Rasmussen          OK H.T.F.       H65    00:48:21                              
+11 Ove B. Therkildsen      OK H.T.F.       H65    00:49:22                              
+12 Henning Schou           OK Snab         H60    00:50:13              3         1    1
+13 Knud Jespersen          OK Snab         H60    00:51:09                              
+14 Jack Skrydstrup         Kolding OK      H65    00:53:33    2    2    2               
+15 Flemming Roel Jensen    Kolding OK      H65    01:00:13    1    1    1               
+16 Palle Wind              Kolding OK      H65    01:07:18                              
+
+Gruppe H5 (H70) - [4, 3, 2, 1]
+------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Karl Kristian Terkelsen OK GORM         H70    00:34:58    4              4    4     
+2  Hans Nielsen            OK H.T.F.       H70    00:43:04         4         3         4
+3  Jens Jørgen Kramer      OK H.T.F.       H70    00:43:13         3         2         3
+4  Henning Frandsen        Kolding OK      H70    00:44:11    3    2    4               
+5  Bent Nielsen            OK GORM         H70    00:45:19    2              1    3     
+6  Vagn Hansen             OK H.T.F.       H70    00:45:23                              
+6  Kaj Ove Rasmussen       OK H.T.F.       H70    00:45:23                              
+8  Jørn Thomsen            OK Snab         H70    00:46:04              3         2    2
+9  Peter Sølling           OK H.T.F.       H70    00:47:47                              
+10 Jørn F. Andersen        OK H.T.F.       H70    00:47:56                              
+11 Erland Skøt             OK H.T.F.       H70    00:51:09                              
+12 Henning Larsen          OK Snab         H70    00:51:36              2         1    1
+13 Niels J. Møller Hansen  Kolding OK      H70    00:55:56    1    1    1               
+14 Per F. Henriksen        OK H.T.F.       H70    00:57:55                              
+15 Keld B. Nielsen         OK H.T.F.       H70    01:02:49                              
+16 Niels Erik Uhlemann     Kolding OK      H70    01:05:08                              
+17 Erik Thomsen            OK Snab         H70    01:06:26                              
+18 Bent Jacobsen           Kolding OK      H70    01:12:43                              
+19 Leif Møller             Kolding OK      H70    01:17:54                              
+
+Gruppe H6 (H14, H16B) - [4, 3, 2, 1] + [2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Niels Dalgaard          Kolding OK      H14    00:38:06    6*   6*   6*              
+2  Jens Dalgaard           Kolding OK      H14    00:47:08    4*   4*   4*              
+3  Filip K. Holm           OK GORM         H16B   00:59:45    2              4    4     
+4  Jonathan Lind Barfoed   Kolding OK      H16B   01:01:16                              
+5  Daniel K. Holm          OK GORM         H14    01:13:26    1              5*   5*    
+6  Markus Westergaard      OK Snab         H16B   01:19:42              2         2    4
+
+Gruppe H7 (H20B, H21B, H35B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Henrik Holm             OK GORM         H21B   00:34:55    2              2    2     
+2  Jakob E Juhl            OK H.T.F.       H21B   00:39:55         2         2         2
+3  Tobias Bengtsen         OK GORM         H20B   00:42:53    2              2    2     
+4  Lars Brøchner Sylverste OK H.T.F.       H21B   00:45:51         2         1         2
+5  Anders Thygesen         Kolding OK      H35B   00:46:56    2    2    2               
+6  Rasmus Slot Fenger-Grøn OK Snab         H20B   00:50:52              2         2    2
+7  Mads E Juhl             OK H.T.F.       H20B   00:52:25         1         1         1
+8  Jacob Barfoed           Kolding OK      H35B   00:54:31    1    1    2               
+9  Jesper Jacobsen         Kolding OK      H35B   00:56:36    1    1    1               
+10 Flemming Jessen         OK H.T.F.       H35B   00:57:05                              
+11 Kent Østermark Jensen   Kolding OK      H35B   00:57:10                              
+12 Sven Erik Jakobsen      OK GORM         H35B   00:57:26    1              1    1     
+13 Peter Skov Nielsen      OK Snab         H35B   00:57:38              1         1    1
+14 Henrik Hauge Thomsen    OK Snab         H35B   00:59:22              1         1    1
+15 Gunnar Hansen           Kolding OK      H35B   01:02:43                              
+16 Morten Klogborg         OK H.T.F.       H21B   01:10:47                              
+17 Villy Kjeldsen          OK Snab         H35B   01:26:44                              
+18 Ove Hvam Andersen       OK GORM         H35B   01:47:27                              
+   Thomas Lyhne            Kolding OK      H35B       Disk                              
+
+Gruppe H8 (H12, H14B, H21C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Axel Örnhagen Jørgensen OK Snab         H12    00:26:16              4*        4*   4*
+2  Christian Skaarup Uhlem Kolding OK      H12    00:28:38    4*   4*   3*              
+3  Lasse Klogborg          OK H.T.F.       H12    00:37:23         3*        4*        3*
+4  Erik Jensen             OK GORM         H21C   00:39:09    2              2    2     
+5  Jan Lottenburger        Kolding OK      H21C   00:39:53         1    1               
+6  Benny Christensen       OK H.T.F.       H21C   00:46:18                             1
+7  Julius Bengtsen         OK GORM         H14B   00:55:17    1              1    1     
+
+Gruppe D1 (D20, D21, D35) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Josefine Lind           OK GORM         D20    00:45:51    8*             8*   8*    
+2  Lise Termansen          OK H.T.F.       D20    00:47:40         8*        6*        8*
+3  Ulrika Örnhagen Jørgens OK Snab         D21    00:52:30              6         5    5
+4  Mette Skovhus           Kolding OK      D35    00:58:29    5    5    5               
+5  Nicoline O. Lorenzen    Kolding OK      D21    01:02:49    4    4    4               
+6  Charlotte Angel Christe OK Snab         D21    01:04:14              3         4    4
+7  Christa Blach Madsen    Kolding OK      D20    01:05:36    4*   4*   4*              
+8  Maja B. Kristensen      OK H.T.F.       D21    01:08:29         2         4         3
+9  Maja H. Ringive         OK GORM         D20    01:09:56    2              3    4*    
+10 Henriette Karlskov Clau OK H.T.F.       D21    01:13:15         1         2         2
+11 Trine Eg Staugaard      Kolding OK      D20    01:18:10              1*              
+
+Gruppe D2 (D40, D45) - [6, 5, 4, 3, 2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Marianne Lynge Krogh    Kolding OK      D40    00:45:25    6    6    6               
+2  Pernille Buch           OK GORM         D40    00:49:45    5              6    6     
+3  Diana Finderup Jessen   OK H.T.F.       D45    00:52:26         5         5         6
+4  Susanne Højholt         Kolding OK      D45    00:53:15    4    4    5               
+5  Bente H. Ringive        OK GORM         D45    00:58:04    3              4    5     
+6  Irene Gammeljord        OK Snab         D40    01:01:14              4         4    5
+7  Tina O. Haarup          OK H.T.F.       D45    01:03:20         3         3         4
+8  Linda Slot Fenger-Grøn  OK Snab         D45    01:08:17              3         3    3
+9  Camilla Dalgaard        Kolding OK      D40    01:10:35    2    2    2               
+10 Lisbeth Callesen        OK H.T.F.       D45    01:10:36         1         2         2
+11 Inger Bønding           OK GORM         D45    01:25:18    1              1    2     
+
+Gruppe D3 (D16, D50, D55) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Anette Lund             OK GORM         D50    00:38:10    6              6    6     
+2  Marie Louise Henning    Kolding OK      D16    00:45:32    7*   8*   8*              
+3  Johanne Kaysen Thomsen  OK Snab         D16    00:45:54              6*        7*   8*
+4  Rikke Rasmussen         OK Snab         D16    00:48:20              4         5*   6*
+5  Anne Gunnersen          Kolding OK      D50    00:49:52    4    5    3               
+6  Anna-Grethe Najbjerg    OK GORM         D50    00:50:41    3              5    3     
+7  Vivi Andreassen         Kolding OK      D55    00:50:50    2    4    2               
+8  Marianne Damgaard       OK GORM         D50    00:52:12    1              4    2     
+9  Lone Rasmussen          OK Snab         D50    00:53:10              1         1    4
+10 Jette Honoré            OK H.T.F.       D55    00:54:45         3         3         3
+11 Tina Blach              Kolding OK      D50    00:55:53                              
+12 Kate Nielsen            OK Snab         D55    00:56:22                              
+13 Anne Mette Abplanalp    Kolding OK      D55    00:58:21                              
+14 Anette Dewett           OK Snab         D50    01:01:11                              
+15 Lise Nielsen            OK H.T.F.       D55    01:03:39         2         2         2
+16 Josephine Lottenburger  Kolding OK      D16    01:05:03    1*   1*                   
+17 Ingelise Baden          OK H.T.F.       D50    01:06:04         1         1         1
+18 Tanya Prokhorova        OK H.T.F.       D50    01:14:30                              
+
+Gruppe D4 (D60, D65) - [4, 3, 2, 1]
+-----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Inger Marie Haahr       OK H.T.F.       D65    00:43:30         4         4         4
+2  Helle Schou             OK Snab         D60    00:45:29              4         4    3
+3  Else Lousdal            OK Snab         D60    00:48:55              3         3    2
+4  Inger Jensen            OK GORM         D60    01:08:10    4              3    2     
+5  Bente Jensen            OK GORM         D60    01:23:09    3              2    1     
+   Herdis Fyhring Sørensen OK H.T.F.       D60        Disk                              
+
+Gruppe D5 (D70) - [4, 3, 2, 1]
+------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Asta Terkelsen          OK GORM         D70    00:46:26    4              4    4     
+2  Aase Eg Pedersen        Kolding OK      D70    01:02:22    3    4    4               
+3  Gretha Villadsen        OK H.T.F.       D70    01:13:50         3         3         4
+4  Grethe Larsen           OK Snab         D70    01:17:30              3         3    3
+5  Else Sølling            OK H.T.F.       D70    01:17:44         2         2         2
+6  Annelise Uhlemann       Kolding OK      D70    01:27:27    2    1    2               
+7  Bodil Mortensen         OK GORM         D70    01:33:05    1              1    2     
+
+Gruppe D6 (D14) - [4, 3, 2, 1] + [2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Eva Örnhagen Jørgensen  OK Snab         D14    00:34:37              6*        6*   6*
+2  Mathilde Schrøder Larse OK H.T.F.       D14    00:37:32         6*        6*        4*
+3  Cecilia Skaarup Uhleman Kolding OK      D14    00:48:26    6*   4*   4*              
+
+Gruppe D7 (D20B, D21B, D35B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ida Hansen              Kolding OK      D35B   00:40:48    2    2    2               
+2  Malene Kaysen Thomsen   OK Snab         D35B   00:43:11              2         2    2
+3  Anne Sofie Motzkus      Kolding OK      D21B   00:45:46    2    2    2               
+4  Lene Koch Foster        Kolding OK      D35B   00:46:58    2    2    1               
+5  Sissel Maria Eg Staugaa Kolding OK      D20B   00:47:14                              
+6  Lena Brøchner Nielsen   OK H.T.F.       D35B   00:47:45         1         2         2
+7  Kirsten Hansen          OK H.T.F.       D35B   00:53:26         1         2         2
+8  Naja Knudsen            OK Snab         D20B   00:53:32              1         2    1
+9  Pernille Westergaard    OK Snab         D35B   00:56:56              1         2    1
+10 Dorthe M. Johansen      OK GORM         D35B   00:58:26    1              2    1     
+11 Merete Larsen           OK GORM         D35B   00:59:14    1              1    1     
+12 Tove E Juhl             OK H.T.F.       D35B   01:05:32         1         1         1
+13 Jette Lützow Nielsen    Kolding OK      D35B   01:08:16                              
+14 Annett Lassen           OK GORM         D35B   01:08:59    1              1    1     
+
+Gruppe D8 (D12, D14B, D20C, D21C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Solveig B. Nielsen      OK H.T.F.       D21C   00:34:06         2         2         2
+2  Tea Nørgaard            OK Snab         D20C   00:35:41              2         2     
+3  Rebekka Kaysen Thomsen  OK Snab         D20C   00:39:14                              
+4  Birte Ravn Jacobsen     Kolding OK      D21C   00:42:05    2                         
+5  Jette Beyer             OK H.T.F.       D21C   00:42:27                              
+6  Olivia Fjordside Pagh   OK Snab         D12    00:46:57              4*        4*   4*
+7  Celina Lyhne            Kolding OK      D14B   00:47:24    2    2    1               
+8  Ellen Roungkvist Uhlema Kolding OK      D14B   00:49:05         1    1               
+9  Anja Skaarup            Kolding OK      D21C   00:59:54                              
+10 Joanna Callesen         OK H.T.F.       D21C   01:13:06                              
+11 Anna Schack Andersen    OK GORM         D12    01:20:56    3*             4*   2*    
+
+Gruppe 9 (H10, D10, H12B, D12B, Begynder) - [1, 1, 1, 1, 1, 1]
+--------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Johan Dalgaard          Kolding OK      H10    00:24:49    1    1    1               
+2  Rasmus Dalgaard         Kolding OK      H12B   00:25:32    1    1    1               
+3  Emil Dalgaard           Kolding OK      H10    00:26:38    1    1    1               
+4  Kirsten Rauff           OK GORM         begynd 00:29:00    1              1    1     
+5  Noah Klogborg           OK H.T.F.       H10    00:29:21         1         1         1
+6  Astrid Henningsen       OK H.T.F.       D10    00:32:26         1         1         1
+7  Guri Alm                OK H.T.F.       begynd 00:33:10         1         1         1
+8  Tilde Westergaard       OK Snab         D12B   00:33:44              1         1    1
+9  Laura Busch             OK Snab         begynd 00:36:00              1         1    1
+10 Arman Hvenekær Rasmusse OK H.T.F.       H10    00:41:26                              
+11 Doris Blok              OK Snab         begynd 00:59:52              1         1    1
+12 Bodil Nygaard Poulsen   OK GORM         begynd 01:02:15    1              1    1     
+

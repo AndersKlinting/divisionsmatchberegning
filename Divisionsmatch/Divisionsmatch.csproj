@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8AEA71E7-699B-46B8-9B4E-E527C414D320}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Divisionsmatch</RootNamespace>
+    <AssemblyName>Divisionsmatch</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Divisionsmatch.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <DocumentationFile>bin\Release\Divisionsmatch.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoUpdater.NET">
+      <HintPath>..\3rd\AutoUpdater.NET\AutoUpdater.NET.dll</HintPath>
+    </Reference>
+    <Reference Include="AutoUpdater.NET.resources">
+      <HintPath>..\3rd\AutoUpdater.NET\da\AutoUpdater.NET.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="CommandLineParser, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rd\CommandLineParser\CommandLineParser.dll</HintPath>
+    </Reference>
+    <Reference Include="LumenWorks.Framework.IO">
+      <HintPath>..\3rd\CSVReader\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bane.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Division.cs" />
+    <Compile Include="DivisionsResultat\DivisionsResultat.cs" />
+    <Compile Include="Font.cs" />
+    <Compile Include="InstallerClass.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Staevne.cs" />
+    <Compile Include="UI\frmBeregnPop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmBeregnPop.Designer.cs">
+      <DependentUpon>frmBeregnPop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmDivi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmDivi.Designer.cs">
+      <DependentUpon>frmDivi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmConfig.Designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmÅbnDivisionsResultat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmÅbnDivisionsResultat.Designer.cs">
+      <DependentUpon>frmÅbnDivisionsResultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmGemDivisionsResultat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmGemDivisionsResultat.Designer.cs">
+      <DependentUpon>frmGemDivisionsResultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmOm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmOm.Designer.cs">
+      <DependentUpon>frmOm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gruppe.cs" />
+    <Compile Include="GruppeOgKlasse.cs" />
+    <Compile Include="Klasse.cs" />
+    <Compile Include="klasseconfig.cs" />
+    <Compile Include="Klub.cs" />
+    <Compile Include="Loeber.cs" />
+    <Compile Include="Match.cs" />
+    <Compile Include="PageText.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UI\frmSetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmSetup.Designer.cs">
+      <DependentUpon>frmSetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmStartListe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmStartListe.Designer.cs">
+      <DependentUpon>frmStartListe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\frmVisDivisionsResultat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmVisDivisionsResultat.Designer.cs">
+      <DependentUpon>frmVisDivisionsResultat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\RecentsToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <EmbeddedResource Include="UI\frmBeregnPop.resx">
+      <DependentUpon>frmBeregnPop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmDivi.resx">
+      <DependentUpon>frmDivi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmÅbnDivisionsResultat.resx">
+      <DependentUpon>frmÅbnDivisionsResultat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmGemDivisionsResultat.resx">
+      <DependentUpon>frmGemDivisionsResultat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmOm.resx">
+      <DependentUpon>frmOm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\frmSetup.resx">
+      <DependentUpon>frmSetup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmStartListe.resx">
+      <DependentUpon>frmStartListe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmVisDivisionsResultat.resx">
+      <DependentUpon>frmVisDivisionsResultat.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minipost.ico" />
+    <None Include="Resources\word.ico" />
+    <None Include="Resources\chm.ico" />
+    <Content Include="Resources\minipost.gif" />
+    <None Include="Resources\pdf.ico" />
+    <None Include="Resources\pdf1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MSHTML">
+      <Guid>{3050F1C5-98B5-11CF-BB82-00AA00BDCE0B}</Guid>
+      <VersionMajor>4</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy "$(SolutionDir)\Documentation\*.chm" "$(TargetDir)"
+copy "$(SolutionDir)\Documentation\*.docx" "$(TargetDir)"
+copy "$(SolutionDir)\Documentation\*.pdf" "$(TargetDir)"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

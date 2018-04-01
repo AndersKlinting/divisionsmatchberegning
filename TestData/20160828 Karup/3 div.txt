@@ -1,0 +1,172 @@
+Matcher (3 division)
+--------------------
+1 : Nordvest Ok - Ok Vendelboerne                  :    39 -    82
+2 : Nordvest Ok - Randers/djurs Ok                 :    39 -    57
+3 : Nordvest Ok - Skive Amok                       :    46 -     7
+4 : Nordvest Ok - Vestjysk Orienteringsklub        :    46 -     7
+5 : Ok Vendelboerne - Randers/djurs Ok             :    76 -    57
+6 : Ok Vendelboerne - Skive Amok                   :    92 -     8
+7 : Ok Vendelboerne - Vestjysk Orienteringsklub    :    92 -     8
+8 : Randers/djurs Ok - Skive Amok                  :    61 -     8
+9 : Randers/djurs Ok - Vestjysk Orienteringsklub   :    61 -     8
+10 : Skive Amok - Vestjysk Orienteringsklub        :     8 -     8
+
+Stilling
+--------
+                                               score      point
+Ok Vendelboerne                          :   342 -   112      8
+Randers/djurs Ok                         :   236 -   131      6
+Nordvest Ok                              :   170 -   153      4
+Vestjysk Orienteringsklub                :    31 -   207      1
+Skive Amok                               :    31 -   207      1
+
+                                     m1    m2    m3   m4   m5    m6   m7   m8   m9  m10  
+                                    ----- ----- ---- ---- ----- ---- ---- ---- ---- --- 
+H1 (H -20, H 21-, H 35-)             0-15  0-8   0-0  0-0 13-8  15-0 15-0  8-0  8-0 0-0 
+H2 (H 40-, H 45-)                    6-9   6-12  6-0  6-5  5-15 11-0  9-6 15-0 12-6 0-6 
+H3 (H -16, H 50-, H 55-)             6-9   6-12  6-5  6-0  7-13  9-6 11-0 12-6 15-0 6-0 
+H4 (H 60-, H 65-)                    4-3   2-7   4-0  4-0  2-7   4-0  4-0  7-0  7-0 0-0 
+H5 (H 70-)                           3-7   3-7   7-0  7-0  5-5   7-0  7-0  7-0  7-0 0-0 
+H6 (H -14)                           0-0   0-0   0-0  0-0  0-0   0-0  0-0  0-0  0-0 0-0 
+H7 (H -20B, H 21-B, H 35-B)          0-0   0-2   0-0  0-0  0-2   0-0  0-0  2-0  2-0 0-0 
+H8 (H -12, H -14B, H -20C, H 21-C)   0-0   0-0   0-0  0-0  0-0   0-0  0-0  0-0  0-0 0-0 
+D1 (D -20, D 21-, D 35-)             0-6   0-0   0-0  0-0  6-0   6-0  6-0  0-0  0-0 0-0 
+D2 (D 40-, D 45-)                    6-5   6-0   6-0  6-0  6-0   6-0  6-0  0-0  0-0 0-0 
+D3 (D -16, D 50-, D 55-)             6-12  6-5   6-0  6-0 14-4  15-0 15-0  6-0  6-0 0-0 
+D4 (D 60-, D 65-)                    3-6   3-4   4-0  4-0  6-3   7-0  7-0  4-0  4-0 0-0 
+D5 (D 70-)                           5-5   7-0   7-0  7-0  7-0   7-0  7-0  0-0  0-0 0-0 
+D6 (D -14)                           0-0   0-0   0-0  0-0  0-0   0-0  0-0  0-0  0-0 0-0 
+D7 (D -20B, D 21-B, D 35-B)          0-0   0-0   0-2  0-0  0-0   0-2  0-0  0-2  0-0 2-0 
+D8 (D -12, D -14B, D 21-C)           0-4   0-0   0-0  0-0  4-0   4-0  4-0  0-0  0-0 0-0 
+9  (H -10, D -10, D -12B, Begynder)  0-1   0-0   0-0  0-2  1-0   1-0  1-2  0-0  0-2 0-2 
+Ialt:                               39-82 39-57 46-7 46-7 76-57 92-8 92-8 61-8 61-8 8-8 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Thorkild Jensen         Randers/djurs O H35-   01:16:20         8              8              8    8     
+2  Allan Reiche            Ok Vendelboerne H35-   01:18:15    8                   7    8    8               
+3  Kjeld Arildsen          Ok Vendelboerne H21-   01:25:24    7                   6    7    7               
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Kristian Edsen          Nordvest Ok     H45-   01:05:16    6    6    6    6                              
+2  Anders Gammelvind       Vestjysk Orient H40-   01:11:14                   5              6         6    6
+3  Carl Malling            Randers/djurs O H45-   01:19:14         5              6              6    5     
+4  Kristian Arnborg Nielse Randers/djurs O H45-   01:20:52         4              5              5    4     
+5  Uffe Bach               Randers/djurs O H45-   01:33:26         3              4              4    3     
+6  Mogens Christensen      Ok Vendelboerne H45-   01:38:32    5                   3    6    5               
+7  Henning Bak-Mikkelsen   Ok Vendelboerne H45-   01:48:48    4                   2    5    4               
+
+Gruppe H3 (H -16, H 50-, H 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Torben Karlshøj         Nordvest Ok     H55-   01:04:17    6    6    6    6                              
+2  Gert Johannesen         Skive Amok      H55-   01:16:53              5              6         6         6
+3  Kaj Jansson             Randers/djurs O H55-   01:19:36         5              6              5    6     
+4  Gert Odgaard            Ok Vendelboerne H55-   01:20:54    5                   5    5    6               
+5  Kim Topp                Randers/djurs O H55-   01:23:06         4              4              4    5     
+6  Åge Lillethorup         Randers/djurs O H55-   01:29:04         3              3              3    4     
+7  Per Hauge               Ok Vendelboerne H55-   02:00:04    4                   2    4    5               
+   Arne Nørgaard Mikkelsen Randers/djurs O H50-       Disk                                                  
+   Finn Hørup Nielsen      Ok Vendelboerne H55-       Disk                                                  
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Gert Kristensen         Randers/djurs O H65-   00:51:27         4              4              4    4     
+2  Hans Carøe              Randers/djurs O H60-   01:00:45         3              3              3    3     
+3  Flemming Brouer         Randers/djurs O H65-   01:10:38                                                  
+4  Henning Olesen          Nordvest Ok     H65-   01:14:37    4    2    4    4                              
+5  Thorkild Holm Pedersen  Ok Vendelboerne H65-   01:19:34    3                   2    4    4               
+6  Bent Fenger Jensen      Randers/djurs O H60-   01:29:05                                                  
+7  Anders Ladefoged        Randers/djurs O H65-   01:38:24                                                  
+   Steen Kobberøe          Randers/djurs O H60-       Disk                                                  
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Ole F. Thomsen          Ok Vendelboerne H70-   00:41:35    4                   4    4    4               
+2  Max Hansen              Randers/djurs O H70-   00:42:15         4              3              4    4     
+3  Finn Søndergaard        Randers/djurs O H70-   01:00:10         3              2              3    3     
+4  Svend Brøns Petersen    Ok Vendelboerne H70-   01:05:38    3                   1    3    3               
+5  Kai Hansen              Randers/djurs O H70-   01:11:39                                                  
+6  Jens Roesgaard          Nordvest Ok     H70-   01:16:04    2    2    4    4                              
+7  Peter Arildsen          Ok Vendelboerne H70-   01:19:58                                                  
+8  Henning Jørgensen       Nordvest Ok     H70-   01:21:15    1    1    3    3                              
+   Erik Hedegaard Jakobsen Nordvest Ok     H70-       Disk                                                  
+
+Gruppe H6 (H -14) - [4, 3, 2, 1] + [2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Lasse Djernæs           Randers/djurs O H-20B  00:43:43         2              2              2    2     
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Mette Reiche Sørensen   Ok Vendelboerne D35-   02:29:50    6                   6    6    6               
+   Signe Edsen             Nordvest Ok     D-20       Disk                                                  
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Mette Edsen             Nordvest Ok     D45-   01:02:36    6    6    6    6                              
+2  Ann Dissing             Ok Vendelboerne D45-   01:13:22    5                   6    6    6               
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Susanne Karlshøj        Nordvest Ok     D55-   01:02:35    6    6    6    6                              
+2  Karin Wæhrens           Ok Vendelboerne D55-   01:05:39    5                   6    6    6               
+3  Hanne Bak-Mikkelsen     Ok Vendelboerne D55-   01:14:36    4                   5    5    5               
+4  Solveig Topp            Randers/djurs O D50-   01:27:42         5              4              6    6     
+5  Kirsten Hald Holdensen  Ok Vendelboerne D50-   01:30:58    3                   3    4    4               
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Lisbet Nielsen          Ok Vendelboerne D65-   00:56:19    4                   4    4    4               
+2  Ann Dorrit Hansen       Randers/djurs O D65-   00:57:21         4              3              4    4     
+3  Dagmar Tange            Nordvest Ok     D65-   01:15:24    3    3    4    4                              
+4  Lene Bank Hansen        Ok Vendelboerne D65-   01:46:58    2                   2    3    3               
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Jane Thode Jensen       Nordvest Ok     D70-   00:37:20    4    4    4    4                              
+2  Vivi Arildsen           Ok Vendelboerne D70-   00:50:56    3                   4    4    4               
+3  Ellen Thomsen           Ok Vendelboerne D70-   00:57:45    2                   3    3    3               
+4  Anna Jørgensen          Nordvest Ok     D70-   01:28:12    1    3    3    3                              
+
+Gruppe D6 (D -14) - [4, 3, 2, 1] + [2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Ellen Kjærgaard Brydsø  Skive Amok      D35-B  01:16:11              2              2         2         2
+   Kasia Bury              Randers/djurs O D35-B      Disk                                                  
+   Helle Bach              Randers/djurs O D35-B      Disk                                                  
+
+Gruppe D8 (D -12, D -14B, D 21-C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Sara Clausen            Ok Vendelboerne D-12   00:32:21    4*                  4*   4*   4*              
+
+Gruppe 9 (H -10, D -10, D -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+--------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10
+1  Karl Gammelvind         Vestjysk Orient H-10   00:29:50                   1              1         1    1
+2  Jens Gammelvind         Vestjysk Orient Beg    00:34:21                   1              1         1    1
+3  Mathias Reiche Sørensen Ok Vendelboerne H-10   00:43:37    1                   1    1    1               
+

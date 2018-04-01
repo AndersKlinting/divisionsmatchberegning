@@ -1,0 +1,235 @@
+Divisionsmatch (, 2018-03-30)
+-----------------------------
+                                               score      point
+Herlufsholm OK                               312 -   225      6    
+PI-København                                 249 -   253      4    
+OK73                                         224 -   265      2    
+Helsingør SOK                                224 -   266      0    
+
+1 : Helsingør SOK - Herlufsholm OK       :    72 -   107
+2 : Helsingør SOK - OK73                 :    73 -    77
+3 : Helsingør SOK - PI-København         :    79 -    82
+4 : Herlufsholm OK - OK73                :   106 -    72
+5 : Herlufsholm OK - PI-København        :    99 -    81
+6 : OK73 - PI-København                  :    75 -    86
+
+                                             m1     m2    m3     m4    m5    m6   
+                                            ------ ----- ----- ------ ----- ----- 
+H1 (H -20, H 21-, H 35-)                    15-18  18-12 15-20  20-10 17-18 10-23 
+H2 (H 40-, H 45-)                            5-13   5-10  4-14  10-10  7-14  8-12 
+H3 (H -16, H 50-, H 55-)                    10-10   9-11 10-10  10-11 11-10 10-11 
+H4 (H 60-, H 65-)                            7-3    5-5   7-2    3-7   6-3   7-2  
+H5 (H 70-)                                   5-5    4-6   7-0    4-6   7-0   7-0  
+H6 (H -14, H -16B)                           0-4    0-0   0-0    4-0   4-0   0-0  
+H7 (H -20B, H 21-B, H 35-B)                  0-6    0-2   0-4    6-1   5-3   2-4  
+H8 (H -12, H -14B, H -20C, H 21-C)           0-2    0-2   0-2    2-0   0-2   0-2  
+D1 (D -20, D 21-, D 35-)                     6-12   6-0   6-11  15-0   9-13  0-13 
+D2 (D 40-, D 45-)                            0-11   0-6   0-6   11-4  10-5   5-6  
+D3 (D -16, D 50-, D 55-)                     8-10  10-5  10-8   10-5  10-8   6-9  
+D4 (D 60-, D 65-)                            3-4    2-7   4-0    3-6   4-0   7-0  
+D5 (D 70-)                                   7-0    6-3   7-0    0-4   0-0   4-0  
+D6 (D -14, D -16B)                           0-0    0-0   0-0    0-0   0-0   0-0  
+D7 (D -20B, D 21-B, D 35-B)                  3-4    3-5   4-2    3-5   4-2   6-1  
+D8 (D -12, D -14B, D -20C, D 21-C)           0-2    2-0   2-0    2-0   2-0   0-0  
+9  (H -10, D -10, H -12B, D -12B, Begynder)  3-3    3-3   3-3    3-3   3-3   3-3  
+Ialt:                                       72-107 73-77 79-82 106-72 99-81 75-86 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rolf Lund               Helsingør SOK   H35-   00:50:07    8    8    8               
+2  Christopher Wiberg      PI-København    H21-   01:03:57              7         8    8
+3  Jesper Børsting         Herlufsholm OK  H35-   01:04:23    7              8    7     
+4  Peter Karberg           Herlufsholm OK  H35-   01:06:02    6              7    6     
+5  Sebastian Bang          PI-København    H21-   01:07:03              6         5    7
+6  Ronnie Hjorth           OK73            H35-   01:08:58         7         6         6
+7  Arne Kristensen         Herlufsholm OK  H35-   01:10:14    5              5    4     
+8  Søren Bloch             PI-København    H21-   01:14:26              5         3    5
+9  William Lund Christense Helsingør SOK   H21-   01:14:58    4    6    4               
+10 Michael Nygaard Møller  OK73            H21-   01:24:09         5         4         4
+11 Lasse Nilsson           Helsingør SOK   H35-   01:32:41    3    4    3               
+12 Jan Kofoed Nielsen      PI-København    H35-   01:36:14              2         2    3
+   Jonas Pærregaard        Herlufsholm OK  H21-   Ej start                              
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Erik Olsen              PI-København    H40-   00:49:07              6         6    6
+2  Christian Gudme         OK73            H40-   01:03:33         6         6         5
+3  Dan Frederiksen         PI-København    H45-   01:10:02              5         5    4
+4  Kaj Munck               Herlufsholm OK  H45-   01:22:31    6              5    4     
+5  Torben Bagger           Helsingør SOK   H45-   01:22:43    5    5    4               
+6  Frederik Møller Nielsen OK73            H40-   01:26:45         4         4         3
+7  Jørgen Zangenberg       PI-København    H45-   01:26:55              3         3    2
+8  Bent Børsting           Herlufsholm OK  H45-   01:41:53    4              3    2     
+9  Johannes Møller         Herlufsholm OK  H45-   01:50:42    3              2    1     
+   Torsten Bjørn           Helsingør SOK   H45-   Ej start                              
+   Claus Børsting          Herlufsholm OK  H45-   Ej start                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Bjarke Sucksdorff       OK73            H50-   00:44:09         6         6         6
+2  Flemming Wendelboe      Helsingør SOK   H55-   00:46:19    6    5    6               
+3  Frede Scheye            Herlufsholm OK  H55-   00:47:40    5              5    6     
+4  Bruno Stub              PI-København    H55-   00:49:56              5         5    5
+5  Carsten Thye Agger      Helsingør SOK   H50-   00:52:18    4    4    4               
+6  Henrik Wiberg           PI-København    H55-   00:53:38              3         4    4
+7  Michael Hjorth          OK73            H55-   00:56:05         3         4         3
+8  Svend-Erik Munck        Herlufsholm OK  H55-   00:56:41    3              3    3     
+9  Jan Truelsen            Herlufsholm OK  H50-   00:56:43    2              2    2     
+10 Torben Kristensen       Herlufsholm OK  H55-   01:00:37                              
+11 Torkil Hansen           PI-København    H55-   01:05:04              2         1    2
+12 Erik Madsen             OK73            H55-   01:12:22         2         1         1
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Bent Johansen           OK73            H60-   00:44:37         4         4         4
+2  Jakob Vang              Helsingør SOK   H65-   00:51:53    4    3    4               
+3  John Pihl               Helsingør SOK   H65-   00:52:16    3    2    3               
+4  Jan Larsen              Helsingør SOK   H65-   00:53:10                              
+5  Gunner Jørgensen        OK73            H65-   00:55:33         1         3         3
+6  Børge Jensen            Herlufsholm OK  H60-   00:57:14    2              2    4     
+7  Niels Poulsen           PI-København    H65-   01:07:45              2         3    2
+8  Jens Erik Larsen        OK73            H60-   01:09:14                              
+9  Jørgen Christensen      OK73            H65-   01:13:06                              
+10 Knud Lykking            OK73            H65-   01:15:54                              
+11 Jens Fladberg           Herlufsholm OK  H60-   01:17:34    1              1    2     
+12 Stig Andersen           Herlufsholm OK  H60-   01:20:22                              
+13 Søren Gudme             OK73            H65-   01:30:05                              
+   Helmuth Hansen          Herlufsholm OK  H60-   Ej start                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Arne Bech               OK73            H70-   00:38:57         4         4         4
+2  Jørgen Jensen           Helsingør SOK   H70-   00:40:20    4    3    4               
+3  Niels Lyhne             Herlufsholm OK  H70-   00:42:20    3              3    4     
+4  Bent Mortensen          OK73            H70-   00:45:01         2         2         3
+5  Erik Torm               Herlufsholm OK  H70-   00:47:13    2              1    3     
+6  Søren Thoustrup Jørgens OK73            H70-   00:51:04                              
+7  Henning Jørgensen       Helsingør SOK   H70-   00:52:36    1    1    3               
+8  Søren Østergaard        Helsingør SOK   H70-   00:53:05                              
+9  Peter Larsen            Helsingør SOK   H70-   00:55:28                              
+10 Flemming Marcussen      Helsingør SOK   H70-   01:00:43                              
+11 Tom Petersen            OK73            H70-   01:24:43                              
+
+Gruppe H6 (H -14, H -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sebastian Hansen        Herlufsholm OK  H-16B  01:21:55    4              4    4     
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jesper Rene Mortensen   Herlufsholm OK  H35-B  00:57:02    2              2    2     
+2  Karsten Jørgensen       PI-København    H35-B  00:57:42              2         2    2
+3  Jacob Bols Andersen     Herlufsholm OK  H21-B  01:03:25    2              2    2     
+4  Kim Neubert Madsen      PI-København    H21-B  01:06:28              2         1    2
+5  Morten Løjmand          Herlufsholm OK  H35-B  01:15:57    2              2    1     
+6  Jakub Kolarik           OK73            H21-B  01:33:01         2         1         2
+   Jesper Kracht           PI-København    H35-B  Ej start                              
+   Peter Hansen            Herlufsholm OK  H35-B    Fejlst                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mads Rasmussen          PI-København    H-20C  00:23:18              2         2    2
+2  Benny Clausen           Herlufsholm OK  H21-C  00:40:17    2              2          
+3  Verner Johansen         OK73            H21-C  00:56:51         2                    
+   Alfred Gantriis Johanss Helsingør SOK   H-12   Ej start                              
+   Ole Hansen              OK73            H21-C    Fejlst                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lene Jensen             Helsingør SOK   D35-   01:01:07    6    6    6               
+2  Camilla Rath Nielsen    PI-København    D35-   01:01:30              5         6    6
+3  Mette Stub              PI-København    D-20   01:01:44              6*        7*   7*
+4  Henriette Hansen        Herlufsholm OK  D35-   01:14:39    5              6    4     
+5  Gitte Sørensen          Herlufsholm OK  D35-   01:40:03    4              5    3     
+6  Lise Ravnshøj Andersen  Herlufsholm OK  D21-   01:50:31    3              4    2     
+   Kristine Børsting       Herlufsholm OK  D-20   Ej start                              
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Birgit Petersen Børstin Herlufsholm OK  D45-   00:52:09    6              6    6     
+2  Rita Breum              PI-København    D45-   01:00:39              6         5    6
+3  Tine Meyhoff Petersen   Herlufsholm OK  D45-   01:10:31    5              5    4     
+4  Marianne Lykking        OK73            D45-   01:13:48         6         4         5
+   Elin Nørgård Kracht     PI-København    D40-   Ej start                              
+   Helle Roested           Herlufsholm OK  D45-   Ej start                              
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Susanne Truelsen        Herlufsholm OK  D50-   01:00:36    6              6    6     
+2  Mette Seir Hansen       Helsingør SOK   D55-   01:01:07    5    6    6               
+3  Elsa Bratholm           OK73            D55-   01:01:43         5         5         6
+4  Anne Fonnesbech Jensen  PI-København    D55-   01:04:01              5         5    5
+5  Susanne Tanderup        Herlufsholm OK  D50-   01:09:45    4              4    4     
+6  Anne Sørensen           Helsingør SOK   D55-   01:12:34    3    4    4               
+7  Susan Houmark Stub      PI-København    D50-   01:14:27              3         3    4
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Else Gudme              OK73            D60-   00:45:37         4         4         4
+2  Merete Ravnshøj Anderse Herlufsholm OK  D60-   00:47:37    4              3    4     
+3  Alice Bech              OK73            D60-   00:50:03         3         2         3
+4  Inge Olsen              Helsingør SOK   D60-   00:52:13    3    2    4               
+5  Ulla Valnert            OK73            D60-   01:06:30                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Marie Krogsgaard        Helsingør SOK   D70-   00:48:57    4    4    4               
+2  Inge Madsen             OK73            D70-   00:50:24         3         4         4
+3  Vibeke Miené            Helsingør SOK   D70-   00:53:23    3    2    3               
+4  Gull-May Knudsen        Helsingør SOK   D70-   01:07:28                              
+   Eva Müllertz            Helsingør SOK   D70-     Fejlst                              
+
+Gruppe D6 (D -14, D -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Louise B Jensen         Helsingør SOK   D21-B  00:39:05    2    2    2               
+2  Camilla Bøgevig Larkai  OK73            D35-B  00:47:33         2         2         2
+3  Trine Hershøj           OK73            D21-B  00:54:07         2         2         2
+4  Helle Hansen            Herlufsholm OK  D35-B  00:55:41    2              2    2     
+5  Gigi Sucksdorff         OK73            D35-B  00:58:34         1         1         2
+6  Rita Løjmand            Herlufsholm OK  D35-B  01:13:43    2              1    2     
+7  Ida Stürup              Helsingør SOK   D-20B  01:22:56    1    1    2               
+8  Camilla Sønderby        PI-København    D21-B  01:31:44              2         2    1
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ilsabe Lampe Børsting   Herlufsholm OK  D21-C  00:32:39    2              2    2     
+2  Sisse Jørgensen         Helsingør SOK   D21-C  00:48:27         2    2               
+3  Birgitte Stürup         Helsingør SOK   D21-C  00:53:23                              
+4  Lena Hansen             Herlufsholm OK  D21-C  00:54:09                              
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+----------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Soon-Ae Cho             Helsingør SOK   Beg    00:17:41    1    1    1               
+2  Carsten Vad Mortensen   PI-København    Beg    00:19:35              1         1    1
+3  Brian Lind              PI-København    Beg    00:26:34              1         1    1
+4  Maggie Müller           Helsingør SOK   D-10   00:29:54    1    1    1               
+5  Dicte Højbjerg Andersen Helsingør SOK   D-10   00:31:14    1    1    1               
+6  Sophie Petersen         Helsingør SOK   Beg    00:32:56                              
+7  Fie Gudme               OK73            Beg    00:36:21         1         1         1
+8  Lone Mortensen          OK73            Beg    00:38:53         1         1         1
+9  Freja Gudme             OK73            Beg    00:38:56         1         1         1
+10 Katrine Hansen          Herlufsholm OK  Beg    00:48:44    1              1    1     
+11 Bente Dahl              PI-København    Beg    00:50:12              1         1    1
+12 Ruth Børsting           Herlufsholm OK  Beg    00:52:22    1              1    1     
+13 Lisa Børsting           Herlufsholm OK  D-10   00:52:32    1              1    1     
+   Sarah Nommesen          Helsingør SOK   D-10   Ej start                              
+

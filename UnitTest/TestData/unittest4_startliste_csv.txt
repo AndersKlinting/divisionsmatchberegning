@@ -1,0 +1,723 @@
+Start liste
+===========
+
+
+Bane Bane 1
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+William Lund Christensen      Helsingør SOK       H21-      681768    10:00:00
+Jan H Jørgensen               OK Sorø             H21-      1410578   10:03:00
+Michael Jensen                FSK Orientering     H35-      501134    10:06:00
+Lars Bukkehave                OK Sorø             H21-      443885    10:09:00
+Anders Knudsen                Herlufsholm OK      H21-      886643    10:12:00
+Jesper Munch Jespersen        OK Sorø             H21-      441052    10:15:00
+Peter Karberg                 Herlufsholm OK      H35-      216710    10:18:00
+Kasper Levring                OK Sorø             H35-      2061673   10:21:00
+Rolf Lund                     Helsingør SOK       H35-      887789    10:24:00
+Arne Kristensen               Herlufsholm OK      H35-      213996    10:27:00
+Henrik Vestergaa Karnøe       OK Sorø             H21-      9820121   10:30:00
+Bjørn Rasmussen               FSK Orientering     H35-      348367    10:33:00
+Peter Hansen                  OK Sorø             H-20      500644    10:36:00
+Lars Bech Jensen              FSK Orientering     H21-      440295    10:39:00
+Aimas Lund                    OK Sorø             H-20      2061216   10:42:00
+Per Hansen                    FSK Orientering     H21-      895447    10:45:00
+Bjarne B. Jensen              Helsingør SOK       H35-      1401481   10:57:00
+Anders Hansen                 Køge OK             H35-      899043    11:00:00
+Jacob Spange Mortensen        PI-København        H35-      1411132   11:03:00
+Christian Larsen              Køge OK             H21-      422485    11:06:00
+Carl-Henrik Hansen            O-63/NFR/Maribo     H35-      9101044   11:09:00
+Erik Olsen                    PI-København        H35-      213941    11:12:00
+Simon Rosell Holt             Køge OK             H35-      1401500   11:15:00
+Hjalte Hviid                  O-63/NFR/Maribo     H-20      435304    11:18:00
+Morten Lykking                OK73                H35-      2035229   11:21:00
+Henrik Plenge Jensen          O-63/NFR/Maribo     H35-      501273    11:24:00
+Michael Nygaard Møller        OK73                H21-      435303    11:27:00
+Asbjørn Hviid                 O-63/NFR/Maribo     H21-      435305    11:30:00
+Lars Hanghøj Petersen         Ballerup OK         H35-      550529    11:33:00
+Rolf Valeryd                  Tisvilde Hegn OK    H21-      895444    11:36:00
+Tim Abild                     Allerød OK          H21-      2065752   11:39:00
+Christian Matzen              Allerød OK          H21-      431191    11:42:00
+Svend Christiansen            Ingen               H21-      501136    11:45:00
+Anders Søndergaard            Søllerød OK         H21-      2033033   11:48:00
+Lars Konradsen                FIF Hillerød OrienteH21-      501278    11:51:00
+Martin Laage Kragh            OK Roskilde         H21-      895442    11:57:00
+Andreas Bjerreskov            Amager OK           H21-      1408234   12:00:00
+Lars Christoffersen           OK Skærmen Værløse  H35-      419741    12:03:00
+Lasse Grønnebæk               Amager OK           H21-      435358    12:06:00
+Peter Lauritzen               Holbæk OK           H-20      778810    12:09:00
+Tøger Gralle Nørgaard         Amager OK           H35-      9200389   12:12:00
+Hans J Andersen               DSR/Fredensborg/VindH35-      407792    12:15:00
+Andreas Berggren              Amager OK           H21-      2061654   12:18:00
+Mathias Klinkby               Holbæk OK           H-20      426974    12:21:00
+Martin Schwartz               DSR/Fredensborg/VindH35-      343740    12:24:00
+Rasmus Velling                OK Skærmen Værløse  H21-      7003115   12:27:00
+Max Prang                     DSR/Fredensborg/VindH35-      308029    12:30:00
+Thomas Brinck                 Amager OK           H35-      9200675   12:33:00
+Søren Fertin                  Holbæk OK           H35-      922013    12:36:00
+Kim Clausen                   DSR/Fredensborg/VindH35-      407153    12:39:00
+Tajs Hviid Pedersen           Amager OK           H21-      448372    12:42:00
+Morten Hannibal Madsen        Lyngby OK           H21-      1398707   12:45:00
+Erik Gotfredsen               Hvalsø OK           H21-      302003    12:48:00
+Christian Tolstrup            Lyngby OK           H21-      1398708   12:51:00
+Rune Hausner                  OK S.G.             H35-      44524     12:54:00
+Emil Brønd                    Lyngby OK           H21-      1130784   12:57:00
+Henrik Tølløse                Hvalsø OK           H35-      439327    13:00:00
+Jørn Schou-Rode               Lyngby OK           H21-      1395508   13:03:00
+Lasse Hansen                  Kildeholm OK        H35-      505030    13:06:00
+Lars Lyngsø                   Lyngby OK           H21-      1406279   13:09:00
+Mogens Hagedorn               Søllerød OK         H21-      9121066   13:12:00
+Gert Lillevang Nielsen        Allerød OK          H35-      39871     13:15:00
+Jesper Vestergaard            Søllerød OK         H21-      9005299   13:18:00
+Magnus Oscarsson              Søllerød OK         H35-      9999921   13:21:00
+
+
+Bane Bane 10
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Maggie Müller                 Helsingør SOK       Beg       435316    10:00:16
+Lisa Børsting                 Herlufsholm OK      D-10      308022    10:00:42
+Sarah Dinesen                 Helsingør SOK       Beg       435319    10:05:17
+Nynne Høst Nedergaard         Helsingør SOK       Beg       435320    10:08:37
+Johan Wittrock                FSK Orientering     Beg       348363    10:08:43
+Edith Lund                    FSK Orientering     Beg       245039    10:09:41
+Ellen Nielsen                 FSK Orientering     Beg       36703     10:10:33
+Liva Petersen                 Helsingør SOK       Beg       435325    10:11:43
+Signe Torp-Lupnaav            Herlufsholm OK      D-10      308015    10:22:38
+Birk Olsen                    PI-København        Beg       241912    11:00:27
+Pernille Olsen                PI-København        Beg       241913    11:00:30
+Bente Dahl                    PI-København        Beg       213950    11:02:18
+Noah Borgen                   O-63/NFR/Maribo     Beg       347083    11:03:20
+Freja Gudme                   OK73                Beg       429932    11:07:08
+Fie Gudme                     OK73                D-10      429931    11:07:10
+Lone Mortensen                OK73                Beg       250097    11:07:12
+Morten Løkke                  Køge OK             Beg       239941    11:07:33
+Peter Løkke                   Køge OK             Beg       239942    11:08:17
+Aia Rosell Holt               Køge OK             D-10      445325    11:09:20
+Nanna Rosell Holt             Køge OK             Beg       239938    11:10:53
+Bertram Kjær Bollesen         O-63/NFR/Maribo     Beg       347019    11:23:12
+Simon Jensen                  Herlufsholm OK      Beg       417513    11:34:03
+Cecilie Ertmann               Allerød OK          Beg       2049941   11:55:06
+Fie Filthuth Henningsen       Holbæk OK           Beg       239910    11:58:08
+Valdemar Willumsen            OK Skærmen Værløse  Beg       239918    12:05:32
+Jørn Clemmensen               OK Skærmen Værløse  Beg       239917    12:05:33
+Markus Emil Thomsen           Holbæk OK           H-10      239915    12:06:38
+Simon Klinkby                 Holbæk OK           H-12B     426964    12:06:39
+Astrid Clausen                DSR/Fredensborg/VindBeg       241915    12:08:39
+Carl-Loui Hansen              O-63/NFR/Maribo     H-12B     347097    12:10:34
+Alberte Hansen                O-63/NFR/Maribo     Beg       423296    12:10:43
+Lærke N.Hansen                Amager OK           Beg       448365    12:19:59
+Asmus Stallknecht             FIF Hillerød OrienteBeg       500482    12:28:09
+Christoffer Vilstrup          OK S.G.             H-12B     241917    12:41:08
+Frida Hagedorn                Søllerød OK         Beg       1398748   12:56:41
+Louisa Oscarsson              Søllerød OK         Beg       442555    12:56:42
+
+
+Bane Bane 2
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Torsten Bjørn                 Helsingør SOK       H45-      234468    10:14:00
+Søren Madsen                  OK Sorø             H45-      2086038   10:16:00
+Torben Kristensen             Herlufsholm OK      H40-      2049220   10:18:00
+Thomas Pickering              FSK Orientering     H45-      263081    10:20:00
+Kaj Munck                     Herlufsholm OK      H45-      9005164   10:22:00
+Kristian Kærsgaard            OK Sorø             H45-      7171066   10:24:00
+Jens Thorup                   FSK Orientering     H45-      439321    10:26:00
+Carsten Thye Agger            Helsingør SOK       H45-      553375    10:28:00
+Jan Frank Nielsen             FSK Orientering     H45-      347482    10:30:00
+Henrik Mathiesen              Herlufsholm OK      H45-      417519    10:32:00
+Kåre Sørensen                 OK Sorø             H45-      1406280   10:34:00
+Torben Seir                   Helsingør SOK       H45-      500487    10:36:00
+Martin Munk                   OK Sorø             H40-      441080    10:38:00
+Leif Pedersen                 FSK Orientering     H45-      2074602   10:40:00
+Niels Albertsen               Herlufsholm OK      H40-      2035223   10:42:00
+Hugo Frederiksen              OK73                H45-      308003    11:12:00
+Jørn Lind                     PI-København        H45-      213946    11:14:00
+Thomas Kristiansen            Køge OK             H40-      2061682   11:16:00
+Christian Gudme               OK73                H45-      1411130   11:18:00
+Jan Kofoed Nielsen            PI-København        H45-      213942    11:20:00
+Carsten Borgen                O-63/NFR/Maribo     H45-      347166    11:22:00
+Christian Bovet               OK73                H45-      553386    11:24:00
+Tage Ebbensgaard              Køge OK             H45-      344972    11:26:00
+Volker Naulin                 OK Roskilde         H40-      558000    11:30:00
+Ida Øbro                      Tisvilde Hegn OK    H40-      681673    11:38:00
+Jens Thamdrup                 Allerød OK          H40-      981778    11:42:00
+Birgitte Halland              OK Øst              H40-      302124    11:42:00
+Henrik Boesen                 OK Roskilde         H40-      421555    11:42:00
+Keld Johnsen                  Tisvilde Hegn OK    H40-      1406299   11:49:00
+Lise Jonassen                 Allerød OK          H40-      2083224   11:54:00
+Pernille Storm                OK Roskilde         H40-      1406284   11:58:00
+Per Rye Hougaard              OK Skærmen Værløse  H45-      364983    12:14:00
+Søren Albæk Jensen            Amager OK           H40-      439489    12:16:00
+Anton Lauritzen               Holbæk OK           H45-      778808    12:18:00
+David Koreska                 Amager OK           H45-      2061656   12:20:00
+Helge Tillingsøe              DSR/Fredensborg/VindH45-      887200    12:22:00
+HenrikTorp Andersen           Amager OK           H45-      2061657   12:24:00
+Christian Clausen             DSR/Fredensborg/VindH40-      345040    12:26:00
+Jesper Sørensen               OK Skærmen Værløse  H45-      2061671   12:28:00
+Christian Olsen               Amager OK           H45-      202066    12:30:00
+Søren Klinkby                 Holbæk OK           H45-      896951    12:32:00
+Hakon Mosbech                 OK Skærmen Værløse  H45-      246410    12:34:00
+Jakob Sandgrav                DSR/Fredensborg/VindH45-      1411147   12:36:00
+Bjark Bo Christensen          Holbæk OK           H40-      9101045   12:38:00
+Jesper Lægsgaard              Lyngby OK           H45-      439769    12:42:00
+Mikael Horn Rolighed          Lyngby OK           H45-      209736    12:46:00
+Nils Sættem                   Kildeholm OK        H45-      249631    12:48:00
+Henrik Visborg Thune          Kildeholm OK        H45-      1398722   12:50:00
+Claus Skovsø Petersen         Hvalsø OK           H45-      302034    12:52:00
+Mogens Schmidt                Lyngby OK           H40-      1402045   12:54:00
+Jens Chr. Buch                Hvalsø OK           H45-      1401712   12:56:00
+Ole Meldgaard                 Ballerup OK         H45-      441845    13:00:00
+Søren Sloth                   FIF Hillerød OrienteH45-      202341    13:04:00
+Niels la Cour Bentzon         Søllerød OK         H45-      9550902   13:06:00
+Martin Kjer                   Ballerup OK         H40-      440191    13:08:00
+
+
+Bane Bane 2 B
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Henriette Hansen              Herlufsholm OK      D35-      1402031   10:39:00
+Hanne Fogh                    OK Sorø             D35-      886628    10:41:00
+Lisbet Hansen                 FSK Orientering     D21-      981610    10:43:00
+Tine Meyhoff Petersen         Herlufsholm OK      D21-      216707    10:45:00
+Trine Horn Andersen           FSK Orientering     D21-      421551    10:47:00
+Lise Ravnshøj Andersen        Herlufsholm OK      D21-      213991    10:49:00
+Lene Jensen                   Helsingør SOK       D35-      308177    10:51:00
+Eva Smedegaard                OK Sorø             D21-      201515    10:53:00
+Mette Stub                    PI-København        D-20      239738    11:29:00
+Carina Kjær Bollesen          O-63/NFR/Maribo     D35-      354620    11:31:00
+Camilla Rath Nielsen          PI-København        D35-      2049954   11:33:00
+Astrid Nørgaard Kracht        Tisvilde Hegn OK    D-20      2049933   11:34:00
+Malene Løkke                  Køge OK             D35-      302132    11:35:00
+Julie Keller                  Amager OK           D21-      440272    12:17:00
+Astrid Thomsen                Holbæk OK           D21-      1402952   12:19:00
+Mathilde Damsgaard            DSR/Fredensborg/VindD35-      1411141   12:21:00
+Kerstin Fisker                Holbæk OK           D21-      239912    12:23:00
+Eva Hemmersam                 OK Skærmen Værløse  D21-      364981    12:25:00
+Helle Tibian                  DSR/Fredensborg/VindD35-      246413    12:27:00
+Anna Mosbech                  OK Skærmen Værløse  D21-      444513    12:29:00
+Mia Høholdt Hansen            Lyngby OK           D21-      1398701   12:33:00
+Katrine Vangsgaard            Lyngby OK           D21-      1398702   12:37:00
+Jørgen Skaarup                Ballerup OK         D-20      500108    12:45:00
+Marie Sofie Møller            Lyngby OK           D21-      1398703   12:49:00
+
+
+Bane Bane 3
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Laus Seir Hansen              Helsingør SOK       H55-      8626194   10:01:00
+Jan Truelsen                  Herlufsholm OK      H55-      417514    10:03:00
+Jan Koue Larsen               OK Sorø             H50-      2061214   10:05:00
+Kaare Børsting                Herlufsholm OK      H-16      216704    10:07:00
+Mikkel Stamp                  Ingen               H-16      435322    10:07:00
+Jens Frandsen                 OK Sorø             H50-      7202756   10:09:00
+Kurt Thuesen                  FSK Orientering     H55-      2049952   10:11:00
+Jesper Parlo                  OK Sorø             H50-      446218    10:13:00
+Ebbe Kajberg                  OK Sorø             H55-      246417    10:15:00
+Bjarne Iversen                FSK Orientering     H55-      239922    10:17:00
+Bo Bertram Christensen        Helsingør SOK       H55-      308174    10:19:00
+John Noes Jørgensen           FSK Orientering     H55-      2035230   10:21:00
+Knud Madsen                   OK Sorø             H55-      308188    10:23:00
+Jesper Andersen               FSK Orientering     H50-      302140    10:25:00
+Jonatan Høhne                 OK Sorø             H-16      1401704   10:27:00
+Svend-Erik Munck              Herlufsholm OK      H55-      308019    10:29:00
+Gustav Moll                   OK Sorø             H-16      2061674   10:31:00
+Flemming Wendelboe            Helsingør SOK       H55-      500115    10:33:00
+Hans-Ole Jensen               OK Sorø             H55-      308187    10:35:00
+Jesper Børsting               Herlufsholm OK      H50-      7201388   10:37:00
+Jørn Andreasen                OK73                H55-      434070    11:01:00
+Lars Carstensen               Køge OK             H50-      341543    11:03:00
+Erik Bülow-Olsen              O-63/NFR/Maribo     H55-      308073    11:05:00
+Steen Fladberg                Køge OK             H55-      1401725   11:07:00
+Bruno Stub                    PI-København        H55-      239745    11:09:00
+Karsten Hansen                Køge OK             H50-      889645    11:11:00
+Michael Hjorth                OK73                H55-      407140    11:13:00
+John Barnewitz                Køge OK             H55-      439760    11:15:00
+John Knudsen                  O-63/NFR/Maribo     H55-      1406269   11:17:00
+Henning Jeppesen              Køge OK             H55-      2061683   11:19:00
+Brian Lind                    PI-København        H55-      239737    11:21:00
+Kim Møller                    Køge OK             H55-      423267    11:23:00
+Henrik Wiberg                 PI-København        H55-      560126    11:25:00
+Henrik Johansen               Køge OK             H55-      439767    11:27:00
+Ole D Jensen                  Tisvilde Hegn OK    H50-      680035    11:37:00
+Peter Nørgaard                Ballerup OK         H50-      2049953   11:41:00
+Henrik O. Petersen            Allerød OK          H50-      505026    11:45:00
+Christina Pojezny             SLGI                H50-      1398749   11:49:00
+Kirsten Møller                Søllerød OK         H50-      504438    11:53:00
+Bo Konring                    FIF Hillerød OrienteH55-      1407800   11:57:00
+Jan Thiesen                   Holbæk OK           H50-      420166    12:01:00
+Jesper Gottlieb               OK Skærmen Værløse  H50-      1406282   12:03:00
+Flemming Sparre Sørensen      Amager OK           H50-      302165    12:05:00
+Jørn Mouritzen                DSR/Fredensborg/VindH55-      1402981   12:07:00
+Michael E. Laustsen           OK Skærmen Værløse  H50-      234897    12:09:00
+Jens Jørgen Lykkegaard        Amager OK           H55-      435343    12:11:00
+Johan Frydendahl              DSR/Fredensborg/VindH55-      1410587   12:13:00
+Bent Jensen                   Holbæk OK           H55-      239901    12:15:00
+Knud Dam                      Kildeholm OK        H55-      432486    12:31:00
+Preben Mortensen              Hvalsø OK           H55-      347338    12:35:00
+Jan Laursen                   Hvalsø OK           H50-      343736    12:39:00
+Henrik Waltenburg             Kildeholm OK        H50-      1398723   12:41:00
+Ib Rasmussen                  OK S.G.             H55-      250005    12:43:00
+Siri Klausen                  Ballerup OK         H50-      601221    12:47:00
+Martin Topholm                Ingen               H50-      820082    12:51:00
+Niels Landsperg               Tisvilde Hegn OK    H50-      1402969   12:53:00
+Carsten Hansen                FIF Hillerød OrienteH55-      355546    12:55:00
+Preben Sloth                  FIF Hillerød OrienteH55-      302174    12:59:00
+Kaj Maag                      Søllerød OK         H50-      422413    13:01:00
+Erik Sørensen                 Allerød OK          H50-      887865    13:03:00
+
+
+Bane Bane 3 B
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Merete Kleist                 OK Sorø             D45-      2061220   10:00:00
+Jytte Sørensen                FSK Orientering     D45-      355583    10:02:00
+Lykke Berg                    Herlufsholm OK      D45-      417520    10:04:00
+Anne Frandsen                 OK Sorø             D45-      430050    10:06:00
+Helle Hansen                  Herlufsholm OK      D45-      433471    10:08:00
+Berit Ahlmann Hansen          OK Sorø             D40-      308198    10:10:00
+Birgit Børsting               Herlufsholm OK      D45-      308125    10:12:00
+Dorte Morell                  O-63/NFR/Maribo     D45-      423293    11:00:00
+Camilla Bøgevig Larkai        OK73                D40-      1402038   11:02:00
+Elin Nørgård Kracht           PI-København        D45-      2058314   11:04:00
+Margit Goldbach               Køge OK             D45-      439766    11:06:00
+Rita Breum                    PI-København        D45-      302186    11:08:00
+Anne Rosell Holt              Køge OK             D40-      432491    11:10:00
+Lena Hamborg                  DSR/Fredensborg/VindD45-      1411143   12:00:00
+Lenette Schunck Svendsen      Holbæk OK           D45-      427879    12:02:00
+Karen Lauberg Lauritsen       DSR/Fredensborg/VindD45-      1411142   12:04:00
+Sanne Lund Kolenda            Holbæk OK           D45-      1402968   12:06:00
+Mette Uhre Lang               Amager OK           D45-      435345    12:08:00
+Naja Sørensen                 OK Skærmen Værløse  D45-      2061672   12:10:00
+Anette Lindegård Christensen  Holbæk OK           D40-      239914    12:12:00
+Hanne N Waltenburg            Kildeholm OK        D45-      1398720   12:40:00
+Tine Rønn Østergaard          Kildeholm OK        D40-      212291    12:44:00
+Iben Maag                     Søllerød OK         D45-      422411    12:58:00
+Heidi Kristensen              Søllerød OK         D45-      216771    13:02:00
+
+
+Bane Bane 4
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Preben Lupnaav                Herlufsholm OK      H65-      1401068   10:01:00
+Kim Folander                  OK Sorø             H60-      887599    10:04:00
+Karl Hougaard                 FSK Orientering     H65-      216767    10:07:00
+Steen Lund                    OK Sorø             H60-      351380    10:10:00
+Leif Kofoed                   Helsingør SOK       H65-      8627649   10:13:00
+Torsten Grange                Herlufsholm OK      H65-      202024    10:16:00
+Vagner Sørensen               FSK Orientering     H65-      209831    10:19:00
+Henrik Lawaetz                OK Sorø             H65-      308183    10:22:00
+Tom P. Neesgaard              FSK Orientering     H65-      202083    10:25:00
+Jørn Steffensen               Helsingør SOK       H65-      246489    10:28:00
+Erik Roslyng                  FSK Orientering     H65-      330684    10:31:00
+John Pedersen                 OK Sorø             H60-      308191    10:34:00
+Karl Aage Hald                FSK Orientering     H65-      407734    10:37:00
+Helmuth Hansen                Herlufsholm OK      H60-      202098    10:40:00
+Ole Brusch                    FSK Orientering     H65-      2033036   10:43:00
+Stig Andersen                 Herlufsholm OK      H60-      1401185   10:46:00
+Søren A. Nielsen              Helsingør SOK       H60-      239242    10:49:00
+Frede Scheye                  Herlufsholm OK      H60-      7508016   10:52:00
+John Pihl                     Helsingør SOK       H65-      9005006   10:55:00
+Leif Kajberg                  OK73                H65-      331586    11:01:00
+Carl-Aage Hansen              O-63/NFR/Maribo     H60-      407737    11:04:00
+Poul R. Koziara               Køge OK             H60-      216779    11:07:00
+Torkil Hansen                 PI-København        H60-      2030233   11:10:00
+Otto Kristensen               Køge OK             H65-      249385    11:13:00
+Søren Jensen                  PI-København        H65-      1411133   11:16:00
+Birger Jarlkov                Køge OK             H65-      344116    11:19:00
+Søren Gudme                   OK73                H65-      351378    11:22:00
+Peter Leander                 Køge OK             H65-      407113    11:25:00
+Ole Matzen                    O-63/NFR/Maribo     H65-      347294    11:28:00
+Gunnar Lorenzen               Allerød OK          H60-      2074616   11:29:00
+Jørgen Larsen                 Køge OK             H65-      407175    11:31:00
+Jørgen Luxhøj                 Søllerød OK         H60-      1398746   11:32:00
+Jens Erik Larsen              OK73                H60-      308077    11:34:00
+Karsten Richardt              Køge OK             H65-      680027    11:37:00
+Torben Hviid                  O-63/NFR/Maribo     H60-      435307    11:40:00
+Peter Vilstrup                Køge OK             H65-      342619    11:43:00
+Henrik W. Kristensen          OK73                H65-      1410575   11:46:00
+Niels Lund                    Søllerød OK         H65-      2049949   11:47:00
+Per Steen                     Køge OK             H60-      241940    11:49:00
+Jan Bartnik                   Amager OK           H65-      439490    12:01:00
+Allan Wiingaard               Holbæk OK           H60-      442570    12:04:00
+Finn Gamél Christensen        DSR/Fredensborg/VindH65-      355581    12:07:00
+Carl Henrik Guldbæk           OK Skærmen Værløse  H65-      421764    12:10:00
+Rolf Andersen                 Amager OK           H60-      2061661   12:13:00
+Knud Torm                     OK Skærmen Værløse  H65-      351340    12:16:00
+Ronald Clausen                DSR/Fredensborg/VindH65-      407155    12:19:00
+Finn Hyldegaard               Holbæk OK           H65-      344835    12:22:00
+Leif Jensen                   OK Skærmen Værløse  H65-      234439    12:25:00
+Peter Hofman-Bang             Amager OK           H65-      239726    12:28:00
+Tom Christensen               OK S.G.             H60-      250003    12:31:00
+Finn Blom Christensen         Lyngby OK           H65-      250071    12:34:00
+Lars Jørn Espersen            OK S.G.             H65-      1398715   12:37:00
+Flemming Bantz Sørensen       Lyngby OK           H60-      250082    12:40:00
+Michael Hansen                OK S.G.             H65-      1398716   12:43:00
+Erik Bach Sørensen            Kildeholm OK        H65-      351358    12:46:00
+Lars Olsen                    OK Roskilde         H60-      202045    12:52:00
+Ole Berner                    Søllerød OK         H65-      889253    12:55:00
+Jimmy Hoen                    Ballerup OK         H65-      2086036   12:58:00
+Niels Raagaard                Søllerød OK         H60-      1407799   13:01:00
+Jan Kristoffersen             Ballerup OK         H65-      246463    13:04:00
+Jørgen Münster-Swendsen       Søllerød OK         H65-      8627844   13:10:00
+
+
+Bane Bane 4 B
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Mette Seir Hansen             Helsingør SOK       D55-      502344    10:02:00
+Katrine Holst                 FSK Orientering     D50-      246474    10:05:00
+Susanne Truelsen              Herlufsholm OK      D55-      302183    10:08:00
+Lone Christensen              FSK Orientering     D55-      421558    10:11:00
+Mette Filskov                 OK Sorø             D55-      226517    10:14:00
+Gitte Gefke Hansen            FSK Orientering     D50-      355590    10:17:00
+Lidy Grange                   Herlufsholm OK      D55-      433468    10:20:00
+Søs Munch Hansen              OK Sorø             D55-      2083201   10:23:00
+Lone Jørgensen                Herlufsholm OK      D50-      417512    10:26:00
+Anne Fonnesbech Jensen        PI-København        D55-      239744    11:02:00
+Jannie Sørensen               Køge OK             D55-      354628    11:05:00
+Susan Houmark Stub            PI-København        D50-      239733    11:08:00
+Inge Madsen                   OK73                D55-      2074617   11:11:00
+Pia Kadziola                  O-63/NFR/Maribo     D55-      308059    11:14:00
+Marianne Lykking              OK73                D50-      40508     11:17:00
+Joan Knarkegaard Nielsen      Køge OK             D50-      2061686   11:20:00
+Alice Brødsgaard              Ballerup OK         D50-      441271    11:35:00
+Gert Bøgevig                  Søllerød OK         D50-      259225    11:38:00
+Johanne Lind                  Ballerup OK         D55-      308116    11:41:00
+Bjarke Sucksdorff             Allerød OK          D50-      8625628   11:44:00
+Gunnar Grue Sørensen          OK Roskilde         D50-      889247    11:50:00
+Svend Tantholdt               OK Øst              D50-      1401724   11:53:00
+Helle Frederiksen             Ballerup OK         D50-      340152    11:56:00
+Lisa Tantholdt                OK Øst              D50-      1402987   11:59:00
+Carmen Cecilie Christensen    Holbæk OK           D-16      432499    12:02:00
+Lis Hedelund                  DSR/Fredensborg/VindD55-      213984    12:05:00
+Cristina Kümmel               Holbæk OK           D50-      239903    12:08:00
+Karen Juul                    OK Skærmen Værløse  D55-      246403    12:11:00
+Jytte Hougaard                OK Roskilde         D50-      421553    12:14:00
+Henrik Wibe                   Allerød OK          D50-      1406290   12:17:00
+Kristen Bonnen                Ballerup OK         D50-      1410783   12:20:00
+Karen Wibe                    Allerød OK          D50-      682124    12:23:00
+Malte Hemmingsen              FIF Hillerød OrienteD50-      1395515   12:26:00
+Lukas Hemmingsen              FIF Hillerød OrienteD50-      681677    12:29:00
+Jette Karlsen                 Hvalsø OK           D50-      302005    12:32:00
+Michael Ertmann               Allerød OK          D50-      682008    12:35:00
+Ellen Kühn Jensen             Ballerup OK         D55-      202087    12:38:00
+Celina Bregensøe              Tisvilde Hegn OK    D-16      7201834   12:41:00
+
+
+Bane Bane 5 A
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Per Lennart Johansson         FSK Orientering     H70-      348369    10:00:00
+Ole Ring                      OK Sorø             H70-      501133    10:02:00
+Jakob Vang                    Helsingør SOK       H70-      308096    10:04:00
+Bent Børsting                 Herlufsholm OK      H70-      308013    10:06:00
+Flemming Larsen               Helsingør SOK       H70-      1395512   10:08:00
+Niels Lyhne                   Herlufsholm OK      H70-      1396120   10:10:00
+Knud O Engelsholm             Helsingør SOK       H70-      355580    10:12:00
+Hans-Ole Ketting              FSK Orientering     H70-      202086    10:14:00
+Jørgen Jensen                 Helsingør SOK       H70-      308155    10:16:00
+Hugo Lyse Nielsen             Køge OK             H70-      2061679   11:00:00
+Leif Berg-sørensen            PI-København        H70-      1411134   11:02:00
+Bent Hasholt                  OK73                H70-      213963    11:04:00
+Ole Rasmussen                 Køge OK             H70-      407119    11:06:00
+Peter Bjørn Jensen            O-63/NFR/Maribo     H70-      407180    11:08:00
+Finn Frogne                   Køge OK             H70-      249379    11:10:00
+Gunner Jørgensen              OK73                H70-      40402     11:12:00
+Kurt Dose                     Køge OK             H70-      302087    11:14:00
+Jørgen Poulsen                OK73                H70-      250098    11:16:00
+Erik Løvgren Jensen           Køge OK             H70-      442559    11:18:00
+Knud Lykking                  OK73                H70-      9200942   11:20:00
+Erling Hansen                 Køge OK             H70-      308134    11:22:00
+Niels-Henrik Holscher         O-63/NFR/Maribo     H70-      308074    11:24:00
+Bent Mortensen                OK73                H70-      250096    11:26:00
+Svend Fladberg                Køge OK             H70-      2083223   11:30:00
+Poul Gregersen                Ballerup OK         H70-      302062    11:34:00
+Gigi Sucksdorff               Allerød OK          H70-      216780    11:38:00
+Bente Kjær                    FIF Hillerød OrienteH70-      2035226   11:50:00
+John Jensen                   Holbæk OK           H70-      239712    12:00:00
+Allan Christiansen            DSR/Fredensborg/VindH70-      407197    12:02:00
+Mogens Jensen                 Holbæk OK           H70-      681674    12:04:00
+Poul Nissen                   DSR/Fredensborg/VindH70-      241863    12:06:00
+Svend Erik Jensen             OK Skærmen Værløse  H70-      308133    12:08:00
+Tage Frydendal                Holbæk OK           H70-      302107    12:10:00
+Mogens Hansen                 OK Skærmen Værløse  H70-      504434    12:12:00
+Mogens Køhler                 Ballerup OK         H70-      250092    12:14:00
+Niels Tulinius                OK S.G.             H70-      2035228   12:30:00
+Helge Johansen                Lyngby OK           H70-      250077    12:32:00
+Sven Christensen              OK S.G.             H70-      249355    12:34:00
+Jim Chalmers                  Lyngby OK           H70-      250088    12:36:00
+Eskild Rønne                  Kildeholm OK        H70-      407149    12:38:00
+Kaare Vindfeld                OK S.G.             H70-      250008    12:40:00
+Sune Frederiksen              Hvalsø OK           H70-      302030    12:42:00
+Carl Djurhuus                 Kildeholm OK        H70-      302143    12:44:00
+Arne Grøndahl                 Søllerød OK         H70-      438468    12:48:00
+Kurt Valery                   Tisvilde Hegn OK    H70-      308058    12:50:00
+Aage Damsgaard                FIF Hillerød OrienteH70-      2049931   12:52:00
+Finn Olsen                    OK Roskilde         H70-      302042    12:54:00
+Henning Løwenstein            FIF Hillerød OrienteH70-      202355    12:56:00
+Inger Landsperg               Tisvilde Hegn OK    H70-      407142    12:58:00
+Sven Bjerre                   Tisvilde Hegn OK    H70-      302010    13:02:00
+
+
+Bane Bane 5 B
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Lena Hansen                   Herlufsholm OK      D65-      1410588   10:01:00
+Lise Bertram Nielsen          Helsingør SOK       D65-      239241    10:03:00
+Lise Kolte                    FSK Orientering     D65-      407733    10:05:00
+Merete Ravnshøj Andersen      Herlufsholm OK      D65-      1401182   10:07:00
+Kirsten Ellekilde             Helsingør SOK       D65-      407141    10:09:00
+Else Neergaard                OK Sorø             D65-      226397    10:11:00
+Lene Hansen                   Herlufsholm OK      D65-      1308010   10:13:00
+Anne Sørensen                 Helsingør SOK       D65-      308156    10:15:00
+Berit N. Pedersen             Køge OK             D65-      239930    11:01:00
+Else Gudme                    OK73                D65-      351370    11:03:00
+Grethe Larsen                 Køge OK             D65-      407174    11:05:00
+Elsa Bratholm                 OK73                D65-      246404    11:07:00
+Birgit Berner                 Køge OK             D65-      2074614   11:09:00
+Vibeke Bøgevig                Søllerød OK         D65-      259135    11:31:00
+Caroline van Bronswijk        OK Roskilde         D65-      1050964   11:35:00
+Gerda Marie Christiansen      OK Roskilde         D65-      889246    11:39:00
+Jette Viborg Sørensen         Amager OK           D65-      435356    12:01:00
+Vivi Hansen                   OK Skærmen Værløse  D65-      420161    12:03:00
+Anni Lauritzen                Holbæk OK           D65-      778809    12:05:00
+Ulla Hooge                    OK Skærmen Værløse  D65-      1403124   12:07:00
+Anne Keller                   Amager OK           D65-      440266    12:09:00
+Bo Ertmann                    FIF Hillerød OrienteD65-      351360    12:21:00
+Rudi Ertmann                  FIF Hillerød OrienteD65-      351362    12:25:00
+Annet Krog                    OK S.G.             D65-      250007    12:31:00
+Rikke Gormsen                 Lyngby OK           D65-      1407780   12:33:00
+Kirsten Gehlshøj              OK S.G.             D65-      1398710   12:35:00
+Randi Hansen                  OK S.G.             D65-      419750    12:39:00
+Anne Bülow-Olsen              Lyngby OK           D65-      2086042   12:41:00
+Mette Høj                     OK S.G.             D65-      1398709   12:43:00
+Annelise Hansen               FIF Hillerød OrienteD65-      302016    12:45:00
+Betty Folino                  FIF Hillerød OrienteD65-      2065734   12:49:00
+Emil Olesen                   FIF Hillerød OrienteD65-      553547    12:53:00
+Eva Konring                   FIF Hillerød OrienteD65-      44693     12:57:00
+
+
+Bane Bane 6
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Magnus Leen Olsson            Herlufsholm OK      H-14      216712    10:01:00
+William Andersen              FSK Orientering     H-16B     348364    10:03:00
+Jonas Emil Fogh               OK Sorø             H-14      440749    10:05:00
+Hubert Schibsbye Møller       OK Sorø             H-14      2061213   10:09:00
+Micki Borgen                  O-63/NFR/Maribo     H-16B     347343    11:01:00
+Asger Holmberg                FIF Hillerød OrienteH-14      2065745   11:33:00
+Gabriel Bo Christensen        Holbæk OK           H-14      239904    12:01:00
+Kristian Siverbo              OK Räven            H-14      14127     12:49:00
+
+
+Bane Bane 6 B
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Jesper Rene Mortensen         Herlufsholm OK      H35-B     9000629   10:00:00
+Torben Jelager                Helsingør SOK       H35-B     2065746   10:02:00
+Anders Bo Friis               FSK Orientering     H35-B     443307    10:04:00
+Niels Frederiksen             Helsingør SOK       H35-B     2061675   10:06:00
+Henrik Zimmermann             FSK Orientering     H35-B     216792    10:08:00
+Michael Nilsson               OK Sorø             H21-B     423316    10:10:00
+Morten Løjmand                Herlufsholm OK      H35-B     440747    10:12:00
+Michael Licht                 FSK Orientering     H35-B     2074620   10:14:00
+Thomas Leen Olsson            Herlufsholm OK      H35-B     213994    10:16:00
+Michael Larsen                FSK Orientering     H35-B     249343    10:18:00
+Peter Hansen                  Herlufsholm OK      H35-B     2086041   10:20:00
+Niels Harremöes               FSK Orientering     H35-B     348362    10:22:00
+Søren Østergaard              Helsingør SOK       H35-B     440200    10:24:00
+Jakub Kolarik                 OK73                H35-B     682689    11:00:00
+Laust Kadziola                O-63/NFR/Maribo     H-20B     347081    11:02:00
+Erik Skriver                  PI-København        H35-B     1401705   11:04:00
+Ronnie Hjorth                 OK73                H35-B     681773    11:06:00
+Jacob Furu                    PI-København        H21-B     1411135   11:08:00
+Anders Kjær Bollesen          O-63/NFR/Maribo     H21-B     347415    11:10:00
+Anders Bang                   Køge OK             H35-B     239787    11:12:00
+Jesper Kracht                 PI-København        H35-B     2058313   11:14:00
+Bo Brinkmann                  Køge OK             H35-B     887864    11:16:00
+Mads Lykking                  OK73                H-20B     2030239   11:18:00
+Mikkel Bille                  Amager OK           H35-B     2061668   12:00:00
+Birger Jensen                 Holbæk OK           H35-B     681752    12:02:00
+Steen Sørensen                OK Skærmen Værløse  H35-B     351326    12:04:00
+Anders Frydendal Jensen       Holbæk OK           H-20B     1411140   12:06:00
+Johan Husfeldt                DSR/Fredensborg/VindH35-B     1411148   12:08:00
+Rune Faxøe Larsen             Holbæk OK           H35-B     421774    12:10:00
+Allan Peter Engsig-Karup      Amager OK           H35-B     2061652   12:12:00
+Allan Bode                    Holbæk OK           H35-B     239906    12:14:00
+Søren Christensen             OK Skærmen Værløse  H35-B     1406251   12:16:00
+Bjørn Kantsø                  Amager OK           H21-B     435349    12:18:00
+Hans G. Olsen                 DSR/Fredensborg/VindH35-B     1411149   12:20:00
+Morten Vogelius               Holbæk OK           H35-B     239902    12:22:00
+Theis Lykkegaard              Amager OK           H21-B     435355    12:24:00
+Kristian K. Jensen            Holbæk OK           H35-B               12:26:00
+Nick Sjøholm Olsen            Amager OK           H35-B     2061653   12:28:00
+Svend W. Frydendahl           DSR/Fredensborg/VindH21-B     981775    12:30:00
+Kenn Jakobsen                 Amager OK           H35-B     440271    12:32:00
+Jeppe Damsgaard               DSR/Fredensborg/VindH21-B     308045    12:34:00
+Mikkel Fabritius Sørensen     Amager OK           H35-B     435359    12:36:00
+Martin Keil Sørensen          Lyngby OK           H21-B     302200    12:38:00
+Jonathan Skovsø Andersen      Hvalsø OK           H21-B     302035    12:40:00
+Bøje Pedersen                 OK S.G.             H35-B     681675    12:42:00
+Niels Rønne                   Kildeholm OK        H35-B     1398725   12:44:00
+Martin Vilstrup               OK S.G.             H35-B     1398718   12:46:00
+Rune Odin                     Lyngby OK           H21-B     7060577   12:48:00
+Asger Espersen                OK S.G.             H21-B     1398717   12:50:00
+Kim Bach Sørensen             Kildeholm OK        H35-B     1398724   12:52:00
+
+
+Bane Bane 7
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Nils Lind Petersen            FSK Orientering     H21-C     407797    10:00:00
+Henning Nielsen               Helsingør SOK       H21-C     241927    10:03:00
+Thomas Benjamin Boesgaard     FSK Orientering     H21-C     249309    10:06:00
+John Miené                    Helsingør SOK       H21-C     240000    10:09:00
+Bent Horn Andersen            FSK Orientering     H21-C     421557    10:12:00
+Noah Munk Hansen              OK Sorø             H-12      9101042   10:15:00
+Benny Clausen                 Herlufsholm OK      H21-C     407769    10:18:00
+Lars Bo Kjær                  FSK Orientering     H21-C     216766    10:21:00
+Jan Bigler                    Herlufsholm OK      H21-C     417518    10:24:00
+Torben Nielsen                Køge OK             H21-C     407115    11:00:00
+Villads Jørgensen             OK73                H-12      429933    11:03:00
+Henning Hansen                Køge OK             H21-C     2061689   11:06:00
+Villy Rasmussen               O-63/NFR/Maribo     H21-C     347390    11:09:00
+Andreas Diekmann              PI-København        H21-C     1411136   11:12:00
+Ole Hansen                    OK73                H21-C     308055    11:15:00
+Kim Jensen                    O-63/NFR/Maribo     H21-C     347360    11:18:00
+Karsten Jørgensen             PI-København        H21-C     213943    11:21:00
+Dorrit Røpke                  Farum OK            H-12      209508    11:30:00
+Jane Nielsen                  Farum OK            H-12      1398742   11:42:00
+Amalie Ertmann                Allerød OK          H-12      2049948   11:54:00
+August Bo Christensen         Holbæk OK           H-14B     239907    12:00:00
+Martin Knudsen                Holbæk OK           H21-C     241930    12:06:00
+Kurt Sørensen                 Amager OK           H21-C     2061651   12:09:00
+Christian Hansen              Holbæk OK           H21-C     778811    12:12:00
+Christian Thiemk Jensen       Holbæk OK           H-20C     241923    12:18:00
+Eskil Gotfredsen              Hvalsø OK           H21-C     302002    12:30:00
+Bent Andersen                 OK S.G.             H21-C     1398719   12:33:00
+Claus Alkil                   Lyngby OK           H21-C     308123    12:36:00
+Tobias Olloz                  Tisvilde Hegn OK    H-12      2065758   12:39:00
+
+
+Bane Bane 7 B
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Julie Frølich                 FSK Orientering     D-20C     249339    10:01:00
+Astrid Parlo                  OK Sorø             D-14B     423307    10:04:00
+Pernille Rasmussen            FSK Orientering     D21-C     348360    10:07:00
+Birgitte Stürup               Helsingør SOK       D21-C     441278    10:10:00
+Ilsabe Børsting               Herlufsholm OK      D21-C     445589    10:13:00
+Helle Harremöes               FSK Orientering     D21-C     348361    10:16:00
+Lise Larsen                   Herlufsholm OK      D-20C     417511    10:19:00
+Dicte Højbjerg Andersen       Helsingør SOK       D-12      1408232   10:22:00
+Pia Juul Roslyng              FSK Orientering     D21-C     249337    10:25:00
+Katrine Hansen                Herlufsholm OK      D-20C     216708    10:28:00
+Rikke Christensen             Helsingør SOK       D21-C     435324    10:31:00
+Signe Hansen                  OK Sorø             D-12      521939    10:34:00
+Sarah Nommesen                Helsingør SOK       D-12      435323    10:37:00
+Lotte Kraeutler               O-63/NFR/Maribo     D21-C     423294    11:01:00
+Karen Piil Kristensen         PI-København        D21-C     241929    11:04:00
+Anne Nielsen                  Køge OK             D21-C     407117    11:07:00
+Henny Rosenberg               OK73                D21-C     432485    11:10:00
+Mette Thiesen                 Holbæk OK           D-20C     420165    12:01:00
+Nicoline Leisner              Amager OK           D21-C     2061655   12:04:00
+Annette Rode                  Holbæk OK           D21-C     241921    12:07:00
+Tove Lindhard                 DSR/Fredensborg/VindD21-C     308044    12:10:00
+Freja Frost                   Amager OK           D21-C     435348    12:13:00
+Cecilie Frydenda Jensen       Holbæk OK           D-14B     241914    12:16:00
+Benthe Jensen                 OK Skærmen Værløse  D21-C     364982    12:19:00
+Rebekka Marie Ha Sabram       Holbæk OK           D-20C     241919    12:22:00
+Christine Frølich             OK Skærmen Værløse  D21-C     364984    12:25:00
+Julia Bjerre Svendsen         Amager OK           D21-C     439487    12:28:00
+Britta Thomsen                Holbæk OK           D21-C     241922    12:31:00
+Linnea Tibian                 DSR/Fredensborg/VindD-12      241916    12:34:00
+Tina Faldt Jørgensen          Holbæk OK           D21-C     241920    12:37:00
+Birthe Tulinius               OK S.G.             D21-C     1398713   12:40:00
+Ida Holm                      Hvalsø OK           D21-C     439326    12:43:00
+Lise Olesen                   OK S.G.             D21-C     1398714   12:46:00
+Helgard Olsen                 OK Roskilde         D21-C     302041    12:55:00
+
+
+Bane Bane 8
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Ruth Børsting                 Herlufsholm OK      D70-      421769    10:11:00
+Vibeke Miené                  Helsingør SOK       D70-      435317    10:13:00
+Inger Jensen                  FSK Orientering     D70-      407757    10:15:00
+Marie Krogsgaard              Helsingør SOK       D70-      308171    10:17:00
+Jytte Eltang                  FSK Orientering     D70-      351369    10:19:00
+Mette Bertram                 Helsingør SOK       D70-      308165    10:21:00
+Elisa Sørensen                FSK Orientering     D70-      302057    10:25:00
+Sigrunn Hass                  Helsingør SOK       D70-      435318    10:27:00
+Inge Olsen                    Helsingør SOK       D70-      308168    10:31:00
+Ulla Valnert                  OK73                D70-      302193    11:03:00
+Hanne Hansen                  Køge OK             D70-      308136    11:05:00
+Lis Hasholt                   OK73                D70-      213962    11:07:00
+Grethe Jensen                 Køge OK             D70-      239949    11:09:00
+Lisbeth G. Larsen             FIF Hillerød OrienteD70-      426965    11:31:00
+Else Juul Hansen              Søllerød OK         D70-      250014    11:49:00
+Susanne Thrane                Søllerød OK         D70-      345275    11:51:00
+Kirsten Witt                  OK Skærmen Værløse  D70-      348359    12:03:00
+Birthe Clausen                DSR/Fredensborg/VindD70-      1411144   12:05:00
+Ruth Hansen                   OK Skærmen Værløse  D70-      355594    12:07:00
+Bente Keil                    Lyngby OK           D70-      308103    12:31:00
+Doris Hansen                  Kildeholm OK        D70-      1398721   12:33:00
+Tove Petersen                 OK S.G.             D70-      1398711   12:35:00
+
+
+Bane Bane 9
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Mathilde Smedega Madsen       OK Sorø             D-14      302054    10:00:00
+Emma Frandsen                 OK Sorø             D-14      441020    10:04:00
+Caya Borgen                   O-63/NFR/Maribo     D-16B     423295    11:00:00
+Gustav Holmberg               FIF Hillerød OrienteD-14      1402986   11:36:00
+Rikke Ertmann                 Allerød OK          D-14      2049939   11:56:00
+Ann-Sofie Jentof Fertin       Holbæk OK           D-16B     681842    12:00:00
+Xenia Bregensøe               Tisvilde Hegn OK    D-14      2052921   12:30:00
+Helena Wall                   OK Räven            D-14      203810    12:48:00
+
+
+Bane Bane 9 B
+--------------
+Navn                          Klub                Klasse    Brik      Starttid  
+Dorte Seifert Teide           FSK Orientering     D35-B     249319    10:01:00
+Karen Torp-Lupnaav            Herlufsholm OK      D35-B     351377    10:03:00
+Birgitte Andersen             Helsingør SOK       D35-B     435311    10:05:00
+Erica Wyrdling                Herlufsholm OK      D21-B     2035225   10:07:00
+Mette Roslyng                 FSK Orientering     D21-B     249323    10:09:00
+Rita Løjmand                  Herlufsholm OK      D35-B     439330    10:11:00
+Minna Seir                    Helsingør SOK       D35-B     505025    10:13:00
+Cita Nielsen                  Herlufsholm OK      D35-B     2035222   10:15:00
+Gitte Frølich                 FSK Orientering     D35-B     345091    10:17:00
+Susanne Tanderup              Herlufsholm OK      D35-B     216709    10:19:00
+Linnea Kadziola               O-63/NFR/Maribo     D21-B     347080    11:01:00
+Louise Eskildsen              Køge OK             D35-B     2061676   11:03:00
+Trine Hershøj                 OK73                D21-B     302136    11:05:00
+Jytte Nielsen                 Køge OK             D35-B     407114    11:07:00
+Listbeth Haals                PI-København        D35-B     1411131   11:09:00
+Lone Holm Hansen              OK73                D35-B     234511    11:11:00
+Gitte Rasmussen               Køge OK             D35-B     2061687   11:13:00
+Line Stub                     PI-København        D21-B     239731    11:15:00
+Lis Noes                      O-63/NFR/Maribo     D21-B     2065740   11:17:00
+Anni Lind                     PI-København        D35-B     213947    11:19:00
+Torsten Berglind              Ingen               D35-B     1398736   11:44:00
+Linda Berglind                Ingen               D35-B     1407779   11:44:00
+Lene Boisen                   DSR/Fredensborg/VindD35-B     1411145   12:01:00
+Irene Crone-Langkjær          Amager OK           D35-B     435350    12:03:00
+Ida Mosbech Smith             OK Skærmen Værløse  D21-B     2074609   12:05:00
+Ditte Andresen                Holbæk OK           D35-B     1411138   12:07:00
+Marchen L.J Schmidt           Amager OK           D21-B     435346    12:09:00
+Stine Kjeldsmark              Holbæk OK           D35-B     1411139   12:11:00
+Vinni Rønde                   OK Skærmen Værløse  D21-B     2074606   12:13:00
+Heidi Olander Petersen        Amager OK           D35-B     2061660   12:15:00
+Tina Jensen                   Holbæk OK           D35-B     1411137   12:17:00
+Tina Frølich                  Amager OK           D35-B     435344    12:19:00
+Birgitte Sørensen             DSR/Fredensborg/VindD35-B     1411146   12:21:00
+Sofie Larsen Rasmussen        Lyngby OK           D21-B     1398705   12:31:00
+Inger Lise Wolff-Jensen       Lyngby OK           D35-B     1406260   12:35:00
+Aase S. Andersen              OK S.G.             D35-B     1398712   12:37:00
+Marie Christine Petersen      Lyngby OK           D21-B     1398706   12:39:00
+Inge K. Kristoffersen         Ballerup OK         D35-B     440894    12:41:00
+Tina Nielsen                  Ballerup OK         D35-B     249412    12:45:00
+

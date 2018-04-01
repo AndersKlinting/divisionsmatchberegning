@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>2</Version>
+  <divisioner>
+    <Division>
+      <nr>1</nr>
+      <beskrivelse>1. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>2</nr>
+      <beskrivelse>2. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>3</nr>
+      <beskrivelse>3. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>4</nr>
+      <beskrivelse>4. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>5</nr>
+      <beskrivelse>5. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>6</nr>
+      <beskrivelse>6. division</beskrivelse>
+    </Division>
+  </divisioner>
+  <selectedDivision>2</selectedDivision>
+  <gruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H21</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H35</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H40</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H40</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H45</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H45</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H50</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H50</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H55</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H55</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H60</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H60</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H65</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H65</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H5</Gruppe>
+      <Klasse>H70</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H70</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H16B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H20B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H21B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H35B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H20C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H21C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D21</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D35</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D40</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D40</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D45</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D45</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D50</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D50</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D55</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D55</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D60</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D60</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D65</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D65</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D5</Gruppe>
+      <Klasse>D70</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D70</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D16B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D20B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D21B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D35B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D20C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D21C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H12B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D12B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>Begynder</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>Begynder</LøbsKlasse>
+    </GruppeOgKlasse>
+  </gruppeOgKlasse>
+  <allClubs />
+  <selectedClubs>
+    <string>FROS/Melfar</string>
+    <string>Faaborg OK</string>
+    <string>Odense OK</string>
+    <string>OK Syd</string>
+  </selectedClubs>
+  <udeblevneKlubber />
+  <pageSettings>
+    <Color>true</Color>
+    <Landscape>false</Landscape>
+    <Margins>
+      <Left>78</Left>
+      <Right>78</Right>
+      <Top>39</Top>
+      <Bottom>39</Bottom>
+    </Margins>
+    <PaperSize>
+      <Height>1169</Height>
+      <PaperName>A4</PaperName>
+      <RawKind>9</RawKind>
+      <Width>827</Width>
+    </PaperSize>
+    <PaperSource>
+      <RawKind>15</RawKind>
+      <SourceName>Automatically Select</SourceName>
+    </PaperSource>
+    <PrinterResolution>
+      <Kind>Custom</Kind>
+      <X>600</X>
+      <Y>600</Y>
+    </PrinterResolution>
+    <PrinterSettings>
+      <Copies>1</Copies>
+      <Collate>true</Collate>
+      <Duplex>Simplex</Duplex>
+      <FromPage>0</FromPage>
+      <MaximumPage>9999</MaximumPage>
+      <MinimumPage>0</MinimumPage>
+      <PrintFileName>dummy.txt</PrintFileName>
+      <PaperSizes>
+        <PaperSize>
+          <Height>1100</Height>
+          <PaperName>Letter</PaperName>
+          <RawKind>1</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1400</Height>
+          <PaperName>Legal</PaperName>
+          <RawKind>5</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>850</Height>
+          <PaperName>Statement</PaperName>
+          <RawKind>6</RawKind>
+          <Width>550</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1050</Height>
+          <PaperName>Executive</PaperName>
+          <RawKind>7</RawKind>
+          <Width>725</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>A4</PaperName>
+          <RawKind>9</RawKind>
+          <Width>827</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>827</Height>
+          <PaperName>A5</PaperName>
+          <RawKind>11</RawKind>
+          <Width>583</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1012</Height>
+          <PaperName>B5 (JIS)</PaperName>
+          <RawKind>13</RawKind>
+          <Width>717</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1300</Height>
+          <PaperName>Folio</PaperName>
+          <RawKind>14</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>583</Height>
+          <PaperName>A6</PaperName>
+          <RawKind>70</RawKind>
+          <Width>413</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1340</Height>
+          <PaperName>Oficio (Mexico) (216 x 340 mm)</PaperName>
+          <RawKind>119</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1417</Height>
+          <PaperName>Universal</PaperName>
+          <RawKind>120</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>750</Height>
+          <PaperName>Konvolut 7 3/4 (98x190 mm)</PaperName>
+          <RawKind>129</RawKind>
+          <Width>387</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>887</Height>
+          <PaperName>Konvolut 9 (98 x 225 mm)</PaperName>
+          <RawKind>130</RawKind>
+          <Width>387</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>950</Height>
+          <PaperName>Konvolut 10 (105 x 241 mm)</PaperName>
+          <RawKind>131</RawKind>
+          <Width>412</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>866</Height>
+          <PaperName>DL-konvolut (110 x 220 mm)</PaperName>
+          <RawKind>132</RawKind>
+          <Width>433</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>901</Height>
+          <PaperName>C5-konvolut (162 x 229 mm)</PaperName>
+          <RawKind>133</RawKind>
+          <Width>637</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>984</Height>
+          <PaperName>B5-konvolut (176 x 250 mm)</PaperName>
+          <RawKind>134</RawKind>
+          <Width>693</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName />
+          <RawKind>256</RawKind>
+          <Width>827</Width>
+        </PaperSize>
+      </PaperSizes>
+      <PaperSources>
+        <PaperSource>
+          <RawKind>15</RawKind>
+          <SourceName>Automatically Select</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>263</RawKind>
+          <SourceName>Brug printerindstilling</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>262</RawKind>
+          <SourceName>Skuffe 1</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>261</RawKind>
+          <SourceName>Skuffe 2</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>260</RawKind>
+          <SourceName>Skuffe 3</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>259</RawKind>
+          <SourceName>Flerformålsføder</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>258</RawKind>
+          <SourceName>Manuelt papir</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>257</RawKind>
+          <SourceName>Manuel konvolut</SourceName>
+        </PaperSource>
+      </PaperSources>
+      <PrintRange>AllPages</PrintRange>
+      <PrintToFile>false</PrintToFile>
+      <PrinterName>Lexmark CS510 Series XPS v4</PrinterName>
+      <PrinterResolutions>
+        <PrinterResolution>
+          <Kind>High</Kind>
+          <X>-4</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Medium</Kind>
+          <X>-3</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Low</Kind>
+          <X>-2</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Draft</Kind>
+          <X>-1</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>600</X>
+          <Y>600</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>1200</X>
+          <Y>1200</Y>
+        </PrinterResolution>
+      </PrinterResolutions>
+      <ToPage>0</ToPage>
+    </PrinterSettings>
+  </pageSettings>
+  <classes>
+    <Klasse>
+      <Navn />
+    </Klasse>
+    <Klasse>
+      <Navn> - </Navn>
+    </Klasse>
+    <Klasse>
+      <Navn>H1</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H20</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H21</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H35</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D1</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D20</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D21</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D35</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H2</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H40</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H45</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D2</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D40</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D45</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H16</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H3</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H50</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H55</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D16</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D3</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D50</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D55</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H4</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H60</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H65</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D4</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D60</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D65</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H5</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H70</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H14</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H16B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H20B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H21B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H35B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H6</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H7</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D12</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D14B</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D20C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D21C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D8</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H12</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H14B</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H20C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H21C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H8</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D5</Navn>
+      <Bane>
+        <Navn>Bane 8</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D70</Navn>
+      <Bane>
+        <Navn>Bane 8</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D14</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D16B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D20B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D21B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D35B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D6</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D7</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>9</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>Begynder</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D10</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D12B</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H10</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H12B</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+  </classes>
+  <baner>
+    <Bane>
+      <Navn>Bane 1</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 2</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 3</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 4</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 5</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 6</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 7</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 8</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 9</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 10</Navn>
+    </Bane>
+  </baner>
+  <font>
+    <FontValue>Courier New; 10pt</FontValue>
+  </font>
+  <SideSkift>true</SideSkift>
+  <PrintBaner>false</PrintBaner>
+  <PrintAlle>false</PrintAlle>
+  <PrintNye>false</PrintNye>
+  <PrintAlleGrupper>true</PrintAlleGrupper>
+  <AutoPrint>false</AutoPrint>
+  <AutoExport>false</AutoExport>
+  <ConfigClassSrc>csv</ConfigClassSrc>
+  <CssFile />
+  <StartTid>00:00:00</StartTid>
+</Config>

@@ -1,0 +1,227 @@
+Matcher (2 division)
+--------------------
+1 : Mariager Fjord Ok - Aarhus 1900 Orientering    :    76 -   114
+2 : Mariager Fjord Ok - Aalborg Ok                 :    67 -   118
+3 : Mariager Fjord Ok - Viborg Ok                  :    82 -    62
+4 : Aarhus 1900 Orientering - Aalborg Ok           :    91 -   116
+5 : Aarhus 1900 Orientering - Viborg Ok            :   113 -    61
+6 : Aalborg Ok - Viborg Ok                         :   120 -    50
+
+Stilling
+--------
+                                               score      point
+Aalborg Ok                               :   354 -   208      6
+Aarhus 1900 Orientering                  :   318 -   253      4
+Mariager Fjord Ok                        :   225 -   294      2
+Viborg Ok                                :   173 -   315      0
+
+                                     m1     m2     m3    m4      m5     m6   
+                                    ------ ------ ----- ------ ------ ------ 
+H1 (H -20, H 21-, H 35-)            13-20  12-24  15-0  13-26   26-0   29-0  
+H2 (H 40-, H 45-)                    6-15   6-15   8-13  6-15   10-11  13-8  
+H3 (H -16, H 50-, H 55-)            11-9    8-12   9-9   8-13   10-10  12-8  
+H4 (H 60-, H 65-)                    7-3    5-5    7-3   3-7     3-7    7-3  
+H5 (H 70-)                           5-4    3-7    4-6   3-6     4-5    7-3  
+H6 (H -14)                           0-6    0-6    0-0   4-6     6-0    6-0  
+H7 (H -20B, H 21-B, H 35-B)          3-4    3-4    4-2   4-3     4-2    4-2  
+H8 (H -12, H -14B, H -20C, H 21-C)   2-0    0-2    2-0   0-2     0-2    2-0  
+D1 (D -20, D 21-, D 35-)             5-6    4-13   5-6   6-11    5-6   11-6  
+D2 (D 40-, D 45-)                    6-5    6-9    5-6   5-10    5-6    9-6  
+D3 (D -16, D 50-, D 55-)             3-17   5-10   4-14 14-8    13-10   9-11 
+D4 (D 60-, D 65-)                    3-7    5-4    6-3   6-3     7-2    4-3  
+D5 (D 70-)                           4-3    4-0    4-0   4-0     4-0    0-0  
+D6 (D -14)                           0-6    0-0    0-0   6-0     6-0    0-0  
+D7 (D -20B, D 21-B, D 35-B)          3-5    3-4    4-0   5-3     6-0    4-0  
+D8 (D -12, D -14B, D 21-C)           2-4    0-2    2-0   4-2     4-0    2-0  
+9  (H -10, D -10, D -12B, Begynder)  3-0    3-1    3-0   0-1     0-0    1-0  
+Ialt:                               76-114 67-118 82-62 91-116 113-61 120-50 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Nicolai Zaar Nielsen    Mariager Fjord  H21-   00:53:16    8    8    8               
+2  Morten Schou            Aalborg Ok      H21-   01:03:55         7         8         8
+3  Christian Møller        Aalborg Ok      H-20   01:06:22         8*        9*        9*
+4  Marko Birk Nielsen      Aalborg Ok      H-20   01:11:52         6*        7*        7*
+5  Sune Dupont             Aarhus 1900 Ori H21-   01:12:46    7              5    8     
+6  Allan Hougaard          Aarhus 1900 Ori H35-   01:13:57    6              4    7     
+7  Lennart Rebsdorf        Mariager Fjord  H21-   01:16:46    5    4    7               
+8  Christian Bertel Anders Aarhus 1900 Ori H21-   01:17:05    4              3    6     
+9  Kristoffer Sloth        Aalborg Ok      H21-   01:21:12         3         2         5
+10 Jonas Søby Pedersen     Aalborg Ok      H21-   01:23:34                              
+11 Michael Gru             Aalborg Ok      H21-   01:23:44                              
+12 Mads Alexander Krogh Si Aarhus 1900 Ori H21-   01:24:15    3              1    5     
+13 Jan Kølbæk              Aarhus 1900 Ori H35-   01:33:57                              
+   Ole Jensen              Mariager Fjord  H35-       Disk                              
+   Simon Reimers           Aalborg Ok      H-20       Disk                              
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Michael Fischer         Aalborg Ok      H45-   00:57:25         6         6         6
+2  Jess Rasmussen          Viborg Ok       H45-   00:59:46              6         6    5
+3  Søren Flytkjær          Aalborg Ok      H45-   01:04:17         5         5         4
+4  Bo Birk Nielsen         Aalborg Ok      H40-   01:05:45         4         4         3
+5  Kim Poulsen             Aarhus 1900 Ori H45-   01:07:23    6              3    5     
+6  Allan Baagø             Viborg Ok       H45-   01:08:20              5         4    2
+7  Bjørn Sommer            Aarhus 1900 Ori H45-   01:09:33    5              2    3     
+8  Per O. Espegren         Aarhus 1900 Ori H40-   01:10:10    4              1    2     
+9  Uffe Rasmussen          Mariager Fjord  H40-   01:16:13    3    3    4               
+10 Lars Tinsfeldt          Aarhus 1900 Ori H40-   01:20:16                              
+11 Zijad Cosic             Aalborg Ok      H45-   01:23:58                              
+12 Ricki Laursen           Mariager Fjord  H45-   01:24:06    2    2    3               
+13 Flemming Futtrup        Viborg Ok       H40-   01:31:10              2         1    1
+14 Bjarke Rasmussen        Mariager Fjord  H40-   01:34:36    1    1    1               
+
+Gruppe H3 (H -16, H 50-, H 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jan Møller              Aalborg Ok      H50-   00:46:00         6         6         6
+2  Keld Gade               Viborg Ok       H50-   00:50:51              6         6    5
+3  Klaus Wolsing           Mariager Fjord  H55-   00:56:24    6    5    5               
+4  Thomas Lindschouw       Aalborg Ok      H50-   00:58:46         4         5         4
+5  Lars Jensen             Mariager Fjord  H55-   00:59:45    5    3    4               
+6  Vagn Pedersen           Aarhus 1900 Ori H50-   01:01:15    4              4    5     
+7  Lennart Bo Kristiansen  Viborg Ok       H50-   01:02:29              3         4    3
+8  Ole Gjøderum            Aarhus 1900 Ori H55-   01:05:13    3              3    3     
+9  Finn Boserup            Aalborg Ok      H55-   01:06:48         2         2         2
+10 Henning G. Jensen       Aarhus 1900 Ori H50-   01:07:50    2              1    2     
+11 Anders Tversted         Aarhus 1900 Ori H50-   01:12:39                              
+12 Per Clemensen           Aarhus 1900 Ori H55-   01:14:02                              
+13 Finn Rosenqvist         Aalborg Ok      H55-   01:15:12                              
+   Henrik Bach             Mariager Fjord  H50-       Disk                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Søren Munthe            Mariager Fjord  H60-   00:51:11    4    4    4               
+2  Ulf Mogensen            Aalborg Ok      H65-   01:00:45         3         4         4
+3  Ole Nielsen             Aalborg Ok      H60-   01:01:06         2         3         3
+4  Gert Rebsdorf           Mariager Fjord  H60-   01:05:10    3    1    3               
+5  Leif Egholm Pedersen    Viborg Ok       H65-   01:24:16              2         4    2
+6  Hans Chr. Sønderriis    Viborg Ok       H65-   01:32:17              1         3    1
+7  Olaf Christensen        Aarhus 1900 Ori H65-   01:33:57    2              2    2     
+8  Chris Krogh             Aarhus 1900 Ori H65-   01:36:20    1              1    1     
+9  Asbjørn Maintz Andersen Aarhus 1900 Ori H65-   01:38:57                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Kai Ø. Laursen          Aalborg Ok      H70-   00:40:27         4         4         4
+2  Per Lind Jensen         Aarhus 1900 Ori H70-   00:56:30    4              3    4     
+3  Erling G. Jensen        Aalborg Ok      H70-   00:56:54         3         2         3
+4  Christian Als           Viborg Ok       H70-   01:01:14              4         3    2
+5  Arne Pedersen           Mariager Fjord  H70-   01:02:47    3    2    3               
+6  Tage Arent Jensen       Viborg Ok       H70-   01:05:14              2         2    1
+7  Vagn Lidegaard          Mariager Fjord  H70-   01:08:14    2    1    1               
+8  Børge Kronborg          Viborg Ok       H70-   01:08:47                              
+9  Hartvig Mathiasen       Viborg Ok       H70-   01:13:02                              
+
+Gruppe H6 (H -14) - [4, 3, 2, 1] + [2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jonathan Birk Nielsen   Aalborg Ok      H-14   00:48:17         6*        6*        6*
+2  Mikkel Bo Kølbæk        Aarhus 1900 Ori H-14   00:57:31    6*             4*   6*    
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Søren Bak               Aalborg Ok      H35-B  00:44:11         2         2         2
+2  Vegar Lein Ausrød       Aarhus 1900 Ori H35-B  00:45:32    2              2    2     
+3  Erik Søgaard            Aarhus 1900 Ori H35-B  00:49:35    2              2    2     
+4  Rasmus K. B. Skovsgaard Viborg Ok       H21-B  00:55:08              2         2    2
+5  Keld Østergaard         Mariager Fjord  H35-B  00:56:48    2    2    2               
+6  Anders Moen Flytkjær    Aalborg Ok      H21-B  01:01:16         2         1         2
+7  Niels Jørgen Iversen    Mariager Fjord  H35-B  01:06:13    1    1    2               
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jacob Brinkmann         Aalborg Ok      H21-C  00:32:09         2         2         2
+2  Jørn Blom               Mariager Fjord  H21-C  00:34:53    2         2               
+3  Preben Munk             Viborg Ok       H21-C  00:36:25                        2     
+4  Marius Gjøderum-Svennin Aarhus 1900 Ori H-20C  00:41:10                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Kristine Baagø          Viborg Ok       D21-   01:16:56              6         6    6
+2  Birgitte Halle          Aarhus 1900 Ori D35-   01:18:03    6              6    5     
+3  Anne Benedikte Vindum L Aalborg Ok      D-20   01:23:11         8*        7*        7*
+4  Linnea S. Udholm        Aalborg Ok      D21-   01:26:59         5         4         4
+5  Maren Kragh-Thomsen     Mariager Fjord  D21-   01:34:28    5    4    5               
+   Anne Beukel Bak         Aalborg Ok      D-20       Disk                              
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lene Stick Nielsen      Viborg Ok       D45-   01:11:17              6         6    6
+2  Bettina Gjedde          Mariager Fjord  D45-   01:17:47    6    6    5               
+3  Dorte Jenny Bak         Aalborg Ok      D45-   01:32:27         5         6         5
+4  Pia Bo Kølbæk           Aarhus 1900 Ori D40-   02:00:11    5              5    5     
+5  Hanne Mohapeloa         Aalborg Ok      D45-   02:02:21         4         4         4
+   Louise Mielche          Aarhus 1900 Ori D40-       Disk                              
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Dorte Filskov           Aalborg Ok      D55-   00:50:34         6         6         6
+2  Lene Bejer Damgaard     Viborg Ok       D50-   00:58:43              6         6    5
+3  Birte Sivebæk           Aarhus 1900 Ori D55-   01:14:15    6              5    5     
+4  Helle Svenningsen       Aarhus 1900 Ori D50-   01:17:30    5              4    4     
+5  Birgitte Bach           Viborg Ok       D55-   01:17:54              5         3    4
+6  Gerda Henriksen         Aarhus 1900 Ori D55-   01:20:13    4              3    2     
+7  Maria Bo Kølbæk         Aarhus 1900 Ori D-16   01:21:29    2*             2*   2*    
+8  Betty Lison             Mariager Fjord  D55-   01:23:57    3    5    4               
+9  Tina Udholm             Aalborg Ok      D50-   01:39:44         4         2         3
+10 Birgitte Jørgensen      Viborg Ok       D55-   01:46:25              3         1    2
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lone Christensen        Aarhus 1900 Ori D65-   00:59:48    4              4    4     
+2  Edith Sørensen          Aalborg Ok      D65-   01:04:09         4         3         4
+3  Birthe Worm             Aarhus 1900 Ori D65-   01:06:03    3              2    3     
+4  Randi Jensen            Aarhus 1900 Ori D60-   01:07:22                              
+5  Hanne H. Poulsen        Mariager Fjord  D60-   01:07:45    2    3    4               
+6  Pia Gade                Viborg Ok       D60-   01:10:13              3         2    3
+7  Bente Østergaard        Mariager Fjord  D60-   01:14:54    1    2    2               
+   Mette Dam               Viborg Ok       D65-       Disk                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rigmor Schou            Mariager Fjord  D70-   00:44:55    4    4    4               
+2  Bodil Buchtrup Jensen   Aarhus 1900 Ori D70-   01:02:01    3              4    4     
+
+Gruppe D6 (D -14) - [4, 3, 2, 1] + [2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Astrid Gylling Hougaard Aarhus 1900 Ori D-14   00:40:29    6*             6*   6*    
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Marie Dybdal            Aarhus 1900 Ori D21-B  00:36:40    2              2    2     
+2  Marie Beukel Bak        Aalborg Ok      D21-B  00:38:33         2         2         2
+3  Betina Gram Johansen    Mariager Fjord  D21-B  00:47:29    2    2    2               
+4  Louise Kolind           Aarhus 1900 Ori D35-B  00:52:38    2              2    2     
+5  Inge Mogensen           Aalborg Ok      D35-B  01:16:17         2         1         2
+6  Lena Deleuran Nørgaard  Aarhus 1900 Ori D35-B  01:23:41    1              1    2     
+7  Inge Iversen            Mariager Fjord  D35-B  01:44:47    1    1    2               
+
+Gruppe D8 (D -12, D -14B, D 21-C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sanne Andersen          Aalborg Ok      D21-C  00:35:34         2         2         2
+2  Berit Smallwood         Mariager Fjord  D21-C  00:40:44    2         2               
+3  Anna Bo Kølbæk          Aarhus 1900 Ori D-12   00:44:31    4*             4*   4*    
+
+Gruppe 9 (H -10, D -10, D -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+--------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Henrik Runholt          Mariager Fjord  Beg    00:26:43    1    1    1               
+2  Benjamin Birk Nielsen   Aalborg Ok      Beg    00:37:12         1         1         1
+3  Kirsten J. Nielsen      Mariager Fjord  Beg    00:39:22    1    1    1               
+4  Erik B. Nielsen         Mariager Fjord  Beg    00:41:39    1    1    1               
+

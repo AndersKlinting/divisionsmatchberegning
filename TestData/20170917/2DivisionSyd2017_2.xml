@@ -1,0 +1,4969 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<DivisionsResultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Aar>2017</Aar>
+  <Division>2</Division>
+  <Kreds>Sydkredsen</Kreds>
+  <DivisionsMatchResultater>
+    <DivisionsMatchResultat>
+      <Dato>2017-04-02</Dato>
+      <Runde>1</Runde>
+      <Skov>Hegnstrup Plantage</Skov>
+      <MatchType>Divisionsmatch</MatchType>
+      <Klubber>
+        <Klub>
+          <Navn>FROS/Melfar</Navn>
+          <Placering>2</Placering>
+          <MatchPoint>4</MatchPoint>
+          <LoebsPoint>367</LoebsPoint>
+          <Kommentar>(232)</Kommentar>
+          <Udebleven>false</Udebleven>
+        </Klub>
+        <Klub>
+          <Navn>Faaborg OK</Navn>
+          <Placering>1</Placering>
+          <MatchPoint>4</MatchPoint>
+          <LoebsPoint>382</LoebsPoint>
+          <Kommentar>(245)</Kommentar>
+          <Udebleven>false</Udebleven>
+        </Klub>
+        <Klub>
+          <Navn>OK Syd</Navn>
+          <Placering>4</Placering>
+          <MatchPoint>0</MatchPoint>
+          <LoebsPoint>234</LoebsPoint>
+          <Udebleven>false</Udebleven>
+        </Klub>
+        <Klub>
+          <Navn>Odense OK</Navn>
+          <Placering>3</Placering>
+          <MatchPoint>4</MatchPoint>
+          <LoebsPoint>347</LoebsPoint>
+          <Kommentar>(222)</Kommentar>
+          <Udebleven>false</Udebleven>
+        </Klub>
+      </Klubber>
+      <Matcher>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>FROS/Melfar</Navn>
+              <Score>121</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>Faaborg OK</Navn>
+              <Score>120</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>FROS/Melfar</Navn>
+              <Score>135</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>OK Syd</Navn>
+              <Score>73</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>FROS/Melfar</Navn>
+              <Score>111</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>Odense OK</Navn>
+              <Score>116</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>Faaborg OK</Navn>
+              <Score>137</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>OK Syd</Navn>
+              <Score>82</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>Faaborg OK</Navn>
+              <Score>125</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>Odense OK</Navn>
+              <Score>106</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>OK Syd</Navn>
+              <Score>79</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>Odense OK</Navn>
+              <Score>125</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+      </Matcher>
+      <Loebere>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carsten</Fornavn>
+          <EfterNavn>Granby</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:16:21</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Magnus</Fornavn>
+          <EfterNavn>Lindahl</EfterNavn>
+          <Loebsklasse>H-10</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:16:30</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Johannes Nørgaard</Fornavn>
+          <EfterNavn>Peulicke</EfterNavn>
+          <Loebsklasse>H-10</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:20:18</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Aske</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>H-10</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:20:40</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Johanna K.</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>D-10</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:24:02</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Augustas</Fornavn>
+          <EfterNavn>Bloze</EfterNavn>
+          <Loebsklasse>H-10</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:24:29</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>August</Fornavn>
+          <EfterNavn>Gabs</EfterNavn>
+          <Loebsklasse>H-12</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:25:54</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jakob</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>H-10</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:27:11</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mathias Birch</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H-20C</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:29:30</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jesper Beck</Fornavn>
+          <EfterNavn>Tanderup</EfterNavn>
+          <Loebsklasse>H21-C</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:31:16</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sofie Rohde</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:31:59</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christian Rohde</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:32:02</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Martin</Fornavn>
+          <EfterNavn>Thorwest</EfterNavn>
+          <Loebsklasse>H21-C</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:32:50</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Steffen</Fornavn>
+          <EfterNavn>Trog</EfterNavn>
+          <Loebsklasse>H-20C</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:33:36</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tanja</Fornavn>
+          <EfterNavn>Johannsen</EfterNavn>
+          <Loebsklasse>D21-C</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:34:02</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mette</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D-10</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:34:10</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jenni Volmar</Fornavn>
+          <EfterNavn>Skovsgaard</EfterNavn>
+          <Loebsklasse>D21-C</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:34:30</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Benjamin</Fornavn>
+          <EfterNavn>Krabek</EfterNavn>
+          <Loebsklasse>H-10</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:35:28</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anna-Marie</Fornavn>
+          <EfterNavn>Kühl</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:35:55</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inge Price</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D60-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:36:24</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bente</Fornavn>
+          <EfterNavn>Honnens</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:36:58</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bettina Nissen</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:37:43</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Wolfgang</Fornavn>
+          <EfterNavn>Schulz</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:38:59</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Magnus Fannar</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H-12</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:39:10</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Daniel</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H-12</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:39:25</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karen Q</Fornavn>
+          <EfterNavn>Frederiksen</EfterNavn>
+          <Loebsklasse>D-14B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:39:41</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Henriette Lunde</Fornavn>
+          <EfterNavn>Ellekilde</EfterNavn>
+          <Loebsklasse>D21-C</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:40:00</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Erik</Fornavn>
+          <EfterNavn>Damgaard</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:40:06</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Zelda Marie Damkjær</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>D-10</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:40:57</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Line</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>D-14</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:42:11</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gerhard</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:42:21</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Niels</Fornavn>
+          <EfterNavn>Rabølle</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:42:32</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Amanda modler</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>D-14</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:43:08</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>H. V.</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:43:12</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karina Bak</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>D21-C</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:43:48</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Niels Møller</Fornavn>
+          <EfterNavn>Petersen</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:44:01</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Leif Skovgaard</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:44:17</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ita</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>D21-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:44:18</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carl Christian Valbjørn</Fornavn>
+          <EfterNavn>Gydesen</EfterNavn>
+          <Loebsklasse>H-20B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:44:18</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ole</Fornavn>
+          <EfterNavn>Hoffmann</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:44:47</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Torben</Fornavn>
+          <EfterNavn>Hansen</EfterNavn>
+          <Loebsklasse>H60-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:45:12</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Finn</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:45:15</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Vagn</Fornavn>
+          <EfterNavn>Sørensen</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:45:17</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Katrine Rimmen</Fornavn>
+          <EfterNavn>Thomsen</EfterNavn>
+          <Loebsklasse>D-20B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:45:42</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kristian</Fornavn>
+          <EfterNavn>Toustrup</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:46:11</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jørn H.</Fornavn>
+          <EfterNavn>Klausen</EfterNavn>
+          <Loebsklasse>H60-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:46:23</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inge S.</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>D21-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:46:57</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mogens E.</Fornavn>
+          <EfterNavn>Thomsen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:47:24</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonathan</Fornavn>
+          <EfterNavn>Ramus</EfterNavn>
+          <Loebsklasse>H-20B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:47:26</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sven</Fornavn>
+          <EfterNavn>Spangsberg</EfterNavn>
+          <Loebsklasse>H60-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:47:37</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kristian Traberg</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:48:21</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lis</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>D65-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:48:25</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonas Bo Kirk</Fornavn>
+          <EfterNavn>Egdal</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:48:55</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Aksel</Fornavn>
+          <EfterNavn>Skovlyst</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:49:12</Tid>
+          <Placering>11</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kristian</Fornavn>
+          <EfterNavn>Baden</EfterNavn>
+          <Loebsklasse>H21-B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:49:15</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lotte</Fornavn>
+          <EfterNavn>Hjort</EfterNavn>
+          <Loebsklasse>D65-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:50:06</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sebastian</Fornavn>
+          <EfterNavn>Burattini</EfterNavn>
+          <Loebsklasse>H-14</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:50:06</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karsten</Fornavn>
+          <EfterNavn>Jøhnk</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:50:14</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lone Wolff</Fornavn>
+          <EfterNavn>Andersen</EfterNavn>
+          <Loebsklasse>D21-C</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:50:18</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jørgen</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:50:45</Tid>
+          <Placering>14</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Laurits Egdal</Fornavn>
+          <EfterNavn>Kortegård</EfterNavn>
+          <Loebsklasse>H-14</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:51:20</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gert</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:51:30</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Claes Ø.</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>H60-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:51:39</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Nicolai</Fornavn>
+          <EfterNavn>Krabek</EfterNavn>
+          <Loebsklasse>H21-B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:51:39</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hans</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:51:48</Tid>
+          <Placering>15</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sune</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:51:57</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Emma</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:52:00</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Allan</Fornavn>
+          <EfterNavn>Grundsøe</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:52:08</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sarah Kathrine Nissen</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>D-20</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:52:09</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Henning</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H21-C</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:52:12</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Matilde</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>D-16</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:52:28</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anne Grethe</Fornavn>
+          <EfterNavn>Eriksen</EfterNavn>
+          <Loebsklasse>D35-B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:52:56</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Søren</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:53:01</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Conor</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:53:04</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hanne</Fornavn>
+          <EfterNavn>Ljungberg</EfterNavn>
+          <Loebsklasse>D55-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:53:12</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lars</Fornavn>
+          <EfterNavn>Haastrup</EfterNavn>
+          <Loebsklasse>H21-B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:53:50</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonas</Fornavn>
+          <EfterNavn>Hekman</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:54:19</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Michael</Fornavn>
+          <EfterNavn>Termansen</EfterNavn>
+          <Loebsklasse>H50-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:54:23</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Esben</Fornavn>
+          <EfterNavn>Blicher</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:54:25</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Terkel</Fornavn>
+          <EfterNavn>Gydesen</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:54:40</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tobias Rohde</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>H-12</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:54:41</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Thomas</Fornavn>
+          <EfterNavn>Sørensen</EfterNavn>
+          <Loebsklasse>H50-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:54:45</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tommy</Fornavn>
+          <EfterNavn>Iversen</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:54:50</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kurt</Fornavn>
+          <EfterNavn>Petersen</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:55:06</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lone Fyhn</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:55:23</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Palle Møller</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:55:33</Tid>
+          <Placering>16</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bo Mønster</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:55:42</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Uffe</Fornavn>
+          <EfterNavn>Sudergaard</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:55:57</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Erik</Fornavn>
+          <EfterNavn>Ljungdahl</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:56:02</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rasmus</Fornavn>
+          <EfterNavn>Iversen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:56:10</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lars Kvist</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>H60-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:56:39</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Musse</Fornavn>
+          <EfterNavn>Brage</EfterNavn>
+          <Loebsklasse>D70-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:56:54</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christina Damgaard</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>D21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:57:02</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inger</Fornavn>
+          <EfterNavn>Andersen</EfterNavn>
+          <Loebsklasse>D70-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:57:02</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Maya</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D-16</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:57:12</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Harald</Fornavn>
+          <EfterNavn>Schultz</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:57:12</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Henrik Steen</Fornavn>
+          <EfterNavn>Andersen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:57:15</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Grethe</Fornavn>
+          <EfterNavn>Hviid</EfterNavn>
+          <Loebsklasse>D70-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:57:15</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Merete Spangsberg</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>D21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:57:26</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anders Winther</Fornavn>
+          <EfterNavn>Mortensen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:57:45</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Viktor Bro</Fornavn>
+          <EfterNavn>Fejring</EfterNavn>
+          <Loebsklasse>H-14</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:57:49</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Frede</Fornavn>
+          <EfterNavn>Jacobsen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:58:00</Tid>
+          <Placering>18</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Silke</Fornavn>
+          <EfterNavn>Bolbro</EfterNavn>
+          <Loebsklasse>D70-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:58:17</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rasmus</Fornavn>
+          <EfterNavn>Mindegaard</EfterNavn>
+          <Loebsklasse>H-14</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:59:09</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Morten</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:59:11</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lars</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:59:13</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Søren</Fornavn>
+          <EfterNavn>Hviid</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:59:14</Tid>
+          <Placering>19</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>H35-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:59:22</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bjarne Skovgaard</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:59:43</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jakob Q</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:59:46</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Henning</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:00:06</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ethna</Fornavn>
+          <EfterNavn>Cavanagh</EfterNavn>
+          <Loebsklasse>D50-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:00:38</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Holger</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:00:51</Tid>
+          <Placering>20</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Søren</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:00:56</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Edit</Fornavn>
+          <EfterNavn>Thomsen</EfterNavn>
+          <Loebsklasse>D70-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:01:06</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Oliver Thorsing</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H-16</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:01:20</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anna</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>D-20B</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:01:40</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hans-Henrik</Fornavn>
+          <EfterNavn>Hvelplund</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:02:01</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lisbeth</Fornavn>
+          <EfterNavn>Skovbjerg</EfterNavn>
+          <Loebsklasse>D50-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:02:11</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hans</Fornavn>
+          <EfterNavn>Moos</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:02:12</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Olav</Fornavn>
+          <EfterNavn>Christoffersen</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:02:23</Tid>
+          <Placering>22</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bent</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H50-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:02:27</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Susanne</Fornavn>
+          <EfterNavn>Bargmeyer</EfterNavn>
+          <Loebsklasse>D21-C</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:02:58</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ove</Fornavn>
+          <EfterNavn>Petersen</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:03:37</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter</Fornavn>
+          <EfterNavn>Mindegaard</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:03:39</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter Modler</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>H-16</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:03:51</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter</Fornavn>
+          <EfterNavn>Pallesen</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:04:22</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lars Strøm</Fornavn>
+          <EfterNavn>Hansen</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:04:34</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Malte</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:04:37</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gitte</Fornavn>
+          <EfterNavn>Spangsberg</EfterNavn>
+          <Loebsklasse>D60-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:04:48</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Johnny</Fornavn>
+          <EfterNavn>Rosenkjær</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:04:54</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lotte</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D50-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:05:11</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tove</Fornavn>
+          <EfterNavn>Skovlyst</EfterNavn>
+          <Loebsklasse>D70-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:05:14</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lina</Fornavn>
+          <EfterNavn>Granby</EfterNavn>
+          <Loebsklasse>D-16B</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:05:17</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bjarne</Fornavn>
+          <EfterNavn>Johannsen</EfterNavn>
+          <Loebsklasse>H35-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:05:26</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Maria</Fornavn>
+          <EfterNavn>Bargmeyer</EfterNavn>
+          <Loebsklasse>D-16</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:05:45</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Thomas</Fornavn>
+          <EfterNavn>Gabs</EfterNavn>
+          <Loebsklasse>H35-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:06:03</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hans Erik</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:06:09</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gunner</Fornavn>
+          <EfterNavn>Aaskov</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:06:18</Tid>
+          <Placering>24</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jakob</Fornavn>
+          <EfterNavn>Dreisig</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:06:36</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter M.</Fornavn>
+          <EfterNavn>Sigvardt</EfterNavn>
+          <Loebsklasse>H21-B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:06:40</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Birger</Fornavn>
+          <EfterNavn>Jønsson</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:06:41</Tid>
+          <Placering>13</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Claus</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:06:51</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anne-Marie</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D50-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:07:03</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonas</Fornavn>
+          <EfterNavn>Gabs</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:07:37</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gintas</Fornavn>
+          <EfterNavn>Bloze</EfterNavn>
+          <Loebsklasse>H35-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:08:25</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ulla</Fornavn>
+          <EfterNavn>Pallesen</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:08:29</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carsten</Fornavn>
+          <EfterNavn>Djursaa</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:09:12</Tid>
+          <Placering>11</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inger</Fornavn>
+          <EfterNavn>Andreasen</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:09:12</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kurt</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H55-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:09:17</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jesper</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H40-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:09:32</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Helle</Fornavn>
+          <EfterNavn>Termansen</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:09:55</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karen</Fornavn>
+          <EfterNavn>Bülow-Olsen</EfterNavn>
+          <Loebsklasse>D40-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:10:04</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Birte</Fornavn>
+          <EfterNavn>Hove</EfterNavn>
+          <Loebsklasse>D65-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:10:21</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Pia Damkjær</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>D21-B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:11:00</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rita</Fornavn>
+          <EfterNavn>Christoffersen</EfterNavn>
+          <Loebsklasse>D70-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:11:13</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christoffer Nørgaard</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H21-B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:11:27</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kaj Ole</Fornavn>
+          <EfterNavn>Jensby</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:12:59</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kasper Dan</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:13:11</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>John</Fornavn>
+          <EfterNavn>Bargmeyer</EfterNavn>
+          <Loebsklasse>H35-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:14:56</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Flemming</Fornavn>
+          <EfterNavn>Christiansen</EfterNavn>
+          <Loebsklasse>H45-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:16:09</Tid>
+          <Placering>12</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mette Riis</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:16:14</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rasmus</Fornavn>
+          <EfterNavn>Ejlersen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:17:41</Tid>
+          <Placering>11</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anni</Fornavn>
+          <EfterNavn>Plauborg</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:18:47</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Henriette</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>D35-B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:19:44</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Daniel Nissen</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H-20</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:20:12</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonas Straarup</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H21-B</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:20:17</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kim Lykkegård</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H50-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:20:25</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Heidi</Fornavn>
+          <EfterNavn>Granby</EfterNavn>
+          <Loebsklasse>D40-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:21:01</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anton</Fornavn>
+          <EfterNavn>Johansen</EfterNavn>
+          <Loebsklasse>H-14</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:21:58</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rikke Brandt</Fornavn>
+          <EfterNavn>Jespersen</EfterNavn>
+          <Loebsklasse>D40-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:22:17</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mads Mollerup</Fornavn>
+          <EfterNavn>Benfeldt</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:23:52</Tid>
+          <Placering>12</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mette</Fornavn>
+          <EfterNavn>Lindahl</EfterNavn>
+          <Loebsklasse>D35-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:24:01</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Marianne</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>D35-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:24:34</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Finn</Fornavn>
+          <EfterNavn>Hove</EfterNavn>
+          <Loebsklasse>H70-</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:24:54</Tid>
+          <Placering>25</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anja Modler</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:24:58</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lisette</Fornavn>
+          <EfterNavn>Christiansen</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:25:10</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Susanne</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>D45-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:25:45</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ellen</Fornavn>
+          <EfterNavn>Møller</EfterNavn>
+          <Loebsklasse>D55-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:30:14</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mathias Rimmer</Fornavn>
+          <EfterNavn>Andersen</EfterNavn>
+          <Loebsklasse>H-14</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:31:53</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sten Olof</Fornavn>
+          <EfterNavn>Jansson</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:32:13</Tid>
+          <Placering>12</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Helle</Fornavn>
+          <EfterNavn>Sørensen</EfterNavn>
+          <Loebsklasse>D50-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:33:31</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jeanette</Fornavn>
+          <EfterNavn>Dreisig</EfterNavn>
+          <Loebsklasse>D35-B</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:42:39</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karen Lise</Fornavn>
+          <EfterNavn>Bøgh</EfterNavn>
+          <Loebsklasse>D55-</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>02:06:37</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anders Rune Damkjær</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H21-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>02:18:29</Tid>
+          <Placering>13</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christian Volmar</Fornavn>
+          <EfterNavn>Skovsgaard</EfterNavn>
+          <Loebsklasse>H35-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Verner</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H50-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Torben</Fornavn>
+          <EfterNavn>Rasmussen</EfterNavn>
+          <Loebsklasse>H60-</Loebsklasse>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sven</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H65-</Loebsklasse>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Palle Rimmer</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H35-B</Loebsklasse>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+      </Loebere>
+    </DivisionsMatchResultat>
+    <DivisionsMatchResultat>
+      <Dato>2017-09-17</Dato>
+      <Runde>2</Runde>
+      <Skov>Munkebjerg Øst</Skov>
+      <MatchType>Divisionsmatch</MatchType>
+      <Klubber>
+        <Klub>
+          <Navn>FROS/Melfar</Navn>
+          <Placering>2</Placering>
+          <MatchPoint>4</MatchPoint>
+          <LoebsPoint>401</LoebsPoint>
+          <Kommentar>(247), 11 1. pl</Kommentar>
+          <Udebleven>false</Udebleven>
+        </Klub>
+        <Klub>
+          <Navn>Faaborg OK</Navn>
+          <Placering>3</Placering>
+          <MatchPoint>4</MatchPoint>
+          <LoebsPoint>401</LoebsPoint>
+          <Kommentar>(247), 6 1. pl</Kommentar>
+          <Udebleven>false</Udebleven>
+        </Klub>
+        <Klub>
+          <Navn>Odense OK</Navn>
+          <Placering>1</Placering>
+          <MatchPoint>4</MatchPoint>
+          <LoebsPoint>401</LoebsPoint>
+          <Kommentar>(248)</Kommentar>
+          <Udebleven>false</Udebleven>
+        </Klub>
+        <Klub>
+          <Navn>OK Syd</Navn>
+          <Placering>4</Placering>
+          <MatchPoint>0</MatchPoint>
+          <LoebsPoint>147</LoebsPoint>
+          <Udebleven>false</Udebleven>
+        </Klub>
+      </Klubber>
+      <Matcher>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>FROS/Melfar</Navn>
+              <Score>126</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>Faaborg OK</Navn>
+              <Score>123</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>FROS/Melfar</Navn>
+              <Score>121</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>Odense OK</Navn>
+              <Score>125</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>FROS/Melfar</Navn>
+              <Score>154</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>OK Syd</Navn>
+              <Score>46</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>Faaborg OK</Navn>
+              <Score>124</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>Odense OK</Navn>
+              <Score>123</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>Faaborg OK</Navn>
+              <Score>154</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>OK Syd</Navn>
+              <Score>52</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+        <Match>
+          <MatchKlubber>
+            <MatchKlub>
+              <Navn>Odense OK</Navn>
+              <Score>153</Score>
+            </MatchKlub>
+            <MatchKlub>
+              <Navn>OK Syd</Navn>
+              <Score>49</Score>
+            </MatchKlub>
+          </MatchKlubber>
+        </Match>
+      </Matcher>
+      <Loebere>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Valdemar Egdal</Fornavn>
+          <EfterNavn>Kortegård</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:13:57</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Magnus Mølgaard</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:15:43</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anton Spile</Fornavn>
+          <EfterNavn>Andersen</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:16:21</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Emil</Fornavn>
+          <EfterNavn>Lindahl</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:16:23</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anders M.</Fornavn>
+          <EfterNavn>Sigvardt</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:16:37</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Stinus Martin Larsen</Fornavn>
+          <EfterNavn>Reilev</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:18:04</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Magnus</Fornavn>
+          <EfterNavn>Lindahl</EfterNavn>
+          <Loebsklasse>H12</Loebsklasse>
+          <GruppeKlasse>H12</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:19:56</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Victor</Fornavn>
+          <EfterNavn>Lambertsen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:20:37</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jakob</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:22:17</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carl-Christian</Fornavn>
+          <EfterNavn>Odgaard</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:22:58</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karina Bak</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:24:10</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Birger</Fornavn>
+          <EfterNavn>Jønsson</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:25:29</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karoline Gasbjerg</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>D12B</Loebsklasse>
+          <GruppeKlasse>D12B</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:26:49</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Markus</Fornavn>
+          <EfterNavn>Gasbjerg</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:27:26</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karla</Fornavn>
+          <EfterNavn>Blicher</EfterNavn>
+          <Loebsklasse>D10</Loebsklasse>
+          <GruppeKlasse>D10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:28:28</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Johanna K.</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>D10</Loebsklasse>
+          <GruppeKlasse>D10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:28:54</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lone H</Fornavn>
+          <EfterNavn>Frederiksen</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:29:06</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carsten</Fornavn>
+          <EfterNavn>Granby</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:29:10</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Freja</Fornavn>
+          <EfterNavn>Paulsen</EfterNavn>
+          <Loebsklasse>D20C</Loebsklasse>
+          <GruppeKlasse>D20C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:29:26</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sofie Rohde</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:29:44</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christian Rohde</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:29:45</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Magnus Fannar</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H12</Loebsklasse>
+          <GruppeKlasse>H12</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:29:59</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mette</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D10</Loebsklasse>
+          <GruppeKlasse>D10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:30:30</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Phillip Fyhn</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>H12</Loebsklasse>
+          <GruppeKlasse>H12</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:30:32</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mikkel Mølgaard</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:31:12</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ayoe</Fornavn>
+          <EfterNavn>Berg</EfterNavn>
+          <Loebsklasse>D60</Loebsklasse>
+          <GruppeKlasse>D60</GruppeKlasse>
+          <Gruppe>D4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:32:49</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Claes Ø.</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>H21C</Loebsklasse>
+          <GruppeKlasse>H21C</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:33:52</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Emma</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>D21B</Loebsklasse>
+          <GruppeKlasse>D21B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:33:55</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Steffen</Fornavn>
+          <EfterNavn>Trog</EfterNavn>
+          <Loebsklasse>H20C</Loebsklasse>
+          <GruppeKlasse>H20C</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:34:18</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Benjamin</Fornavn>
+          <EfterNavn>Krabek</EfterNavn>
+          <Loebsklasse>H10</Loebsklasse>
+          <GruppeKlasse>H10</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:34:27</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Martin</Fornavn>
+          <EfterNavn>Thorwest</EfterNavn>
+          <Loebsklasse>H21C</Loebsklasse>
+          <GruppeKlasse>H21C</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:34:40</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lukas</Fornavn>
+          <EfterNavn>Lambertsen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:35:00</Tid>
+          <Placering>11</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inge Price</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D60</Loebsklasse>
+          <GruppeKlasse>D60</GruppeKlasse>
+          <Gruppe>D4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:35:28</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Flora</Fornavn>
+          <EfterNavn>Fogh</EfterNavn>
+          <Loebsklasse>D12</Loebsklasse>
+          <GruppeKlasse>D12</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:35:48</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tove</Fornavn>
+          <EfterNavn>Skovlyst</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:36:15</Tid>
+          <Placering>12</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>H. V.</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:37:27</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Aske</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>H12</Loebsklasse>
+          <GruppeKlasse>H12</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:37:34</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Wolfgang</Fornavn>
+          <EfterNavn>Schulz</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:37:50</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karen Q</Fornavn>
+          <EfterNavn>Frederiksen</EfterNavn>
+          <Loebsklasse>D14B</Loebsklasse>
+          <GruppeKlasse>D14B</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:38:06</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Line</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>D14</Loebsklasse>
+          <GruppeKlasse>D14</GruppeKlasse>
+          <Gruppe>D6</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:38:57</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Nina</Fornavn>
+          <EfterNavn>Kongstad</EfterNavn>
+          <Loebsklasse>D14B</Loebsklasse>
+          <GruppeKlasse>D14B</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:39:18</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Emilie</Fornavn>
+          <EfterNavn>Beich-Frandsen</EfterNavn>
+          <Loebsklasse>D12</Loebsklasse>
+          <GruppeKlasse>D12</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:39:48</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Noah Nørskov Sandberg</Fornavn>
+          <EfterNavn>Svensson</EfterNavn>
+          <Loebsklasse>H12</Loebsklasse>
+          <GruppeKlasse>H12</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:41:28</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jeanette</Fornavn>
+          <EfterNavn>Dreisig</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:41:53</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ole</Fornavn>
+          <EfterNavn>Hoffmann</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:43:00</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Steinunn</Fornavn>
+          <EfterNavn>Magnusdottir</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:43:18</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Olav</Fornavn>
+          <EfterNavn>Odgaard</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:43:21</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Torben</Fornavn>
+          <EfterNavn>Rasmussen</EfterNavn>
+          <Loebsklasse>H60</Loebsklasse>
+          <GruppeKlasse>H60</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:43:29</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Albert</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:44:00</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tine</Fornavn>
+          <EfterNavn>Lambertsen</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:44:06</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jørgen</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:44:40</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Alice</Fornavn>
+          <EfterNavn>Sigvardt</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:46:07</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hans</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:46:08</Tid>
+          <Placering>11</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Andreja</Fornavn>
+          <EfterNavn>Dimitrijevic</EfterNavn>
+          <Loebsklasse>H21C</Loebsklasse>
+          <GruppeKlasse>H21C</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:47:09</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Zelda Marie Damkjær</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>Begynder</Loebsklasse>
+          <GruppeKlasse>Begynder</GruppeKlasse>
+          <Gruppe>9</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:47:12</Tid>
+          <Placering>13</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Daniel</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H12</Loebsklasse>
+          <GruppeKlasse>H12</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:48:17</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mogens E.</Fornavn>
+          <EfterNavn>Thomsen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:48:36</Tid>
+          <Placering>12</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Børge</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:48:44</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonas Bo Kirk</Fornavn>
+          <EfterNavn>Egdal</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:49:01</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gunner</Fornavn>
+          <EfterNavn>Aaskov</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:49:16</Tid>
+          <Placering>13</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonas</Fornavn>
+          <EfterNavn>Gabs</EfterNavn>
+          <Loebsklasse>H16</Loebsklasse>
+          <GruppeKlasse>H16</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:49:39</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tue</Fornavn>
+          <EfterNavn>Lassen</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:49:55</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Laura</Fornavn>
+          <EfterNavn>Bøgh</EfterNavn>
+          <Loebsklasse>D21B</Loebsklasse>
+          <GruppeKlasse>D21B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:50:09</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lotte</Fornavn>
+          <EfterNavn>Hjort</EfterNavn>
+          <Loebsklasse>D65</Loebsklasse>
+          <GruppeKlasse>D65</GruppeKlasse>
+          <Gruppe>D4</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:50:20</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Palle Møller</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:50:59</Tid>
+          <Placering>15</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tobias Rohde</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>H12</Loebsklasse>
+          <GruppeKlasse>H12</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:51:15</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gerhard</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:51:20</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gert</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:51:33</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bent</Fornavn>
+          <EfterNavn>Aakjær</EfterNavn>
+          <Loebsklasse>H60</Loebsklasse>
+          <GruppeKlasse>H60</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:51:38</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ethna</Fornavn>
+          <EfterNavn>Cavanagh</EfterNavn>
+          <Loebsklasse>D50</Loebsklasse>
+          <GruppeKlasse>D50</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:51:42</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karsten</Fornavn>
+          <EfterNavn>Jøhnk</EfterNavn>
+          <Loebsklasse>H55</Loebsklasse>
+          <GruppeKlasse>H55</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:51:54</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anne Mølgaard</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>D35B</Loebsklasse>
+          <GruppeKlasse>D35B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:52:30</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Caroline</Fornavn>
+          <EfterNavn>Gjøtterup</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:52:35</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter Modler</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>H16</Loebsklasse>
+          <GruppeKlasse>H16</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:52:59</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Erik</Fornavn>
+          <EfterNavn>Ljungdahl</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:52:59</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter M.</Fornavn>
+          <EfterNavn>Sigvardt</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:53:45</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lis</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>D65</Loebsklasse>
+          <GruppeKlasse>D65</GruppeKlasse>
+          <Gruppe>D4</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:54:27</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jørn H.</Fornavn>
+          <EfterNavn>Klausen</EfterNavn>
+          <Loebsklasse>H60</Loebsklasse>
+          <GruppeKlasse>H60</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:54:29</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Amanda modler</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>D14</Loebsklasse>
+          <GruppeKlasse>D14</GruppeKlasse>
+          <Gruppe>D6</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:54:49</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Niels Møller</Fornavn>
+          <EfterNavn>Petersen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:56:09</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Matilde</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>D16</Loebsklasse>
+          <GruppeKlasse>D16</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:56:26</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ita</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:56:31</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Holger</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:56:53</Tid>
+          <Placering>17</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Leif Skovgaard</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:58:36</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lars</Fornavn>
+          <EfterNavn>Haastrup</EfterNavn>
+          <Loebsklasse>H21B</Loebsklasse>
+          <GruppeKlasse>H21B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:59:04</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>August</Fornavn>
+          <EfterNavn>Gabs</EfterNavn>
+          <Loebsklasse>H14</Loebsklasse>
+          <GruppeKlasse>H14</GruppeKlasse>
+          <Gruppe>H6</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:59:07</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carl Emil Møller</Fornavn>
+          <EfterNavn>Rasmussen</EfterNavn>
+          <Loebsklasse>H14B</Loebsklasse>
+          <GruppeKlasse>H14B</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:59:14</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hanne</Fornavn>
+          <EfterNavn>Ljungberg</EfterNavn>
+          <Loebsklasse>D55</Loebsklasse>
+          <GruppeKlasse>D55</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:59:35</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Tommy</Fornavn>
+          <EfterNavn>Iversen</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:00:05</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Vibeke</Fornavn>
+          <EfterNavn>Dalgaard</EfterNavn>
+          <Loebsklasse>D60</Loebsklasse>
+          <GruppeKlasse>D60</GruppeKlasse>
+          <Gruppe>D4</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:00:05</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kurt</Fornavn>
+          <EfterNavn>Petersen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:00:06</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Torben</Fornavn>
+          <EfterNavn>Hansen</EfterNavn>
+          <Loebsklasse>H60</Loebsklasse>
+          <GruppeKlasse>H60</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:00:24</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Finn</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:00:43</Tid>
+          <Placering>11</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Dennis Bøje</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:01:09</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jørgen</Fornavn>
+          <EfterNavn>Bruntse</EfterNavn>
+          <Loebsklasse>H60</Loebsklasse>
+          <GruppeKlasse>H60</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:01:16</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sebastian</Fornavn>
+          <EfterNavn>Burattini</EfterNavn>
+          <Loebsklasse>H14</Loebsklasse>
+          <GruppeKlasse>H14</GruppeKlasse>
+          <Gruppe>H6</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:01:25</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Olav</Fornavn>
+          <EfterNavn>Christoffersen</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:01:36</Tid>
+          <Placering>19</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inge S.</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:02:05</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Laurits Egdal</Fornavn>
+          <EfterNavn>Kortegård</EfterNavn>
+          <Loebsklasse>H14</Loebsklasse>
+          <GruppeKlasse>H14</GruppeKlasse>
+          <Gruppe>H6</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:02:07</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonathan</Fornavn>
+          <EfterNavn>Ramus</EfterNavn>
+          <Loebsklasse>H20B</Loebsklasse>
+          <GruppeKlasse>H20B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:02:13</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anders Rune Damkjær</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>H21B</Loebsklasse>
+          <GruppeKlasse>H21B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:02:23</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Thomas</Fornavn>
+          <EfterNavn>Gabs</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:02:31</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Dorthe</Fornavn>
+          <EfterNavn>Lind</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:02:40</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kristian</Fornavn>
+          <EfterNavn>Toustrup</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:02:54</Tid>
+          <Placering>13</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anne-Mette</Fornavn>
+          <EfterNavn>Mortensen</EfterNavn>
+          <Loebsklasse>D50</Loebsklasse>
+          <GruppeKlasse>D50</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:03:38</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Aksel</Fornavn>
+          <EfterNavn>Skovlyst</EfterNavn>
+          <Loebsklasse>H70</Loebsklasse>
+          <GruppeKlasse>H70</GruppeKlasse>
+          <Gruppe>H5</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:03:54</Tid>
+          <Placering>21</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Maya</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D16</Loebsklasse>
+          <GruppeKlasse>D16</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:04:00</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jakob Q</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:04:06</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bjarne Skovgaard</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:04:09</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Thomas</Fornavn>
+          <EfterNavn>Sørensen</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:04:42</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Simon L.J.</Fornavn>
+          <EfterNavn>Kristensen</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:04:55</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Katalin Bolko</Fornavn>
+          <EfterNavn>Kongstad</EfterNavn>
+          <Loebsklasse>D50</Loebsklasse>
+          <GruppeKlasse>D50</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:05:13</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rikke Brandt</Fornavn>
+          <EfterNavn>Jespersen</EfterNavn>
+          <Loebsklasse>D35B</Loebsklasse>
+          <GruppeKlasse>D35B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:06:05</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>H35</Loebsklasse>
+          <GruppeKlasse>H35</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:07:07</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inger</Fornavn>
+          <EfterNavn>Andersen</EfterNavn>
+          <Loebsklasse>D70</Loebsklasse>
+          <GruppeKlasse>D70</GruppeKlasse>
+          <Gruppe>D5</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:08:14</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Thea Veng</Fornavn>
+          <EfterNavn>Basse</EfterNavn>
+          <Loebsklasse>D21B</Loebsklasse>
+          <GruppeKlasse>D21B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:08:26</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Klavs</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H35</Loebsklasse>
+          <GruppeKlasse>H35</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:08:56</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jesper Ege</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>H55</Loebsklasse>
+          <GruppeKlasse>H55</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:09:02</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hans</Fornavn>
+          <EfterNavn>Moos</EfterNavn>
+          <Loebsklasse>H55</Loebsklasse>
+          <GruppeKlasse>H55</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:09:28</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lars Kvist</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>H60</Loebsklasse>
+          <GruppeKlasse>H60</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:09:52</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Musse</Fornavn>
+          <EfterNavn>Brage</EfterNavn>
+          <Loebsklasse>D70</Loebsklasse>
+          <GruppeKlasse>D70</GruppeKlasse>
+          <Gruppe>D5</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:09:53</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anders Winther</Fornavn>
+          <EfterNavn>Mortensen</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:10:10</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gitte</Fornavn>
+          <EfterNavn>Spangsberg</EfterNavn>
+          <Loebsklasse>D35B</Loebsklasse>
+          <GruppeKlasse>D35B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:11:04</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bo Mønster</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:11:14</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter</Fornavn>
+          <EfterNavn>Mindegaard</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:11:16</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Morten</Fornavn>
+          <EfterNavn>Lassen</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:11:36</Tid>
+          <Placering>15</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jonas Straarup</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H21B</Loebsklasse>
+          <GruppeKlasse>H21B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:12:12</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Morten Mølgaard</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:12:28</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Hans Erik</Fornavn>
+          <EfterNavn>Larsen</EfterNavn>
+          <Loebsklasse>H55</Loebsklasse>
+          <GruppeKlasse>H55</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:13:17</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kim</Fornavn>
+          <EfterNavn>Lindahl</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:13:37</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ove</Fornavn>
+          <EfterNavn>Petersen</EfterNavn>
+          <Loebsklasse>H55</Loebsklasse>
+          <GruppeKlasse>H55</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:13:38</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christoffer</Fornavn>
+          <EfterNavn>Gjøtterup</EfterNavn>
+          <Loebsklasse>H20</Loebsklasse>
+          <GruppeKlasse>H20</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:13:58</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lone Fyhn</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>D45</Loebsklasse>
+          <GruppeKlasse>D45</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:14:05</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mathias Birch</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H16B</Loebsklasse>
+          <GruppeKlasse>H16B</GruppeKlasse>
+          <Gruppe>H6</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:15:30</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Morten Rindom</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>H20</Loebsklasse>
+          <GruppeKlasse>H20</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:15:31</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rita</Fornavn>
+          <EfterNavn>Christoffersen</EfterNavn>
+          <Loebsklasse>D70</Loebsklasse>
+          <GruppeKlasse>D70</GruppeKlasse>
+          <Gruppe>D5</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:16:17</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Esben</Fornavn>
+          <EfterNavn>Blicher</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:16:39</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bent</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:16:39</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bodil</Fornavn>
+          <EfterNavn>Grøn</EfterNavn>
+          <Loebsklasse>D35B</Loebsklasse>
+          <GruppeKlasse>D35B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:16:44</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Silke</Fornavn>
+          <EfterNavn>Bohlbro</EfterNavn>
+          <Loebsklasse>D70</Loebsklasse>
+          <GruppeKlasse>D70</GruppeKlasse>
+          <Gruppe>D5</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:17:42</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lars</Fornavn>
+          <EfterNavn>Thestrup</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:18:18</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christina Damgaard</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:18:20</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jakob</Fornavn>
+          <EfterNavn>Dreisig</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:18:33</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Uffe</Fornavn>
+          <EfterNavn>Møller</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:20:38</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Søren</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:20:42</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carsten</Fornavn>
+          <EfterNavn>Djursaa</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:21:03</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jette Bønløkke</Fornavn>
+          <EfterNavn>Post</EfterNavn>
+          <Loebsklasse>D55</Loebsklasse>
+          <GruppeKlasse>D55</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:22:13</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Arne</Fornavn>
+          <EfterNavn>Brage</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:22:48</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Pia Damkjær</Fornavn>
+          <EfterNavn>Pedersen</EfterNavn>
+          <Loebsklasse>D21B</Loebsklasse>
+          <GruppeKlasse>D21B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:22:54</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Johnny</Fornavn>
+          <EfterNavn>Rosenkjær</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:23:05</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anne-Marie</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D50</Loebsklasse>
+          <GruppeKlasse>D50</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:23:18</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jesper</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:23:23</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Ulla</Fornavn>
+          <EfterNavn>Pallesen</EfterNavn>
+          <Loebsklasse>D45</Loebsklasse>
+          <GruppeKlasse>D45</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:24:22</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Edit</Fornavn>
+          <EfterNavn>Thomsen</EfterNavn>
+          <Loebsklasse>D70</Loebsklasse>
+          <GruppeKlasse>D70</GruppeKlasse>
+          <Gruppe>D5</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:24:57</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kaj Ole</Fornavn>
+          <EfterNavn>Jensby</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:26:15</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Yvonne</Fornavn>
+          <EfterNavn>Koch</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:26:48</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Carsten</Fornavn>
+          <EfterNavn>Lind</EfterNavn>
+          <Loebsklasse>H35</Loebsklasse>
+          <GruppeKlasse>H35</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:28:08</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lotte</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D50</Loebsklasse>
+          <GruppeKlasse>D50</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:28:37</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Katrine Rimmen</Fornavn>
+          <EfterNavn>Thomsen</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:29:05</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Michael</Fornavn>
+          <EfterNavn>Termansen</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:29:11</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Niels</Fornavn>
+          <EfterNavn>Dalgaard</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:30:20</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karen Lise</Fornavn>
+          <EfterNavn>Bøgh</EfterNavn>
+          <Loebsklasse>D55</Loebsklasse>
+          <GruppeKlasse>D55</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:30:38</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Henrik Bo</Fornavn>
+          <EfterNavn>Bjerre-Andersen</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:31:13</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Søren</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:31:32</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Henning</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:32:45</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kim Lykkegård</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:33:23</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mogens</Fornavn>
+          <EfterNavn>Bøgh</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:33:31</Tid>
+          <Placering>17</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Claus Flak</Fornavn>
+          <EfterNavn>Christensen</EfterNavn>
+          <Loebsklasse>H35</Loebsklasse>
+          <GruppeKlasse>H35</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:33:39</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Camilla</Fornavn>
+          <EfterNavn>Spile</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:33:42</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Malte</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:34:40</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Helle</Fornavn>
+          <EfterNavn>Sørensen</EfterNavn>
+          <Loebsklasse>D35B</Loebsklasse>
+          <GruppeKlasse>D35B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:35:14</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Inger</Fornavn>
+          <EfterNavn>Andreasen</EfterNavn>
+          <Loebsklasse>D45</Loebsklasse>
+          <GruppeKlasse>D45</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:36:34</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jesper Beck</Fornavn>
+          <EfterNavn>Tanderup</EfterNavn>
+          <Loebsklasse>H21B</Loebsklasse>
+          <GruppeKlasse>H21B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:36:34</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Freja Djursaa</Fornavn>
+          <EfterNavn>Fabrin</EfterNavn>
+          <Loebsklasse>D20</Loebsklasse>
+          <GruppeKlasse>D20</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:37:33</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Maria</Fornavn>
+          <EfterNavn>Bargmeyer</EfterNavn>
+          <Loebsklasse>D16</Loebsklasse>
+          <GruppeKlasse>D16</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:38:25</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karen</Fornavn>
+          <EfterNavn>Bülow-Olsen</EfterNavn>
+          <Loebsklasse>D40</Loebsklasse>
+          <GruppeKlasse>D40</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:38:35</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kristian</Fornavn>
+          <EfterNavn>Baden</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:40:26</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kristine</Fornavn>
+          <EfterNavn>Rosenkjær</EfterNavn>
+          <Loebsklasse>D16B</Loebsklasse>
+          <GruppeKlasse>D16B</GruppeKlasse>
+          <Gruppe>D6</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:41:07</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anna</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>D20</Loebsklasse>
+          <GruppeKlasse>D20</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:43:41</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anja Modler</Fornavn>
+          <EfterNavn>Hedemann</EfterNavn>
+          <Loebsklasse>D45</Loebsklasse>
+          <GruppeKlasse>D45</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:45:16</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mette</Fornavn>
+          <EfterNavn>Lindahl</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:45:49</Tid>
+          <Placering>7</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Christian</Fornavn>
+          <EfterNavn>Ramus</EfterNavn>
+          <Loebsklasse>H16</Loebsklasse>
+          <GruppeKlasse>H16</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:46:18</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Nicolai</Fornavn>
+          <EfterNavn>Krabek</EfterNavn>
+          <Loebsklasse>H35</Loebsklasse>
+          <GruppeKlasse>H35</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:48:06</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lisette</Fornavn>
+          <EfterNavn>Christiansen</EfterNavn>
+          <Loebsklasse>D45</Loebsklasse>
+          <GruppeKlasse>D45</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:48:17</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kasper</Fornavn>
+          <EfterNavn>Tofte</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:49:58</Tid>
+          <Placering>10</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Heidi</Fornavn>
+          <EfterNavn>Granby</EfterNavn>
+          <Loebsklasse>D40</Loebsklasse>
+          <GruppeKlasse>D40</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:50:28</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mathias Rimmer</Fornavn>
+          <EfterNavn>Andersen</EfterNavn>
+          <Loebsklasse>H14</Loebsklasse>
+          <GruppeKlasse>H14</GruppeKlasse>
+          <Gruppe>H6</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:51:50</Tid>
+          <Placering>4</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Nanna</Fornavn>
+          <EfterNavn>Dam</EfterNavn>
+          <Loebsklasse>D20</Loebsklasse>
+          <GruppeKlasse>D20</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:52:10</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Louise</Fornavn>
+          <EfterNavn>Bøgh</EfterNavn>
+          <Loebsklasse>D20B</Loebsklasse>
+          <GruppeKlasse>D20B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:54:45</Tid>
+          <Placering>2</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Marianne</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>D35</Loebsklasse>
+          <GruppeKlasse>D35</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:55:48</Tid>
+          <Placering>1</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anne Grethe</Fornavn>
+          <EfterNavn>Eriksen</EfterNavn>
+          <Loebsklasse>D45</Loebsklasse>
+          <GruppeKlasse>D45</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:56:24</Tid>
+          <Placering>6</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Peter</Fornavn>
+          <EfterNavn>Pallesen</EfterNavn>
+          <Loebsklasse>H35</Loebsklasse>
+          <GruppeKlasse>H35</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:56:50</Tid>
+          <Placering>9</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Lis</Fornavn>
+          <EfterNavn>Juel</EfterNavn>
+          <Loebsklasse>D70</Loebsklasse>
+          <GruppeKlasse>D70</GruppeKlasse>
+          <Gruppe>D5</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:57:27</Tid>
+          <Placering>8</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anne Q</Fornavn>
+          <EfterNavn>Frederiksen</EfterNavn>
+          <Loebsklasse>D14</Loebsklasse>
+          <GruppeKlasse>D14</GruppeKlasse>
+          <Gruppe>D6</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>02:05:40</Tid>
+          <Placering>3</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jens-Christian Husted</Fornavn>
+          <EfterNavn>Hagelsø</EfterNavn>
+          <Loebsklasse>H20</Loebsklasse>
+          <GruppeKlasse>H20</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>02:19:18</Tid>
+          <Placering>5</Placering>
+          <Status>OK</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Conor</Fornavn>
+          <EfterNavn>Klingenberg</EfterNavn>
+          <Loebsklasse>H21</Loebsklasse>
+          <GruppeKlasse>H21</GruppeKlasse>
+          <Gruppe>H1</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Merete Spangsberg</Fornavn>
+          <EfterNavn>Nielsen</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Verner</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Niels</Fornavn>
+          <EfterNavn>Mogensen</EfterNavn>
+          <Loebsklasse>H50</Loebsklasse>
+          <GruppeKlasse>H50</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Terkel</Fornavn>
+          <EfterNavn>Gydesen</EfterNavn>
+          <Loebsklasse>H55</Loebsklasse>
+          <GruppeKlasse>H55</GruppeKlasse>
+          <Gruppe>H3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Gitte R.</Fornavn>
+          <EfterNavn>Christoffersen</EfterNavn>
+          <Loebsklasse>D50</Loebsklasse>
+          <GruppeKlasse>D50</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Sune</Fornavn>
+          <EfterNavn>Skousen</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mads</Fornavn>
+          <EfterNavn>Mikkelsen</EfterNavn>
+          <Loebsklasse>H14B</Loebsklasse>
+          <GruppeKlasse>H14B</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotStart</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Susanne</Fornavn>
+          <EfterNavn>Knudsen</EfterNavn>
+          <Loebsklasse>D50</Loebsklasse>
+          <GruppeKlasse>D50</GruppeKlasse>
+          <Gruppe>D3</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotFinish</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kitte</Fornavn>
+          <EfterNavn>Brodal</EfterNavn>
+          <Loebsklasse>D21C</Loebsklasse>
+          <GruppeKlasse>D21C</GruppeKlasse>
+          <Gruppe>D8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:00:00</Tid>
+          <Placering />
+          <Status>DidNotFinish</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jannie Rohde</Fornavn>
+          <EfterNavn>Jørgensen</EfterNavn>
+          <Loebsklasse>D35B</Loebsklasse>
+          <GruppeKlasse>D35B</GruppeKlasse>
+          <Gruppe>D7</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:19:57</Tid>
+          <Placering />
+          <Status>DidNotFinish</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Caroline</Fornavn>
+          <EfterNavn>Skovgaard</EfterNavn>
+          <Loebsklasse>D14</Loebsklasse>
+          <GruppeKlasse>D14</GruppeKlasse>
+          <Gruppe>D6</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:04:38</Tid>
+          <Placering />
+          <Status>DidNotFinish</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>John</Fornavn>
+          <EfterNavn>Bargmeyer</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>01:04:49</Tid>
+          <Placering />
+          <Status>DidNotFinish</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Rasmus</Fornavn>
+          <EfterNavn>Mindegaard</EfterNavn>
+          <Loebsklasse>H14</Loebsklasse>
+          <GruppeKlasse>H14</GruppeKlasse>
+          <Gruppe>H6</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>01:34:17</Tid>
+          <Placering />
+          <Status>DidNotFinish</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jørgen</Fornavn>
+          <EfterNavn>Madsen</EfterNavn>
+          <Loebsklasse>H35B</Loebsklasse>
+          <GruppeKlasse>H35B</GruppeKlasse>
+          <Gruppe>H7</Gruppe>
+          <KlubNavn>Faaborg OK</KlubNavn>
+          <Tid>02:56:25</Tid>
+          <Placering />
+          <Status>DidNotFinish</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Bjarne</Fornavn>
+          <EfterNavn>Johannsen</EfterNavn>
+          <Loebsklasse>H45</Loebsklasse>
+          <GruppeKlasse>H45</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>OK Syd</KlubNavn>
+          <Tid>00:35:47</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Kasper Dan</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>H21C</Loebsklasse>
+          <GruppeKlasse>H21C</GruppeKlasse>
+          <Gruppe>H8</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:40:29</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Victor Braae</Fornavn>
+          <EfterNavn>Kortegaard</EfterNavn>
+          <Loebsklasse>H14</Loebsklasse>
+          <GruppeKlasse>H14</GruppeKlasse>
+          <Gruppe>H6</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>00:59:45</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Brian Fyhn</Fornavn>
+          <EfterNavn>Olesen</EfterNavn>
+          <Loebsklasse>H40</Loebsklasse>
+          <GruppeKlasse>H40</GruppeKlasse>
+          <Gruppe>H2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:15:35</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Karen Lund</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D14</Loebsklasse>
+          <GruppeKlasse>D14</GruppeKlasse>
+          <Gruppe>D6</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:21:19</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Anni</Fornavn>
+          <EfterNavn>Plauborg</EfterNavn>
+          <Loebsklasse>D45</Loebsklasse>
+          <GruppeKlasse>D45</GruppeKlasse>
+          <Gruppe>D2</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:25:01</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Jens</Fornavn>
+          <EfterNavn>Dam</EfterNavn>
+          <Loebsklasse>H65</Loebsklasse>
+          <GruppeKlasse>H65</GruppeKlasse>
+          <Gruppe>H4</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>01:27:00</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Natasha Søgård</Fornavn>
+          <EfterNavn>Sørensen</EfterNavn>
+          <Loebsklasse>D14</Loebsklasse>
+          <GruppeKlasse>D14</GruppeKlasse>
+          <Gruppe>D6</Gruppe>
+          <KlubNavn>FROS/Melfar</KlubNavn>
+          <Tid>01:37:21</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+        <Loeber>
+          <StNr>0</StNr>
+          <Fornavn>Mette Riis</Fornavn>
+          <EfterNavn>Jensen</EfterNavn>
+          <Loebsklasse>D21</Loebsklasse>
+          <GruppeKlasse>D21</GruppeKlasse>
+          <Gruppe>D1</Gruppe>
+          <KlubNavn>Odense OK</KlubNavn>
+          <Tid>02:08:03</Tid>
+          <Placering />
+          <Status>Disqualified</Status>
+        </Loeber>
+      </Loebere>
+    </DivisionsMatchResultat>
+  </DivisionsMatchResultater>
+  <DivisionsStilling>
+    <TotalKlubResultat>
+      <Placering>1</Placering>
+      <Klubnavn>Faaborg OK</Klubnavn>
+      <Runder>
+        <RundeResultat>
+          <LoebsPoint>382</LoebsPoint>
+          <MatchPoint>4</MatchPoint>
+          <Kommentar>(245)</Kommentar>
+          <Matcher>
+            <RundeMatch>
+              <modstander>FROS/Melfar</modstander>
+              <egenscore>120</egenscore>
+              <modstandercore>121</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>OK Syd</modstander>
+              <egenscore>137</egenscore>
+              <modstandercore>82</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Odense OK</modstander>
+              <egenscore>125</egenscore>
+              <modstandercore>106</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+        <RundeResultat>
+          <LoebsPoint>401</LoebsPoint>
+          <MatchPoint>4</MatchPoint>
+          <Kommentar>(247), 6 1. pl</Kommentar>
+          <Matcher>
+            <RundeMatch>
+              <modstander>FROS/Melfar</modstander>
+              <egenscore>123</egenscore>
+              <modstandercore>126</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Odense OK</modstander>
+              <egenscore>124</egenscore>
+              <modstandercore>123</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>OK Syd</modstander>
+              <egenscore>154</egenscore>
+              <modstandercore>52</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+      </Runder>
+      <kommentar>(492)</kommentar>
+    </TotalKlubResultat>
+    <TotalKlubResultat>
+      <Placering>2</Placering>
+      <Klubnavn>FROS/Melfar</Klubnavn>
+      <Runder>
+        <RundeResultat>
+          <LoebsPoint>367</LoebsPoint>
+          <MatchPoint>4</MatchPoint>
+          <Kommentar>(232)</Kommentar>
+          <Matcher>
+            <RundeMatch>
+              <modstander>Faaborg OK</modstander>
+              <egenscore>121</egenscore>
+              <modstandercore>120</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>OK Syd</modstander>
+              <egenscore>135</egenscore>
+              <modstandercore>73</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Odense OK</modstander>
+              <egenscore>111</egenscore>
+              <modstandercore>116</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+        <RundeResultat>
+          <LoebsPoint>401</LoebsPoint>
+          <MatchPoint>4</MatchPoint>
+          <Kommentar>(247), 11 1. pl</Kommentar>
+          <Matcher>
+            <RundeMatch>
+              <modstander>Faaborg OK</modstander>
+              <egenscore>126</egenscore>
+              <modstandercore>123</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Odense OK</modstander>
+              <egenscore>121</egenscore>
+              <modstandercore>125</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>OK Syd</modstander>
+              <egenscore>154</egenscore>
+              <modstandercore>46</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+      </Runder>
+      <kommentar>(479)</kommentar>
+    </TotalKlubResultat>
+    <TotalKlubResultat>
+      <Placering>3</Placering>
+      <Klubnavn>Odense OK</Klubnavn>
+      <Runder>
+        <RundeResultat>
+          <LoebsPoint>347</LoebsPoint>
+          <MatchPoint>4</MatchPoint>
+          <Kommentar>(222)</Kommentar>
+          <Matcher>
+            <RundeMatch>
+              <modstander>FROS/Melfar</modstander>
+              <egenscore>116</egenscore>
+              <modstandercore>111</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Faaborg OK</modstander>
+              <egenscore>106</egenscore>
+              <modstandercore>125</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>OK Syd</modstander>
+              <egenscore>125</egenscore>
+              <modstandercore>79</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+        <RundeResultat>
+          <LoebsPoint>401</LoebsPoint>
+          <MatchPoint>4</MatchPoint>
+          <Kommentar>(248)</Kommentar>
+          <Matcher>
+            <RundeMatch>
+              <modstander>FROS/Melfar</modstander>
+              <egenscore>125</egenscore>
+              <modstandercore>121</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Faaborg OK</modstander>
+              <egenscore>123</egenscore>
+              <modstandercore>124</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>OK Syd</modstander>
+              <egenscore>153</egenscore>
+              <modstandercore>49</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+      </Runder>
+      <kommentar>(470)</kommentar>
+    </TotalKlubResultat>
+    <TotalKlubResultat>
+      <Placering>4</Placering>
+      <Klubnavn>OK Syd</Klubnavn>
+      <Runder>
+        <RundeResultat>
+          <LoebsPoint>234</LoebsPoint>
+          <MatchPoint>0</MatchPoint>
+          <Matcher>
+            <RundeMatch>
+              <modstander>FROS/Melfar</modstander>
+              <egenscore>73</egenscore>
+              <modstandercore>135</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Faaborg OK</modstander>
+              <egenscore>82</egenscore>
+              <modstandercore>137</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Odense OK</modstander>
+              <egenscore>79</egenscore>
+              <modstandercore>125</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+        <RundeResultat>
+          <LoebsPoint>147</LoebsPoint>
+          <MatchPoint>0</MatchPoint>
+          <Matcher>
+            <RundeMatch>
+              <modstander>FROS/Melfar</modstander>
+              <egenscore>46</egenscore>
+              <modstandercore>154</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Faaborg OK</modstander>
+              <egenscore>52</egenscore>
+              <modstandercore>154</modstandercore>
+            </RundeMatch>
+            <RundeMatch>
+              <modstander>Odense OK</modstander>
+              <egenscore>49</egenscore>
+              <modstandercore>153</modstandercore>
+            </RundeMatch>
+          </Matcher>
+        </RundeResultat>
+      </Runder>
+    </TotalKlubResultat>
+  </DivisionsStilling>
+</DivisionsResultat>

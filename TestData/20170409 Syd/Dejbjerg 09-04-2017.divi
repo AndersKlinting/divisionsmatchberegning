@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>2</Version>
+  <divisioner>
+    <Division>
+      <nr>1</nr>
+      <beskrivelse>1. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>2</nr>
+      <beskrivelse>2. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>3</nr>
+      <beskrivelse>3. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>4</nr>
+      <beskrivelse>4. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>5</nr>
+      <beskrivelse>5. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>6</nr>
+      <beskrivelse>6. division</beskrivelse>
+    </Division>
+  </divisioner>
+  <selectedDivision>1</selectedDivision>
+  <gruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H21</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H35</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H40</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H40</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H45</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H45</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H50</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H50</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H55</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H55</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H60</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H60</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H65</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H65</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H5</Gruppe>
+      <Klasse>H70</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H70</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H16B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H20B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H21B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H35B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H21C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D21</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D35</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D40</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D40</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D45</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D45</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D50</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D50</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D55</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D55</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D60</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D60</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D65</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D65</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D5</Gruppe>
+      <Klasse>D70</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D70</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse> - </LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D20B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D21B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D35B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D20C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D21C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H12B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D12B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>Begynder</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>begynder</LøbsKlasse>
+    </GruppeOgKlasse>
+  </gruppeOgKlasse>
+  <allClubs>
+    <string>Silkeborg OK</string>
+    <string>Odense OK</string>
+    <string>OK Pan</string>
+    <string>Faaborg OK</string>
+    <string>OK West</string>
+    <string>OK Melfar</string>
+    <string>FIF Hillerød Orientering</string>
+    <string>Viborg OK</string>
+    <string>Svendborg OK</string>
+    <string>Herning Orienteringsklub</string>
+    <string>OK Syd</string>
+    <string>OK FROS</string>
+    <string>Aarhus 1900 Orientering</string>
+    <string>Holstebro OK</string>
+    <string>OK Esbjerg</string>
+    <string>Horsens OK</string>
+    <string>Ballerup OK</string>
+    <string>Søllerød OK</string>
+    <string>Ribe OK</string>
+  </allClubs>
+  <selectedClubs>
+    <string>Kolding OK</string>
+    <string>OK GORM</string>
+    <string>OK H.T.F.</string>
+    <string>OK Snab</string>
+  </selectedClubs>
+ 

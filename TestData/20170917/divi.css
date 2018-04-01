@@ -1,0 +1,11 @@
+@media print, screen {
+table, h3, body {font-family:Courier New;font-size:10pt}
+th, td {padding: 2px;} 
+h3 {font-size: larger;} 
+tr {page-break-inside: avoid;} 
+th.bane, th.matchgruppe, td.matchgruppe, td.bane {border-bottom: solid lightgrey 1px;border-left: solid lightgrey 1px;}   
+.point {font-size:8pt}
+.page-break {page-break-before:always;}
+thead { display:table-header-group;}
+tbody { display:table-row-group; } 
+}

@@ -1,0 +1,317 @@
+Matcher (3 division)
+--------------------
+1 : FSK Orientering - Helsingør SOK                :    80 -   116
+2 : FSK Orientering - Holbæk OK                    :    90 -   136
+3 : FSK Orientering - Køge OK                      :    97 -    96
+4 : Helsingør SOK - Holbæk OK                      :   109 -   121
+5 : Helsingør SOK - Køge OK                        :   111 -    86
+6 : Holbæk OK - Køge OK                            :   129 -    97
+
+Stilling
+--------
+                                               score      point
+Holbæk OK                                :   386 -   296      6
+Helsingør SOK                            :   336 -   287      4
+FSK Orientering                          :   267 -   348      2
+Køge OK                                  :   279 -   337      0
+
+                                     m1     m2     m3     m4      m5     m6   
+                                    ------ ------ ----- ------- ------ ------ 
+H1 (H -20, H 21-, H 35-)            20-17  17-22  19-19  16-22   17-18  19-20 
+H2 (H 40-, H 45-)                   11-9   10-11  12-8    7-13    9-9   13-7  
+H3 (H 50-, H 55-)                    6-15   9-12   9-11  11-10   12-8   13-7  
+H4 (H 60-, H 65-)                    4-6    7-3    6-4    7-3     6-4    3-7  
+H5 (H 70-)                           4-6    5-5    4-6    6-4     5-5    4-6  
+H6 (H -14)                           0-0    0-10   0-0    0-10    0-0   10-0  
+H7 (H -20B, H 21-B, H 35-B)          4-4    3-6    4-5    4-4     3-5    4-5  
+H8 (H -12, H -14B, H -20C, H 21-C)   2-0    2-6    2-0    1-7     2-0    7-1  
+D1 (D -20, D 21-, D 35-)             6-0    3-17   4-11   0-17    0-11  13-9  
+D2 (D 40-, D 45-)                    5-6    3-15   5-6    6-12    6-5   15-3  
+D3 (D -16, D 50-, D 55-)             6-17  10-10  12-8   16-6    15-7    9-9  
+D4 (D 60-, D 65-)                    2-7    4-0    3-6    7-0     7-3    0-7  
+D5 (D 70-)                           3-7    7-0    7-2    7-0     7-2    0-4  
+D6 (D -14, D -16B)                   0-10   0-9    0-0   10-3    10-0    9-0  
+D7 (D -20B, D 21-B, D 35-B)          4-5    5-4    5-4    5-4     5-4    4-5  
+D8 (D -12, D -14B, D 21-C)           0-4    2-3    2-4    3-3     4-3    3-5  
+9  (H -10, D -10, H -12B, Begynder)  3-3    3-3    3-2    3-3     3-2    3-2  
+Ialt:                               80-116 90-136 97-96 109-121 111-86 129-97 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rolf Lund               Helsingør SOK   H35    01:03:42    8              8    8     
+2  Simon Rosell Holt       Køge OK         H35    01:06:55              8         7    8
+3  Søren Fertin            Holbæk OK       H35    01:17:20         8         7         7
+4  Bjørn Rasmussen         FSK Orientering H21    01:17:25    7    7    7               
+5  Emil Ruud               Helsingør SOK   H21    01:17:41    6              6    6     
+6  Kim Hansen              Køge OK         H35    01:18:30              6         5    6
+7  Lars Bech Jensen        FSK Orientering H35    01:18:33    5    6    5               
+8  Gunnar Grue-Sørensen    Køge OK         H35    01:18:38              4         4    5
+9  Peter Lauritzen         Holbæk OK       H20    01:20:00         7*        7*        6*
+10 Mathias Klinkby         Holbæk OK       H20    01:22:29         5*        5*        4*
+11 August Thygesen         FSK Orientering H20    01:23:20    6*   3    5*              
+12 Jacob Kristjansen       Holbæk OK       H21    01:25:24         2         3         2
+13 Lasse Nilsson           Helsingør SOK   H35    01:38:53    3              2    3     
+14 Jan Frank Nielsen       FSK Orientering H35    01:41:39    2    1    2               
+15 Michael Jensen          FSK Orientering H21    01:54:05                              
+16 Tage Ebbensgaard        Køge OK         H35    01:56:37              1         2    1
+   Niels Rønnenkamp Kjølby Holbæk OK       H35    Ej start                              
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Leif Pedersen           FSK Orientering H40    01:00:35    6    6    6               
+2  Bjark Bo Christensen    Holbæk OK       H40    01:02:20         5         6         6
+3  Henrik Glimø            Køge OK         H40    01:03:34              5         6    5
+4  Søren Klinkby           Holbæk OK       H45    01:05:29         4         5         4
+5  Carsten Thye Agger      Helsingør SOK   H45    01:11:36    5              4    5     
+6  Lars E Andersen         Helsingør SOK   H45    01:18:34    4              3    4     
+7  Hans-Erik Andersen      FSK Orientering H45    01:20:01    3    3    4               
+8  Birger Jensen           Holbæk OK       H45    01:27:45         2         2         3
+9  Anton Lauritzen         Holbæk OK       H45    01:31:11                              
+10 Lars Carstensen         Køge OK         H45    01:31:25              3         3    2
+11 Jens Thorup             FSK Orientering H45    01:34:30    2    1    2               
+   Søren Sønberg Kristense Køge OK         H45      Fejlst                              
+
+Gruppe H3 (H 50-, H 55-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Laus Seir Hansen        Helsingør SOK   H55    00:56:23    6              6    6     
+2  Jan Thiesen             Holbæk OK       H50    01:03:11         6         5         6
+3  Per Bundgaard Larsen    Holbæk OK       H55    01:11:56         5         4         5
+4  Jens Andersen           Køge OK         H50    01:12:52              6         5    4
+5  Torben Bagger           Helsingør SOK   H50    01:22:25    5              3    4     
+6  Henning Jeppesen        Køge OK         H55    01:26:36              5         3    3
+7  Bjarne B. Jensen        Helsingør SOK   H55    01:29:32    4              2    2     
+8  Henrik Zimmermann       FSK Orientering H50    01:33:56    3    4    4               
+9  John Noes Jørgensen     FSK Orientering H55    01:39:27    2    3    3               
+10 Asger Purhus            FSK Orientering H50    01:47:28    1    2    2               
+11 Michael Galthen Ibsen   FSK Orientering H50    01:53:36                              
+12 Henrik Snedker Pedersen Holbæk OK       H55    02:07:56         1         1         2
+   Kim Møller              Køge OK         H55    Ej start                              
+   Niels Thygesen          FSK Orientering H55    Ej start                              
+   Anders Bang             Køge OK         H55     Ej slut                              
+   Kurt Thuesen            FSK Orientering H55     Ej slut                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Flemming Wendelboe      Helsingør SOK   H65    00:44:03    4              4    4     
+2  Bjarne Iversen          FSK Orientering H60    00:52:42    3    4    4               
+3  Karsten Richardt        Køge OK         H65    00:53:52              3         3    4
+4  Niels Bohse             Helsingør SOK   H60    00:56:20    2              3    2     
+5  Karl Hougaard           FSK Orientering H65    00:56:37    1    3    2               
+6  Steen Fladberg          Køge OK         H60    00:58:42              1         1    3
+7  Søren A. Nielsen        Helsingør SOK   H65    01:00:18                              
+8  Finn Hyldegaard         Holbæk OK       H65    01:07:46         2         2         2
+9  Finn Larsen             FSK Orientering H65    01:12:01                              
+10 Bent Jensen             Holbæk OK       H60    01:15:30         1         1         1
+11 Erik Roslyng            FSK Orientering H65    01:22:11                              
+12 Ole Brusch              FSK Orientering H65    01:24:35                              
+13 Poul R. Koziara         Køge OK         H65    01:27:14                              
+14 Steen Jeppesen          Holbæk OK       H60    01:30:51                              
+15 Allan Wiingaard         Holbæk OK       H60    01:48:54                              
+   Torben Seir             Helsingør SOK   H60    Ej start                              
+   Kurt Jespersen          FSK Orientering H65      Fejlst                              
+   Steffen Nilsson         Køge OK         H65      Fejlst                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jørgen Jensen           Helsingør SOK   H70    00:33:19    4              4    4     
+2  Ole Rasmussen           Køge OK         H70    00:35:44              4         3    4
+3  Karl Aage Hald          FSK Orientering H70    00:36:36    3    4    3               
+4  John Jensen             Holbæk OK       H70    00:40:32         3         3         3
+5  Erik Løvgren Jensen     Køge OK         H70    00:42:50              2         2    2
+6  Jakob Vang              Helsingør SOK   H70    00:44:02    2              2    1     
+7  Mogens Jensen           Holbæk OK       H70    00:44:57         2         1         1
+8  Tage Frydendal          Holbæk OK       H70    00:48:21                              
+9  John Pihl               Helsingør SOK   H70    00:50:30                              
+10 Peter Larsen            Helsingør SOK   H70    00:53:31                              
+11 Hans-Ole Ketting        FSK Orientering H70    00:57:11    1    1    1               
+12 Kurt Dose               Køge OK         H70    00:57:38                              
+13 Finn Frogne             Køge OK         H70    01:04:04                              
+14 Erling Hansen           Køge OK         H70    01:07:15                              
+15 Jens Lynge              Køge OK         H70    01:13:48                              
+16 Svend Fladberg          Køge OK         H70    01:14:41                              
+17 Flemming Jørgensen      FSK Orientering H70    01:56:32                              
+   Jørgen Larsen           Køge OK         H70      Fejlst                              
+
+Gruppe H6 (H -14) - [4, 3, 2, 1] + [2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  August Bo Christensen   Holbæk OK       H14    02:10:16         6*        6*        6*
+2  Gabriel Bo Christensen  Holbæk OK       H14    02:12:31         4*        4*        4*
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  John Barnewitz          Køge OK         H35B   00:47:29              2         2    2
+2  Martin Bjørling Thomsen Holbæk OK       H35B   00:49:02         2         2         2
+3  Bo Brinkmann            Køge OK         H35B   00:51:40              2         2    2
+4  John Miené              Helsingør SOK   H35B   00:53:17    2              2    2     
+5  Niels Frederiksen       Helsingør SOK   H35B   01:04:47    2              2    1     
+6  Morten Vogelius         Holbæk OK       H35B   01:05:24         2         1         1
+7  Brian Jimmi Bech        Holbæk OK       H35B   01:06:34         2         1         1
+8  Michael Licht           FSK Orientering H35B   01:06:36    2    1    2               
+9  Michael Larsen          FSK Orientering H35B   01:06:57    1    1    1               
+10 Tom P. Neesgaard        FSK Orientering H35B   01:20:54    1    1    1               
+11 Mathias Larsen          FSK Orientering H21B   01:21:16                              
+12 Klaus Andersen          Holbæk OK       H35B   01:25:46                              
+13 Per Flemmert Danielsen  FSK Orientering H35B   01:28:37                              
+14 Lars Bo Kjær            FSK Orientering H35B   01:36:15                              
+15 Klaus Koziara           Køge OK         H35B   01:57:56              1         1    1
+   Casper Falck Christense FSK Orientering H35B   Ej start                              
+   Flemming Marcussen      Helsingør SOK   H35B     Fejlst                              
+   Henrik Johansen         Køge OK         H35B    Ej slut                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Peter Andresen          FSK Orientering H21C   00:22:31    2    2    2               
+2  Markus Emil Thomsen     Holbæk OK       H12    00:31:01         4*        4*        4*
+3  Nils Lind Petersen      FSK Orientering H21C   00:34:23                              
+4  Jonas Amby Pedersen     Holbæk OK       H12    00:35:25         2*        3*        3*
+5  Per Nissen              Holbæk OK       H21C   00:37:07                              
+6  Søren Østergaard        Helsingør SOK   H21C   00:38:57                   1    2     
+7  Anders Frydendal Jensen Holbæk OK       H21C   00:42:53                              
+8  Knud O Engelsholm       Helsingør SOK   H21C   00:45:03                              
+9  Karl Thieme             FSK Orientering H20C   01:00:32                              
+10 Torben Nielsen          Køge OK         H21C   01:04:52                             1
+11 Bent Nyhegn             Helsingør SOK   H21C   01:06:12                              
+12 Leif Engborg            Holbæk OK       H21C   01:52:40                              
+   Tom Hansen              Køge OK         H21C   Ej start                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Astrid Thomsen          Holbæk OK       D21    00:58:41         6         6         6
+2  Malene Løkke            Køge OK         D35    01:11:41              6         6    5
+3  Jette Grimstrup         Køge OK         D35    01:18:33              5         5    4
+4  Tanja Fjelbro Klavsen   Holbæk OK       D21    01:20:22         5         5         3
+5  Anette Lindegård Christ Holbæk OK       D35    01:45:44         4         4         2
+6  Ann-Sofie Jentoft Ferti Holbæk OK       D20    01:52:36         2*        2*        2*
+7  Lisbet Hansen           FSK Orientering D21    01:59:14    6    3    4               
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lene Jensen             Helsingør SOK   D40    01:06:48    6              6    6     
+2  Lenette Schunck Svendse Holbæk OK       D45    01:25:38         6         5         6
+3  Sanne Lund Kolenda      Holbæk OK       D45    01:29:32         5         4         5
+4  Bente Frydendal Jensen  Holbæk OK       D40    01:37:21         4         3         4
+5  Anne Rosell Holt        Køge OK         D40    01:38:28              6         5    3
+6  Lise Kolte              FSK Orientering D40    02:04:47    5    3    5               
+   Margit Goldbach         Køge OK         D45    Ej start                              
+   Kamilla Jentoft Fertin  Holbæk OK       D45      Fejlst                              
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Dicte Højbjerg Andersen Helsingør SOK   D16    01:02:23    8*             8*   8*    
+2  Gerda Marie Christianse Køge OK         D55    01:08:44              6         5    6
+3  Birgitte Krüger         Helsingør SOK   D55    01:09:27    5              5    4     
+4  Anette Binder Larsen    Holbæk OK       D50    01:13:01         6         4         5
+5  Mette Kirstine Agger    Helsingør SOK   D50    01:16:06    4              3    3     
+6  Gitte Gefke Hansen      FSK Orientering D55    01:16:15    3    5    5               
+7  Bodil Klavsen           Holbæk OK       D50    01:22:31         4         2         4
+8  Jytte Sørensen          FSK Orientering D55    01:33:06    2    3    4               
+9  Katrine Holst           FSK Orientering D50    01:40:57    1    2    3               
+10 Berit N. Pedersen       Køge OK         D55    01:43:50              2         2    3
+   Cristina Kümmel         Holbæk OK       D50      Fejlst                              
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mette Seir Hansen       Helsingør SOK   D60    01:01:13    4              4    4     
+2  Anne Sørensen           Helsingør SOK   D65    01:14:32    3              3    3     
+3  Birgit Berner           Køge OK         D65    01:16:02              4         2    4
+4  Anne-Marie Bech         FSK Orientering D65    01:23:06    2    4    3               
+5  Grethe Larsen           Køge OK         D65    01:23:22              2         1    3
+   Ruth Thiesen            Holbæk OK       D60    Ej start                              
+   Lise Bertram            Helsingør SOK   D65    Ej start                              
+   Britta Thomsen          Holbæk OK       D60      Fejlst                              
+   Elisa Sørensen          FSK Orientering D65      Fejlst                              
+   Anni Lauritzen          Holbæk OK       D60     Ej slut                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Inge Olsen              Helsingør SOK   D70    00:52:37    4              4    4     
+2  Vibeke Miené            Helsingør SOK   D70    00:53:07    3              3    3     
+3  Ingelise Jørgensen      FSK Orientering D70    01:05:39    2    4    4               
+4  Inger Jensen            FSK Orientering D70    01:07:30    1    3    3               
+5  Agnete Egede            Helsingør SOK   D70    01:08:23                              
+6  Hanne Hansen            Køge OK         D70    01:14:47              2         2    4
+7  Mette Bertram           Helsingør SOK   D70    01:18:32                              
+8  Grethe Nielsen          Helsingør SOK   D70    01:22:29                              
+9  Jytte Eltang            FSK Orientering D70    01:33:19                              
+
+Gruppe D6 (D -14, D -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sarah Dinesen           Helsingør SOK   D14    00:51:37    6*             6*   6*    
+2  Nynne Høst Nedergaard   Helsingør SOK   D14    00:52:10    4*             4*   4*    
+3  Sarah Nommesen          Helsingør SOK   D14    00:55:29                              
+4  Carmen Cecilie Christen Holbæk OK       D16B   01:12:25         4         2         4
+5  Fie Filthuth Henningsen Holbæk OK       D14    01:34:34         5*        1         5*
+   Olivia Bonefeld         Helsingør SOK   D14    Ej start                              
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Louise B Jensen         Helsingør SOK   D21B   00:45:46    2              2    2     
+2  Amalie Snedker Mosbæk   Holbæk OK       D21B   00:54:17         2         2         2
+3  Kirsten Ellekilde       Helsingør SOK   D35B   00:54:30    2              2    2     
+4  Maria Christensen       Køge OK         D35B   00:56:44              2         2    2
+5  Dorte Seifert Teide     FSK Orientering D35B   00:57:06    2    2    2               
+6  Pia Juul Roslyng        FSK Orientering D35B   01:01:40    1    2    2               
+7  Lone Kierstein Nielsen  FSK Orientering D35B   01:04:27    1    1    1               
+8  Ana Magdalena Chirita   FSK Orientering D35B   01:05:41                              
+9  Louise Eskildsen        Køge OK         D35B   01:08:02              1         1    2
+10 Hanne Grimstrup         Køge OK         D21B   01:09:17              1         1    1
+11 Birgitte Andersen       Helsingør SOK   D35B   01:13:35    1              1    1     
+12 Helle Christensen       FSK Orientering D35B   01:19:35                              
+13 Jytte Nielsen           Køge OK         D35B   01:26:09                              
+14 Gitte Rasmussen         Køge OK         D35B   01:32:18                              
+15 Karina Randrup Nielsen  Holbæk OK       D35B   01:34:04         1         1         1
+16 Annette Rode            Holbæk OK       D35B   02:15:41         1         1         1
+
+Gruppe D8 (D -12, D -14B, D 21-C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Elisabeth Jentoft Ferti Holbæk OK       D14B   00:41:56         2         2         2
+2  Sophie Petersen         Helsingør SOK   D14B   00:45:46    2              2    2     
+3  Anna Lise Lyk           Helsingør SOK   D21C   00:46:09    2              1    2     
+4  Aia Rosell Holt         Køge OK         D12    00:49:06              4*        3*   4*
+5  Lotte Sommer            FSK Orientering D21C   00:53:33         2    2               
+6  Helene Skovmand Filrup  FSK Orientering D21C   01:04:23                              
+7  Gull-May Knudsen        Helsingør SOK   D21C   01:04:52                              
+8  Cecilie Frydendal Jense Holbæk OK       D14B   01:27:11         1         1         1
+9  Grethe Jensen           Køge OK         D21C   01:44:31                             1
+   Leah Chin               Køge OK         D14B     Fejlst                              
+   Katrine Jentoft Fertin  Holbæk OK       D12      Fejlst                              
+
+Gruppe 9 (H -10, D -10, H -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+--------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Anders Jensen           Helsingør SOK   Beg    00:16:47    1              1    1     
+2  Birgit V Mortensen      Helsingør SOK   Beg    00:17:43    1              1    1     
+3  Lisa Kjær               Helsingør SOK   Beg    00:17:44    1              1    1     
+4  Lisbeth Jørgensen       Helsingør SOK   Beg    00:19:47                              
+5  Mads Dahl Nielsen       Helsingør SOK   H10    00:23:28                              
+6  Matilde Andersen        Holbæk OK       Beg    00:23:31         1         1         1
+7  Nanna Rosell Holt       Køge OK         Beg    00:23:38              1         1    1
+8  Lise Bertram            Helsingør SOK   Beg    00:26:32                              
+9  Jacob Lund Kolenda      Holbæk OK       Beg    00:26:48         1         1         1
+10 Tom Jensen              Helsingør SOK   Beg    00:27:03                              
+11 Berit Petersen          Helsingør SOK   Beg    00:28:01                              
+12 Christina Hemmingsen    Helsingør SOK   Beg    00:28:10                              
+13 Katrine Andersen        Holbæk OK       Beg    00:31:21         1         1         1
+14 Edith Lund              FSK Orientering Beg    00:32:05    1    1    1               
+15 Silas Thomsen           Holbæk OK       Beg    00:40:22                              
+16 Anne Nielsen            Køge OK         Beg    00:44:00              1         1    1
+17 Ellen Nielsen           FSK Orientering Beg    00:45:50    1    1    1               
+18 Lærke Seifert Teide     FSK Orientering Beg    01:09:29    1    1    1               
+   Viktor Koziara          Køge OK         H10    Ej start                              
+

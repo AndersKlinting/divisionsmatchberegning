@@ -1,0 +1,55 @@
+-------------------------------------------------------------
+1. og 2.div. match 19-8-2012              to 31-01-2013 16:14
+Knyt baner til klasser
+----------------OE2003 © Stephan Krämer 2008-----------------
+
+    Nr Klasse            Bane               Længde/stigning      
+
+
+   101 D-10              Bane 8             2.7 km  11 K         
+   102 D-12              Bane 7B            3.4 km  12 K         
+   104 D-14              Bane 6             4.5 km  13 K         
+   105 D-14B             Bane 7B            3.4 km  12 K         
+   106 D-16              Bane 3B            5.3 km  19 K         
+   108 D-20C             Bane 7B            3.4 km  12 K         
+   109 D-20              Bane 2B            6.2 km  22 K         
+   110 D-20B             Bane 6             4.5 km  13 K         
+   111 D21-              Bane 2B            6.2 km  22 K         
+   112 D21-B             Bane 6             4.5 km  13 K         
+   113 D21-C             Bane 7B            3.4 km  12 K         
+   114 D35-              Bane 2B            6.2 km  22 K         
+   115 D35-B             Bane 6             4.5 km  13 K         
+   116 D40-              Bane 3B            5.3 km  19 K         
+   117 D45-              Bane 3B            5.3 km  19 K         
+   118 D50-              Bane 4B            3.6 km  14 K         
+   201 H-10              Bane 8             2.7 km  11 K         
+   202 H-12              Bane 7A            3.4 km  12 K         
+   203 H-12B             Bane 8             2.7 km  11 K         
+   204 H-14              Bane 5             5.3 km  19 K         
+   205 H-14B             Bane 7A            3.4 km  12 K         
+   206 H-16              Bane 2A            6.8 km  25 K         
+   207 H-16B             Bane 5             5.3 km  19 K         
+   208 H-20C             Bane 7A            3.4 km  12 K         
+   209 H-20              Bane 1             8.8 km  32 K         
+   210 H-20B             Bane 5             5.3 km  19 K         
+   211 H21-              Bane 1             8.8 km  32 K         
+   212 H21-B             Bane 5             5.3 km  19 K         
+   213 H21-C             Bane 7A            3.4 km  12 K         
+   214 H35-              Bane 1             8.8 km  32 K         
+   215 H35-B             Bane 5             5.3 km  19 K         
+   216 H40-              Bane 2A            6.8 km  25 K         
+   217 H45-              Bane 2A            6.8 km  25 K         
+   218 H50-              Bane 2A            6.8 km  25 K         
+   219 H55-              Bane 3A            5.4 km  19 K         
+   220 H60-              Bane 3A            5.4 km  19 K         
+   221 H65-              Bane 4A            3.7 km  15 K         
+   301 Beg               Bane 8             2.7 km  11 K         
+  3369 Åben1             Bane 1             8.8 km  32 K         
+  3377 Åben5             Bane 5             5.3 km  19 K         
+  4513 Åben2A            Bane 2A            6.8 km  25 K         
+  4515 Åben3A            Bane 3A            5.4 km  19 K         
+  4516 Åben3B            Bane 3B            5.3 km  19 K         
+  4517 Åben4A            Bane 4A            3.7 km  15 K         
+  4518 Åben4B            Bane 4B            3.6 km  14 K         
+  4519 Åben7A            Bane 7A            3.4 km  12 K         
+ 11000 Reserve                                                   

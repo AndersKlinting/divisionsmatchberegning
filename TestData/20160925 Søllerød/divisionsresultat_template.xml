@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DivisionsResultat xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<År>2017</År>
+	<Division>1</Division>
+	<Kreds>Østkredsen</Kreds>
+	<DivisionsMatchResultat>
+		<Dato>yyyy-MM-dd</Dato>
+		<Runde>1</Runde>
+		<Skov>Gribskov</Skov>
+		<MatchType>Op/ned</MatchType>
+		<Klub>
+			<Navn>FIF Hillerød Orientering</Navn>
+			<Placering>1</Placering>
+			<MatchPoint></MatchPoint>
+			<LøbsPoint></LøbsPoint>
+			<Udebleven>False</Udebleven>
+		</Klub>
+		<Klub>
+			<Navn>Tisvilde Hegn OK</Navn>
+			<Placering>3</Placering>
+			<MatchPoint></MatchPoint>
+			<LøbsPoint></LøbsPoint>
+			<Udebleven>False</Udebleven>
+		</Klub>
+		<Klub>
+			<Navn>Allerød OK</Navn>
+			<Placering>2</Placering>
+			<MatchPoint></MatchPoint>
+			<LøbsPoint></LøbsPoint>
+			<Udebleven>False</Udebleven>
+		</Klub>
+		<Match>
+			<KlubNavn1>FIF Hillerød Orientering</KlubNavn1>
+			<KlubNavn2>Tisvilde Hegn OK</KlubNavn2>
+			<Score1>123</Score1>
+			<Score2>111</Score2>
+		</Match>
+		<Match>
+			<KlubNavn1>FIF Hillerød Orientering</KlubNavn1>
+			<KlubNavn2>Allerød OK</KlubNavn2>
+			<Score1>165</Score1>
+			<Score2>115</Score2>
+		</Match>
+		<Match>
+			<KlubNavn1>Tivilde Hegn OK</KlubNavn1>
+			<KlubNavn2>Allerød OK</KlubNavn2>
+			<Score1>93</Score1>
+			<Score2>185</Score2>
+		</Match>
+		<Løber>
+			<StNr>1</StNr>
+			<Fornavn>Anders</Fornavn>
+			<EfterNavn>Klinting</EfterNavn>
+			<Løbsklasse>H21</Løbsklasse>
+			<GruppeKlasse>H21</GruppeKlasse>
+			<KlubNavn>FIF Hillerød Orientering</KlubNavn>
+			<StartTid>12:30:00</StartTid>
+			<Tid>1:01:23</Tid>
+			<Placering>1</Placering>
+			<Status>OK</Status>
+		</Løber>
+		<Løber>
+			<StNr>10</StNr>
+			<Fornavn>Thomas</Fornavn>
+			<EfterNavn>Jensen</EfterNavn>
+			<Løbsklasse>H45</Løbsklasse>
+			<GruppeKlasse>H45</GruppeKlasse>
+			<KlubNavn>Tisvilde Hegn OK</KlubNavn>
+			<StartTid>11:45:00</StartTid>
+			<Tid>0:51:45</Tid>
+			<Placering>1</Placering>
+			<Status>OK</Status>
+		</Løber>
+	</DivisionsMatchResultat>	
+	<DivisionsMatchResultat>
+		<Dato>yyyy-MM-dd</Dato>
+		<Runde>1</Runde>
+		<Skov>Gribskov</Skov>
+		<MatchType>Op/ned</MatchType>
+		<Klub>
+			<Navn>FIF Hillerød Orientering</Navn>
+			<Placering>1</Placering>
+			<MatchPoint></MatchPoint>
+			<LøbsPoint></LøbsPoint>
+			<Udebleven>False</Udebleven>
+		</Klub>
+		<Klub>
+			<Navn>Tisvilde Hegn OK</Navn>
+			<Placering>1</Placering>
+			<MatchPoint></MatchPoint>
+			<LøbsPoint></LøbsPoint>
+			<Udebleven>False</Udebleven>
+		</Klub>
+		<Match>
+			<KlubNavn1>FIF Hillerød Orientering</KlubNavn1>
+			<KlubNavn2>Tisvilde Hegn OK</KlubNavn2>
+			<Score1>123</Score1>
+			<Score2>111</Score2>
+		</Match>
+		<Løber>
+			<StNr>1</StNr>
+			<Fornavn>Anders</Fornavn>
+			<EfterNavn>Klinting</EfterNavn>
+			<Løbsklasse>H21</Løbsklasse>
+			<GruppeKlasse>H21</GruppeKlasse>
+			<KlubNavn>FIF Hillerød Orientering</KlubNavn>
+			<StartTid>12:30:00</StartTid>
+			<Tid>1:01:23</Tid>
+			<Placering>1</Placering>
+			<Status>OK</Status>
+		</Løber>
+		<Løber>
+			<StNr>10</StNr>
+			<Fornavn>Thomas</Fornavn>
+			<EfterNavn>Jensen</EfterNavn>
+			<Løbsklasse>H45</Løbsklasse>
+			<GruppeKlasse>H45</GruppeKlasse>
+			<KlubNavn>Tisvilde Hegn OK</KlubNavn>
+			<StartTid>11:45:00</StartTid>
+			<Tid>0:51:45</Tid>
+			<Placering>1</Placering>
+			<Status>OK</Status>
+		</Løber>
+	</DivisionsMatchResultat>				
+</DivisionsResultat>

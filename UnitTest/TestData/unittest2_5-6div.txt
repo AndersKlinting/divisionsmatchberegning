@@ -1,0 +1,468 @@
+Divisionsmatch (, 2018-03-30)
+-----------------------------
+                                               score      point
+Holbæk OK                                    167 -   130      6    
+Amager OK                                    154 -   135      4    
+Lyngby OK                                    136 -   148      2    
+OK S.G.                                      119 -   163      0    
+
+1 : Holbæk OK - Amager OK                :    53 -    48
+2 : Holbæk OK - Lyngby OK                :    56 -    42
+3 : Holbæk OK - OK S.G.                  :    58 -    40
+4 : Amager OK - Lyngby OK                :    52 -    43
+5 : Amager OK - OK S.G.                  :    54 -    39
+6 : Lyngby OK - OK S.G.                  :    51 -    40
+
+                                             m1    m2    m3    m4    m5    m6   
+                                            ----- ----- ----- ----- ----- ----- 
+H1 (H -20, H 21-, H 35-)                     9-11 10-8  11-0  13-7  15-0  11-0  
+H2 (H 40-, H 45-)                            3-7   4-6   7-0   5-5   7-0   7-0  
+H3 (H -16, H 50-, H 55-)                     7-2   7-3   7-2   3-6   3-4   5-4  
+H4 (H 60-, H 65-)                            0-7   0-7   0-7   7-3   7-3   5-5  
+H5 (H 70-)                                   6-3   7-2   5-5   4-3   3-6   3-6  
+H6 (H -14, H -16B)                           0-0   0-0   0-0   0-0   0-0   0-0  
+H7 (H -20B, H 21-B, H 35-B)                  3-3   3-3   3-3   3-3   3-3   3-3  
+H8 (H -12, H -14B, H -20C, H 21-C)           1-2   2-1   1-2   2-1   1-2   1-2  
+D1 (D -20, D 21-, D 35-)                     7-0   5-5   6-3   0-7   0-4   7-2  
+D2 (D 40-, D 45-)                            6-3   7-0   7-0   4-0   4-0   0-0  
+D3 (D -16, D 50-, D 55-)                     4-0   4-3   3-4   0-4   0-4   3-4  
+D4 (D 60-, D 65-)                            0-4   0-0   0-7   4-0   3-6   0-7  
+D5 (D 70-)                                   0-0   0-0   0-7   0-0   0-7   0-7  
+D6 (D -14, D -16B)                           0-0   0-0   0-0   0-0   0-0   0-0  
+D7 (D -20B, D 21-B, D 35-B)                  4-2   4-2   4-0   3-3   4-0   4-0  
+D8 (D -12, D -14B, D -20C, D 21-C)           1-2   1-2   2-0   2-1   2-0   2-0  
+9  (H -10, D -10, H -12B, D -12B, Begynder)  2-2   2-0   2-0   2-0   2-0   0-0  
+Ialt:                                       53-48 56-42 58-40 52-43 54-39 51-40 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [6, 5, 4, 3, 2, 1]
+----------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rolf Lund               Helsingør SOK   H35-   00:50:07                              
+2  Helge Tillingsøe        DSR/Fredensborg H35-   01:01:14                              
+3  Christopher Wiberg      PI-København    H21-   01:03:57                              
+4  Jesper Børsting         Herlufsholm OK  H35-   01:04:23                              
+5  Peter Karberg           Herlufsholm OK  H35-   01:06:02                              
+6  Sebastian Bang          PI-København    H21-   01:07:03                              
+7  Carl-Henrik Hansen      O-63/NFR/Maribo H35-   01:08:47                              
+8  Ronnie Hjorth           OK73            H35-   01:08:58                              
+9  Troels Lassen           O-63/NFR/Maribo H35-   01:09:48                              
+10 Asbjørn Hviid           O-63/NFR/Maribo H-20   01:09:53                              
+11 Arne Kristensen         Herlufsholm OK  H35-   01:10:14                              
+12 Henrik Plenge Jensen    O-63/NFR/Maribo H35-   01:10:18                              
+13 Morten Fridberg Olsen   Amager OK       H35-   01:11:09    6              6    6     
+14 Anders Knudsen          Holbæk OK       H21-   01:12:03    5    6    6               
+15 Søren Bloch             PI-København    H21-   01:14:26                              
+16 William Lund Christense Helsingør SOK   H21-   01:14:58                              
+17 Emil Brønd              Lyngby OK       H21-   01:18:06         5         5         6
+18 Søren Klinkby           Holbæk OK       H35-   01:19:18    4    4    5               
+19 Thomas Brinck           Amager OK       H35-   01:19:39    3              4    5     
+20 Michael Nygaard Møller  OK73            H21-   01:24:09                              
+21 Anders Hansen           Køge OK         H35-   01:24:29                              
+22 Tøger Gralle Nørgaard   Amager OK       H35-   01:24:56    2              3    4     
+23 Max Prang               DSR/Fredensborg H35-   01:25:18                              
+24 Jørn Schou-Rode         Lyngby OK       H21-   01:27:06         3         2         5
+25 Lasse Nilsson           Helsingør SOK   H35-   01:32:41                              
+26 Tobias Hooge Hansen     OK Skærmen Værl H35-   01:34:16                              
+27 Jan Kofoed Nielsen      PI-København    H35-   01:36:14                              
+28 Søren Løvgren           Køge OK         H35-   01:42:40                              
+29 Kristian Witt           OK Skærmen Værl H21-   01:48:39                              
+30 Martin Hooge            OK Skærmen Værl H21-   01:57:03                              
+   Johan Hardon            Køge OK         H21-   Ej start                              
+   Jonas Pærregaard        Herlufsholm OK  H21-   Ej start                              
+   Emil Mejlhede Kinslev   Lyngby OK       H21-   Ej start                              
+   Mads Godvin Jensen      Lyngby OK       H21-   Ej start                              
+
+Gruppe H2 (H 40-, H 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Erik Olsen              PI-København    H40-   00:49:07                              
+2  Jesper Lægsgaard        Lyngby OK       H40-   00:51:54         4         4         4
+3  Mads Madsen             O-63/NFR/Maribo H40-   00:54:27                              
+4  Søren Albæk Jensen      Amager OK       H40-   00:58:09    4              3    4     
+5  Lars Brøndsel           O-63/NFR/Maribo H45-   01:01:25                              
+6  Christian Gudme         OK73            H40-   01:03:33                              
+7  Flemming Sparre Sørense Amager OK       H45-   01:04:23    3              2    3     
+8  Hans J Andersen         DSR/Fredensborg H40-   01:05:51                              
+9  Per Rye Hougaard        OK Skærmen Værl H40-   01:07:09                              
+10 Bjark Bo Christensen    Holbæk OK       H40-   01:09:06    2    3    4               
+11 Dan Frederiksen         PI-København    H45-   01:10:02                              
+12 Mikael Horn Rolighed    Lyngby OK       H45-   01:11:29         2         1         3
+13 Tage Ebbensgaard        Køge OK         H45-   01:20:58                              
+14 Kaj Munck               Herlufsholm OK  H45-   01:22:31                              
+15 Torben Bagger           Helsingør SOK   H45-   01:22:43                              
+16 Anton Lauritzen         Holbæk OK       H45-   01:25:25    1    1    3               
+17 Mogens Schmidt          Lyngby OK       H40-   01:26:24                              
+18 Frederik Møller Nielsen OK73            H40-   01:26:45                              
+19 Jørgen Zangenberg       PI-København    H45-   01:26:55                              
+20 Jesper Sørensen         OK Skærmen Værl H45-   01:27:00                              
+21 Lars Christoffersen     OK Skærmen Værl H45-   01:32:07                              
+22 Bent Børsting           Herlufsholm OK  H45-   01:41:53                              
+23 Peter Leander           Køge OK         H45-   01:45:11                              
+24 Johannes Møller         Herlufsholm OK  H45-   01:50:42                              
+   Michael Krogh           O-63/NFR/Maribo H45-   Ej start                              
+   Torsten Bjørn           Helsingør SOK   H45-   Ej start                              
+   Claus Børsting          Herlufsholm OK  H45-   Ej start                              
+   Christian Clausen       DSR/Fredensborg H40-     Fejlst                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Bjarke Sucksdorff       OK73            H50-   00:44:09                              
+2  Jørn Mouritzen          DSR/Fredensborg H55-   00:45:31                              
+3  Flemming Wendelboe      Helsingør SOK   H55-   00:46:19                              
+4  Frede Scheye            Herlufsholm OK  H55-   00:47:40                              
+5  Jesper Gottlieb         OK Skærmen Værl H50-   00:48:57                              
+6  Mathias Klinkby         Holbæk OK       H-16   00:49:07    4    4    4               
+7  Jan Thiesen             Holbæk OK       H50-   00:49:54    3    3    3               
+8  Bruno Stub              PI-København    H55-   00:49:56                              
+9  Ib Rasmussen            OK S.G.         H55-   00:51:16              2         4    4
+10 Carsten Thye Agger      Helsingør SOK   H50-   00:52:18                              
+11 Henrik Wiberg           PI-København    H55-   00:53:38                              
+12 Hakon Mosbech           OK Skærmen Værl H55-   00:55:35                              
+13 Michael Hjorth          OK73            H55-   00:56:05                              
+14 Svend-Erik Munck        Herlufsholm OK  H55-   00:56:41                              
+15 Jan Truelsen            Herlufsholm OK  H50-   00:56:43                              
+15 Torben Hviid            O-63/NFR/Maribo H55-   00:56:43                              
+17 Rasmus Brøndsel         O-63/NFR/Maribo H-16   00:58:06                              
+18 Ronald Clausen          DSR/Fredensborg H55-   01:00:11                              
+19 Torben Kristensen       Herlufsholm OK  H55-   01:00:37                              
+20 Jens Kristensen         O-63/NFR/Maribo H55-   01:02:45                              
+21 Jim Chalmers            Lyngby OK       H55-   01:03:55         2         4         3
+22 Jens Jørgen Lykkegaard  Amager OK       H55-   01:04:38    2              3    3     
+23 Torkil Hansen           PI-København    H55-   01:05:04                              
+24 Michael Saunte          O-63/NFR/Maribo H50-   01:06:42                              
+25 Anders Bang             Køge OK         H55-   01:10:27                              
+26 Niels Hamborg Jensen    OK Skærmen Værl H55-   01:12:04                              
+27 Erik Madsen             OK73            H55-   01:12:22                              
+28 Per Rasmussen           Lyngby OK       H50-   01:12:55         1         2         2
+29 John Barnewitz          Køge OK         H50-   01:15:01                              
+30 Henrik Johansen         Køge OK         H50-   01:24:41                              
+31 Ove Bech Nielsen        O-63/NFR/Maribo H55-   01:28:51                              
+32 Otto Kristensen         Køge OK         H55-   01:38:59                              
+   Mikael Espersen         OK S.G.         H50-     Fejlst                              
+   Kim Møller              Køge OK         H55-     Fejlst                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  John Knudsen            O-63/NFR/Maribo H60-   00:39:02                              
+2  Carl-Aage Hansen        O-63/NFR/Maribo H60-   00:41:17                              
+3  Bent Johansen           OK73            H60-   00:44:37                              
+4  Jakob Vang              Helsingør SOK   H65-   00:51:53                              
+5  Erik Løvgren Jensen     Køge OK         H65-   00:51:54                              
+6  John Pihl               Helsingør SOK   H65-   00:52:16                              
+7  Niels-Henrik Holscher   O-63/NFR/Maribo H65-   00:52:35                              
+8  Peter Hofman-Bang       Amager OK       H60-   00:53:10    4              4    4     
+8  Jan Larsen              Helsingør SOK   H65-   00:53:10                              
+10 Gunner Jørgensen        OK73            H65-   00:55:33                              
+11 Jørgen Larsen           Køge OK         H65-   00:55:39                              
+12 Leif Jensen             OK Skærmen Værl H60-   00:56:52                              
+13 Rolf Andersen           Amager OK       H60-   00:56:58    3              3    3     
+14 Børge Jensen            Herlufsholm OK  H60-   00:57:14                              
+15 Allan Christiansen      DSR/Fredensborg H65-   00:58:46                              
+16 Steen Sørensen          OK Skærmen Værl H65-   00:59:31                              
+17 Finn Blom Christensen   Lyngby OK       H65-   01:00:22         4         2         4
+18 Tom Christensen         OK S.G.         H60-   01:05:22              4         2    3
+19 Svend Erik Jensen       OK Skærmen Værl H65-   01:06:36                              
+20 Finn Gamél Christensen  DSR/Fredensborg H65-   01:06:43                              
+21 Niels Poulsen           PI-København    H65-   01:07:45                              
+22 Niels Tulinius          OK S.G.         H65-   01:08:40              3         1    2
+23 Robert Simonsen         Lyngby OK       H65-   01:08:52         3         1         1
+24 Jens Erik Larsen        OK73            H60-   01:09:14                              
+25 Jørgen Christensen      OK73            H65-   01:13:06                              
+26 Bjarne Sørensen         Amager OK       H60-   01:15:42                              
+27 Knud Lykking            OK73            H65-   01:15:54                              
+28 Jens Fladberg           Herlufsholm OK  H60-   01:17:34                              
+29 Stig Andersen           Herlufsholm OK  H60-   01:20:22                              
+30 Steffen Nilsson         Køge OK         H65-   01:25:33                              
+31 Søren Gudme             OK73            H65-   01:30:05                              
+32 Poul R. Koziara         Køge OK         H60-   01:31:40                              
+33 Lars Jørn Espersen      OK S.G.         H60-   01:37:43                              
+   Helmuth Hansen          Herlufsholm OK  H60-   Ej start                              
+   Mogens Vejtorp          OK S.G.         H65-   Ej start                              
+   Jan Bartnik             Amager OK       H65-   Ej start                              
+   Torben Møller           Køge OK         H65-     Fejlst                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mogens Hansen           OK Skærmen Værl H70-   00:36:16                              
+2  Arne Bech               OK73            H70-   00:38:57                              
+3  Jørgen Jensen           Helsingør SOK   H70-   00:40:20                              
+4  Niels Lyhne             Herlufsholm OK  H70-   00:42:20                              
+5  Peter Bjørn Jensen      O-63/NFR/Maribo H70-   00:42:36                              
+6  Peter Nielsen           O-63/NFR/Maribo H70-   00:44:47                              
+7  Bent Mortensen          OK73            H70-   00:45:01                              
+8  Kaare Vindfeld          OK S.G.         H70-   00:46:06              4         4    4
+9  Erik Torm               Herlufsholm OK  H70-   00:47:13                              
+10 Tage Frydendal          Holbæk OK       H70-   00:47:21    4    4    3               
+11 Søren Thoustrup Jørgens OK73            H70-   00:51:04                              
+12 Henning Jørgensen       Helsingør SOK   H70-   00:52:36                              
+13 Erik Nielsen            Amager OK       H70-   00:52:57    3              4    3     
+14 Søren Østergaard        Helsingør SOK   H70-   00:53:05                              
+15 John Jensen             Holbæk OK       H70-   00:53:08    2    3    2               
+16 Ole Rasmussen           Køge OK         H70-   00:54:17                              
+17 Kurt Dose               Køge OK         H70-   00:54:55                              
+18 Peter Larsen            Helsingør SOK   H70-   00:55:28                              
+19 Helge Johansen          Lyngby OK       H70-   00:56:51         2         3         3
+20 Flemming Marcussen      Helsingør SOK   H70-   01:00:43                              
+21 Erling Hansen           Køge OK         H70-   01:01:18                              
+22 Poul Nissen             DSR/Fredensborg H70-   01:06:34                              
+23 Bjørn Helstrup          DSR/Fredensborg H70-   01:19:05                              
+24 Sven Christensen        OK S.G.         H70-   01:21:26              1         2    2
+25 Tom Petersen            OK73            H70-   01:24:43                              
+26 Jens Lynge              Køge OK         H70-   02:12:04                              
+   Finn Frogne             Køge OK         H70-   Ej start                              
+   Poul-Erik Pedersen      Køge OK         H70-     Fejlst                              
+
+Gruppe H6 (H -14, H -16B) - [2, 1]
+----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sebastian Hansen        Herlufsholm OK  H-16B  01:21:55                              
+2  Asger Christian Goldbac Køge OK         H-16B  02:00:17                              
+   Mikkel Brøndsel         O-63/NFR/Maribo H-16B    Fejlst                              
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jeppe Damsgaard         DSR/Fredensborg H21-B  00:43:21                              
+2  Michael Gottlieb        OK Skærmen Værl H-20B  00:51:36                              
+3  Jonas Nordstrøm Schwart Amager OK       H21-B  00:52:46    2              2    2     
+4  Martin Keil Sørensen    Lyngby OK       H21-B  00:53:47         2         2         2
+5  Bo Brinkmann            Køge OK         H35-B  00:56:32                              
+6  Peter Espersen          OK S.G.         H21-B  00:57:00              2         2    2
+7  Jesper Rene Mortensen   Herlufsholm OK  H35-B  00:57:02                              
+8  Brian Jimmi Bech        Holbæk OK       H35-B  00:57:19    2    2    2               
+9  Karsten Jørgensen       PI-København    H35-B  00:57:42                              
+10 Thomas Kristiansen      Køge OK         H35-B  00:59:22                              
+11 Martin Jensen           Amager OK       H21-B  01:01:20    1              1    1     
+12 Bjørn Kantsø            Amager OK       H21-B  01:01:34                              
+13 Jacob Bols Andersen     Herlufsholm OK  H21-B  01:03:25                              
+14 Laust Kadziola          O-63/NFR/Maribo H-20B  01:03:33                              
+15 Søren H.L. Berggreen    Lyngby OK       H35-B  01:03:36         1         1         1
+16 Svend W. Frydendahl     DSR/Fredensborg H21-B  01:04:39                              
+17 Rune Odin               Lyngby OK       H21-B  01:05:08                              
+18 Kim Neubert Madsen      PI-København    H21-B  01:06:28                              
+19 Søren Christensen       OK Skærmen Værl H35-B  01:07:43                              
+20 Asger Espersen          OK S.G.         H21-B  01:08:45              1         1    1
+21 Lasse Husman            Køge OK         H35-B  01:14:58                              
+22 Morten Løjmand          Herlufsholm OK  H35-B  01:15:57                              
+23 Anders Christensen      O-63/NFR/Maribo H35-B  01:18:28                              
+24 Mikkel Fabritius Sørens Amager OK       H21-B  01:23:19                              
+25 Don Maher               O-63/NFR/Maribo H35-B  01:24:06                              
+26 Michael Hansen          OK S.G.         H35-B  01:24:37                              
+27 Jakub Kolarik           OK73            H21-B  01:33:01                              
+28 Nicolai Hedelund        DSR/Fredensborg H35-B  01:37:52                              
+29 Martin Bjørling Thomsen Holbæk OK       H21-B  01:39:11    1    1    1               
+30 Christian Hansen        Holbæk OK       H21-B  01:51:11                              
+   Kasper Lundberg Lykkega Amager OK       H21-B  Ej start                              
+   Henrik Kastrup Jørgense Køge OK         H35-B  Ej start                              
+   Jesper Kracht           PI-København    H35-B  Ej start                              
+   Niels Kristian L Jensen Amager OK       H35-B  Ej start                              
+   Jesper Kjærsig          DSR/Fredensborg H35-B    Fejlst                              
+   Peter Hansen            Herlufsholm OK  H35-B    Fejlst                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Kasper Gabs Hansen      OK S.G.         H21-C  00:21:45              2         2    2
+2  Mads Rasmussen          PI-København    H-20C  00:23:18                              
+3  Andreas Schrøder        Amager OK       H-20C  00:24:58    2              2    1     
+4  Martin Knudsen          Holbæk OK       H21-C  00:29:39    1    2    1               
+5  Anders Frydendal Jensen Holbæk OK       H-20C  00:30:53                              
+6  Torben Nielsen          Køge OK         H21-C  00:36:51                              
+7  Benny Clausen           Herlufsholm OK  H21-C  00:40:17                              
+8  Morten Tibian           DSR/Fredensborg H21-C  00:41:45                              
+9  Kjeld Jensen            Køge OK         H21-C  00:51:26                              
+10 Verner Johansen         OK73            H21-C  00:56:51                              
+11 Erik Bülow-Olsen        O-63/NFR/Maribo H21-C  01:05:06                              
+12 Claus Alkil             Lyngby OK       H21-C  01:23:07         1         1         1
+   Alfred Gantriis Johanss Helsingør SOK   H-12   Ej start                              
+   Leon Jørgensen          Køge OK         H21-C  Ej start                              
+   Henrik Hauge            Lyngby OK       H21-C  Ej start                              
+   Ole Hansen              OK73            H21-C    Fejlst                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Malene Løkke            Køge OK         D35-   00:56:27                              
+2  Astrid Thomsen          Holbæk OK       D21-   01:00:32    4    4    4               
+3  Lene Jensen             Helsingør SOK   D35-   01:01:07                              
+4  Camilla Rath Nielsen    PI-København    D35-   01:01:30                              
+5  Mette Stub              PI-København    D-20   01:01:44                              
+6  Karoline Hooge          OK Skærmen Værl D21-   01:02:17                              
+7  Mia Esper Schultz       Lyngby OK       D21-   01:05:07         3         4         4
+8  Eva Hemmersam           OK Skærmen Værl D21-   01:09:32                              
+9  Pernille Bohn           Lyngby OK       D21-   01:10:43         2         3         3
+10 Henriette Hansen        Herlufsholm OK  D35-   01:14:39                              
+11 Karen Vindfeld          OK S.G.         D21-   01:16:59              3         4    2
+12 Lise Skovgaard          Lyngby OK       D21-   01:19:01                              
+13 Carina Kjær Bollesen    O-63/NFR/Maribo D35-   01:19:15                              
+14 Mia Høholdt Hansen      Lyngby OK       D21-   01:26:23                              
+15 Kerstin Fisker          Holbæk OK       D21-   01:29:46    3    1    2               
+16 Gitte Sørensen          Herlufsholm OK  D35-   01:40:03                              
+17 Anette Lindegård Christ Holbæk OK       D35-   01:44:38                              
+18 Mathilde Damsgaard      DSR/Fredensborg D21-   01:45:40                              
+19 Lise Ravnshøj Andersen  Herlufsholm OK  D21-   01:50:31                              
+   Kristine Børsting       Herlufsholm OK  D-20   Ej start                              
+   Jessica Pingel          Amager OK       D21-     Fejlst                              
+   Annemette Nygaar Hansen Amager OK       D21-     Fejlst                              
+
+Gruppe D2 (D 40-, D 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Birgit Petersen Børstin Herlufsholm OK  D45-   00:52:09                              
+2  Rita Breum              PI-København    D45-   01:00:39                              
+3  Helle Tibian            DSR/Fredensborg D40-   01:03:20                              
+4  Tine Meyhoff Petersen   Herlufsholm OK  D45-   01:10:31                              
+5  Lenette Schunck Svendse Holbæk OK       D40-   01:12:36    4    4    4               
+6  Marianne Lykking        OK73            D45-   01:13:48                              
+7  Margit Goldbach         Køge OK         D45-   01:17:14                              
+8  Naja Sørensen           OK Skærmen Værl D45-   01:19:51                              
+9  Mette Lang Jensen       Amager OK       D45-   01:25:01    3              4    4     
+10 Sanne Lund Kolenda      Holbæk OK       D45-   01:38:41    2    3    3               
+11 Lisbeth Andersen        Køge OK         D45-   01:41:55                              
+   Elin Nørgård Kracht     PI-København    D40-   Ej start                              
+   Helle Roested           Herlufsholm OK  D45-   Ej start                              
+
+Gruppe D3 (D -16, D 50-, D 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Pia Kadziola            O-63/NFR/Maribo D50-   00:52:12                              
+2  Randi Hansen            OK S.G.         D55-   00:59:03              4         4    4
+3  Susanne Truelsen        Herlufsholm OK  D50-   01:00:36                              
+4  Mette Seir Hansen       Helsingør SOK   D55-   01:01:07                              
+5  Elsa Bratholm           OK73            D55-   01:01:43                              
+6  Anne Fonnesbech Jensen  PI-København    D55-   01:04:01                              
+7  Susanne Tanderup        Herlufsholm OK  D50-   01:09:45                              
+8  Anette Binder Larsen    Holbæk OK       D50-   01:12:17    4    4    3               
+9  Anne Sørensen           Helsingør SOK   D55-   01:12:34                              
+10 Susan Houmark Stub      PI-København    D50-   01:14:27                              
+11 Anne Bülow-Olsen        Lyngby OK       D50-   01:17:14         3         4         3
+12 Jannie Sørensen         Køge OK         D55-   01:20:52                              
+13 Lis Hedelund            DSR/Fredensborg D50-   01:33:16                              
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ulla Hooge              OK Skærmen Værl D60-   00:39:45                              
+2  Else Gudme              OK73            D60-   00:45:37                              
+3  Merete Ravnshøj Anderse Herlufsholm OK  D60-   00:47:37                              
+4  Alice Bech              OK73            D60-   00:50:03                              
+5  Inge Olsen              Helsingør SOK   D60-   00:52:13                              
+6  Kirsten Gehlshøj        OK S.G.         D60-   00:55:50              4         4    4
+7  Jette Viborg Sørensen   Amager OK       D60-   00:58:49    4              4    3     
+8  Berit N. Pedersen       Køge OK         D60-   00:59:24                              
+9  Bente Skov-Jensen       O-63/NFR/Maribo D60-   00:59:36                              
+10 Mette Høj               OK S.G.         D60-   00:59:52              3         2    3
+11 Grethe Larsen           Køge OK         D60-   01:03:39                              
+12 Ulla Valnert            OK73            D60-   01:06:30                              
+13 Inge Hestbæk            O-63/NFR/Maribo D60-   01:38:17                              
+   Inger Martin            Lyngby OK       D60-     Fejlst                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Marie Krogsgaard        Helsingør SOK   D70-   00:48:57                              
+2  Inge Madsen             OK73            D70-   00:50:24                              
+3  Vibeke Miené            Helsingør SOK   D70-   00:53:23                              
+4  Hanne Hansen            Køge OK         D70-   00:57:10                              
+5  Tove Petersen           OK S.G.         D70-   01:02:58              4         4    4
+6  Gull-May Knudsen        Helsingør SOK   D70-   01:07:28                              
+7  Kirsten Witt            OK Skærmen Værl D70-   01:42:50                              
+8  Birthe Tulinius         OK S.G.         D70-   01:44:06              3         3    3
+   Lissie Vejtorp          OK S.G.         D70-   Ej start                              
+   Birthe Clausen          DSR/Fredensborg D70-     Fejlst                              
+   Grethe Jensen           Køge OK         D70-     Fejlst                              
+   Eva Müllertz            Helsingør SOK   D70-     Fejlst                              
+
+Gruppe D6 (D -14, D -16B) - [2, 1]
+----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Louise B Jensen         Helsingør SOK   D21-B  00:39:05                              
+2  Ida Binder Larsen       Holbæk OK       D-20B  00:42:02    2    2    2               
+3  Sif Binder Larsen       Holbæk OK       D21-B  00:44:19    2    2    2               
+4  Pia R. Skorstengaard    Lyngby OK       D21-B  00:44:42         1         2         2
+5  Camilla Bøgevig Larkai  OK73            D35-B  00:47:33                              
+6  Ida Mosbech Smith       OK Skærmen Værl D21-B  00:51:54                              
+7  Trine Hershøj           OK73            D21-B  00:54:07                              
+8  Birgitte Sørensen       DSR/Fredensborg D35-B  00:54:29                              
+9  Helle Hansen            Herlufsholm OK  D35-B  00:55:41                              
+10 Bente Frydendal Jensen  Holbæk OK       D35-B  00:56:07                              
+11 Gigi Sucksdorff         OK73            D35-B  00:58:34                              
+12 Irene Crone-Langkjær    Amager OK       D35-B  00:58:49    1              2    2     
+13 Marie Christine Peterse Lyngby OK       D21-B  00:59:23         1         1         2
+14 Tove Lindhard           DSR/Fredensborg D35-B  01:02:19                              
+15 Bonnie Petersen         O-63/NFR/Maribo D35-B  01:03:52                              
+16 Birgit Berner           Køge OK         D35-B  01:05:38                              
+17 Freja Frost             Amager OK       D21-B  01:08:44    1              1    2     
+18 Mia Sigsgaard           Amager OK       D-20B  01:09:18                              
+19 Anja K. Hauge           Lyngby OK       D35-B  01:12:52                              
+20 Rita Løjmand            Herlufsholm OK  D35-B  01:13:43                              
+21 Maria Christensen       O-63/NFR/Maribo D35-B  01:16:11                              
+22 Ida Stürup              Helsingør SOK   D-20B  01:22:56                              
+23 Jytte Nielsen           Køge OK         D35-B  01:25:16                              
+24 Louise Eskildsen        Køge OK         D35-B  01:30:11                              
+25 Gitte Rasmussen         Køge OK         D35-B  01:31:36                              
+26 Camilla Sønderby        PI-København    D21-B  01:31:44                              
+   Maiken Espersen         OK S.G.         D21-B  Ej start                              
+   Tania Lundberg Lykkegaa Amager OK       D21-B  Ej start                              
+   Inger Lise Wolff-Jensen Lyngby OK       D35-B    Fejlst                              
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Anja Storgaard          O-63/NFR/Maribo D21-C  00:31:58                              
+2  Ilsabe Lampe Børsting   Herlufsholm OK  D21-C  00:32:39                              
+3  Lene Boisen             DSR/Fredensborg D21-C  00:37:04                              
+4  Bente Ravn              Amager OK       D21-C  00:38:54    2              2    2     
+5  Katrine Skovgaar Rasmus Lyngby OK       D21-C  00:40:32         2         1         2
+6  Lis Noes                O-63/NFR/Maribo D21-C  00:40:35                              
+7  Carmen Cecilie Christen Holbæk OK       D-14B  00:42:03    1    1    2               
+8  Trine Grønborg          O-63/NFR/Maribo D21-C  00:44:33                              
+9  Sisse Jørgensen         Helsingør SOK   D21-C  00:48:27                              
+10 Anne Nielsen            Køge OK         D21-C  00:50:44                              
+11 Birgitte Stürup         Helsingør SOK   D21-C  00:53:23                              
+12 Lena Hansen             Herlufsholm OK  D21-C  00:54:09                              
+13 Anne Keller             Amager OK       D21-C  00:54:20                              
+14 Berit Skytte            Amager OK       D21-C  00:58:19                              
+15 Heidi Olander Petersen  Amager OK       D21-C  00:59:32                              
+16 Anni Lauritzen          Holbæk OK       D21-C  01:14:10                              
+   Rikke Melin             Lyngby OK       D21-C  Ej start                              
+   Vibe Knudsen            Holbæk OK       D-14B    Fejlst                              
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1]
+----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Soon-Ae Cho             Helsingør SOK   Beg    00:17:41                              
+2  Carsten Vad Mortensen   PI-København    Beg    00:19:35                              
+3  Brian Lind              PI-København    Beg    00:26:34                              
+4  Alberte Hansen          O-63/NFR/Maribo D-10   00:27:03                              
+5  Andreas Sparre Højsted  Amager OK       Beg    00:27:44    1              1    1     
+6  Markus Emil Thomsen     Holbæk OK       H-10   00:27:56    1    1    1               
+7  Maggie Müller           Helsingør SOK   D-10   00:29:54                              
+8  Dicte Højbjerg Andersen Helsingør SOK   D-10   00:31:14                              
+9  Gabriel Bo Christensen  Holbæk OK       H-12B  00:31:33    1    1    1               
+10 Sophie Petersen         Helsingør SOK   Beg    00:32:56                              
+11 Carl-Loui Hansen        O-63/NFR/Maribo H-10   00:33:23                              
+12 Cecilie Frydenda Jensen Holbæk OK       Beg    00:36:16                              
+13 Fie Gudme               OK73            Beg    00:36:21                              
+14 Søren Nielsen Ravn      Amager OK       Beg    00:37:27    1              1    1     
+15 Lone Mortensen          OK73            Beg    00:38:53                              
+16 Freja Gudme             OK73            Beg    00:38:56                              
+17 Karin Leander           Køge OK         Beg    00:40:46                              
+18 Pernille Sørensen       Amager OK       Beg    00:44:40                              
+19 Katrine Hansen          Herlufsholm OK  Beg    00:48:44                              
+20 Bente Dahl              PI-København    Beg    00:50:12                              
+21 Ruth Børsting           Herlufsholm OK  Beg    00:52:22                              
+22 Lisa Børsting           Herlufsholm OK  D-10   00:52:32                              
+23 Peter Løkke             Køge OK         Beg    01:04:04                              
+24 Morten Løkke            Køge OK         Beg    01:04:08                              
+   Sarah Nommesen          Helsingør SOK   D-10   Ej start                              
+   August Bo Christensen   Holbæk OK       H-12B  Ej start                              
+   Villy Rasmussen         O-63/NFR/Maribo Beg    Ej start                              
+

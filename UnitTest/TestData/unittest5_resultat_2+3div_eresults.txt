@@ -1,0 +1,429 @@
+Divisionsmatch (, 2018-03-30)
+-----------------------------
+                                               score      point
+Faaborg OK                                   844 -   454     10   (245) 
+FROS/Melfar                                  791 -   463     10   (232) 
+Odense OK                                    742 -   462     10   (222) 
+OK Esbjerg                                   547 -   540      6    
+OK Syd                                       533 -   566      4    
+Svendborg/OPI                                242 -   705      2    
+West/Ribe                                    199 -   708      0    
+
+1 : FROS/Melfar - Faaborg OK             :   121 -   120
+2 : FROS/Melfar - OK Esbjerg             :   128 -    84
+3 : FROS/Melfar - OK Syd                 :   135 -    73
+4 : FROS/Melfar - Odense OK              :   111 -   116
+5 : FROS/Melfar - Svendborg/OPI          :   150 -    36
+6 : FROS/Melfar - West/Ribe              :   146 -    34
+7 : Faaborg OK - OK Esbjerg              :   141 -    77
+8 : Faaborg OK - OK Syd                  :   137 -    82
+9 : Faaborg OK - Odense OK               :   125 -   106
+10 : Faaborg OK - Svendborg/OPI          :   161 -    37
+11 : Faaborg OK - West/Ribe              :   160 -    31
+12 : OK Esbjerg - OK Syd                 :    96 -    82
+13 : OK Esbjerg - Odense OK              :    82 -   119
+14 : OK Esbjerg - Svendborg/OPI          :   105 -    40
+15 : OK Esbjerg - West/Ribe              :   103 -    30
+16 : OK Syd - Odense OK                  :    79 -   125
+17 : OK Syd - Svendborg/OPI              :   109 -    39
+18 : OK Syd - West/Ribe                  :   108 -    34
+19 : Odense OK - Svendborg/OPI           :   141 -    34
+20 : Odense OK - West/Ribe               :   135 -    31
+21 : Svendborg/OPI - West/Ribe           :    56 -    39
+
+                          m1      m2     m3     m4      m5     m6     m7     m8     m9      m10    m11   m12   m13     m14    m15   m16     m17    m18    m19    m20   m21  
+                        ------- ------ ------ ------- ------ ------ ------ ------ ------- ------ ------ ----- ------ ------ ------ ------ ------ ------ ------ ------ ----- 
+H1 (H20, H21, H35)       15-23   22-15  24-11  14-22   26-7   26-4   23-15  25-12  21-17   27-8   28-4  21-14 16-21   22-10  23-5  10-25   19-11  21-5   26-7   26-4  15-6  
+H2 (H40, H45)            12-9    12-9    9-12  13-8    15-0   12-6   13-8   11-10  12-9    15-0   13-5   9-12 10-11   15-0   13-5  13-8    15-0   13-5   15-0   12-6   0-6  
+H3 (H16, H50, H55)       13-11    9-14  13-8   13-8    15-3   15-5    8-16  15-9   13-11   18-3   16-7  16-7  15-8    17-3   16-6  10-11   15-3   13-7   14-4   13-7   5-10 
+H4 (H60, H65)             6-4     4-6    7-3    3-7     7-3    7-3    4-6    5-5    3-7     5-5    7-3   7-3   5-5     7-3    7-3   3-7     7-3    7-3    7-3    7-3   7-3  
+H5 (H70)                  4-6     3-7    5-5    3-7     6-4    3-7    5-5    6-4    4-6     7-3    3-7   7-3   5-5     7-3    3-7   3-7     6-4    3-7    7-3    3-7   3-7  
+H6 (H14)                 10-3    10-0   10-0    6-7    10-0   10-0   10-0   10-0    5-8    10-0   10-0   0-0   0-10    0-0    0-0   0-10    0-0    0-0   10-0   10-0   0-0  
+H7 (H20B, H21B, H35B)     6-2     6-1    6-3    5-4     6-2    6-0    4-2    3-5    2-6     4-3    4-0   2-5   1-6     2-4    2-0   3-6     5-3    6-0    6-2    6-0   4-0  
+H8 (H12, H20C, H21C)      6-2     7-0    6-2    6-2     7-1    7-0    2-0    2-0    0-2     2-0    2-0   0-2   0-2     0-2    0-0   0-2     2-0    2-0    2-0    2-0   2-0  
+D1 (D20, D21, D35)        5-17   11-6   11-0    5-15   11-0   11-0   17-4   17-0   17-6    17-0   17-0   8-0   5-15    8-0    8-0   0-15    0-0    0-0   15-0   15-0   0-0  
+D2 (D40, D45)             8-12   11-0    8-10   7-13   11-0   11-0   15-0    9-11   9-12   15-0   15-0   0-11  0-15    0-0    0-0   9-11   11-0   11-0   15-0   15-0   0-0  
+D3 (D16, D50, D55)       17-7    14-9   16-8   17-4    18-3   18-0   10-10   8-15  13-5    13-5   15-0  10-12 11-4    11-4   11-0  15-5    17-3   17-0    6-5    6-0   6-0  
+D4 (D60, D65)             0-7     0-7    0-4    0-7     0-4    0-7    7-3    7-2    5-5     7-2    7-3   7-2   4-6     5-4    7-3   2-7     3-4    4-5    6-3    7-3   4-5  
+D5 (D70)                  6-4     7-2    7-3    7-0     5-4    7-0    7-2    5-5    7-0     5-4    7-0   2-7   4-0     3-4    4-0   7-0     5-4    7-0    0-4    0-0   4-0  
+D6 (D14, D16B)            6-6     6-0    6-0    6-0     6-0    6-0    9-0    9-0    9-0     9-0    9-0   0-0   0-0     0-0    0-0   0-0     0-0    0-0    0-0    0-0   0-0  
+D7 (D20B, D21B, D35B)     4-2     3-5    4-0    3-5     4-3    4-2    2-5    2-0    2-5     2-4    2-2   6-0   5-4     5-3    6-1   0-6     0-4    0-2    5-3    6-1   4-2  
+D8 (D14B, D21C)           0-2     0-2    0-2    0-4     0-2    0-0    2-0    0-2    0-4     2-0    2-0   0-2   0-4     2-0    2-0   2-2     2-0    2-0    4-0    4-0   2-0  
+9  (H10, D10, Begynder)   3-3     3-1    3-2    3-3     3-0    3-0    3-1    3-2    3-3     3-0    3-0   1-2   1-3     1-0    1-0   2-3     2-0    2-0    3-0    3-0   0-0  
+Ialt:                   121-120 128-84 135-73 111-116 150-36 146-34 141-77 137-82 125-106 161-37 160-31 96-82 82-119 105-40 103-30 79-125 109-39 108-34 141-34 135-31 56-39 
+
+Bane Bane 1
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Martin Busch            OK Snab         H1     00:51:39                                                                                                         
+2  Emma Klingenberg        Faaborg OK      H21-   00:52:00    8                             8    8    8    8    8                                                  
+3  Kristian Blok           OK Snab         H1     00:52:48                                                                                                         
+4  Conor Klingenberg       Faaborg OK      H21-   00:53:04    7                             7    7    7    7    7                                                  
+5  Jacob A. Daugaard       Kolding OK      H1     00:54:19                                                                                                         
+6  Lars Nielsen            OK Esbjerg      H35-   00:55:42         8                        6                        8    8    8    8                              
+7  Rasmus Iversen          Odense OK       H21-   00:56:10                   8                        6                   7              8              8    8     
+8  Morten Knudsen          FROS/Melfar     H1     00:56:47                                                                                                         
+9  Henrik Steen Andersen   Odense OK       H21-   00:57:15                   7                        5                   6              7              7    7     
+10 Anders Winther Mortense Odense OK       H21-   00:57:45                   6                        4                   5              6              6    6     
+11 Peter Knudsen           FROS/Melfar     H35-   00:59:22    6    7    8    5    8    8                                                                           
+12 Bjarne Skovgaard Knudse Faaborg OK      H21-   00:59:43    5                             5    6    3    6    6                                                  
+13 Malte Jensen            FROS/Melfar     H21-   01:04:37    4    6    7    4    7    7                                                                           
+14 Bjarne Johannsen        OK Syd          H35-   01:05:26              6                        5                   7                   5    8    8               
+15 Thomas Gabs             FROS/Melfar     H35-   01:06:03    3    5    5    3    6    6                                                                           
+16 Claus Christensen       FROS/Melfar     H21-   01:06:51    2    4    4    2    5    5                                                                           
+17 Palle Lang Nielsen      OK Esbjerg      H21-   01:07:23         3                        4                        6    4    7    7                              
+18 Jonas Gabs              FROS/Melfar     H21-   01:07:37                                                                                                         
+19 Gintas Bloze            Odense OK       H35-   01:08:25                   1                        2                   3              4              5    5     
+20 Per Storm Hansen        Svendborg/OPI   H35-   01:10:04                        4                        5                   6              7         4         8
+21 Mathias Jensen          OK Esbjerg      H-20   01:11:31         4*                       5*                       7*   4*   7*   8*                             
+22 John Bargmeyer          OK Syd          H35-   01:14:56              3                        4                   4                   3    6    7               
+23 Rasmus Ejlersen         OK Syd          H21-   01:17:41              2                        3                   3                   2    5    6               
+24 Henrik Bo Andersen      Odense OK       H1     01:17:59                                                                                                         
+25 Søren Andersen          Herning Oriente H1     01:19:29                                                                                                         
+26 Uffe Villumsen          OK Snab         H1     01:20:02                                                                                                         
+27 Daniel Nissen Pedersen  Faaborg OK      H-20   01:20:12    3*                            3*   4*   3*   6*   7*                                                 
+28 Mads Mollerup Benfeldt  Odense OK       H21-   01:23:52                                                                                                         
+29 Jens Jensen             OK H.T.F.       H1     01:24:47                                                                                                         
+30 Jes Holme Barkler       Svendborg/OPI   H35-   01:25:43                        3                        3                   4              4         3         7
+31 Palle Cavan             West/Ribe       H35-   01:36:46                             4                        4                   5              5         4    6
+32 Hans V. Pedersen        OK GORM         H1     01:44:21                                                                                                         
+33 Anders Rune Damkjær Ped Odense OK       H21-   02:18:29                                                                                                         
+   Christian Volmar Skovsg Odense OK       H35-       Disk                                                                                                         
+
+Bane Bane 10
+------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Carsten Granby          Faaborg OK      Begynd 00:16:21    1                             1    1    1    1    1                                                  
+2  Magnus Lindahl          FROS/Melfar     H-10   00:16:30    1    1    1    1    1    1                                                                           
+3  Johannes Nørgaard Peuli Faaborg OK      H-10   00:20:18    1                             1    1    1    1    1                                                  
+4  Aske Hedemann           Faaborg OK      H-10   00:20:40    1                             1    1    1    1    1                                                  
+5  Johanna K. Madsen       FROS/Melfar     D-10   00:24:02    1    1    1    1    1    1                                                                           
+6  Laura Busch             OK Snab         DH9    00:24:15                                                                                                         
+7  Augustas Bloze          Odense OK       H-10   00:24:29                   1                        1                   1              1              1    1     
+8  Jakob Skousen           FROS/Melfar     H-10   00:27:11    1    1    1    1    1    1                                                                           
+9  Sebastian Kvols         OK GORM         DH9    00:27:55                                                                                                         
+10 Sofie Rohde Jørgensen   FROS/Melfar     Begynd 00:31:59                                                                                                         
+11 Christian Rohde Jørgens FROS/Melfar     Begynd 00:32:02                                                                                                         
+12 Mette Jensen            FROS/Melfar     D-10   00:34:10                                                                                                         
+13 Benjamin Krabek         Odense OK       H-10   00:35:28                   1                        1                   1              1              1    1     
+14 Anna-Marie Kühl         OK Syd          Begynd 00:35:55              1                        1                   1                   1    1    1               
+15 Bente Honnens           OK Syd          Begynd 00:36:58              1                        1                   1                   1    1    1               
+16 Bettina Nissen Pedersen Faaborg OK      Begynd 00:37:43                                                                                                         
+17 Sebastian Kramers Søren OK Esbjerg      Begynd 00:38:55         1                        1                        1    1    1    1                              
+18 Zelda Marie Damkjær Ped Odense OK       D-10   00:40:57                   1                        1                   1              1              1    1     
+
+Bane Bane 2
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Jens Liengård           OK Snab         H2     00:43:40                                                                                                         
+2  Jens Christian Gammeljo OK Snab         H2     00:43:44                                                                                                         
+3  Ita Klingenberg         Faaborg OK      D21-   00:44:18    6                             6    6    6    6    6                                                  
+4  Vagn Sørensen           Faaborg OK      H45-   00:45:17    6                             6    6    6    6    6                                                  
+5  Ulrika Örnhagen Jørgens OK Snab         D1     00:46:06                                                                                                         
+6  Per Mønster Jørgensen   Horsens OK      H2     00:46:28                                                                                                         
+7  Christen K. Laursen     Kolding OK      H2     00:46:53                                                                                                         
+8  Inge S. Knudsen         Faaborg OK      D21-   00:46:57    5                             5    5    5    5    5                                                  
+9  Niels Nygaard Jensen    OK Snab         H2     00:48:21                                                                                                         
+10 Thomas Uhlemann         Kolding OK      H2     00:48:35                                                                                                         
+11 Rudolf Sørensen         OK Esbjerg      H45-   00:49:28         6                        5                        6    6    6    6                              
+12 Karsten Jøhnk           OK Syd          H45-   00:50:14              6                        5                   5                   6    6    6               
+13 Arne Nygaard            West/Ribe       H40-   00:51:00                             6                        5                   5              5         6    6
+14 Sarah Kathrine Nissen P Faaborg OK      D-20   00:52:09    6*                            6*   6*   6*   6*   6*                                                 
+15 Per Eg Pedersen         Kolding OK      H2     00:52:17                                                                                                         
+16 Karsten Blok            OK Snab         H2     00:52:50                                                                                                         
+17 Hans Jørgen Vad         Horsens OK      H2     00:52:53                                                                                                         
+18 Jonas Hekman            OK Syd          H40-   00:54:19              5                        4                   4                   5    5    4               
+19 Esben Blicher           FROS/Melfar     H40-   00:54:25    5    5    4    6    6    5                                                                           
+20 Michael Thygesen        OK Snab         H2     00:54:46                                                                                                         
+21 Tommy Iversen           Odense OK       H45-   00:54:50                   5                        5                   5              4              6    5     
+22 Bo Mønster Jørgensen    FROS/Melfar     H40-   00:55:42    4    4    3    4    5    4                                                                           
+23 Uffe Sudergaard         FROS/Melfar     H45-   00:55:57    3    3    2    3    4    3                                                                           
+24 Christina Damgaard Niel Odense OK       D21-   00:57:02                   6                        3                   6              6              6    6     
+25 Merete Spangsberg Niels Odense OK       D21-   00:57:26                   5                        2                   5              5              5    5     
+26 Morten Christensen      Faaborg OK      H45-   00:59:11    2                             4    3    4    5    4                                                  
+27 Britta Ank Pedersen     Horsens OK      D1     00:59:33                                                                                                         
+28 Jakob Q Christensen     Odense OK       H40-   00:59:46                   2                        3                   4              3              5    4     
+29 Henning Hedemann        Faaborg OK      H45-   01:00:06    1                             3    2    2    4    3                                                  
+30 Henning Schou           OK Snab         H2     01:00:12                                                                                                         
+31 Søren Mikkelsen         FROS/Melfar     H40-   01:00:56                                                                                                         
+32 Peter Pallesen          OK Syd          H45-   01:04:22              1                        1                   3                   2    4    3               
+33 Lars Strøm Hansen       FROS/Melfar     H40-   01:04:34                                                                                                         
+34 Johnny Rosenkjær        Faaborg OK      H45-   01:04:54                                                                                                         
+35 Kurt Thorøe             OK Esbjerg      H45-   01:05:54         2                        2                        2    3    5    4                              
+36 Peter Gammeljord        OK Snab         H2     01:06:01                                                                                                         
+37 Lars T. Munch           OK Snab         H2     01:06:34                                                                                                         
+38 Jakob Dreisig           Odense OK       H40-   01:06:36                   1                        1                   2              1              4    3     
+39 Carsten Djursaa         Odense OK       H45-   01:09:12                                                                                                         
+40 Jesper Madsen           FROS/Melfar     H40-   01:09:32                                                                                                         
+41 Flemming Christiansen   FROS/Melfar     H45-   01:16:09                                                                                                         
+42 Mette Riis Jensen       Odense OK       D21-   01:16:14                   4                        1                   4              4              4    4     
+43 Erik Lindholdt          OK Esbjerg      H45-   01:19:12         1                        1                        1    1    4    3                              
+44 Mette Lindahl           FROS/Melfar     D35-   01:24:01    3    6    6    3    6    6                                                                           
+45 Marianne Skousen        FROS/Melfar     D35-   01:24:34    2    5    5    2    5    5                                                                           
+46 Freja Kramers Sørensen  OK Esbjerg      D-20   01:38:48         6*                       4*                       8*   5*   8*   8*                             
+   Torben Kruse            Svendborg/OPI   H40-       Disk                                                                                                         
+   Thomas Esmark           Svendborg/OPI   H45-       Disk                                                                                                         
+
+Bane Bane 3
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Flemming Jørgensen      OK Snab         H3     00:41:30                                                                                                         
+2  Felix Isaksen           OK Snab         H3     00:43:08                                                                                                         
+3  Kaj Isaksen             OK Snab         H3     00:45:21                                                                                                         
+4  Gustav Vinther Østermar Kolding OK      H3     00:46:32                                                                                                         
+5  Niels Jensen            OK Esbjerg      H50-   00:47:43         6                        6                        6    6    6    6                              
+6  Henrik B. Thomsen       OK Esbjerg      H50-   00:48:46         5                        5                        5    5    5    5                              
+7  Gert Pedersen           FROS/Melfar     H55-   00:51:30    6    4    6    6    6    6                                                                           
+8  Allan Grundsøe          Odense OK       H55-   00:52:08                   5                        6                   4              6              6    6     
+9  Lars-Peter Ellekilde    Odense OK       H3     00:52:38                                                                                                         
+10 Søren Klingenberg       Faaborg OK      H55-   00:53:01    5                             4    6    5    6    6                                                  
+11 Michael Termansen       OK Syd          H50-   00:54:23              5                        5                   4                   5    6    6               
+12 Terkel Gydesen          FROS/Melfar     H55-   00:54:40    4    3    4    4    5    5                                                                           
+13 Thomas Sørensen         FROS/Melfar     H50-   00:54:45    3    2    3    3    4    4                                                                           
+14 Kristian M. Øllgaard    OK GORM         H3     00:55:18                                                                                                         
+15 Lone Fyhn Olesen        Odense OK       D45-   00:55:23                   6                        6                   6              6              6    6     
+16 Eric Lauridsen          West/Ribe       H50-   00:55:28                             3                        5                   4              5         5    6
+17 Esben Ø. Pedersen       OK GORM         H3     00:55:46                                                                                                         
+18 Steen Sig Andersen      Kolding OK      H3     00:56:56                                                                                                         
+19 Flemming D. Andersen    OK GORM         H3     00:58:13                                                                                                         
+20 Lars Madsen             Odense OK       H55-   00:59:13                   2                        4                   3              4              5    4     
+21 Ulrik Revsbech          OK Esbjerg      H50-   00:59:52         1                        3                        3    2    4    3                              
+22 Kristian Kramers Sørens OK Esbjerg      H-16   01:00:59         2*                       2*                       2*   2*   2*   2*                             
+23 Oliver Thorsing Christe Faaborg OK      H-16   01:01:20    4*                            3*   6*   5*   7*   6*                                                 
+24 Hans Moos               OK Syd          H55-   01:02:12              2                        3                   2                   3    5    4               
+25 Lars Nissen             OK Esbjerg      H50-   01:02:14                                                                                                         
+26 Bent Mikkelsen          Faaborg OK      H50-   01:02:27    1                             1    2    2    4    3                                                  
+27 Ove Petersen            OK Syd          H55-   01:03:37              1                        1                   1                   2    4    3               
+28 Peter Modler Hedemann   Faaborg OK      H-16   01:03:51    1*                                 1*   1*   1*   1*                                                 
+29 Finn Henriksen          Svendborg/OPI   H55-   01:05:01                        3                        3                   3              3         4         5
+30 Hans Erik Larsen        Faaborg OK      H55-   01:06:09                                                                                                         
+31 Hans Christian Strib    OK GORM         H3     01:07:14                                                                                                         
+32 Irene Gammeljord        OK Snab         D2     01:07:29                                                                                                         
+33 Ulla Pallesen           OK Syd          D45-   01:08:29              6                        6                   6                   5    6    6               
+34 Inger Andreasen         FROS/Melfar     D45-   01:09:12    6    6    5    5    6    6                                                                           
+35 Kurt Madsen             Odense OK       H55-   01:09:17                   1                        1                   1              1              3    3     
+36 Helle Termansen         OK Syd          D45-   01:09:55              4                        5                   5                   4    5    5               
+37 Karen Bülow-Olsen       Faaborg OK      D40-   01:10:04    5                             6    4    5    6    6                                                  
+38 Malene Kaysen Thomsen   OK Snab         D2     01:16:38                                                                                                         
+39 Lars Palle              West/Ribe       H55-   01:17:40                             2                        2                   2              2         2    4
+40 Anni Plauborg           Odense OK       D45-   01:18:47                   4                        4                   5              3              5    5     
+41 Kim Lykkegård Christens Odense OK       H50-   01:20:25                                                                                                         
+42 Heidi Granby            Faaborg OK      D40-   01:21:01    4                             5    3    3    5    5                                                  
+43 Rikke Brandt Jespersen  Odense OK       D40-   01:22:17                   3                        2                   4              2              4    4     
+44 Anja Modler Hedemann    Faaborg OK      D45-   01:24:58    3                             4    2    1    4    4                                                  
+45 Lisette Christiansen    Odense OK       D45-   01:25:10                                                                                                         
+46 Susanne Knudsen         FROS/Melfar     D45-   01:25:45    2    5    3    2    5    5                                                                           
+   Jeppe Liengård Casperse OK Snab         H3         Disk                                                                                                         
+   Verner Jensen           FROS/Melfar     H50-       Disk                                                                                                         
+   Hans Aage Hvalsøe Hanse Svendborg/OPI   H55-       Disk                                                                                                         
+
+Bane Bane 4
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Ole Gadsbølle           OK Esbjerg      H60-   00:33:11         4                        4                        4    4    4    4                              
+2  Arne Bertelsen          OK H.T.F.       H4     00:41:47                                                                                                         
+3  Gerhard Jensen          Odense OK       H65-   00:42:21                   4                        4                   3              4              4    4     
+4  Niels Rabølle           Odense OK       H65-   00:42:32                   3                        3                   2              3              3    3     
+5  Marianne Damgaard       OK GORM         D3     00:43:29                                                                                                         
+6  Niels Møller Petersen   FROS/Melfar     H65-   00:44:01    4    3    4    2    4    4                                                                           
+7  Leif Skovgaard Knudsen  Faaborg OK      H65-   00:44:17    3                             3    4    2    4    4                                                  
+8  Tonny Schwærter         OK Esbjerg      H65-   00:45:06         2                        2                        3    1    3    3                              
+9  Torben Hansen           FROS/Melfar     H60-   00:45:12    2    1    3    1    3    3                                                                           
+10 Finn Jørgensen          Odense OK       H65-   00:45:15                                                                                                         
+11 Mette Lolk              OK Esbjerg      D50-   00:46:07         6                        6                        6    6    6    6                              
+12 Kristian Toustrup       OK Syd          H65-   00:46:11              2                        3                   2                   2    4    4               
+13 Jørn H. Klausen         OK Syd          H60-   00:46:23              1                        2                   1                   1    3    3               
+14 Jack Skrydstrup         Kolding OK      H4     00:47:25                                                                                                         
+15 Sven Spangsberg         Odense OK       H60-   00:47:37                                                                                                         
+16 Niels Erik Kofoed       OK H.T.F.       H4     00:47:48                                                                                                         
+17 Vivi Andreassen         Kolding OK      D3     00:48:41                                                                                                         
+18 Johanne Kaysen Thomsen  OK Snab         D3     00:49:13                                                                                                         
+19 Marie Louise Henning    Kolding OK      D3     00:49:50                                                                                                         
+19 Rikke Rasmussen         OK Snab         D3     00:49:50                                                                                                         
+21 Knud Jespersen          OK Snab         H4     00:50:28                                                                                                         
+22 Bjarne Andersen         Svendborg/OPI   H60-   00:51:28                        2                        3                   2              2         2         4
+23 Claes Ø. Larsen         Odense OK       H60-   00:51:39                                                                                                         
+24 Matilde Skousen         FROS/Melfar     D-16   00:52:28    8*   7*   8*   8*   8*   8*                                                                          
+25 Hanne Ljungberg         OK Syd          D55-   00:53:12              5                        6                   5                   6    6    6               
+26 Lasse Fenger Vad        Horsens OK      H4     00:54:34                                                                                                         
+27 Ove Splittorff          Svendborg/OPI   H65-   00:54:35                        1                        2                   1              1         1         3
+28 Helle Schou             OK Snab         D3     00:54:48                                                                                                         
+29 Lone Rasmussen          OK Snab         D3     00:54:57                                                                                                         
+30 Kurt Petersen           Faaborg OK      H65-   00:55:06    1                             1    1    1    1    3                                                  
+31 Peter Skov Nielsen      OK Snab         H4     00:55:14                                                                                                         
+32 Tina Blach              Kolding OK      D3     00:55:59                                                                                                         
+33 Erik Ljungdahl          Faaborg OK      H65-   00:56:02                                                                                                         
+34 Henrik Dagsberg         OK Pan          H4     00:56:11                                                                                                         
+35 Lars Kvist Olesen       FROS/Melfar     H60-   00:56:39                                                                                                         
+36 Maya Jensen             FROS/Melfar     D-16   00:57:12    6*   5*   5*   6*   6*   6*                                                                          
+37 Kurt Pedersen           West/Ribe       H65-   00:57:13                             2                        2                   2              2         2    2
+38 Claudia Schmidt Thomsen Horsens OK      D3     00:59:18                                                                                                         
+39 Rie Moos Villumsen      OK Snab         D3     00:59:26                                                                                                         
+40 Carl Bengt              West/Ribe       H65-   00:59:29                             1                        1                   1              1         1    1
+41 Ethna Cavanagh          Faaborg OK      D50-   01:00:38    4                             5    5    6    6    6                                                  
+42 Bente Pedersen          OK Esbjerg      D55-   01:00:55         3                        4                        4    5    5    5                              
+43 Lisbeth Skovbjerg       Odense OK       D50-   01:02:11                   4                        5                   4              5              6    6     
+44 Knud Christensen        OK Esbjerg      H60-   01:05:02                                                                                                         
+45 Lotte Jensen            FROS/Melfar     D50-   01:05:11    3    2    3    3    4    4                                                                           
+46 Maria Bargmeyer         OK Syd          D-16   01:05:45              2                        6*                  5*                  6*   7*   7*              
+47 Birger Jønsson          OK Syd          H65-   01:06:41                                                                                                         
+48 Bent Skjoldborg         OK Vendelboerne H4     01:06:45                                                                                                         
+49 Jørgen Bang             OK Esbjerg      H65-   01:06:46                                                                                                         
+50 Anne-Marie Jensen       OK Syd          D50-   01:07:03              1                        3                   2                   3    4    4               
+51 Sven Wodschow           West/Ribe       H65-   01:07:36                                                                                                         
+52 Gunner Gjermandsen      Horsens OK      H4     01:07:40                                                                                                         
+53 Hanne Vest              Svendborg/OPI   D55-   01:08:29                        3                        5                   4              3         5         6
+54 Ingelise Baden          OK H.T.F.       D3     01:08:58                                                                                                         
+55 Ellen Møller            Faaborg OK      D55-   01:30:14    2                             3    2    4    4    5                                                  
+56 Helle Sørensen          FROS/Melfar     D50-   01:33:31                                                                                                         
+57 Karen Lise Bøgh         Faaborg OK      D55-   02:06:37    1                             2    1    3    3    4                                                  
+   Lise Termansen          OK H.T.F.       D3         Disk                                                                                                         
+   Torben Rasmussen        Odense OK       H60-       Disk                                                                                                         
+   Sven Madsen             FROS/Melfar     H65-       Disk                                                                                                         
+
+Bane Bane 5
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Inge Price Jensen       Odense OK       D60-   00:36:24                   4                        4                   4              4              4    4     
+2  Erling Nielsen          West/Ribe       H70-   00:36:40                             4                        4                   4              4         4    4
+3  Jens Sørensen           West/Ribe       H70-   00:37:48                             3                        3                   3              3         3    3
+4  Wolfgang Schulz         Odense OK       H70-   00:38:59                   4                        4                   4              4              4    2     
+5  Erik Damgaard           Faaborg OK      H70-   00:40:06    4                             4    4    3    4    2                                                  
+6  Louis A. Sørensen       OK Esbjerg      H70-   00:42:08         4                        3                        4    3    4    2                              
+7  Villy Møller Hansen     OK Esbjerg      H70-   00:43:06         3                        2                        3    2    3    1                              
+8  H. V. Jensen            Odense OK       H70-   00:43:12                   3                        2                   1              3              3    1     
+9  Ole Hoffmann            FROS/Melfar     H70-   00:44:47    3    2    4    2    4    2                                                                           
+10 Clive Allen             Silkeborg OK    H5     00:45:16                                                                                                         
+11 Peter Sølling           OK H.T.F.       H5     00:45:52                                                                                                         
+12 Torben Jørgensen        West/Ribe       H70-   00:46:54                                                                                                         
+13 Mogens E. Thomsen       OK Syd          H70-   00:47:24              3                        3                   2                   2    4    2               
+14 Lis Knudsen             Faaborg OK      D65-   00:48:25    4                             4    4    3    4    4                                                  
+15 Jørn Thomsen            OK Snab         H5     00:48:32                                                                                                         
+16 Arne Brage              FROS/Melfar     H5     00:48:52                                                                                                         
+17 Aksel Skovlyst          Faaborg OK      H70-   00:49:12    2                             1    2    1    3    1                                                  
+18 Knud Erik Thomsen       Svendborg/OPI   H70-   00:49:40                        3                        2                   2              3         2         2
+19 Henrik Hansen           OK Esbjerg      H70-   00:49:53                                                                                                         
+20 Lotte Hjort             Faaborg OK      D65-   00:50:06    3                             3    3    2    3    3                                                  
+21 Jørgen Olesen           Odense OK       H70-   00:50:45                                                                                                         
+22 Annette Færing          Svendborg/OPI   D60-   00:51:00                        4                        2                   4              4         3         4
+23 Hans Larsen             Faaborg OK      H70-   00:51:48                                                                                                         
+24 Vagn Hansen             OK H.T.F.       H5     00:53:37                                                                                                         
+25 Lissie Wolf             OK Esbjerg      D65-   00:53:39         4                        2                        4    3    3    4                              
+26 Birthe Helms            Silkeborg OK    D4     00:54:04                                                                                                         
+27 Erland Skøt             OK H.T.F.       H5     00:54:18                                                                                                         
+28 Jørn F. Andersen        OK H.T.F.       H5     00:54:19                                                                                                         
+29 Palle Møller Nielsen    Odense OK       H70-   00:55:33                                                                                                         
+30 Poul Larsen             OK Esbjerg      H70-   00:56:28                                                                                                         
+31 Frede Jacobsen          OK Syd          H70-   00:58:00              2                        1                   1                   1    2    1               
+32 Søren Hviid             FROS/Melfar     H70-   00:59:14    1    1    1    1    2    1                                                                           
+33 Holger Mikkelsen        Odense OK       H70-   01:00:51                                                                                                         
+34 Niels C. Andersen       West/Ribe       H70-   01:01:50                                                                                                         
+35 Olav Christoffersen     Faaborg OK      H70-   01:02:23                                                                                                         
+36 Herluf Jensen           Svendborg/OPI   H70-   01:02:48                        1                        1                   1              1         1         1
+37 Gitte Spangsberg        Odense OK       D60-   01:04:48                   3                        1                   2              3              2    3     
+38 Gunner Aaskov           Odense OK       H70-   01:06:18                                                                                                         
+39 Anette Hansen           OK Esbjerg      D65-   01:09:45         3                        1                        3    1    2    3                              
+40 Birte Hove              OK Syd          D65-   01:10:21              4                        2                   2                   2    3    4               
+41 Lene Thorsen            West/Ribe       D60-   01:13:48                             4                        2                   2              3         2    3
+42 Bent Jacobsen           Kolding OK      H5     01:17:07                                                                                                         
+43 Finn Hove               OK Syd          H70-   01:24:54                                                                                                         
+44 Else Pedersen           West/Ribe       D65-   01:30:18                             3                        1                   1              2         1    2
+
+Bane Bane 6
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Carl Christian Valbjørn FROS/Melfar     H-20B  00:44:18    2    2    2    2    2    2                                                                           
+2  Jonathan Ramus          FROS/Melfar     H-20B  00:47:26    2    2    2    2    2    2                                                                           
+3  Kristian Traberg Larsen Odense OK       H35-B  00:48:21                   2                        2                   2              2              2    2     
+4  Jonas Bo Kirk Egdal     FROS/Melfar     H35-B  00:48:55    2    2    2    1    2    2                                                                           
+5  Kristian Baden          Odense OK       H21-B  00:49:15                   1                        2                   2              2              2    2     
+6  Sebastian Burattini     Odense OK       H-14   00:50:06                   6*                       6*                  6*             6*             6*   6*    
+7  Rasmus Ravn Pedersen    OK GORM         H6     00:50:32                                                                                                         
+8  Laurits Egdal Kortegård FROS/Melfar     H-14   00:51:20    6*   6*   6*   4*   6*   6*                                                                          
+9  Nicolai Krabek          Odense OK       H21-B  00:51:39                   1                        2                   2              2              2    2     
+10 Sune Skousen            FROS/Melfar     H35-B  00:51:57                                                                                                         
+11 Lars Haastrup           Odense OK       H21-B  00:53:50                                                                                                         
+12 Lars Svarer             OK Esbjerg      H35-B  00:55:22         1                        2                        2    1    2    2                              
+13 Harald Schultz          OK Syd          H35-B  00:57:12              1                        2                   2                   1    2    2               
+14 Viktor Bro Fejring      FROS/Melfar     H-14   00:57:49    4*   4*   4*   2    4*   4*                                                                          
+15 Rasmus Mindegaard       Faaborg OK      H-14   00:59:09    2                             6*   6*   4*   6*   6*                                                 
+16 Hans-Henrik Hvelplund   OK Syd          H35-B  01:02:01              1                        2                   2                   1    2    2               
+17 Peter Mindegaard        Faaborg OK      H35-B  01:03:39    1                             2    2    1    2    2                                                  
+18 Daniel K. Holm          OK GORM         H6     01:04:51                                                                                                         
+19 Peter M. Sigvardt       Odense OK       H21-B  01:06:40                                                                                                         
+20 Ole Axelsen             Svendborg/OPI   H35-B  01:10:57                        1                        2                   2              2         1         2
+21 Christoffer Nørgaard Je FROS/Melfar     H21-B  01:11:27                                                                                                         
+22 Kaj Ole Jensby          Faaborg OK      H35-B  01:12:59    1                             2    1    1    2    2                                                  
+23 Kasper Dan Jensen       FROS/Melfar     H35-B  01:13:11                                                                                                         
+24 Jakobsen Lars           NOTEAM          H6     01:16:17                                                                                                         
+25 Jonas Straarup Christen FROS/Melfar     H21-B  01:20:17                                                                                                         
+26 Anton Johansen          Odense OK       H-14   01:21:58                   1                        2                   4*             4*             4*   4*    
+27 Uffe Nielsen            Svendborg/OPI   H35-B  01:30:15                        1                        1                   2              1         1         2
+28 Mathias Rimmer Andersen Faaborg OK      H-14   01:31:53    1                             4*   4*   1    4*   4*                                                 
+29 Sten Olof Jansson       OK Syd          H35-B  01:32:13              1                        1                   1                   1    1    2               
+   Palle Rimmer Pedersen   Faaborg OK      H35-B      Disk                                                                                                         
+
+Bane Bane 7
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Axel Örnhagen Jørgensen OK Snab         H8     00:24:20                                                                                                         
+2  August Gabs             FROS/Melfar     H-12   00:25:54    4*   4*   4*   4*   4*   4*                                                                          
+3  Mathias Birch Christens Odense OK       H-20C  00:29:30                   2                        2                   2              2              2    2     
+4  Jesper Beck Tanderup    Faaborg OK      H21-C  00:31:16    2                             2    2         2    2                                                  
+5  Martin Thorwest         OK Syd          H21-C  00:32:50              2                                            2                        2    2               
+6  Steffen Trog            Faaborg OK      H-20C  00:33:36                                                                                                         
+7  Tanja Johannsen         OK Syd          D21-C  00:34:02              2                        2                   2                   2    2    2               
+8  Jenni Volmar Skovsgaard Odense OK       D21-C  00:34:30                   2                        2                   2                             2    2     
+9  Magnus Fannar Madsen    FROS/Melfar     H-12   00:39:10    2*   3*   2*   2*   3*   3*                                                                          
+10 Daniel Mikkelsen        FROS/Melfar     H-12   00:39:25                                                                                                         
+11 Karen Q Frederiksen     Odense OK       D-14B  00:39:41                   2                        2                   2              2              2    2     
+12 Henriette Lunde Ellekil Odense OK       D21-C  00:40:00                                                                                                         
+13 Karina Bak Olesen       Faaborg OK      D21-C  00:43:48    2                             2              2    2                                                  
+14 Anna Schack Andersen    OK GORM         D8     00:47:05                                                                                                         
+15 Peter Andersen Vest     Svendborg/OPI   H21-C  00:48:46                        1                                            2                                  2
+16 Lone Wolff Andersen     Faaborg OK      D21-C  00:50:18                                                                                                         
+17 Signe Jensen            OK Esbjerg      D21-C  00:51:39         2                                                           2    2                              
+18 Henning Pedersen        Faaborg OK      H21-C  00:52:12                                                                                                         
+19 Tobias Rohde Jørgensen  FROS/Melfar     H-12   00:54:41                                                                                                         
+20 Anita Lunding           Svendborg/OPI   D21-C  00:57:35                        2                                                                               2
+21 Susanne Bargmeyer       OK Syd          D21-C  01:02:58                                                                                                         
+22 Kirsten Wolff Thomsen   Svendborg/OPI   D21-C  01:15:54                                                                                                         
+   Ellen Roungkvist Uhlema Kolding OK      D8         Disk                                                                                                         
+
+Bane Bane 8
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Randi Splittorff        Svendborg/OPI   D70-   00:40:32                        4                        4                   4              4         4         4
+2  Grethe Larsen           OK Snab         D5     00:47:19                                                                                                         
+3  Musse Brage             FROS/Melfar     D70-   00:56:54    4    4    4    4    3    4                                                                           
+4  Inger Andersen          Faaborg OK      D70-   00:57:02    3                             4    4    4    3    4                                                  
+5  Grethe Hviid            FROS/Melfar     D70-   00:57:15    2    3    3    3    2    3                                                                           
+6  Silke Bolbro            OK Syd          D70-   00:58:17              2                        3                   4                   4    3    4               
+7  Edit Thomsen            OK Syd          D70-   01:01:06              1                        2                   3                   3    2    3               
+8  Tove Skovlyst           Faaborg OK      D70-   01:05:14    1                             3    1    3    2    3                                                  
+9  Gretha Villadsen        OK H.T.F.       D5     01:06:53                                                                                                         
+10 Tove Coops-Pedersen     OK Esbjerg      D70-   01:09:42         2                        2                        2    4    3    4                              
+11 Rita Christoffersen     Faaborg OK      D70-   01:11:13                                                                                                         
+
+Bane Bane 9
+-----------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15  m16  m17  m18  m19  m20  m21
+1  Eva Örnhagen Jørgensen  OK Snab         D6     00:31:46                                                                                                         
+2  Line Skousen            FROS/Melfar     D-14   00:42:11    6*   6*   6*   6*   6*   6*                                                                          
+3  Amanda modler Hedemann  Faaborg OK      D-14   00:43:08    4*                            6*   6*   6*   6*   6*                                                 
+4  Katrine Rimmen Thomsen  Odense OK       D-20B  00:45:42                   2                        2                   2              2              2    2     
+5  Louise  Bierkampf Gjøru OK Snab         D7     00:49:06                                                                                                         
+6  Anne Grethe Eriksen     FROS/Melfar     D35-B  00:52:56    2    2    2    2    2    2                                                                           
+7  Sandra Blichfeld        Svendborg/OPI   D35-B  00:56:20                        2                        2                   2              2         2         2
+8  Anna Klingenberg        Faaborg OK      D-20B  01:01:40    2                             2    2    2    2    2                                                  
+9  Lotte Vinther Andersen  Kolding OK      D6     01:02:47                                                                                                         
+10 Lina Granby             Faaborg OK      D-16B  01:05:17    2                             3    3    3    3    3                                                  
+11 Claudia Nissen          OK Esbjerg      D35-B  01:06:32         2                        2                        2    2    2    2                              
+12 Johanne Jensen          OK Esbjerg      D-20B  01:08:17         2                        2                        2    2    2    2                              
+13 Pia Damkjær Pedersen    Odense OK       D21-B  01:11:00                   2                        2                   1              2              2    2     
+14 Henriette Mikkelsen     FROS/Melfar     D35-B  01:19:44    2    1    2    1    2    2                                                                           
+15 Leila Damkjær Pedersen  Svendborg/OPI   D35-B  01:30:53                        1                        2                   1              2         1         2
+16 Jeanette Dreisig        Odense OK       D35-B  01:42:39                   1                        1                   1              2              1    2     
+17 Marianne Schmidt        OK Esbjerg      D35-B  01:47:44         1                        1                        2    1    1    2                              
+18 Vita Jørgensen          West/Ribe       D35-B  01:51:52                             2                        2                   1              2         1    2
+

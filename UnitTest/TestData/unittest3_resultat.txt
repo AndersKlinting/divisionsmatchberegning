@@ -1,0 +1,626 @@
+Divisionsmatch (, 2018-03-30)
+-----------------------------
+                                               score      point
+OK Pan Århus                                 711 -   544     10    
+FIF Hillerød Orientering                     741 -   521      8    
+Silkeborg OK                                 672 -   579      6    
+Tisvilde Hegn OK                             629 -   601      4    
+OK Snab                                      550 -   674      2    
+Kolding OK                                   391 -   775      0    
+
+1 : OK Pan Århus - Silkeborg OK          :   135 -   123
+2 : OK Pan Århus - FIF Hillerød Orientering :   132 -   125
+3 : OK Pan Århus - Tisvilde Hegn OK      :   143 -   110
+4 : OK Pan Århus - Kolding OK            :   156 -    80
+5 : OK Pan Århus - OK Snab               :   145 -   106
+6 : Silkeborg OK - FIF Hillerød Orientering :   115 -   144
+7 : Silkeborg OK - Tisvilde Hegn OK      :   126 -   122
+8 : Silkeborg OK - Kolding OK            :   160 -    77
+9 : Silkeborg OK - OK Snab               :   148 -   101
+10 : FIF Hillerød Orientering - Tisvilde Hegn OK :   141 -   115
+11 : FIF Hillerød Orientering - Kolding OK :   172 -    65
+12 : FIF Hillerød Orientering - OK Snab  :   159 -    94
+13 : Tisvilde Hegn OK - Kolding OK       :   151 -    78
+14 : Tisvilde Hegn OK - OK Snab          :   131 -   113
+15 : Kolding OK - OK Snab                :    91 -   136
+
+                                              m1      m2      m3      m4     m5      m6      m7      m8     m9      m10     m11    m12    m13    m14    m15   
+                                            ------- ------- ------- ------ ------- ------- ------- ------ ------- ------- ------ ------ ------ ------- ------ 
+H1 (H -20, H 21-, H 35-)                     20-19   20-16   20-19   26-4   20-19   19-20   18-21   27-6   18-21   19-20   25-5   18-21  28-5   19-20   5-28  
+H2 (H 40-, H 45-)                            14-7    12-9    12-9    15-5   14-7     9-12    8-13   14-6   10-11    9-12   14-6   12-9   14-6   12-9    7-13  
+H3 (H -16, H 50-, H 55-)                     11-13   17-7    15-8    17-7   15-9    17-7    15-8    17-7   16-8    11-13   16-8   11-13  14-9   13-10   9-15  
+H4 (H 60-, H 65-)                             4-6     7-3     3-7     7-3    7-0     7-3     3-7     7-3    7-0     3-7     7-3    7-0    7-3    7-0    7-0   
+H5 (H 70-)                                    5-5     4-6     5-5     6-4    7-3     5-5     3-7     5-5    7-3     5-5     6-4    7-3    7-3    7-3    5-5   
+H6 (H -14, H -16B)                            8-5     7-6    10-2    10-0    6-7     3-10    8-4    10-0    6-7    10-2    10-0    6-7    6-0    4-8    0-9   
+H7 (H -20B, H 21-B, H 35-B)                   6-3     6-3     5-4     6-1    6-2     5-4     4-5     6-1    5-3     4-5     6-1    6-2    6-1    6-2    2-4   
+H8 (H -12, H -14B, H -20C, H 21-C)            7-1     4-5     7-1     2-7    2-7     1-7     2-2     1-7    1-7     6-2     5-4    5-4    1-7    1-7    2-7   
+D1 (D -20, D 21-, D 35-)                     18-6    15-9    18-6    18-6   17-7     6-18   15-8    12-12  13-11   18-6    17-7   16-8   10-13  10-13  14-10  
+D2 (D 40-, D 45-)                             8-13   10-11   12-9    14-4   13-8    11-10   12-9    14-4   15-6    12-9    13-5   15-6   13-5   10-11   6-12  
+D3 (D -16, D 50-, D 55-)                      5-18    5-18    7-14    5-18   7-15    7-17   11-12   18-6   18-6    14-9    18-6   18-6   14-9   14-9   13-11  
+D4 (D 60-, D 65-)                             6-4     7-3     6-4     7-0    7-2     7-3     5-5     7-0    7-2     4-6     7-0    6-3    7-0    6-3    0-4   
+D5 (D 70-)                                    7-2     5-5     5-4     5-4    7-0     2-7     3-4     3-4    4-0     5-4     5-4    7-0    4-3    4-0    4-0   
+D6 (D -14, D -16B)                            6-7     3-10    6-6     3-10   5-8     3-10    6-6     5-8    7-6     8-4     8-5   10-3    6-6    6-6   10-3   
+D7 (D -20B, D 21-B, D 35-B)                   3-6     5-4     5-4     5-4    5-4     6-3     6-3     6-3    6-3     5-4     5-4    5-4    4-5    4-5    4-5   
+D8 (D -12, D -14B, D -20C, D 21-C)            4-5     2-7     4-5     7-1    4-5     4-5     4-5     5-3    5-4     5-4     7-1    7-2    7-1    5-4    1-7   
+9  (H -10, D -10, H -12B, D -12B, Begynder)   3-3     3-3     3-3     3-2    3-3     3-3     3-3     3-2    3-3     3-3     3-2    3-3    3-2    3-3    2-3   
+Ialt:                                       135-123 132-125 143-110 156-80 145-106 115-144 126-122 160-77 148-101 141-115 172-65 159-94 151-78 131-113 91-136 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Rasmus Djurhuus         OK Pan Århus    H21-   00:54:19    8    8    8    8    8                                                  
+2  Christian Bobach        Silkeborg OK    H21-   00:56:05    7                        8    8    8    8                              
+3  Magnus Dewett           OK Snab         H-20   00:58:28                        9*                  9*            10*       10*  10*
+4  Jeppe Ruud              FIF Hillerød Or H21-   00:58:29         7                   7                   8    8    7               
+5  Thomas Jensen           Tisvilde Hegn O H35-   00:58:59              7                   7              7              8    7     
+6  Emil Øbro               Tisvilde Hegn O H-20   01:02:13              8*                  8*             8*             9*   7*    
+7  Flemming Jørgensen      OK Snab         H21-   01:02:35                        6                   6              6         5    7
+8  Rasmus Folino Nielsen   FIF Hillerød Or H21-   01:03:29         6                   6                   5    7    5               
+9  Mikkel Lund             Silkeborg OK    H35-   01:04:17    6                        5    5    7    5                              
+10 Per Hjerrild            OK Pan Århus    H21-   01:04:39    5    5    5    7    5                                                  
+11 Emil Bovièn Thorsen     OK Pan Århus    H21-   01:05:42    4    4    4    6    4                                                  
+12 Jonathan Borup Jacobsen OK Pan Århus    H21-   01:06:35    3    3    3    5    3                                                  
+13 Ulrik Staugaard         FIF Hillerød Or H35-   01:08:21         2                   4                   4    6    4               
+14 Jonas Falck Weber       Tisvilde Hegn O H-20   01:12:23              3*                  5*             4*             7*   4     
+15 Giacomo Frattari        OK Pan Århus    H21-   01:13:29                                                                           
+16 Morten Schou            OK Snab         H-20   01:13:34                        3*                  5*             4*        3    7*
+17 Anders Dalgaard         Kolding OK      H35-   01:17:03                   4                   6              5         5         5
+18 Anders Bachhausen       FIF Hillerød Or H21-   01:17:34         1                   3                   2    4    2               
+19 Lasse Holch Nielsen     Silkeborg OK    H21-   01:18:15    2                        2    3    5    3                              
+20 Emil Beck Laursen       Silkeborg OK    H-20   01:18:21    3*                       3*   2    6*   2                              
+21 Sune Dupont             Aarhus 1900 Ori H21-   01:19:26                                                                           
+22 Anton Rasmussen         Aarhus 1900 Ori H21-   01:22:24                                                                           
+23 Jonathan Elvø Hansen    Silkeborg OK    H21-   01:22:30                                                                           
+24 Viktor Gammeljord       OK Snab         H-20   01:24:01                        1                   1              1         2    4
+25 Tjalfe Egholm Rude      Silkeborg OK    H-20   01:25:00    1*                       1*        1*                                  
+26 Alex Heldgaard Kristens Herning Oriente H-20   01:25:31                                                                           
+27 Oscar Holm Nørgaard     Silkeborg OK    H-20   01:31:54                                                                           
+28 Rune Hjorth Nielsen     OK Pan Århus    H21-   01:38:59                                                                           
+29 Martin Fjordvald        Silkeborg OK    H21-   01:41:05                                                                           
+30 Lars Stendevad          Tisvilde Hegn O H21-   01:41:30              1                   1              1              4    1     
+31 Bo Birk Nielsen         Aalborg OK      H35-   01:52:59                                                                           
+32 Jens B Christensen      OK Vendelboerne H35-   02:20:29                                                                           
+   Jacob Skaanning Jørgens Silkeborg OK    H-20       Disk                                                                           
+   Christian Christensen   OK Pan Århus    H21-       Disk                                                                           
+   Asbjørn Mathiasen       OK Pan Århus    H21-       Disk                                                                           
+   Christian Bagger Hagner Silkeborg OK    H-20       Disk                                                                           
+   Thomas Ullner           OK Djurs        H35-       Disk                                                                           
+   Peter Damgaard Frandsen Kolding OK      H21-       Disk                                                                           
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  René Rokkjær            OK Pan Århus    H40-   00:43:07    6    6    6    6    6                                                  
+2  Henrik Markvardsen      Tisvilde Hegn O H45-   00:43:40              5                   6              6              6    6     
+3  Bo Simonsen             FIF Hillerød Or H45-   00:44:38         5                   6                   5    6    6               
+4  Ebbe Møller Nielsen     OK Pan Århus    H40-   00:46:12    5    4    4    5    5                                                  
+5  Jesper Fenger-Grøn      OK Snab         H45-   00:47:32                        4                   6              5         5    6
+6  Tim Falck Weber         Tisvilde Hegn O H45-   00:47:49              3                   5              4              5    4     
+7  Keld Hinge Krogsgaard   Silkeborg OK    H40-   00:50:52    4                        5    4    6    5                              
+8  Thomas Eriksen          FIF Hillerød Or H45-   00:51:55         3                   4                   3    5    4               
+9  Carsten Thyssen         Horsens OK      H45-   00:52:16                                                                           
+10 Henrik Bomm Hinge       OK Pan Århus    H40-   00:54:57    3    2    2    4    3                                                  
+11 Torben Kristensen       OK Snab         H40-   00:55:53                        2                   4              3         3    5
+12 Kenn Kristensen         Herning Oriente H40-   00:56:32                                                                           
+13 Peter Sinding Poulsen   Silkeborg OK    H40-   00:57:11    2                        3    3    5    3                              
+14 Søren Mikkelsen         Karup OK        H45-   00:57:48                                                                           
+15 Thomas Uhlemann         Kolding OK      H45-   00:59:53                   3                   4              4         4         4
+16 Kell Sønnichsen         OK Pan Århus    H45-   01:00:19                                                                           
+17 Christian Bertel Anders Karup OK        H40-   01:00:43                                                                           
+18 Jan Nielsen             Karup OK        H45-   01:01:31                                                                           
+19 Rolf Valery             Tisvilde Hegn O H45-   01:02:02              1                   2              2              3    2     
+20 Preben Brinch           FIF Hillerød Or H40-   01:02:43         1                   2                   1    3    2               
+21 Kim B. Schmidt          Herning Oriente H45-   01:04:13                                                                           
+22 Kristian Edsen          Nordvest OK     H45-   01:05:22                                                                           
+23 Michael Filyo           Silkeborg OK    H45-   01:06:56    1                        1    1    3    2                              
+24 Henrik Valentinsen      Randers OK      H45-   01:09:03                                                                           
+25 Jakob Albahn            Tisvilde Hegn O H45-   01:10:01                                                                           
+26 Lars Storper            Viborg OK       H45-   01:10:36                                                                           
+27 Per Eg Pedersen         Kolding OK      H45-   01:10:51                   2                   2              2         2         3
+28 Thomas Lindschouw       Aalborg OK      H45-   01:12:08                                                                           
+29 Jens Liengård           OK Snab         H40-   01:12:28                        1                   1              1         1    2
+30 Kaj Isaksen             OK Snab         H45-   01:12:53                                                                           
+31 Søren Andersen          Herning Oriente H40-   01:14:13                                                                           
+32 Jørn Riis               OK Pan Århus    H45-   01:16:58                                                                           
+33 Allan Hougaard          Aarhus 1900 Ori H45-   01:18:29                                                                           
+34 Peter Dyrsting          FIF Hillerød Or H45-   01:28:01                                                                           
+35 Allan Skouboe           Horsens OK      H40-   01:30:15                                                                           
+   Morten Fenger-Grøn      OK Pan Århus    H40-       Disk                                                                           
+
+Gruppe H3 (H -16, H 50-, H 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Laurits Bidstrup Møller Silkeborg OK    H-16   00:38:02    8*                       8*   8*   8*   8*                             
+2  Mads Møller Skaug       OK Pan Århus    H-16   00:43:18    6*   8*   8*   8*   8*                                                 
+3  Jens Jørgen Hansen      Tisvilde Hegn O H50-   00:44:42              5                   5              6              6    6     
+4  Erik Bobach             Silkeborg OK    H55-   00:44:55    4                        5    4    5    5                              
+5  Thomas Blok             OK Snab         H-16   00:46:30                        6*                  5*             8*        7*   8*
+6  Torben Utzon            OK Pan Århus    H50-   00:47:03    3    5    4    5    4                                                  
+7  Kent Lodberg            OK Pan Århus    H50-   00:48:04    2    4    3    4    3                                                  
+8  Jan Thomsen             OK Pan Århus    H50-   00:48:20                                                                           
+9  Jens Børsting           Silkeborg OK    H50-   00:48:21    1                        4    3    4    3                              
+10 Henrik Albahn           Tisvilde Hegn O H50-   00:49:16              2                   2              5              5    4     
+11 Morten Kjær             Silkeborg OK    H50-   00:49:42                                                                           
+12 Karsten Kristiansen     Silkeborg OK    H50-   00:49:51                                                                           
+13 Mads Mikkelsen          Horsens OK      H50-   00:50:35                                                                           
+14 Torben Kragh            Aalborg OK      H50-   00:51:21                                                                           
+15 Malthe Poulsen          FIF Hillerød Or H-16   00:51:53         4*                  4*                  6*   8*   6*              
+16 Jens Kobæk Edsen        Nordvest OK     H-16   00:52:22                                                                           
+17 Jes Aage Henning        Kolding OK      H50-   00:52:40                   3                   3              5         4         5
+18 Jens Viktor Nørgaard    FIF Hillerød Or H50-   00:52:56         2                   2                   3    4    4               
+19 Anker Møller            Silkeborg OK    H50-   00:53:02                                                                           
+20 Henrik Nielsen          Tisvilde Hegn O H50-   00:54:02              1                   1              2              3    3     
+21 Karsten Blok            OK Snab         H55-   00:54:07                        2                   2              3         2    4
+22 Marko Birk Nielsen      Aalborg OK      H-16   00:55:49                                                                           
+23 Uffe Villumsen          OK Snab         H50-   00:57:06                        1                   1              2         1    3
+24 Søren Peter Larsen      FIF Hillerød Or H55-   00:57:27         1                   1                   1    3    1               
+25 Thomas Steinthal        FIF Hillerød Or H-16   00:57:33                                                 1*   1*                   
+26 Orest Kotylo            Silkeborg OK    H55-   00:59:31                                                                           
+27 Jens Ozol               Silkeborg OK    H50-   00:59:39                                                                           
+28 Anders Klinting         FIF Hillerød Or H50-   01:01:56                                                                           
+29 Hans Jørgen Vad         Horsens OK      H55-   01:02:58                                                                           
+30 Carl Malling            Randers OK      H55-   01:03:12                                                                           
+31 Lars T. Munch           OK Snab         H55-   01:03:27                                                                           
+32 Max Hansen              OK Djurs        H55-   01:03:33                                                                           
+33 Erling Trankjær         Holstebro OK    H55-   01:04:10                                                                           
+34 Leif Rønn Olsen         Herning Oriente H55-   01:07:24                                                                           
+35 Søren Eg Staugaard      Kolding OK      H-16   01:07:27                   3*                  3*             2         4*        3*
+36 Carsten Helligsø        Karup OK        H50-   01:07:35                                                                           
+37 Niels Stadel            Silkeborg OK    H55-   01:08:52                                                                           
+38 Steen Sig Andersen      Kolding OK      H55-   01:11:33                   1                   1              1         1         1
+39 Kaj Skov                Skive AMOK      H55-   01:11:39                                                                           
+40 Jan Hauerslev           OK Pan Århus    H50-   01:13:46                                                                           
+41 Henning Schou           OK Snab         H55-   01:15:43                                                                           
+42 Mogens Christensen      OK Vendelboerne H55-   01:15:54                                                                           
+43 Ole D. Jensen           Tisvilde Hegn O H55-   01:18:16                                                                           
+44 Henning Overgaard       OK Pan Århus    H55-   01:19:22                                                                           
+45 Finn Arildsen           OK Pan Århus    H55-   01:20:03                                                                           
+46 Morten Frederiksen      Skive AMOK      H50-   01:20:04                                                                           
+47 Franz Thomsen           Randers OK      H50-   01:21:22                                                                           
+48 Henrik Nygaard Jensen   OK Snab         H50-   01:33:33                                                                           
+49 Per Hauge               OK Vendelboerne H55-   01:46:38                                                                           
+   William Back Kranker    OK Pan Århus    H-16       Disk                                                                           
+   Per Dahl Jensen         OK Pan Århus    H50-       Disk                                                                           
+   Søren Maarup            Kolding OK      H50-       Disk                                                                           
+   Niels Nygaard Jensen    OK Snab         H50-       Disk                                                                           
+   Jakob Holm              OK Pan Århus    H50-       Disk                                                                           
+   Mogens Vennevold        Vestjysk Orient H55-       Disk                                                                           
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Keld Johnsen            Tisvilde Hegn O H60-   00:43:42              4                   4              4              4    4     
+2  Leif E. Larsen          Tisvilde Hegn O H60-   00:44:07              3                   3              3              3    3     
+3  Varny Vestergaard       Vestjysk Orient H60-   00:47:05                                                                           
+4  Knud Fjordvald          Silkeborg OK    H60-   00:47:16    4                        4    2    4    4                              
+5  Jens Jørgen Jensen      Herning Oriente H60-   00:47:40                                                                           
+6  Ivan Christensen        OK Pan Århus    H60-   00:48:44    3    4    2    4    4                                                  
+7  Bjarne Christensen      Silkeborg OK    H60-   00:50:04    2                        3    1    3    3                              
+8  John Holm               OK Pan Århus    H60-   00:50:06    1    3    1    3    3                                                  
+9  Jan Lauge Kristensen    Karup OK        H60-   00:53:40                                                                           
+10 Ole Galle               Tisvilde Hegn O H60-   00:54:11                                                                           
+11 Peter Wraa              Tisvilde Hegn O H60-   00:54:14                                                                           
+12 Emil Olesen             FIF Hillerød Or H60-   00:54:38         2                   2                   2    4    4               
+13 Kaj Kaspersen           Herning Oriente H60-   00:55:45                                                                           
+14 Frank Linde             OK Pan Århus    H60-   00:58:15                                                                           
+15 Karsten Funder          FIF Hillerød Or H65-   01:00:51         1                   1                   1    3    3               
+16 Gert Bertel             Karup OK        H60-   01:01:10                                                                           
+17 Niels Landsperg         Tisvilde Hegn O H65-   01:02:00                                                                           
+18 Hermann P. Jensen       Nordvest OK     H65-   01:02:25                                                                           
+19 Poul Henning Pedersen   OK Vendelboerne H65-   01:03:28                                                                           
+20 Anders Ingvardsen       Holstebro OK    H60-   01:06:15                                                                           
+21 Henrik Dagsberg         OK Pan Århus    H60-   01:07:47                                                                           
+22 Keld Abrahamsen         Aarhus 1900 Ori H60-   01:09:05                                                                           
+23 Jens Holmgaard          FIF Hillerød Or H65-   01:10:19                                                                           
+24 Claus Madsen            Karup OK        H60-   01:10:39                                                                           
+25 Poul Egander Grøn       OK Pan Århus    H60-   01:11:21                                                                           
+26 Jack Skrydstrup         Kolding OK      H65-   01:12:54                   2                   2              2         2         4
+27 Leo Jespersen           Karup OK        H60-   01:15:14                                                                           
+28 Henning Larsen          Horsens OK      H65-   01:17:02                                                                           
+29 Ulrik Mathiasen         Silkeborg OK    H60-   01:17:14                                                                           
+30 Frants Nielsen          Herning Oriente H65-   01:20:38                                                                           
+31 Henning Olesen          Nordvest OK     H65-   01:21:06                                                                           
+32 Bjarne Nyberg           Karup OK        H60-   01:28:14                                                                           
+33 Per Jessen-Klixbüll     OK Pan Århus    H65-   01:28:31                                                                           
+34 Thorkild Sørensen       FIF Hillerød Or H65-   01:29:19                                                                           
+35 Flemming Roel Jensen    Kolding OK      H60-   01:30:30                   1                   1              1         1         3
+36 Benny Johansen          Karup OK        H60-   01:56:07                                                                           
+   Torben Jørgensen        Silkeborg OK    H65-       Disk                                                                           
+   Erling Nørgaard         Aarhus 1900 Ori H65-       Disk                                                                           
+   Frede Rasmussen         Herning Oriente H60-       Disk                                                                           
+   Leif Hansen             Nordvest OK     H65-       Disk                                                                           
+   Chris Bagge             FIF Hillerød Or H60-       Disk                                                                           
+   Poul A. Christensen     OK Snab         H65-       Disk                                                                           
+   Gunnar Gjermandsen      Horsens OK      H60-       Disk                                                                           
+   Eigil Skammelsen        Silkeborg OK    H65-       Disk                                                                           
+   Frode Mikkelsen         OK Snab         H65-       Disk                                                                           
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Aage Damsgaard          FIF Hillerød Or H70-   00:32:39         4                   4                   4    4    4               
+2  Flemming Nørgaard       OK Pan Århus    H70-   00:35:58    4    3    4    4    4                                                  
+3  Egon Neregaard          Tisvilde Hegn O H70-   00:36:20              3                   4              3              4    4     
+4  Sven Bjerre             Tisvilde Hegn O H70-   00:37:08              2                   3              2              3    3     
+5  Jørn Thomsen            Kolding OK      H70-   00:38:00                   3                   4              3         2         4
+6  Lars Ole Kopp           Karup OK        H70-   00:38:49                                                                           
+7  Ole F. Thomsen          OK Vendelboerne H70-   00:39:34                                                                           
+8  Clive Allen             Silkeborg OK    H70-   00:40:00    3                        3    2    3    4                              
+9  Poul Nøhr               Silkeborg OK    H70-   00:40:02    2                        2    1    2    3                              
+10 Henning Løwenstein      FIF Hillerød Or H70-   00:41:48         2                   1                   1    2    3               
+11 Asmus Wonsyld           Silkeborg OK    H70-   00:43:43                                                                           
+12 Kurt Valery             Tisvilde Hegn O H70-   00:43:54                                                                           
+13 Frode Harritz           Karup OK        H70-   00:44:11                                                                           
+14 Knud Sørensen           OK Pan Århus    H70-   00:45:25    1    1    1    2    3                                                  
+15 Bent Nielsen            OK Pan Århus    H70-   00:46:46                                                                           
+16 Erik Anders Jensen      Silkeborg OK    H70-   00:46:49                                                                           
+17 Per K. Simonsen         OK Snab         H70-   00:48:50                        2                   2              2         2    3
+18 Erik Thomsen            OK Snab         H70-   00:50:58                        1                   1              1         1    2
+19 Thomas Jørgensen        Karup OK        H70-   00:52:30                                                                           
+20 Vagn Lidegaard          Mariager Fjord  H70-   00:53:19                                                                           
+21 Bent Jacobsen           Kolding OK      H70-   00:55:36                   1                   1              1         1         1
+22 Jens Høyer Olsen        FIF Hillerød Or H70-   00:55:58                                                                           
+23 Dan Haagerup            Tisvilde Hegn O H70-   00:56:12                                                                           
+24 Erik Libak Hansen       Karup OK        H70-   00:58:39                                                                           
+25 Niels J. Møller Hansen  Kolding OK      H70-   01:02:17                                                                           
+26 Asger Kristensen        Herning Oriente H70-   01:05:55                                                                           
+27 Erik Hedegaard Jakobsen Nordvest OK     H70-   01:08:41                                                                           
+28 Bjørn Momsen            Silkeborg OK    H70-   01:09:36                                                                           
+29 Per Bødskov             Karup OK        H70-   01:13:58                                                                           
+30 Svend T. Andersen       OK Snab         H70-   01:18:41                                                                           
+   Steen Winkler           FIF Hillerød Or H70-       Disk                                                                           
+   Karsten Hinge           OK Pan Århus    H70-       Disk                                                                           
+   Lars Ole Larsen         Silkeborg OK    H70-       Disk                                                                           
+   Poul Erik Birk Jakobsen Tisvilde Hegn O H70-       Disk                                                                           
+
+Gruppe H6 (H -14, H -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Morten Örnhagen Jørgens OK Snab         H-14   00:31:48                        6*                  6*             6*        6*   6*
+2  Andreas Bock Bjørnsen   OK Pan Århus    H-14   00:34:29    6*   6*   6*   6*   4*                                                 
+3  Frederik Holm Splittorf FIF Hillerød Or H-14   00:35:34         4*                  6*                  6*   6*   4*              
+4  Malte Kjær Hemmingsen   FIF Hillerød Or H-14   00:36:46         2                   4*                  4*   4*   2               
+5  Elias Hinge Krogsgaard  Silkeborg OK    H-14   00:37:21    4*                       2    6*   6*   4*                             
+6  Johan Halkjær Dupont    OK Pan Århus    H-14   00:38:57    2    1    4*   4*   2                                                  
+7  Lasse Falck Weber       Tisvilde Hegn O H-14   00:42:01              2                   4*             2              6*   4*    
+8  Mikkel Holm Nielsen     OK Pan Århus    H-14   00:42:07                                                                           
+9  Andreas Bagger Hagner   Silkeborg OK    H-14   00:46:54    1                        1    2    4*   2                              
+10 Andreas Vestergaard Ols FIF Hillerød Or H-14   00:47:15                                                                           
+11 Daniel B. Schmidt       Herning Oriente H-14   00:47:29                                                                           
+12 Jeppe Kejser Dahl Jense OK Pan Århus    H-14   00:50:56                                                                           
+13 Andreas Alkjær Eriksen  FIF Hillerød Or H-14   00:52:01                                                                           
+14 Jacob Klærke Mikkelsen  Horsens OK      H-14   00:54:44                                                                           
+15 Victor Kristensen       OK Snab         H-16B  00:57:58                        1                   1              1         2    3
+   Niels Roungkvist Uhlema Kolding OK      H-14       Disk                                                                           
+   Oskar Vinther Østermark Kolding OK      H-16B      Disk                                                                           
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Finn Bregensøe          Tisvilde Hegn O H35-B  00:40:46              2                   2              2              2    2     
+2  Silas Frederik Thomsen  OK Pan Århus    H-20B  00:41:14    2    2    2    2    2                                                  
+3  Hjalte Sebastian Thomse OK Pan Århus    H21-B  00:44:11    2    2    2    2    2                                                  
+4  Rune Gundersen          Tisvilde Hegn O H35-B  00:45:05              1                   2              2              2    2     
+5  Mads Hansen             OK Pan Århus    H35-B  00:49:12    2    2    1    2    2                                                  
+6  Ulrik Frederiksen       FIF Hillerød Or H35-B  00:49:47         1                   2                   2    2    2               
+7  Jon Nygaard Rahr        Silkeborg OK    H35-B  00:50:08    1                        2    2    2    2                              
+8  Svend Aaen              Silkeborg OK    H35-B  00:52:00    1                        2    1    2    2                              
+9  Frank Holmberg          FIF Hillerød Or H35-B  00:53:57         1                   1                   1    2    2               
+10 Benjamin Stockmann      Tisvilde Hegn O H21-B  00:54:52              1                   1              1              2    2     
+11 Peter Kilden Jensen     OK Pan Århus    H35-B  00:55:03                                                                           
+12 Aske Bille              OK Pan Århus    H-20B  00:55:23                                                                           
+13 Svend Mortensen         Tisvilde Hegn O H35-B  00:56:20                                                                           
+14 Carsten Dahl            FIF Hillerød Or H35-B  00:57:00         1                   1                   1    2    2               
+15 Søren Wassard           FIF Hillerød Or H35-B  00:57:17                                                                           
+16 Henrik Poulsen          FIF Hillerød Or H35-B  00:57:35                                                                           
+17 Eik Panduro             OK Snab         H21-B  01:00:15                        1                   2              1         1    2
+18 Klaus Hansen            OK Pan Århus    H35-B  01:03:24                                                                           
+19 Peter Skov Nielsen      OK Snab         H35-B  01:04:00                        1                   1              1         1    2
+20 Jan Bille               OK Pan Århus    H35-B  01:07:16                                                                           
+21 Lars Ozol               Silkeborg OK    H35-B  01:12:24    1                        1    1    2    1                              
+22 Kent Østermark Jensen   Kolding OK      H35-B  01:12:44                   1                   1              1         1         2
+23 Esben Hjorth Madsen     Silkeborg OK    H35-B  01:12:51                                                                           
+24 Jens Olesen Bundgaard   OK Pan Århus    H35-B  01:20:19                                                                           
+25 Henrik Søchting         FIF Hillerød Or H35-B  01:30:00                                                                           
+   George Foster           Kolding OK      H35-B      Disk                                                                           
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Lukas Kjær Hemmingsen   FIF Hillerød Or H-12   00:20:07         4*                  4*                  4*   4*   4*              
+2  Felix Isaksen           OK Snab         H-12   00:20:45                        4*                  4*             3*        4*   4*
+3  Jeppe Caspersen         OK Snab         H-12   00:21:29                        3*                  3*             1         3*   3*
+4  Jens Dalgaard           Kolding OK      H-12   00:21:49                   4*                  4*             3*        4*        1
+5  Gustav Vinther Østermar Kolding OK      H-12   00:23:59                   3*                  3*             1         3*        1
+6  Asbjørn Kaltoft         OK Pan Århus    H-12   00:24:25    4*   3*   4*   1    1                                                  
+7  Anders Secher Thomsen   OK Pan Århus    H-14B  00:24:33    2    1    2    1    1                                                  
+8  Thomas Bjørn Hansen     Tisvilde Hegn O H21-C  00:24:46              1                   2              2              1    1     
+9  Frederick Thaasti       OK Snab         H-12   00:26:47                                                                           
+10 Søren Møller Skaug      OK Pan Århus    H-12   00:27:06    1*        1*                                                           
+11 Lasse Alkjær Eriksen    FIF Hillerød Or H-12   00:28:19         1                   3*                  2*   1    1               
+12 Herman Skovbjerg        OK Pan Århus    H-14B  00:29:01                                                                           
+13 Noah Tristan Hoffmann   OK Pan Århus    H-12   00:30:22                                                                           
+14 Jonathan Birk Nielsen   Aalborg OK      H-12   00:30:41                                                                           
+15 Allan Nielsen           Tisvilde Hegn O H21-C  00:33:19                                                                           
+16 Niels Dalgaard          Kolding OK      H-12   00:33:36                                                                           
+17 Asger Lindgreen Holmber FIF Hillerød Or H-12   00:41:38                                                                           
+18 Niels Emil Katballe Lar Silkeborg OK    H-14B  00:43:07    1                        1    2    1    1                              
+19 Søren Poulsen           Tisvilde Hegn O H21-C  00:43:34                                                                           
+20 Mads Kvisgaard Schnell  OK Pan Århus    H-14B  00:49:38                                                                           
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Ida Bobach              OK Pan Århus    D21-   00:43:10    6    6    6    6    6                                                  
+2  Ane Sofie Næss Bjørgul  OK Pan Århus    D21-   00:51:52    5    5    5    5    5                                                  
+3  Nicoline F. Klysner     FIF Hillerød Or D-20   00:54:23         6*                  8*                  8*   8*   8*              
+4  Ulrika Örnhagen Jørgens OK Snab         D21-   00:54:55                        4                   6              5         6    6
+5  Caroline Finderup       OK Pan Århus    D-20   00:55:58    6*   4*   6*   6*   5*                                                 
+6  Signe Klinting          FIF Hillerød Or D21-   00:56:28         2                   5                   5    5    4               
+7  Hanna Aludden           OK Pan Århus    D21-   00:58:58                                                                           
+8  Susanne Loft Thyssen    Horsens OK      D35-   00:59:45                                                                           
+9  Rie Stenhøj Baun McGrai OK Pan Århus    D21-   01:01:11                                                                           
+10 Signe Edsen             Nordvest OK     D-20   01:01:30                                                                           
+11 Mette Skovhus Jørgensen Kolding OK      D21-   01:02:00                   3                   6              4         6         5
+12 Gry R Christensen       OK Pan Århus    D21-   01:02:27                                                                           
+13 Marie Cecilie Hartmeyer FIF Hillerød Or D-20   01:02:58         1                   5*                  5*   4*   4*              
+14 Stinne Skammelsen       OK Pan Århus    D35-   01:03:05                                                                           
+15 Josephine Dewett Kriste OK Pan Århus    D21-   01:05:48                                                                           
+16 Camilla Gry Elmann      Silkeborg OK    D21-   01:06:05    3                        3    6    5    5                              
+17 Sofie Secher Thomsen    OK Pan Århus    D-20   01:08:40    1*        1*   1*   1*                                                 
+18 Marie Filtenborg        Silkeborg OK    D21-   01:09:28    2                        2    5    4    4                              
+19 Maja Lykke Brinch       FIF Hillerød Or D-20   01:10:43                                                                           
+20 Katrine Olesen Hinge    OK Pan Århus    D21-   01:15:12                                                                           
+21 Susanne Gjedsig Thomsen Tisvilde Hegn O D35-   01:16:33              3                   4              3              5    5     
+22 Bente Madsen            Tisvilde Hegn O D35-   01:16:48              2                   3              2              4    4     
+23 Jette Dollerup          OK Pan Århus    D35-   01:21:19                                                                           
+24 Ida Lottenburger Lund   Kolding OK      D-20   01:22:57                   2                   5*             2         5*        6*
+25 Mette Wonsyld           Silkeborg OK    D35-   01:23:14    1                        1    2    2    3                              
+26 Line Nielsen            Kolding OK      D21-   01:29:25                   1                   1              1         2         3
+27 Nete Panduro            OK Snab         D-20   01:31:15                        2                   4*             2         5*   3*
+28 Rie Moos Villumsen      OK Snab         D35-   01:48:20                        1                   1              1         2    1
+29 Sascha Lohse Hansen     Tisvilde Hegn O D21-   01:52:23              1                   1              1              1    1     
+30 Stine Taudahl Søndergaa Herning Oriente D21-   02:03:29                                                                           
+31 Emma Spanner            OK Pan Århus    D-20   02:14:25                                                                           
+32 Anna Spanner            OK Pan Århus    D-20   02:18:23                                                                           
+33 Maja Børsting Lund      Silkeborg OK    D-20   02:40:42                                  2*   1*   1*                             
+   Stine Bagger Hagner     Silkeborg OK    D21-       Disk                                                                           
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Tenna Nørgaard Landsper Tisvilde Hegn O D40-   00:45:41              6                   6              6              6    6     
+2  Maria M. Høyer Staugaar FIF Hillerød Or D40-   00:46:28         6                   6                   5    6    6               
+3  Rikke Holm Jensen       Horsens OK      D40-   00:46:39                                                                           
+4  Tine Rasmussen          Silkeborg OK    D40-   00:51:47    6                        5    5    6    6                              
+5  Heidi Hinge Krogsgaard  Silkeborg OK    D40-   00:52:16    5                        4    4    5    5                              
+6  Randi Scheel            OK Pan Århus    D40-   00:53:44    4    5    5    6    6                                                  
+7  Anne Møller Skaug       OK Pan Århus    D40-   00:55:12    3    4    4    5    5                                                  
+8  Susanne Højholt         Kolding OK      D45-   00:56:18                   4                   4              5         5         6
+9  Maria Douglas Stilling  FIF Hillerød Or D45-   00:56:24         3                   3                   4    4    5               
+10 Rikke Lysemose Poulsen  Silkeborg OK    D40-   00:56:32    2                        2    3    3    4                              
+11 Irene K. Mikkelsen      Horsens OK      D40-   00:57:38                                                                           
+12 Berit Harfot            Horsens OK      D45-   00:58:43                                                                           
+13 Tine Alkjær             FIF Hillerød Or D40-   01:01:54         2                   1                   3    3    4               
+14 Mette Edsen             Nordvest OK     D45-   01:04:08                                                                           
+15 Bente Kjær Hemmingsen   FIF Hillerød Or D45-   01:04:14                                                                           
+16 Sandra Simonsen         FIF Hillerød Or D45-   01:04:18                                                                           
+17 Lone Rasmussen          OK Snab         D45-   01:05:24                        4                   3              3         5    5
+18 Britta Ank Pedersen     Horsens OK      D45-   01:07:47                                                                           
+19 Irene Gammeljord        OK Snab         D45-   01:10:42                        3                   2              2         4    4
+20 Runa Iversen            Horsens OK      D40-   01:11:27                                                                           
+21 Jeanette Finderup       OK Pan Århus    D40-   01:12:23    1    1    3    3    2                                                  
+22 Anni Sørensen           OK Pan Århus    D45-   01:15:04                                                                           
+23 Christina Hartmeyer     FIF Hillerød Or D40-   01:20:51                                                                           
+24 Birgitte Wraa           Tisvilde Hegn O D45-   01:21:16              2                   2              2              4    3     
+25 Linda Slot Fenger-Grøn  OK Snab         D45-   01:24:49                        1                   1              1         2    3
+26 Mette Voldum Jørgensen  Silkeborg OK    D45-   01:25:37                                                                           
+27 Mette Kanstrup          OK Pan Århus    D40-   01:26:07                                                                           
+28 Susanne Grøn            Tisvilde Hegn O D45-   01:26:26              1                   1              1              3    1     
+29 Anette Pind             Silkeborg OK    D45-   01:28:42                                                                           
+30 Hanne Gylling           Aarhus 1900 Ori D45-   01:37:10                                                                           
+31 Susanne Nielsen         OK Vendelboerne D40-   01:38:56                                                                           
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Camilla Larsen          FIF Hillerød Or D-16   00:46:04         8*                  8*                  8*   8*   8*              
+2  Agnes Nørgård Kracht    Tisvilde Hegn O D-16   00:46:21              8*                  8*             6*             8*   8*    
+3  Nikoline Holm Splittorf FIF Hillerød Or D-16   00:49:20         6*                  6*                  4    6*   6*              
+4  Sara Lysemose Poulsen   Silkeborg OK    D-16   00:50:41    8*                       4    6*   8*   8*                             
+5  Ida Øbro                Tisvilde Hegn O D-16   00:50:51              6*                  4              3              6*   6*    
+6  Anne Maarup             FIF Hillerød Or D50-   00:51:07         4                   3                   2    4    4               
+7  Lucia Aagaard           Herning Oriente D50-   00:51:32                                                                           
+8  Dorthe Hansen           Silkeborg OK    D55-   00:52:52    5                        2    3    5    5                              
+9  Isabella Kempff-Anderse FIF Hillerød Or D-16   00:53:11                                                                           
+10 Karin Wæhrens           OK Vendelboerne D55-   00:54:10                                                                           
+11 Celine Hinge Krogsgaard Silkeborg OK    D-16   00:55:30    5*                       1    2    5*   5*                             
+12 Annelli Sandbæk         Silkeborg OK    D50-   00:57:01                                                                           
+13 Marie Dybdal            Aarhus 1900 Ori D50-   00:57:19                                                                           
+14 Amanda Isaksen          OK Snab         D-16   00:57:51                        8*                  3              3         4    8*
+15 Cecilie Eeg Højholt     Kolding OK      D-16   00:57:59                   8*                  3              3         4         6*
+15 Alberte Loft Thyssen    Horsens OK      D-16   00:57:59                                                                           
+17 Tine Dalgaard           Kolding OK      D-16   00:58:58                   6*                  2              2         3         4
+18 Inga Jager              Silkeborg OK    D50-   01:03:24                                                                           
+19 Lotte Friberg           FIF Hillerød Or D50-   01:03:34                                                                           
+20 Susanne Kristensen      Herning Oriente D50-   01:03:57                                                                           
+21 Tove Jakobsen           Silkeborg OK    D55-   01:06:26                                                                           
+22 Hanne Madsen            Kolding OK      D55-   01:06:35                   4                   1              1         2         3
+23 Vibeke Jørgensen        OK Pan Århus    D55-   01:06:41    3    3    4    3    5                                                  
+24 Helle Schou             OK Snab         D55-   01:07:13                        4                   2              2         3    2
+25 Britt Hermanrud         Silkeborg OK    D55-   01:08:35                                                                           
+26 Hanne Staugaard         Kolding OK      D50-   01:09:00                                                                           
+27 Kate Nielsen            OK Snab         D50-   01:09:21                        3                   1              1         2    1
+28 Lesya Parolya           Silkeborg OK    D50-   01:09:43                                                                           
+29 Lone Dybdal             Aarhus 1900 Ori D55-   01:15:28                                                                           
+30 Lene Laier              OK Snab         D50-   01:22:01                                                                           
+31 Inger Lise Simonsen     Silkeborg OK    D50-   01:22:20                                                                           
+32 Anette Ozol             Silkeborg OK    D50-   01:32:06                                                                           
+33 Mariann Kejser          OK Pan Århus    D50-   01:44:22    2    2    3    2    2                                                  
+34 Susanne Høiberg         Silkeborg OK    D50-   01:50:33                                                                           
+35 Else Lousdal            OK Snab         D55-   01:54:27                                                                           
+   Tina Blach              Kolding OK      D50-       Disk                                                                           
+   Annemette El-Azem       Tisvilde Hegn O D55-       Disk                                                                           
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Mona Nørgaard           OK Pan Århus    D65-   00:37:58    4    4    4    4    4                                                  
+2  Inger Kirkegaard        Tisvilde Hegn O D65-   00:42:22              3                   4              4              4    4     
+3  Lilli Hansen            OK GORM         D60-   00:43:34                                                                           
+4  Susanne Gasbjerg        Silkeborg OK    D60-   00:45:21    3                        4    3    4    4                              
+5  Anni Jensen             Herning Oriente D60-   00:48:14                                                                           
+6  Jane Thode Jensen       Nordvest OK     D65-   00:48:56                                                                           
+7  Ellen Thomsen           OK Vendelboerne D65-   00:50:26                                                                           
+8  Else Hass               OK Pan Århus    D65-   00:50:53    2    3    2    3    3                                                  
+9  Ann Dorrit Hansen       OK Djurs        D65-   00:51:39                                                                           
+10 Lisbet Sortkjær         Silkeborg OK    D65-   00:53:12    1                        3    2    3    3                              
+11 Betty Folino            FIF Hillerød Or D60-   00:53:23         2                   2                   3    4    4               
+12 Grethe Larsen           OK Snab         D65-   00:53:24                        2                   2              3         3    4
+13 Inger Landsperg         Tisvilde Hegn O D65-   00:54:34              1                   1              2              3    2     
+14 Bente Ingvardsen        Holstebro OK    D65-   00:56:42                                                                           
+15 Anne-Mette Kirkegaard   Silkeborg OK    D60-   00:57:41                                                                           
+16 Lilian Sørensen         OK Pan Århus    D65-   01:00:35                                                                           
+17 Lena Deleuran Nørgaard  Aarhus 1900 Ori D65-   01:01:02                                                                           
+18 Jette Bachhausen        FIF Hillerød Or D65-   01:06:39         1                   1                   1    3    2               
+19 Jytte Larsen            Silkeborg OK    D65-   01:06:52                                                                           
+20 Hanne Mortensen         Silkeborg OK    D65-   01:06:53                                                                           
+21 Birthe Helms            Silkeborg OK    D65-   01:08:48                                                                           
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Aase Neregaard          Tisvilde Hegn O D70-   00:43:51              4                   4              4              4    4     
+2  Aase Eg Pedersen        Kolding OK      D70-   00:52:36                   4                   4              4         3         4
+3  Lisbeth Møller Nielsen  OK Pan Århus    D70-   00:54:13    4    4    3    3    4                                                  
+4  Annelise Hansen         FIF Hillerød Or D70-   00:55:33         3                   4                   3    3    4               
+5  Bitten Nielsen          Herning Oriente D70-   00:56:37                                                                           
+6  Lisbeth G. Larsen       FIF Hillerød Or D70-   01:08:25         2                   3                   2    2    3               
+7  Alice Hinge             OK Pan Århus    D70-   01:18:20    3    1    2    2    3                                                  
+8  Helga Harly             OK Pan Århus    D70-   01:41:19                                                                           
+9  Margit Søndergård       Silkeborg OK    D70-   02:13:33    2                        2    3    3    4                              
+
+Gruppe D6 (D -14, D -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Annika Simonsen         FIF Hillerød Or D-14   00:30:54         6*                  6*                  6*   6*   6*              
+2  Celina Bregensøe        Tisvilde Hegn O D-14   00:36:27              6*                  6*             4*             6*   6*    
+3  Christa Blach Madsen    Kolding OK      D-14   00:36:29                   6*                  6*             4*        4*        6*
+4  Sara Lykke Brinch       FIF Hillerød Or D-14   00:37:13         4*                  4*                  2    2    4*              
+5  Birka Øhlenschlæger Nie Silkeborg OK    D-14   00:40:14    6*                       2    4*   4*   6*                             
+6  Ida Ravn Jacobsen       Kolding OK      D-14   00:42:54                   4*                  2              1         2         4*
+7  Anne Sofie Thyssen Harf Horsens OK      D-14   00:44:21                                                                           
+8  Trine Eg Staugaard      Kolding OK      D-14   00:45:40                                                                           
+9  Rikke Rasmussen         OK Snab         D-14   00:47:34                        6*                  4*             2         4*   2
+10 Katrine Spanner         OK Pan Århus    D-14   00:47:39    4*   2    4*   2    4*                                                 
+11 Laura Holm Nielsen      Horsens OK      D-14   00:47:59                                                                           
+12 Sofie Slot Fenger-Grøn  OK Snab         D-14   00:51:19                        2                   2              1         2    1
+13 Katinka Kilden          OK Pan Århus    D-14   00:51:44    2    1    2    1    1                                                  
+14 Julie Caspersen         OK Snab         D-14   00:51:48                                                                           
+15 Marie Louise Henning    Kolding OK      D-14   00:52:40                                                                           
+16 Ida Juul Schiøtz        Silkeborg OK    D-14   00:53:18    1                        1    2    1    1                              
+17 Rebecca Loft Thyssen    Horsens OK      D-14   00:55:45                                                                           
+18 Lasse Fenger Vad        Horsens OK      D-14   01:01:33                                                                           
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Hanne Borup Fredberg    Silkeborg OK    D21-B  00:38:28    2                        2    2    2    2                              
+2  Signe Faber             Silkeborg OK    D35-B  00:39:50    2                        2    2    2    2                              
+3  Lise J. Pedersen        Silkeborg OK    D21-B  00:40:09    2                        2    2    2    2                              
+4  Anne Andersen           OK Pan Århus    D21-B  00:42:12    1    2    2    2    2                                                  
+5  Eva Konring Olesen      FIF Hillerød Or D35-B  00:45:33         2                   1                   2    2    2               
+6  Trine Kristensen        OK Pan Århus    D35-B  00:45:51    1    2    2    2    2                                                  
+7  Line Bøckhaus           OK Snab         D35-B  00:45:56                        2                   1              2         2    2
+8  Charlotte Nielsen       Tisvilde Hegn O D21-B  00:46:33              2                   1              2              2    2     
+9  Lene Koch Foster        Kolding OK      D35-B  00:50:18                   2                   1              2         2         2
+10 Louise Holm Splittorff  FIF Hillerød Or D35-B  00:50:54         1                   1                   2    2    2               
+11 Anette Dewett           OK Snab         D35-B  00:51:09                        1                   1              1         2    2
+12 Lone Knudsen            OK Snab         D21-B  00:52:14                        1                   1              1         1    1
+13 Lotte Vinther Andersen  Kolding OK      D35-B  00:54:30                   1                   1              1         2         1
+14 Ea Bregensøe            Tisvilde Hegn O D35-B  00:54:59              1                   1              1              1    1     
+15 Sofie Bay               OK Pan Århus    D21-B  00:55:04    1    1    1    1    1                                                  
+16 Hanne Poulsen           FIF Hillerød Or D35-B  00:56:37         1                   1                   1    1    1               
+17 Pia Grønbjerg Hansen    Kolding OK      D35-B  00:58:45                   1                   1              1         1         1
+18 Jannie Nielsen          Tisvilde Hegn O D35-B  01:01:07              1                   1              1              1    1     
+19 Henriette Kranker       OK Pan Århus    D35-B  01:02:45                                                                           
+20 Annemette Sørensen      OK Pan Århus    D35-B  01:04:52                                                                           
+21 Helle Petersen          Herning Oriente D35-B  01:05:18                                                                           
+22 Lone Secher Andersen    OK Pan Århus    D35-B  01:06:38                                                                           
+23 Hanne Skipper Jørvang   OK Pan Århus    D35-B  01:12:26                                                                           
+24 Line Lyndgaard          OK Pan Århus    D21-B  01:16:19                                                                           
+   Signe Bille             OK Pan Århus    D-20B      Disk                                                                           
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Siri Simonsen           FIF Hillerød Or D-12   00:23:48         4*                  4*                  4*   4*   4*              
+2  Xenia Bregensøe         Tisvilde Hegn O D-12   00:24:39              4*                  4*             3*             4*   4*    
+3  Nanna Lysemose Poulsen  Silkeborg OK    D-12   00:24:48    4*                       3*   3*   4*   4*                             
+4  Vigga Graff Frederiksen FIF Hillerød Or D-12   00:24:57         3*                  1                   1    3*   3*              
+5  Mathilde Poulsen        FIF Hillerød Or D-12   00:25:10                                                                           
+6  Freya Halberg Petersen  FIF Hillerød Or D-12   00:25:41                                                                           
+7  Eva Örnhagen Jørgensen  OK Snab         D-12   00:25:54                        4*                  3*             1         3*   4*
+8  Theresa Skouboe         Horsens OK      D-12   00:26:38                                                                           
+9  Line Møller Nielsen     OK Pan Århus    D-12   00:26:50    3*   1    3*   4*   3*                                                 
+10 Frida Jørvang Eskildsen OK Pan Århus    D-14B  00:29:23    1    1    1    2    1                                                  
+11 Maria Wassard           FIF Hillerød Or D-12   00:31:08                                                                           
+12 Johanne Thomsen         OK Snab         D-12   00:35:08                        1                   1              1         1    3*
+13 Lisbet Brink Tangaa-And FIF Hillerød Or D21-C  00:38:36                                                                           
+14 Marie Louise Kragh      OK Pan Århus    D-12   00:39:49                   1*                                                      
+15 Frederikke Gundersen    Tisvilde Hegn O D-12   00:41:35              1                   1              1              3*   1     
+16 Ellen Roungkvist Uhlema Kolding OK      D-12   00:46:22                   1                   3*             1         1         1
+17 Maya Nygaard Rahr       Silkeborg OK    D-12   00:50:12    1                        1    1    1    1                              
+18 Stine Secher Thomsen    OK Pan Århus    D-14B  00:50:14                                                                           
+19 Grete Eriksen           Silkeborg OK    D21-C  00:51:33                                                                           
+20 Anne Katrine Kragh      OK Pan Århus    D-12   00:59:11                                                                           
+21 Gitte Kiilerich Pederse Silkeborg OK    D21-C  01:11:44                                                                           
+22 Conny Birch             OK Djurs        D21-C  01:23:11                                                                           
+23 Inger Kongsgaard Jakobs Silkeborg OK    D21-C  01:30:13                                                                           
+   Astrid Gylling Hougaard Aarhus 1900 Ori D-12       Disk                                                                           
+   Ella Hedegaard Richards OK Pan Århus    D-12       Disk                                                                           
+   Renata Amorim           Tisvilde Hegn O D21-C      Disk                                                                           
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+----------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6   m7   m8   m9  m10  m11  m12  m13  m14  m15
+1  Gustav L. Holmberg      FIF Hillerød Or H-10   00:15:25         1                   1                   1    1    1               
+2  Gustav Kjær Hemmingsen  FIF Hillerød Or H-10   00:15:56         1                   1                   1    1    1               
+3  Sigrid Høyer Staugaard  FIF Hillerød Or D-10   00:16:19         1                   1                   1    1    1               
+4  Axel Örnhagen Jørgensen OK Snab         H-10   00:16:34                        1                   1              1         1    1
+5  Albert Nørgaard Landspe Tisvilde Hegn O H-10   00:17:06              1                   1              1              1    1     
+6  Johanne Skouboe         Horsens OK      D-10   00:17:08                                                                           
+7  Silas Ribergaard Skamme OK Pan Århus    H-10   00:17:37    1    1    1    1    1                                                  
+8  Rasmus Meldgaard Jensen Viborg OK       H-10   00:18:35                                                                           
+9  Jonas Olesen Bundgård   OK Pan Århus    H-10   00:18:40    1    1    1    1    1                                                  
+10 Johan Dalgaard          Kolding OK      Beg    00:19:14                   1                   1              1         1         1
+11 Emil Dalgaard           Kolding OK      Beg    00:19:24                   1                   1              1         1         1
+12 Asbjørn Faber Fenger-Gr Silkeborg OK    Beg    00:19:51    1                        1    1    1    1                              
+13 Naja Panduro            OK Snab         Beg    00:20:18                        1                   1              1         1    1
+14 Marie Møller Nielsen    OK Pan Århus    D-10   00:20:22    1    1    1    1    1                                                  
+15 Mads Bundgaard          Viborg OK       H-10   00:21:12                                                                           
+16 Ludvig Schou-Hansen     OK Pan Århus    Beg    00:21:49                                                                           
+17 Sebastian Agerbo        Silkeborg OK    Beg    00:22:19    1                        1    1    1    1                              
+18 Cecilie Kreutzmann      FIF Hillerød Or Beg    00:22:37                                                                           
+19 Anton Vingborg Hansen   OK Pan Århus    H-10   00:22:57                                                                           
+20 Isak Egander Grøn       OK Pan Århus    Beg    00:24:48                                                                           
+21 Silje Halberg Petersen  FIF Hillerød Or Beg    00:25:05                                                                           
+22 Magnus Kanstrup         OK Pan Århus    Beg    00:25:32                                                                           
+23 Lucas Hagstrøm          Viborg OK       H-10   00:25:35                                                                           
+24 Freja Kanstrup          OK Pan Århus    D-10   00:26:26                                                                           
+25 Severin Kilden          OK Pan Århus    Beg    00:27:21                                                                           
+26 Lasse Brink Tangaa-Ande FIF Hillerød Or Beg    00:28:22                                                                           
+27 Vibeke Mortensen        Tisvilde Hegn O Beg    00:28:23              1                   1              1              1    1     
+28 Frederik Holmberg       FIF Hillerød Or Beg    00:28:26                                                                           
+29 Laura Hoffmann          Viborg OK       D-10   00:28:32                                                                           
+30 Iris Skammelsen Gillela OK Pan Århus    D-10   00:28:43                                                                           
+31 Christian Kruse         OK Pan Århus    Beg    00:30:32                                                                           
+32 Iben Nygaard Rahr       Silkeborg OK    Beg    00:31:25    1                        1    1    1    1                              
+33 Cathrine Loberg         Viborg OK       D-10   00:33:09                                                                           
+34 Ida Evald Maretti       Viborg OK       D-10   00:33:42                                                                           
+35 Inge Schou-Hansen       OK Pan Århus    Beg    00:36:25                                                                           
+36 Torbjørn Høyer Staugaar FIF Hillerød Or Beg    00:38:18                                                                           
+37 Annette A. Hansen       Tisvilde Hegn O Beg    00:42:13              1                   1              1              1    1     
+38 Rasmus Højtorp Sørensen OK Pan Århus    Beg    00:42:53                                                                           
+39 Doris Blok              OK Snab         Beg    00:51:22                        1                   1              1         1    1
+

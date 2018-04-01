@@ -1,0 +1,329 @@
+Matcher (1 division)
+--------------------
+1 : FROS/Melfar - OK GORM                          :    83 -   132
+2 : FROS/Melfar - OK H.T.F.                        :    93 -   132
+3 : FROS/Melfar - Odense OK                        :    93 -   128
+4 : OK GORM - OK H.T.F.                            :   122 -   117
+5 : OK GORM - Odense OK                            :   123 -   114
+6 : OK H.T.F. - Odense OK                          :   129 -   111
+
+Stilling
+--------
+                                               score      point
+OK GORM                                  :   377 -   314      6
+OK H.T.F.                                :   378 -   326      4
+Odense OK                                :   353 -   345      2
+FROS/Melfar                              :   269 -   392      0
+
+                                             m1     m2     m3      m4      m5      m6    
+                                            ------ ------ ------ ------- ------- ------- 
+H1 (H -20, H 21-, H 35-)                    13-15  11-25  13-19   12-24   14-19   24-14  
+H2 (H 40-, H 45-)                           14-7   15-6   11-10   13-8     9-12    7-14  
+H3 (H -16, H 50-, H 55-)                     9-15  10-14  13-10   15-9    14-9    15-9   
+H4 (H 60-, H 65-)                            4-6    7-3    3-7     7-3     3-7     3-7   
+H5 (H 70-)                                   3-7    4-6    4-6     6-4     7-3     5-5   
+H6 (H -14, H -16B)                           0-9    0-6    0-6     7-5     9-3     6-4   
+H7 (H -20B, H 21-B, H 35-B)                  6-3    5-4    5-4     4-5     4-5     4-5   
+H8 (H -12, H 21-C)                           2-6    4-4    4-4     6-2     5-4     4-4   
+D1 (D -20, D 21-, D 35-)                     9-13   9-13  11-11   12-12   16-8    15-9   
+D2 (D 40-, D 45-)                            5-10   5-10   4-14    8-10    7-13    9-11  
+D3 (D -16, D 50-, D 55-)                     7-10   6-14   8-12    8-12   11-9    13-8   
+D4 (D 60-, D 65-)                            0-7    0-7    0-7     3-7     4-6     5-5   
+D5 (D 70-)                                   2-7    4-5    4-5     7-3     7-3     7-3   
+D6 (D -14, D -16B)                           6-6   10-0   10-2     6-0     6-3     0-4   
+D7 (D -20B, D 21-B, D 35-B)                  0-6    0-6    0-6     3-6     4-5     5-4   
+D8 (D -12, D -20C, D 21-C)                   0-2    0-6    0-2     2-4     0-2     4-2   
+9  (H -10, D -10, H -12B, D -12B, Begynder)  3-3    3-3    3-3     3-3     3-3     3-3   
+Ialt:                                       83-132 93-132 93-128 122-117 123-114 129-111 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sørensen Mikkel         FROS/Melfar     H21-   00:56:34    8    8    8               
+2  Skare Therkildsen Lasse OK H.T.F.       H35-   01:03:22         7         8         8
+3  Steen Andersen Henrik   Odense OK       H21-   01:06:25              7         8    7
+4  Damgaard Joakim         OK GORM         H21-   01:07:42    7              7    7     
+5  Physant Jakob           OK H.T.F.       H35-   01:10:07         6         6         6
+6  Stamp Jesper            Odense OK       H21-   01:16:09              6         6    5
+7  Finderup Jessen Nicklas OK H.T.F.       H-20   01:16:27         7*        7*        6*
+8  V. Petersen Hans        OK GORM         H-20   01:18:45    8*             5*   7*    
+9  Jensen Jens             OK H.T.F.       H21-   01:18:51         4         3         3
+10 Sudergaard Uffe         FROS/Melfar     H35-   01:24:02    5    3    5               
+11 Klogborg Peter          OK H.T.F.       H-20   01:26:02         1*                  1*
+12 Mollerup Benfeldt Jakob Odense OK       H-20   01:27:55              6*        5*   2
+   E Juhl Jakob            OK H.T.F.       H-20       Disk                              
+   Buch Lorenzen Michael   OK GORM         H35-       Disk                              
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mølgaard Nielsen Morten Odense OK       H45-   00:48:04              6         6    6
+2  Gabs Thomas             FROS/Melfar     H45-   00:57:29    6    6    5               
+3  Gydesen Terkel          FROS/Melfar     H40-   00:58:59    5    5    4               
+4  Wolf Bjarke             OK GORM         H40-   01:01:03    4              6    5     
+5  Q Christensen Jakob     Odense OK       H40-   01:02:40              3         4    5
+6  Lindahl Kim             FROS/Melfar     H40-   01:02:41    3    4    2               
+7  Grøn Lyngby Claus       OK GORM         H45-   01:03:00    2              5    3     
+8  J. Andersen Jens        OK H.T.F.       H45-   01:03:04         3         4         4
+9  Dreisig Jakob           Odense OK       H40-   01:04:03              1         2    3
+10 Pedersen Mads           OK H.T.F.       H40-   01:05:18         2         3         2
+11 Bang Jacob              OK GORM         H45-   01:07:53    1              2    1     
+12 H Juhl Peter            OK H.T.F.       H45-   01:08:19         1         1         1
+13 Klogborg Lars           OK H.T.F.       H45-   01:08:49                              
+14 Ringive Martin          OK GORM         H45-   01:11:05                              
+15 Djursaa Carsten         Odense OK       H45-   01:11:36                              
+16 Mønster Jørgensen Bo    FROS/Melfar     H40-   01:11:40                              
+17 Sørensen Thomas         FROS/Melfar     H45-   01:13:49                              
+18 Tykær Jensen Lars       OK H.T.F.       H45-   01:16:27                              
+19 Holm Henrik             OK GORM         H45-   01:24:45                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Filskov Per             Odense OK       H55-   00:48:03              6         6    6
+2  Germann Søren           OK GORM         H55-   00:48:11    6              6    5     
+3  Damgaard Jørgen         OK GORM         H50-   00:49:46    5              5    4     
+4  Bertelsen Arne          OK H.T.F.       H55-   00:50:42         6         4         5
+5  Gabs Jonas              FROS/Melfar     H-16   00:51:57    6*   7*   7*              
+6  Binder Ole              OK GORM         H55-   00:52:54    3              3    3     
+7  Schrøder Larsen Oskar   OK H.T.F.       H-16   00:53:12         5*        4*        6*
+8  Kr. V. Petersen Jens    OK GORM         H-16   00:53:38    1*             1*   2*    
+9  Finderup Jessen Mathias OK H.T.F.       H-16   00:54:39         3         1         4*
+10 Dall Søren              OK H.T.F.       H55-   00:55:15                              
+11 Føns Knudsen Peter      OK GORM         H55-   00:55:45                              
+12 Pedersen Gert           FROS/Melfar     H55-   00:57:48    2    2    4               
+13 Aakjær Bent             Odense OK       H55-   00:58:50              3         2    2
+14 Bossen Bendt            OK H.T.F.       H50-   00:59:05                              
+15 Thestrup Lars           FROS/Melfar     H50-   00:59:10    1    1    2               
+16 Peder Jensen Jens       OK H.T.F.       H55-   00:59:48                              
+17 Holmegaard Steen        OK GORM         H55-   01:05:47                              
+18 Madsen Kurt             Odense OK       H50-   01:08:19              1         1    1
+19 Iversen Tommy           Odense OK       H50-   01:10:17                              
+20 Madsen Lars             Odense OK       H55-   01:11:40                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rabølle Niels           Odense OK       H65-   00:41:15              4         4    4
+2  Rasmussen Torben        Odense OK       H60-   00:41:31              3         3    3
+3  Christian Strib Hans    OK GORM         H65-   00:42:45    4              4    2     
+4  Madsen Sven             FROS/Melfar     H65-   00:43:16    3    4    2               
+5  D. Andersen Flemming    OK GORM         H65-   00:45:50    2              3    1     
+6  Jørgensen Finn          Odense OK       H60-   00:46:41                              
+7  Erik Buch Poul          OK GORM         H65-   00:47:34                              
+8  Hansen Torben           FROS/Melfar     H60-   00:48:32    1    3    1               
+9  Jørgen Kramer Jens      OK H.T.F.       H65-   00:49:31         2         2         2
+10 Pedersen Børge          Odense OK       H65-   00:50:39                              
+11 Dam Jens                Odense OK       H65-   00:51:18                              
+12 Rasmussen Keld          OK H.T.F.       H65-   00:53:08         1         1         1
+13 B. Therkildsen Ove      OK H.T.F.       H65-   00:54:21                              
+14 Erik Kofoed Niels       OK H.T.F.       H65-   00:55:05                              
+15 Jensen Ib               OK GORM         H60-   00:55:32                              
+16 Physant Niels           OK H.T.F.       H65-   00:57:12                              
+   Vestergaard Steen       Odense OK       H60-       Disk                              
+   Møller Petersen Niels   FROS/Melfar     H65-       Disk                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Kristian Terkelsen Karl OK GORM         H70-   00:33:27    4              4    4     
+2  Hansen Vagn             OK H.T.F.       H70-   00:38:47         4         3         4
+3  Nielsen Bent            OK GORM         H70-   00:39:56    3              2    3     
+4  Schulz Wolfgang         Odense OK       H70-   00:40:37              4         2    3
+5  Hoffmann Ole            FROS/Melfar     H70-   00:40:55    2    3    3               
+6  V. Jensen H.            Odense OK       H70-   00:41:02              2         1    2
+7  Nielsen Hans            OK H.T.F.       H70-   00:42:30         2         1         1
+8  F. Henriksen Per        OK H.T.F.       H70-   00:44:02                              
+9  Stamp Jørgen            Odense OK       H70-   00:45:07                              
+10 F. Andersen Jørn        OK H.T.F.       H70-   00:46:19                              
+11 Sølling Peter           FROS/Melfar     H70-   00:46:59    1    1    1               
+12 Møller Nielsen Palle    Odense OK       H70-   00:47:03                              
+13 Skøt Erland             OK H.T.F.       H70-   00:49:25                              
+14 Aaskov Gunner           Odense OK       H70-   00:51:21                              
+15 Quist Jørgensen Carsten OK H.T.F.       H70-   00:53:56                              
+16 Mikkelsen Holger        Odense OK       H70-   00:54:06                              
+17 Ove Rasmussen Kaj       OK H.T.F.       H70-   00:58:06                              
+   Juel Klaus              Odense OK       H70-       Disk                              
+
+Gruppe H6 (H -14, H -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ravn Pedersen Rasmus    OK GORM         H-16B  00:47:49    4              4    4     
+2  H. Jensen Louis         OK H.T.F.       H-14   00:49:18         6*        5*        6*
+3  K. Holm Filip           OK GORM         H-14   01:10:40    5*             3*   5*    
+4  Birch Christensen Mathi Odense OK       H-14   02:06:53              6*        3*   4*
+   Burattini Sebastian     Odense OK       H-14       Disk                              
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Bo Kirk  Egdal Jonas    FROS/Melfar     H35-B  00:44:45    2    2    2               
+2  Mikkelsen Morten        FROS/Melfar     H21-B  00:45:18    2    2    2               
+3  Brøchner Sylverstesen L OK H.T.F.       H21-B  00:47:36         2         2         2
+4  M. Sigvardt Peter       Odense OK       H35-B  00:47:45              2         2    2
+5  Baden Kristian          Odense OK       H21-B  00:49:26              1         2    2
+6  Madsen Jesper           FROS/Melfar     H35-B  00:50:26    2    1    1               
+7  Karlskov Clausen Kim    OK H.T.F.       H35-B  00:51:17         1         2         1
+8  Erik Jakobsen Sven      OK GORM         H35-B  00:53:04    1              2    2     
+9  M. Pedersen Palle       OK H.T.F.       H35-B  00:53:43         1         1         1
+10 Schrøder Christian      OK H.T.F.       H35-B  00:56:10                              
+11 Ø. Larsen Claes         Odense OK       H35-B  00:58:59              1         1    1
+12 Søholm Andersen Michael Odense OK       H21-B  01:00:32                              
+13 Fynboe Erik             Odense OK       H35-B  01:02:09                              
+14 Jessen Flemming         OK H.T.F.       H35-B  01:04:53                              
+15 E Juhl Mads             OK H.T.F.       H-20B  01:05:14                              
+16 Lehn Torben             OK GORM         H35-B  01:07:48    1              1    1     
+17 Haastrup Lars           Odense OK       H21-B  01:09:08                              
+18 Hansen Karl             OK H.T.F.       H35-B  01:16:40                              
+19 Jensen Erik             OK GORM         H35-B  01:19:22    1              1    1     
+20 Larsen Merete           OK GORM         H35-B  01:31:54                              
+
+Gruppe H8 (H -12, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Krabek Kjærsgaard Nicol Odense OK       H21-C  00:21:41              2         2    2
+2  B. Kæseler Michael      OK GORM         H21-C  00:21:58    2              2          
+3  K. Holm Daniel          OK GORM         H-12   00:22:12    4*             4*   4*    
+4  Rune Damkjær Pedersen A Odense OK       H21-C  00:24:35                              
+5  Klogborg Morten         OK H.T.F.       H21-C  00:25:24         2                    
+6  Lykkegård Christensen K Odense OK       H21-C  00:26:19                              
+7  Egdal Kortegård Laurits FROS/Melfar     H-12   00:27:46    2*   4*   4*              
+8  Klogborg Lasse          OK H.T.F.       H-12   00:30:15         2*        2*        4*
+9  B. Nielsen Keld         OK H.T.F.       H21-C  00:30:54                              
+10 Johansen Anton          Odense OK       H-12   00:32:24              2*        2*   2*
+11 Bengtsen Julius         OK GORM         H-12   00:33:19                        1     
+12 Hvam Andersen Ove       OK GORM         H21-C  00:34:36                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  G. Najbjerg Nina        OK GORM         D21-   00:48:08    6              6    6     
+2  Termansen Lise          OK H.T.F.       D-20   00:48:52         8*        7*        8*
+3  Arntzen Silje           FROS/Melfar     D21-   00:53:32    5    5    6               
+4  Valbjørn Gydesen Hedvig FROS/Melfar     D21-   00:53:53    4    4    5               
+5  Binder Rikke            OK GORM         D21-   01:02:24    3              4    5     
+6  Lorenzen Nicoline       Odense OK       D21-   01:04:58              4         4    5
+7  Toft Isabella           OK H.T.F.       D21-   01:09:11         3         3         4
+8  Karlskov Clausen Henrie OK H.T.F.       D21-   01:10:03         2         2         3
+9  Formankova Anna         OK GORM         D-20   01:11:47    4*             2*   5*    
+10 B. Kristensen Maja      OK H.T.F.       D21-   01:15:55                              
+11 Riis Jensen Mette       Odense OK       D21-   01:26:08              3         2    2
+12 Djursaa Fabrin Freja    Odense OK       D-20   01:29:31              4*        2*   2*
+13 Krabek Kjærsgaard Johan Odense OK       D35-   02:01:18                              
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Finderup Jessen Diana   OK H.T.F.       D45-   00:55:58         6         6         6
+2  Fyhn Olesen Lone        Odense OK       D40-   00:59:38              6         6    5
+3  H. Ringive Bente        OK GORM         D45-   01:09:34    6              5    5     
+4  Christiansen Lisette    Odense OK       D45-   01:18:24              5         4    4
+5  Skousen Marianne        FROS/Melfar     D40-   01:20:18    5    5    4               
+6  Callesen Lisbeth        OK H.T.F.       D40-   01:23:28         4         4         3
+7  Brandt Jespersen Rikke  Odense OK       D40-   01:36:34              3         3    2
+8  Bønding Inger           OK GORM         D45-   01:53:15    4              3    2     
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Alm Guri                OK H.T.F.       D50-   00:45:01         6         6         6
+2  Damgaard Marianne       OK GORM         D50-   00:46:16    6              5    6     
+3  L. Rasmussen Mona       OK H.T.F.       D55-   00:47:00         5         4         5
+4  Skousen Matilde         FROS/Melfar     D-16   00:54:43    7*   6*   8*              
+5  Najbjerg Anna-Grethe    OK GORM         D50-   00:55:29    4              3    5     
+6  Skovbjerg Lisbeth       Odense OK       D50-   00:55:30              5         4    4
+7  Bønløkke Post Jette     Odense OK       D55-   00:55:51              4         3    3
+8  Honoré Jette            OK H.T.F.       D50-   01:03:39         3         2         2
+9  Nielsen Lise            OK H.T.F.       D55-   01:09:58                              
+10 Spangsberg Gitte        Odense OK       D55-   01:10:15              3         2    1
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Price Jensen Inge       Odense OK       D60-   00:36:40              4         4    4
+2  Marie Haahr Inger       OK H.T.F.       D65-   00:39:38         4         4         3
+3  Fyhring Sørensen Herdis OK H.T.F.       D60-   00:52:26         3         3         2
+4  Physant Inge            OK H.T.F.       D65-   00:55:17                              
+5  Jensen Inger            OK GORM         D60-   01:02:59    4              2    3     
+6  Rasmussen Mona          OK H.T.F.       D60-   01:03:38                              
+7  Thorsen Inge            Odense OK       D65-   01:04:36              3         2    1
+8  Jensen Bente            OK GORM         D60-   01:31:21    3              1    1     
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Terkelsen Asta          OK GORM         D70-   00:39:15    4              4    4     
+2  Mortensen Bodil         OK GORM         D70-   01:05:02    3              3    3     
+3  Sølling Else            FROS/Melfar     D70-   01:21:44    2    4    4               
+4   Villadsen Gretha       OK H.T.F.       D70-   01:26:39         3         2         4
+5  Hansen Betty            OK H.T.F.       D70-   01:27:35         2         1         3
+6  Juel Lis                Odense OK       D70-   01:31:47              3         2    2
+7  Borg Lone               Odense OK       D70-   02:06:35              2         1    1
+
+Gruppe D6 (D -14, D -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Damgaard Maria          OK GORM         D-14   00:41:48    6*             6*   6*    
+2  Skousen Line            FROS/Melfar     D-14   00:43:54    4*   6*   6*              
+3  Jensen Maya             FROS/Melfar     D-14   00:49:53    2    4*   4*              
+4  Q Frederiksen Karen     Odense OK       D-16B  01:03:29              2         3    4
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Karlskov Sørensen Nicol OK H.T.F.       D35-B  00:35:22         2         2         2
+2  Mølgaard Nielsen Anne   Odense OK       D35-B  00:40:32              2         2    2
+3  Andersen Freja          OK H.T.F.       D21-B  00:41:07         2         2         2
+4  Hansen Kirsten          OK H.T.F.       D35-B  00:46:50         2         2         1
+5  Filskov Rikke           Odense OK       D-20B  00:48:56              2         2    1
+6  Kæseler Heidi           OK GORM         D35-B  00:55:05    2              1    2     
+7  Lassen Annett           OK GORM         D35-B  00:57:58    2              1    1     
+8  Holm Lisbet             OK GORM         D35-B  01:04:45    2              1    1     
+9  Damkjær Pedersen Pia    Odense OK       D21-B  01:12:28              2         1    1
+10 E Juhl Tove             OK H.T.F.       D35-B  01:15:54                              
+
+Gruppe D8 (D -12, D -20C, D 21-C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Dam Nanna               Odense OK       D-20C  00:20:06              2         2    2
+2  Buch Pernille           OK GORM         D21-C  00:21:04    2              2          
+3  Schrøder Larsen Mathild OK H.T.F.       D-12   00:22:18         4*        4*        4*
+4  B. Nielsen Solveig      OK H.T.F.       D21-C  00:24:21         2                    
+5  Kortegård Ditte         FROS/Melfar     D21-C  00:24:37                              
+6  Koch Dorte              OK H.T.F.       D21-C  00:24:55                              
+7  Lambertsen Tine         Odense OK       D21-C  00:26:02                              
+8  Benfeldt Helene         Odense OK       D21-C  00:26:11                              
+9  Beyer Jette             OK H.T.F.       D21-C  00:31:02                              
+10 F. Andersen Ingerlise   OK H.T.F.       D21-C  00:31:48                              
+11 Dreisig Jeanette        Odense OK       D21-C  00:31:54                              
+12 Rohde Jørgensen Jannie  FROS/Melfar     D21-C  00:40:19                              
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+----------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lindahl Magnus          FROS/Melfar     H-10   00:14:14    1    1    1               
+2  Egdal Kortegård Valdema FROS/Melfar     H-10   00:16:47    1    1    1               
+3  Lambertsen Victor       Odense OK       H-12B  00:19:06              1         1    1
+4  Schack Andersen Anna    OK GORM         D-10   00:23:08    1              1    1     
+5  H. Holm Andreas         OK GORM         H-10   00:23:16    1              1    1     
+6  Sigvardt Alice          Odense OK       Begynd 00:24:52              1         1    1
+7  Velásquez Agustina      OK GORM         Begynd 00:25:14    1              1    1     
+8  Klogborg Noah           OK H.T.F.       Begynd 00:25:36         1         1         1
+9  M. Sigvardt Anders      Odense OK       H-10   00:27:43              1         1    1
+10 Jensen Mette            FROS/Melfar     D-10   00:29:24    1    1    1               
+11 Rohde Jørgensen Tobias  FROS/Melfar     Begynd 00:30:25                              
+12 Baden Louise            Odense OK       Begynd 00:33:02                              
+13 Rohde Jørgensen Christi FROS/Melfar     Begynd 00:33:48                              
+14 Rohde Jørgensen Sofie   FROS/Melfar     Begynd 00:33:53                              
+15 Dimitrijevic Andreja    Odense OK       Begynd 00:34:25                              
+16 Pedersen Søren          OK H.T.F.       H-10   00:34:37         1         1         1
+17 Pedersen Sofie          OK H.T.F.       D-10   00:35:11         1         1         1
+18 Hansen Pernille         OK GORM         D-12B  00:35:36                              
+19 Henningsen Astrid       OK H.T.F.       D-10   00:36:06                              
+20 Callesen Joanna         OK H.T.F.       Begynd 00:36:35                              
+21 Hansen Maja             OK GORM         D-12B  00:38:44                              
+22 Jørgensen Sonja         OK H.T.F.       Begynd 00:39:34                              
+23 Marie Damkjær Pedersen  Odense OK       D-10   00:47:03                              
+24 Nygaard Poulsen Bodil   OK GORM         Begynd 00:47:27                              
+   Mølgaard Nielsen Magnus Odense OK       H-10       Disk                              
+

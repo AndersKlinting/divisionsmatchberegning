@@ -1,0 +1,254 @@
+Matcher (4 division)
+--------------------
+1 : Holbæk OK - Køge OK                            :    64 -    58
+2 : Holbæk OK - OK73                               :    67 -    51
+3 : Holbæk OK - PI-København                       :    56 -    55
+4 : Køge OK - OK73                                 :    61 -    50
+5 : Køge OK - PI-København                         :    55 -    57
+6 : OK73 - PI-København                            :    48 -    59
+
+Stilling
+--------
+                                               score      point
+Holbæk OK                                :   187 -   164      6
+PI-København                             :   171 -   159      4
+Køge OK                                  :   174 -   171      2
+OK73                                     :   149 -   187      0
+
+                                             m1    m2    m3    m4    m5    m6   
+                                            ----- ----- ----- ----- ----- ----- 
+H1 (H -20, H 21-, H 35-)                     9-11 12-6   7-14 11-4   9-11  4-14 
+H2 (H 40-, H 45-)                            7-2   7-0   5-5   4-0   2-7   0-7  
+H3 (H -16, H 50-, H 55-)                     7-3   7-2   4-6   7-2   3-7   2-7  
+H4 (H 60-, H 65-)                            4-6   4-6   3-7   6-4   3-7   3-7  
+H5 (H 70-)                                   3-7   3-7   7-0   4-6   7-0   7-0  
+H6 (H -14)                                   2-0   2-0   2-0   0-0   0-0   0-0  
+H7 (H -20B, H 21-B, H 35-B)                  3-3   2-4   3-3   2-4   3-3   3-3  
+H8 (H -12, H -14B, H -20C, H 21-C)           2-1   2-1   1-2   2-1   1-2   1-2  
+D1 (D -20, D 21-, D 35-)                     5-5   7-0   4-6   7-0   4-6   0-7  
+D2 (D 40-, D 45-)                            6-4   6-3   5-4   6-3   5-4   3-4  
+D3 (D -16, D 50-, D 55-)                     6-4   5-5   7-2   4-6   6-3   7-2  
+D4 (D 60-, D 65-)                            0-4   0-7   0-0   2-7   4-0   7-0  
+D5 (D 70-)                                   0-4   0-7   0-0   2-7   4-0   7-0  
+D6 (D -14, D -16B)                           2-0   2-0   2-0   0-0   0-0   0-0  
+D7 (D -20B, D 21-B, D 35-B)                  4-1   4-2   3-3   1-4   1-4   3-3  
+D8 (D -12, D -14B, D -20C, D 21-C)           2-1   2-1   1-2   1-2   1-2   1-2  
+9  (H -10, D -10, H -12B, D -12B, Begynder)  2-2   2-0   2-1   2-0   2-1   0-1  
+Ialt:                                       64-58 67-51 56-55 61-50 55-57 48-59 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [6, 5, 4, 3, 2, 1]
+----------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Erik Olsen              PI-København    H35-   01:08:18              6         6    6
+2  Simon Rosell Holt       Køge OK         H35-   01:17:39    6              6    5     
+3  Gunnar Grue-Sørensen    Køge OK         H35-   01:18:24    5              5    4     
+4  Bjørn Lind              PI-København    H21-   01:24:27              5         3    5
+5  Michael Nygaard Møller  OK73            H35-   01:24:31         6         4         4
+6  Jacob Kristjansen       Holbæk OK       H21-   01:24:52    4    5    4               
+7  Jacob Spange Mortensen  PI-København    H21-   01:27:40              3         2    3
+8  Peter Lauritzen         Holbæk OK       H-20   01:30:26    3    4    2               
+9  Martin Madsen           Holbæk OK       H21-   01:30:34    2    3    1               
+10 Martin Bjørling Thomsen Holbæk OK       H35-   01:50:33                              
+
+Gruppe H2 (H 40-, H 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jørn Lind               PI-København    H45-   01:07:00              4         4    4
+2  Bjark Bo Christensen    Holbæk OK       H40-   01:13:48    4    4    3               
+3  Søren Fertin            Holbæk OK       H45-   01:16:09    3    3    2               
+4  Søren Klinkby           Holbæk OK       H45-   01:20:27                              
+5  Jesper Kracht           PI-København    H45-   01:43:47              1         3    3
+6  Lars Carstensen         Køge OK         H45-   01:44:33    2              4    2     
+7  Anton Lauritzen         Holbæk OK       H45-   01:48:32                              
+   Jakob Lind Tolborg      OK73            H40-    Ej slut                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Bruno Stub              PI-København    H55-   00:55:58              4         4    4
+2  Jan Thiesen             Holbæk OK       H50-   00:56:22    4    4    3               
+3  Karsten Jørgensen       PI-København    H55-   01:02:36              2         3    3
+4  Preben Klavsen          Holbæk OK       H50-   01:04:36    3    3    1               
+5  Hans Henrik Juda        Køge OK         H55-   01:10:31    2              4    2     
+6  Karsten Hansen          Køge OK         H50-   01:16:40    1              3    1     
+7  Jørn Andreasen          OK73            H55-   01:23:08         2         2         2
+8  Henrik Snedker Pedersen Holbæk OK       H55-   01:27:37                              
+9  Per Bundgaard Larsen    Holbæk OK       H55-   01:30:36                              
+   Kim Møller              Køge OK         H55-   Ej start                              
+   Michael Hjorth          OK73            H55-     Fejlst                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Torkil Hansen           PI-København    H60-   00:43:33              4         4    4
+2  Peter Sørensen          PI-København    H60-   00:44:06              3         3    3
+3  Karsten Richardt        Køge OK         H65-   00:50:11    4              4    2     
+4  Bent Johansen           OK73            H60-   00:52:25         4         3         2
+5  Bent Jensen             Holbæk OK       H60-   00:57:29    3    3    2               
+6  Steen Fladberg          Køge OK         H60-   00:57:34    2              2    1     
+7  Per Steen               Køge OK         H60-   01:04:06                              
+8  Henrik Weirauch Kristen OK73            H65-   01:10:04         2         1         1
+9  Erik Madsen             OK73            H60-   01:12:03                              
+10 Allan Wiingaard         Holbæk OK       H60-   01:32:16    1    1    1               
+11 Peter Leander           Køge OK         H65-   01:35:50                              
+12 Poul R. Koziara         Køge OK         H65-   01:40:39                              
+13 Steffen Nilsson         Køge OK         H65-   01:54:24                              
+   Birger Jarlkov          Køge OK         H65-     Fejlst                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Søren Thoustrup Jørgens OK73            H70-   00:49:13         4         4         4
+2  Ole Rasmussen           Køge OK         H70-   00:49:55    4              3    4     
+3  Arne Bech               OK73            H70-   00:50:19         3         2         3
+4  Erik Løvgren Jensen     Køge OK         H70-   00:51:09    3              1    3     
+5  Mogens Jensen           Holbæk OK       H70-   00:52:30    2    2    4               
+6  Bent Mortensen          OK73            H70-   00:53:45                              
+7  Kurt Dose               Køge OK         H70-   00:59:48                              
+8  John Jensen             Holbæk OK       H70-   01:00:24    1    1    3               
+9  Svend Fladberg          Køge OK         H70-   01:01:43                              
+10 Tage Frydendal          Holbæk OK       H70-   01:10:06                              
+11 Palle Bay               Køge OK         H70-   01:17:21                              
+12 Jørgen Poulsen          OK73            H70-   01:32:58                              
+13 Erling Hansen           Køge OK         H70-   01:34:09                              
+
+Gruppe H6 (H -14) - [2, 1]
+--------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Gabriel Bo Christensen  Holbæk OK       H-14   01:35:38    2    2    2               
+   August Bo Christensen   Holbæk OK       H-14   Ej start                              
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sebastian Bang          PI-København    H21-B  00:34:45              2         2    2
+2  Ronnie Hjorth           OK73            H35-B  00:39:13         2         2         2
+3  Niels Dalum Hansen      OK73            H21-B  00:43:10         2         2         1
+4  Brian Jimmi Bech        Holbæk OK       H35-B  00:46:33    2    1    2               
+5  Jakub Kolarik           OK73            H35-B  00:47:05                              
+6  Bo Brinkmann            Køge OK         H35-B  00:51:30    2              1    2     
+7  Klaus Koziara           Køge OK         H35-B  00:52:16    1              1    1     
+8  Henrik Johansen         Køge OK         H35-B  00:52:54                              
+9  John Barnewitz          Køge OK         H35-B  00:57:43                              
+10 Jan Kofoed Nielsen      PI-København    H21-B  00:59:21              1         1    1
+11 Hugo Frederiksen        OK73            H35-B  01:02:04                              
+12 Morten Vogelius         Holbæk OK       H35-B  01:06:06    1    1    1               
+13 Søren Sønberg Kristense Køge OK         H35-B  01:07:42                              
+   Rune Faxøe Larsen       Holbæk OK       H35-B  Ej start                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Søren Bloch             PI-København    H21-C  00:21:02              2         2    2
+2  Anders Frydendal Jensen Holbæk OK       H-20C  00:21:34    2    2    1               
+3  Jonas Amby Pedersen     Holbæk OK       H-12   00:27:28                              
+4  Henning Hansen          Køge OK         H-20C  00:32:40    1              2    1     
+5  Knud Lykking            OK73            H21-C  00:35:11         1         1         1
+6  Markus Emil Thomsen     Holbæk OK       H-12   00:35:24                              
+7  Leif Engborg            Holbæk OK       H21-C  00:52:59                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mette Stub              PI-København    D21-   00:55:40              4         4    4
+2  Astrid Thomsen          Holbæk OK       D21-   01:05:10    4    4    3               
+3  Malene Løkke            Køge OK         D35-   01:12:32    3              4    3     
+4  Line Stub               PI-København    D21-   01:20:54              2         2    3
+5  Jette Grimstrup         Køge OK         D21-   01:23:35    2              3    1     
+6  Kerstin Fisker          Holbæk OK       D21-   01:43:23    1    3    1               
+   Mette Thiesen           Holbæk OK       D-20     Fejlst                              
+
+Gruppe D2 (D 40-, D 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Camilla Rath Nielsen    PI-København    D40-   01:05:58              4         4    4
+2  Anette Lindegård Christ Holbæk OK       D40-   01:10:26    4    4    3               
+3  Anne Rosell Holt        Køge OK         D40-   01:19:37    3              4    3     
+4  Camilla Bøgevig Larkai  OK73            D40-   01:28:26         3         3         3
+5  Lenette Schunck Svendse Holbæk OK       D45-   01:44:37    2    2    2               
+6  Sanne Lund Kolenda      Holbæk OK       D45-   01:45:47                              
+7  Bente Frydendal Jensen  Holbæk OK       D40-   01:48:06                              
+8  Maria Christensen       Køge OK         D40-   02:11:07    1              2    2     
+   Elin Nørgård Kracht     PI-København    D45-     Fejlst                              
+
+Gruppe D3 (D -16, D 50-, D 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Else Gudme              OK73            D50-   01:00:54         4         4         4
+2  Bodil Klavsen           Holbæk OK       D50-   01:08:03    4    3    4               
+3  Gerda Marie Christianse Køge OK         D50-   01:10:15    3              3    4     
+4  Anette Binder Larsen    Holbæk OK       D50-   01:12:22    2    2    3               
+5  Marianne Lykking        OK73            D55-   01:15:35         1         2         3
+6  Susan Houmark Stub      PI-København    D55-   01:22:47              2         3    2
+7  Jannie Sørensen         Køge OK         D55-   01:32:31    1              1    2     
+8  Karin Pedersen          Holbæk OK       D55-   01:42:57                              
+9  Anne Willerup           Holbæk OK       D50-   01:45:59                              
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Elsa Bratholm           OK73            D65-   00:39:07         4         4         4
+2  Alice Bech              OK73            D65-   00:46:14         3         3         3
+3  Birgit Berner           Køge OK         D65-   01:02:04    4              2    4     
+   Britta Thomsen          Holbæk OK       D60-     Fejlst                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Inge Madsen             OK73            D70-   00:46:14         4         4         4
+2  Ulla Valnert            OK73            D70-   00:54:27         3         3         3
+3  Hanne Hansen            Køge OK         D70-   01:06:02    4              2    4     
+
+Gruppe D6 (D -14, D -16B) - [2, 1]
+----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Fie Filthuth Henningsen Holbæk OK       D-14   01:21:45    2    2    2               
+2  Carmen Cecilie Christen Holbæk OK       D-16B  01:35:28                              
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Charlotte Günther Madse Holbæk OK       D21-B  00:45:51    2    2    2               
+2  Nikita Bang             PI-København    D21-B  00:45:52              2         2    2
+3  Amalie Snedker Mosbæk   Holbæk OK       D21-B  00:49:11    2    2    1               
+4  Stine Kjeldsmark        Holbæk OK       D35-B  00:51:29                              
+5  Ann-Sofie Jentoft Ferti Holbæk OK       D-20B  00:52:41                              
+6  Trine Hershøj           OK73            D35-B  00:54:44         1         2         2
+7  Tanja Fjelbro Klavsen   Holbæk OK       D21-B  00:56:18                              
+8  Anni Lind               PI-København    D35-B  01:06:16              1         2    1
+9  Henny Rosenberg         OK73            D35-B  01:21:58         1         2         1
+10 Karina Randrup Nielsen  Holbæk OK       D35-B  01:23:42                              
+11 Gitte Rasmussen         Køge OK         D35-B  01:27:24    1              1    1     
+12 Cristina Kümmel         Holbæk OK       D35-B  01:52:01                              
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Joo Carstens            PI-København    D21-C  00:28:05              2         2    2
+2  Elisabeth Jentoft Ferti Holbæk OK       D-14B  00:33:36    2    2    1               
+3  Marianne Oslev          OK73            D21-C  00:36:08         1         2         1
+4  Leah Chin               Køge OK         D-14B  00:36:47    1              1    1     
+5  Katrine Andersen        Holbæk OK       D-14B  00:37:41                              
+6  Aia Rosell Holt         Køge OK         D-12   00:38:48                              
+7  Annette Rode            Holbæk OK       D21-C  00:42:10                              
+8  Lene Mundus             Køge OK         D-20C  00:42:46                              
+9  Matilde Andersen        Holbæk OK       D-14B  00:43:54                              
+10 Cecilie Frydendal Jense Holbæk OK       D-14B  00:44:21                              
+11 Grethe Jensen           Køge OK         D-20C  01:24:00                              
+   Anne Falk Mikkelsen     OK73            D21-C  Ej start                              
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1]
+----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Katrine Jentoft Fertin  Holbæk OK       D-12B  00:27:08    1    1    1               
+2  Simon Klinkby           Holbæk OK       H-12B  00:27:14    1    1    1               
+3  Elias Chin              Køge OK         Beg    00:29:25    1              1    1     
+4  Viktor Koziara          Køge OK         Beg    00:30:30    1              1    1     
+5  Nanna Rosell Holt       Køge OK         Beg    00:40:52                              
+6  Bente Dahl              PI-København    Beg    00:55:56              1         1    1
+7  Theodore Snedker Mosbæk Holbæk OK       Beg    01:19:34                              
+8  Anne Nielsen            Køge OK         Beg    01:22:08                              
+9  Caspian Bo Christensen  Holbæk OK       Beg    01:33:47                              
+   Laura Koziara           Køge OK         D-12B  Ej start                              
+   Jacob Lund Kolenda      Holbæk OK       Beg    Ej start                              
+

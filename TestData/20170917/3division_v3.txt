@@ -1,0 +1,183 @@
+Stilling 3 division, Sydkredsen
+-------------------------------
+
+| Placering |   Klubnavn    |  Runde 1  |  Runde 1   |  Runde 2  |  Runde 2   | Stilling  |  Stilling  | kommentar |
+|           |               | LøbsPoint | MatchPoint | LøbsPoint | MatchPoint | LøbsPoint | MatchPoint |           |
+--------------------------------------------------------------------------------------------------------------------
+|     1     | OK Esbjerg    |    208    |     4      |    168    |     4      |    376    |     8      |           |
+|     2     | Svendborg/OPI |    96     |     2      |    98     |     2      |    194    |     4      |           |
+|     3     | West/Ribe     |    69     |     0      |    95     |     0      |    164    |     0      |           |
+
+1. runde, 2017-04-02, Hastrup Plantage
+
+OK Esbjerg                               208    - 70        4
+Svendborg/OPI                            96     - 144       2
+West/Ribe                                69     - 159       0
+
+OK Esbjerg - Svendborg/OPI               : 105 - 40
+OK Esbjerg - West/Ribe                   : 103 - 30
+Svendborg/OPI - West/Ribe                : 56 - 39
+
+                         ---ooo---                          
+
+
+Divisionsmatch (Munkebjerg Øst, 2017-09-12)
+-------------------------------------------
+                                               score      point
+OK Esbjerg                                   168 -    88      4
+Svendborg/OPI                                 98 -   137      2
+West/Ribe                                     95 -   136      0
+
+1 : OK Esbjerg - Svendborg/OPI           :    86 -    44
+2 : OK Esbjerg - West/Ribe               :    82 -    44
+3 : Svendborg/OPI - West/Ribe            :    54 -    51
+
+                                     m1    m2    m3   
+                                    ----- ----- ----- 
+H1 (H20, H21, H35)                  27-6  24-14  7-19 
+H2 (H40, H45)                       11-4  11-7   4-11 
+H3 (H16, H50, H55)                  15-3  15-3   6-5  
+H4 (H60, H65)                        5-5   5-5   7-3  
+H5 (H70)                             5-5   3-7   4-6  
+H6 (H14, H16B)                       0-0   0-0   0-0  
+H7 (H20B, H21B, H35B)                4-4   4-2   5-2  
+H8 (H12, H14B, H20C, H21C)           0-0   0-0   0-0  
+D1 (D20, D21, D35)                   0-0   0-0   0-0  
+D2 (D40, D45)                        0-0   0-0   0-0  
+D3 (D16, D50, D55)                  14-4  15-0   6-0  
+D4 (D60, D65)                        0-7   0-0   7-0  
+D5 (D70)                             0-4   0-4   4-3  
+D6 (D14, D16B)                       0-0   0-0   0-0  
+D7 (D20B, D21B, D35B)                2-2   2-2   2-2  
+D8 (D12, D14B, D20C, D21C)           2-0   2-0   2-0  
+9  (H10, D10, H12B, D12B, Begynder)  1-0   1-0   0-0  
+Ialt:                               86-44 82-44 54-51 
+
+Gruppe H1 (H20, H21, H35) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Eskil Schøning          West/Ribe       H21    00:51:11         8    8
+2  Lars Nielsen            OK Esbjerg      H35    01:15:55    8    7     
+3  Troels Lang Nielsen     OK Esbjerg      H20    01:28:30    9*   8*    
+4  Per Storm Hansen        Svendborg/OPI   H35    01:33:07    6         7
+5  Palle Lang Nielsen      OK Esbjerg      H21    01:38:53    5    5     
+6  Søren Skov Pedersen     West/Ribe       H35    01:41:11         4    6
+7  Mathias Jensen          OK Esbjerg      H20    01:46:25    5*   4*    
+8  Klaus Lønborg           West/Ribe       H35    01:59:22         2    5
+
+Gruppe H2 (H40, H45) - [6, 5, 4, 3, 2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Henrik B. Thomsen       OK Esbjerg      H45    01:11:20    6    6     
+2  Mogens Lang Nielsen     OK Esbjerg      H40    01:20:58    5    5     
+3  Palle Cavan             West/Ribe       H40    01:32:53         4    6
+4  Thorkild Jepsen         West/Ribe       H45    01:41:13         3    5
+5  Torben Kruse            Svendborg/OPI   H45    01:55:25    4         4
+   Arne Nygaard            West/Ribe       H45        Disk               
+
+Gruppe H3 (H16, H50, H55) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Ulrik Revsbech          OK Esbjerg      H50    01:15:24  5.5  5.5     
+1  Niels Jensen            OK Esbjerg      H50    01:15:24  5.5  5.5     
+3  Erik Lindholdt          OK Esbjerg      H50    01:25:09    4    4     
+4  Finn Henriksen          Svendborg/OPI   H55    01:31:06    3         6
+5  Sven Wodschow           West/Ribe       H55    01:58:39         3    5
+   Bjørn R. Christoffersen Svendborg/OPI   H55    Ej start               
+
+Gruppe H4 (H60, H65) - [4, 3, 2, 1]
+-----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Tonny Schwærter         OK Esbjerg      H65    00:50:37    4    4     
+2  Svend Johansen          Svendborg/OPI   H65    00:56:04    3         4
+3  Hans Aage Hvalsøe Hanse Svendborg/OPI   H65    00:57:38    2         3
+4  Carl Bengt              West/Ribe       H65    01:01:32         3    2
+5  Mogens Nielsen          West/Ribe       H65    01:04:14         2    1
+6  Knud Christensen        OK Esbjerg      H60    01:16:37    1    1     
+7  Villy Møller Hansen     OK Esbjerg      H65    01:29:45               
+   Jørgen Bang             OK Esbjerg      H65     Ej slut               
+
+Gruppe H5 (H70) - [4, 3, 2, 1]
+------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Jens Sørensen           West/Ribe       H70    00:36:46         4    4
+2  Ove Splittorff          Svendborg/OPI   H70    00:41:38    4         3
+3  Kurt Pedersen           West/Ribe       H70    00:43:42         3    2
+4  Louis A. Sørensen       OK Esbjerg      H70    00:44:07    3    2     
+5  Poul Larsen             OK Esbjerg      H70    00:49:52    2    1     
+6  Per Christensen         OK Esbjerg      H70    00:51:26               
+7  Knud Erik Thomsen       Svendborg/OPI   H70    00:58:56    1         1
+8  Sven Elbro              OK Esbjerg      H70    01:01:38               
+9  Herluf Jensen           Svendborg/OPI   H70    01:13:29               
+
+Gruppe H6 (H14, H16B) - [4, 3, 2, 1] + [2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+
+Gruppe H7 (H20B, H21B, H35B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Jeppe Bjerregård Larsen OK Esbjerg      H35B   00:59:55    2    2     
+2  Emils Dudins            OK Esbjerg      H21B   00:59:56    2    2     
+3  Jes Pedersen            West/Ribe       H21B   01:00:36         2    2
+4  Uffe Nielsen            Svendborg/OPI   H35B   01:34:49    2         2
+5  Ole Axelsen             Svendborg/OPI   H35B   01:49:47    1         2
+6  Jens M. Ibsen           Svendborg/OPI   H35B   02:17:54    1         1
+
+Gruppe H8 (H12, H14B, H20C, H21C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+
+Gruppe D1 (D20, D21, D35) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+
+Gruppe D2 (D40, D45) - [6, 5, 4, 3, 2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+
+Gruppe D3 (D16, D50, D55) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Mette Lolk              OK Esbjerg      D50    00:57:48    6    6     
+2  Hanne Jochumsen         OK Esbjerg      D55    01:08:30    5    5     
+3  Anita Lunding           Svendborg/OPI   D50    01:19:24    4         6
+4  Bente Pedersen          OK Esbjerg      D55    01:27:44    3    4     
+
+Gruppe D4 (D60, D65) - [4, 3, 2, 1]
+-----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Annette Færing          Svendborg/OPI   D60    00:57:37    4         4
+2  Maja Lorenz             Svendborg/OPI   D65    01:08:13    3         3
+   Anette Hansen           OK Esbjerg      D65        Disk               
+
+Gruppe D5 (D70) - [4, 3, 2, 1]
+------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Randi Splittorff        Svendborg/OPI   D70    00:38:12    4         4
+2  Else Pedersen           West/Ribe       D70    01:26:24         4    3
+
+Gruppe D6 (D14, D16B) - [4, 3, 2, 1] + [2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+
+Gruppe D7 (D20B, D21B, D35B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Asta Pedersen           West/Ribe       D35B   01:15:46         2    2
+2  Johanne Jensen          OK Esbjerg      D20B   01:35:28    2    2     
+3  Leila Damkjær Pedersen  Svendborg/OPI   D35B   01:36:27    2         2
+   Marianne Schmidt        OK Esbjerg      D35B    Ej slut               
+
+Gruppe D8 (D12, D14B, D20C, D21C) - [2, 2, 1, 1] + [2, 1]
+---------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Margarita Dudina        OK Esbjerg      D21C   00:38:17    2    2     
+2  Signe Jensen            OK Esbjerg      D21C   00:42:55               
+3  Kirsten Wolff Thomsen   Svendborg/OPI   D21C   00:57:50              2
+
+Gruppe 9 (H10, D10, H12B, D12B, Begynder) - [1, 1, 1, 1, 1, 1]
+--------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3
+1  Maja Bjerregaard Larsen OK Esbjerg      Begynd 00:23:58    1    1     
+

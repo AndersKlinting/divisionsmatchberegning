@@ -1,0 +1,181 @@
+Matcher (6 division)
+--------------------
+1 : Hvalsø OK - Kildeholm OK                       :    27 -    64
+2 : Hvalsø OK - DSR/Fredensborg/Vinderød           :    33 -    34
+3 : Hvalsø OK - OK S.G.                            :    30 -    49
+4 : Kildeholm OK - DSR/Fredensborg/Vinderød        :    61 -    29
+5 : Kildeholm OK - OK S.G.                         :    60 -    41
+6 : DSR/Fredensborg/Vinderød - OK S.G.             :    35 -    46
+
+Stilling
+--------
+                                               score      point
+Kildeholm OK                             :   185 -    97      6
+OK S.G.                                  :   136 -   125      4
+DSR/Fredensborg/Vinderød                 :    98 -   140      2
+Hvalsø OK                                :    90 -   147      0
+
+                                             m1    m2    m3    m4    m5    m6   
+                                            ----- ----- ----- ----- ----- ----- 
+H1 (H -20, H 21-, H 35-)                     4-11  6-0   6-5  11-0  11-4   0-6  
+H2 (H 40-, H 45-)                            4-3   4-3   4-5   3-4   3-6   3-6  
+H3 (H -16, H 50-, H 55-)                     3-6   4-3   4-3   6-3   6-3   4-3  
+H4 (H 60-, H 65-)                            2-7   3-4   3-6   6-3   6-4   3-6  
+H5 (H 70-)                                   2-7   3-6   2-7   5-5   3-7   5-5  
+H6 (H -14)                                   0-0   0-0   0-0   0-0   0-0   0-0  
+H7 (H -20B, H 21-B, H 35-B)                  3-3   3-3   4-2   3-3   4-2   4-2  
+H8 (H -12, H -14B, H -20C, H 21-C)           2-1   2-1   2-0   2-1   2-0   2-0  
+D1 (D -20, D 21-, D 35-)                     0-0   0-4   0-0   0-4   0-0   4-0  
+D2 (D 40-, D 45-)                            0-7   0-4   0-0   7-2   7-0   4-0  
+D3 (D -16, D 50-, D 55-)                     4-0   4-0   3-4   0-0   0-4   0-4  
+D4 (D 60-, D 65-)                            3-4   4-0   2-7   4-0   4-5   0-7  
+D5 (D 70-)                                   0-7   0-0   0-4   7-0   6-3   0-4  
+D6 (D -14, D -16B)                           0-0   0-0   0-0   0-0   0-0   0-0  
+D7 (D -20B, D 21-B, D 35-B)                  0-4   0-4   0-4   3-3   4-2   4-2  
+D8 (D -12, D -14B, D -20C, D 21-C)           0-2   0-2   0-2   2-1   2-1   2-1  
+9  (H -10, D -10, H -12B, D -12B, Begynder)  0-2   0-0   0-0   2-0   2-0   0-0  
+Ialt:                                       27-64 33-34 30-49 61-29 60-41 35-46 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [6, 5, 4, 3, 2, 1]
+----------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lasse Hansen            Kildeholm OK    H35-   01:15:40    6              6    6     
+2  Lasse Koefoed Sudergaar Kildeholm OK    H21-   01:24:39    5              5    5     
+3  Jens Chr. Buch          Hvalsø OK       H35-   01:35:57    4    6    6               
+4  Kasper Gabs Hansen      OK S.G.         H-20   01:46:35              5         4    6
+   Helge Tillingsøe        DSR/Fredensborg H21-   Ej start                              
+
+Gruppe H2 (H 40-, H 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Erik Øhlenschlæger      Hvalsø OK       H45-   01:05:03    4    4    4               
+2  Lars Vindfeld           OK S.G.         H40-   01:08:58              3         4    4
+3  Kim Clausen             DSR/Fredensborg H40-   01:10:07         3         4         3
+4  Henrik Visborg Thune    Kildeholm OK    H45-   01:25:31    3              3    3     
+5  Martin Vilstrup         OK S.G.         H45-   01:48:40              2         2    2
+   Joakim Ilsing Sørensen  Hvalsø OK       H40-   Ej start                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Leif Sudergaard         Kildeholm OK    H50-   01:00:43    4              4    4     
+2  Henrik Tølløse          Hvalsø OK       H55-   01:02:51    3    4    4               
+3  Jørn Mouritzen          DSR/Fredensborg H50-   01:08:50         3         3         4
+4  Ib Rasmussen            OK S.G.         H55-   01:11:57              3         3    3
+5  Knud Dam                Kildeholm OK    H50-   01:37:47    2              2    2     
+   Preben Mortensen        Hvalsø OK       H55-   Ej start                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Nils Sættem             Kildeholm OK    H60-   00:50:21    4              4    4     
+2  Jan Hausner             OK S.G.         H65-   01:13:48              4         3    4
+3  Johan Frydendahl        DSR/Fredensborg H65-   01:17:15         4         3         3
+4  Ove Bendtsen            Kildeholm OK    H65-   01:17:26    3              2    2     
+5  Tage Reher Christensen  Hvalsø OK       H60-   01:22:28    2    3    3               
+6  Tom Christensen         OK S.G.         H65-   01:26:23              2         1    2
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Allan Christiansen      DSR/Fredensborg H70-   00:49:50         4         4         4
+2  Niels Tulinius          OK S.G.         H70-   00:52:45              4         4    3
+3  Kaare Vindfeld          OK S.G.         H70-   00:54:17              3         3    2
+4  Erik Bach Sørensen      Kildeholm OK    H70-   00:59:51    4              3    2     
+5  Carl Djurhuus           Kildeholm OK    H70-   01:02:52    3              2    1     
+6  Sven Christensen        OK S.G.         H70-   01:05:39                              
+7  Sune Frederiksen        Hvalsø OK       H70-   01:10:43    2    3    2               
+8  Poul Nissen             DSR/Fredensborg H70-   01:13:13         2         1         1
+   Eskild Rønne            Kildeholm OK    H70-     Fejlst                              
+
+Gruppe H6 (H -14) - [2, 1]
+--------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jesper Damborg Bendtsen Kildeholm OK    H35-B  00:43:10    2              2    2     
+2  Hans G. Olsen           DSR/Fredensborg H35-B  00:45:01         2         2         2
+3  Jonathan Skovsø Anderse Hvalsø OK       H21-B  00:51:58    2    2    2               
+4  Eskil Gotfredsen        Hvalsø OK       H35-B  00:55:32    1    1    2               
+5  Svend W. Frydendahl     DSR/Fredensborg H21-B  00:56:10         1         1         2
+5  Niels Rønne             Kildeholm OK    H35-B  00:56:10    1              1    2     
+7  Bent Andersen           OK S.G.         H35-B  01:00:10              1         1    1
+8  Bøje Pedersen           OK S.G.         H35-B  01:13:34              1         1    1
+   Asger Espersen          OK S.G.         H21-B  Ej start                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Flemming Hjorth Jensen  Hvalsø OK       H21-C  00:48:35    2    2    2               
+2  Hans Christian Studstru Kildeholm OK    H21-C  00:52:08    1              2    2     
+3  Bjørn Helstrup          DSR/Fredensborg H21-C  00:54:58         1         1         2
+
+Gruppe D1 (D -20, D 21-, D 35-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Helle Tibian            DSR/Fredensborg D35-   01:21:47         4         4         4
+
+Gruppe D2 (D 40-, D 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Tine Rønn Østergaard    Kildeholm OK    D45-   01:15:15    4              4    4     
+2  Anne-Marie Rønne        Kildeholm OK    D45-   01:31:14    3              3    3     
+3  Lena Hamborg            DSR/Fredensborg D45-   01:42:54         4         2         4
+
+Gruppe D3 (D -16, D 50-, D 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Birgit Hausner          OK S.G.         D55-   01:06:01              4         4    4
+2  Jette Karlsen           Hvalsø OK       D50-   01:08:18    4    4    3               
+   Gitte Willumsen         DSR/Fredensborg D50-   Ej start                              
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Dorte Dam               Kildeholm OK    D65-   01:00:06    4              4    4     
+2  Mette Høj               OK S.G.         D65-   01:04:09              4         3    4
+3  Annet Krog              OK S.G.         D60-   01:06:09              3         2    3
+4  Annelise Saltoft Jensen Hvalsø OK       D60-   01:15:09    3    4    2               
+   Lis Hedelund            DSR/Fredensborg D65-   Ej start                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ina Blom                Kildeholm OK    D70-   00:44:49    4              4    4     
+2  Tove Petersen           OK S.G.         D70-   00:51:14              4         3    4
+3  Doris Hansen            Kildeholm OK    D70-   01:14:34    3              3    2     
+
+Gruppe D6 (D -14, D -16B) - [2, 1]
+----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Hanne N Waltenburg      Kildeholm OK    D35-B  00:51:34    2              2    2     
+2  Birgitte Sørensen       DSR/Fredensborg D35-B  00:57:09         2         2         2
+3  Maja Rønn Østergaard    Kildeholm OK    D-20B  01:09:39    2              1    2     
+4  Karen Lauberg Lauritsen DSR/Fredensborg D35-B  01:14:43         2         1         2
+5  Bodil Strømsholt        OK S.G.         D35-B  01:18:43              2         1    1
+6  Lise Olesen             OK S.G.         D35-B  01:22:24              2         1    1
+   Birthe Tulinius         OK S.G.         D35-B    Fejlst                              
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Kristina Nordenhof Lars Kildeholm OK    D21-C  00:34:05    2              2    2     
+2  Dorte Koefoed Sudergaar Kildeholm OK    D21-C  00:35:58                              
+3  Linnea Tibian           DSR/Fredensborg D-14B  00:36:33         2         1         2
+4  Liva Sandahl Mark Hanse Kildeholm OK    D-14B  00:38:16                              
+5  Aase S.  Andersen       OK S.G.         D21-C  00:41:28              2         1    1
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1]
+----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Sofie Mariager Ingvorse Kildeholm OK    D-10   00:38:13    1              1    1     
+2  Oskar Sandal Mark Hanse Kildeholm OK    H-10   00:48:29    1              1    1     
+3  Johan Sandal Mark Hanse Kildeholm OK    H-10   00:48:33                              
+4  Thea Nordenhof Egdø     Kildeholm OK    D-10   00:54:27                              
+

@@ -1,0 +1,287 @@
+Matcher (3 division)
+--------------------
+1 : OK Sorø - Herlufsholm OK                       :   127 -    97
+2 : OK Sorø - FSK Orientering                      :   134 -    87
+3 : OK Sorø - Helsingør SOK                        :   126 -    83
+4 : Herlufsholm OK - FSK Orientering               :   110 -   100
+5 : Herlufsholm OK - Helsingør SOK                 :   104 -    97
+6 : FSK Orientering - Helsingør SOK                :    93 -    94
+
+Stilling
+--------
+                                               score      point
+OK Sorø                                  :   387 -   267      6
+Herlufsholm OK                           :   311 -   324      4
+Helsingør SOK                            :   274 -   323      2
+FSK Orientering                          :   280 -   338      0
+
+                                      m1     m2     m3     m4      m5    m6   
+                                    ------ ------ ------ ------- ------ ----- 
+H1 (H -20, H 21-, H 35-)             27-9   23-16  23-15  10-23   13-17 20-15 
+H2 (H 40-, H 45-)                    15-6   15-6   15-6    6-15    6-15  9-12 
+H3 (H -16, H 50-, H 55-)             15-9   17-7   14-10  14-9    11-12  9-12 
+H4 (H 60-, H 65-)                     6-4    7-3    7-3    5-5     5-5   3-7  
+H5 (H 70-)                            2-7    2-7    2-7    7-3     3-7   3-7  
+H6 (H -14, H -16B)                    8-4   10-2   10-0    6-3     6-0   4-0  
+H7 (H -20B, H 21-B, H 35-B)           0-6    0-6    0-4    5-4     5-3   6-2  
+H8 (H -12, H -14B, H -20C, H 21-C)    4-2    4-2    4-2    0-2     0-2   0-2  
+D1 (D -20, D 21-, D 35-)             11-9   11-7   10-5   12-8    12-6   9-6  
+D2 (D 40-, D 45-)                    10-11  15-3   15-0   15-3    15-0   6-0  
+D3 (D -16, D 50-, D 55-)             11-9   11-7   11-4   11-9    12-6  10-5  
+D4 (D 65-)                            3-6    4-3    3-6    7-2     6-4   2-7  
+D5 (D 70-)                            0-4    0-7    0-7    3-6     2-7   3-7  
+D6 (D -14, D -16B)                   10-0   10-0   10-0    0-0     0-0   0-0  
+D7 (D 21-B, D 35-B)                   0-6    0-6    0-4    4-5     5-3   6-2  
+D8 (D -12, D -14B, D -20C, D 21-C)    5-2    5-2    2-7    2-0     0-7   0-7  
+9  (H -10, D -10, H -12B, Begynder)   0-3    0-3    0-3    3-3     3-3   3-3  
+Ialt:                               127-97 134-87 126-83 110-100 104-97 93-94 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rolf Lund               Helsingør SOK   H35-   00:51:34              8         8    8
+2  Per Hansen              FSK Orientering H21-   00:58:11         8         8         7
+3  Lars Bukkehave          OK Sorø         H21-   01:05:53    8    7    7               
+4  Peter Hansen            OK Sorø         H-20   01:08:11    9*   8*   8*              
+5  Aimas Lund              OK Sorø         H-20   01:10:14    7*   6*   6*              
+6  Lars Bech Jensen        FSK Orientering H21-   01:13:00         4         7         6
+7  Anders Knudsen          Herlufsholm OK  H21-   01:13:33    5              6    7     
+8  Bjørn Rasmussen         FSK Orientering H35-   01:13:34         3         5         5
+9  Peter Karberg           Herlufsholm OK  H35-   01:17:01    4              4    6     
+10 William Lund Christense Helsingør SOK   H21-   01:17:37              4         5    4
+11 Bjarne B. Jensen        Helsingør SOK   H35-   01:18:19              3         4    3
+12 Henrik Vestergaa Karnøe OK Sorø         H21-   01:18:43    3    2    2               
+13 Jan H Jørgensen         OK Sorø         H21-   01:22:40                              
+14 Jesper Munch Jespersen  OK Sorø         H21-   01:24:52                              
+15 Michael Jensen          FSK Orientering H35-   01:30:14         1         3         2
+   Kasper Levring          OK Sorø         H35-     Fejlst                              
+   Arne Kristensen         Herlufsholm OK  H35-     Fejlst                              
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Kåre Sørensen           OK Sorø         H45-   00:50:16    6    6    6               
+2  Kristian Kærsgaard      OK Sorø         H45-   00:55:55  4,5  4,5  4,5               
+2  Søren Madsen            OK Sorø         H45-   00:55:55  4,5  4,5  4,5               
+4  Torsten Bjørn           Helsingør SOK   H45-   01:01:18              3         6    6
+5  Leif Pedersen           FSK Orientering H45-   01:04:11         3         6         5
+6  Torben Seir             Helsingør SOK   H45-   01:04:45              2         5    4
+7  Martin Munk             OK Sorø         H40-   01:09:03                              
+8  Jan Frank Nielsen       FSK Orientering H45-   01:10:11         2         5         3
+9  Carsten Thye Agger      Helsingør SOK   H45-   01:11:47              1         4    2
+10 Jens Thorup             FSK Orientering H45-   01:14:26         1         4         1
+11 Thomas Pickering        FSK Orientering H45-   01:17:26                              
+12 Torben Kristensen       Herlufsholm OK  H40-   01:18:36    3              3    3     
+13 Henrik Mathiesen        Herlufsholm OK  H45-   01:24:16    2              2    2     
+14 Kaj Munck               Herlufsholm OK  H45-   01:25:49    1              1    1     
+15 Niels Albertsen         Herlufsholm OK  H40-   01:45:01                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jonatan Høhne           OK Sorø         H-16   00:48:49    8*   8*   8*              
+2  Flemming Wendelboe      Helsingør SOK   H55-   00:49:08              5         6    6
+3  Jesper Børsting         Herlufsholm OK  H50-   00:49:31    5              6    5     
+4  Bo Bertram Christensen  Helsingør SOK   H55-   00:50:16              4         4    5
+5  Knud Madsen             OK Sorø         H55-   00:54:56    4    5    3               
+6  Svend-Erik Munck        Herlufsholm OK  H55-   00:58:47    3              5    3     
+7  Bjarne Iversen          FSK Orientering H55-   00:59:05         4         4         4
+8  Gustav Moll             OK Sorø         H-16   00:59:07    3*   4*   3*              
+9  Kurt Thuesen            FSK Orientering H55-   00:59:50         2         3         3
+10 Jesper Andersen         FSK Orientering H50-   01:02:16         1         2         2
+11 Laus Seir Hansen        Helsingør SOK   H55-   01:02:33              1         2    1
+12 Kaare Børsting          Herlufsholm OK  H-16   01:02:45    1              3*   3*    
+13 Jens Frandsen           OK Sorø         H50-   01:08:28                              
+14 Jan Truelsen            Herlufsholm OK  H55-   01:09:06                              
+15 Ebbe Kajberg            OK Sorø         H55-   01:16:38                              
+16 Hans-Ole Jensen         OK Sorø         H55-   01:22:58                              
+17 John Noes Jørgensen     FSK Orientering H55-   01:28:11                              
+   Jesper Parlo            OK Sorø         H50-   Ej start                              
+   Jan Koue Larsen         OK Sorø         H50-     Fejlst                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Kim Folander            OK Sorø         H60-   00:43:17    4    4    4               
+2  Frede Scheye            Herlufsholm OK  H60-   00:45:04    3              4    4     
+3  John Pedersen           OK Sorø         H60-   00:48:05    2    3    3               
+4  Leif Kofoed             Helsingør SOK   H65-   00:50:16              2         3    4
+5  John Pihl               Helsingør SOK   H65-   00:51:39              1         2    3
+6  Karl Aage Hald          FSK Orientering H65-   00:54:36         2         3         2
+7  Erik Roslyng            FSK Orientering H65-   00:55:32         1         2         1
+8  Karl Hougaard           FSK Orientering H65-   00:56:06                              
+9  Torsten Grange          Herlufsholm OK  H65-   01:00:58    1              1    1     
+10 Henrik Lawaetz          OK Sorø         H65-   01:01:36                              
+11 Helmuth Hansen          Herlufsholm OK  H60-   01:03:08                              
+12 Vagner Sørensen         FSK Orientering H65-   01:04:25                              
+13 Ole Brusch              FSK Orientering H65-   01:10:14                              
+14 Steen Lund              OK Sorø         H60-   01:12:19                              
+15 Tom P. Neesgaard        FSK Orientering H65-   01:14:43                              
+16 Stig Andersen           Herlufsholm OK  H60-   01:33:20                              
+   Søren A. Nielsen        Helsingør SOK   H60-   Ej start                              
+   Jørn Steffensen         Helsingør SOK   H65-   Ej start                              
+   Preben Lupnaav          Herlufsholm OK  H65-   Ej start                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jakob Vang              Helsingør SOK   H70-   00:34:09              4         4    4
+2  Jørgen Jensen           Helsingør SOK   H70-   00:34:41              3         3    3
+3  Flemming Larsen         Helsingør SOK   H70-   00:38:06                              
+4  Niels Lyhne             Herlufsholm OK  H70-   00:40:57    4              4    2     
+5  Bent Børsting           Herlufsholm OK  H70-   00:45:16    3              3    1     
+6  Per Lennart Johansson   FSK Orientering H70-   00:47:49         4         2         2
+7  Hans-Ole Ketting        FSK Orientering H70-   00:50:25         3         1         1
+8  Knud O Engelsholm       Helsingør SOK   H70-   01:05:51                              
+9  Ole Ring                OK Sorø         H70-   01:11:01    2    2    2               
+
+Gruppe H6 (H -14, H -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Hubert Schibsbye Møller OK Sorø         H-14   00:45:37    6*   6*   6*              
+2  Magnus Leen Olsson      Herlufsholm OK  H-14   00:59:34    4*             6*   6*    
+3  Jonas Emil Fogh         OK Sorø         H-14   01:04:04    2    4*   4*              
+4  William Andersen        FSK Orientering H-16B  01:27:03         2         3         4
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jesper Rene Mortensen   Herlufsholm OK  H35-B  00:46:33    2              2    2     
+2  Morten Løjmand          Herlufsholm OK  H35-B  00:57:08    2              2    2     
+3  Michael Licht           FSK Orientering H35-B  00:57:13         2         2         2
+4  Henrik Zimmermann       FSK Orientering H35-B  01:01:01         2         1         2
+5  Michael Larsen          FSK Orientering H35-B  01:04:21         2         1         2
+6  Niels Frederiksen       Helsingør SOK   H35-B  01:07:18              2         2    1
+7  Niels Harremöes         FSK Orientering H35-B  01:12:21                              
+8  Peter Hansen            Herlufsholm OK  H35-B  01:24:11    2              1    1     
+9  Thomas Leen Olsson      Herlufsholm OK  H35-B  01:25:03                              
+10 Anders Bo Friis         FSK Orientering H35-B  01:36:13                              
+11 Torben Jelager          Helsingør SOK   H35-B  02:13:51              2         1    1
+   Michael Nilsson         OK Sorø         H21-B  Ej start                              
+   Søren Østergaard        Helsingør SOK   H35-B  Ej start                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Noah Munk Hansen        OK Sorø         H-12   00:23:25    4*   4*   4*              
+2  John Miené              Helsingør SOK   H21-C  00:36:02              2         2    2
+3  Bent Horn Andersen      FSK Orientering H21-C  00:39:53         2         2          
+4  Lars Bo Kjær            FSK Orientering H21-C  00:42:44                              
+5  Jan Bigler              Herlufsholm OK  H21-C  00:42:59    2                         
+6  Benny Clausen           Herlufsholm OK  H21-C  00:44:26                              
+7  Thomas Benjamin Boesgaa FSK Orientering H21-C  00:47:42                              
+8  Henning Nielsen         Helsingør SOK   H21-C  01:12:55                              
+   Nils Lind Petersen      FSK Orientering H21-C    Fejlst                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Hanne Fogh              OK Sorø         D35-   00:56:15    6    6    6               
+2  Lene Jensen             Helsingør SOK   D35-   01:05:16              5         6    6
+3  Eva Smedegaard          OK Sorø         D21-   01:11:30    5    5    4               
+4  Henriette Hansen        Herlufsholm OK  D35-   01:24:45    4              6    5     
+5  Trine Horn Andersen     FSK Orientering D21-   01:34:03         4         5         5
+6  Tine Meyhoff Petersen   Herlufsholm OK  D21-   01:34:30    3              4    4     
+7  Lisbet Hansen           FSK Orientering D21-   01:44:06         3         3         4
+8  Lise Ravnshøj Andersen  Herlufsholm OK  D21-   01:53:29    2              2    3     
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Birgit Børsting         Herlufsholm OK  D45-   01:03:45    6              6    6     
+2  Anne Frandsen           OK Sorø         D45-   01:11:08    5    6    6               
+3  Lykke Berg              Herlufsholm OK  D45-   01:14:28    4              5    5     
+4  Berit Ahlmann Hansen    OK Sorø         D40-   01:21:58    3    5    5               
+5  Merete Kleist           OK Sorø         D45-   01:47:32    2    4    4               
+6  Helle Hansen            Herlufsholm OK  D45-   01:50:27    1              4    4     
+7  Jytte Sørensen          FSK Orientering D45-   01:56:15         3         3         6
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mette Filskov           OK Sorø         D55-   00:40:36    6    6    6               
+2  Søs Munch Hansen        OK Sorø         D55-   00:43:51    5    5    5               
+3  Gitte Gefke Hansen      FSK Orientering D50-   00:52:33         4         6         6
+4  Mette Seir Hansen       Helsingør SOK   D55-   00:56:31              4         6    5
+5  Susanne Truelsen        Herlufsholm OK  D55-   01:04:12    4              5    5     
+6  Lidy Grange             Herlufsholm OK  D55-   01:05:03    3              4    4     
+7  Lone Christensen        FSK Orientering D55-   01:16:04         3         3         4
+8  Lone Jørgensen          Herlufsholm OK  D50-   01:33:58    2              2    3     
+   Katrine Holst           FSK Orientering D50-     Fejlst                              
+
+Gruppe D4 (D 65-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Lene Hansen             Herlufsholm OK  D65-   00:45:37    4              4    4     
+2  Kirsten Ellekilde       Helsingør SOK   D65-   00:49:18              4         3    4
+3  Else Neergaard          OK Sorø         D65-   00:49:37    3    4    3               
+4  Merete Ravnshøj Anderse Herlufsholm OK  D65-   00:51:27    2              3    2     
+5  Lise Bertram Nielsen    Helsingør SOK   D65-   00:57:42              2         1    3
+6  Anne Sørensen           Helsingør SOK   D65-   00:58:04                              
+7  Lise Kolte              FSK Orientering D65-   00:58:27         3         2         2
+8  Lena Hansen             Herlufsholm OK  D65-   01:25:51                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Inge Olsen              Helsingør SOK   D70-   00:40:02              4         4    4
+2  Vibeke Miené            Helsingør SOK   D70-   00:42:52              3         3    3
+3  Inger Jensen            FSK Orientering D70-   00:43:35         4         4         2
+4  Marie Krogsgaard        Helsingør SOK   D70-   00:44:03                              
+5  Mette Bertram           Helsingør SOK   D70-   00:50:13                              
+6  Sigrunn Hass            Helsingør SOK   D70-   00:54:02                              
+7  Ruth Børsting           Herlufsholm OK  D70-   01:21:40    4              3    2     
+8  Elisa Sørensen          FSK Orientering D70-   01:22:36         3         2         1
+9  Jytte Eltang            FSK Orientering D70-   01:42:45                              
+
+Gruppe D6 (D -14, D -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Emma Frandsen           OK Sorø         D-14   00:56:12    6*   6*   6*              
+2  Mathilde Smedega Madsen OK Sorø         D-14   01:00:25    4*   4*   4*              
+
+Gruppe D7 (D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mette Roslyng           FSK Orientering D21-B  00:56:28         2         2         2
+2  Karen Torp-Lupnaav      Herlufsholm OK  D35-B  00:57:03    2              2    2     
+3  Gitte Frølich           FSK Orientering D35-B  00:58:43         2         2         2
+4  Dorte Seifert Teide     FSK Orientering D35-B  00:59:43         2         1         2
+5  Rita Løjmand            Herlufsholm OK  D35-B  01:07:31    2              1    2     
+6  Minna Seir              Helsingør SOK   D35-B  01:09:33              2         2    1
+7  Susanne Tanderup        Herlufsholm OK  D35-B  01:12:20    2              1    1     
+8  Birgitte Andersen       Helsingør SOK   D35-B  01:13:35              2         1    1
+9  Erica Wyrdling          Herlufsholm OK  D21-B  01:38:05                              
+   Cita Nielsen            Herlufsholm OK  D35-B  Ej start                              
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rikke Christensen       Helsingør SOK   D21-C  00:25:20              2         2    2
+2  Dicte Højbjerg Andersen Helsingør SOK   D-12   00:26:26              4*        4*   4*
+3  Sarah Nommesen          Helsingør SOK   D-12   00:28:53              1*        1*   1*
+4  Ilsabe Børsting         Herlufsholm OK  D21-C  00:34:45    2              2          
+5  Pia Juul Roslyng        FSK Orientering D21-C  00:36:38         2                    
+6  Helle Harremöes         FSK Orientering D21-C  00:39:55                              
+7  Birgitte Stürup         Helsingør SOK   D21-C  00:39:58                              
+8  Julie Frølich           FSK Orientering D-20C  00:40:23                              
+9  Lise Larsen             Herlufsholm OK  D-20C  00:41:25                              
+10 Astrid Parlo            OK Sorø         D-14B  00:55:54    2    2    1               
+11 Pernille Rasmussen      FSK Orientering D21-C  01:03:28                              
+12 Katrine Hansen          Herlufsholm OK  D-20C  01:19:03                              
+13 Signe Hansen            OK Sorø         D-12   01:37:18    3*   3*   1               
+
+Gruppe 9 (H -10, D -10, H -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+--------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Nynne Høst Nedergaard   Helsingør SOK   Beg    00:24:46              1         1    1
+2  Liva Petersen           Helsingør SOK   Beg    00:25:03              1         1    1
+3  Sarah Dinesen           Helsingør SOK   Beg    00:27:55              1         1    1
+4  Maggie Müller           Helsingør SOK   Beg    00:28:00                              
+5  Signe Torp-Lupnaav      Herlufsholm OK  D-10   00:36:00    1              1    1     
+6  Ellen Nielsen           FSK Orientering Beg    00:44:03         1         1         1
+7  Edith Lund              FSK Orientering Beg    00:45:54         1         1         1
+8  Johan Wittrock          FSK Orientering Beg    00:47:51         1         1         1
+9  Simon Jensen            Herlufsholm OK  Beg    00:51:00    1              1    1     
+10 Lisa Børsting           Herlufsholm OK  D-10   00:57:29    1              1    1     
+

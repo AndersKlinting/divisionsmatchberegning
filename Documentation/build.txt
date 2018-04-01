@@ -1,0 +1,38 @@
+bygge ny version
+
+edit assemblyversion og AssemblyFileVersion i AsemblyInfo.cs
+
+
+opdater dokumentation - divisionsmatchberegning.docx
+gem som pdf of generer chm vha Word2CHM
+opdater versionhistory.htm
+build project, release mode
+
+
+Opdater  
+* Version
+* ProductCode
+* men IKKE UpgradeCode
+i Setup Deployment properties
+
+build setup, release mode
+
+upload 
+* AutoUpdates\versioninfo.xml
+* AutoUpdates\versionhistory.htm 
+* AutoUpdates\DivisionsmatchX.Y.Z.msi 
+til ftp://fif-orientering.dk@www.fif-orientering.dk/public_html/divisionsmatch
+
+(for at teste uploades versioninfo.xml til subfolder "test" og programmet køres med argument "test")
+
+
+opdatere SVN
+	- log på https://github.com/AndersKlinting/divisionsmatchberegning
+	- lav en ny release under Downloads
+	- upload msi-filen
+
+snd\AndersKlinting_cp
+test command line
+-f WWW -e "C:\temp\divisionsturnering\20130901\export.htm" -d "C:\temp\divisionsturnering\20130901\3 divtest.divi" -c "C:\temp\divisionsturnering\20130901\testV3.xml"
+
+-d "C:\temp\divisionsmatch\20170402 Gorm\2div.divi" -c "C:\temp\divisionsmatch\20170402 Gorm\Hastrup02042017-IOF3.xml" -o "C:\temp\divisionsmatch\20170402 Gorm\2div_efter.xml" -e "C:\temp\divisionsmatch\20170402 Gorm\2div_efter.txt" -f TXT

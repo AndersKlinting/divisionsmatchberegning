@@ -1,0 +1,226 @@
+Divisionsmatch (, 2018-03-30)
+-----------------------------
+                                               score      point
+O-63/NFR/Maribo                              187 -   143      6    
+Køge OK                                      187 -   161      4    
+OK Skærmen Værløse                           149 -   175      2    
+DSR/Fredensborg/Vinderød                     137 -   181      0    
+
+1 : Køge OK - O-63/NFR/Maribo            :    55 -    64
+2 : Køge OK - OK Skærmen Værløse         :    66 -    50
+3 : Køge OK - DSR/Fredensborg/Vinderød   :    66 -    47
+4 : O-63/NFR/Maribo - OK Skærmen Værløse :    60 -    47
+5 : O-63/NFR/Maribo - DSR/Fredensborg/Vinderød :    63 -    41
+6 : OK Skærmen Værløse - DSR/Fredensborg/Vinderød :    52 -    49
+
+                                             m1    m2    m3    m4    m5    m6   
+                                            ----- ----- ----- ----- ----- ----- 
+H1 (H -20, H 21-, H 35-)                     5-15 10-10  8-10 15-6  12-8   9-11 
+H2 (H 40-, H 45-)                            3-7   4-6   5-4   7-3   7-2   5-4  
+H3 (H -16, H 50-, H 55-)                     3-7   3-7   3-7   3-7   5-5   5-5  
+H4 (H 60-, H 65-)                            3-7   7-3   7-3   7-3   7-3   6-4  
+H5 (H 70-)                                   3-7   5-4   7-3   5-4   7-3   4-5  
+H6 (H -14, H -16B)                           2-0   2-0   2-0   0-0   0-0   0-0  
+H7 (H -20B, H 21-B, H 35-B)                  4-2   3-3   3-3   3-3   3-3   3-3  
+H8 (H -12, H -14B, H -20C, H 21-C)           2-1   2-0   2-1   2-0   1-2   0-2  
+D1 (D -20, D 21-, D 35-)                     4-3   4-5   4-3   2-7   4-3   7-2  
+D2 (D 40-, D 45-)                            7-0   6-3   5-4   0-4   0-4   3-4  
+D3 (D -16, D 50-, D 55-)                     3-4   4-0   4-3   4-0   4-3   0-4  
+D4 (D 60-, D 65-)                            6-4   5-4   7-0   5-4   7-0   4-0  
+D5 (D 70-)                                   4-0   4-3   4-0   0-4   0-0   4-0  
+D6 (D -14, D -16B)                           0-0   0-0   0-0   0-0   0-0   0-0  
+D7 (D -20B, D 21-B, D 35-B)                  3-3   3-2   2-4   3-2   2-4   2-3  
+D8 (D -12, D -14B, D -20C, D 21-C)           1-2   2-0   1-2   2-0   2-1   0-2  
+9  (H -10, D -10, H -12B, D -12B, Begynder)  2-2   2-0   2-0   2-0   2-0   0-0  
+Ialt:                                       55-64 66-50 66-47 60-47 63-41 52-49 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [6, 5, 4, 3, 2, 1]
+----------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Helge Tillingsøe        DSR/Fredensborg H35-   01:01:14              6         6    6
+2  Carl-Henrik Hansen      O-63/NFR/Maribo H35-   01:08:47    6              6    5     
+3  Troels Lassen           O-63/NFR/Maribo H35-   01:09:48    5              5    4     
+4  Asbjørn Hviid           O-63/NFR/Maribo H-20   01:09:53    4              4    3     
+5  Henrik Plenge Jensen    O-63/NFR/Maribo H35-   01:10:18                              
+6  Anders Hansen           Køge OK         H35-   01:24:29    3    6    5               
+7  Max Prang               DSR/Fredensborg H35-   01:25:18              4         2    5
+8  Tobias Hooge Hansen     OK Skærmen Værl H35-   01:34:16         5         3         4
+9  Søren Løvgren           Køge OK         H35-   01:42:40    2    4    3               
+10 Kristian Witt           OK Skærmen Værl H21-   01:48:39         3         2         3
+11 Martin Hooge            OK Skærmen Værl H21-   01:57:03         2         1         2
+   Johan Hardon            Køge OK         H21-   Ej start                              
+
+Gruppe H2 (H 40-, H 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mads Madsen             O-63/NFR/Maribo H40-   00:54:27    4              4    4     
+2  Lars Brøndsel           O-63/NFR/Maribo H45-   01:01:25    3              3    3     
+3  Hans J Andersen         DSR/Fredensborg H40-   01:05:51              4         2    4
+4  Per Rye Hougaard        OK Skærmen Værl H40-   01:07:09         4         2         3
+5  Tage Ebbensgaard        Køge OK         H45-   01:20:58    2    3    3               
+6  Jesper Sørensen         OK Skærmen Værl H45-   01:27:00         2         1         2
+7  Lars Christoffersen     OK Skærmen Værl H45-   01:32:07                              
+8  Peter Leander           Køge OK         H45-   01:45:11    1    1    2               
+   Michael Krogh           O-63/NFR/Maribo H45-   Ej start                              
+   Christian Clausen       DSR/Fredensborg H40-     Fejlst                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jørn Mouritzen          DSR/Fredensborg H55-   00:45:31              4         4    4
+2  Jesper Gottlieb         OK Skærmen Værl H50-   00:48:57         4         4         3
+3  Hakon Mosbech           OK Skærmen Værl H55-   00:55:35         3         3         2
+4  Torben Hviid            O-63/NFR/Maribo H55-   00:56:43    4              2    3     
+5  Rasmus Brøndsel         O-63/NFR/Maribo H-16   00:58:06    3              1    2     
+6  Ronald Clausen          DSR/Fredensborg H55-   01:00:11              3         1    1
+7  Jens Kristensen         O-63/NFR/Maribo H55-   01:02:45                              
+8  Michael Saunte          O-63/NFR/Maribo H50-   01:06:42                              
+9  Anders Bang             Køge OK         H55-   01:10:27    2    2    2               
+10 Niels Hamborg Jensen    OK Skærmen Værl H55-   01:12:04                              
+11 John Barnewitz          Køge OK         H50-   01:15:01    1    1    1               
+12 Henrik Johansen         Køge OK         H50-   01:24:41                              
+13 Ove Bech Nielsen        O-63/NFR/Maribo H55-   01:28:51                              
+14 Otto Kristensen         Køge OK         H55-   01:38:59                              
+   Kim Møller              Køge OK         H55-     Fejlst                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  John Knudsen            O-63/NFR/Maribo H60-   00:39:02    4              4    4     
+2  Carl-Aage Hansen        O-63/NFR/Maribo H60-   00:41:17    3              3    3     
+3  Erik Løvgren Jensen     Køge OK         H65-   00:51:54    2    4    4               
+4  Niels-Henrik Holscher   O-63/NFR/Maribo H65-   00:52:35                              
+5  Jørgen Larsen           Køge OK         H65-   00:55:39    1    3    3               
+6  Leif Jensen             OK Skærmen Værl H60-   00:56:52         2         2         4
+7  Allan Christiansen      DSR/Fredensborg H65-   00:58:46              2         2    3
+8  Steen Sørensen          OK Skærmen Værl H65-   00:59:31         1         1         2
+9  Svend Erik Jensen       OK Skærmen Værl H65-   01:06:36                              
+10 Finn Gamél Christensen  DSR/Fredensborg H65-   01:06:43              1         1    1
+11 Steffen Nilsson         Køge OK         H65-   01:25:33                              
+12 Poul R. Koziara         Køge OK         H60-   01:31:40                              
+   Torben Møller           Køge OK         H65-     Fejlst                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Mogens Hansen           OK Skærmen Værl H70-   00:36:16         4         4         4
+2  Peter Bjørn Jensen      O-63/NFR/Maribo H70-   00:42:36    4              3    4     
+3  Peter Nielsen           O-63/NFR/Maribo H70-   00:44:47    3              2    3     
+4  Ole Rasmussen           Køge OK         H70-   00:54:17    2    3    4               
+5  Kurt Dose               Køge OK         H70-   00:54:55    1    2    3               
+6  Erling Hansen           Køge OK         H70-   01:01:18                              
+7  Poul Nissen             DSR/Fredensborg H70-   01:06:34              2         2    3
+8  Bjørn Helstrup          DSR/Fredensborg H70-   01:19:05              1         1    2
+9  Jens Lynge              Køge OK         H70-   02:12:04                              
+   Finn Frogne             Køge OK         H70-   Ej start                              
+   Poul-Erik Pedersen      Køge OK         H70-     Fejlst                              
+
+Gruppe H6 (H -14, H -16B) - [2, 1]
+----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Asger Christian Goldbac Køge OK         H-16B  02:00:17    2    2    2               
+   Mikkel Brøndsel         O-63/NFR/Maribo H-16B    Fejlst                              
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jeppe Damsgaard         DSR/Fredensborg H21-B  00:43:21              2         2    2
+2  Michael Gottlieb        OK Skærmen Værl H-20B  00:51:36         2         2         2
+3  Bo Brinkmann            Køge OK         H35-B  00:56:32    2    2    2               
+4  Thomas Kristiansen      Køge OK         H35-B  00:59:22    2    1    1               
+5  Laust Kadziola          O-63/NFR/Maribo H-20B  01:03:33    1              2    2     
+6  Svend W. Frydendahl     DSR/Fredensborg H21-B  01:04:39              1         1    1
+7  Søren Christensen       OK Skærmen Værl H35-B  01:07:43         1         1         1
+8  Lasse Husman            Køge OK         H35-B  01:14:58                              
+9  Anders Christensen      O-63/NFR/Maribo H35-B  01:18:28    1              1    1     
+10 Don Maher               O-63/NFR/Maribo H35-B  01:24:06                              
+11 Nicolai Hedelund        DSR/Fredensborg H35-B  01:37:52                              
+   Henrik Kastrup Jørgense Køge OK         H35-B  Ej start                              
+   Jesper Kjærsig          DSR/Fredensborg H35-B    Fejlst                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Torben Nielsen          Køge OK         H21-C  00:36:51    2    2    2               
+2  Morten Tibian           DSR/Fredensborg H21-C  00:41:45              1         2    2
+3  Kjeld Jensen            Køge OK         H21-C  00:51:26                              
+4  Erik Bülow-Olsen        O-63/NFR/Maribo H21-C  01:05:06    1              2    1     
+   Leon Jørgensen          Køge OK         H21-C  Ej start                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Malene Løkke            Køge OK         D35-   00:56:27    4    4    4               
+2  Karoline Hooge          OK Skærmen Værl D21-   01:02:17         3         4         4
+3  Eva Hemmersam           OK Skærmen Værl D21-   01:09:32         2         3         3
+4  Carina Kjær Bollesen    O-63/NFR/Maribo D35-   01:19:15    3              2    4     
+5  Mathilde Damsgaard      DSR/Fredensborg D21-   01:45:40              3         3    2
+
+Gruppe D2 (D 40-, D 45-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Helle Tibian            DSR/Fredensborg D40-   01:03:20              4         4    4
+2  Margit Goldbach         Køge OK         D45-   01:17:14    4    4    3               
+3  Naja Sørensen           OK Skærmen Værl D45-   01:19:51         3         4         3
+4  Lisbeth Andersen        Køge OK         D45-   01:41:55    3    2    2               
+
+Gruppe D3 (D -16, D 50-, D 55-) - [4, 3, 2, 1]
+----------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Pia Kadziola            O-63/NFR/Maribo D50-   00:52:12    4              4    4     
+2  Jannie Sørensen         Køge OK         D55-   01:20:52    3    4    4               
+3  Lis Hedelund            DSR/Fredensborg D50-   01:33:16              3         3    4
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ulla Hooge              OK Skærmen Værl D60-   00:39:45         4         4         4
+2  Berit N. Pedersen       Køge OK         D60-   00:59:24    4    3    4               
+3  Bente Skov-Jensen       O-63/NFR/Maribo D60-   00:59:36    3              3    4     
+4  Grethe Larsen           Køge OK         D60-   01:03:39    2    2    3               
+5  Inge Hestbæk            O-63/NFR/Maribo D60-   01:38:17    1              2    3     
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Hanne Hansen            Køge OK         D70-   00:57:10    4    4    4               
+2  Kirsten Witt            OK Skærmen Værl D70-   01:42:50         3         4         4
+   Birthe Clausen          DSR/Fredensborg D70-     Fejlst                              
+   Grethe Jensen           Køge OK         D70-     Fejlst                              
+
+Gruppe D6 (D -14, D -16B) - [2, 1]
+----------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 1, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Ida Mosbech Smith       OK Skærmen Værl D21-B  00:51:54         2         2         2
+2  Birgitte Sørensen       DSR/Fredensborg D35-B  00:54:29              2         2    2
+3  Tove Lindhard           DSR/Fredensborg D35-B  01:02:19              2         2    1
+4  Bonnie Petersen         O-63/NFR/Maribo D35-B  01:03:52    2              2    1     
+5  Birgit Berner           Køge OK         D35-B  01:05:38    2    2    1               
+6  Maria Christensen       O-63/NFR/Maribo D35-B  01:16:11    1              1    1     
+7  Jytte Nielsen           Køge OK         D35-B  01:25:16    1    1    1               
+8  Louise Eskildsen        Køge OK         D35-B  01:30:11                              
+9  Gitte Rasmussen         Køge OK         D35-B  01:31:36                              
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 1]
+--------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Anja Storgaard          O-63/NFR/Maribo D21-C  00:31:58    2              2    2     
+2  Lene Boisen             DSR/Fredensborg D21-C  00:37:04              2         1    2
+3  Lis Noes                O-63/NFR/Maribo D21-C  00:40:35                              
+4  Trine Grønborg          O-63/NFR/Maribo D21-C  00:44:33                              
+5  Anne Nielsen            Køge OK         D21-C  00:50:44    1    2    1               
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1]
+----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Alberte Hansen          O-63/NFR/Maribo D-10   00:27:03    1              1    1     
+2  Carl-Loui Hansen        O-63/NFR/Maribo H-10   00:33:23    1              1    1     
+3  Karin Leander           Køge OK         Beg    00:40:46    1    1    1               
+4  Peter Løkke             Køge OK         Beg    01:04:04    1    1    1               
+5  Morten Løkke            Køge OK         Beg    01:04:08                              
+   Villy Rasmussen         O-63/NFR/Maribo Beg    Ej start                              
+

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Configuracion xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFiles>
+    <string>.\Divisionsmatchberegning.docx</string>
+  </SourceFiles>
+  <Compilar>true</Compilar>
+  <DirectorioDestino>..\Divisionsmatchberegning-project</DirectorioDestino>
+  <HtmlCabecera />
+  <HtmlPie />
+  <TituloAyuda>Divisionsmatchberegning</TituloAyuda>
+  <NivelCorte>0</NivelCorte>
+  <GenerarWeb>false</GenerarWeb>
+  <ArchivosAdicionales />
+  <AbrirProyecto>false</AbrirProyecto>
+  <DirectorioWeb>..\Divisionsmatchberegning-web</DirectorioWeb>
+  <NivelArbolContenidos>0</NivelArbolContenidos>
+  <NivelTemasIndice>0</NivelTemasIndice>
+  <ArchivoAyuda>.\Divisionsmatchberegning.chm</ArchivoAyuda>
+  <CommandLine />
+  <GeneratePdf>true</GeneratePdf>
+  <PdfPath>.\Divisionsmatchberegning.pdf</PdfPath>
+  <WebKeywords />
+  <WebDescription />
+  <WebHeaderFile />
+  <WebFooterFile />
+  <GenerateSitemap>false</GenerateSitemap>
+  <WebBase />
+  <ChangeFrequency>monthly</ChangeFrequency>
+  <WebLanguage>English</WebLanguage>
+  <ConfigurationVersion>1.7</ConfigurationVersion>
+  <FullTextSearch>false</FullTextSearch>
+  <PdfGeneration>OfficeAddin</PdfGeneration>
+  <GenerateXps>false</GenerateXps>
+  <XpsPath>..\Divisionsmatchberegning.xps</XpsPath>
+  <GenerateJavaHelp>false</GenerateJavaHelp>
+  <JavaHelpPath>..\Divisionsmatchberegning.jar</JavaHelpPath>
+  <HeadTagFile />
+  <ChmLocaleID>1030</ChmLocaleID>
+  <WebTemplateName>Frames</WebTemplateName>
+  <CustomTemplateDirectory />
+</Configuracion>

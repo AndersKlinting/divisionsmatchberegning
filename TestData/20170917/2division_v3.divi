@@ -1,0 +1,1279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Version>3</Version>
+  <divisioner>
+    <Division>
+      <nr>1</nr>
+      <beskrivelse>1. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>2</nr>
+      <beskrivelse>2. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>3</nr>
+      <beskrivelse>3. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>4</nr>
+      <beskrivelse>4. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>5</nr>
+      <beskrivelse>5. division</beskrivelse>
+    </Division>
+    <Division>
+      <nr>6</nr>
+      <beskrivelse>6. division</beskrivelse>
+    </Division>
+  </divisioner>
+  <selectedDivision>2</selectedDivision>
+  <gruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H21</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H1</Gruppe>
+      <Klasse>H35</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H40</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H40</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H2</Gruppe>
+      <Klasse>H45</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H45</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H50</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H50</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H3</Gruppe>
+      <Klasse>H55</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H55</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H60</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H60</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H4</Gruppe>
+      <Klasse>H65</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H65</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H5</Gruppe>
+      <Klasse>H70</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H70</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H6</Gruppe>
+      <Klasse>H16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H16B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H20B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H21B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H7</Gruppe>
+      <Klasse>H35B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H35B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H20C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>H8</Gruppe>
+      <Klasse>H21C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H21C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D20</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D20</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D21</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D1</Gruppe>
+      <Klasse>D35</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D40</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D40</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D2</Gruppe>
+      <Klasse>D45</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D45</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D16</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D16</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D50</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D50</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D3</Gruppe>
+      <Klasse>D55</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D55</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D60</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D60</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D4</Gruppe>
+      <Klasse>D65</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D65</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D5</Gruppe>
+      <Klasse>D70</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D70</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D14</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D14</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D6</Gruppe>
+      <Klasse>D16B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D16B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D20B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D20B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D21B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D7</Gruppe>
+      <Klasse>D35B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D35B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D12</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D12</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D14B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D14B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D20C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D20C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>D8</Gruppe>
+      <Klasse>D21C</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D21C</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>H10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D10</Klasse>
+      <Ungdom>true</Ungdom>
+      <LøbsKlasse>D10</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>H12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>H12B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>D12B</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>D12B</LøbsKlasse>
+    </GruppeOgKlasse>
+    <GruppeOgKlasse>
+      <Gruppe>9</Gruppe>
+      <Klasse>Begynder</Klasse>
+      <Ungdom>false</Ungdom>
+      <LøbsKlasse>Begynder</LøbsKlasse>
+    </GruppeOgKlasse>
+  </gruppeOgKlasse>
+  <allClubs />
+  <selectedClubs>
+    <Klub>
+      <Id type="" />
+      <Navn>FROS/Melfar</Navn>
+      <Udeblevet>false</Udeblevet>
+      <Point>4</Point>
+      <Score1>401</Score1>
+      <Score2>294</Score2>
+      <EgenScore>247</EgenScore>
+      <Kommentar>(247), 11 1. pl</Kommentar>
+    </Klub>
+    <Klub>
+      <Id type="" />
+      <Navn>Faaborg OK</Navn>
+      <Udeblevet>false</Udeblevet>
+      <Point>4</Point>
+      <Score1>401</Score1>
+      <Score2>301</Score2>
+      <EgenScore>247</EgenScore>
+      <Kommentar>(247), 6 1. pl</Kommentar>
+    </Klub>
+    <Klub>
+      <Id type="" />
+      <Navn>Odense OK</Navn>
+      <Udeblevet>false</Udeblevet>
+      <Point>4</Point>
+      <Score1>401</Score1>
+      <Score2>294</Score2>
+      <EgenScore>248</EgenScore>
+      <Kommentar>(248)</Kommentar>
+    </Klub>
+    <Klub>
+      <Id type="" />
+      <Navn>OK Syd</Navn>
+      <Udeblevet>false</Udeblevet>
+      <Point>0</Point>
+      <Score1>147</Score1>
+      <Score2>461</Score2>
+      <EgenScore>147</EgenScore>
+    </Klub>
+  </selectedClubs>
+  <udeblevneKlubber />
+  <pageSettings>
+    <Color>true</Color>
+    <Landscape>false</Landscape>
+    <Margins>
+      <Left>78</Left>
+      <Right>78</Right>
+      <Top>39</Top>
+      <Bottom>39</Bottom>
+    </Margins>
+    <PaperSize>
+      <Height>1169</Height>
+      <PaperName>A4</PaperName>
+      <RawKind>9</RawKind>
+      <Width>827</Width>
+    </PaperSize>
+    <PaperSource>
+      <RawKind>15</RawKind>
+      <SourceName>Automatically Select</SourceName>
+    </PaperSource>
+    <PrinterResolution>
+      <Kind>Custom</Kind>
+      <X>600</X>
+      <Y>600</Y>
+    </PrinterResolution>
+    <PrinterSettings>
+      <Copies>1</Copies>
+      <Collate>true</Collate>
+      <Duplex>Simplex</Duplex>
+      <FromPage>0</FromPage>
+      <MaximumPage>9999</MaximumPage>
+      <MinimumPage>0</MinimumPage>
+      <PrintFileName>dummy.txt</PrintFileName>
+      <PaperSizes>
+        <PaperSize>
+          <Height>1100</Height>
+          <PaperName>Letter</PaperName>
+          <RawKind>1</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1700</Height>
+          <PaperName>Tabloid</PaperName>
+          <RawKind>3</RawKind>
+          <Width>1100</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1100</Height>
+          <PaperName>Ledger</PaperName>
+          <RawKind>4</RawKind>
+          <Width>1700</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1400</Height>
+          <PaperName>Legal</PaperName>
+          <RawKind>5</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>850</Height>
+          <PaperName>Statement</PaperName>
+          <RawKind>6</RawKind>
+          <Width>550</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1050</Height>
+          <PaperName>Executive</PaperName>
+          <RawKind>7</RawKind>
+          <Width>725</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1654</Height>
+          <PaperName>A3</PaperName>
+          <RawKind>8</RawKind>
+          <Width>1169</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>A4</PaperName>
+          <RawKind>9</RawKind>
+          <Width>827</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>827</Height>
+          <PaperName>A5</PaperName>
+          <RawKind>11</RawKind>
+          <Width>583</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>2339</Height>
+          <PaperName>A2</PaperName>
+          <RawKind>66</RawKind>
+          <Width>1654</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>583</Height>
+          <PaperName>A6</PaperName>
+          <RawKind>70</RawKind>
+          <Width>413</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1700</Height>
+          <PaperName>11 x 17</PaperName>
+          <RawKind>137</RawKind>
+          <Width>1100</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>518</Height>
+          <PaperName>Screen</PaperName>
+          <RawKind>138</RawKind>
+          <Width>650</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>2200</Height>
+          <PaperName>ANSI C</PaperName>
+          <RawKind>139</RawKind>
+          <Width>1700</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3400</Height>
+          <PaperName>ANSI D</PaperName>
+          <RawKind>140</RawKind>
+          <Width>2200</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4400</Height>
+          <PaperName>ANSI E</PaperName>
+          <RawKind>141</RawKind>
+          <Width>3400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4000</Height>
+          <PaperName>ANSI F</PaperName>
+          <RawKind>142</RawKind>
+          <Width>2800</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1200</Height>
+          <PaperName>ARCH A</PaperName>
+          <RawKind>143</RawKind>
+          <Width>900</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1800</Height>
+          <PaperName>ARCH B</PaperName>
+          <RawKind>144</RawKind>
+          <Width>1200</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>2400</Height>
+          <PaperName>ARCH C</PaperName>
+          <RawKind>145</RawKind>
+          <Width>1800</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3600</Height>
+          <PaperName>ARCH D</PaperName>
+          <RawKind>146</RawKind>
+          <Width>2400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4800</Height>
+          <PaperName>ARCH E</PaperName>
+          <RawKind>147</RawKind>
+          <Width>3600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4200</Height>
+          <PaperName>ARCH E1</PaperName>
+          <RawKind>148</RawKind>
+          <Width>3000</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3800</Height>
+          <PaperName>ARCH E2</PaperName>
+          <RawKind>149</RawKind>
+          <Width>2600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3900</Height>
+          <PaperName>ARCH E3</PaperName>
+          <RawKind>150</RawKind>
+          <Width>2700</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3311</Height>
+          <PaperName>A1</PaperName>
+          <RawKind>151</RawKind>
+          <Width>2339</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4680</Height>
+          <PaperName>ISO A0</PaperName>
+          <RawKind>152</RawKind>
+          <Width>3311</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>2461</Height>
+          <PaperName>Oversize A2</PaperName>
+          <RawKind>153</RawKind>
+          <Width>1890</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3543</Height>
+          <PaperName>Oversize A1</PaperName>
+          <RawKind>154</RawKind>
+          <Width>2461</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4901</Height>
+          <PaperName>Oversize A0</PaperName>
+          <RawKind>155</RawKind>
+          <Width>3543</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>985</Height>
+          <PaperName>ISO B5</PaperName>
+          <RawKind>156</RawKind>
+          <Width>693</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1390</Height>
+          <PaperName>ISO B4</PaperName>
+          <RawKind>157</RawKind>
+          <Width>985</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>2783</Height>
+          <PaperName>ISO B2</PaperName>
+          <RawKind>158</RawKind>
+          <Width>1968</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3937</Height>
+          <PaperName>ISO B1</PaperName>
+          <RawKind>159</RawKind>
+          <Width>2783</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>901</Height>
+          <PaperName>C5</PaperName>
+          <RawKind>160</RawKind>
+          <Width>637</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1433</Height>
+          <PaperName>JIS B4</PaperName>
+          <RawKind>161</RawKind>
+          <Width>1012</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>2028</Height>
+          <PaperName>JIS B3</PaperName>
+          <RawKind>162</RawKind>
+          <Width>1433</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>2867</Height>
+          <PaperName>JIS B2</PaperName>
+          <RawKind>163</RawKind>
+          <Width>2028</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4056</Height>
+          <PaperName>JIS B1</PaperName>
+          <RawKind>164</RawKind>
+          <Width>2867</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>5732</Height>
+          <PaperName>JIS B0</PaperName>
+          <RawKind>165</RawKind>
+          <Width>4056</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>9200</Height>
+          <PaperName>92 x 92</PaperName>
+          <RawKind>166</RawKind>
+          <Width>9200</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>826</Height>
+          <PaperName>A5[148mm x 210mm]</PaperName>
+          <RawKind>167</RawKind>
+          <Width>583</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>583</Height>
+          <PaperName>A6[105mm x 148mm]</PaperName>
+          <RawKind>168</RawKind>
+          <Width>412</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>850</Height>
+          <PaperName>Statement[5.5 x 8.5]</PaperName>
+          <RawKind>169</RawKind>
+          <Width>550</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1012</Height>
+          <PaperName>B5-JIS[182mm x 257mm]</PaperName>
+          <RawKind>170</RawKind>
+          <Width>717</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>950</Height>
+          <PaperName>Com10 Envelope[4.125 x 9.5]</PaperName>
+          <RawKind>171</RawKind>
+          <Width>412</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>901</Height>
+          <PaperName>C5 Envelope[162mm x 229mm]</PaperName>
+          <RawKind>172</RawKind>
+          <Width>637</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>867</Height>
+          <PaperName>DL Envelope[110mm x 220mm]</PaperName>
+          <RawKind>173</RawKind>
+          <Width>433</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>750</Height>
+          <PaperName>Monarch Envelope[3.87 x 7.5]</PaperName>
+          <RawKind>174</RawKind>
+          <Width>387</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>4800</Height>
+          <PaperName>24" x 48"</PaperName>
+          <RawKind>175</RawKind>
+          <Width>2400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>6000</Height>
+          <PaperName>24" x 60"</PaperName>
+          <RawKind>176</RawKind>
+          <Width>2400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>7200</Height>
+          <PaperName>24" x 72"</PaperName>
+          <RawKind>177</RawKind>
+          <Width>2400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>8400</Height>
+          <PaperName>24" x 84"</PaperName>
+          <RawKind>178</RawKind>
+          <Width>2400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>9600</Height>
+          <PaperName>24" x 96"</PaperName>
+          <RawKind>179</RawKind>
+          <Width>2400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>10800</Height>
+          <PaperName>24" x 108"</PaperName>
+          <RawKind>180</RawKind>
+          <Width>2400</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>6000</Height>
+          <PaperName>36" x 60"</PaperName>
+          <RawKind>181</RawKind>
+          <Width>3600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>7200</Height>
+          <PaperName>36" x 72"</PaperName>
+          <RawKind>182</RawKind>
+          <Width>3600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>8400</Height>
+          <PaperName>36" x 84"</PaperName>
+          <RawKind>183</RawKind>
+          <Width>3600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>9600</Height>
+          <PaperName>36" x 96"</PaperName>
+          <RawKind>184</RawKind>
+          <Width>3600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>10800</Height>
+          <PaperName>36" x 108"</PaperName>
+          <RawKind>185</RawKind>
+          <Width>3600</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1000</Height>
+          <PaperName>8.5" x 10"</PaperName>
+          <RawKind>186</RawKind>
+          <Width>850</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3600</Height>
+          <PaperName>22" x 36"</PaperName>
+          <RawKind>187</RawKind>
+          <Width>2200</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>3939</Height>
+          <PaperName>ISO-B1</PaperName>
+          <RawKind>188</RawKind>
+          <Width>2783</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>800</Height>
+          <PaperName>5x8</PaperName>
+          <RawKind>189</RawKind>
+          <Width>500</Width>
+        </PaperSize>
+        <PaperSize>
+          <Height>1169</Height>
+          <PaperName>PostScript Custom Page Size</PaperName>
+          <RawKind>32767</RawKind>
+          <Width>827</Width>
+        </PaperSize>
+      </PaperSizes>
+      <PaperSources>
+        <PaperSource>
+          <RawKind>15</RawKind>
+          <SourceName>Automatically Select</SourceName>
+        </PaperSource>
+        <PaperSource>
+          <RawKind>257</RawKind>
+          <SourceName>OnlyOne</SourceName>
+        </PaperSource>
+      </PaperSources>
+      <PrintRange>AllPages</PrintRange>
+      <PrintToFile>false</PrintToFile>
+      <PrinterName>PDF995</PrinterName>
+      <PrinterResolutions>
+        <PrinterResolution>
+          <Kind>High</Kind>
+          <X>-4</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Medium</Kind>
+          <X>-3</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Low</Kind>
+          <X>-2</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Draft</Kind>
+          <X>-1</X>
+          <Y>-1</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>72</X>
+          <Y>72</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>144</X>
+          <Y>144</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>300</X>
+          <Y>300</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>600</X>
+          <Y>600</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>1200</X>
+          <Y>1200</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>2400</X>
+          <Y>2400</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>3600</X>
+          <Y>3600</Y>
+        </PrinterResolution>
+        <PrinterResolution>
+          <Kind>Custom</Kind>
+          <X>4000</X>
+          <Y>4000</Y>
+        </PrinterResolution>
+      </PrinterResolutions>
+      <ToPage>0</ToPage>
+    </PrinterSettings>
+  </pageSettings>
+  <classes>
+    <Klasse>
+      <Navn />
+    </Klasse>
+    <Klasse>
+      <Navn> - </Navn>
+    </Klasse>
+    <Klasse>
+      <Navn>H1</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H20</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H21</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H35</Navn>
+      <Bane>
+        <Navn>Bane 1</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D1</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D20</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D21</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D35</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H2</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H40</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H45</Navn>
+      <Bane>
+        <Navn>Bane 2</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D2</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D40</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D45</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H16</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H3</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H50</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H55</Navn>
+      <Bane>
+        <Navn>Bane 3</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D16</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D3</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D50</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D55</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H4</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H60</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H65</Navn>
+      <Bane>
+        <Navn>Bane 4</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D4</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D60</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D65</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H5</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H70</Navn>
+      <Bane>
+        <Navn>Bane 5</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H14</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H16B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H20B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H21B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H35B</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H6</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H7</Navn>
+      <Bane>
+        <Navn>Bane 6</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D12</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D14B</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D20C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D21C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D8</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H12</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H14B</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H20C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H21C</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H8</Navn>
+      <Bane>
+        <Navn>Bane 7</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D5</Navn>
+      <Bane>
+        <Navn>Bane 8</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D70</Navn>
+      <Bane>
+        <Navn>Bane 8</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D14</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D16B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D20B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D21B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D35B</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D6</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D7</Navn>
+      <Bane>
+        <Navn>Bane 9</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>9</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>Begynder</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D10</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>D12B</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H10</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+    <Klasse>
+      <Navn>H12B</Navn>
+      <Bane>
+        <Navn>Bane 10</Navn>
+      </Bane>
+    </Klasse>
+  </classes>
+  <baner>
+    <Bane>
+      <Navn>Bane 1</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 2</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 3</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 4</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 5</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 6</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 7</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 8</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 9</Navn>
+    </Bane>
+    <Bane>
+      <Navn>Bane 10</Navn>
+    </Bane>
+  </baner>
+  <font>
+    <FontValue>Courier New; 10pt</FontValue>
+  </font>
+  <Dato>2017-09-17T00:00:00</Dato>
+  <Kreds>Sydkredsen</Kreds>
+  <Skov>Munkebjerg Øst</Skov>
+  <Type>Divisionsmatch</Type>
+  <SideSkift>true</SideSkift>
+  <PrintBaner>false</PrintBaner>
+  <PrintAlle>false</PrintAlle>
+  <PrintNye>false</PrintNye>
+  <PrintAlleGrupper>true</PrintAlleGrupper>
+  <AutoPrint>false</AutoPrint>
+  <PrintDiviResultat>true</PrintDiviResultat>
+  <InklTidligere>true</InklTidligere>
+  <AutoExport>false</AutoExport>
+  <ConfigClassSrc>csv</ConfigClassSrc>
+  <CssFile />
+  <StartTid>00:00:00</StartTid>
+</Config>

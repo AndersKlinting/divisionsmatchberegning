@@ -1,0 +1,320 @@
+Matcher (2 division)
+--------------------
+1 : Farum OK - OK Roskilde                         :   128 -    99
+2 : Farum OK - OK Sorø                             :   140 -    73
+3 : Farum OK - OK ØST Birkerød                     :   132 -    93
+4 : OK Roskilde - OK Sorø                          :   119 -    83
+5 : OK Roskilde - OK ØST Birkerød                  :   111 -   104
+6 : OK Sorø - OK ØST Birkerød                      :    90 -   115
+
+Stilling
+--------
+                                               score      point
+Farum OK                                 :   400 -   265      6
+OK Roskilde                              :   329 -   315      4
+OK ØST Birkerød                          :   312 -   333      2
+OK Sorø                                  :   246 -   374      0
+
+                                              m1     m2     m3     m4     m5     m6    
+                                            ------ ------ ------ ------ ------- ------ 
+H1 (H -20, H 21-, H 35-)                     21-17  24-14  20-16  20-18  19-18  20-18  
+H2 (H 40-, H 45-)                            12-9   15-6   15-6   15-6   15-6    8-13  
+H3 (H -16, H 50-, H 55-)                      8-16  11-12  11-10  15-9   17-7   12-11  
+H4 (H 60-, H 65-)                             3-7    7-2    5-5    7-2    7-3    2-7   
+H5 (H 70-)                                    4-6    7-2    6-4    7-2    6-4    2-7   
+H6 (H -14)                                    6-0    6-0    6-0    0-0    0-0    0-0   
+H7 (H -20B, H 21-B, H 35-B)                   5-4    5-4    6-1    5-4    5-2    6-1   
+H8 (H -12, H -14B, H -20C, H 21-C)            7-2    7-0    6-2    6-0    5-2    0-2   
+D1 (D -20, D 21-, D 35-)                     16-5   17-3   16-8    7-6    5-16   6-15  
+D2 (D 40-, D 45-)                            11-4    9-11  11-7    3-15   4-11  11-9   
+D3 (D -16, D 50-, D 55-)                     17-6   11-13  10-14   9-14   6-17  13-11  
+D4 (D 60-, D 65-)                             0-7    0-0    0-7    7-0    3-7    0-7   
+D5 (D 70-)                                    0-4    0-0    0-7    4-0    4-5    0-7   
+D6 (D -14, D -16B)                            6-0    6-0    6-0    0-0    0-0    0-0   
+D7 (D -20B, D 21-B, D 35-B)                   5-4    6-0    5-3    6-0    5-3    0-4   
+D8 (D -12, D -14B, D -20C, D 21-C)            4-5    6-3    6-0    5-4    7-0    7-0   
+9  (H -10, D -10, H -12B, D -12B, Begynder)   3-3    3-3    3-3    3-3    3-3    3-3   
+Ialt:                                       128-99 140-73 132-93 119-83 111-104 90-115 
+
+Gruppe H1 (H -20, H 21-, H 35-) - [8, 7, 6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Søren Skaarup Larsen    OK ØST Birkerød H21-   00:56:25              8         8    8
+2  Martin Laage Kragh      OK Roskilde     H21-   00:57:41    8              8    7     
+3  Mikkel Lyskjær Jensen   Farum OK        H-20   00:58:32    9*  10*   9*              
+4  Malthe Gaarsdal         Farum OK        H-20   01:01:33    7*   8*   7*              
+5  Asger Habekost Nielsen  OK ØST Birkerød H35-   01:01:53              5         6    7
+6  Jesper Damgaard         Farum OK        H35-   01:03:00    5    6    4               
+7  Kasper Levring          OK Sorø         H35-   01:13:12         5         7         6
+8  Anders Laage Kragh      OK Roskilde     H35-   01:14:57    4              6    5     
+9  Frederik Grue-Sørensen  OK Roskilde     H35-   01:15:45    3              5    4     
+10 Peter Hansen            OK Sorø         H-20   01:16:46         4         6*        7*
+11 Kristian Kærsgaard      OK Sorø         H35-   01:17:45         3         3         4
+12 Daniel Ingemann Pederse OK Sorø         H21-   01:28:25         2         2         3
+13 Finn Petersen           OK Roskilde     H35-   01:44:54    2              1    3     
+14 Frederik Erskov Krogh   OK ØST Birkerød H-20   02:05:31              3         4*   3*
+   Robert Kovacs           Farum OK        H21-   Ej start                              
+   Thomas Thilo            Farum OK        H21-   Ej start                              
+   Jan Eg Pedersen         OK ØST Birkerød H35-   Ej start                              
+
+Gruppe H2 (H 40-, H 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Jesper Jensen           Farum OK        H45-   00:46:43    6    6    6               
+2  Claus Rasmussen         OK Roskilde     H45-   00:53:55    5              6    6     
+3  Julian Hollingbery      Farum OK        H40-   00:55:32    4    5    5               
+4  Arne Heydorn            OK Roskilde     H40-   00:56:56    3              5    5     
+5  Tore Hulgaard           Farum OK        H45-   00:58:17    2    4    4               
+6  Brian Lomholt Jensen    Farum OK        H40-   01:03:58                              
+7  Nicolai Kliem           Farum OK        H45-   01:04:17                              
+8  Allan Søgaard           OK Roskilde     H40-   01:07:50    1              4    4     
+9  Lars Thorslund          OK ØST Birkerød H45-   01:11:32              3         3    6
+10 Jan Koue Larsen         OK Sorø         H45-   01:13:02         3         3         5
+11 Morten Bang Nørgaard    OK ØST Birkerød H40-   01:14:05              2         2    4
+12 Mads Nordahl Svendsen   OK Roskilde     H40-   01:14:57                              
+13 Jakob Søndergaard Jense OK Roskilde     H45-   01:18:22                              
+14 Lars Sørensen           OK ØST Birkerød H40-   01:22:04              1         1    3
+15 Stig Møller             OK Sorø         H45-   01:25:41         2         2         2
+16 Jesper Munch Jespersen  OK Sorø         H45-   01:27:26         1         1         1
+17 Jesper Allan Jensen     OK Roskilde     H45-   01:32:05                              
+18 Roland Dumong           OK ØST Birkerød H40-   01:35:29                              
+19 Heine Dalsgaard         OK ØST Birkerød H45-   01:45:04                              
+   Kåre Sørensen           OK Sorø         H45-     Fejlst                              
+
+Gruppe H3 (H -16, H 50-, H 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Rasmus Krogh Madsen     OK Roskilde     H-16   00:45:06    8*             8*   8*    
+2  Kent Pihl               OK Roskilde     H50-   00:46:09    5              5    5     
+3  Bjarne Topp             OK ØST Birkerød H50-   00:48:07              6         4    6
+4  Knud Madsen             OK Sorø         H55-   00:52:00         6         4         5
+5  Claus Rytter Larsen     Farum OK        H50-   00:52:20    4    5    5               
+6  Sverre Thune            Farum OK        H50-   00:54:30    3    4    4               
+7  Eskil Solvang           OK Sorø         H-16   00:55:30         5*        4*        6*
+8  Volker Naulin           OK Roskilde     H50-   00:55:59    2              2    3     
+9  Jakob Weigelt Svendsen  OK Roskilde     H-16   00:56:27    1*                  1*    
+10 Peter Bäcker Hansen     OK ØST Birkerød H50-   00:56:54              3         2    3
+11 Steen Stausholm         Farum OK        H55-   00:57:28    1    2    2               
+12 Erik Ellegaard Simonsen OK ØST Birkerød H50-   00:59:33              1         1    2
+13 Jesper Andreasen        Farum OK        H50-   01:01:12                              
+14 Martin Østberg          OK Roskilde     H50-   01:01:26                              
+15 Jens Karlsmose          Farum OK        H50-   01:05:31                              
+16 Jan Jakobsen            OK ØST Birkerød H55-   01:11:07                              
+17 Jan Frederiksen         OK Roskilde     H55-   01:11:54                              
+18 Martin Munk             OK Sorø         H50-   01:12:05         1         1         1
+19 Jørgen Krogh            OK Roskilde     H50-   01:13:09                              
+20 Max Münsberg            OK Roskilde     H55-   01:13:42                              
+21 Jens Frandsen           OK Sorø         H50-   01:15:56                              
+22 Michael Leth Jess       OK Roskilde     H50-   01:17:53                              
+23 Jesper Parlo            OK Sorø         H50-   01:31:54                              
+24 Jan Sørensen            OK Sorø         H55-   01:38:14                              
+   Gustav Moll             OK Sorø         H-16   Ej start                              
+   Jens Bentsen            OK ØST Birkerød H55-   Ej start                              
+   Peter Krogh             OK ØST Birkerød H55-   Ej start                              
+
+Gruppe H4 (H 60-, H 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Janne Brunstedt         OK Roskilde     H65-   00:42:40    4              4    4     
+2  John Tripax             OK Roskilde     H65-   00:50:29    3              3    3     
+3  Asger Jensen            OK Roskilde     H60-   00:52:38                              
+4  Jens Korsholm           Farum OK        H60-   00:54:29    2    4    4               
+5  Thomas Østergaard       OK ØST Birkerød H60-   00:56:23              3         2    4
+6  Thomas Kragh Christense OK ØST Birkerød H60-   01:01:08              2         1    3
+7  Lasse Schnack           OK ØST Birkerød H65-   01:05:30                              
+8  Peter Reinholdt         Farum OK        H60-   01:06:59    1    3    1               
+9  Hans-Ole Jensen         OK Sorø         H60-   01:09:48         2         2         2
+10 Lars Olsen              OK Roskilde     H60-   01:11:40                              
+11 Svend Tantholdt         OK ØST Birkerød H60-   01:21:14                              
+12 Jan Lindemann           OK Roskilde     H60-   01:48:29                              
+
+Gruppe H5 (H 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Bjarne Pedersen         OK Roskilde     H70-   00:48:04    4              4    4     
+2  Ole Christiansen        Farum OK        H70-   00:52:04    3    4    4               
+3  Erik Lohse              OK ØST Birkerød H70-   00:56:57              3         3    4
+4  Erich Petersen          OK Roskilde     H70-   01:04:53    2              3    2     
+5  Søren Færch             Farum OK        H70-   01:05:03    1    3    2               
+6  Bendt Frandsen          Farum OK        H70-   01:05:37                              
+7  Finn Olsen              OK Roskilde     H70-   01:05:54                              
+8  Tage V. Andersen        OK ØST Birkerød H70-   01:07:06              1         1    3
+9  Ole Ring                OK Sorø         H70-   01:09:14         2         2         2
+10 Per Mogens Petersen     OK ØST Birkerød H70-   01:13:13                              
+11 Mogens Bruun            OK Roskilde     H70-   01:18:34                              
+12 Jørgen Lund-Hansen      Farum OK        H70-   01:19:27                              
+
+Gruppe H6 (H -14) - [4, 3, 2, 1] + [2, 1]
+-----------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Malte Kliem             Farum OK        H-14   00:43:11    6*   6*   6*              
+   Anders Krogh Madsen     OK Roskilde     H-14   Ej start                              
+   Lindy Zhu               Farum OK        H-14    Ej slut                              
+
+Gruppe H7 (H -20B, H 21-B, H 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Casper Lindemann        OK Roskilde     H35-B  00:34:34    2              2    2     
+2  Clemen Christopher Ditl OK Sorø         H35-B  00:38:11         2         2         2
+3  Frederik Storgaard      Farum OK        H35-B  00:39:51    2    2    2               
+4  Frederik Beck-Andersen  Farum OK        H21-B  00:40:57    2    2    2               
+5  Jens Behrend            Farum OK        H35-B  00:41:59    1    1    2               
+6  Morten Jensen           OK Roskilde     H35-B  00:42:55    1              2    2     
+7  Martin Ullitz           Farum OK        H35-B  00:44:02                              
+8  Klaus Nielsen           Farum OK        H35-B  00:44:20                              
+9  Michael Nilsson         OK Sorø         H21-B  00:46:26         1         1         2
+10 Torben Damkjær Jensen   OK Sorø         H21-B  00:50:03         1         1         2
+11 Kristian Ipsen          Farum OK        H35-B  00:51:11                              
+12 Mikkel Ebbensgaard      OK ØST Birkerød H-20B  00:52:26              1         2    1
+13 Henrik Boesen           OK Roskilde     H35-B  00:57:32    1              1    1     
+14 Bo Christiansen         Farum OK        H21-B  00:59:35                              
+   Jakob Janot             OK Roskilde     H35-B  Ej start                              
+
+Gruppe H8 (H -12, H -14B, H -20C, H 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Emil Ebbensgaard        OK ØST Birkerød H-20C  00:22:31              2         2    2
+2  Oscar Rytter Larsen     Farum OK        H-12   00:25:49    4*   4*   4*              
+3  Jes Henrik Steen        OK ØST Birkerød H21-C  00:26:40                              
+4  Marius Snedker Storgaar Farum OK        H-12   00:27:01    3*   3*   2*              
+5  Filip Nielsen           Farum OK        H-12   00:29:47                              
+6  Jakob Djurhuus Ipsen    Farum OK        H-20C  00:29:54                              
+7  Adam Carlsen            OK Roskilde     H-12   00:34:07    1              4*   4*    
+8  Patrick Søgaard         OK Roskilde     H-14B  00:34:14    1              2    1     
+9  Tim Birkmann Hansen     Farum OK        H-14B  00:40:45                              
+10 Kasper Skytthe          Farum OK        H-14B  00:42:14                              
+   Marc Dahlberg Nielsen   OK Roskilde     H21-C  Ej start                              
+
+Gruppe D1 (D -20, D 21-, D 35-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Line Søderlund          Farum OK        D21-   00:53:19    6    6    6               
+2  Lea Reime               Farum OK        D21-   00:55:09    5    5    5               
+3  Masha Semak             Farum OK        D21-   00:58:28    4    4    4               
+4  Mette Filskov           OK Sorø         D21-   01:06:15         3         6         6
+5  Marie Erskov Krogh      OK ØST Birkerød D-20   01:07:56              5*        8*   7*
+6  Anne Plenge Rønsov      OK ØST Birkerød D35-   01:09:17              2         5    4
+7  Sandra Jarsskov Bodilse Farum OK        D21-   01:16:52                              
+8  Tonje Pihl              OK Roskilde     D-20   01:23:36    5*             7*   5*    
+9  Freja Kliem             Farum OK        D-20   01:42:27    1*   2*   1*              
+10 Amalie Ellegaard Severi OK ØST Birkerød D-20   01:49:55              1         3    4*
+   Eva Sebok               Farum OK        D21-   Ej start                              
+
+Gruppe D2 (D 40-, D 45-) - [6, 5, 4, 3, 2, 1]
+---------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Nina Hoffmann           OK Sorø         D40-   00:53:29         6         6         6
+2  Lise Djurhuus Ipsen     Farum OK        D45-   00:56:24    6    5    6               
+3  Bodil Karlsmose Kliem   Farum OK        D45-   01:03:59    5    4    5               
+4  Katja Brunstedt         OK ØST Birkerød D40-   01:05:18              4         6    5
+5  Birgitte Erskov Halland OK ØST Birkerød D45-   01:11:45              3         5    4
+6  Anne Bloch Frandsen     OK Sorø         D45-   01:17:32         3         5         3
+7  Berit Ahlmann           OK Sorø         D40-   01:22:31         2         4         2
+8  Nina Okkels             OK Sorø         D45-   01:29:36                              
+9  Tine Friis Scheby       OK Sorø         D40-   01:30:50                              
+10 Hanne Møller Jensen     OK Roskilde     D45-   01:56:24    4              3    4     
+   Tina Thilo              Farum OK        D45-   Ej start                              
+
+Gruppe D3 (D -16, D 50-, D 55-) - [6, 5, 4, 3, 2, 1] + [2, 1]
+-------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Emma Bloch Frandsen     OK Sorø         D-16   00:47:01         8*        8*        8*
+2  Karen Jensen            OK ØST Birkerød D50-   00:49:40              6         6    5
+3  Charlotte Højsgaard Thu Farum OK        D50-   00:51:48    6    5    5               
+4  Søs Munch Hansen        OK Sorø         D55-   00:51:50         4         5         4
+5  Sisse Dalsgaard         OK ØST Birkerød D-16   00:53:28              6*        7*   4*
+6  Dorte Torpe Hansen      Farum OK        D50-   00:54:18    5    3    3               
+7  Tove Sonne Andersen     OK ØST Birkerød D55-   00:55:51              2         4    2
+8  Anette Holm             Farum OK        D50-   00:58:03    4    2    1               
+9  Inge Meidahl            OK Roskilde     D50-   01:00:11    3              4    3     
+10 Linda Østberg           OK Roskilde     D50-   01:06:34    2              3    2     
+11 Leni Møllsøe            OK Roskilde     D50-   01:08:26    1              2    1     
+12 Jane Britt Dalsgaard    OK ØST Birkerød D50-   01:15:12                              
+13 Gitte Krogh Madsen      OK Roskilde     D50-   01:16:37                              
+14 Jytte Hougaard          OK Roskilde     D55-   01:17:47                              
+15 Jette Kreiberg          OK Roskilde     D55-   01:22:09                              
+16 Marta Kliem             Farum OK        D-16   01:23:04    2*   1*   1*              
+17 Merete Kleist           OK Sorø         D50-   01:32:10         1         1         1
+18 Lisa Tantholdt          OK ØST Birkerød D55-   01:32:22                              
+19 Marianne Dahl           OK Sorø         D55-   02:00:52                              
+   Caroline van Bronswijk  OK Roskilde     D50-   Ej start                              
+
+Gruppe D4 (D 60-, D 65-) - [4, 3, 2, 1]
+---------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Janet Bentzen           OK ØST Birkerød D65-   00:45:13              4         4    4
+2  Kirsten Nymann Petersen OK ØST Birkerød D65-   00:57:03              3         3    3
+3  Annette Petersen        OK Roskilde     D60-   01:02:19    4              4    2     
+4  Alice Ørum Bertelsen    OK Roskilde     D60-   01:05:22    3              3    1     
+   Hanne Nielsen           OK ØST Birkerød D65-   Ej start                              
+
+Gruppe D5 (D 70-) - [4, 3, 2, 1]
+--------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Inge Jørgensen          OK Roskilde     D70-   00:45:29    4              4    4     
+2  Ellis Byrgiel Sommer    OK ØST Birkerød D70-   00:51:56              4         3    4
+3  Inge Josiasen           OK ØST Birkerød D70-   01:35:40              3         2    3
+
+Gruppe D6 (D -14, D -16B) - [4, 3, 2, 1] + [2, 1]
+-------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Hannah Nielsen          Farum OK        D-14   01:47:51    6*   6*   6*              
+
+Gruppe D7 (D -20B, D 21-B, D 35-B) - [2, 2, 2, 1, 1, 1]
+-------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Cecilie Vitoft          Farum OK        D21-B  00:50:21    2    2    2               
+2  Line Elgård Nielsen     OK ØST Birkerød D21-B  00:51:54              2         2    2
+3  Helena Isabel Mora-Jens Farum OK        D21-B  01:03:12    2    2    2               
+4  Kirsten Lindemann       OK Roskilde     D35-B  01:06:04    2              2    2     
+5  Bente Pihl              OK Roskilde     D35-B  01:06:57    1              2    2     
+6  Marianne Petersen       OK ØST Birkerød D35-B  01:10:01              1         1    2
+7  Mette Lyskjær Jensen    Farum OK        D35-B  01:10:49    1    2    1               
+8  Lise Meidahl Münsberg   OK Roskilde     D-20B  01:11:07    1              2    1     
+9  Susanne Christiansen    Farum OK        D35-B  01:13:01                              
+10 Bente Kjer              OK Roskilde     D35-B  01:15:16                              
+11 Dorrit Røpke            Farum OK        D35-B  01:27:33                              
+
+Gruppe D8 (D -12, D -14B, D -20C, D 21-C) - [2, 2, 1, 1] + [2, 1]
+-----------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Katrine Krogh Madsen    OK Roskilde     D-12   00:25:03    4*             4*   4*    
+2  Rebekka Husen Hollingbe Farum OK        D-12   00:27:39    3*   4*   4*              
+3  Jane Nielsen            Farum OK        D21-C  00:33:03    1    2    2               
+4  Sofie Okkels Jensen     OK Sorø         D-12   00:34:09         2*        3*        4*
+5  Clara Friis Scheby      OK Sorø         D-12   00:35:44         1         1         3*
+6  Lærke Djurhuus Ipsen    Farum OK        D-20C  00:36:38                              
+7  Nanna Rytter Larsen     Farum OK        D21-C  00:38:23                              
+8  Helgard Olsen           OK Roskilde     D21-C  00:44:10                   1    2     
+9  Amalie Camilla Grue-Sør OK Roskilde     D-12   00:46:44    1                   1*    
+10 Katrine Nielsen         Farum OK        D21-C  00:58:59                              
+   Maud Søderholm          OK Roskilde     D21-C  Ej start                              
+
+Gruppe 9 (H -10, D -10, H -12B, D -12B, Begynder) - [1, 1, 1, 1, 1, 1]
+----------------------------------------------------------------------
+pl navn                    klub            klasse    tid     m1   m2   m3   m4   m5   m6
+1  Gustav Snedker Storgaar Farum OK        H-10   00:23:23    1    1    1               
+2  Marie Lyskjær Jensen    Farum OK        Beg    00:23:31    1    1    1               
+3  Teresa Søndergaard Pohl OK Roskilde     D-10   00:23:46    1              1    1     
+4  Freja Snedker Storgaard Farum OK        D-10   00:24:28    1    1    1               
+5  Ida Sofia Sloth         OK ØST Birkerød Beg    00:28:29              1         1    1
+6  Frida Weigelt Svendsen  OK Roskilde     D-10   00:28:50    1              1    1     
+7  Jonas Ebbensgaard       OK ØST Birkerød H-12B  00:30:11              1         1    1
+8  Jens Andreasen          Farum OK        Beg    00:32:11                              
+9  Stian Hoffmann          OK Sorø         H-10   00:32:19         1         1         1
+10 Miri Brunstedt Nørgaard OK ØST Birkerød D-10   00:33:21              1         1    1
+11 Mads Ottar Jespersen    OK Sorø         H-10   00:34:51         1         1         1
+12 Christopher Søgaard     OK Roskilde     H-12B  00:35:15    1              1    1     
+13 Ellen Husen Hollingbery Farum OK        Beg    00:38:22                              
+14 Lærke Ravnholt Jensen   OK Roskilde     D-12B  00:38:53                              
+15 Oskar Koch Hansen       OK ØST Birkerød Beg    00:39:21                              
+16 Morten Ebbensgaard      OK ØST Birkerød Beg    00:39:56                              
+17 Noah Ullitz             Farum OK        Beg    00:40:51                              
+18 Kasper Koch Hansen      OK ØST Birkerød Beg    00:40:57                              
+19 Caroline Koch Holmstrup OK ØST Birkerød Beg    00:40:58                              
+20 Emilie Koch Holmstrup   OK ØST Birkerød Beg    00:41:01                              
+21 Thea Hoffmann           OK Sorø         Beg    00:41:49         1         1         1
+22 Silas Hoffmann          OK Sorø         H-10   00:50:28                              
+   Adam Thilo              Farum OK        Beg    Ej start                              
+   Josefine Tenna Grue-Sør OK Roskilde     D-10     Fejlst                              
+
