@@ -1,7 +1,14 @@
-   bygge ny version
+bygge ny version
+* lav en ny branch repository fra github til egen disk
+* lav rettelser
+* lav en ny build version som nedenfor
+* checkin på github - create pull request
+* update msi-filen under downloads
+
+Build
+------
 
 edit assemblyversion og AssemblyFileVersion i AsemblyInfo.cs
-
 
 opdater dokumentation - divisionsmatchberegning.docx
 gem som pdf of generer chm vha Word2CHM
@@ -15,7 +22,7 @@ Opdater
 * men IKKE UpgradeCode
 i Setup Deployment properties
 
-build setup, release mode
+build setup projektet, release mode
 
 upload 
 * AutoUpdates\versioninfo.xml
@@ -26,7 +33,8 @@ til ftp://fif-orientering.dk@www.fif-orientering.dk/public_html/divisionsmatch
 (for at teste uploades versioninfo.xml til subfolder "test" og programmet køres med argument "test")
 
 
-opdatere SVN
+opdatere Github
+---------------
 	- log på https://github.com/AndersKlinting/divisionsmatchberegning
 	- lav en ny release under Downloads
 	- upload msi-filen

@@ -22,22 +22,9 @@ namespace Divisionsmatch
         public DivisionsResultat.DivisionsResultat DivisionsResultat { get; internal set; }
         public Staevne Staevne { get; set; }
         public string InitialDirectory { get; set; }
+
         private void frmDivisionsResultat_Load(object sender, EventArgs e)
         {
-            if (Staevne != null)
-            {
-                this.dateTimePicker1.Value = Staevne.Dato;
-                this.textBoxStaevneDivision.Text = Staevne.Config.selectedDivision.ToString();
-                this.textBoxStaevneKreds.Text = Staevne.Config.Kreds.ToString();
-
-                this.textBoxStaevneSkov.Text = Staevne.Config.Skov;
-                this.textBoxStaevneType.Text = Staevne.Config.Type;
-
-                foreach (var k in Staevne.Config.selectedClubs)
-                {
-                    listBoxMatchKlubber.Items.Add(k);
-                }
-            }
         }
 
         private void btnOpenFileXML_Click(object sender, EventArgs e)
@@ -69,15 +56,18 @@ namespace Divisionsmatch
                     {
                         // fyld dialogen
                         this.textBoxÅr.Text = mitDivisionsResultat.År.ToString();
-                        this.textBoxDivision.Text = mitDivisionsResultat.Division.ToString();
+                        if (mitDivisionsResultat.Division < 7)
+                        {
+                            this.textBoxDivision.Text = mitDivisionsResultat.Division.ToString();
+                        }
                         this.textBoxKreds.Text = mitDivisionsResultat.Kreds.ToString();
                         this.listBoxMatcher.Items.Clear();
-                        foreach (var m in mitDivisionsResultat.DivisionsMatchResultater)
+                        foreach (var m in mitDivisionsResultat.DivisionsMatchResultater.OrderBy(item => item.Runde).Where(item => item.Runde < mitDivisionsResultat.DivisionsMatchResultater.Count))
                         {
                             this.listBoxMatcher.Items.Add(string.Format("{0} - {1} - {2}", m.Runde, m.Dato, m.Skov));
                         }
 
-                        if (mitDivisionsResultat.DivisionsMatchResultater.Count > 0)
+                        if (mitDivisionsResultat.DivisionsMatchResultater.Count > 1)
                         {
                             foreach (var k in mitDivisionsResultat.DivisionsMatchResultater[0].Klubber)
                             {
@@ -87,15 +77,26 @@ namespace Divisionsmatch
 
                         buttonOK.Enabled = true;
 
-                        // check om divisionsresultat om matchen passer
-                        string msg = string.Empty;
-                        bool ok = mitDivisionsResultat.CheckStaevne(Staevne, out msg);
-                        if (!ok)
+                        DivisionsResultat.DivisionsMatchResultat denneMatch = mitDivisionsResultat.DivisionsMatchResultater.OrderBy(item => item.Runde).Last();
+
+                        // fyld data for denne match
+                        this.dateTimePicker1.Value = DateTime.Parse(denneMatch.Dato);
+                        if (mitDivisionsResultat.Division < 7)
                         {
-                            DivisionsResultat = null;
-                            buttonOK.Enabled = false;
-                            MessageBox.Show("Konfigurationen passer ikke med Divisions Resultater.\n" + msg + "\nIndlæs eller opret divisionsresultater på ny.", "Fejl");
+                            this.textBoxStaevneDivision.Text = mitDivisionsResultat.Division.ToString();
                         }
+                        this.textBoxStaevneKreds.Text = mitDivisionsResultat.Kreds.ToString();
+
+                        this.textBoxStaevneSkov.Text = denneMatch.Skov;
+                        this.textBoxStaevneType.Text = mitDivisionsResultat.Division == 8 ? "Op/Ned" : mitDivisionsResultat.Division == 9 ? "Finale" : "Divisionsmatch";
+                        this.textBoxStaevneRunde.Text = denneMatch.Runde.ToString();
+                        this.textBoxBeskrivelse.Text = denneMatch.Beskriv;
+
+                        foreach (var k in denneMatch.Klubber)
+                        {
+                            listBoxMatchKlubber.Items.Add(k);
+                        }
+
 
                         DivisionsResultat = mitDivisionsResultat;
                         //MessageBox.Show("Tidligere resultater er indlæst. Tryk OK for at benytte dem \n");
@@ -114,66 +115,40 @@ namespace Divisionsmatch
 
         private void buttonOK_Click(object sender, EventArgs e)
         {
-            // scenario 1 - inital data fra o-service
-            // vær sikker på at vi benytter o-service Id i stævnet
-            if (DivisionsResultat.DivisionsMatchResultater != null &&
-                DivisionsResultat.DivisionsMatchResultater.Count == 1 &&
-                DivisionsResultat.DivisionsMatchResultater[0].Dato.Equals(Staevne.Dato.ToString("yyyy-MM-dd")) &&
-                (DivisionsResultat.DivisionsMatchResultater[0].Matcher == null || DivisionsResultat.DivisionsMatchResultater[0].Matcher.Count == 0))
+            // inital data fra o-service
+            // opret config data for stævnet vi benytter o-service Id i stævnet
+            DivisionsResultat.DivisionsMatchResultat denneMatch = DivisionsResultat.DivisionsMatchResultater.OrderBy(item => item.Runde).Last();
+
+            Staevne.Config.Dato = DateTime.Parse(denneMatch.Dato);
+            Staevne.Config.Skov = denneMatch.Skov;
+            Staevne.Config.Type = DivisionsResultat.Division == 8 ? "Op/Ned" : DivisionsResultat.Division == 9 ? "Finale" : "Divisionsmatch";
+            Staevne.Config.Division = DivisionsResultat.Division;
+            Staevne.Config.Kreds = DivisionsResultat.Kreds;
+            Staevne.Config.Beskrivelse = denneMatch.Beskriv;
+            Staevne.Config.Runde = denneMatch.Runde;
+            Staevne.Config.DivisionsResultatFil = this.txtXMLFile.Text;
+
+            // opret klubberne i stævnet
+            foreach (var rk in denneMatch.Klubber)
             {
-                foreach (Klub sk in Staevne.Config.selectedClubs)
-                {
-                    foreach (var rk in DivisionsResultat.DivisionsMatchResultater[0].Klubber)
-                    {
-                        if (sk.Navn == rk.Navn && (rk.Id != null && (sk.Id == null || sk.Id.Id != rk.Id.Id || sk.Id.Type != rk.Id.Type)))
-                        {
-                            if (sk.Id == null)
-                            {
-                                sk.Id = new KlubId();
-                            }
-                            sk.Id.Id = rk.Id.Id;
-                            sk.Id.Type = rk.Id.Type;
-                        }
-                    }
-                }
-
-                foreach (Klub sk in Staevne.Config.allClubs)
-                {
-                    foreach (var rk in DivisionsResultat.DivisionsMatchResultater[0].Klubber)
-                    {
-                        if (sk.Navn == rk.Navn && (rk.Id != null && (sk.Id == null || sk.Id.Id != rk.Id.Id || sk.Id.Type != rk.Id.Type)))
-                        {
-                            if (sk.Id == null)
-                            {
-                                sk.Id = new KlubId();
-                            }
-                            sk.Id.Id = rk.Id.Id;
-                            sk.Id.Type = rk.Id.Type;
-                        }
-                    }
-                }
-
-                foreach (Klub sk in Staevne.Klubber)
-                {
-                    foreach (var rk in DivisionsResultat.DivisionsMatchResultater[0].Klubber)
-                    {
-                        if (sk.Navn == rk.Navn && (rk.Id != null && (sk.Id == null || sk.Id.Id != rk.Id.Id || sk.Id.Type != rk.Id.Type)))
-                        {
-                            if (sk.Id == null)
-                            {
-                                sk.Id = new KlubId();
-                            }
-                            sk.Id.Id = rk.Id.Id;
-                            sk.Id.Type = rk.Id.Type;
-                        }
-                    }
-                }
-
-                // fjern o-service match, da den er uden resulater
-                DivisionsResultat.DivisionsMatchResultater.Clear();
-                DivisionsResultat.DivisionsMatchResultater = null;
-
+                Klub klub = new Klub();
+                klub.Id =new KlubId(rk.Id.Id,rk.Id.Type);
+                klub.Navn = rk.Navn;
+                Staevne.Config.Klubber.Add(klub);
             }
+
+            // fjerne denneMatch fra DivisionsResultat
+            DivisionsResultat.DivisionsMatchResultater.Remove(denneMatch);
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

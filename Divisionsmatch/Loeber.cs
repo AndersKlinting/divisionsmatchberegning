@@ -356,6 +356,8 @@ namespace Divisionsmatch
                 case "OverTime": //Maxtid 
                 case "Overtime": //Maxtid 
                     return "Maxtid";
+                case "Inactive": //inaktiv 
+                    return "Inaktiv";
                 default://ukendt
                     return st;
             }

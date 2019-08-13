@@ -73,6 +73,11 @@ namespace Divisionsmatch.DivisionsResultat
 
             return clone;
         }
+
+        public override string ToString()
+        {
+            return this.Navn;
+        }
     }
 
     /// <summary>
@@ -364,6 +369,8 @@ namespace Divisionsmatch.DivisionsResultat
             clone.StNr = this.StNr;
             clone.Fornavn = this.Fornavn;
             clone.EfterNavn = this.EfterNavn;
+            clone.Gruppe = this.Gruppe;
+            clone.GruppeKlasse = this.GruppeKlasse;
             clone.Løbsklasse = this.Løbsklasse;
             clone.KlubNavn = this.KlubNavn;
             clone.StartTid = this.StartTid;
@@ -391,7 +398,7 @@ namespace Divisionsmatch.DivisionsResultat
         /// Stævnets runde i divisionen
         /// </summary>
         [XmlElement(ElementName = "Runde")]
-        public string Runde { get; set; }
+        public int Runde { get; set; }
 
         /// <summary>
         /// Stævnets skov
@@ -400,10 +407,10 @@ namespace Divisionsmatch.DivisionsResultat
         public string Skov { get; set; }
 
         /// <summary>
-        /// stævnets type
+        /// beskrivelse
         /// </summary>
-        [XmlElement(ElementName = "MatchType")]
-        public string MatchType { get; set; }
+        [XmlElement(ElementName = "Beskriv")]
+        public string Beskriv { get; set; }
 
         /// <summary>
         /// liste af klubber i matchen
@@ -472,7 +479,6 @@ namespace Divisionsmatch.DivisionsResultat
             clone.Dato = this.Dato;
             clone.Runde = this.Runde;
             clone.Skov = this.Skov;
-            clone.MatchType = this.MatchType;
             clone.Klubber = new List<Divisionsmatch.DivisionsResultat.Klub>();
             foreach (Divisionsmatch.DivisionsResultat.Klub k in this.Klubber)
             {
@@ -529,13 +535,13 @@ namespace Divisionsmatch.DivisionsResultat
         /// divisionen - alle stævner skal have samme division
         /// </summary>
         [XmlElement(ElementName = "Division")]
-        public int? Division { get; set; }
+        public int Division { get; set; }
 
         /// <summary>
         /// Kredsen for divisionen - alle stævner skal have samme kreds
         /// </summary>
         [XmlElement(ElementName = "Kreds")]
-        public Kreds? Kreds { get; set; }
+        public string Kreds { get; set; }
 
         /// <summary>
         /// liste af stævner
@@ -616,7 +622,7 @@ namespace Divisionsmatch.DivisionsResultat
                 msg = "Stævnets dato er ikke i samme år som divisionsresultaterne";
             }
 
-            if (staevne.Config.Type == "Divisionsmatch" && this.Division != staevne.Config.selectedDivision)
+            if (staevne.Config.Type == "Divisionsmatch" && this.Division != staevne.Config.Division)
             {
                 ok = false;
                 msg = "Stævnets division passer ikke med divisionsresultaterne";
@@ -630,7 +636,7 @@ namespace Divisionsmatch.DivisionsResultat
 
             if (this.DivisionsMatchResultater != null && this.DivisionsMatchResultater.Count > 0)
             {
-                foreach (var k in staevne.Config.selectedClubs)
+                foreach (var k in staevne.Config.Klubber)
                 {
                     if (!this.DivisionsMatchResultater[0].Klubber.Exists(K => K.Navn.Equals(k.Navn, StringComparison.InvariantCultureIgnoreCase)))
                     {
@@ -703,14 +709,18 @@ namespace Divisionsmatch.DivisionsResultat
             // copy current  
             DivisionsResultat totalDivisionsResultat = this.Clone() as DivisionsResultat;
 
-            // add Staevne
+            ////if (totalDivisionsResultat.DivisionsMatchResultater.Count > 0)
+            ////{
+            ////    // fjern seneste stævne
+            ////    DivisionsMatchResultat denneRunde = totalDivisionsResultat.DivisionsMatchResultater [totalDivisionsResultat.DivisionsMatchResultater.Count-1];
+            ////    totalDivisionsResultat.DivisionsMatchResultater.Remove(denneRunde);
+            ////}
             DivisionsMatchResultat detteResultat = new DivisionsMatchResultat();
 
             // info fra dialog
-            detteResultat.Dato = staevne.Dato.ToString("yyyy-MM-dd");
+            detteResultat.Dato = staevne.Config.Dato.ToString("yyyy-MM-dd");
             detteResultat.Skov = staevne.Config.Skov;
-            detteResultat.MatchType = staevne.Config.Type;
-            detteResultat.Runde = (totalDivisionsResultat.DivisionsMatchResultater.Count +1).ToString();
+            detteResultat.Runde = staevne.Config.Runde;
 
             // fyld med detaljer fra stævnet
             detteResultat.Klubber = new List<Divisionsmatch.DivisionsResultat.Klub>();
@@ -801,7 +811,7 @@ namespace Divisionsmatch.DivisionsResultat
                         totalKlubResultat = new TotalKlubResultat() { Klubnavn = k.Navn };
                         TotalResultat.Add(totalKlubResultat);
                     }
-                    var rundeResultat = new RundeResultat() { LøbsPoint = Convert.ToDouble(k.LøbsPoint), MatchPoint = Convert.ToDouble(k.MatchPoint), Kommentar = k.Kommentar, Matcher = new List<RundeMatch>() };
+                    var rundeResultat = new RundeResultat() { Runde = r.Runde.ToString(), LøbsPoint = Convert.ToDouble(k.LøbsPoint), MatchPoint = Convert.ToDouble(k.MatchPoint), Kommentar = k.Kommentar, Matcher = new List<RundeMatch>() };
                     foreach (var m in r.Matcher)
                     {
                         if (m.MatchKlubber[0].Navn.Equals(k.Navn, StringComparison.InvariantCultureIgnoreCase))
@@ -1076,6 +1086,8 @@ namespace Divisionsmatch.DivisionsResultat
 
         public class RundeResultat
         {
+            public string Runde { get; set; }
+
             [XmlElement("LoebsPoint")]
             public double LøbsPoint { get; set; }
 
@@ -1171,11 +1183,16 @@ namespace Divisionsmatch.DivisionsResultat
             }
             StringBuilder output = new StringBuilder();
 
-            string line = "Stilling " + (this.Division == null ? string.Empty : (this.Division.ToString() + " division")) + (this.Kreds == null ? string.Empty : (" " + this.Kreds.ToString()));
-            if (this.Kreds == null && this.DivisionsMatchResultater != null && this.DivisionsMatchResultater.Count > 0)
+            string line = "Stilling " + (this.Division > 6 ? string.Empty : (this.Division.ToString() + ". division")) + (this.Kreds == null ? string.Empty : (", " + this.Kreds.ToString()));
+            if (this.Division == 8)
+            {
+                // op/ned
+                line += ", op/ned";
+            }
+            else if (this.Division == 9)
             {
                 // finale
-                line += " " + this.DivisionsMatchResultater[0].MatchType;
+                line += ", finale";
             }
             output.AppendLine(line);
             output.AppendLine(new string('-', line.Count()));
@@ -1200,9 +1217,20 @@ namespace Divisionsmatch.DivisionsResultat
                         }
                         output.AppendLine();
                         int n = 1;
+                        int maxL = 0;
                         foreach (var match in r.Matcher)
                         {
-                            output.Append((n.ToString() + " : " + match.MatchKlubber[0].Navn + " - " + match.MatchKlubber[1].Navn).PadRight(40) + " : ");
+                            int L = (n.ToString() + " : " + match.MatchKlubber[0].Navn + " - " + match.MatchKlubber[1].Navn).PadRight(40).Length;
+                            if (L > maxL)
+                            {
+                                maxL = L;
+                            }
+                            n++;
+                        }
+                        n = 1;
+                        foreach (var match in r.Matcher)
+                        {
+                            output.Append((n.ToString() + " : " + match.MatchKlubber[0].Navn + " - " + match.MatchKlubber[1].Navn).PadRight(maxL) + " : ");
                             output.AppendLine(match.MatchKlubber[0].Score.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + " - " + match.MatchKlubber[1].Score.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5));
                             n++;
                         }
@@ -1230,11 +1258,16 @@ namespace Divisionsmatch.DivisionsResultat
 
             StringBuilder output = new StringBuilder();
 
-            string line = "<h3 class=\"matcher\">Stilling " + (this.Division == null ? string.Empty : (this.Division.ToString() + " division")) + (this.Kreds == null ? string.Empty : (" " + this.Kreds.ToString()));
-            if (this.Kreds == null && this.DivisionsMatchResultater!= null && this.DivisionsMatchResultater.Count > 0)
+            string line = "<h3 class=\"matcher\">Stilling " + (this.Division > 6 ? string.Empty : (this.Division.ToString() + ". division")) + (this.Kreds == null ? string.Empty : (", " + this.Kreds.ToString()));
+            if (this.Division == 8)
+            {
+                // op/ned
+                line += ", op/ned";
+            }
+            else if (this.Division == 8)
             {
                 // finale
-                line += " " + this.DivisionsMatchResultater[0].MatchType;
+                line += ", finale ";
             }
             line += "</h3>";
             output.AppendLine(line);

@@ -71,7 +71,7 @@ namespace Divisionsmatch
                 {
                     gemDivisionsResultat.År = Convert.ToInt32(this.textBoxÅr.Text);
                     gemDivisionsResultat.Division = Convert.ToInt32(this.textBoxDivision.Text);
-                    gemDivisionsResultat.Kreds = (Kreds) Enum.Parse( typeof(Kreds), this.textBoxKreds.Text);
+                    gemDivisionsResultat.Kreds = this.textBoxKreds.Text;
                     gemDivisionsResultat.DivisionsMatchResultater = new List<Divisionsmatch.DivisionsResultat.DivisionsMatchResultat>();
                 }
 

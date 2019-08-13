@@ -45,20 +45,22 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxStaevneSkov = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.textBoxStaevneDivision = new System.Windows.Forms.TextBox();
+            this.listBoxMatchKlubber = new System.Windows.Forms.ListBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBoxStaevneKreds = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.listBoxDiviKlubber = new System.Windows.Forms.ListBox();
             this.btnOpenFileXML = new System.Windows.Forms.Button();
             this.txtXMLFile = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.listBoxMatchKlubber = new System.Windows.Forms.ListBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.listBoxDiviKlubber = new System.Windows.Forms.ListBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBoxBeskrivelse = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -117,7 +119,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(25, 126);
+            this.label4.Location = new System.Drawing.Point(12, 126);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 13);
             this.label4.TabIndex = 7;
@@ -146,13 +148,13 @@
             this.listBoxMatcher.FormattingEnabled = true;
             this.listBoxMatcher.Location = new System.Drawing.Point(62, 97);
             this.listBoxMatcher.Name = "listBoxMatcher";
-            this.listBoxMatcher.Size = new System.Drawing.Size(208, 69);
+            this.listBoxMatcher.Size = new System.Drawing.Size(208, 95);
             this.listBoxMatcher.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(23, 20);
+            this.label6.Location = new System.Drawing.Point(12, 20);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(30, 13);
             this.label6.TabIndex = 12;
@@ -169,7 +171,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(23, 152);
+            this.label7.Location = new System.Drawing.Point(12, 152);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 15;
@@ -186,7 +188,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 100);
+            this.label8.Location = new System.Drawing.Point(12, 100);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 13);
             this.label8.TabIndex = 17;
@@ -204,6 +206,8 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.textBoxBeskrivelse);
             this.groupBox1.Controls.Add(this.label12);
             this.groupBox1.Controls.Add(this.textBoxStaevneDivision);
             this.groupBox1.Controls.Add(this.listBoxMatchKlubber);
@@ -218,12 +222,21 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.textBoxStaevneType);
-            this.groupBox1.Location = new System.Drawing.Point(12, 8);
+            this.groupBox1.Location = new System.Drawing.Point(312, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(293, 292);
+            this.groupBox1.Size = new System.Drawing.Size(294, 320);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Denne match";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(12, 205);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(43, 13);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Klubber";
             // 
             // textBoxStaevneDivision
             // 
@@ -233,10 +246,19 @@
             this.textBoxStaevneDivision.Size = new System.Drawing.Size(100, 20);
             this.textBoxStaevneDivision.TabIndex = 18;
             // 
+            // listBoxMatchKlubber
+            // 
+            this.listBoxMatchKlubber.Enabled = false;
+            this.listBoxMatchKlubber.FormattingEnabled = true;
+            this.listBoxMatchKlubber.Location = new System.Drawing.Point(77, 201);
+            this.listBoxMatchKlubber.Name = "listBoxMatchKlubber";
+            this.listBoxMatchKlubber.Size = new System.Drawing.Size(208, 108);
+            this.listBoxMatchKlubber.TabIndex = 11;
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(25, 48);
+            this.label10.Location = new System.Drawing.Point(12, 48);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 13);
             this.label10.TabIndex = 19;
@@ -253,7 +275,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(25, 74);
+            this.label11.Location = new System.Drawing.Point(12, 74);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(34, 13);
             this.label11.TabIndex = 21;
@@ -271,17 +293,35 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.listBoxMatcher);
             this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Location = new System.Drawing.Point(311, 8);
+            this.groupBox2.Location = new System.Drawing.Point(15, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(291, 292);
+            this.groupBox2.Size = new System.Drawing.Size(291, 320);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Divisionsresultat";
+            this.groupBox2.Text = "Divisionsrmatcher indtil nu";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(10, 205);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(43, 13);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Klubber";
+            // 
+            // listBoxDiviKlubber
+            // 
+            this.listBoxDiviKlubber.Enabled = false;
+            this.listBoxDiviKlubber.FormattingEnabled = true;
+            this.listBoxDiviKlubber.Location = new System.Drawing.Point(62, 201);
+            this.listBoxDiviKlubber.Name = "listBoxDiviKlubber";
+            this.listBoxDiviKlubber.Size = new System.Drawing.Size(208, 108);
+            this.listBoxDiviKlubber.TabIndex = 22;
             // 
             // btnOpenFileXML
             // 
             this.btnOpenFileXML.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOpenFileXML.Location = new System.Drawing.Point(565, 328);
+            this.btnOpenFileXML.Location = new System.Drawing.Point(566, 335);
             this.btnOpenFileXML.Name = "btnOpenFileXML";
             this.btnOpenFileXML.Size = new System.Drawing.Size(37, 23);
             this.btnOpenFileXML.TabIndex = 30;
@@ -294,15 +334,15 @@
             this.txtXMLFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtXMLFile.Enabled = false;
-            this.txtXMLFile.Location = new System.Drawing.Point(40, 331);
+            this.txtXMLFile.Location = new System.Drawing.Point(40, 338);
             this.txtXMLFile.Name = "txtXMLFile";
-            this.txtXMLFile.Size = new System.Drawing.Size(519, 20);
+            this.txtXMLFile.Size = new System.Drawing.Size(520, 20);
             this.txtXMLFile.TabIndex = 29;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 334);
+            this.label9.Location = new System.Drawing.Point(12, 341);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(17, 13);
             this.label9.TabIndex = 28;
@@ -313,7 +353,7 @@
             this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.buttonOK.Enabled = false;
-            this.buttonOK.Location = new System.Drawing.Point(527, 385);
+            this.buttonOK.Location = new System.Drawing.Point(528, 373);
             this.buttonOK.Name = "buttonOK";
             this.buttonOK.Size = new System.Drawing.Size(75, 23);
             this.buttonOK.TabIndex = 31;
@@ -325,54 +365,37 @@
             // 
             this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancel.Location = new System.Drawing.Point(446, 385);
+            this.buttonCancel.Location = new System.Drawing.Point(447, 373);
             this.buttonCancel.Name = "buttonCancel";
             this.buttonCancel.Size = new System.Drawing.Size(75, 23);
             this.buttonCancel.TabIndex = 32;
             this.buttonCancel.Text = "Annuller";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
-            // listBoxMatchKlubber
+            // label14
             // 
-            this.listBoxMatchKlubber.Enabled = false;
-            this.listBoxMatchKlubber.FormattingEnabled = true;
-            this.listBoxMatchKlubber.Location = new System.Drawing.Point(77, 175);
-            this.listBoxMatchKlubber.Name = "listBoxMatchKlubber";
-            this.listBoxMatchKlubber.Size = new System.Drawing.Size(208, 108);
-            this.listBoxMatchKlubber.TabIndex = 11;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 178);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(61, 13);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Beskrivelse";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
-            // label12
+            // textBoxBeskrivelse
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(25, 179);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(43, 13);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Klubber";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(10, 179);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(43, 13);
-            this.label13.TabIndex = 23;
-            this.label13.Text = "Klubber";
-            // 
-            // listBoxDiviKlubber
-            // 
-            this.listBoxDiviKlubber.Enabled = false;
-            this.listBoxDiviKlubber.FormattingEnabled = true;
-            this.listBoxDiviKlubber.Location = new System.Drawing.Point(62, 175);
-            this.listBoxDiviKlubber.Name = "listBoxDiviKlubber";
-            this.listBoxDiviKlubber.Size = new System.Drawing.Size(208, 108);
-            this.listBoxDiviKlubber.TabIndex = 22;
+            this.textBoxBeskrivelse.Enabled = false;
+            this.textBoxBeskrivelse.Location = new System.Drawing.Point(77, 175);
+            this.textBoxBeskrivelse.Name = "textBoxBeskrivelse";
+            this.textBoxBeskrivelse.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBeskrivelse.TabIndex = 22;
+            this.textBoxBeskrivelse.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // frmÅbnDivisionsResultat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(614, 420);
+            this.ClientSize = new System.Drawing.Size(615, 408);
             this.Controls.Add(this.buttonCancel);
             this.Controls.Add(this.buttonOK);
             this.Controls.Add(this.btnOpenFileXML);
@@ -429,5 +452,7 @@
         private System.Windows.Forms.ListBox listBoxMatchKlubber;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ListBox listBoxDiviKlubber;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox textBoxBeskrivelse;
     }
 }

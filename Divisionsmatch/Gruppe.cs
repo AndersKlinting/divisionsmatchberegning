@@ -128,16 +128,6 @@ namespace Divisionsmatch
             _printOutput = string.Empty;
 
             _tildelpoint(match, _pointTilDeling.Count() / 2, _pointTilDeling);
-            if (_division <= 3)
-            {
-                // i division 1-3
-                //I ungdomsklasserne D -12, D -14, D -16, D -20, H -12, H -14, H -16 og H -20 gives ekstra 2-1 point i hver af klasserne til de to hurtigste deltagere efter placeringsrækkefølge, uanset hold og uanset om de har fået placeringspoint.
-                if (navn != "9")
-                {
-                    int[] u = { 2, 1 };
-                    _tildelungdomspoint(match, u);
-                }
-            }
         }
 
         /// <summary>
@@ -154,9 +144,8 @@ namespace Divisionsmatch
             {
                 StringBuilder output = new StringBuilder();
 
-                string grp = "Gruppe " + navn + " (" + string.Join(", ", Klasser.Select(item => item.GruppeKlasse).ToArray()) + ")";
-                grp += _printPointsForGruppe();
-
+                string grp = navn;
+                grp += " - " + _printPointsForGruppe();
                 output.AppendLine(grp);
                 output.AppendLine("".PadLeft(grp.Length, '-'));
 
@@ -172,9 +161,8 @@ namespace Divisionsmatch
         {
             StringBuilder output = new StringBuilder();
 
-            output.AppendLine("<h3 class=\"gruppe\" id=\"" + navn + "\">Gruppe " + navn + "</h3>");
-            output.AppendLine("<p class=\"point\">(" + string.Join(", ", Klasser.Select(k => k.GruppeKlasse).ToArray()) + ")");
-            output.AppendLine(_printPointsForGruppe() + "</p>");
+            output.AppendLine("<h3 class=\"gruppe\" id=\"" + navn + "\">" + navn + "</h3>");
+            output.AppendLine("<p>" + _printPointsForGruppe() + "</p>");
 
             return output.ToString();
         }
@@ -183,83 +171,42 @@ namespace Divisionsmatch
         #region private methods
         private void _setPoints()
         {
-            if (_division <= 3)
-            {
-                if (navn == "H1")
-                {
-                    // I gruppe H1 tæller 4 deltagere fra hvert hold, og der gives pointene 8-7-6-5-4-3-2-1
-                    _pointTilDeling = new int[]{ 8, 7, 6, 5, 4, 3, 2, 1 };
-                }
-                else if (navn == "H2" || navn == "H3" || navn == "D1" || navn == "D2" || navn == "D3")
-                {
-                    // I gruppe H2, H3, D1, D2 og D3 tæller 3 deltagere fra hvert hold, og der gives pointene 6-5-4-3-2-1 efter placeringsrækkefølge.
-                    _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 };
-                }
-                else if (navn == "H4" || navn == "H5" || navn == "D4" || navn == "D5")
-                {
-                    // I gruppe H4, H5, D4 og D5 tæller 2 deltagere fra hvert hold, og der gives pointene 4-3-2-1 efter placeringsrækkefølge. 
-                    _pointTilDeling = new int[] { 4, 3, 2, 1 };
-                }
-                else if (navn == "H6" || navn == "D6")
-                {
-                    // I gruppe H6 og D6 tæller 2 deltagere fra hvert hold, og der gives pointene 4-3-2-1 efter placeringsrækkefølge.
-                    _pointTilDeling = new int[] { 4, 3, 2, 1 };
-                }
-                else if (navn == "H7" || navn == "D7")
-                {
-                    // I gruppe H7 og D7 tæller 3 deltagere fra hvert hold, og der gives pointene 2-2-2-1-1-1 efter placeringsrækkefølge.
-                    _pointTilDeling = new int[]{ 2, 2, 2, 1, 1, 1 };
-                }
-                else if (navn == "H8" || navn == "D8")
-                {
-                    // I gruppe H8 og D8 tæller 2 løbere fra hvert hold, og der gives pointene 2-2-1-1 efter placeringsrækkefølge, dog højst 2 points i alt til deltagere i klasserne D -20C/D 21C-, henholdsvis H -20C/H 21C-.
-                    _pointTilDeling = new int[] { 2, 2, 1, 1 };
-                }
-                else if (navn == "9")
-                {
-                    // I gruppe 9 gives 1 point pr. gennemførende deltager, dog højst 3 pr. hold.
-                    _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 };
-                }
-            }
-            else
-            {
-                // 4 - ? division
-                if (navn == "H1")
-                {
-                    // I gruppe H1 tæller 3 deltagere fra hvert hold, og der gives pointene 6-5-4-3-2-1 efter placeringsrækkefølge. 
-                    _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 };
-                }
-                else if (navn == "H2" || navn == "H3" || navn == "D1" || navn == "D2" || navn == "D3")
-                {
-                    // I gruppe H2, H3, H4, H5, D1, D2, D3, D4 og D5 tæller 2 deltagere fra hvert hold, og der gives pointene 4-3-2-1 efter placeringsrækkefølge. 
-                    _pointTilDeling = new int[] { 4, 3, 2, 1 };
-                }
-                else if (navn == "H4" || navn == "H5" || navn == "D4" || navn == "D5")
-                {
-                    // I gruppe H2, H3, H4, H5, D1, D2, D3, D4 og D5 tæller 2 deltagere fra hvert hold, og der gives pointene 4-3-2-1 efter placeringsrækkefølge. 
-                    _pointTilDeling = new int[] { 4, 3, 2, 1 };
-                }
-                else if (navn == "H6" || navn == "D6")
-                {
-                    // I gruppe H6 og D6 tæller 1 deltager fra hvert hold, og der gives pointene 2-1 efter placeringsrækkefølge.
-                    _pointTilDeling = new int[] { 2, 1 };
-                }
-                else if (navn == "H7" || navn == "D7")
-                {
-                    // I gruppe H7 og D7 tæller 2 deltagere fra hvert hold, og der gives pointene 2-2-1-1 efter placeringsrækkefølge.
-                    _pointTilDeling = new int[] { 2, 2, 1, 1 };
-                }
-                else if (navn == "H8" || navn == "D8")
-                {
-                    // I gruppe H8 og D8 tæller 1 deltager fra hvert hold, og der gives pointene 2-1 efter placeringsrækkefølge.
-                    _pointTilDeling = new int[] { 2, 1 };
-                }
-                else if (navn == "9")
-                {
-                    // I gruppe 9 gives 1 point pr. gennemførende deltager, dog højst 2 pr. hold.
-                    _pointTilDeling = new int[] { 1, 1, 1, 1 };
-                }
-            }
+            if (navn == "Beg") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
+            else if (navn == "D10") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
+            else if (navn == "D12") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "D12B") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
+            else if (navn == "D14") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "D14B") { _pointTilDeling = new int[] { 2, 2, 1, 1 }; }
+            else if (navn == "D16") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "D18") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "D20") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "D20B") { _pointTilDeling = new int[] { 2, 2, 1, 1 }; }
+            else if (navn == "D21") { _pointTilDeling = new int[] { 8, 7, 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "D21B") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
+            else if (navn == "D40") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "D45B") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
+            else if (navn == "D50") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "D60") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "D70") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "D-Let") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
+            else if (navn == "H10") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
+            else if (navn == "H12") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "H12B") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
+            else if (navn == "H14") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "H14B") { _pointTilDeling = new int[] { 2, 2, 1, 1 }; }
+            else if (navn == "H16") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "H18") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "H20") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
+            else if (navn == "H20B") { _pointTilDeling = new int[] { 2, 2, 1, 1 }; }
+            else if (navn == "H21") { _pointTilDeling = new int[] { 8, 7, 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "H21B") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
+            else if (navn == "H40") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "H45B") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
+            else if (navn == "H50") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "H60") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "H70") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "H80") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "H-Let") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
         }
 
         private string _printPointsForGruppe()
@@ -267,7 +214,7 @@ namespace Divisionsmatch
             string grp = string.Empty;
             if (_points != null && _points.Length > 0)
             {
-                grp += " - [" + string.Join(", ", _points) + "]";
+                grp += "[" + string.Join(", ", _points) + "]";
             }
             if (_upoints != null && _upoints.Length > 0)
             {
@@ -336,20 +283,6 @@ namespace Divisionsmatch
 
                         if (tildel)
                         {
-                            // restriction ?
-                            if (match.Division <= 3 && ll.Gruppeklasse.EndsWith("C"))
-                            {
-                                // global restriktion gælder kun division 1-3 for disse klasser
-                                // hvis vi allerede har tildelt til mindst en løber med restriction før denne tid
-                                if (restrict)
-                                {
-                                    tildel = false;
-                                }
-                            }
-                        }
-
-                        if (tildel)
-                        {
                             // hvis der er points at tildele så gør det
                             if (n < point.Length)
                             {
@@ -373,13 +306,6 @@ namespace Divisionsmatch
                             else
                             {
                                 loebereK2.Add(ll);
-                            }
-                            
-                            // noter hvis det er en med restriktion
-                            if (match.Division <= 3 && ll.Gruppeklasse.EndsWith("C"))
-                            {
-                                // global restriktion gælder kun division 1-3 for disse klasser
-                                loebereRestrict.Add(ll);
                             }
 
                             n++;
@@ -425,86 +351,6 @@ namespace Divisionsmatch
             }
         }
 
-        private void _tildelungdomspoint(Match match, int[] point)
-        {
-            // for ungdomsklaser i gruppen
-            // find løbere i disse klasser
-            // tildel point til løberne
-            int antal = point.Length;
-            IList<Loeber> toploebere = new List<Loeber>();
-
-            // find ungdomsklasserne i denne gruppe
-            // hvis der er nogle så foretag tildeling
-            List<string> tider = new List<string>();
-            var uklasser = Klasser.Where(item => item.Ungdom == true);
-            if (uklasser != null && uklasser.Count() > 0)
-            {
-                _upoints = point;
-
-                // lav en liste af klassenavnen
-                List<Klasse> uk = new List<Klasse>();
-                foreach (Klasseconfig kv in uklasser)
-                {
-                    uk.Add(kv.LøbsKlasse);
-                }
-
-                // find top 'antal' løbere i ungdomsklasser i klubber i denne match 
-                // samt de som eventuelt måtte have samme tid som disse (dvs flere end antal opnås)
-                tider.Clear();
-                int n = 0;
-                foreach (var kv in Loebere.Where(ll => uk.Exists(u => u.Navn == ll.Value.Løbsklassenavn) && match.HarKlub(ll.Value.Klub) && ll.Value.IsStatusOK && ll.Value.Inkl))
-                {
-                    // tag løberen hvis under 'antal' er taget eller 
-                    // løberen har samme tid som foregående som blev taget
-                    Loeber l = kv.Value;
-                    if (n < antal || tider.Contains(l.Tid))
-                    {
-                        // tildel det n'te point
-                        double p = 0;
-                        if (n < antal)
-                        {
-                            p = point[n];
-                        }
-                        l.SetUPoint(match, p);
-                        toploebere.Add(l);
-                        n++;
-
-                        if (!tider.Contains(l.Tid))
-                        {
-                            tider.Add(l.Tid);
-                        }
-                    }
-                }
-            }
-
-            // fordel evt point for løbere med samme tid blandt topløberne
-            tider.Clear();
-            foreach (Loeber l in toploebere)
-            {
-                // lave kun beregningen 1 gang for hver tid
-                if (!tider.Contains(l.Tid))
-                {
-                    var loebereMedSammeTid = toploebere.Where(item => tider.Contains(item.Tid));
-                    int cntP = loebereMedSammeTid.Count();
-                    if (cntP > 1)
-                    {
-                        double sumP = 0;
-                        foreach (Loeber lst in loebereMedSammeTid)
-                        {
-                            sumP += lst.GetUPoint(match);
-                        }
-
-                        foreach (Loeber lst in loebereMedSammeTid)
-                        {
-                            lst.SetUPoint(match, sumP / cntP);
-                        }
-                    }
-
-                    // hold styr på tiderne som er tjekket
-                    tider.Add(l.Tid);
-                }
-            }
-        }
         #endregion
     }
 }

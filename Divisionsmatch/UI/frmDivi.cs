@@ -45,7 +45,7 @@ namespace Divisionsmatch
         /// <summary>
         /// URL for auto update
         /// </summary>
-        public static string autoUpdateSiteURL = @"http://divisionsmatchberegning.codeplex.com/releases";
+        public static string autoUpdateSiteURL = @"http://www.fif-orientering.dk/divisionsmatch";
 
         /// <summary>
         /// URL for auto update
@@ -54,12 +54,12 @@ namespace Divisionsmatch
 
         /// <summary>
         /// URL for auto update
-        /// </summary>
+            /// </summary>
         public static string autoUpdateTestURL = @"http://www.fif-orientering.dk/divisionsmatch/test/versioninfo.xml";
 
         private Hashtable ieOriginalPageSetup = new Hashtable();
         private Hashtable ieNewPageSetup = new Hashtable();
-        private Config config = new Config(true);
+        private Config config = null;
         private string configFile = string.Empty;
         private Staevne _mitstaevne = null; // new Staevne(Application.ProductVersion);
         private FileSystemWatcher watcher = null;
@@ -207,32 +207,40 @@ namespace Divisionsmatch
         #region løb menu handlers
         private void nytLøbToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmConfig frm = new frmConfig();
-            frm.Config = new Config(true);
-            if (frm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            // åben en divisionsresultat (en o-service exportfil.)
+            frmÅbnDivisionsResultat openFile = new frmÅbnDivisionsResultat();
+            openFile.Staevne = new Staevne(Application.ProductVersion);
+            openFile.InitialDirectory = _currentDiviDirectory;
+
+            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                Cursor.Current = Cursors.WaitCursor;
-                try
+                frmConfig frm = new frmConfig(openFile.Staevne.Config);
+                if (frm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
-                    mitstaevne = new Staevne(Application.ProductVersion);
-                    mitDivisionsResultat = null;
-                    config = frm.Config;
-                    mitstaevne.Config = config;
-                    configFile = string.Empty;
-                    isModified = true;
+                    Cursor.Current = Cursors.WaitCursor;
+                    try
+                    {
+                        mitstaevne = openFile.Staevne;
+                        config = mitstaevne.Config;
+                        mitDivisionsResultat = openFile.DivisionsResultat;
+                        _currentDiviDirectory = openFile.InitialDirectory;
+                                                
+                        configFile = string.Empty;
+                        isModified = true;
 
-                    panel2.Enabled = true;
-                    gemLøbToolStripMenuItem.Enabled = true;
-                    gemsomToolStripMenuItem.Enabled = true;
-                    redigerToolStripMenuItem.Enabled = true;
-                    startlisteToolStripMenuItem.Enabled = true;
-                    divisionsresultatToolStripMenuItem.Enabled = true;
+                        panel2.Enabled = true;
+                        gemLøbToolStripMenuItem.Enabled = true;
+                        gemsomToolStripMenuItem.Enabled = true;
+                        redigerToolStripMenuItem.Enabled = true;
+                        startlisteToolStripMenuItem.Enabled = true;
+                        gemDivisionsresultatToolStripMenuItem1.Enabled = (mitDivisionsResultat != null);
 
-                    _resetBeregnOgPrint();
-                }
-                finally
-                {
-                    Cursor.Current = Cursors.Default;
+                        _resetBeregnOgPrint();
+                    }
+                    finally
+                    {
+                        Cursor.Current = Cursors.Default;
+                    }
                 }
             }
         }
@@ -281,36 +289,25 @@ namespace Divisionsmatch
         {
             // load file
             Config c = Config.LoadDivi(fileName);
-            if (c.NeedEdit)
-            {
-                MessageBox.Show("Konfigurationen behøver redigering for at kunne bruges.\nÅbner redigeringsdialog");
-                if (!redigerConfig(c, fileName))
-                {
-                    return false;
-                }
-                isModified = true;
-            }
-            else
-            {
-                // load is OK
-                configFile = fileName;
-                isModified = false;
-                this.config = c;
-            }
+            DivisionsResultat.DivisionsResultat divisionsResultat = Util.OpenDivisionsResultat(c.DivisionsResultatFil);
+            DivisionsResultat.DivisionsMatchResultat denneMatch = divisionsResultat.DivisionsMatchResultater.OrderBy(item => item.Runde).Last();
+            divisionsResultat.DivisionsMatchResultater.Remove(denneMatch);
 
-            configFile = fileName;
-            
-            mitstaevne = new Staevne(Application.ProductVersion);
-            mitstaevne.Config = c;
-            if (mitDivisionsResultat != null)
+            Staevne staevne = new Staevne(Application.ProductVersion);
+            staevne.Config = c;
+            if (divisionsResultat != null)
             {
                 string msg = string.Empty;
-                if (!mitDivisionsResultat.CheckStaevne(mitstaevne, out msg))
+                if (!divisionsResultat.CheckStaevne(staevne, out msg))
                 {
-                    MessageBox.Show("konfigurationen stemmer ikke med DivisionsResultatet.\n" + msg + "\nIndlæs divisionsresultat på ny eller lav et nyt");
-                    mitDivisionsResultat = null;
+                    throw new Exception("Konfigurationen stemmer ikke med DivisionsResultatet i " + c.DivisionsResultatFil + "\n" + msg + "\nLav en ny konfigurering");
                 }
             }
+
+            mitstaevne = staevne;
+            config = c;
+            mitDivisionsResultat = divisionsResultat;
+            configFile = fileName;
 
             // juster UI
             _makeNewPageSetup(config.pageSettings);
@@ -320,7 +317,7 @@ namespace Divisionsmatch
             gemsomToolStripMenuItem.Enabled = true;
             redigerToolStripMenuItem.Enabled = true;
             startlisteToolStripMenuItem.Enabled = true;
-            divisionsresultatToolStripMenuItem.Enabled = true;
+            gemDivisionsresultatToolStripMenuItem1.Enabled = (mitDivisionsResultat != null);
 
             _resetBeregnOgPrint();
 
@@ -330,8 +327,7 @@ namespace Divisionsmatch
         private bool redigerConfig(Config cfg, string configFile)
         {
             // Redigerløb  - vis konfiguration
-            frmConfig frm = new frmConfig();
-            frm.Config = cfg.Clone() as Config;
+            frmConfig frm = new frmConfig(cfg.Clone() as Config);
             frm.editOnly = true;
             frm.saveFile = configFile;
             if (frm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
@@ -455,10 +451,11 @@ namespace Divisionsmatch
             if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 // check om resultat er samme type som blev brugt til konfiguration
+                bool isTxt = false;
                 bool isEntryXml = false;
                 bool isStartXml = false;
                 bool isResultXml = false;
-                string fileVersion = Util.CheckFileVersion(openFile.FileName, out isEntryXml, out isStartXml, out isResultXml);
+                string fileVersion = Util.CheckFileVersion(openFile.FileName, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
                 if (config.ConfigClassSrc != "" && config.ConfigClassSrc != fileVersion)
                 {
                     if (MessageBox.Show("Du brugte " + config.ConfigClassSrc + " data til at konfigurere klubber og klasser.\nNu læser du resultater i " + fileVersion + " format.\nDet kan give problemer at bruge forskelligt format. Ønsker du at fortsætte?", "Advarsel", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
@@ -1276,10 +1273,23 @@ namespace Divisionsmatch
         private Config _loadDiviFil(string diviFil)
         {
             Config config = Config.LoadDivi(diviFil);
+            DivisionsResultat.DivisionsResultat divisionsResultat = Util.OpenDivisionsResultat(config.DivisionsResultatFil);
+            DivisionsResultat.DivisionsMatchResultat denneMatch = divisionsResultat.DivisionsMatchResultater.OrderBy(item => item.Runde).Last();
+            divisionsResultat.DivisionsMatchResultater.Remove(denneMatch);
 
             mitstaevne = new Staevne(Application.ProductVersion);
             mitstaevne.Config = config;
+            if (divisionsResultat != null)
+            {
+                string msg = string.Empty;
+                if (!divisionsResultat.CheckStaevne(mitstaevne, out msg))
+                {
+                    throw new Exception("Konfigurationen stemmer ikke med DivisionsResultatet i " + config.DivisionsResultatFil + "\n" + msg + "\nLav en ny konfigurering");
+                }
+            }
             configFile = diviFil;
+            mitDivisionsResultat = divisionsResultat;
+
             isModified = false;
             return config;
         }
@@ -1291,8 +1301,8 @@ namespace Divisionsmatch
             {
                 divisionsResultat = new DivisionsResultat.DivisionsResultat();
                 divisionsResultat.År = mitstaevne.Dato.Year;
-                divisionsResultat.Division = mitstaevne.Config.selectedDivision;
-                divisionsResultat.Kreds = mitstaevne.Config.Kreds ?? Kreds.Østkredsen;
+                divisionsResultat.Division = mitstaevne.Config.Division;
+                divisionsResultat.Kreds = mitstaevne.Config.Kreds;
             }
             else
             {
@@ -1523,28 +1533,23 @@ namespace Divisionsmatch
         // sample commandline arguments: -d "3-4 Division Op-Ned.divi" -c resultat.csv -p TXT
         private bool _doBatch(string[] args)
         {
-            Console.WriteLine("Divisionsmatch -  Copyright (C) 2013 Anders Klinting");
-            Console.WriteLine("");
-            Console.WriteLine("This program comes with ABSOLUTELY NO WARRANTY; for details see the About page");
-            Console.WriteLine("This is free software, and you are welcome to redistribute it");
-            Console.WriteLine("under certain conditions");
-
             CommandLineParser.CommandLineParser parser = new CommandLineParser.CommandLineParser();
 
             try
             {
                 FileArgument diviFil = new FileArgument('d', "Divi", "Divi fil");
                 FileArgument resultatFil = new FileArgument('c', "C", "resultat fil");
-                FileArgument stillingsFil = new FileArgument('s', "Stilling", "stillings xml fil");
-                FileArgument outFil = new FileArgument('o', "Output", "output stillings fil");
+                ////FileArgument stillingsFil = new FileArgument('s', "Stilling", "stillings xml fil");
+                ValueArgument<string> outFil = new ValueArgument<string>('o', "Output", "output stillings fil");
                 ValueArgument<string> exportFil = new ValueArgument<string>('e', "Export", "Export fil");
                 ValueArgument<string> format = new ValueArgument<string>('f', "Format", "print/eksport TXT eller WWW");
                 SwitchArgument print = new SwitchArgument('p', "Print", false);
                 SwitchArgument help = new SwitchArgument('h', "Hjælp", false);
+                SwitchArgument nologo = new SwitchArgument('n', "nologo", false);
 
                 parser.Arguments.Add(diviFil);
                 parser.Arguments.Add(resultatFil);
-                parser.Arguments.Add(stillingsFil);
+                ////parser.Arguments.Add(stillingsFil);
                 parser.Arguments.Add(outFil);
                 parser.Arguments.Add(exportFil);
                 parser.Arguments.Add(format);
@@ -1553,6 +1558,16 @@ namespace Divisionsmatch
 
                 parser.ParseCommandLine(args);
                 //// parser.ShowParsedArguments();
+
+                if (!nologo.Parsed)
+                {
+                    Console.WriteLine("Divisionsmatch -  Copyright (C) 2013 Anders Klinting");
+                    Console.WriteLine("");
+                    Console.WriteLine("This program comes with ABSOLUTELY NO WARRANTY; for details see the About page");
+                    Console.WriteLine("This is free software, and you are welcome to redistribute it");
+                    Console.WriteLine("under certain conditions");
+                    Console.WriteLine("");
+                }
 
                 if (help.Parsed)
                 {
@@ -1565,10 +1580,11 @@ namespace Divisionsmatch
                         Console.WriteLine("Loader divi-fil " + diviFil.Value.FullName);
                         config = _loadDiviFil(diviFil.Value.FullName);
 
-                        if (stillingsFil.Parsed)
-                        {
-                            _loadStillingsFil(stillingsFil.Value.FullName);
-                        }
+                        ////if (stillingsFil.Parsed)
+                        ////{
+                        ////    Console.WriteLine("Loader divisionsstilling-fil " + diviFil.Value.FullName);
+                        ////    _loadStillingsFil(stillingsFil.Value.FullName);
+                        ////}
 
                         if (resultatFil.Parsed)
                         {
@@ -1599,15 +1615,15 @@ namespace Divisionsmatch
 
                             if (outFil.Parsed)
                             {
-                                if (stillingsFil.Parsed)
-                                {
-                                    Console.WriteLine("gemmer ny divisionsstilling");
-                                    _gemStilling(outFil.Value.FullName);
-                                }
-                                else
-                                {
-                                    Console.WriteLine("ny divisionsstilling kan kke gemmes uden input stillingsfil");
-                                }
+                                ////if (stillingsFil.Parsed)
+                                ////{
+                                Console.WriteLine("gemmer ny divisionsstilling");
+                                _gemStilling(outFil.Value);
+                                ////}
+                                ////else
+                                ////{
+                                ////    Console.WriteLine("ny divisionsstilling kan kke gemmes uden input stillingsfil");
+                                ////}
                             }
 
                             if (exportFil.Parsed)
@@ -1773,65 +1789,12 @@ namespace Divisionsmatch
             }
         }
 
-        private void divisionsresultatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // find ud af hvilke sub menu items som er aktive
-            // nytDivisionsResultatToolStripMenuItem.Enabled = (mitstaevne != null && mitstaevne.Dato != null);
-            åbnDivisionsResultatToolStripMenuItem.Enabled = (mitstaevne != null && mitstaevne.Dato != null);
-            visDivisionsResultatToolStripMenuItem.Enabled = (mitDivisionsResultat != null);
-            gemDivisionsResultatToolStripMenuItem.Enabled = (mitDivisionsResultat != null);
-        }
-
-        private void åbnDivisionsResultatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            // åben en divisionsresultat
-            frmÅbnDivisionsResultat openFile = new frmÅbnDivisionsResultat();
-            openFile.Staevne = mitstaevne;
-            openFile.InitialDirectory = _currentDiviDirectory;
-
-            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                _currentDiviDirectory = openFile.InitialDirectory;
-                mitDivisionsResultat = openFile.DivisionsResultat;
-                if (txtCSVFile.Text != string.Empty)
-                {
-                    _beregn();
-                }
-            }
-        }
-
-        private void visDivisionsResultatToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (frmVisDivisionsResultat == null || frmVisDivisionsResultat.IsDisposed)
-            {
-                frmVisDivisionsResultat = new frmVisDivisionsResultat();
-                frmVisDivisionsResultat.Staevne = mitstaevne;
-                frmVisDivisionsResultat.DivisionsResultat = this.mitDivisionsResultat;
-                frmVisDivisionsResultat.Show();
-            }
-            else if (frmVisDivisionsResultat != null)
-            {
-                frmVisDivisionsResultat.Staevne = mitstaevne;
-                frmVisDivisionsResultat.DivisionsResultat = this.mitDivisionsResultat;
-                frmVisDivisionsResultat.Focus();
-            }
-        }
-
-        private void gemDivisionsResultatToolStripMenuItem_Click(object sender, EventArgs e)
+        private void gemDivisionsresultatToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmGemDivisionsResultat frmGemDivisionsResultat = new frmGemDivisionsResultat();
             frmGemDivisionsResultat.Staevne = mitstaevne;
             frmGemDivisionsResultat.DivisionsResultat = mitDivisionsResultat;
             frmGemDivisionsResultat.ShowDialog();
-        }
-
-        private void divisionsresultatToolStripMenuItem_DropDownOpening(object sender, EventArgs e)
-        {
-            // find ud af hvilke sub menu items som er aktive
-            // nytDivisionsResultatToolStripMenuItem.Enabled = (mitstaevne != null && mitstaevne.Config != null);
-            åbnDivisionsResultatToolStripMenuItem.Enabled = (mitstaevne != null && mitstaevne.Config != null);
-            visDivisionsResultatToolStripMenuItem.Enabled = (mitDivisionsResultat != null);
-            gemDivisionsResultatToolStripMenuItem.Enabled = (mitDivisionsResultat != null);
         }
     }
 

@@ -31,7 +31,9 @@ namespace Divisionsmatch
     {
         private string _currentDirectory = string.Empty;
 
-        private Config _config = new Config(true);
+        private Config _config = null;
+
+        private int indexLoebsklasse = -1;
 
         /// <summary>
         /// config som oprettes/rettes
@@ -62,7 +64,7 @@ namespace Divisionsmatch
         /// <summary>
         /// constructor
         /// </summary>
-        public frmConfig()
+        public frmConfig(Config config)
         {
             InitializeComponent();
 
@@ -70,33 +72,13 @@ namespace Divisionsmatch
             //// txtTXTFileKlasser.Text = @"C:\temp\divisionsturnering\klasser.txt";
             //// txtXMLFile.Text = @"C:\temp\divisionsturnering\startliste.xml";
 #endif
-            
+
+            _config = config;
             editOnly = false;
         }
 
         private void frmConfig_Load(object sender, EventArgs e)
         {
-            // fyld liste med divisioner
-            int nr = Config.selectedDivision;
-            cmbDivision.DataSource = Config.divisioner;
-            cmbDivision.DisplayMember = "beskrivelse";
-            cmbDivision.ValueMember = "nr";
-            cmbDivision.SelectedValue = nr;
-
-            this.comboBoxKreds.Items.AddRange(Enum.GetNames(typeof(Kreds)));
-
-            if (editOnly)
-            {
-                label2.Visible = false;
-                label6.Visible = false;
-                txtTXTFileKlasser.Visible = false;
-                txtXMLFile.Visible = false;
-                btnOpenFileXML.Visible = false;
-                btnOpenKlasser.Visible = false;
-                //btnGem.Visible = false;
-                btnLoad.Visible = false;
-            }
-
             _LoadConfig();
 
             _PreselectKlasser();
@@ -106,7 +88,6 @@ namespace Divisionsmatch
             _updateButtons();
 
             dataGridView1.Enabled = true;
-            lstAllClubs.Enabled = true;
             checkedListClubs.Enabled = true;
 
             textBox1.BackColor = System.Drawing.Color.White;
@@ -115,30 +96,46 @@ namespace Divisionsmatch
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
-            try
+            OpenFileDialog openFile = new OpenFileDialog();
+            openFile.Filter = "IOF XML tilmeldingsliste, startliste, resultatliste (*.xml)|*.xml|OE2003 resultatliste (*.csv)|*.csv|EResults Pro løber export (*.txt)|*.txt|OE2003 klasser (*.txt)|*.txt";
+            openFile.CheckPathExists = true;
+            openFile.AddExtension = true;
+            openFile.DefaultExt = ".xml";
+            openFile.SupportMultiDottedExtensions = true;
+            openFile.Title = "Åbn liste";
+            openFile.Multiselect = false;
+            if (_currentDirectory != string.Empty)
             {
-                Config.LoadKlubberOgKlasser(txtXMLFile.Text, txtTXTFileKlasser.Text);
-
-                _LoadConfig();
-
-                _PreselectKlasser();
-
-                txtMatcher.Text = string.Empty;
-                dataGridView1.Enabled = true;
-                lstAllClubs.Enabled = true;
-                checkedListClubs.Enabled = true;
+                openFile.InitialDirectory = _currentDirectory;
             }
-            catch (Exception ex)
+            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                MessageBox.Show("Der skete en fejl: " + ex.Message);
+                _currentDirectory = Path.GetDirectoryName(openFile.FileName);
+
+                try
+                {
+                    Config.LoadKlasserOgBaner(openFile.FileName);
+
+                    _LoadConfig();
+
+                    _MakeMatches();
+
+                    _PreselectKlasser();
+
+                    dataGridView1.Enabled = true;
+                    checkedListClubs.Enabled = true;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Der skete en fejl: " + ex.Message);
+                }
             }
         }
 
         private void _LoadConfig()
         {
             // fyld lister
-            lstAllClubs.DataSource = Config.allClubs;
-            checkedListClubs.DataSource = Config.selectedClubs;
+            checkedListClubs.DataSource = Config.Klubber;
             _unCheckUdeblevne();
 
             // fyld grid med grupper og klasser
@@ -150,43 +147,61 @@ namespace Divisionsmatch
             dataGridView1.DataSource = Config.gruppeOgKlasse;
             dataGridView1.Columns[0].DataPropertyName = "Gruppe";
             dataGridView1.Columns[0].ReadOnly = true;
+            dataGridView1.Columns[0].Visible = false;
+
             dataGridView1.Columns[1].DataPropertyName = "Klasse";
             dataGridView1.Columns[1].ReadOnly = true;
-            dataGridView1.Columns[2].DataPropertyName = "Ungdom";
-            dataGridView1.Columns[2].ReadOnly = true;
 
-            dataGridView1.Columns.RemoveAt(3);
+            indexLoebsklasse = 2;
+            dataGridView1.Columns.RemoveAt(indexLoebsklasse);
 
-            DataGridViewComboBoxColumn column3 = new DataGridViewComboBoxColumn();
-            column3.DataPropertyName = "Løbsklasse";
-            column3.HeaderText = "Løbsklasse";
-            column3.DisplayMember = "DisplayName";
-            column3.ValueMember = "Navn";
-            dataGridView1.Columns.Add(column3);
+            DataGridViewComboBoxColumn column = new DataGridViewComboBoxColumn();
+            column.DataPropertyName = "Løbsklasse";
+            column.HeaderText = "Løbsklasse";
+            column.DisplayMember = "DisplayName";
+            column.ValueMember = "Navn";
+            dataGridView1.Columns.Add(column);
 
-            (dataGridView1.Columns[3] as DataGridViewComboBoxColumn).DataSource = Config.classes;
+            (dataGridView1.Columns[indexLoebsklasse] as DataGridViewComboBoxColumn).DataSource = Config.classes;
 
             foreach (DataGridViewColumn col in dataGridView1.Columns)
             {
                 col.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
 
-            if (Config.Dato != DateTime.Now.Date)
-            {
-                dateTimePickerDato.Value = Config.Dato;
-            }
+            dateTimePickerDato.Value = Config.Dato;
+
             if (!string.IsNullOrEmpty(Config.Skov))
             {
                 textBoxSkov.Text = Config.Skov;
             }
             if (Config.Type != null)
             {
-                comboBoxType.SelectedIndex = comboBoxType.Items.IndexOf(Config.Type);
+                textBoxType.Text = Config.Type;
             }
             if (Config.Kreds != null)
             {
-                comboBoxKreds.SelectedIndex = comboBoxKreds.Items.IndexOf(Config.Kreds.ToString());
+                textBoxKreds.Text = Config.Kreds;
             }
+            textBoxRunde.Text = string.Empty;
+            if (Config.Division >= 1 && Config.Division <= 6)
+            {
+                textBoxDivision.Text = Config.Division + ". division";
+                textBoxRunde.Text = Config.Runde.ToString();
+            }
+            else if (Config.Division == 8)
+            {
+                textBoxDivision.Text = "Op/Ned";
+            }
+            else if (Config.Division == 9)
+            {
+                textBoxDivision.Text = "Finale";
+            }
+            else
+            {
+                textBoxDivision.Text = string.Empty;
+            }
+            textBoxBeskriv.Text = Config.Beskrivelse;
         }
 
         private void _PreselectKlasser()
@@ -207,16 +222,18 @@ namespace Divisionsmatch
                     {
                         if (dataGridView1.Rows[r - 1].Cells[0].Style.BackColor != Color.LightGray)
                         {
-                            dataGridView1.Rows[r].Cells[0].Style.BackColor = Color.LightGray;
-                            dataGridView1.Rows[r].Cells[1].Style.BackColor = Color.LightGray;
-                            dataGridView1.Rows[r].Cells[2].Style.BackColor = Color.LightGray;
+                            for (int c = 0; c < dataGridView1.Rows[r].Cells.Count; c++)
+                            {
+                                dataGridView1.Rows[r].Cells[c].Style.BackColor = Color.LightGray;
+                            }
                         }
                     }
                     else
                     {
-                        dataGridView1.Rows[r].Cells[0].Style.BackColor = dataGridView1.Rows[r - 1].Cells[0].Style.BackColor;
-                        dataGridView1.Rows[r].Cells[1].Style.BackColor = dataGridView1.Rows[r - 1].Cells[1].Style.BackColor;
-                        dataGridView1.Rows[r].Cells[2].Style.BackColor = dataGridView1.Rows[r - 1].Cells[1].Style.BackColor;
+                        for (int c = 0; c < dataGridView1.Rows[r].Cells.Count; c++)
+                        {
+                            dataGridView1.Rows[r].Cells[c].Style.BackColor = dataGridView1.Rows[r - 1].Cells[c].Style.BackColor;
+                        }
                     }
                 }
                 dataGridView1.Rows[r].DefaultCellStyle.ForeColor = Color.Red;
@@ -227,7 +244,7 @@ namespace Divisionsmatch
                 {
                     string testklasse = lobsklasse.Replace('-', ' ').Replace(" ", string.Empty);
                     // forsøg at anvende
-                    foreach (var k in (dataGridView1.Columns[3] as DataGridViewComboBoxColumn).Items)
+                    foreach (var k in (dataGridView1.Columns[indexLoebsklasse] as DataGridViewComboBoxColumn).Items)
                     {
                         if (k.ToString() != string.Empty && (lobsklasse.Equals(k.ToString()) || testklasse.Equals(k.ToString().Replace('-', ' ').Replace(" ", string.Empty))))
                         {
@@ -241,7 +258,7 @@ namespace Divisionsmatch
                 {
                     // prøv at matche reglement til aktuelle klasser
                     string lowercaseKlasse = klasse.ToLowerInvariant().Replace('-', ' ').Replace(" ", string.Empty);
-                    foreach (var k in (dataGridView1.Columns[3] as DataGridViewComboBoxColumn).Items)
+                    foreach (var k in (dataGridView1.Columns[indexLoebsklasse] as DataGridViewComboBoxColumn).Items)
                     {
                         if (k.ToString() != string.Empty && (klasse.Equals(k.ToString()) || lowercaseKlasse.Equals(k.ToString().Replace('-', ' ').Replace(" ", string.Empty).ToLowerInvariant())))
                         {
@@ -250,45 +267,17 @@ namespace Divisionsmatch
                         }
                     }
                 }
-                (dataGridView1.Rows[r].Cells[3] as DataGridViewComboBoxCell).Value = setValue;
+                (dataGridView1.Rows[r].Cells[indexLoebsklasse] as DataGridViewComboBoxCell).Value = setValue;
 
             
                 // opdater farve svarene til valg
                 _updateGrid(r);            
             }
         }
-
-        private void lstAllClubs_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            if (lstAllClubs.SelectedIndex >= 0)
-            {
-                Config.selectedClubs.Add(lstAllClubs.SelectedItem as Klub);
-
-                int topIndex = lstAllClubs.TopIndex;
-                Config.allClubs.Remove(lstAllClubs.SelectedItem as Klub);
-                if (lstAllClubs.Items.Count > topIndex)
-                    lstAllClubs.TopIndex = topIndex;
-
-                _MakeMatches();
-
-                _unCheckUdeblevne();
-
-                _updateButtons();
-            }
-        }
      
-        private void cmbDivision_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if (cmbDivision.SelectedItem != null)
-            {
-                Config.selectedDivision = ((Division)cmbDivision.SelectedItem).Nr;
-                _updateButtons();
-            }
-        }
-
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == 3)
+            if (e.ColumnIndex == indexLoebsklasse)
             {
                 _updateGrid(e.RowIndex);
                 _updateButtons();
@@ -321,12 +310,12 @@ namespace Divisionsmatch
             bool bDouble = false;
             for (int k = 0; k < dataGridView1.Rows.Count; k++)
             {
-                Klasse kl = dataGridView1.Rows[k].Cells[3].Value as Klasse;
+                Klasse kl = dataGridView1.Rows[k].Cells[indexLoebsklasse].Value as Klasse;
                 if (kl != null && (kl.Navn != "" && kl.Navn != " - "))
                 {
                     for (int r = k + 1; r < dataGridView1.Rows.Count; r++)
                     {
-                        if (kl == dataGridView1.Rows[r].Cells[3].Value)
+                        if (kl == dataGridView1.Rows[r].Cells[indexLoebsklasse].Value)
                         {
                             bDouble = true;
                             break;
@@ -360,46 +349,12 @@ namespace Divisionsmatch
                 msg += "Du mangler at vælge klubber";
             }
 
-            if (comboBoxType.SelectedIndex < 0)
-            {
-                msg += msg != string.Empty ? System.Environment.NewLine : string.Empty;
-                msg += "Du mangler at vælge løbs type";
-            }
-            else if (comboBoxType.SelectedItem == "Divisionsmatchfinale")
-            {
-                // tving 1 division men ingen kreds
-                if (!cmbDivision.SelectedValue.Equals(1))
-                {
-                    cmbDivision.SelectedValue = 1;                    
-                }
-                if (comboBoxKreds.SelectedIndex != -1)
-                {
-                    comboBoxKreds.SelectedIndex = -1;
-                }
-            }
-            else
-            {
-                if (cmbDivision.SelectedIndex < 0)
-                {
-                    msg += msg != string.Empty ? System.Environment.NewLine : string.Empty;
-                    msg += "Du mangler at vælge division";
-                }
-
-                if (comboBoxKreds.SelectedIndex < 0)
-                {
-                    msg += msg != string.Empty ? System.Environment.NewLine : string.Empty;
-                    msg += "Du mangler at vælge kreds";
-                }
-            }
-
             if (string.IsNullOrWhiteSpace(textBoxSkov.Text))
             {
                 msg += msg != string.Empty ? System.Environment.NewLine : string.Empty;
                 msg += "Du mangler at angive en skov";
             }
 
-            cmbDivision.Enabled = (comboBoxType.SelectedIndex >= 0 && comboBoxType.SelectedItem != "Divisionsmatchfinale");
-            comboBoxKreds.Enabled = (comboBoxType.SelectedIndex >= 0 && comboBoxType.SelectedItem != "Divisionsmatchfinale");
             textBox1.Text = msg;
             textBox1.Visible = (msg != string.Empty);
             btnOK.Enabled = msg == string.Empty;
@@ -414,74 +369,6 @@ namespace Divisionsmatch
             else
             {
                 (dataGridView1.Rows[r] as DataGridViewRow).DefaultCellStyle.ForeColor = Color.FromName("WindowText");
-            }
-        }
-
-        private void btnOpenFileXML_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "IOF XML tilmeldingsliste, startliste, resultatliste (*.xml)|*.xml|OE2003 resultatliste (*.csv)|*.csv|EResults Pro løber export (*.txt)|*.txt";
-            openFile.CheckPathExists = true;
-            openFile.AddExtension = true;
-            openFile.DefaultExt = ".xml";
-            openFile.SupportMultiDottedExtensions = true;
-            openFile.Title = "Åbn liste";
-            openFile.Multiselect = false;
-            if (_currentDirectory != string.Empty)
-            {
-                openFile.InitialDirectory = _currentDirectory;
-            }
-            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                _currentDirectory = Path.GetDirectoryName(openFile.FileName); 
-                txtXMLFile.Text = openFile.FileName;
-            }
-        }
-
-        private void btnOpenKlasser_Click(object sender, EventArgs e)
-        {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "OE2003 klasser (*.txt)|*.txt";
-            openFile.CheckPathExists = true;
-            openFile.AddExtension = true;
-            openFile.DefaultExt = ".txt";
-            openFile.SupportMultiDottedExtensions = true;
-            openFile.Title = "Åbn OE2003 klasser";
-            openFile.Multiselect = false;
-            if (_currentDirectory != string.Empty)
-            {
-                openFile.InitialDirectory = _currentDirectory;
-            }
-            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
-            {
-                _currentDirectory = Path.GetDirectoryName(openFile.FileName); 
-                txtTXTFileKlasser.Text = openFile.FileName;
-            }
-        }
-
-        private void checkedListClubs_MouseDoubleClick(object sender, MouseEventArgs e)
-        {
-            if (checkedListClubs.SelectedIndex >= 0)
-            {
-                Config.allClubs.Add(checkedListClubs.SelectedItem as Klub);
-
-                int topIndex = checkedListClubs.TopIndex;
-                Config.selectedClubs.Remove(checkedListClubs.SelectedItem as Klub);
-                if (checkedListClubs.Items.Count > topIndex)
-                {
-                    checkedListClubs.TopIndex = topIndex;
-                }
-
-                // fjern også fra udeblevne
-                if (Config.udeblevneKlubber.Contains(checkedListClubs.SelectedItem as Klub))
-                {
-                    Config.udeblevneKlubber.Remove(checkedListClubs.SelectedItem as Klub);
-                }
-                _unCheckUdeblevne();
-                
-                _MakeMatches();
-                
-                _updateButtons();
             }
         }
 
@@ -511,10 +398,7 @@ namespace Divisionsmatch
 
         private void btnOK_Click(object sender, EventArgs e)
         {
-            Config.Dato = dateTimePickerDato.Value;
-            Config.Type = comboBoxType.Text;
-            Config.Skov = textBoxSkov.Text;
-            Config.Kreds = (comboBoxKreds.Text != string.Empty) ? (Kreds)Enum.Parse(typeof(Kreds), comboBoxKreds.Text) : (Kreds?)null;
+            // Config.Dato = dateTimePickerDato.Value;
             Config.NeedEdit = false;
             _fyldUdeBlevne();
             this.DialogResult = System.Windows.Forms.DialogResult.OK;
@@ -586,6 +470,111 @@ namespace Divisionsmatch
         private void comboBoxKreds_SelectedIndexChanged(object sender, EventArgs e)
         {
             _updateButtons();
+        }
+
+        private void lstAllClubs_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxSkov_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxDivision_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOpenKlasser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTXTFileKlasser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox3_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkedListClubs_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePickerDato_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxBeskriv_TextChanged(object sender, EventArgs e)
+        {
+
         }
     } 
 }

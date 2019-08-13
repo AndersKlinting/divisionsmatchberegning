@@ -53,6 +53,8 @@ namespace Divisionsmatch
         {
             _productVersion = Productversion;
 
+            Config = new Config(true);
+
             // make temp folder for this session
             tempFolder = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString());
             Directory.CreateDirectory(tempFolder);
@@ -95,9 +97,9 @@ namespace Divisionsmatch
         {
             get
             {
-                return _config.selectedDivision;
+                return _config.Division;
             }
-        }    
+        }
 
         /// <summary>
         /// listen af klubber i stævnet
@@ -287,6 +289,10 @@ namespace Divisionsmatch
             {
                 return Config.Dato;
             }
+            set
+            {
+                Config.Dato = value;
+            }
         }
         #endregion
 
@@ -316,6 +322,7 @@ namespace Divisionsmatch
             string version = string.Empty;
             XmlDocument xmlDoc = new XmlDocument();
             bool isCSV = false;
+            bool isTxt = false;
             bool isEntryXml = false;
             bool isStartXml = false;
             bool isResultXml = false;
@@ -327,7 +334,7 @@ namespace Divisionsmatch
                     System.Diagnostics.Debug.Print(DateTime.Now.ToString() + " locked");
                 }
 
-                fileVersion = Util.CheckFileVersion(filnavn, out isEntryXml, out isStartXml, out isResultXml);
+                fileVersion = Util.CheckFileVersion(filnavn, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
                 if (fileVersion == "csv")
                 {
                     isCSV = true;
@@ -466,10 +473,20 @@ namespace Divisionsmatch
                 output.AppendLine(Printstilling(false));
 
                 int n = 1;
+                int maxL = 0;
                 foreach (Match m in Matcher)
                 {
-                    output.Append((n.ToString() + " : " + m.Klub1.Navn + " - " + m.Klub2.Navn).PadRight(40) + " : ");
-
+                    int L = (n.ToString() + " : " + m.Klub1.Navn + " - " + m.Klub2.Navn).PadRight(40).Length;
+                    if (L > maxL)
+                    {
+                        maxL = L;
+                    }
+                    n++;
+                }
+                n = 1;
+                foreach (Match m in Matcher)
+                {
+                    output.Append(((n.ToString() + " : " + m.Klub1.Navn + " - " + m.Klub2.Navn).PadRight(maxL) + " : "));
                     double p1 = m.Score1();
                     double p2 = m.Score2();
 
@@ -541,7 +558,7 @@ namespace Divisionsmatch
                 int w = 0;
                 foreach (Gruppe g in Grupper)
                 {
-                    int wx = (g.navn.PadRight(3) + "(" + string.Join(", ", g.Klasser.Select(k => k.GruppeKlasse).ToArray()) + ") ").Length;
+                    int wx = g.navn.PadRight(6).Length; 
                     if (wx > w) w = wx;
                 }
 
@@ -574,7 +591,7 @@ namespace Divisionsmatch
                 foreach (Gruppe g in Grupper)
                 {
                     mm = 0;
-                    output.Append((g.navn.PadRight(3) + "(" + string.Join(", ", g.Klasser.Select(k => k.GruppeKlasse).ToArray()) + ") ").PadRight(w, ' '));
+                    output.Append(g.navn.PadRight(w)); 
                     foreach (Match m in Matcher)
                     {
                         int w1 = p1widths[mm];
@@ -710,7 +727,12 @@ namespace Divisionsmatch
 
             html.AppendLine("<html><head><title>Divisionsmatch v " + _productVersion + " - (" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ")</title>");
             string cssFile = GetHTMLStyle();
-            html.AppendLine("<link rel='stylesheet' type='text/css' href='" + cssFile + "'/>");
+            var style =
+            html.AppendLine("<!-- make default style in case css-file is missing -->");
+            html.AppendLine("<style>");
+            html.AppendLine(File.ReadAllText(cssFile));
+            html.AppendLine("</style>");
+            html.AppendLine("<link rel='stylesheet' href='" + Path.GetFileName(cssFile) + "'/>");
             html.AppendLine("</head><body>");
 
             bool bFirst = true;
@@ -801,6 +823,8 @@ namespace Divisionsmatch
                     Console.WriteLine("CSS filen " + targetFilePath + " kunne ikke skrives: " + ex.Message);
                 }
                 ////tag = "<link rel='stylesheet' media='print,screen' type='text/css' href='" + targetFileName + "'/>";
+                cssFile = targetFilePath;
+
             }
             else
             {
@@ -815,7 +839,7 @@ namespace Divisionsmatch
                     Console.WriteLine("CSS filen " + targetFilePath + " kunne ikke skrives: " + ex.Message);
                 }
 
-                cssFile = Path.GetFileName(targetFileName);
+                cssFile = targetFilePath;
             }
 
             return cssFile;
@@ -868,7 +892,6 @@ namespace Divisionsmatch
             foreach (Gruppe g in Grupper)
             {
                 html.Append("<tr class=\"matchgruppe\"><td class='matchgruppe'>" + g.navn);
-                html.Append(" (" + string.Join(", ", g.Klasser.Select(k => k.GruppeKlasse).ToArray()) + ")");
                 html.Append("</td>");
 
                 foreach (Match m in Matcher)
@@ -913,7 +936,7 @@ namespace Divisionsmatch
 
             _config = config;
 
-            foreach (var k in _config.selectedClubs)
+            foreach (var k in _config.Klubber)
             {
                 if (config.udeblevneKlubber.Contains(k))
                 {
@@ -930,7 +953,7 @@ namespace Divisionsmatch
                     if (g == null)
                     {
                         // lav gruppen
-                        g = new Gruppe(gk.Gruppe, _config.selectedDivision);
+                        g = new Gruppe(gk.Gruppe, _config.Division);
                         Grupper.Add(g);
                     }
 
@@ -938,7 +961,7 @@ namespace Divisionsmatch
                     if (!g.Klasser.Exists(k => k.LøbsKlasse != null && k.LøbsKlasse.Navn.Equals(gk.LøbsKlasse)))
                     {
                         Klasse kk = _config.classes.Find(c => c.Navn == gk.LøbsKlasse);
-                        g.Klasser.Add(new Klasseconfig(gk.Klasse, kk, gk.Ungdom));
+                        g.Klasser.Add(new Klasseconfig(gk.Klasse, kk));
                     }
                 }
             }
@@ -964,33 +987,36 @@ namespace Divisionsmatch
             int cnt = 0;
             foreach (var l in loebere)
             {
-                cnt++;
-                // Loeber l = kv.Value;
-                string line = "<tr class='bane'>";
-                if (l.IsStatusOK)
+                if (l.PrintStatus != "Inaktiv")
                 {
-                    if (oldTid != l.Tid)
+                    cnt++;
+                    // Loeber l = kv.Value;
+                    string line = "<tr class='bane'>";
+                    if (l.IsStatusOK)
                     {
-                        pl = cnt;
+                        if (oldTid != l.Tid)
+                        {
+                            pl = cnt;
+                        }
+                        oldTid = l.Tid;
                     }
-                    oldTid = l.Tid;
+                    line += "<td class='bane' align=right>" + (l.IsStatusOK ? pl.ToString() : "&nbsp;") + "</td>";
+                    line += "<td class='bane' nowrap>" + l.Fornavn + " " + l.Efternavn + "</td>";
+                    line += "<td class='bane' nowrap>" + l.Klub.Navn + "</td>";
+                    line += "<td class='bane'>" + l.Løbsklassenavn + "</td>";
+                    line += "<td class='bane'>" + (l.IsStatusOK ? l.Tid : l.PrintStatus) + "</td>";
+
+                    foreach (Match m in Matcher)
+                    {
+                        string up = l.GetUPoint(m) > 0 ? "*" : "&nbsp";
+                        double p = l.GetSumPoint(m);
+                        line += "<td class='bane' align=right>" + (p > 0 ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo) : "&nbsp;") + up + "</td>";
+                    }
+
+                    line += "</tr>";
+
+                    output.AppendLine(line);
                 }
-                line += "<td class='bane' align=right>" + (l.IsStatusOK ? pl.ToString() : "&nbsp;") + "</td>";
-                line += "<td class='bane' nowrap>" + l.Fornavn + " " + l.Efternavn + "</td>";
-                line += "<td class='bane' nowrap>" + l.Klub.Navn + "</td>";
-                line += "<td class='bane'>" + l.Løbsklassenavn + "</td>";
-                line += "<td class='bane'>" + (l.IsStatusOK ? l.Tid : l.PrintStatus) + "</td>";
-
-                foreach (Match m in Matcher)
-                {
-                    string up = l.GetUPoint(m) > 0 ? "*" : "&nbsp";
-                    double p = l.GetSumPoint(m);
-                    line += "<td class='bane' align=right>" + (p > 0 ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo) : "&nbsp;") + up + "</td>";
-                }
-
-                line += "</tr>";
-
-                output.AppendLine(line);
             }
 
             output.AppendLine("</tbody>");
@@ -1015,44 +1041,47 @@ namespace Divisionsmatch
             int cnt = 0;
             foreach (var l in loebere) // print only included runners
             {
-                cnt++;
-                //Loeber l = kv.Value;
-                string line = string.Empty;
-                if (l.IsStatusOK)
+                if (l.PrintStatus != "Inaktiv")
                 {
-                    if (oldTid != l.Tid)
+                    cnt++;
+                    //Loeber l = kv.Value;
+                    string line = string.Empty;
+                    if (l.IsStatusOK)
                     {
-                        pl = cnt;
+                        if (oldTid != l.Tid)
+                        {
+                            pl = cnt;
+                        }
+                        oldTid = l.Tid;
                     }
-                    oldTid = l.Tid;
+                    line += (l.IsStatusOK ? pl.ToString().PadRight(3) : "   ");
+                    line += (l.Fornavn + " " + l.Efternavn).PadRight(23).Substring(0, 23);
+                    line += " ";
+                    line += l.Klub.Navn.PadRight(15).Substring(0, 15);
+                    line += " ";
+                    line += l.Løbsklassenavn.PadRight(7).Substring(0, 6);
+                    line += " ";
+                    line += (l.IsStatusOK ? l.Tid : l.PrintStatus).PadLeft(8).Substring(0, 8);
+
+
+                    string up = string.Empty;
+                    foreach (Match m in Matcher)
+                    {
+                        double p = l.GetSumPoint(m);
+                        if (up != string.Empty)
+                        {
+                            line += (p > 0) ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(4) : p.ToString("#.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(4);
+                        }
+                        else
+                        {
+                            line += (p > 0) ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) : p.ToString("#.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5);
+                        }
+                        up = l.GetUPoint(m) > 0 ? "*" : string.Empty;
+                        line += up;
+                    }
+
+                    output.AppendLine(line);
                 }
-                line += (l.IsStatusOK ? pl.ToString().PadRight(3) : "   ");
-                line += (l.Fornavn + " " + l.Efternavn).PadRight(23).Substring(0, 23);
-                line += " ";
-                line += l.Klub.Navn.PadRight(15).Substring(0, 15);
-                line += " ";
-                line += l.Løbsklassenavn.PadRight(7).Substring(0, 6);
-                line += " ";
-                line += (l.IsStatusOK ? l.Tid : l.PrintStatus).PadLeft(8).Substring(0, 8);
-
-
-                string up = string.Empty;
-                foreach (Match m in Matcher)
-                {
-                    double p = l.GetSumPoint(m);
-                    if (up != string.Empty)
-                    {
-                        line += (p > 0) ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(4) : p.ToString("#.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(4);
-                    }
-                    else
-                    {
-                        line += (p > 0) ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) : p.ToString("#.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5);
-                    }
-                    up = l.GetUPoint(m) > 0 ? "*" : string.Empty;
-                    line += up;
-                }
-
-                output.AppendLine(line);
             }
 
             output.AppendLine();
