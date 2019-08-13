@@ -47,7 +47,7 @@ namespace Divisionsmatch
             {
                 StringBuilder output = new StringBuilder();
 
-                string lin = "Bane " + Navn;
+                string lin = "Bane: " + Navn;
 
                 output.AppendLine(lin);
                 output.AppendLine("".PadLeft(lin.Length, '-'));
@@ -64,7 +64,7 @@ namespace Divisionsmatch
         {
             StringBuilder output = new StringBuilder();
 
-            output.AppendLine("<h3 class=\"bane\" id=\"" + Navn + "\">Bane " + Navn + "</h3>");
+            output.AppendLine("<h3 class=\"bane\" id=\"" + Navn + "\">Bane: " + Navn + "</h3>");
 
             return output.ToString();
         }

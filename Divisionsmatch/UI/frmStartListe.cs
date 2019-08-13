@@ -104,6 +104,7 @@ namespace Divisionsmatch
 
         private void _LoadRunners()
         {
+            bool isTxt = false;
             bool isEntryXml = false;
             bool isStartXml = false;
             bool isResultXml = false;
@@ -118,7 +119,7 @@ namespace Divisionsmatch
 
             try
             {
-                string fileVersion = Util.CheckFileVersion(txtXMLFile.Text, out isEntryXml, out isStartXml, out isResultXml);
+                string fileVersion = Util.CheckFileVersion(txtXMLFile.Text, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
 
                 if (fileVersion == "csv")
                 {

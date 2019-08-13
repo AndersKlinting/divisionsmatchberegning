@@ -30,28 +30,6 @@ using System.Linq;
 namespace Divisionsmatch
 {
     /// <summary>
-    /// divisioner i DK
-    /// </summary>
-    /// <summary>
-    /// kredse i DK
-    /// </summary>
-    public enum Kreds
-    {
-        /// <summary>
-        /// Østkredsen
-        /// </summary>
-        Østkredsen,
-        /// <summary>
-        /// Nordkredsen
-        /// </summary>
-        Nordkredsen,
-        /// <summary>
-        /// Sydkredsen
-        /// </summary>
-        Sydkredsen
-    }
-
-    /// <summary>
     /// klasse til divisionmatch konfiguration
     /// </summary>
     public class Config : ICloneable
@@ -71,6 +49,9 @@ namespace Divisionsmatch
         private string _diviFile = string.Empty;
         private string _startTid = "00:00:00";
 
+        private BindingList<Klub> _klubber = null;
+        private List<Klub> _udeblevneKlubber = null;
+
         /// <summary>
         /// constructor
         /// </summary>
@@ -86,14 +67,13 @@ namespace Divisionsmatch
         {
             if (initialize)
             {
-                Version = 3;
-                divisioner = new List<Division>();
+                Version = 4;
                 gruppeOgKlasse = new List<GruppeOgKlasse>();
-                allClubs = new BindingList<Klub>();
-                selectedClubs = new BindingList<Klub>();
+                Klubber = new BindingList<Klub>();
+                Klubber = new BindingList<Klub>();
                 udeblevneKlubber = new List<Klub>();
                 classes = new List<Klasse>();
-                selectedDivision = 1;
+                Division = 1;
                 ////printerSettings = new PrinterSettings();
                 ////printerSettings.PrintFileName = "dummy.txt";
                 pageSettings = new PageSettings();
@@ -108,58 +88,42 @@ namespace Divisionsmatch
                 baner = new List<Bane>();
                 Dato = DateTime.Now.Date;
 
-                _TilfoejGruppeOgKlasse("H1", "H20", true);
-                _TilfoejGruppeOgKlasse("H1", "H21", false);
-                _TilfoejGruppeOgKlasse("H1", "H35", false);
-                _TilfoejGruppeOgKlasse("H2", "H40", false);
-                _TilfoejGruppeOgKlasse("H2", "H45", false);
-                _TilfoejGruppeOgKlasse("H3", "H16", true);
-                _TilfoejGruppeOgKlasse("H3", "H50", false);
-                _TilfoejGruppeOgKlasse("H3", "H55", false);
-                _TilfoejGruppeOgKlasse("H4", "H60", false);
-                _TilfoejGruppeOgKlasse("H4", "H65", false);
-                _TilfoejGruppeOgKlasse("H5", "H70", false);
-                _TilfoejGruppeOgKlasse("H6", "H14", true);
-                _TilfoejGruppeOgKlasse("H6", "H16B", false);
-                _TilfoejGruppeOgKlasse("H7", "H20B", false);
-                _TilfoejGruppeOgKlasse("H7", "H21B", false);
-                _TilfoejGruppeOgKlasse("H7", "H35B", false);
-                _TilfoejGruppeOgKlasse("H8", "H12", true);
-                _TilfoejGruppeOgKlasse("H8", "H14B", false);
-                _TilfoejGruppeOgKlasse("H8", "H20C", false);
-                _TilfoejGruppeOgKlasse("H8", "H21C", false);
-                _TilfoejGruppeOgKlasse("D1", "D20", true);
-                _TilfoejGruppeOgKlasse("D1", "D21", false);
-                _TilfoejGruppeOgKlasse("D1", "D35", false);
-                _TilfoejGruppeOgKlasse("D2", "D40", false);
-                _TilfoejGruppeOgKlasse("D2", "D45", false);
-                _TilfoejGruppeOgKlasse("D3", "D16", true);
-                _TilfoejGruppeOgKlasse("D3", "D50", false);
-                _TilfoejGruppeOgKlasse("D3", "D55", false);
-                _TilfoejGruppeOgKlasse("D4", "D60", false);
-                _TilfoejGruppeOgKlasse("D4", "D65", false);
-                _TilfoejGruppeOgKlasse("D5", "D70", false);
-                _TilfoejGruppeOgKlasse("D6", "D14", true);
-                _TilfoejGruppeOgKlasse("D6", "D16B", false);
-                _TilfoejGruppeOgKlasse("D7", "D20B", false);
-                _TilfoejGruppeOgKlasse("D7", "D21B", false);
-                _TilfoejGruppeOgKlasse("D7", "D35B", false);
-                _TilfoejGruppeOgKlasse("D8", "D12", true);
-                _TilfoejGruppeOgKlasse("D8", "D14B", false);
-                _TilfoejGruppeOgKlasse("D8", "D20C", false);
-                _TilfoejGruppeOgKlasse("D8", "D21C", false);
-                _TilfoejGruppeOgKlasse("9", "H10", true);
-                _TilfoejGruppeOgKlasse("9", "D10", true);
-                _TilfoejGruppeOgKlasse("9", "H12B", false);
-                _TilfoejGruppeOgKlasse("9", "D12B", false);
-                _TilfoejGruppeOgKlasse("9", "Begynder", false);
-
-                divisioner.Add(new Division(1, "1. division"));
-                divisioner.Add(new Division(2, "2. division"));
-                divisioner.Add(new Division(3, "3. division"));
-                divisioner.Add(new Division(4, "4. division"));
-                divisioner.Add(new Division(5, "5. division"));
-                divisioner.Add(new Division(6, "6. division"));
+                _TilfoejGruppeOgKlasse("Beg", "Beg");
+                _TilfoejGruppeOgKlasse("D10", "D10");
+                _TilfoejGruppeOgKlasse("D12", "D12");
+                _TilfoejGruppeOgKlasse("D12B", "D12B");
+                _TilfoejGruppeOgKlasse("D14", "D14");
+                _TilfoejGruppeOgKlasse("D14B", "D14B");
+                _TilfoejGruppeOgKlasse("D16", "D16");
+                _TilfoejGruppeOgKlasse("D18", "D18");
+                _TilfoejGruppeOgKlasse("D20", "D20");
+                _TilfoejGruppeOgKlasse("D20B", "D20B");
+                _TilfoejGruppeOgKlasse("D21", "D21");
+                _TilfoejGruppeOgKlasse("D21B", "D21B");
+                _TilfoejGruppeOgKlasse("D40", "D40");
+                _TilfoejGruppeOgKlasse("D45B", "D45B");
+                _TilfoejGruppeOgKlasse("D50", "D50");
+                _TilfoejGruppeOgKlasse("D60", "D60");
+                _TilfoejGruppeOgKlasse("D70", "D70");
+                _TilfoejGruppeOgKlasse("D-Let", "D-Let");
+                _TilfoejGruppeOgKlasse("H10", "H10");
+                _TilfoejGruppeOgKlasse("H12", "H12");
+                _TilfoejGruppeOgKlasse("H12B", "H12B");
+                _TilfoejGruppeOgKlasse("H14", "H14");
+                _TilfoejGruppeOgKlasse("H14B", "H14B");
+                _TilfoejGruppeOgKlasse("H16", "H16");
+                _TilfoejGruppeOgKlasse("H18", "H18");
+                _TilfoejGruppeOgKlasse("H20", "H20");
+                _TilfoejGruppeOgKlasse("H20B", "H20B");
+                _TilfoejGruppeOgKlasse("H21", "H21");
+                _TilfoejGruppeOgKlasse("H21B", "H21B");
+                _TilfoejGruppeOgKlasse("H40", "H40");
+                _TilfoejGruppeOgKlasse("H45B", "H45B");
+                _TilfoejGruppeOgKlasse("H50", "H50");
+                _TilfoejGruppeOgKlasse("H60", "H60");
+                _TilfoejGruppeOgKlasse("H70", "H70");
+                _TilfoejGruppeOgKlasse("H80", "H80");
+                _TilfoejGruppeOgKlasse("H-Let", "H-Let");
             }
         }
 
@@ -170,14 +134,14 @@ namespace Divisionsmatch
         public int Version { get; set; }
 
         /// <summary>
-        /// mulige divisioner
+        /// relativ sti til filen fra o-service
         /// </summary>
-        public List<Division> divisioner { get; set; }
+        public string DivisionsResultatFil{ get; set; }
 
         /// <summary>
-        /// valgt division
+        /// division
         /// </summary>
-        public int selectedDivision { get; set; }
+        public int Division { get; set; }
 
         /// <summary>
         /// liste af grupper og klasser i divisionmatchen
@@ -185,19 +149,41 @@ namespace Divisionsmatch
         public List<GruppeOgKlasse> gruppeOgKlasse { get; set; }
 
         /// <summary>
-        /// klubberne i løbet
-        /// </summary>
-        public BindingList<Klub> allClubs { get; set; }
-
-        /// <summary>
         /// klubberne i matchen
         /// </summary>
-        public BindingList<Klub> selectedClubs { get; set; }
+        public BindingList<Klub> Klubber 
+        {
+            get
+            {
+                if (_klubber == null)
+                {
+                    _klubber = new BindingList<Klub>();
+                }
+                return _klubber;
+            }
+            set
+            {
+                _klubber = value;
+            }
+        }
 
         /// <summary>
         /// listen af udeblevne klubber
         /// </summary>
-        public List<Klub> udeblevneKlubber { get; set; }
+        public List<Klub> udeblevneKlubber {
+            get
+            {
+                if (_udeblevneKlubber == null)
+                {
+                    _udeblevneKlubber = new List<Klub>();
+                }
+                return _udeblevneKlubber;
+            }
+            set
+            {
+                _udeblevneKlubber = value;
+            }
+        }
 
         /// <summary>
         /// page settings
@@ -227,7 +213,7 @@ namespace Divisionsmatch
         /// <summary>
         /// stævnets kreds
         /// </summary>
-        public Kreds? Kreds { get; set; }
+        public string Kreds { get; set; }
 
         /// <summary>
         /// stævnets skov
@@ -238,6 +224,16 @@ namespace Divisionsmatch
         /// stævnets Type
         /// </summary>
         public string Type { get; set; }
+
+        /// <summary>
+        /// Beskrivelse af stævnet
+        /// </summary>
+        public string Beskrivelse { get; set; }
+
+        /// <summary>
+        /// stævnets runde
+        /// </summary>
+        public int Runde { get; set; }
 
         /// <summary>
         /// validering om en åbnet konfiguration er komplet
@@ -454,122 +450,16 @@ namespace Divisionsmatch
             {
                 version = int.Parse(xmlDoc.GetElementsByTagName("Version")[0].InnerText);
             }
-            if (version == 1)
+            if (version < 4)
             {
-                config = new Config(true);
-
-                // load klasser
-                foreach (XmlElement x in xmlDoc.GetElementsByTagName("classes"))
-                {
-                    foreach (XmlNode s in x.ChildNodes)
-                    {
-                        config.classes.Add(new Klasse(s.InnerText));
-                    }
-                }
-
-                // load selectedDivision
-                foreach (XmlElement x in xmlDoc.GetElementsByTagName("selectedDivision"))
-                {
-                    config.selectedDivision = int.Parse(x.InnerText);
-                }
-
-                // load gruppeOgKlasse
-                foreach (XmlElement x in xmlDoc.GetElementsByTagName("GruppeOgKlasse"))
-                {
-                    // læs gruppe og klasse som det er defineret i 2017 reglement, dvs uden blanktegn og bindestreg
-                    string gruppe = x.ChildNodes[0].InnerText;
-                    string klasse = x.ChildNodes[1].InnerText.Replace(" ", string.Empty).Replace("-", string.Empty);
-                    GruppeOgKlasse GK = config.gruppeOgKlasse.Find(gk => gk.Gruppe == gruppe && gk.Klasse == klasse);
-                    GK.LøbsKlasse = x.ChildNodes[3].InnerText;
-                }
-
-                // load allClubs
-                foreach (XmlElement x in xmlDoc.GetElementsByTagName("allClubs"))
-                {
-                    foreach (XmlNode s in x.ChildNodes)
-                    {
-                        config.allClubs.Add(new Klub(string.Empty, s.InnerText));
-                    }
-                }
-
-                // load selectedCubs
-                foreach (XmlElement x in xmlDoc.GetElementsByTagName("selectedClubs"))
-                {
-                    foreach (XmlNode s in x.ChildNodes)
-                    {
-                        config.selectedClubs.Add(new Klub(string.Empty, s.InnerText));
-                    }
-                }
-
-                // load selected page settings
-                XmlElement ps = xmlDoc.GetElementsByTagName("pageSettings")[0] as XmlElement;
-                string newxml = ps.OuterXml.Replace("pageSettings", "PageSettings");
-                config.pageSettings = XmlDeserializeFromString<PageSettings>(newxml);
-
-                // load selected printer settings
-                ////ps = xmlDoc.GetElementsByTagName("printerSettings")[0] as XmlElement;
-                ////newxml = ps.OuterXml.Replace("printerSettings", "PrinterSettings");
-                ////config.printerSettings = XmlDeserializeFromString<PrinterSettings>(newxml);
-
-                // load font
-                foreach (XmlElement x in xmlDoc.GetElementsByTagName("FontValue"))
-                {
-                    config.font.SerializeFontAttribute = x.InnerText;
-                }
-
-                // load sideskift
-                foreach (XmlElement x in xmlDoc.GetElementsByTagName("SideSkift"))
-                {
-                    config.SideSkift = bool.Parse(x.InnerText);
-                }
-
-                //throw new Exception("Divi-filen er version 1 og kan ikke bruges");
+                throw new Exception("Divi-filen er ikke version 4 (2019 reglement) og kan derfor ikke åbnes");
             }
             else
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(Config));
                 FileStream fs = new FileStream(diviFil, FileMode.Open, FileAccess.Read);
                 config = (Config)serializer.Deserialize(fs);
-
-                if (version < 3)
-                {
-                    xmlDoc = new XmlDocument();
-                    xml = File.ReadAllText(diviFil);
-                    xmlDoc.LoadXml(xml); // Parse the string to an XDocument
-
-                    // load allClubs
-                    foreach (XmlElement x in xmlDoc.GetElementsByTagName("allClubs"))
-                    {
-                        foreach (XmlNode s in x.ChildNodes)
-                        {
-                            config.allClubs.Add(new Klub(string.Empty, s.InnerText));
-                        }
-                    }
-
-                    // load selectedCubs
-                    foreach (XmlElement x in xmlDoc.GetElementsByTagName("selectedClubs"))
-                    {
-                        foreach (XmlNode s in x.ChildNodes)
-                        {
-                            config.selectedClubs.Add(new Klub(string.Empty, s.InnerText));
-                        }
-                    }
-
-                    // load udeblevne
-                    foreach (XmlElement x in xmlDoc.GetElementsByTagName("udeblevneKlubber"))
-                    {
-                        foreach (XmlNode s in x.ChildNodes)
-                        {
-                            config.udeblevneKlubber.Add(new Klub(string.Empty, s.InnerText));
-                        }
-                    }
-                }
-            }
-
-            if (version < 3)
-            {
-                config.NeedEdit = true;
-                config.Dato = DateTime.Now.Date;
+                config.DivisionsResultatFil = Path.GetFullPath(Path.Combine(Directory.GetParent(diviFil).FullName, config.DivisionsResultatFil));
             }
 
             // hack
@@ -594,7 +484,7 @@ namespace Divisionsmatch
             config._diviFile = diviFil;
 
             // sæt seneste nummer
-            config.Version = 3;
+            config.Version = 4;
 
             return config;
         }
@@ -625,137 +515,26 @@ namespace Divisionsmatch
         /// metode til at loade klubber og klasser fra csv/xml fil
         /// </summary>
         /// <param name="txtXMLFile"></param>
-        /// <param name="txtTXTFileKlasser"></param>
-        public void LoadKlubberOgKlasser(string txtXMLFile, string txtTXTFileKlasser)
+        public void LoadKlasserOgBaner(string txtXMLFile)
         {
-            ////// xml eller csv?
-            ////string version = string.Empty;
-            ////XmlDocument xmlDoc = new XmlDocument();
-            ////bool isCSV = false;
-            ////bool isStartXml = false;
-            ////bool isResultXml = false;
-
-            ////try
-            ////{
-            ////    xmlDoc.XmlResolver = null;
-            ////    xmlDoc.Load(txtXMLFile);
-
-            ////    // validate
-            ////    XmlNodeList rootNodes = xmlDoc.GetElementsByTagName("StartList");
-            ////    if (rootNodes == null || rootNodes.Count != 1)
-            ////    {
-            ////        rootNodes = xmlDoc.GetElementsByTagName("ResultList");
-            ////        if (rootNodes == null || rootNodes.Count != 1)
-            ////        {
-            ////            throw new Exception("Dette er vist hverken en startliste eller en resultatliste");
-            ////        }
-            ////        else
-            ////        {
-            ////            isResultXml = true;
-            ////        }
-            ////    }
-            ////    else
-            ////    {
-            ////        isStartXml = true;
-            ////    }
-
-            ////    // find ud af hvilken version vi har med at gøre
-            ////    XmlAttribute iofVersion = rootNodes[0].Attributes["iofVersion"];
-            ////    if (iofVersion == null)
-            ////    {
-            ////        XmlNodeList iofNodes = xmlDoc.GetElementsByTagName("IOFVersion");
-            ////        if (iofNodes != null && iofNodes.Count == 1)
-            ////        {
-            ////            iofVersion = iofNodes[0].Attributes["Version"];
-            ////        }
-            ////    }
-            ////    if (iofVersion != null)
-            ////    {
-            ////        version = iofVersion.Value;
-            ////    }
-            ////}
-            ////catch
-            ////{
-            ////    // vi antager det er en csv-fil
-            ////    isCSV = true;
-            ////}
-            allClubs.Clear();
-            classes.Clear();
-            selectedClubs.Clear();
-
             bool isEntryXml = false;
             bool isStartXml = false;
             bool isResultXml = false;
+            bool isTxt = false;
             XmlDocument xmlDoc = new XmlDocument();
-            string fileVersion = Util.CheckFileVersion(txtXMLFile, out isEntryXml, out isStartXml, out isResultXml);
+            string fileVersion = Util.CheckFileVersion(txtXMLFile, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
 
-            if (fileVersion == "csv")
-            {
-                _loadclubsfromcsv(txtXMLFile);
-            }
-            else if (fileVersion.StartsWith("xml"))
-            {
-                xmlDoc.XmlResolver = null;
-                xmlDoc.Load(txtXMLFile);
-
-                XmlNodeList clubNodes = (fileVersion == "xml3") ? xmlDoc.GetElementsByTagName("Organisation") : xmlDoc.GetElementsByTagName("ShortName");
-                this.allClubs.Clear();
-                foreach (XmlNode clubNode in clubNodes)
-                {
-                    string clubtext = string.Empty;
-                    string clubId = string.Empty;
-                    string sourceType = string.Empty;
-                    if (fileVersion == "xml3")
-                    {
-                        foreach (XmlNode node in clubNode.ChildNodes)
-                        {
-                            if (node.Name == "Name")
-                            {
-                                clubtext = node.InnerText;
-                            }
-                            else if (node.Name == "Id")
-                            {
-                                clubId = node.InnerText;
-                                try
-                                {
-                                    sourceType = node.Attributes["type"].Value;
-                                }
-                                catch
-                                {
-                                }
-                            }
-                        }
-                    }
-                    else
-                    {
-                        clubtext = clubNode.InnerText;
-                    }
-
-                    if (this.allClubs.FirstOrDefault(k => k.Navn.Equals(clubtext)) == null)
-                    {
-                        Klub newKlub = new Klub(clubId, clubtext);
-                        if (sourceType != string.Empty)
-                        {
-                            newKlub.Id.Type = sourceType;
-                        }
-                        this.allClubs.Add(newKlub);
-                    }
-                }
-            }
-            else
-            {
-                throw new Exception("Dette er vist hverken en entryliste, en startliste eller en resultatliste");
-            }
 
             this.baner.Clear();
             this.classes.Clear();
             this.classes.Add(new Klasse(""));
             this.classes.Add(new Klasse(" - "));
             bool classesLoaded = false;
+
             // tjek om der er angivet en txt fil til klasse/bane
-            if (txtTXTFileKlasser != string.Empty)
+            if (isTxt)
             {
-                string[] classLines = File.ReadAllLines(txtTXTFileKlasser, Encoding.Default);
+                string[] classLines = File.ReadAllLines(txtXMLFile, Encoding.Default);
 
                 if (classLines[0].Contains(";"))
                 {
@@ -809,6 +588,7 @@ namespace Divisionsmatch
                 {
                     // brug klasserne fra startliste XML filen
                     XmlNodeList classList = null;
+                    xmlDoc.Load(txtXMLFile);
                     if (isStartXml)
                     {
                         classList = xmlDoc.GetElementsByTagName("ClassStart");
@@ -886,6 +666,10 @@ namespace Divisionsmatch
                             _LavBaneOgKlasse(classtext, coursetext);
                         }
                     }
+                    else
+                    {
+                        throw new Exception("Dette er vist ikke en korrekt fil. Klasser (og baner) kan ikke findes");
+                    }
                 }
             }
         }
@@ -897,7 +681,17 @@ namespace Divisionsmatch
         public void SaveDivi(string filename)
         {
             // make paths relative
-
+            if (Path.IsPathRooted(filename) && Path.GetPathRoot(filename).ToUpperInvariant() == Path.GetPathRoot(this.DivisionsResultatFil).ToUpperInvariant())
+            {
+                string relativeP = string.Empty;
+                string p = Path.GetDirectoryName(filename).ToUpperInvariant();
+                while (!this.DivisionsResultatFil.ToUpperInvariant().StartsWith(p + Path.DirectorySeparatorChar))
+                {
+                    relativeP += ".." + Path.DirectorySeparatorChar;
+                    p = Directory.GetParent(p).FullName.ToUpperInvariant();
+                }
+                this.DivisionsResultatFil = this.DivisionsResultatFil.ToUpperInvariant().Replace(p + Path.DirectorySeparatorChar, relativeP);
+            }
             XmlSerializer serializer = new XmlSerializer(typeof(Config));
             StreamWriter writer = new StreamWriter(filename);
             serializer.Serialize(writer, this);
@@ -950,13 +744,13 @@ namespace Divisionsmatch
             }
         }
 
-        private void _TilfoejGruppeOgKlasse(string gruppe, string klasse, bool ungdom)
+        private void _TilfoejGruppeOgKlasse(string gruppe, string klasse)
         {
             GruppeOgKlasse gk = new GruppeOgKlasse();
             gk.Gruppe = gruppe;
             gk.Klasse = klasse;
             gk.LøbsKlasse = null;
-            gk.Ungdom = ungdom;
+            ////gk.Ungdom = ungdom;
             gruppeOgKlasse.Add(gk);
         }
 
@@ -1004,10 +798,6 @@ namespace Divisionsmatch
                     if (string.IsNullOrWhiteSpace(klub) && isOE)
                     {
                         klub = csv[idxKlub - 1]; // navn er alternativ til city 
-                    }
-                    if (klub != string.Empty && this.allClubs.FirstOrDefault(k => k.Navn.Equals(klub)) == null)
-                    {
-                        this.allClubs.Add(new Klub(klubId, klub));
                     }
                 }
             }

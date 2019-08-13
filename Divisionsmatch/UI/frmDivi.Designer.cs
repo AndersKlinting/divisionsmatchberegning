@@ -55,11 +55,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.startlisteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.divisionsresultatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.åbnDivisionsResultatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gemDivisionsResultatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visDivisionsResultatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
             this.lukToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printMainToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.setupPrinterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -80,6 +75,8 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.omToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
+            this.gemDivisionsresultatToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -198,7 +195,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox3.Size = new System.Drawing.Size(956, 206);
+            this.textBox3.Size = new System.Drawing.Size(956, 208);
             this.textBox3.TabIndex = 3;
             this.textBox3.WordWrap = false;
             // 
@@ -301,12 +298,12 @@
             this.gemLøbToolStripMenuItem,
             this.gemsomToolStripMenuItem,
             this.toolStripSeparator5,
+            this.gemDivisionsresultatToolStripMenuItem1,
+            this.toolStripSeparator7,
             this.recentsToolStripMenuItem,
             this.toolStripSeparator3,
             this.startlisteToolStripMenuItem,
             this.toolStripSeparator4,
-            this.divisionsresultatToolStripMenuItem,
-            this.toolStripSeparator6,
             this.lukToolStripMenuItem});
             this.nytLøbToolStripMenuItem.Name = "nytLøbToolStripMenuItem";
             this.nytLøbToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
@@ -316,7 +313,7 @@
             // 
             this.nytLøbToolStripMenuItem1.Name = "nytLøbToolStripMenuItem1";
             this.nytLøbToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.nytLøbToolStripMenuItem1.Size = new System.Drawing.Size(160, 22);
+            this.nytLøbToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
             this.nytLøbToolStripMenuItem1.Text = "&Nyt løb";
             this.nytLøbToolStripMenuItem1.Click += new System.EventHandler(this.nytLøbToolStripMenuItem1_Click);
             // 
@@ -324,7 +321,7 @@
             // 
             this.åbnLøbToolStripMenuItem.Name = "åbnLøbToolStripMenuItem";
             this.åbnLøbToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.åbnLøbToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.åbnLøbToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.åbnLøbToolStripMenuItem.Text = "&Åbn løb";
             this.åbnLøbToolStripMenuItem.Click += new System.EventHandler(this.åbnLøbToolStripMenuItem_Click);
             // 
@@ -332,7 +329,7 @@
             // 
             this.redigerToolStripMenuItem.Enabled = false;
             this.redigerToolStripMenuItem.Name = "redigerToolStripMenuItem";
-            this.redigerToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.redigerToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.redigerToolStripMenuItem.Text = "&Rediger løb";
             this.redigerToolStripMenuItem.Click += new System.EventHandler(this.redigerToolStripMenuItem_Click);
             // 
@@ -341,7 +338,7 @@
             this.gemLøbToolStripMenuItem.Enabled = false;
             this.gemLøbToolStripMenuItem.Name = "gemLøbToolStripMenuItem";
             this.gemLøbToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.gemLøbToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.gemLøbToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.gemLøbToolStripMenuItem.Text = "&Gem løb";
             this.gemLøbToolStripMenuItem.Click += new System.EventHandler(this.gemLøbToolStripMenuItem_Click);
             // 
@@ -349,84 +346,46 @@
             // 
             this.gemsomToolStripMenuItem.Enabled = false;
             this.gemsomToolStripMenuItem.Name = "gemsomToolStripMenuItem";
-            this.gemsomToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.gemsomToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.gemsomToolStripMenuItem.Text = "Gem &som ...";
             this.gemsomToolStripMenuItem.Click += new System.EventHandler(this.gemsomToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(157, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(185, 6);
             // 
             // recentsToolStripMenuItem
             // 
             this.recentsToolStripMenuItem.Enabled = false;
             this.recentsToolStripMenuItem.Name = "recentsToolStripMenuItem";
-            this.recentsToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.recentsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.recentsToolStripMenuItem.Text = "Seneste divi filer";
             this.recentsToolStripMenuItem.ItemClick += new System.EventHandler(this.recentsToolStripMenuItem_ItemClick);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(157, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(185, 6);
             // 
             // startlisteToolStripMenuItem
             // 
             this.startlisteToolStripMenuItem.Enabled = false;
             this.startlisteToolStripMenuItem.Name = "startlisteToolStripMenuItem";
-            this.startlisteToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.startlisteToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.startlisteToolStripMenuItem.Text = "Startliste...";
             this.startlisteToolStripMenuItem.Click += new System.EventHandler(this.startlisteToolStripMenuItem_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(157, 6);
-            // 
-            // divisionsresultatToolStripMenuItem
-            // 
-            this.divisionsresultatToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.åbnDivisionsResultatToolStripMenuItem,
-            this.gemDivisionsResultatToolStripMenuItem,
-            this.visDivisionsResultatToolStripMenuItem});
-            this.divisionsresultatToolStripMenuItem.Name = "divisionsresultatToolStripMenuItem";
-            this.divisionsresultatToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.divisionsresultatToolStripMenuItem.Text = "Divisionsresultat";
-            this.divisionsresultatToolStripMenuItem.DropDownOpening += new System.EventHandler(this.divisionsresultatToolStripMenuItem_DropDownOpening);
-            this.divisionsresultatToolStripMenuItem.Click += new System.EventHandler(this.divisionsresultatToolStripMenuItem_Click);
-            // 
-            // åbnDivisionsResultatToolStripMenuItem
-            // 
-            this.åbnDivisionsResultatToolStripMenuItem.Name = "åbnDivisionsResultatToolStripMenuItem";
-            this.åbnDivisionsResultatToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.åbnDivisionsResultatToolStripMenuItem.Text = "Åbn ...";
-            this.åbnDivisionsResultatToolStripMenuItem.Click += new System.EventHandler(this.åbnDivisionsResultatToolStripMenuItem_Click);
-            // 
-            // gemDivisionsResultatToolStripMenuItem
-            // 
-            this.gemDivisionsResultatToolStripMenuItem.Name = "gemDivisionsResultatToolStripMenuItem";
-            this.gemDivisionsResultatToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.gemDivisionsResultatToolStripMenuItem.Text = "Gem ...";
-            this.gemDivisionsResultatToolStripMenuItem.Click += new System.EventHandler(this.gemDivisionsResultatToolStripMenuItem_Click);
-            // 
-            // visDivisionsResultatToolStripMenuItem
-            // 
-            this.visDivisionsResultatToolStripMenuItem.Name = "visDivisionsResultatToolStripMenuItem";
-            this.visDivisionsResultatToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.visDivisionsResultatToolStripMenuItem.Text = "Vis ...";
-            this.visDivisionsResultatToolStripMenuItem.Click += new System.EventHandler(this.visDivisionsResultatToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(157, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(185, 6);
             // 
             // lukToolStripMenuItem
             // 
             this.lukToolStripMenuItem.Name = "lukToolStripMenuItem";
             this.lukToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.lukToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.lukToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
             this.lukToolStripMenuItem.Text = "&Luk";
             this.lukToolStripMenuItem.Click += new System.EventHandler(this.lukToolStripMenuItem_Click);
             // 
@@ -574,6 +533,19 @@
             // 
             this.pageSetupDialog1.EnableMetric = true;
             // 
+            // gemDivisionsresultatToolStripMenuItem1
+            // 
+            this.gemDivisionsresultatToolStripMenuItem1.Enabled = false;
+            this.gemDivisionsresultatToolStripMenuItem1.Name = "gemDivisionsresultatToolStripMenuItem1";
+            this.gemDivisionsresultatToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
+            this.gemDivisionsresultatToolStripMenuItem1.Text = "Gem &Divisionsresultat";
+            this.gemDivisionsresultatToolStripMenuItem1.Click += new System.EventHandler(this.gemDivisionsresultatToolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(185, 6);
+            // 
             // frmDivi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -655,10 +627,7 @@
         private System.Windows.Forms.ToolStripMenuItem gemsomToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private RecentsToolStripMenuItem recentsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem divisionsresultatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem åbnDivisionsResultatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem gemDivisionsResultatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visDivisionsResultatToolStripMenuItem;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
+        private System.Windows.Forms.ToolStripMenuItem gemDivisionsresultatToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
     }
 }

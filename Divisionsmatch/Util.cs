@@ -12,15 +12,17 @@ namespace Divisionsmatch
 {
     public static class Util
     {
-        public static string CheckFileVersion(string filePath, out bool isEntryXml, out bool isStartXml, out bool isResultXml)
+        public static string CheckFileVersion(string filePath, out bool isEntryXml, out bool isStartXml, out bool isResultXml, out bool isTxt)
         {
             // xml eller csv?
             string version = string.Empty;
             XmlDocument xmlDoc = new XmlDocument();
             bool isCSV = false;
+            bool isXml = true;
             isEntryXml = false;
             isStartXml = false;
             isResultXml = false;
+            isTxt = false;
 
             string fileVersion = "";
 
@@ -73,13 +75,24 @@ namespace Divisionsmatch
             }
             catch
             {
-                // vi antager det er en csv-fil
-                isCSV = true;
+                isXml = false;
             }
 
-            if (isCSV)
+            if (!isXml)
             {
+                // checkom det er csv eller en klasser.txt
                 fileVersion = "csv";
+                string[] classLines = File.ReadAllLines(filePath, Encoding.Default);
+                if (classLines[0].Contains("-------------------------------------------------------------") || classLines[0].Split(';').Count() == 2)
+                {
+                    isTxt = true;
+                    fileVersion = "txt";
+                }
+                else
+                {
+                    isCSV = true;
+                    fileVersion = "csv";
+                }
             }
             else if (isEntryXml || isStartXml || isResultXml)
             {
@@ -638,7 +651,7 @@ namespace Divisionsmatch
                 {
                     var kl = config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
                     // find løbere på samme bane - og vælg dem i matchen, eller alle
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.selectedClubs.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine();
@@ -658,7 +671,7 @@ namespace Divisionsmatch
                 {
                     var kl = config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
                     // find løbere på samme bane - og alle
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.selectedClubs.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine("<h3>Bane " + b.Navn + "</h3>");
@@ -692,7 +705,7 @@ namespace Divisionsmatch
                     if (!g.Klasser.Exists(k => k.LøbsKlasse != null && k.LøbsKlasse.Navn.Equals(gk.LøbsKlasse)))
                     {
                         Klasse kk = config.classes.Find(c => c.Navn == gk.LøbsKlasse);
-                        g.Klasser.Add(new Klasseconfig(gk.Klasse, kk, gk.Ungdom));
+                        g.Klasser.Add(new Klasseconfig(gk.Klasse, kk));
                     }
                 }
             }
@@ -706,7 +719,7 @@ namespace Divisionsmatch
                 foreach (Gruppe g in grupper)
                 {
                     var kl = config.gruppeOgKlasse.Where(gk => gk.Gruppe == g.navn).ToList().ConvertAll(kg => kg.LøbsKlasse);
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.selectedClubs.FirstOrDefault(k=>k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k=>k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine();
@@ -724,7 +737,7 @@ namespace Divisionsmatch
                 foreach (Gruppe g in grupper)
                 {
                     var kl = config.gruppeOgKlasse.Where(gk => gk.Gruppe == g.navn).ToList().ConvertAll(kg => kg.LøbsKlasse);
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.selectedClubs.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine("<h3>Gruppe " + g.navn + "</h3>");

@@ -100,7 +100,7 @@
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(149, 17);
             this.checkBox1.TabIndex = 5;
-            this.checkBox1.Text = "Sideskift per gruppe/bane";
+            this.checkBox1.Text = "Sideskift per klasse/bane";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnPage
@@ -207,7 +207,7 @@
             this.checkBox6.Name = "checkBox6";
             this.checkBox6.Size = new System.Drawing.Size(120, 17);
             this.checkBox6.TabIndex = 16;
-            this.checkBox6.Text = "Print tomme grupper";
+            this.checkBox6.Text = "Print tomme klasser";
             this.checkBox6.UseVisualStyleBackColor = true;
             // 
             // label4

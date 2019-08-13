@@ -42,12 +42,10 @@ namespace Divisionsmatch
         /// </summary>
         /// <param name="gruppeklasse">reglementets klassebetegnelse</param>
         /// <param name="løbsklasse">løbets klassebetegnelse</param>
-        /// <param name="ungdom">er det en ungdomsklasse?</param>
-        public Klasseconfig(string gruppeklasse, Klasse løbsklasse, bool ungdom)
+        public Klasseconfig(string gruppeklasse, Klasse løbsklasse)
         {
             GruppeKlasse = gruppeklasse;
             LøbsKlasse = løbsklasse;
-            Ungdom = ungdom;
         }
     }
 }

@@ -34,11 +34,6 @@ namespace Divisionsmatch
         public string Klasse { get; set; }
 
         /// <summary>
-        ///  er det en ungdomsklasse
-        /// </summary>
-        public bool Ungdom { get; set; }
-
-        /// <summary>
         /// løbsklasses som er knyttet til 
         /// </summary>
         public string LøbsKlasse { get; set; }
