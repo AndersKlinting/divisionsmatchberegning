@@ -398,7 +398,7 @@ namespace Divisionsmatch
         {
             get
             {
-                return _cssFile != string.Empty ? Path.Combine(Path.GetDirectoryName(_diviFile), _cssFile) : string.Empty;
+                return _cssFile ?? string.Empty;
             }
 
             set
@@ -406,8 +406,19 @@ namespace Divisionsmatch
                 _cssFile = value;
                 if (_diviFile != string.Empty && _cssFile != string.Empty)
                 {
-                    _cssFile = Uri.UnescapeDataString(new Uri(_diviFile).MakeRelativeUri(new Uri(_cssFile)).ToString());
+                    _cssFile = Util.GetRelativeFilePath(_cssFile, Path.GetDirectoryName(_diviFile));
                 }
+            }
+        }
+
+        /// <summary>
+        /// giver fuld sti til CSS filen som laves
+        /// </summary>
+        public string CssFileFullPath
+        {
+            get
+            {
+                return _cssFile != string.Empty ? (!string.IsNullOrEmpty(_diviFile) ? Path.Combine(Path.GetDirectoryName(_diviFile), _cssFile) : _cssFile) : string.Empty;
             }
         }
 

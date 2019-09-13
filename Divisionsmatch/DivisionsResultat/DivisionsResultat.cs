@@ -1258,7 +1258,7 @@ namespace Divisionsmatch.DivisionsResultat
 
             StringBuilder output = new StringBuilder();
 
-            string line = "<h3 class=\"matcher\">Stilling " + (this.Division > 6 ? string.Empty : (this.Division.ToString() + ". division")) + (this.Kreds == null ? string.Empty : (", " + this.Kreds.ToString()));
+            string line = "<h3 class=\"matchnavn\">Stilling " + (this.Division > 6 ? string.Empty : (this.Division.ToString() + ". division")) + (this.Kreds == null ? string.Empty : (", " + this.Kreds.ToString()));
             if (this.Division == 8)
             {
                 // op/ned
@@ -1279,36 +1279,38 @@ namespace Divisionsmatch.DivisionsResultat
             {
                 if (this.DivisionsMatchResultater.Count > 0)
                 {
-                    output.AppendLine("<table width='100%'>");
+                    output.AppendLine("<div class=\"stilling0Container\">");
                     foreach (var r in this.DivisionsMatchResultater)
                     {
-                        output.AppendLine("<tr valign='top'><td colspan='2'>");
-                        output.AppendLine("<b>"+r.Runde + ". runde, " + r.Dato + ", " + r.Skov+"</b>");
-                        output.AppendLine("</td></tr>");
+                        output.AppendLine("<div class=\"stilling0Header\">" + r.Runde + ". runde, " + r.Dato + ", " + r.Skov+"</div>");
 
-                        output.AppendLine("<tr valign='top'><td width='50%'>");
-
-                        output.AppendLine("<table class=\"matcher\">");
+                        output.AppendLine("<div class=\"stilling0\">");
+                        output.AppendLine("<table class=\"stilling0\">");
+                        output.AppendLine("<thead>");
+                        output.AppendLine("<tr><th class=\"knavn\">Klubnavn</th><th colspan=3 align=center>score</th><th>point</th><th>&nbsp;</th></tr>");
+                        output.AppendLine("</thead>");
+                        output.AppendLine("<tbody>");
                         //output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">&nbsp;</td><td class=\"matcher\">&nbsp;</td><td class=\"matcher\">score</td><td class=\"matcher\">point</td></tr>");
                         foreach (var k in r.Klubber.OrderBy(item => item.Placering))
                         {
-                            output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + k.Navn + "</td><td class=\"matcher\">" + k.LøbsPoint.ToString() + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n!= k.Navn).ToList()).ToString() + "</td><td class=\"matcher\">" + k.MatchPoint.ToString() + "</td><td class=\"matcher\"  align=left>" + k.Kommentar + "</td></tr>");
+                            output.AppendLine("<tr><td class=\"knavn\">" + k.Navn + "</td><td>" + k.LøbsPoint.ToString() + "</td><td>-</td><td>" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n!= k.Navn).ToList()).ToString() + "</td><td>" + k.MatchPoint.ToString() + "</td><td class=\"kommentar\"  align=left>" + k.Kommentar + "</td></tr>");
                         }
+                        output.AppendLine("</tbody>");
                         output.AppendLine("</table>");
+                        output.AppendLine("</div>");
 
-                        output.AppendLine("</td><td width='50%'>");
-
-                        output.AppendLine("<table class=\"matcher\">");
+                        output.AppendLine("<div class=\"matcher0\">");
+                        output.AppendLine("<table class=\"matcher0\">");
                         //output.AppendLine("<tr class=\"matcher\"><td colspan=3 class=\"matcher\">Matcher</td><td colspan=3 class=\"matcher\">Løbspoint</td></tr>");
                         foreach (var m in r.Matcher)
                         {
-                            output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + m.MatchKlubber[0].Navn + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + m.MatchKlubber[1].Navn + "</td><td class=\"matcher\">" + m.MatchKlubber[0].Score + "</td><td class=\"matcher\">-</td><td>" + m.MatchKlubber[1].Score + "</td></tr>");
+                            output.AppendLine("<tr><td class=\"knavn\">" + m.MatchKlubber[0].Navn + "</td><td>-</td><td class=\"knavn\">" + m.MatchKlubber[1].Navn + "</td><td>" + m.MatchKlubber[0].Score + "</td><td>-</td><td>" + m.MatchKlubber[1].Score + "</td></tr>");
                         }
                         output.AppendLine("</table>");
+                        output.AppendLine("</div>");
 
-                        output.AppendLine("</td></tr>");
                     }
-                    output.AppendLine("</table>");
+                    output.AppendLine("</div>");
                 }
             }
             return output.ToString();
@@ -1418,32 +1420,51 @@ namespace Divisionsmatch.DivisionsResultat
 
             var columnsWidths = new int[dataTable.Columns.Count];
 
-            output.AppendLine("<table class='matchgruppe'>");
-            output.AppendLine("<thead class='matchgruppe'>");
+            output.AppendLine("<div class=\"matchresultat\">");
+            output.AppendLine("<table class=\"matchresultat\">");
+
+            output.AppendLine("<thead>");
+            bool[] skipColumn = new bool[dataTable.Columns.Count];
+            string[] columnClass = new string[dataTable.Columns.Count];
+
             // Write Column titles
-            string header = "<tr class='matchgruppe'>";
+            output.Append("<tr>");
             for (int i = 0; i < dataTable.Columns.Count; i++)
             {
-                header += "<th class='matchgruppe'>" + dataTable.Columns[i].ColumnName.Replace("\r", "<br>") + "</th>";
+                string columnName = dataTable.Columns[i].ColumnName;
+                columnName = columnName.Replace("Placering", "pl");
+                if (columnName.EndsWith("Runde"))
+                    skipColumn[i] = true;
+                else if (columnName.EndsWith("Klubnavn"))
+                {
+                    columnClass[i] = " class=\"knavn\"";
+                    output.Append("<th class=\"knavn\">" + columnName.Replace("\r", "<br>") + "</th>");
+                }
+                else
+                    output.Append("<th>" + columnName.Replace("\r", "<br>") + "</th>");
             }
-            header += "</tr>";
-            output.AppendLine(header);
-            output.AppendLine("</thead><tbody class=\"matchgruppe\">");
-
+            output.AppendLine("</tr>");
+            output.AppendLine("</thead>");
 
             // Write Rows
+            output.AppendLine("<tbody>");
             foreach (DataRow row in dataTable.Rows)
             {
-                string tr = "<tr class='matchgruppe'>";
+                output.Append("<tr>");
                 for (int i = 0; i < dataTable.Columns.Count; i++)
                 {
-                    var text = Convert.ToString(row[i], System.Globalization.CultureInfo.InvariantCulture);
-                    tr += "<td class='matchgruppe'>&nbsp;" + text +"</td>";
+                    if (!skipColumn[i])
+                    {
+                        var text = Convert.ToString(row[i], System.Globalization.CultureInfo.InvariantCulture);
+                        output.Append("<td"+(columnClass[i]??"")+">" + text + "</td>");
+                    }
                 }
-                tr += "</tr>";
-                output.AppendLine(tr);
+                output.AppendLine("</tr>");
             }
-            output.AppendLine("</tbody></table>");
+            output.AppendLine("</tbody>");
+
+            output.AppendLine("</table>");
+            output.AppendLine("</div>");
 
             return output.ToString();
         }

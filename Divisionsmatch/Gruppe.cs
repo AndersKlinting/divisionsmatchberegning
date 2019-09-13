@@ -161,8 +161,8 @@ namespace Divisionsmatch
         {
             StringBuilder output = new StringBuilder();
 
-            output.AppendLine("<h3 class=\"gruppe\" id=\"" + navn + "\">" + navn + "</h3>");
-            output.AppendLine("<p>" + _printPointsForGruppe() + "</p>");
+            output.AppendLine("<div class=\"gruppeHeader\" id=\"" + navn + "\">" + navn + "</div>");
+            output.AppendLine("<div class=\"gruppepoint\">" + _printPointsForGruppe() + "</div>");
 
             return output.ToString();
         }

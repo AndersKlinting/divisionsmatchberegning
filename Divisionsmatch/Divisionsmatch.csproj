@@ -220,6 +220,7 @@
     <None Include="Resources\minipost.ico" />
     <None Include="Resources\word.ico" />
     <None Include="Resources\chm.ico" />
+    <EmbeddedResource Include="Resources\divi.css" />
     <Content Include="Resources\minipost.gif" />
     <None Include="Resources\pdf.ico" />
     <None Include="Resources\pdf1.ico" />

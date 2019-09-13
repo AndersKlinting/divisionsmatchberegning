@@ -973,5 +973,54 @@ namespace Divisionsmatch
 
             return objectOut;
         }
+
+
+        /// <summary>
+        /// Make the filepath relative to baseDirectory. If not succeding, return original file path.
+        /// </summary>
+        /// <param name="filePath">Absolute file path to find relative file path for.</param>
+        /// <param name="baseDirectory">Directory to use as base. Must be rooted and must only contain directory info (no file name part)</param>
+        /// <returns></returns>
+        public static string GetRelativeFilePath(string filePath, string baseDirectory)
+        {
+            // Validate baseDirectory, must be rooted
+            if (string.IsNullOrEmpty(baseDirectory))
+                return filePath;
+            if (!System.IO.Path.IsPathRooted(baseDirectory))
+                return filePath;
+
+            // If the path is already relative (not rooted), do nothing.
+            if (!System.IO.Path.IsPathRooted(filePath))
+                return filePath;
+
+            // baseDirectory must end in a slash, to indicate folder
+            if (!baseDirectory[baseDirectory.Length - 1].Equals(System.IO.Path.DirectorySeparatorChar))
+                baseDirectory += System.IO.Path.DirectorySeparatorChar;
+
+            // If the roots are different, relative path is not possible, do nothing.
+            if (!StringComparer.OrdinalIgnoreCase.Equals(System.IO.Path.GetPathRoot(filePath), System.IO.Path.GetPathRoot(baseDirectory)))
+                return filePath;
+
+            Uri fileUri = new Uri(filePath);
+            Uri baseDirUri = new Uri(baseDirectory);
+
+            if (fileUri.Scheme != baseDirUri.Scheme)
+                return filePath;
+
+            Uri relativeUri = baseDirUri.MakeRelativeUri(fileUri);
+
+            // If relativeUri does not differ from fileUri, it was not possible to make relative URI
+            if (StringComparer.OrdinalIgnoreCase.Equals(relativeUri.OriginalString, fileUri.OriginalString))
+                return filePath;
+
+            string relativePath = Uri.UnescapeDataString(relativeUri.ToString());
+            if (fileUri.Scheme.Equals("file", StringComparison.InvariantCultureIgnoreCase))
+            {
+                relativePath = relativePath.Replace(System.IO.Path.AltDirectorySeparatorChar, System.IO.Path.DirectorySeparatorChar);
+            }
+
+            return relativePath;
+        }
+
     }
 }

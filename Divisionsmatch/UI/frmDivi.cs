@@ -1425,11 +1425,12 @@ namespace Divisionsmatch
             string sourceCssFile = Path.Combine(Path.GetDirectoryName(path), Path.GetFileName(cssFile));
             string targetCssFile = Path.Combine(Path.GetDirectoryName(exportFil), Path.GetFileName(cssFile));
 
-            //// hvis der er specificeret en CSS file i konfigurationen så kopierer vi den oer såfremt den ikke hedder divi.css og ligger 
-            //// divi filen (da det så er samme fil)
-            if (string.IsNullOrEmpty(mitstaevne.Config.CssFile) || string.Compare(mitstaevne.Config.CssFile, targetCssFile, true) != 0)
+            // hvis der er specificeret en CSS file i konfigurationen så kopierer vi den over såfremt den ikke hedder divi.css og ligger 
+            // divi filen (da det så er samme fil)
+            if (string.IsNullOrEmpty(mitstaevne.Config.CssFile) || string.Compare(mitstaevne.Config.CssFileFullPath, targetCssFile, true) != 0)
             {
-                File.Copy(sourceCssFile, targetCssFile, true);
+                if (!File.Exists(targetCssFile))
+                    File.Copy(sourceCssFile, targetCssFile, true);
             }
         }
 
@@ -1546,6 +1547,7 @@ namespace Divisionsmatch
                 SwitchArgument print = new SwitchArgument('p', "Print", false);
                 SwitchArgument help = new SwitchArgument('h', "Hjælp", false);
                 SwitchArgument nologo = new SwitchArgument('n', "nologo", false);
+                SwitchArgument debug = new SwitchArgument('V', "Debug", false);
 
                 parser.Arguments.Add(diviFil);
                 parser.Arguments.Add(resultatFil);
@@ -1555,6 +1557,7 @@ namespace Divisionsmatch
                 parser.Arguments.Add(format);
                 parser.Arguments.Add(print);
                 parser.Arguments.Add(help);
+                parser.Arguments.Add(debug);
 
                 parser.ParseCommandLine(args);
                 //// parser.ShowParsedArguments();
@@ -1568,6 +1571,9 @@ namespace Divisionsmatch
                     Console.WriteLine("under certain conditions");
                     Console.WriteLine("");
                 }
+
+                if (debug.Value)
+                    System.Diagnostics.Debugger.Launch();
 
                 if (help.Parsed)
                 {
