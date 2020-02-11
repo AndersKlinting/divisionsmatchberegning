@@ -23,3 +23,12 @@ C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsm
 C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.csproj.GenerateResource.Cache
 C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.exe
 C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.pdb
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.csprojAssemblyReference.cache
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.csproj.CoreCompileInputs.cache
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.csproj.CopyComplete
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\bin\Release\Nancy.dll
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\bin\Release\Nancy.Hosting.Self.dll
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\bin\Release\Nancy.xml
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\bin\Release\Nancy.Hosting.Self.xml
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.frmNancy.resources
+C:\temp\github\divisionsmatchberegning\Divisionsmatch\obj\x86\Release\Divisionsmatch.frmÅbnResultat.resources

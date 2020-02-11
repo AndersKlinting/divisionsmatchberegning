@@ -54,8 +54,10 @@ namespace Divisionsmatch
 
         /// <summary>
         /// URL for auto update
-            /// </summary>
+        /// </summary>
         public static string autoUpdateTestURL = @"http://www.fif-orientering.dk/divisionsmatch/test/versioninfo.xml";
+
+        internal static frmDivi Instance;
 
         private Hashtable ieOriginalPageSetup = new Hashtable();
         private Hashtable ieNewPageSetup = new Hashtable();
@@ -65,8 +67,14 @@ namespace Divisionsmatch
         private FileSystemWatcher watcher = null;
         private string _txtResultatFil = string.Empty;
 
-        private DivisionsResultat.DivisionsResultat _mitDivisionsResultat = null;
+        private ResultatDefinition resultatDefinition = null;
+        private System.Timers.Timer _meosTimer = null;
+        private int _meosTimerCount = 0;
+
+        internal DivisionsResultat.DivisionsResultat _mitDivisionsResultat = null;
         private frmVisDivisionsResultat frmVisDivisionsResultat = null;
+
+        private frmNancy _frmNancy = null;
 
         private string _apptitle = string.Empty;
 
@@ -92,7 +100,7 @@ namespace Divisionsmatch
             }
         }
 
-        private Staevne mitstaevne
+        internal Staevne mitstaevne
         {
             get
             {
@@ -110,11 +118,23 @@ namespace Divisionsmatch
                     _mitstaevne.Dispose();
                 }
                 _mitstaevne = value;
-           
+
                 if (frmVisDivisionsResultat != null)
                 {
                     frmVisDivisionsResultat.Staevne = _mitstaevne;
                 }
+            }
+        }
+
+        internal frmNancy frmNancy
+        {
+            get
+            {
+                return _frmNancy;
+            }
+            set
+            {
+                _frmNancy = value;
             }
         }
 
@@ -146,6 +166,9 @@ namespace Divisionsmatch
         public frmDivi(string[] args)
         {
             InitializeComponent();
+
+            Instance = this;
+
             recentsToolStripMenuItem.UpdateList();
             _apptitle = "Divisionsmatch " + Application.ProductVersion;
             isModified = false;
@@ -307,7 +330,9 @@ namespace Divisionsmatch
             mitstaevne = staevne;
             config = c;
             mitDivisionsResultat = divisionsResultat;
+            resultatDefinition = null;
             configFile = fileName;
+            isModified = false;
 
             // juster UI
             _makeNewPageSetup(config.pageSettings);
@@ -435,27 +460,36 @@ namespace Divisionsmatch
 
         private void bntOpenResultFile_Click(object sender, EventArgs e)
         {
-            OpenFileDialog openFile = new OpenFileDialog();
-            openFile.Filter = "Resultat filer (*.xml, *.csv)|*.xml;*.csv"; //|OE resultat filer (*.csv)|*.csv";
-            openFile.CheckPathExists = true;
-            openFile.AddExtension = true;
-            openFile.DefaultExt = ".csv";
-            openFile.SupportMultiDottedExtensions = true;
-            openFile.Title = "Åbn resultat";
-            openFile.Multiselect = false;
-            openFile.RestoreDirectory = true;
-            if (_currentResultDirectory != string.Empty)
+            ////OpenFileDialog openFile = new OpenFileDialog();
+            ////openFile.Filter = "Resultat filer (*.xml, *.csv)|*.xml;*.csv"; //|OE resultat filer (*.csv)|*.csv";
+            ////openFile.CheckPathExists = true;
+            ////openFile.AddExtension = true;
+            ////openFile.DefaultExt = ".csv";
+            ////openFile.SupportMultiDottedExtensions = true;
+            ////openFile.Title = "Åbn resultat";
+            ////openFile.Multiselect = false;
+            ////openFile.RestoreDirectory = true;
+            ////if (_currentResultDirectory != string.Empty)
+            ////{
+            ////    openFile.InitialDirectory = _currentResultDirectory;
+            ////}
+            ////if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            ////{
+
+            frmÅbnResultat frmResultat = new frmÅbnResultat();
+            if (resultatDefinition != null)
             {
-                openFile.InitialDirectory = _currentResultDirectory;
+                frmResultat.resultatDefinition = resultatDefinition;
             }
-            if (openFile.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+            if (frmResultat.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
+
                 // check om resultat er samme type som blev brugt til konfiguration
                 bool isTxt = false;
                 bool isEntryXml = false;
                 bool isStartXml = false;
                 bool isResultXml = false;
-                string fileVersion = Util.CheckFileVersion(openFile.FileName, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
+                string fileVersion = Util.CheckFileVersion(frmResultat.resultatDefinition.Filnavn, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
                 if (config.ConfigClassSrc != "" && config.ConfigClassSrc != fileVersion)
                 {
                     if (MessageBox.Show("Du brugte " + config.ConfigClassSrc + " data til at konfigurere klubber og klasser.\nNu læser du resultater i " + fileVersion + " format.\nDet kan give problemer at bruge forskelligt format. Ønsker du at fortsætte?", "Advarsel", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
@@ -464,12 +498,13 @@ namespace Divisionsmatch
                     }
                 }
 
-                _currentResultDirectory = Path.GetDirectoryName(openFile.FileName);
-                _loadResultatFil(openFile.FileName);
+                _currentResultDirectory = Path.GetDirectoryName(frmResultat.resultatDefinition.Filnavn);
+                _loadResultatFil(frmResultat.resultatDefinition.Filnavn);
+
+                resultatDefinition = frmResultat.resultatDefinition;
 
                 // juster UI
-
-                txtCSVFile.Text = _txtResultatFil;
+                txtCSVFile.Text = resultatDefinition.ToString();
                 btnBeregn.Enabled = true;
 
                 _watchFile();
@@ -513,7 +548,7 @@ namespace Divisionsmatch
                 this.AllTextToPrint.Add(mitDivisionsResultat.PrintResultText(mitstaevne));
             }
             this.AllTextToPrint.Add(mitstaevne.Printmatcher());
-            this.AllTextToPrint.AddRange(mitstaevne.LavTXTafsnit(config));
+            this.AllTextToPrint.AddRange(mitstaevne.LavTXTafsnit());
             if (!config.SideSkift)
             {
                 // ikke sideskift, dvs alle printes som første side
@@ -1036,9 +1071,17 @@ namespace Divisionsmatch
             // stop med at holde øje med resultatfil
             if (watcher != null)
             {
-                watcher.EnableRaisingEvents = true;
+                watcher.EnableRaisingEvents = false;
                 watcher.Dispose();
                 watcher = null;
+            }
+
+            if (_meosTimer != null)
+            {                
+                _meosTimer.Stop();
+                _meosTimer.Elapsed -= OnMeOSTimerEvent;
+                _meosTimer.Dispose();
+                _meosTimer = null;
             }
 
             textBox1.Clear();
@@ -1052,6 +1095,7 @@ namespace Divisionsmatch
             printPreviewToolStripMenuItem.Enabled = false;
             printToolStripMenuItem.Enabled = false;
             printMainToolStripMenuItem.Enabled = true;
+            informationToolStripMenuItem.Enabled = true;
             btnPrint.BackColor = Control.DefaultBackColor;
             btnPrint.UseVisualStyleBackColor = true;
 
@@ -1064,7 +1108,6 @@ namespace Divisionsmatch
             {
                 gamleHTMLsections.Clear();
             }
-
         }
 
         private void _setPrintReady()
@@ -1076,6 +1119,7 @@ namespace Divisionsmatch
             printPreviewToolStripMenuItem.Enabled = true;
             printToolStripMenuItem.Enabled = true;
             printMainToolStripMenuItem.Enabled = true;
+            informationToolStripMenuItem.Enabled = true;
             //// vælgFontToolStripMenuItem.Enabled = true;
             //// vælgFontToolStripMenuItem.Enabled = true;
             //// vælgPrinterToolStripMenuItem.Enabled = true;
@@ -1100,7 +1144,7 @@ namespace Divisionsmatch
                     textBox1.ScrollToCaret();
 
                     pos = textBox3.SelectionStart;
-                    textBox3.Text = string.Concat(mitstaevne.LavTXTafsnit(config).ToArray());
+                    textBox3.Text = string.Concat(mitstaevne.LavTXTafsnit().ToArray());
                     textBox3.Font = config.font.FontValue;
                     textBox3.SelectionStart = pos;
                     textBox3.ScrollToCaret();
@@ -1113,7 +1157,9 @@ namespace Divisionsmatch
                     {
                         (webOutput.Tag as List<string>).Add(mitDivisionsResultat.PrintResultHtml(mitstaevne));
                     }
-                    (webOutput.Tag as List<string>).AddRange(mitstaevne.LavHTMLafsnit(config));
+                    (webOutput.Tag as List<string>).Add(mitstaevne.Printstilling(true));
+                    (webOutput.Tag as List<string>).Add(mitstaevne.LavHTMLStilling(config));
+                    (webOutput.Tag as List<string>).AddRange(mitstaevne.LavHTMLafsnit());
                     webOutput.Navigate(mitstaevne.LavHTML(webOutput.Tag as List<string>));
                     Application.DoEvents();
                 }
@@ -1135,8 +1181,8 @@ namespace Divisionsmatch
             if (watcher == null)
             {
                 watcher = new FileSystemWatcher();
-                watcher.Path = Path.GetDirectoryName(txtCSVFile.Text);
-                watcher.Filter = Path.GetFileName(txtCSVFile.Text);
+                watcher.Path = Path.GetDirectoryName(resultatDefinition.Filnavn);
+                watcher.Filter = Path.GetFileName(resultatDefinition.Filnavn);
 
                 /* Watch for changes in LastWrite times*/
                 watcher.NotifyFilter = NotifyFilters.Attributes | NotifyFilters.CreationTime | NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.Size;
@@ -1155,9 +1201,67 @@ namespace Divisionsmatch
             {
                 // update the file to watch for
                 watcher.EnableRaisingEvents = false;
-                watcher.Path = Path.GetDirectoryName(txtCSVFile.Text);
-                watcher.Filter = Path.GetFileName(txtCSVFile.Text);
+                watcher.Path = Path.GetDirectoryName(resultatDefinition.Filnavn);
+                watcher.Filter = Path.GetFileName(resultatDefinition.Filnavn);
                 watcher.EnableRaisingEvents = true;
+            }
+
+            // start timer hvs det er meos 
+            if (resultatDefinition.IsMeOS)
+            {
+                if (_meosTimer == null)
+                {
+                    progressBarMeOS.Maximum = resultatDefinition.IntervalMeOS;
+                    progressBarMeOS.Value = resultatDefinition.IntervalMeOS;
+                    progressBarMeOS.Visible = true;
+                    _meosTimerCount = resultatDefinition.IntervalMeOS;
+                    _meosTimer = new System.Timers.Timer();
+                    _meosTimer.Interval = 1000;
+                    _meosTimer.AutoReset = true;
+                    _meosTimer.Elapsed += OnMeOSTimerEvent;
+                    _meosTimer.Start();
+                }
+                else
+                {
+                    // update
+                    _meosTimer.Stop();
+                    _meosTimerCount = resultatDefinition.IntervalMeOS;
+                    progressBarMeOS.Maximum = resultatDefinition.IntervalMeOS;
+                    progressBarMeOS.Value = progressBarMeOS.Maximum;
+                    _meosTimer.Start();
+                }
+            }
+            else
+            {
+                progressBarMeOS.Visible = false;
+                if (_meosTimer != null)
+                {
+                    _meosTimer.Stop();
+                    _meosTimer.Elapsed -= OnMeOSTimerEvent;
+                    _meosTimer.Dispose();
+                    _meosTimer = null;
+                }
+            }
+        }
+
+        private void OnMeOSTimerEvent(object sender, EventArgs e)
+        {
+            try
+            {
+                if (_meosTimerCount-- <= 0)
+                {
+                    _meosTimer.Stop();
+                    resultatDefinition.GetMeOSData();
+                    _meosTimer.Start();
+                    _meosTimerCount = resultatDefinition.IntervalMeOS;
+                }
+                progressBarMeOS.Invoke(new Action(delegate () { 
+                                                        progressBarMeOS.Value = _meosTimerCount;
+                                                        progressBarMeOS.Text = _meosTimerCount.ToString();
+                                                        }));
+            }
+            finally
+            {
             }
         }
 
@@ -1415,8 +1519,9 @@ namespace Divisionsmatch
             if (mitDivisionsResultat != null)
             {
                 sections.Add(mitDivisionsResultat.PrintResultHtml(mitstaevne));
-            }
-            sections.AddRange(mitstaevne.LavHTMLafsnit(config));
+            }            sections.Add(mitstaevne.Printstilling(true));
+            sections.Add(mitstaevne.LavHTMLStilling(config));
+            sections.AddRange(mitstaevne.LavHTMLafsnit());
             string path = new Uri(mitstaevne.LavHTML(sections)).LocalPath;
             File.Copy(path, exportFil, true);
 
@@ -1425,11 +1530,18 @@ namespace Divisionsmatch
             string sourceCssFile = Path.Combine(Path.GetDirectoryName(path), Path.GetFileName(cssFile));
             string targetCssFile = Path.Combine(Path.GetDirectoryName(exportFil), Path.GetFileName(cssFile));
 
-            //// hvis der er specificeret en CSS file i konfigurationen så kopierer vi den oer såfremt den ikke hedder divi.css og ligger 
-            //// divi filen (da det så er samme fil)
-            if (string.IsNullOrEmpty(mitstaevne.Config.CssFile) || string.Compare(mitstaevne.Config.CssFile, targetCssFile, true) != 0)
+            // hvis der er specificeret en CSS file i konfigurationen så kopierer vi den over såfremt den ikke hedder divi.css og ligger 
+            // divi filen (da det så er samme fil)
+            ////if (string.IsNullOrEmpty(mitstaevne.Config.CssFile) || string.Compare(mitstaevne.Config.CssFile, targetCssFile, true) != 0)
+            ////{
+            ////    File.Copy(sourceCssFile, targetCssFile, true);
+            ////}
+            if (string.IsNullOrEmpty(mitstaevne.Config.CssFile) || string.Compare(mitstaevne.Config.CssFileFullPath, targetCssFile, true) != 0)
             {
-                File.Copy(sourceCssFile, targetCssFile, true);
+                if (!File.Exists(targetCssFile))
+                {
+                    File.Copy(sourceCssFile, targetCssFile, true);
+                }
             }
         }
 
@@ -1440,7 +1552,7 @@ namespace Divisionsmatch
             {
                 allText += mitDivisionsResultat.PrintResultText(mitstaevne) + Environment.NewLine;
             }
-            allText += mitstaevne.Printmatcher() + Environment.NewLine + string.Concat(mitstaevne.LavTXTafsnit(config).ToArray());
+            allText += mitstaevne.Printmatcher() + Environment.NewLine + string.Concat(mitstaevne.LavTXTafsnit().ToArray());
             File.WriteAllText(exportFil, allText, Encoding.Default);
         }
 
@@ -1469,7 +1581,9 @@ namespace Divisionsmatch
                 {
                     newHTMLsections = new List<string>();
                     newHTMLsections.Add(mitDivisionsResultat.PrintResultHtml(mitstaevne));
-                    newHTMLsections.AddRange(mitstaevne.LavHTMLafsnit(config));
+                    newHTMLsections.Add(mitstaevne.Printstilling(true));
+                    newHTMLsections.Add(mitstaevne.LavHTMLStilling(config));
+                    newHTMLsections.AddRange(mitstaevne.LavHTMLafsnit());
                 }
                 else
                 {
@@ -1546,6 +1660,7 @@ namespace Divisionsmatch
                 SwitchArgument print = new SwitchArgument('p', "Print", false);
                 SwitchArgument help = new SwitchArgument('h', "Hjælp", false);
                 SwitchArgument nologo = new SwitchArgument('n', "nologo", false);
+                SwitchArgument debug = new SwitchArgument('V', "Debug", false);
 
                 parser.Arguments.Add(diviFil);
                 parser.Arguments.Add(resultatFil);
@@ -1555,6 +1670,7 @@ namespace Divisionsmatch
                 parser.Arguments.Add(format);
                 parser.Arguments.Add(print);
                 parser.Arguments.Add(help);
+                parser.Arguments.Add(debug);
 
                 parser.ParseCommandLine(args);
                 //// parser.ShowParsedArguments();
@@ -1567,6 +1683,11 @@ namespace Divisionsmatch
                     Console.WriteLine("This is free software, and you are welcome to redistribute it");
                     Console.WriteLine("under certain conditions");
                     Console.WriteLine("");
+                }
+
+                if (debug.Value)
+                {
+                    System.Diagnostics.Debugger.Launch();
                 }
 
                 if (help.Parsed)
@@ -1795,6 +1916,29 @@ namespace Divisionsmatch
             frmGemDivisionsResultat.Staevne = mitstaevne;
             frmGemDivisionsResultat.DivisionsResultat = mitDivisionsResultat;
             frmGemDivisionsResultat.ShowDialog();
+        }
+
+        private void informationServerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (frmNancy == null || frmNancy.IsDisposed)
+            {
+                frmNancy = new frmNancy();
+                frmNancy.Show();
+            }
+            else if (frmNancy != null)
+            {
+                frmNancy.Focus();
+            }
+        }
+
+        private void txtCSVFile_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 

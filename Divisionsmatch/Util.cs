@@ -758,9 +758,18 @@ namespace Divisionsmatch
             attrs.XmlIgnore = true;
             xmlAttributeOverrides.Add(typeof(DivisionsResultat.DivisionsResultat), "DivisionsStilling", attrs);
 
-            DivisionsResultat.DivisionsResultat mitDivisionsResultat = DeSerializeObject<DivisionsResultat.DivisionsResultat>(stillingsFil, xmlAttributeOverrides);
+            string fil = File.Exists(stillingsFil) ? stillingsFil : Path.GetFileName(stillingsFil);
 
-            return mitDivisionsResultat;
+            try
+            {
+                DivisionsResultat.DivisionsResultat mitDivisionsResultat = DeSerializeObject<DivisionsResultat.DivisionsResultat>(fil, xmlAttributeOverrides);
+
+                return mitDivisionsResultat;
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Stillingsfilen " + stillingsFil + "kunne ikke findes. Ret evt divifilen eller læg filen fra o-service sammen med divi-filen", e);
+            }
         }
 
         public static void SaveDivisionsResultat(DivisionsResultat.DivisionsResultat gemDivisionsResultat, Staevne staevne, string stillingsFil)
@@ -771,7 +780,18 @@ namespace Divisionsmatch
             /* Setting XmlIgnore to false overrides the XmlIgnoreAttribute applied to the Comment field. Thus it will be serialized.*/
             attrs.XmlIgnore = false;
             xOver.Add(typeof(DivisionsResultat.DivisionsResultat), "DivisionsStilling", attrs);
-            Util.SerializeObject(gemDivisionsResultat.TotalDivisionsResultat(staevne), stillingsFil, xOver);
+            Util.SerializeObjectToFile(gemDivisionsResultat.TotalDivisionsResultat(staevne), stillingsFil, xOver);
+        }
+
+        public static string SerializeDivisionsResultat(DivisionsResultat.DivisionsResultat gemDivisionsResultat, Staevne staevne)
+        {
+            XmlAttributeOverrides xOver = new XmlAttributeOverrides();
+            XmlAttributes attrs = new XmlAttributes();
+
+            /* Setting XmlIgnore to false overrides the XmlIgnoreAttribute applied to the Comment field. Thus it will be serialized.*/
+            attrs.XmlIgnore = false;
+            xOver.Add(typeof(DivisionsResultat.DivisionsResultat), "DivisionsStilling", attrs);
+            return Util.SerializeObject(gemDivisionsResultat.TotalDivisionsResultat(staevne), xOver);
         }
 
         private static string _lavtid(string t, string starttid)
@@ -885,8 +905,8 @@ namespace Divisionsmatch
                 cnt++;
                 // Loeber l = kv.Value;
                 string line = "<tr class='bane'>";
-                line += "<td class='bane' nowrap>" + l.Fornavn + " " + l.Efternavn + "</td>";
-                line += "<td class='bane' nowrap>" + l.Klub.Navn + "</td>";
+                line += "<td class='bane' style=\"white-space:nowrap\">" + l.Fornavn + " " + l.Efternavn + "</td>";
+                line += "<td class='bane' style=\"white-space:nowrap\">" + l.Klub.Navn + "</td>";
                 line += "<td class='bane'>" + l.Løbsklassenavn + "</td>";
                 line += "<td class='bane'>" + l.Brik + "</td>";
                 line += "<td class='bane'>" + l.StartTid + "</td>";
@@ -906,31 +926,44 @@ namespace Divisionsmatch
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="serializableObject"></param>
-        /// <param name="fileName"></param>
         /// <param name="xmlAttributeOverrides"></param>
-        public static void SerializeObject<T>(T serializableObject, string fileName, XmlAttributeOverrides xmlAttributeOverrides = null)
+        public static string SerializeObject<T>(T serializableObject, XmlAttributeOverrides xmlAttributeOverrides = null)
         {
-            if (serializableObject == null) { return; }
-
-            try
+            string result = string.Empty;
+            if (serializableObject != null)
             {
-                XmlDocument xmlDocument = new XmlDocument();
-                XmlSerializer serializer = new XmlSerializer(serializableObject.GetType(), xmlAttributeOverrides);
 
-                using (var xmlwriter = System.Xml.XmlWriter.Create(fileName, new XmlWriterSettings()
+                try
                 {
-                    Indent = true,
-                    OmitXmlDeclaration = false,
-                    Encoding = Encoding.GetEncoding("ISO-8859-1")
-                }))
+                    XmlDocument xmlDocument = new XmlDocument();
+                    XmlSerializer serializer = new XmlSerializer(serializableObject.GetType(), xmlAttributeOverrides);
+
+                    StringBuilder xmlBuilder = new StringBuilder();
+                    using (var xmlwriter = System.Xml.XmlWriter.Create(xmlBuilder, new XmlWriterSettings()
+                    {
+                        Indent = true,
+                        OmitXmlDeclaration = false,
+                        Encoding = Encoding.GetEncoding("ISO-8859-1")
+                    }))
+                    {
+                        serializer.Serialize(xmlwriter, serializableObject);
+                    }
+
+                    result = xmlBuilder.ToString();
+                }
+                catch (Exception ex)
                 {
-                    serializer.Serialize(xmlwriter, serializableObject);
+                    //Log exception here
                 }
             }
-            catch (Exception ex)
-            {
-                //Log exception here
-            }
+
+            return result;
+        }
+
+        public static void SerializeObjectToFile<T>(T serializableObject, string fileName, XmlAttributeOverrides xmlAttributeOverrides = null)
+        {
+            if (serializableObject == null) { return; }
+            File.WriteAllText(fileName, SerializeObject(serializableObject, xmlAttributeOverrides));
         }
 
         /// <summary>
@@ -968,10 +1001,58 @@ namespace Divisionsmatch
             }
             catch (Exception ex)
             {
-                //Log exception here
+                throw; //Log exception here
             }
 
             return objectOut;
+        }
+
+
+        /// <summary>
+        /// Make the filepath relative to baseDirectory. If not succeding, return original file path.
+        /// </summary>
+        /// <param name="filePath">Absolute file path to find relative file path for.</param>
+        /// <param name="baseDirectory">Directory to use as base. Must be rooted and must only contain directory info (no file name part)</param>
+        /// <returns></returns>
+        public static string GetRelativeFilePath(string filePath, string baseDirectory)
+        {
+            // Validate baseDirectory, must be rooted
+            if (string.IsNullOrEmpty(baseDirectory))
+                return filePath;
+            if (!System.IO.Path.IsPathRooted(baseDirectory))
+                return filePath;
+
+            // If the path is already relative (not rooted), do nothing.
+            if (!System.IO.Path.IsPathRooted(filePath))
+                return filePath;
+
+            // baseDirectory must end in a slash, to indicate folder
+            if (!baseDirectory[baseDirectory.Length - 1].Equals(System.IO.Path.DirectorySeparatorChar))
+                baseDirectory += System.IO.Path.DirectorySeparatorChar;
+
+            // If the roots are different, relative path is not possible, do nothing.
+            if (!StringComparer.OrdinalIgnoreCase.Equals(System.IO.Path.GetPathRoot(filePath), System.IO.Path.GetPathRoot(baseDirectory)))
+                return filePath;
+
+            Uri fileUri = new Uri(filePath);
+            Uri baseDirUri = new Uri(baseDirectory);
+
+            if (fileUri.Scheme != baseDirUri.Scheme)
+                return filePath;
+
+            Uri relativeUri = baseDirUri.MakeRelativeUri(fileUri);
+
+            // If relativeUri does not differ from fileUri, it was not possible to make relative URI
+            if (StringComparer.OrdinalIgnoreCase.Equals(relativeUri.OriginalString, fileUri.OriginalString))
+                return filePath;
+
+            string relativePath = Uri.UnescapeDataString(relativeUri.ToString());
+            if (fileUri.Scheme.Equals("file", StringComparison.InvariantCultureIgnoreCase))
+            {
+                relativePath = relativePath.Replace(System.IO.Path.AltDirectorySeparatorChar, System.IO.Path.DirectorySeparatorChar);
+            }
+
+            return relativePath;
         }
     }
 }

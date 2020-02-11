@@ -1,0 +1,121 @@
+﻿@media print, screen {
+    /* Standard font */
+    body, div, h3, table {
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        font-size: 13pt;
+    }
+    /* Tabel-borders skal kun tegnes en gang. Tabel indhold centreret som standard */
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+        /* Tabeller som skal fylde hele bredden */
+        table.matchresultat, table.matchgruppe, table.gruppe {
+            width: 100%;
+        }
+    /* Afstand mellem tabeller */
+    div.matchresultat, div.matchgruppe, div.stilling0, div.matcher0, div.stilling, div.matcher, div.gruppe {
+        margin-bottom: 10px;
+    }
+    /* Tabel-overskrifter med ekstra lille skrift */
+    table.matchresultat th {
+        font-size: x-small;
+    }
+    /* Tabel-overskrifter med lille skrift */
+    table.stilling0 th, table.matcher0 th,
+    table.stilling th, table.matcher th,
+    table.gruppe th {
+        font-size: small;
+    }
+    /* Tabeller med celle-inddeling */
+    div.matchresultat th, div.matchresultat td,
+    div.matchgruppe th, div.matchgruppe td,
+    div.gruppe th, div.gruppe td {
+        border: 1px solid #ddd;
+        /*
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        */
+        padding: 1px 2px 1px 2px;
+    }
+    /* Tabeller med række-inddeling */
+    div.stilling td, div.stilling th, div.matcher td,
+    div.stilling0 td, div.stilling0 th, div.matcher0 td {
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        padding: 1px 10px 1px 10px;
+        /*
+        padding-top: 1px;
+        padding-bottom: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+        */
+    }
+    /* Afstand mellem diverse overskrifter og tabeller */
+    h3.matchnavn, div.matchgruppeHeader, div.stillingHeader, div.stilling0Header, div.gruppeHeader {
+        /*
+        padding-top: 5px;
+        padding-bottom: 7px;
+        padding-left: 10px;
+        padding-right: 10px;
+        */
+        padding: 5px 10px 7px 10px;
+        margin-bottom: 5px;
+    }
+    /* Afstand mellem diverse overskrifter og tabeller */
+    div.gruppepoint {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 5px;
+    }
+    /* Navne er align=left */
+    .lnavn, .knavn, .bnavn {
+        text-align: left;
+        white-space: nowrap;
+    }
+    /* tabel baggrunds-farver (grå) */
+    table th {
+        background-color: #f2f2f2;
+    }
+
+    table tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    /* Overskrift/titel med baggrundsfarve (blå) */
+    h3.matchnavn {
+        font-size: xx-large;
+        font-weight: bold;
+        color: white;
+        background-color: #1D2C77;
+    }
+    /* Overskrifter med baggrundsfarve (blå) */
+    div.stillingHeader, div.stilling0Header, div.matchgruppeHeader, div.gruppeHeader {
+        font-size: x-large;
+        font-weight: bold;
+        color: white;
+        background-color: #1D2C77;
+    }
+    /* Ved print: Side-skift før/efter tabel med klasse/gruppe oversigt*/
+    div.matchgruppe {
+        page-break-before: always;
+        page-break-after: always;
+    }
+    /* Ved print: Side-skift per klasse/gruppe */
+    /*div.gruppe {
+  	page-break-before: always;
+  }*/
+    thead {
+        display: table-header-group;
+    }
+
+    tbody {
+        display: table-row-group;
+    }
+
+    /* sideskift - indsat jvf print setup*/
+    .page-break {
+        page-break-before: always;
+    }
+}

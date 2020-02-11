@@ -1,0 +1,77 @@
+﻿<html>
+<head>
+<style type='text/css' media='print,screen'>
+    body {
+        font-family: Courier New;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: yellow;
+    }
+</style>
+
+<script>
+    var queryDict = {};
+    var count = 0;
+
+    function receiveMessage(event) {
+        // event.data is "tid="+tid+"&cnt="+reloadtime+"&tid1="+tid1
+
+        arrQ = event.data.split("&")
+        for (i=0;i<arrQ.length; i++)
+        {
+            queryDict[arrQ[i].split("=")[0]] = arrQ[i].split("=")[1]
+        }
+
+        count = queryDict["cnt"]; // set initial time
+
+        setupReload()
+    }
+
+    function setupReload() {
+        setTimeout(cnt, 1000);
+        writetime();
+    }
+
+    function writetime() {
+        spn = document.getElementById("mytime")
+        spn.innerHTML = queryDict["tid"] + " - næste opdatering " + queryDict["tid1"]
+    }
+
+    function cnt() {
+        count--;
+        if (count <= 0) {
+            count = 0;
+        }
+        writetop(queryDict["tid"], count);
+        setTimeout(cnt, 1000);
+    }
+
+    function writetop(t, c) {
+        spn = document.getElementById("mytime")
+        x = " - om "
+        m = Math.floor((c / 60));
+        if (m > 0) {
+            if (m > 1)
+                x += m + " minutter "
+            else
+                x += m + " minut "
+        }
+
+        s = (c - m * 60) % 60
+        if (s > 0) {
+            if (s > 1)
+                x += s + " sekunder "
+            else
+                x += s + " sekund "
+        }
+
+        spn.innerHTML = queryDict["tid"] + " - næste opdatering " + queryDict["tid1"] + x
+    }
+
+    window.addEventListener("message", receiveMessage, false);
+</script>
+</head>
+<body">
+    <span id=mytime></span>
+</body>
+</html>

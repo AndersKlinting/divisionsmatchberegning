@@ -50,6 +50,8 @@
             this.chkAutoExport = new System.Windows.Forms.CheckBox();
             this.checkBox7 = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.cmbLayout = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +67,7 @@
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(251, 396);
+            this.btnOK.Location = new System.Drawing.Point(251, 442);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(332, 396);
+            this.btnCancel.Location = new System.Drawing.Point(332, 442);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 3;
@@ -96,9 +98,9 @@
             // 
             this.checkBox1.AutoSize = true;
             this.checkBox1.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox1.Location = new System.Drawing.Point(15, 238);
+            this.checkBox1.Location = new System.Drawing.Point(14, 279);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(149, 17);
+            this.checkBox1.Size = new System.Drawing.Size(146, 17);
             this.checkBox1.TabIndex = 5;
             this.checkBox1.Text = "Sideskift per klasse/bane";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -107,7 +109,7 @@
             // 
             this.btnPage.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPage.Location = new System.Drawing.Point(15, 359);
+            this.btnPage.Location = new System.Drawing.Point(15, 400);
             this.btnPage.Name = "btnPage";
             this.btnPage.Size = new System.Drawing.Size(395, 23);
             this.btnPage.TabIndex = 9;
@@ -151,7 +153,7 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox2.Location = new System.Drawing.Point(204, 238);
+            this.checkBox2.Location = new System.Drawing.Point(204, 279);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(86, 17);
             this.checkBox2.TabIndex = 11;
@@ -162,7 +164,7 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox3.Location = new System.Drawing.Point(192, 261);
+            this.checkBox3.Location = new System.Drawing.Point(192, 302);
             this.checkBox3.Name = "checkBox3";
             this.checkBox3.Size = new System.Drawing.Size(98, 17);
             this.checkBox3.TabIndex = 12;
@@ -173,7 +175,7 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox4.Location = new System.Drawing.Point(46, 261);
+            this.checkBox4.Location = new System.Drawing.Point(42, 302);
             this.checkBox4.Name = "checkBox4";
             this.checkBox4.Size = new System.Drawing.Size(118, 17);
             this.checkBox4.TabIndex = 13;
@@ -184,7 +186,7 @@
             // 
             this.checkBox5.AutoSize = true;
             this.checkBox5.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox5.Location = new System.Drawing.Point(332, 238);
+            this.checkBox5.Location = new System.Drawing.Point(332, 279);
             this.checkBox5.Name = "checkBox5";
             this.checkBox5.Size = new System.Drawing.Size(72, 17);
             this.checkBox5.TabIndex = 14;
@@ -203,9 +205,9 @@
             // 
             this.checkBox6.AutoSize = true;
             this.checkBox6.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox6.Location = new System.Drawing.Point(44, 284);
+            this.checkBox6.Location = new System.Drawing.Point(43, 325);
             this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(120, 17);
+            this.checkBox6.Size = new System.Drawing.Size(117, 17);
             this.checkBox6.TabIndex = 16;
             this.checkBox6.Text = "Print tomme klasser";
             this.checkBox6.UseVisualStyleBackColor = true;
@@ -254,7 +256,7 @@
             // 
             this.chkAutoExport.AutoSize = true;
             this.chkAutoExport.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.chkAutoExport.Location = new System.Drawing.Point(323, 261);
+            this.chkAutoExport.Location = new System.Drawing.Point(323, 302);
             this.chkAutoExport.Name = "chkAutoExport";
             this.chkAutoExport.Size = new System.Drawing.Size(81, 17);
             this.chkAutoExport.TabIndex = 21;
@@ -265,7 +267,7 @@
             // 
             this.checkBox7.AutoSize = true;
             this.checkBox7.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox7.Location = new System.Drawing.Point(40, 316);
+            this.checkBox7.Location = new System.Drawing.Point(36, 357);
             this.checkBox7.Name = "checkBox7";
             this.checkBox7.Size = new System.Drawing.Size(124, 17);
             this.checkBox7.TabIndex = 22;
@@ -277,12 +279,34 @@
             // 
             this.checkBox8.AutoSize = true;
             this.checkBox8.CheckAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.checkBox8.Location = new System.Drawing.Point(176, 316);
+            this.checkBox8.Location = new System.Drawing.Point(176, 357);
             this.checkBox8.Name = "checkBox8";
             this.checkBox8.Size = new System.Drawing.Size(114, 17);
             this.checkBox8.TabIndex = 23;
             this.checkBox8.Text = "inkl tidligere runder";
             this.checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // cmbLayout
+            // 
+            this.cmbLayout.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.cmbLayout.FormattingEnabled = true;
+            this.cmbLayout.Items.AddRange(new object[] {
+            "Standard",
+            "Blå overskrifter"});
+            this.cmbLayout.Location = new System.Drawing.Point(116, 218);
+            this.cmbLayout.Name = "cmbLayout";
+            this.cmbLayout.Size = new System.Drawing.Size(254, 21);
+            this.cmbLayout.TabIndex = 24;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(12, 218);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(39, 13);
+            this.label5.TabIndex = 25;
+            this.label5.Text = "Layout";
             // 
             // frmSetup
             // 
@@ -290,7 +314,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(419, 431);
+            this.ClientSize = new System.Drawing.Size(419, 477);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cmbLayout);
             this.Controls.Add(this.checkBox8);
             this.Controls.Add(this.checkBox7);
             this.Controls.Add(this.chkAutoExport);
@@ -315,7 +341,7 @@
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(435, 420);
+            this.MinimumSize = new System.Drawing.Size(435, 516);
             this.Name = "frmSetup";
             this.Text = "Print og side setup";
             this.Load += new System.EventHandler(this.Setup_Load);
@@ -348,5 +374,7 @@
         private System.Windows.Forms.CheckBox chkAutoExport;
         private System.Windows.Forms.CheckBox checkBox7;
         private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.ComboBox cmbLayout;
+        private System.Windows.Forms.Label label5;
     }
 }

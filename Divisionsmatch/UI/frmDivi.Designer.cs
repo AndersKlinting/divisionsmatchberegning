@@ -51,7 +51,8 @@
             this.gemLøbToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.gemsomToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.recentsToolStripMenuItem = new RecentsToolStripMenuItem();
+            this.gemDivisionsresultatToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.startlisteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -61,6 +62,8 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.printPreviewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.printToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informationServerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hjælpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.indholdToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
@@ -75,8 +78,8 @@
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.omToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pageSetupDialog1 = new System.Windows.Forms.PageSetupDialog();
-            this.gemDivisionsresultatToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
+            this.progressBarMeOS = new System.Windows.Forms.ProgressBar();
+            this.recentsToolStripMenuItem = new RecentsToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -93,6 +96,7 @@
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.progressBarMeOS);
             this.panel2.Controls.Add(this.btnEksport);
             this.panel2.Controls.Add(this.tabControl1);
             this.panel2.Controls.Add(this.btnPrint);
@@ -195,7 +199,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox3.Size = new System.Drawing.Size(956, 208);
+            this.textBox3.Size = new System.Drawing.Size(956, 218);
             this.textBox3.TabIndex = 3;
             this.textBox3.WordWrap = false;
             // 
@@ -267,6 +271,7 @@
             this.txtCSVFile.Name = "txtCSVFile";
             this.txtCSVFile.Size = new System.Drawing.Size(504, 20);
             this.txtCSVFile.TabIndex = 9;
+            this.txtCSVFile.TextChanged += new System.EventHandler(this.txtCSVFile_TextChanged);
             // 
             // label1
             // 
@@ -276,12 +281,14 @@
             this.label1.Size = new System.Drawing.Size(171, 13);
             this.label1.TabIndex = 8;
             this.label1.Text = "Resultater (IOF XML, OE2003 csv)";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.nytLøbToolStripMenuItem,
             this.printMainToolStripMenuItem,
+            this.informationToolStripMenuItem,
             this.hjælpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -355,13 +362,18 @@
             this.toolStripSeparator5.Name = "toolStripSeparator5";
             this.toolStripSeparator5.Size = new System.Drawing.Size(185, 6);
             // 
-            // recentsToolStripMenuItem
+            // gemDivisionsresultatToolStripMenuItem1
             // 
-            this.recentsToolStripMenuItem.Enabled = false;
-            this.recentsToolStripMenuItem.Name = "recentsToolStripMenuItem";
-            this.recentsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.recentsToolStripMenuItem.Text = "Seneste divi filer";
-            this.recentsToolStripMenuItem.ItemClick += new System.EventHandler(this.recentsToolStripMenuItem_ItemClick);
+            this.gemDivisionsresultatToolStripMenuItem1.Enabled = false;
+            this.gemDivisionsresultatToolStripMenuItem1.Name = "gemDivisionsresultatToolStripMenuItem1";
+            this.gemDivisionsresultatToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
+            this.gemDivisionsresultatToolStripMenuItem1.Text = "Gem &Divisionsresultat";
+            this.gemDivisionsresultatToolStripMenuItem1.Click += new System.EventHandler(this.gemDivisionsresultatToolStripMenuItem1_Click);
+            // 
+            // toolStripSeparator7
+            // 
+            this.toolStripSeparator7.Name = "toolStripSeparator7";
+            this.toolStripSeparator7.Size = new System.Drawing.Size(185, 6);
             // 
             // toolStripSeparator3
             // 
@@ -430,6 +442,22 @@
             this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.printToolStripMenuItem.Text = "&Print...";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
+            // 
+            // informationToolStripMenuItem
+            // 
+            this.informationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informationServerToolStripMenuItem});
+            this.informationToolStripMenuItem.Enabled = false;
+            this.informationToolStripMenuItem.Name = "informationToolStripMenuItem";
+            this.informationToolStripMenuItem.Size = new System.Drawing.Size(82, 20);
+            this.informationToolStripMenuItem.Text = "Information";
+            // 
+            // informationServerToolStripMenuItem
+            // 
+            this.informationServerToolStripMenuItem.Name = "informationServerToolStripMenuItem";
+            this.informationServerToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.informationServerToolStripMenuItem.Text = "Information Server";
+            this.informationServerToolStripMenuItem.Click += new System.EventHandler(this.informationServerToolStripMenuItem_Click);
             // 
             // hjælpToolStripMenuItem
             // 
@@ -533,18 +561,25 @@
             // 
             this.pageSetupDialog1.EnableMetric = true;
             // 
-            // gemDivisionsresultatToolStripMenuItem1
+            // progressBarMeOS
             // 
-            this.gemDivisionsresultatToolStripMenuItem1.Enabled = false;
-            this.gemDivisionsresultatToolStripMenuItem1.Name = "gemDivisionsresultatToolStripMenuItem1";
-            this.gemDivisionsresultatToolStripMenuItem1.Size = new System.Drawing.Size(188, 22);
-            this.gemDivisionsresultatToolStripMenuItem1.Text = "Gem &Divisionsresultat";
-            this.gemDivisionsresultatToolStripMenuItem1.Click += new System.EventHandler(this.gemDivisionsresultatToolStripMenuItem1_Click);
+            this.progressBarMeOS.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.progressBarMeOS.BackColor = System.Drawing.SystemColors.Control;
+            this.progressBarMeOS.Location = new System.Drawing.Point(176, 34);
+            this.progressBarMeOS.Name = "progressBarMeOS";
+            this.progressBarMeOS.Size = new System.Drawing.Size(504, 5);
+            this.progressBarMeOS.Step = 1;
+            this.progressBarMeOS.TabIndex = 13;
+            this.progressBarMeOS.Visible = false;
             // 
-            // toolStripSeparator7
+            // recentsToolStripMenuItem
             // 
-            this.toolStripSeparator7.Name = "toolStripSeparator7";
-            this.toolStripSeparator7.Size = new System.Drawing.Size(185, 6);
+            this.recentsToolStripMenuItem.Enabled = false;
+            this.recentsToolStripMenuItem.Name = "recentsToolStripMenuItem";
+            this.recentsToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.recentsToolStripMenuItem.Text = "Seneste divi filer";
+            this.recentsToolStripMenuItem.ItemClick += new System.EventHandler(this.recentsToolStripMenuItem_ItemClick);
             // 
             // frmDivi
             // 
@@ -629,5 +664,8 @@
         private RecentsToolStripMenuItem recentsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem gemDivisionsresultatToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator7;
+        private System.Windows.Forms.ToolStripMenuItem informationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem informationServerToolStripMenuItem;
+        private System.Windows.Forms.ProgressBar progressBarMeOS;
     }
 }

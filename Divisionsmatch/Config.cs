@@ -46,6 +46,8 @@ namespace Divisionsmatch
         private string _configClassSrc = string.Empty;
         private string _cssFile = string.Empty;
 
+        private string _layout = "Standard";
+
         private string _diviFile = string.Empty;
         private string _startTid = "00:00:00";
 
@@ -398,7 +400,8 @@ namespace Divisionsmatch
         {
             get
             {
-                return _cssFile != string.Empty ? Path.Combine(Path.GetDirectoryName(_diviFile), _cssFile) : string.Empty;
+                ////return _cssFile != string.Empty ? Path.Combine(Path.GetDirectoryName(_diviFile), _cssFile) : string.Empty;
+                return _cssFile ?? string.Empty;
             }
 
             set
@@ -406,11 +409,35 @@ namespace Divisionsmatch
                 _cssFile = value;
                 if (_diviFile != string.Empty && _cssFile != string.Empty)
                 {
-                    _cssFile = Uri.UnescapeDataString(new Uri(_diviFile).MakeRelativeUri(new Uri(_cssFile)).ToString());
+                    ////_cssFile = Uri.UnescapeDataString(new Uri(_diviFile).MakeRelativeUri(new Uri(_cssFile)).ToString());
+                    _cssFile = Util.GetRelativeFilePath(_cssFile, Path.GetDirectoryName(_diviFile));
                 }
             }
         }
 
+        /// <summary>
+        /// giver fuld sti til CSS filen som laves
+        /// </summary>
+        public string CssFileFullPath
+        {
+            get
+            {
+                return _cssFile != string.Empty ? (!string.IsNullOrEmpty(_diviFile) ? Path.Combine(Path.GetDirectoryName(_diviFile), _cssFile) : _cssFile) : string.Empty;
+            }
+        }
+
+        public string Layout
+        {
+            get
+            {
+                return _layout;
+            }
+            set
+            {
+                _layout = value;
+            }
+        }
+        
         /// <summary>
         /// løbets starttid (til startliste)
         /// </summary>
@@ -457,9 +484,12 @@ namespace Divisionsmatch
             else
             {
                 XmlSerializer serializer = new XmlSerializer(typeof(Config));
-                FileStream fs = new FileStream(diviFil, FileMode.Open, FileAccess.Read);
-                config = (Config)serializer.Deserialize(fs);
-                config.DivisionsResultatFil = Path.GetFullPath(Path.Combine(Directory.GetParent(diviFil).FullName, config.DivisionsResultatFil));
+                // using (FileStream fs = new FileStream(diviFil, FileMode.Open, FileAccess.Read))
+                using (StreamReader sr = new StreamReader(diviFil, true))
+                {
+                    config = (Config)serializer.Deserialize(sr);
+                    config.DivisionsResultatFil = Path.GetFullPath(Path.Combine(Directory.GetParent(diviFil).FullName, config.DivisionsResultatFil));
+                }
             }
 
             // hack
@@ -692,10 +722,12 @@ namespace Divisionsmatch
                 }
                 this.DivisionsResultatFil = this.DivisionsResultatFil.ToUpperInvariant().Replace(p + Path.DirectorySeparatorChar, relativeP);
             }
-            XmlSerializer serializer = new XmlSerializer(typeof(Config));
-            StreamWriter writer = new StreamWriter(filename);
-            serializer.Serialize(writer, this);
-            writer.Close();
+            //XmlSerializer serializer = new XmlSerializer(typeof(Config));
+            //StreamWriter writer = new StreamWriter(filename);
+            //serializer.Serialize(writer, this);
+            //writer.Close();
+
+            Util.SerializeObjectToFile(this, filename);
         }
         
         /// <summary>

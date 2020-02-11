@@ -262,7 +262,9 @@
             this.Controls.Add(this.btnOpenFile);
             this.Controls.Add(this.txtXMLFile);
             this.Controls.Add(this.label1);
-            this.MinimumSize = new System.Drawing.Size(434, 222);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(434, 259);
             this.Name = "frmStartListe";
             this.Text = "Startliste";
             this.panel1.ResumeLayout(false);

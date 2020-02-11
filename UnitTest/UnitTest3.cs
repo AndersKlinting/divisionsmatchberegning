@@ -74,12 +74,12 @@ namespace UnitTest
             string x = "";
             string resultat = "";
 
-            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray());
+            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray());
             System.Diagnostics.Debug.Print(x);
             resultat = System.IO.File.ReadAllText("unittest3_resultat.txt", Encoding.Default);
             _TestLines(resultat, x);
             
-            string p = new Uri(teststaevne.LavHTML(teststaevne.LavHTMLafsnit(config))).LocalPath;
+            string p = new Uri(teststaevne.LavHTML(teststaevne.LavHTMLafsnit())).LocalPath;
             x = System.IO.File.ReadAllText(p, UTF8Encoding.Default);
             resultat = System.IO.File.ReadAllText("unittest3_resultat.htm", Encoding.Default);
 

@@ -27,6 +27,14 @@ C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Divisionsmatch.pdb
 C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Divisionsmatch.xml
 C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\LumenWorks.Framework.IO.xml
 C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\da\AutoUpdater.NET.resources.dll
-C:\temp\github\divisionsmatchberegning\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
 C:\temp\github\divisionsmatchberegning\UnitTest\obj\Debug\UnitTest.dll
 C:\temp\github\divisionsmatchberegning\UnitTest\obj\Debug\UnitTest.pdb
+C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Divisionsmatch.exe.config
+C:\temp\github\divisionsmatchberegning\UnitTest\obj\Debug\UnitTest.csprojAssemblyReference.cache
+C:\temp\github\divisionsmatchberegning\UnitTest\obj\Debug\UnitTest.csproj.CoreCompileInputs.cache
+C:\temp\github\divisionsmatchberegning\UnitTest\obj\Debug\UnitTest.csproj.CopyComplete
+C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Nancy.Hosting.Self.dll
+C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Nancy.dll
+C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Nancy.Hosting.Self.xml
+C:\temp\github\divisionsmatchberegning\UnitTest\bin\Debug\Nancy.xml
