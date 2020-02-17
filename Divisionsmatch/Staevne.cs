@@ -439,6 +439,7 @@ namespace Divisionsmatch
                 }
                 else if (_config.Layout == "Blå overskrifter")
                 {
+                    output.AppendLine("<div class=\"stillingContainer\">");
                     output.AppendLine("<div class=\"stillingHeader\">Divisionsmatch (" + this.Config.Skov + ", " + this.Config.Dato.ToString("yyyy-MM-dd") + ")</div>");
                     output.AppendLine("<div class=\"stilling\">");
                     output.AppendLine("<table class=\"stilling\">");
@@ -761,7 +762,7 @@ namespace Divisionsmatch
             var style =
             html.AppendLine("<!-- make default style in case css-file is missing -->");
             html.AppendLine("<style>");
-            html.AppendLine(File.ReadAllText(cssFile));
+            html.AppendLine(File.ReadAllText(cssFile, Encoding.UTF8));
             html.AppendLine("</style>");
             html.AppendLine("<link rel='stylesheet' href='" + Path.GetFileName(cssFile) + "'/>");
             html.AppendLine("</head>");
@@ -918,7 +919,6 @@ namespace Divisionsmatch
             }
             else if (_config.Layout == "Blå overskrifter")
             {
-                html.AppendLine("<div class=\"stillingContainer\">");
                 html.AppendLine("<div class=\"matcher\">");
                 html.AppendLine("<table class=\"matcher\">");
                 html.AppendLine("<tbody>");
