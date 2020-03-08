@@ -46,7 +46,7 @@ namespace Divisionsmatch
         private string _configClassSrc = string.Empty;
         private string _cssFile = string.Empty;
 
-        private string _layout = "Standard";
+        private string _layout = "Blå overskrifter";
 
         private string _diviFile = string.Empty;
         private string _startTid = "00:00:00";

@@ -16,13 +16,13 @@ opdater versionhistory.htm
 build project, release mode
 
 
-Opdater Setuo
+Opdater Setup projekt properties
 * Version
 * ProductCode
 * men IKKE UpgradeCode
 i Setup Deployment properties
 
-build setup projektet, release mode
+build Setup projektet, release mode
 
 upload 
 * AutoUpdates\versioninfo.xml
