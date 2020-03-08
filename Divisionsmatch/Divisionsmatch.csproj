@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
@@ -10,9 +10,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Divisionsmatch</RootNamespace>
     <AssemblyName>Divisionsmatch</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -33,13 +34,17 @@
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -48,6 +53,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\Divisionsmatch.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -59,6 +65,7 @@
     <WarningLevel>4</WarningLevel>
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <DocumentationFile>bin\Release\Divisionsmatch.XML</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationIcon>
@@ -77,6 +84,13 @@
     </Reference>
     <Reference Include="LumenWorks.Framework.IO">
       <HintPath>..\3rd\CSVReader\LumenWorks.Framework.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Nancy, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.2.0.0\lib\net452\Nancy.dll</HintPath>
+    </Reference>
+    <Reference Include="Nancy.Hosting.Self, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Nancy.Hosting.Self.2.0.0\lib\net452\Nancy.Hosting.Self.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration.Install" />
@@ -99,6 +113,15 @@
     <Compile Include="InstallerClass.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Nancy\frmNancy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Nancy\frmNancy.Designer.cs">
+      <DependentUpon>frmNancy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Nancy\HostingAPI.cs" />
+    <Compile Include="Nancy\InformationServerModule.cs" />
+    <Compile Include="ResultatDefinition.cs" />
     <Compile Include="Staevne.cs" />
     <Compile Include="UI\frmBeregnPop.cs">
       <SubType>Form</SubType>
@@ -164,10 +187,19 @@
     <Compile Include="UI\frmVisDivisionsResultat.Designer.cs">
       <DependentUpon>frmVisDivisionsResultat.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\frmÅbnResultat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\frmÅbnResultat.Designer.cs">
+      <DependentUpon>frmÅbnResultat.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\RecentsToolStripMenuItem.cs">
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Util.cs" />
+    <EmbeddedResource Include="Nancy\frmNancy.resx">
+      <DependentUpon>frmNancy.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UI\frmBeregnPop.resx">
       <DependentUpon>frmBeregnPop.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,7 +237,11 @@
     <EmbeddedResource Include="UI\frmVisDivisionsResultat.resx">
       <DependentUpon>frmVisDivisionsResultat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UI\frmÅbnResultat.resx">
+      <DependentUpon>frmÅbnResultat.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="app.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -220,7 +256,8 @@
     <None Include="Resources\minipost.ico" />
     <None Include="Resources\word.ico" />
     <None Include="Resources\chm.ico" />
-    <Content Include="Resources\minipost.gif" />
+    <EmbeddedResource Include="Resources\divi.css" />
+    <EmbeddedResource Include="Resources\minipost.gif" />
     <None Include="Resources\pdf.ico" />
     <None Include="Resources\pdf1.ico" />
   </ItemGroup>
@@ -251,6 +288,13 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\frame.html" />
+    <EmbeddedResource Include="Resources\jquery-1.11.0.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\top.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

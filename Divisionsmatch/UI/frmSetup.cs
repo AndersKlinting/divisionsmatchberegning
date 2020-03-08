@@ -91,6 +91,9 @@ namespace Divisionsmatch
 
             // set CssFile
             config.CssFile = txtHtmlCss.Text;
+
+            // set CssFile
+            config.Layout = cmbLayout.Text;
         }
 
         private void Setup_Load(object sender, EventArgs e)
@@ -136,6 +139,7 @@ namespace Divisionsmatch
             ////_pd.PrinterSettings = config.printerSettings;
 
             txtHtmlCss.Text = config.CssFile;
+            cmbLayout.SelectedIndex = cmbLayout.Items.IndexOf(config.Layout);
             chkUseCss.Checked = config.CssFile != string.Empty;
             btnCssFile.Enabled = config.CssFile != string.Empty;
         }

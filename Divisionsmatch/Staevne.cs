@@ -19,6 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Xml;
 
@@ -376,6 +377,7 @@ namespace Divisionsmatch
             foreach (Loeber l in alleloebere)
             {
                 // hvis løberen er fra en klub i divisionsmatchen
+                // bool bKlub = Klubber.Exists(k => l.Klub != null && k.Navn.ToLowerInvariant().Equals(l.Klub.Navn.ToLowerInvariant()));
                 bool bKlub = Klubber.Exists(k => l.Klub != null && k.Equals(l.Klub));
                 // placer løberen i løbet og i en gruppe
                 Gruppe g = Grupper.FirstOrDefault(grp => grp.Harløbsklasse(l.Løbsklassenavn));
@@ -428,10 +430,24 @@ namespace Divisionsmatch
             }
             else
             {
-                output.AppendLine("<h3 class=\"stilling\">Divisionsmatch (" + this.Config.Skov + ", " + this.Config.Dato.ToString("yyyy-MM-dd") + ")</h3>");
-                output.AppendLine("<table class=\"stilling\">");
-                output.AppendLine("<tbody class=\"stilling\">");
-                output.AppendLine("<tr class=\"stilling\"><td>&nbsp;</td><td colspan=3>score</td><td>point</td><td>&nbsp;</td></tr>");
+                if (_config.Layout == "Standard")
+                {
+                    output.AppendLine("<h3 class=\"stilling\">Divisionsmatch (" + this.Config.Skov + ", " + this.Config.Dato.ToString("yyyy-MM-dd") + ")</h3>");
+                    output.AppendLine("<table class=\"stilling\">");
+                    output.AppendLine("<tbody class=\"stilling\">");
+                    output.AppendLine("<tr class=\"stilling\"><td>&nbsp;</td><td colspan=3>score</td><td>point</td><td>&nbsp;</td></tr>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    output.AppendLine("<div class=\"stillingContainer\">");
+                    output.AppendLine("<div class=\"stillingHeader\">Divisionsmatch (" + this.Config.Skov + ", " + this.Config.Dato.ToString("yyyy-MM-dd") + ")</div>");
+                    output.AppendLine("<div class=\"stilling\">");
+                    output.AppendLine("<table class=\"stilling\">");
+                    output.AppendLine("<thead>");
+                    output.AppendLine("<tr><th class=\"knavn\">Klubnavn</th><th colspan=3 style=\"text-align:center\">score</th><th>point</th><th>&nbsp;</th></tr>");
+                    output.AppendLine("</thead>");
+                    output.AppendLine("<tbody>");
+                }
             }
 
             foreach (Klub k in KlubberEfterPlacering)
@@ -440,7 +456,14 @@ namespace Divisionsmatch
 
                 if (html)
                 {
-                    output.AppendLine("<tr class=\"stilling\"><td>" + k.Navn.PadRight(40) + "</td><td>" + k.Score1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + "</td><td>-</td><td>" + k.Score2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + "</td><td align=right>" + k.Point.ToString("##0").PadLeft(5) + "</td><td align=left>" + k.Kommentar + "&nbsp;" + ude + "</td></tr>");
+                    if (_config.Layout == "Standard")
+                    {
+                        output.AppendLine("<tr class=\"stilling\"><td>" + k.Navn.PadRight(40) + "</td><td>" + k.Score1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + "</td><td>-</td><td>" + k.Score2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + "</td><td style=\"text-align:right\">" + k.Point.ToString("##0").PadLeft(5) + "</td><td style=\"text-align:left\">" + k.Kommentar + "&nbsp;" + ude + "</td></tr>");
+                    }
+                    else if (_config.Layout == "Blå overskrifter")
+                    {
+                        output.AppendLine("<tr><td class=\"knavn\">" + k.Navn + "</td><td>" + k.Score1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td>-</td><td>" + k.Score2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td>" + k.Point.ToString("##0") + "</td><td style=\"text-align:left\">" + k.Kommentar + "&nbsp;" + ude + "</td></tr>");
+                    }
                 }
                 else
                 {
@@ -450,7 +473,15 @@ namespace Divisionsmatch
 
             if (html)
             {
-                output.AppendLine("</tbody></table>");
+                if (_config.Layout == "Standard")
+                {
+                    output.AppendLine("</tbody></table>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    output.AppendLine("</tbody></table>");
+                    output.AppendLine("</div>");
+                }
             }
             return output.ToString();
         }
@@ -636,29 +667,29 @@ namespace Divisionsmatch
         /// </summary>
         /// <param name="config">configurationen som definerer hvad der skal laves</param>
         /// <returns></returns>
-        public List<string> LavTXTafsnit(Config config)
+        public List<string> LavTXTafsnit()
         {
             List<string> output = new List<string>();
 
-            if (!config.PrintBaner)
+            if (!Config.PrintBaner)
             {
                 foreach (Gruppe g in Grupper)
                 {
-                    var lg = g.Loebere.Where(l => l.Value.Inkl == true || config.PrintAlle);
-                    if (lg.Count() > 0 || config.PrintAlleGrupper)
+                    var lg = g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle);
+                    if (lg.Count() > 0 || Config.PrintAlleGrupper)
                     {
-                        output.Add(g.LavTXTOverskrift() + txtTable(g.Loebere.Where(l => l.Value.Inkl == true || config.PrintAlle).Select(ll => ll.Value).ToList()));
+                        output.Add(g.LavTXTOverskrift() + txtTable(g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle).Select(ll => ll.Value).ToList()));
                     }
                 }
             }
             else
             {
-                foreach (Bane b in config.baner.OrderBy(bb => bb.Navn))
+                foreach (Bane b in Config.baner.OrderBy(bb => bb.Navn))
                 {
-                    var kl = config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
+                    var kl = Config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
                     // find løbere på samme bane - og vælg dem i matchen, eller alle
-                    var lll = Loebere.Where(l => kl.Contains(l.Value.Løbsklassenavn) && (l.Value.Inkl == true || config.PrintAlle)).Select(ll => ll.Value).ToList();
-                    if (lll.Count > 0 || config.PrintAlleGrupper)
+                    var lll = Loebere.Where(l => kl.Contains(l.Value.Løbsklassenavn) && (l.Value.Inkl == true || Config.PrintAlle)).Select(ll => ll.Value).ToList();
+                    if (lll.Count > 0 || Config.PrintAlleGrupper)
                     {
                         output.Add(b.LavTXToverskrift() + txtTable(lll));
                     }
@@ -670,25 +701,26 @@ namespace Divisionsmatch
         /// <summary>
         /// lav en liste af HTML formatterede afsnit tilburg ved sammenligning
         /// </summary>
-        /// <param name="config"></param>
         /// <returns>liste af html strings</returns>
-        public List<string> LavHTMLafsnit(Config config)
+        public List<string> LavHTMLafsnit()
         {
             List<string> htmlSections = new List<string>();
 
-            htmlSections.Add(_lavHTMLStilling(config));
-
-            if (!config.PrintBaner)
+            if (!Config.PrintBaner)
             {
                 // gruppe detalje resultater
                 foreach (Gruppe g in Grupper)
                 {
-                    var lll = g.Loebere.Where(l => l.Value.Inkl == true || config.PrintAlle);
-                    if (lll.Count() > 0 || config.PrintAlleGrupper)
+                    var lll = g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle);
+                    if (lll.Count() > 0 || Config.PrintAlleGrupper)
                     {
                         StringBuilder html = new StringBuilder();
-                        html.AppendLine(g.LavHTMLoverskrift());
-                        html.AppendLine(htmlTable(g.navn, g.Loebere.Where(l => l.Value.Inkl == true || config.PrintAlle).Select(ll => ll.Value).ToList()));
+                        if (_config.Layout == "Blå overskrifter")
+                            html.AppendLine("<div class=\"gruppe\">");
+                        html.AppendLine(g.LavHTMLoverskrift(Config.Layout));
+                        html.AppendLine(htmlTable(g.navn, g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle).Select(ll => ll.Value).ToList()));
+                        if (_config.Layout == "Blå overskrifter")
+                            html.AppendLine("</div>");
 
                         htmlSections.Add(html.ToString());
                     }
@@ -696,14 +728,14 @@ namespace Divisionsmatch
             }
             else
             {
-                foreach (Bane b in config.baner.OrderBy(bb => bb.Navn))
+                foreach (Bane b in Config.baner.OrderBy(bb => bb.Navn))
                 {
                     StringBuilder html = new StringBuilder();
 
-                    var kl = config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
+                    var kl = Config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
                     // find løbere på samme bane - og vælg dem i matchen, eller alle
-                    var lll = Loebere.Where(l => kl.Contains(l.Value.Løbsklassenavn) && (l.Value.Inkl == true || config.PrintAlle)).Select(ll => ll.Value).ToList();
-                    if (lll.Count > 0 || config.PrintAlleGrupper)
+                    var lll = Loebere.Where(l => kl.Contains(l.Value.Løbsklassenavn) && (l.Value.Inkl == true || Config.PrintAlle)).Select(ll => ll.Value).ToList();
+                    if (lll.Count > 0 || Config.PrintAlleGrupper)
                     {
                         html.AppendLine(b.LavHTMLoverskrift());
                         html.AppendLine(htmlTable(b.Navn, lll));
@@ -717,6 +749,27 @@ namespace Divisionsmatch
         }
 
         /// <summary>
+        /// lav HTML head sektion
+        /// </summary>
+        /// <returns>html string</returns>
+        public string GetHTMLHead()
+        {
+            StringBuilder html = new StringBuilder();
+            html.AppendLine("<head><title> Divisionsmatch v " + _productVersion + " - (" + DateTime.Now.ToString("yyyy - MM - dd HH: mm: ss") + ")</title> ");
+            html.AppendLine("<meta content=\"text/html;charset=utf-8\" http-equiv=\"Content-Type\">");
+
+            string cssFile = GetHTMLStyle();
+            var style =
+            html.AppendLine("<!-- make default style in case css-file is missing -->");
+            html.AppendLine("<style>");
+            html.AppendLine(File.ReadAllText(cssFile, Encoding.UTF8));
+            html.AppendLine("</style>");
+            html.AppendLine("<link rel='stylesheet' href='" + Path.GetFileName(cssFile) + "'/>");
+            html.AppendLine("</head>");
+            return html.ToString();
+        }
+
+        /// <summary>
         /// Lav et afsnit i HTML
         /// </summary>
         /// <param name="sections">de sektioner som skal indgå i HTML</param>
@@ -725,15 +778,10 @@ namespace Divisionsmatch
         {
             StringBuilder html = new StringBuilder();
 
-            html.AppendLine("<html><head><title>Divisionsmatch v " + _productVersion + " - (" + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss") + ")</title>");
-            string cssFile = GetHTMLStyle();
-            var style =
-            html.AppendLine("<!-- make default style in case css-file is missing -->");
-            html.AppendLine("<style>");
-            html.AppendLine(File.ReadAllText(cssFile));
-            html.AppendLine("</style>");
-            html.AppendLine("<link rel='stylesheet' href='" + Path.GetFileName(cssFile) + "'/>");
-            html.AppendLine("</head><body>");
+            html.AppendLine("<!DOCTYPE html>");
+            html.AppendLine("<html lang=\"da\">");
+            html.AppendLine(GetHTMLHead());
+            html.AppendLine("<body>");
 
             bool bFirst = true;
             foreach (string s in sections)
@@ -742,7 +790,7 @@ namespace Divisionsmatch
                 {
                     if (_config != null && _config.SideSkift)
                     {
-                        html.AppendLine("<div class='page-break'><div>");
+                        html.AppendLine("<div class='page-break'></div>");
                     }
                 }
                 else
@@ -755,10 +803,10 @@ namespace Divisionsmatch
 
             html.AppendLine("</body></html>");
 
-            string targetFilePath = Path.Combine(tempFolder, "divi.htm");
+            string targetFilePath = Path.Combine(tempFolder, Guid.NewGuid().ToString("N") + "_divi.htm");
             try
             {
-                File.WriteAllText(targetFilePath, html.ToString(), Encoding.Default);
+                File.WriteAllText(targetFilePath, html.ToString(), Encoding.UTF8);
             }
             catch (Exception e)
             {
@@ -775,43 +823,56 @@ namespace Divisionsmatch
         public string GetHTMLStyle()
         {
             string cssFile = string.Empty;
+            string style = string.Empty;
 
-            if (string.IsNullOrEmpty(_config.CssFile) || !File.Exists(_config.CssFile))
+            if (string.IsNullOrEmpty(_config.CssFile) || !File.Exists(_config.CssFileFullPath))
             {
-                string fontName = _config != null ? _config.font.FontValue.Name : "Courier New";
-                string fontSize = _config != null ? _config.font.FontValue.SizeInPoints.ToString() : "10";
-                bool bold = _config != null ? _config.font.FontValue.Bold : false;
-                bool italic = _config != null ? _config.font.FontValue.Italic : false;
-                bool strike = _config != null ? _config.font.FontValue.Strikeout : false;
-                bool underline = _config != null ? _config.font.FontValue.Underline : false;
-
-                string style = @"table, h3, body {font-family:" + fontName + @";font-size:" + fontSize + @"pt";
-                if (bold)
+                if (string.IsNullOrEmpty(_config.Layout) || _config.Layout == "Standard")
                 {
-                    style += @";font-weight:bold";
+                    string fontName = _config != null ? _config.font.FontValue.Name : "Courier New";
+                    string fontSize = _config != null ? _config.font.FontValue.SizeInPoints.ToString() : "10";
+                    bool bold = _config != null ? _config.font.FontValue.Bold : false;
+                    bool italic = _config != null ? _config.font.FontValue.Italic : false;
+                    bool strike = _config != null ? _config.font.FontValue.Strikeout : false;
+                    bool underline = _config != null ? _config.font.FontValue.Underline : false;
+
+                    style = @"table, h3, body {font-family:" + fontName + @";font-size:" + fontSize + @"pt";
+                    if (bold)
+                    {
+                        style += @";font-weight:bold";
+                    }
+                    if (italic)
+                    {
+                        style += @";font-style:italic";
+                    }
+                    if (underline || strike)
+                    {
+                        style += @";text-decoration:" + (underline ? "underline" : "normal") + " normal " + (strike ? "line-through" : "normal") + " normal";
+                    }
+                    style += @"}" + Environment.NewLine;
+
+                    style += @"th, td {padding: 2px;} " + Environment.NewLine;
+                    style += @"h3 {font-size: larger;} " + Environment.NewLine;
+                    style += @"tr {page-break-inside: avoid;} " + Environment.NewLine;
+                    style += @"th.bane, th.matchgruppe, td.matchgruppe, td.bane {border-bottom: solid lightgrey 1px;border-left: solid lightgrey 1px;}   " + Environment.NewLine;
+                    style += @".point {font-size:8pt}" + Environment.NewLine;
+                    style += @".page-break {page-break-before:always;}" + Environment.NewLine;
+                    style += @"thead { display:table-header-group;}" + Environment.NewLine;
+                    style += @"tbody { display:table-row-group; } " + Environment.NewLine;
+
+                    style = "@media print, screen {" + Environment.NewLine + style + "}";
+                    //// style += "<script>setTimeout(\"document.body.style.zoom=1.5\", 500)</script>";
                 }
-                if (italic)
+                else if (_config.Layout == "Blå overskrifter")
                 {
-                    style += @";font-style:italic";
+                    var assembly = Assembly.GetExecutingAssembly();
+                    string resourceName = assembly.GetManifestResourceNames().Single(str => str.EndsWith("divi.css"));
+                    using (Stream stream = assembly.GetManifestResourceStream(resourceName))
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        style = reader.ReadToEnd();
+                    }
                 }
-                if (underline || strike)
-                {
-                    style += @";text-decoration:" + (underline ? "underline" : "normal") + " normal " + (strike ? "line-through" : "normal") + " normal";
-                }
-                style += @"}" + Environment.NewLine;
-
-                style += @"th, td {padding: 2px;} " + Environment.NewLine;
-                style += @"h3 {font-size: larger;} " + Environment.NewLine;
-                style += @"tr {page-break-inside: avoid;} " + Environment.NewLine;
-                style += @"th.bane, th.matchgruppe, td.matchgruppe, td.bane {border-bottom: solid lightgrey 1px;border-left: solid lightgrey 1px;}   " + Environment.NewLine;
-                style += @".point {font-size:8pt}" + Environment.NewLine;
-                style += @".page-break {page-break-before:always;}" + Environment.NewLine;
-                style += @"thead { display:table-header-group;}" + Environment.NewLine;
-                style += @"tbody { display:table-row-group; } " + Environment.NewLine;
-
-                style = "@media print, screen {" + Environment.NewLine + style + "}";
-                //// style += "<script>setTimeout(\"document.body.style.zoom=1.5\", 500)</script>";
-
                 cssFile = "divi.css";
                 string targetFilePath = Path.Combine(tempFolder, cssFile);
                 try
@@ -824,15 +885,14 @@ namespace Divisionsmatch
                 }
                 ////tag = "<link rel='stylesheet' media='print,screen' type='text/css' href='" + targetFileName + "'/>";
                 cssFile = targetFilePath;
-
-            }
+            }   
             else
             {
-                string targetFileName = Path.GetFileName(_config.CssFile);
+                string targetFileName = Path.GetFileName(_config.CssFileFullPath);
                 string targetFilePath = Path.Combine(tempFolder, targetFileName);
                 try
                 {
-                    File.Copy(_config.CssFile, targetFilePath, true);
+                    File.Copy(_config.CssFileFullPath, targetFilePath, true);
                 }
                 catch (Exception ex)
                 {
@@ -847,20 +907,34 @@ namespace Divisionsmatch
         #endregion
 
         #region private methods
-        private string _lavHTMLStilling(Config config)
+        public string LavHTMLStilling(Config config)
         {
             StringBuilder html = new StringBuilder();
+            if (_config.Layout == "Standard")
+            {
+                html.AppendLine("<p>");
 
-            html.Append(Printstilling(true));
+                html.AppendLine("<table class=\"matcher\">");
+                html.AppendLine("<tbody class=\"matcher\">");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("<div class=\"matcher\">");
+                html.AppendLine("<table class=\"matcher\">");
+                html.AppendLine("<tbody>");
+            }
 
-            html.AppendLine("<p>");
-
-            html.AppendLine("<table class=\"matcher\">");
-            html.AppendLine("<tbody class=\"matcher\">");
             int n = 1;
             foreach (Match m in Matcher)
             {
-                html.Append("<tr class=\"matcher\"><td>" + n.ToString() + "</td><td> : </td><td>" + m.Klub1.Navn + "</td><td> - </td><td>" + m.Klub2.Navn + "</td><td> : </td><td align=right>");
+                if (_config.Layout == "Standard")
+                {
+                    html.Append("<tr class=\"matcher\"><td>" + n.ToString() + "</td><td> : </td><td>" + m.Klub1.Navn + "</td><td> - </td><td>" + m.Klub2.Navn + "</td><td> : </td><td style=\"text-align:right\">");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    html.Append("<tr><td>" + n.ToString() + "</td><td> : </td><td class=\"knavn\">" + m.Klub1.Navn + "</td><td> - </td><td class=\"knavn\">" + m.Klub2.Navn + "</td><td> : </td><td style=\"text-align:right\">");
+                }
 
                 //double p1 = loebere.Where(item => item.Value.klub == m.klub1).Sum(item => item.Value.GetSumPoint(m));
                 //double p2 = loebere.Where(item => item.Value.klub == m.klub2).Sum(item => item.Value.GetSumPoint(m));
@@ -868,30 +942,66 @@ namespace Divisionsmatch
                 double p1 = m.Score1();
                 double p2 = m.Score2();
 
-                html.AppendLine(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td> - </td><td align=right>" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td></tr>");
+                html.AppendLine(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td> - </td><td style=\"text-align:right\">" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td></tr>");
 
                 n++;
             }
             html.AppendLine("</tbody></table>");
-
+            if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("</div>");
+                html.AppendLine("</div>");
+            }
             // matcherneper gruppe
             // make match numbers
-            html.AppendLine("<p><table class=\"matchgruppe\">");
-            html.AppendLine("<thead class=\"matchgruppe\">");
-            html.Append("<tr class=\"matchgruppe\"><th >&nbsp;</th>");
+            if (_config.Layout == "Standard")
+            {
+                html.AppendLine("<p><table class=\"matchgruppe\">");
+                html.AppendLine("<thead class=\"matchgruppe\">");
+                html.Append("<tr class=\"matchgruppe\"><th>&nbsp;</th>");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("<div class=\"matchgruppe\">");
+                html.AppendLine("<div class=\"matchgruppeHeader\">Klasse oversigt</div>");
+                html.AppendLine("<table class=\"matchgruppe\">");
+                html.AppendLine("<thead>");
+                html.Append("<tr><th>&nbsp;</th>");
+            }
+
             n = 1;
             foreach (Match m in Matcher)
             {
-                html.Append("<th class='matchgruppe' >m" + n.ToString() + "</th>");
+                if (_config.Layout == "Standard")
+                {
+                    html.Append("<th class='matchgruppe' >m" + n.ToString() + "</th>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    html.Append("<th>m" + n.ToString() + "</th>");
+                }
                 n = n + 1;
             }
             html.AppendLine("</tr>");
-            html.AppendLine("</thead><tbody class=\"matchgruppe\">");
-
+            if (_config.Layout == "Standard")
+            {
+                html.AppendLine("</thead><tbody class=\"matchgruppe\">");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("</thead><tbody>");
+            }
             // print data
             foreach (Gruppe g in Grupper)
             {
-                html.Append("<tr class=\"matchgruppe\"><td class='matchgruppe'>" + g.navn);
+                if (_config.Layout == "Standard")
+                {
+                    html.Append("<tr class=\"matchgruppe\"><td class='matchgruppe'>" + g.navn);
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    html.Append("<tr><td class=\"bnavn\">" + g.navn);
+                }
                 html.Append("</td>");
 
                 foreach (Match m in Matcher)
@@ -907,23 +1017,47 @@ namespace Divisionsmatch
                     ////    p2 /= 2;
                     ////}
 
-                    html.Append("<td class='matchgruppe'>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                    if (_config.Layout == "Standard")
+                    {
+                        html.Append("<td class='matchgruppe'>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                    }
+                    else if (_config.Layout == "Blå overskrifter")
+                    {
+                        html.Append("<td>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                    }
                 }
                 html.AppendLine("</tr>");
             }
             // for 'ialt'
-            html.Append("<tr class=\"matchgruppe\"><td class='matchgruppe'>Ialt:");
+            if (_config.Layout == "Standard")
+            {
+                html.Append("<tr class=\"matchgruppe\"><td class='matchgruppe'>Ialt:");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                html.Append("<tr><td>Ialt:");
+            }
             html.Append("</td>");
             foreach (Match m in Matcher)
             {
                 double p1 = m.Loebspoint1(this.Loebere);
                 double p2 = m.Loebspoint2(this.Loebere);
-                html.Append("<td class='matchgruppe'>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                if (_config.Layout == "Standard")
+                {
+                    html.Append("<td class='matchgruppe'>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    html.Append("<td>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                }
             }
             html.AppendLine("</tr>");
 
             html.AppendLine("</tbody></table>");
-
+            if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("</div>");
+            }
             return html.ToString();
         }
 
@@ -973,11 +1107,27 @@ namespace Divisionsmatch
         {
             StringBuilder output = new StringBuilder();
 
-            output.AppendLine("<table class=\"bane\" id=\"" + navn + "\">");
-            output.Append("<thead class=\"bane\"><tr class=\"bane\"><th class='bane'>pl</th><th class='bane'>navn</th><th class='bane'>klub</th><th class='bane'>klasse</th><th class='bane'>tid</th>");
+            if (_config.Layout == "Standard")
+            {
+                output.AppendLine("<table class=\"bane\" id=\"table-" + navn + "\">");
+                output.Append("<thead class=\"bane\"><tr class=\"bane\"><th class='bane'>pl</th><th class='bane'>navn</th><th class='bane'>klub</th><th class='bane'>klasse</th><th class='bane'>tid</th>");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                output.AppendLine("<table class=\"gruppe\">");
+                output.Append("<thead><tr><th>pl</th><th class=\"lnavn\">navn</th><th class=\"knavn\">klub</th><th>klasse</th><th>tid</th>");
+            }
+
             for (int i = 1; i <= Matcher.Count; i++)
             {
-                output.Append("<th class='bane'>m" + i.ToString() + "</th>");
+                if (_config.Layout == "Standard")
+                {
+                    output.Append("<th class='bane'>m" + i.ToString() + "</th>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    output.Append("<th>m" + i.ToString() + "</th>");
+                }
             }
             output.AppendLine("</tr></thead>");
             output.AppendLine("<tbody>");
@@ -991,7 +1141,15 @@ namespace Divisionsmatch
                 {
                     cnt++;
                     // Loeber l = kv.Value;
-                    string line = "<tr class='bane'>";
+                    string line = string.Empty;
+                    if (_config.Layout == "Standard")
+                    {
+                        line = "<tr class='bane'>";
+                    }
+                    else if (_config.Layout == "Blå overskrifter")
+                    {
+                        line = "<tr>";
+                    }
                     if (l.IsStatusOK)
                     {
                         if (oldTid != l.Tid)
@@ -1000,17 +1158,34 @@ namespace Divisionsmatch
                         }
                         oldTid = l.Tid;
                     }
-                    line += "<td class='bane' align=right>" + (l.IsStatusOK ? pl.ToString() : "&nbsp;") + "</td>";
-                    line += "<td class='bane' nowrap>" + l.Fornavn + " " + l.Efternavn + "</td>";
-                    line += "<td class='bane' nowrap>" + l.Klub.Navn + "</td>";
-                    line += "<td class='bane'>" + l.Løbsklassenavn + "</td>";
-                    line += "<td class='bane'>" + (l.IsStatusOK ? l.Tid : l.PrintStatus) + "</td>";
-
+                    if (_config.Layout == "Standard")
+                    {
+                        line += "<td class='bane' style=\"text-align:right\">" + (l.IsStatusOK ? pl.ToString() : "&nbsp;") + "</td>";
+                        line += "<td class='bane' style=\"white-space:nowrap\">" + l.Fornavn + " " + l.Efternavn + "</td>";
+                        line += "<td class='bane' style=\"white-space:nowrap\">" + l.Klub.Navn + "</td>";
+                        line += "<td class='bane'>" + l.Løbsklassenavn + "</td>";
+                        line += "<td class='bane'>" + (l.IsStatusOK ? l.Tid : l.PrintStatus) + "</td>";
+                    }
+                    else if (_config.Layout == "Blå overskrifter")
+                    {
+                        line += "<td style=\"text-align:right\">" + (l.IsStatusOK ? pl.ToString() : "&nbsp;") + "</td>";
+                        line += "<td class=\"lnavn\">" + l.Fornavn + " " + l.Efternavn + "</td>";
+                        line += "<td class=\"knavn\" style=\"white-space:nowrap\">" + l.Klub.Navn + "</td>";
+                        line += "<td>" + l.Løbsklassenavn + "</td>";
+                        line += "<td>" + (l.IsStatusOK ? l.Tid : l.PrintStatus) + "</td>";
+                    }
                     foreach (Match m in Matcher)
                     {
-                        string up = l.GetUPoint(m) > 0 ? "*" : "&nbsp";
+                        string up = l.GetUPoint(m) > 0 ? "*" : "&nbsp;";
                         double p = l.GetSumPoint(m);
-                        line += "<td class='bane' align=right>" + (p > 0 ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo) : "&nbsp;") + up + "</td>";
+                        if (_config.Layout == "Standard")
+                        {
+                            line += "<td class='bane' style=\"text-align:right\">" + (p > 0 ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo) : "&nbsp;") + up + "</td>";
+                        }
+                        else if (_config.Layout == "Blå overskrifter")
+                        {
+                            line += "<td>" + (p > 0 ? p.ToString("0.#", System.Globalization.NumberFormatInfo.InvariantInfo) : "&nbsp;") + up + "</td>";
+                        }
                     }
 
                     line += "</tr>";
@@ -1091,6 +1266,7 @@ namespace Divisionsmatch
 
         private bool IsFileLocked(string file)
         {
+
             FileStream stream = null;
 
             try

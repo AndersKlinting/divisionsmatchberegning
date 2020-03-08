@@ -70,7 +70,7 @@ namespace UnitTest
             config = Config.LoadDivi("unittest2_3-4 Division Op-Ned-v2.divi");
             teststaevne.Beregnpoint(config, "unittest2_resultat.csv");
 
-            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray()); ;
+            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray()); ;
             System.Diagnostics.Debug.Print(x);
             string resultat = System.IO.File.ReadAllText("unittest2_3-4div.txt", Encoding.Default);
             _TestLines(resultat, x);
@@ -86,7 +86,7 @@ namespace UnitTest
             config = Config.LoadDivi("unittest2_4-5 Division Op-Ned-v2.divi");
             teststaevne.Beregnpoint(config, "unittest2_resultat.csv");
 
-            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray()); ;
+            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray()); ;
             System.Diagnostics.Debug.Print(x);
             string resultat = System.IO.File.ReadAllText("unittest2_4-5div.txt", Encoding.Default);
             _TestLines(resultat, x);
@@ -103,7 +103,7 @@ namespace UnitTest
             config.PrintAlle = true;
             teststaevne.Beregnpoint(config, "unittest2_resultat.csv");
 
-            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray()); ;
+            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray()); ;
             System.Diagnostics.Debug.Print(x);
             string resultat = System.IO.File.ReadAllText("unittest2_5-6div.txt", Encoding.Default);
             _TestLines(resultat, x);

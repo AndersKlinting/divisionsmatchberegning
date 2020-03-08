@@ -83,7 +83,7 @@ namespace UnitTest
             string x = "";
             string resultat = "";
 
-            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray());
+            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray());
             System.Diagnostics.Debug.Print(x);
             resultat = System.IO.File.ReadAllText(@"unittest6_resultat_xml.txt", Encoding.Default);
             _TestLines(resultat, x);
@@ -109,7 +109,7 @@ namespace UnitTest
             string x = "";
             string resultat = "";
 
-            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray());
+            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray());
             System.Diagnostics.Debug.Print(x);
             resultat = System.IO.File.ReadAllText("unittest6_resultat_xml.txt", Encoding.Default);
             _TestLines(resultat, x);

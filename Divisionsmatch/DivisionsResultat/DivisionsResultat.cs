@@ -1257,8 +1257,16 @@ namespace Divisionsmatch.DivisionsResultat
             }
 
             StringBuilder output = new StringBuilder();
+            string line = string.Empty;
+            if (staevne.Config.Layout == "Standard")
+            {
+                line = "<h3 class=\"matcher\">Stilling " + (this.Division > 6 ? string.Empty : (this.Division.ToString() + ". division")) + (this.Kreds == null ? string.Empty : (", " + this.Kreds.ToString()));
+            }
+            else if (staevne.Config.Layout == "Blå overskrifter")
+            {
+                line = "<h3 class=\"matchnavn\">Stilling " + (this.Division > 6 ? string.Empty : (this.Division.ToString() + ". division")) + (this.Kreds == null ? string.Empty : (", " + this.Kreds.ToString()));
+            }
 
-            string line = "<h3 class=\"matcher\">Stilling " + (this.Division > 6 ? string.Empty : (this.Division.ToString() + ". division")) + (this.Kreds == null ? string.Empty : (", " + this.Kreds.ToString()));
             if (this.Division == 8)
             {
                 // op/ned
@@ -1273,42 +1281,103 @@ namespace Divisionsmatch.DivisionsResultat
             output.AppendLine(line);
 
             DataTable dt = this.BeregnStilling(staevne);
-            output.Append(ConvertDataTableToHtml(dt));
+            output.Append(ConvertDataTableToHtml(dt, staevne.Config.Layout));
 
             if (this.DivisionsMatchResultater != null && staevne.Config.InklTidligere)
             {
                 if (this.DivisionsMatchResultater.Count > 0)
                 {
-                    output.AppendLine("<table width='100%'>");
+                    if (staevne.Config.Layout == "Standard")
+                    {
+                        output.AppendLine("<table width='100%'>");
+                    }
+                    else if (staevne.Config.Layout == "Blå overskrifter")
+                    {
+                        output.AppendLine("<div class=\"stilling0Container\">");
+                    }
+
                     foreach (var r in this.DivisionsMatchResultater)
                     {
-                        output.AppendLine("<tr valign='top'><td colspan='2'>");
-                        output.AppendLine("<b>"+r.Runde + ". runde, " + r.Dato + ", " + r.Skov+"</b>");
-                        output.AppendLine("</td></tr>");
+                        if (staevne.Config.Layout == "Standard")
+                        {
+                            output.AppendLine("<tr valign='top'><td colspan='2'>");
+                            output.AppendLine("<b>" + r.Runde + ". runde, " + r.Dato + ", " + r.Skov + "</b>");
+                            output.AppendLine("</td></tr>");
 
-                        output.AppendLine("<tr valign='top'><td width='50%'>");
+                            output.AppendLine("<tr valign='top'><td width='50%'>");
 
-                        output.AppendLine("<table class=\"matcher\">");
-                        //output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">&nbsp;</td><td class=\"matcher\">&nbsp;</td><td class=\"matcher\">score</td><td class=\"matcher\">point</td></tr>");
+                            output.AppendLine("<table class=\"matcher\">");
+                        }
+                        else if (staevne.Config.Layout == "Blå overskrifter")
+                        {
+                            output.AppendLine("<div class=\"stilling0Header\">" + r.Runde + ". runde, " + r.Dato + ", " + r.Skov + "</div>");
+
+                            output.AppendLine("<div class=\"stilling0\">");
+                            output.AppendLine("<table class=\"stilling0\">");
+                            output.AppendLine("<thead>");
+                            output.AppendLine("<tr><th class=\"knavn\">Klubnavn</th><th colspan=3 style=\"text-align:center\">score</th><th>point</th><th>&nbsp;</th></tr>");
+                            output.AppendLine("</thead>");
+                            output.AppendLine("<tbody>");
+                        }
+
                         foreach (var k in r.Klubber.OrderBy(item => item.Placering))
                         {
-                            output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + k.Navn + "</td><td class=\"matcher\">" + k.LøbsPoint.ToString() + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n!= k.Navn).ToList()).ToString() + "</td><td class=\"matcher\">" + k.MatchPoint.ToString() + "</td><td class=\"matcher\"  align=left>" + k.Kommentar + "</td></tr>");
+                            if (staevne.Config.Layout == "Standard")
+                            {
+                                output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + k.Navn + "</td><td class=\"matcher\">" + k.LøbsPoint.ToString() + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n != k.Navn).ToList()).ToString() + "</td><td class=\"matcher\">" + k.MatchPoint.ToString() + "</td><td class=\"matcher\"  style=\"text-align:left\">" + k.Kommentar + "</td></tr>");
+                            }
+                            else if (staevne.Config.Layout == "Blå overskrifter")
+                            {
+                                output.AppendLine("<tr><td class=\"knavn\">" + k.Navn + "</td><td>" + k.LøbsPoint.ToString() + "</td><td>-</td><td>" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n != k.Navn).ToList()).ToString() + "</td><td>" + k.MatchPoint.ToString() + "</td><td class=\"kommentar\"  style=\"text-align:left\">" + k.Kommentar + "</td></tr>");
+                            }
                         }
-                        output.AppendLine("</table>");
 
-                        output.AppendLine("</td><td width='50%'>");
+                        if (staevne.Config.Layout == "Standard")
+                        {
+                            output.AppendLine("</table>");
+                            output.AppendLine("</td><td width='50%'>");
 
-                        output.AppendLine("<table class=\"matcher\">");
-                        //output.AppendLine("<tr class=\"matcher\"><td colspan=3 class=\"matcher\">Matcher</td><td colspan=3 class=\"matcher\">Løbspoint</td></tr>");
+                            output.AppendLine("<table class=\"matcher\">");
+                        }
+                        else if (staevne.Config.Layout == "Blå overskrifter")
+                        {
+                            output.AppendLine("</tbody>");
+                            output.AppendLine("</table>");
+                            output.AppendLine("</div>");
+                            output.AppendLine("<div class=\"matcher0\">");
+                            output.AppendLine("<table class=\"matcher0\">");
+                        }
+
                         foreach (var m in r.Matcher)
                         {
-                            output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + m.MatchKlubber[0].Navn + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + m.MatchKlubber[1].Navn + "</td><td class=\"matcher\">" + m.MatchKlubber[0].Score + "</td><td class=\"matcher\">-</td><td>" + m.MatchKlubber[1].Score + "</td></tr>");
+                            if (staevne.Config.Layout == "Standard")
+                            {
+                                output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + m.MatchKlubber[0].Navn + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + m.MatchKlubber[1].Navn + "</td><td class=\"matcher\">" + m.MatchKlubber[0].Score + "</td><td class=\"matcher\">-</td><td>" + m.MatchKlubber[1].Score + "</td></tr>");
+                            }
+                            else if (staevne.Config.Layout == "Blå overskrifter")
+                            {
+                                output.AppendLine("<tr><td class=\"knavn\">" + m.MatchKlubber[0].Navn + "</td><td>-</td><td class=\"knavn\">" + m.MatchKlubber[1].Navn + "</td><td>" + m.MatchKlubber[0].Score + "</td><td>-</td><td>" + m.MatchKlubber[1].Score + "</td></tr>");
+                            }
                         }
-                        output.AppendLine("</table>");
-
-                        output.AppendLine("</td></tr>");
+                        if (staevne.Config.Layout == "Standard")
+                        {
+                            output.AppendLine("</table>");
+                            output.AppendLine("</td></tr>");
+                        }
+                        else if (staevne.Config.Layout == "Blå overskrifter")
+                        {
+                            output.AppendLine("</table>");
+                            output.AppendLine("</div>");
+                        }
                     }
-                    output.AppendLine("</table>");
+                    if (staevne.Config.Layout == "Standard")
+                    {
+                        output.AppendLine("</table>");
+                    }
+                    else if (staevne.Config.Layout == "Blå overskrifter")
+                    {
+                        output.AppendLine("</div>");
+                    }
                 }
             }
             return output.ToString();
@@ -1324,6 +1393,7 @@ namespace Divisionsmatch.DivisionsResultat
             var output = new StringBuilder();
 
             var columnsWidths = new int[dataTable.Columns.Count];
+            bool[] skipColumn = new bool[dataTable.Columns.Count];
 
             // Get column widths
             foreach (DataRow row in dataTable.Rows)
@@ -1355,6 +1425,9 @@ namespace Divisionsmatch.DivisionsResultat
                         columnsWidths[i] = length;
                     }
                 }
+
+                // undlad rundenummer
+                skipColumn[i] = dataTable.Columns[i].ColumnName.EndsWith("Runde");
             }
 
             // Write Column titles
@@ -1364,16 +1437,19 @@ namespace Divisionsmatch.DivisionsResultat
                 header = string.Empty;
                 for (int i = 0; i < dataTable.Columns.Count; i++)
                 {
-                    var text = dataTable.Columns[i].ColumnName;
-                    if (dataTable.Columns[i].ColumnName.Split('\r').Length > m)
+                    if (!skipColumn[i])
                     {
-                        text = dataTable.Columns[i].ColumnName.Split('\r')[m];
+                        var text = dataTable.Columns[i].ColumnName;
+                        if (dataTable.Columns[i].ColumnName.Split('\r').Length > m)
+                        {
+                            text = dataTable.Columns[i].ColumnName.Split('\r')[m];
+                        }
+                        else
+                        {
+                            text = string.Empty;
+                        }
+                        header += "|" + PadCenter(text, columnsWidths[i] + 2);
                     }
-                    else
-                    {
-                        text = string.Empty;
-                    }
-                    header += "|" + PadCenter(text, columnsWidths[i] + 2);
                 }
                 header += "|";
                 output.AppendLine(header);
@@ -1385,16 +1461,18 @@ namespace Divisionsmatch.DivisionsResultat
             {
                 for (int i = 0; i < dataTable.Columns.Count; i++)
                 {
-                    var text = Convert.ToString(row[i], System.Globalization.CultureInfo.InvariantCulture);
-                    if (dataTable.Columns[i].ColumnName.ToLower().Equals("klubnavn") || dataTable.Columns[i].ColumnName.ToLower().Equals("kommentar"))
+                    if (!skipColumn[i])
                     {
-                        output.Append("| " + text.PadRight(columnsWidths[i] + 1,' '));
+                        var text = Convert.ToString(row[i], System.Globalization.CultureInfo.InvariantCulture);
+                        if (dataTable.Columns[i].ColumnName.ToLower().Equals("klubnavn") || dataTable.Columns[i].ColumnName.ToLower().Equals("kommentar"))
+                        {
+                            output.Append("| " + text.PadRight(columnsWidths[i] + 1, ' '));
+                        }
+                        else
+                        {
+                            output.Append("|" + PadCenter(text, columnsWidths[i] + 2));
+                        }
                     }
-                    else
-                    {
-                        output.Append("|" + PadCenter(text, columnsWidths[i] + 2));
-                    }
-
                 }
                 output.AppendLine("|");
             }
@@ -1412,39 +1490,123 @@ namespace Divisionsmatch.DivisionsResultat
         /// </summary>
         /// <param name="dataTable"></param>
         /// <returns></returns>
-        private string ConvertDataTableToHtml(DataTable dataTable)
+        private string ConvertDataTableToHtml(DataTable dataTable, string layout)
         {
             var output = new StringBuilder();
 
             var columnsWidths = new int[dataTable.Columns.Count];
+            bool[] skipColumn = null;
+            string[] columnClass = null;
 
-            output.AppendLine("<table class='matchgruppe'>");
-            output.AppendLine("<thead class='matchgruppe'>");
+            if (layout == "Standard")
+            {
+                output.AppendLine("<table class='matchgruppe'>");
+                output.AppendLine("<thead class='matchgruppe'>");
+            }
+            else if (layout == "Blå overskrifter")
+            {
+                output.AppendLine("<div class=\"matchresultat\">");
+                output.AppendLine("<table class=\"matchresultat\">");
+
+                output.AppendLine("<thead>");
+                skipColumn = new bool[dataTable.Columns.Count];
+                columnClass = new string[dataTable.Columns.Count];
+            }
+
             // Write Column titles
-            string header = "<tr class='matchgruppe'>";
+            string header = string.Empty;
+            if (layout == "Standard")
+            {
+                header = "<tr class='matchgruppe'>";
+            }
+            else if (layout == "Blå overskrifter")
+            {
+                output.Append("<tr>");
+            }
             for (int i = 0; i < dataTable.Columns.Count; i++)
             {
-                header += "<th class='matchgruppe'>" + dataTable.Columns[i].ColumnName.Replace("\r", "<br>") + "</th>";
+                if (layout == "Standard")
+                {
+                    header += "<th class='matchgruppe'>" + dataTable.Columns[i].ColumnName.Replace("\r", "<br>") + "</th>";
+                }
+                else if (layout == "Blå overskrifter")
+                {
+                    string columnName = dataTable.Columns[i].ColumnName;
+                    columnName = columnName.Replace("Placering", "pl");
+                    if (columnName.EndsWith("Runde"))
+                        skipColumn[i] = true;
+                    else if (columnName.EndsWith("Klubnavn"))
+                    {
+                        columnClass[i] = " class=\"knavn\"";
+                        output.Append("<th class=\"knavn\">" + columnName.Replace("\r", "<br>") + "</th>");
+                    }
+                    else
+                        output.Append("<th>" + columnName.Replace("\r", "<br>") + "</th>");
+                }
             }
-            header += "</tr>";
-            output.AppendLine(header);
-            output.AppendLine("</thead><tbody class=\"matchgruppe\">");
 
-
+            if (layout == "Standard")
+            {
+                header += "</tr>";
+                output.AppendLine(header);
+                output.AppendLine("</thead><tbody class=\"matchgruppe\">");
+            }
+            else if (layout == "Blå overskrifter")
+            {
+                output.AppendLine("</tr>");
+                output.AppendLine("</thead>");
+                output.AppendLine("<tbody>");
+            }
             // Write Rows
             foreach (DataRow row in dataTable.Rows)
             {
-                string tr = "<tr class='matchgruppe'>";
+                string tr = string.Empty;
+                if (layout == "Standard")
+                {
+                    tr = "<tr class='matchgruppe'>";
+                }
+                else if (layout == "Blå overskrifter")
+                {
+                    output.Append("<tr>");
+                }
                 for (int i = 0; i < dataTable.Columns.Count; i++)
                 {
-                    var text = Convert.ToString(row[i], System.Globalization.CultureInfo.InvariantCulture);
-                    tr += "<td class='matchgruppe'>&nbsp;" + text +"</td>";
+                    if (layout == "Standard")
+                    {
+                        var text = Convert.ToString(row[i], System.Globalization.CultureInfo.InvariantCulture);
+                        tr += "<td class='matchgruppe'>&nbsp;" + text +"</td>";
+                    }
+                    else if (layout == "Blå overskrifter")
+                    {
+                        if (!skipColumn[i])
+                        {
+                            var text = Convert.ToString(row[i], System.Globalization.CultureInfo.InvariantCulture);
+                            output.Append("<td" + (columnClass[i] ?? "") + ">" + text + "</td>");
+                        }
+                    }
                 }
-                tr += "</tr>";
-                output.AppendLine(tr);
+                if (layout == "Standard")
+                {
+                    tr += "</tr>";
+                    output.AppendLine(tr);
+                }
+                else if (layout == "Blå overskrifter")
+                {
+                    output.AppendLine("</tr>");
+                }
             }
-            output.AppendLine("</tbody></table>");
 
+            if (layout == "Standard")
+            {
+                output.AppendLine("</tbody></table>");
+            }
+            else if (layout == "Blå overskrifter")
+            {
+                output.AppendLine("</tbody>");
+
+                output.AppendLine("</table>");
+                output.AppendLine("</div>");
+            }
             return output.ToString();
         }
     }

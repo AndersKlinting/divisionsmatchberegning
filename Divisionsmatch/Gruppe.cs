@@ -157,13 +157,20 @@ namespace Divisionsmatch
         /// Lav Gruppens resultat som HTML
         /// </summary>
         /// <returns>html</returns>
-        public string LavHTMLoverskrift()
+        public string LavHTMLoverskrift(string layout)
         {
             StringBuilder output = new StringBuilder();
 
-            output.AppendLine("<h3 class=\"gruppe\" id=\"" + navn + "\">" + navn + "</h3>");
-            output.AppendLine("<p>" + _printPointsForGruppe() + "</p>");
-
+            if (layout == "Standard")
+            {
+                output.AppendLine("<h3 class=\"gruppe\" id=\"" + navn + "\">" + navn + "</h3>");
+                output.AppendLine("<p>" + _printPointsForGruppe() + "</p>");
+            }
+            else if (layout == "Blå overskrifter")
+            {
+                output.AppendLine("<div class=\"gruppeHeader\" id=\"" + navn + "\">" + navn + "</div>");
+                output.AppendLine("<div class=\"gruppepoint\">" + _printPointsForGruppe() + "</div>");
+            }
             return output.ToString();
         }
         #endregion

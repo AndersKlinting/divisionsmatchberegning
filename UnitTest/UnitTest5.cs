@@ -73,7 +73,7 @@ namespace UnitTest
             string x = "";
             string resultat = "";
 
-            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray());
+            x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray());
             System.Diagnostics.Debug.Print(x);
             resultat = System.IO.File.ReadAllText("unittest5_resultat_2+3div_eresults.txt", Encoding.Default);
             _TestLines(resultat, x);

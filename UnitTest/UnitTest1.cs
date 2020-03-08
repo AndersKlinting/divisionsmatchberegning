@@ -101,7 +101,7 @@ namespace UnitTest
             config = Config.LoadDivi("unittest1.divi");
             teststaevne.Beregnpoint(config, "unittest1.csv");
 
-            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray());
+            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray());
             System.Diagnostics.Debug.Print(x);
             string resultat = System.IO.File.ReadAllText("unittest1lister.txt", Encoding.Default);
             _TestLines(resultat, x);
@@ -118,7 +118,7 @@ namespace UnitTest
             config.PrintBaner = true;
             teststaevne.Beregnpoint(config, "unittest1.csv");
 
-            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray()); ;
+            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray()); ;
             System.Diagnostics.Debug.Print(x);
             string resultat = System.IO.File.ReadAllText("unittest1baner.txt", Encoding.Default);
             _TestLines(resultat, x);
@@ -135,7 +135,7 @@ namespace UnitTest
             config.PrintAlle = true;
             teststaevne.Beregnpoint(config, "unittest1.csv");
 
-            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray()); ;
+            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray()); ;
             System.Diagnostics.Debug.Print(x);
             string resultat = System.IO.File.ReadAllText("unittest1alle.txt", Encoding.Default);
             _TestLines(resultat, x);
@@ -153,7 +153,7 @@ namespace UnitTest
             config.PrintAlle = true;
             teststaevne.Beregnpoint(config, "unittest1.csv");
 
-            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit(config).ToArray()); ;
+            string x = teststaevne.Printmatcher() + Environment.NewLine + string.Concat(teststaevne.LavTXTafsnit().ToArray()); ;
             System.Diagnostics.Debug.Print(x);
             string resultat = System.IO.File.ReadAllText("unittest1allebaner.txt", Encoding.Default);
             _TestLines(resultat, x);
