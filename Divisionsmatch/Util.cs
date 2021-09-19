@@ -173,7 +173,7 @@ namespace Divisionsmatch
                                 l.Efternavn = csv[idxEfternavn]; // "efternavn"];
                                 string klub = string.IsNullOrWhiteSpace(csv[idxKlub]) ? csv[idxKlub - 1] : csv[idxKlub]; // klub city eller navn
                                 string klubId = csv[idxKlubId - 1];
-                                l.Klub = klubber.Find(item => item.Navn.Equals(klub)); //"klub"
+                                l.Klub = klubber.Find(item => item.Navn.Equals(klub) || item.NavnKort.Equals(klub)); //"klub"
                                 if (l.Klub == null)
                                 {
                                     // add a temporay klub for runners outside the match
@@ -276,7 +276,7 @@ namespace Divisionsmatch
                             l.Stnr = "0"; //""];
                             l.Fornavn = fornavn; //"fornavn"];
                             l.Efternavn = efternavn; // "efternavn"];
-                            l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn));//"klub"
+                            l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn) || item.NavnKort.Equals(klubnavn));//"klub"
                             if (l.Klub == null)
                             {
                                 // add a temporay klub for runners outside the match
@@ -394,7 +394,7 @@ namespace Divisionsmatch
                         l.Stnr = "0"; //""];
                         l.Fornavn = fornavn; //"fornavn"];
                         l.Efternavn = efternavn; // "efternavn"];
-                        l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn)); //"klub"
+                        l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn) || item.NavnKort.Equals(klubnavn)); //"klub"
                         if (l.Klub == null)
                         {
                             // add a temporay klub for runners outside the match
@@ -504,7 +504,7 @@ namespace Divisionsmatch
                             l.Stnr = "0"; //""];
                             l.Fornavn = fornavn; //"fornavn"];
                             l.Efternavn = efternavn; // "efternavn"];
-                            l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn));//"klub"
+                            l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn) || item.NavnKort.Equals(klubnavn));//"klub"
                             if (l.Klub == null)
                             {
                                 // add a temporay klub for runners outside the match
@@ -606,7 +606,7 @@ namespace Divisionsmatch
                             l.Stnr = "0"; //""];
                             l.Fornavn = fornavn; //"fornavn"];
                             l.Efternavn = efternavn; // "efternavn"];
-                            l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn));//"klub"
+                            l.Klub = klubber.Find(item => item.Navn.Equals(klubnavn) || item.NavnKort.Equals(klubnavn));//"klub"
                             if (l.Klub == null)
                             {
                                 // add a temporay klub for runners outside the match
@@ -651,7 +651,7 @@ namespace Divisionsmatch
                 {
                     var kl = config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
                     // find løbere på samme bane - og vælg dem i matchen, eller alle
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn) || k.NavnKort.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine();
@@ -671,7 +671,7 @@ namespace Divisionsmatch
                 {
                     var kl = config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
                     // find løbere på samme bane - og alle
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn) || k.NavnKort.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine("<h3>Bane " + b.Navn + "</h3>");
@@ -719,7 +719,7 @@ namespace Divisionsmatch
                 foreach (Gruppe g in grupper)
                 {
                     var kl = config.gruppeOgKlasse.Where(gk => gk.Gruppe == g.navn).ToList().ConvertAll(kg => kg.LøbsKlasse);
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k=>k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k=>k.Navn.Equals(l.Klub.Navn) || k.NavnKort.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine();
@@ -737,7 +737,7 @@ namespace Divisionsmatch
                 foreach (Gruppe g in grupper)
                 {
                     var kl = config.gruppeOgKlasse.Where(gk => gk.Gruppe == g.navn).ToList().ConvertAll(kg => kg.LøbsKlasse);
-                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn)) != null)).ToList();
+                    var lll = loebere.Where(l => kl.Contains(l.Løbsklassenavn) && (includeAll || config.Klubber.FirstOrDefault(k => k.Navn.Equals(l.Klub.Navn) || k.NavnKort.Equals(l.Klub.Navn)) != null)).ToList();
                     if (lll.Count > 0)
                     {
                         sb.AppendLine("<h3>Gruppe " + g.navn + "</h3>");

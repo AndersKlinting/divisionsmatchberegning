@@ -43,7 +43,7 @@ namespace Divisionsmatch
                     html += "    med autoscroll: <a target=\"_blank\" href=\"all?format=html&scroll&refresh=300&speed=32\">all?format=html&scroll&refresh=300&speed=32</a>";
                     html += "<p>TXT format: ";
                     html += "<a target=\"_blank\" href=\"all?format=txt\">all?format=txt</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"all?format=txtx&scroll&refresh=300&speed=32\">all?format=txt&scroll&refresh=300&speed=32</a>";
+                    html += "    med autoscroll: <a target=\"_blank\" href=\"all?format=txt&scroll&refresh=300&speed=32\">all?format=txt&scroll&refresh=300&speed=32</a>";
                     html += "<p>XML format: ";
                     html += "<a target=\"_blank\" href=\"all?format=xml\">all?format=xml</a>";
 
@@ -73,19 +73,23 @@ namespace Divisionsmatch
 
 
                     html += "</body></html>";
-
+                    
                     //return Response.AsXml(html);
 
-                    return new Response()
+                    return HtmlResponse(html);
+                });
+                
+                Get("/divi.css", args =>
+                {
+                    log(this.Request);
+
+                    string output = string.Empty;
+                    if (this.Request.Url.ToString().EndsWith("divi.css"))
                     {
-                        StatusCode = HttpStatusCode.OK,
-                        ContentType = "text/html",
-                        Headers = new Dictionary<string, string>()
-                        {
-                            { "Content-Type", "text/html" }
-                        },
-                        Contents = c => c.Write(Encoding.ASCII.GetBytes(html), 0, html.Length)
-                    };
+                        output = getResource("divi.css");                        
+                    }
+
+                    return HtmlResponse(output);
                 });
 
                 Get("/scroll/", args =>
@@ -97,6 +101,11 @@ namespace Divisionsmatch
                     if (this.Request.Url.ToString().EndsWith("top.html"))
                     {
                         output = getResource("top.html");
+                        outputType = "html";
+                    }
+                    else if (this.Request.Url.ToString().EndsWith("divi.css"))
+                    {
+                        output = getResource("divi.css");
                         outputType = "html";
                     }
                     else if (this.Request.Url.ToString().EndsWith("jquery-1.11.0.js"))
@@ -125,13 +134,16 @@ namespace Divisionsmatch
                     bool scroll = this.Request.Query["scroll"] != null;
                     string refresh = this.Request.Query["refresh"];
                     string speed = this.Request.Query["speed"];
+                    bool formatTxt = format.ToLower() == "txt";
                     bool formatHtml = format.ToLower() == "html";
                     bool formatXml = format.ToLower() == "xml";
                     if (scroll)
                     {
+                        // scroll informsus that a frame page is to be loaded
+
                         output = getResource("frame.html");
                         Url newUrl = this.Request.Url;
-                        newUrl.Query = "format=" + format + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
+                        newUrl.Query = "format=" + (formatTxt ? "txtx" : format) + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + speed);
                         output = output.Replace("@@url@@", newUrl.ToString());
                         return HtmlResponse(output);
                     }
@@ -172,7 +184,16 @@ namespace Divisionsmatch
                     }
                     else
                     {
-                        return Response.AsText(output);
+                        if (formatTxt || formatXml)
+                        {
+                            return Response.AsText(output);
+                        }
+                        else 
+                        {
+                            // wrap txt in pre-tags to make it html
+                            output = "<html><head><meta content=\"text/html;charset=utf-8\" http-equiv=\"Content-Type\"></head><body><pre>\n" + output + "\n</pre></body></html>";
+                            return HtmlResponse(output);
+                         }
                     }
                 });
 
@@ -187,11 +208,12 @@ namespace Divisionsmatch
                     string speed = this.Request.Query["speed"];
                     string format = this.Request.Query["format"];
                     bool formatHtml = format.ToLower() == "html";
+                    bool formatTxt = format.ToLower() == "txt";
                     if (scroll)
                     {
                         output = getResource("frame.html");
                         Url newUrl = this.Request.Url;
-                        newUrl.Query = "format=" + format + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
+                        newUrl.Query = "format=" + (formatTxt ? "txtx" : format)  + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
                         output = output.Replace("@@url@@", newUrl.ToString());
                     }
 
@@ -212,7 +234,16 @@ namespace Divisionsmatch
                     }
                     else
                     {
-                        return Response.AsText(output);
+                        if (formatTxt)
+                        {
+                            return Response.AsText(output);
+                        }
+                        else 
+                        {
+                            // wrap txt in pre-tags to make it html
+                            output = "<html><head><meta content=\"text/html;charset=utf-8\" http-equiv=\"Content-Type\"></head><body><pre>\n" + output + "\n</pre></body></html>";
+                            return HtmlResponse(output);
+                         }
                     }
                 });
                 
@@ -227,12 +258,13 @@ namespace Divisionsmatch
                     string refresh = this.Request.Query["refresh"];
                     string speed = this.Request.Query["speed"];
                     bool formatHtml = format.ToLower() == "html";
+                    bool formatTxt = format.ToLower() == "txt";
 
                     if (scroll)
                     {
                         output = getResource("frame.html");
                         Url newUrl = this.Request.Url;
-                        newUrl.Query = "format=" + format + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
+                        newUrl.Query = "format=" + (formatTxt ? "txtx" : format)  + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
                         output = output.Replace("@@url@@", newUrl.ToString());
                         return HtmlResponse(output);
                     }
@@ -255,7 +287,16 @@ namespace Divisionsmatch
                     }
                     else
                     {
-                        return Response.AsText(output);
+                        if (formatTxt)
+                        {
+                            return Response.AsText(output);
+                        }
+                        else 
+                        {
+                            // wrap txt in pre-tags to make it html
+                            output = "<html><head><meta content=\"text/html;charset=utf-8\" http-equiv=\"Content-Type\"></head><body><pre>\n" + output + "\n</pre></body></html>";
+                            return HtmlResponse(output);
+                         }
                     }
                 });
 
@@ -270,12 +311,13 @@ namespace Divisionsmatch
                     string speed = this.Request.Query["speed"];
                     string format = this.Request.Query["format"];
                     bool formatHtml = format.ToLower() == "html";
+                    bool formatTxt = format.ToLower() == "txt";
 
                     if (scroll)
                     {
                         output = getResource("frame.html");
                         Url newUrl = this.Request.Url;
-                        newUrl.Query = "format=" + format + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
+                        newUrl.Query = "format=" + (formatTxt ? "txtx" : format)  + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
                         output = output.Replace("@@url@@", newUrl.ToString());
                         return HtmlResponse(output);
                     }
@@ -304,7 +346,16 @@ namespace Divisionsmatch
                     }
                     else
                     {
-                        return Response.AsText(output);
+                        if (formatTxt)
+                        {
+                            return Response.AsText(output);
+                        }
+                        else 
+                        {
+                            // wrap txt in pre-tags to make it html
+                            output = "<html><head><meta content=\"text/html;charset=utf-8\" http-equiv=\"Content-Type\"></head><body><pre>\n" + output + "\n</pre></body></html>";
+                            return HtmlResponse(output);
+                         }
                     }
                 });
             }
@@ -316,11 +367,12 @@ namespace Divisionsmatch
 
         private Response HtmlResponse(string html)
         {
+            byte[]b = Encoding.UTF8.GetBytes(html);
             return new Response()
             {
                 StatusCode = HttpStatusCode.OK,
                 ContentType = "text/html",
-                Contents = c => c.Write(Encoding.Default.GetBytes(html), 0, html.Length)
+                Contents = c => c.Write(b, 0, b.Length)
             }; 
         }
 
@@ -344,5 +396,15 @@ namespace Divisionsmatch
             }
             return result;
         }
+
+        private string htmlEncode(string html)
+        {
+            string result = html;
+            for (int i=160; i < 256;i++)
+            {
+                result = result.Replace(((char)i).ToString(), string.Format("&#{0};",i));
+            }
+            return result;
+        }           
     }
 }

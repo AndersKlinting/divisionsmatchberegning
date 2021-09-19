@@ -106,25 +106,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5984EEDDF6F87AFFF0E682A2668ACBA5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9B0F57114861A12A23ABA5FDC5EE8BD3"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_75A733BE960C6E82D8A1F83FB8AECDD9"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_1A986D050497214F117E857C901CD198"
+        "OwnerKey" = "8:_030472026E819F5A75FB7A4373FBDC33"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -136,7 +118,25 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_030472026E819F5A75FB7A4373FBDC33"
+        "OwnerKey" = "8:_1A986D050497214F117E857C901CD198"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_75A733BE960C6E82D8A1F83FB8AECDD9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_9B0F57114861A12A23ABA5FDC5EE8BD3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_5984EEDDF6F87AFFF0E682A2668ACBA5"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -649,15 +649,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Divisionsmatchberegning"
-        "ProductCode" = "8:{4164C31C-923A-42F7-9D5F-B22FF0788613}"
-        "PackageCode" = "8:{DD6AB5CB-FAFE-4AAB-9792-E42C9C846F8D}"
+        "ProductCode" = "8:{CE84C81B-7001-4646-82F1-CD14A91B2400}"
+        "PackageCode" = "8:{B5A3923B-7C95-4328-8C16-B824BE0B850A}"
         "UpgradeCode" = "8:{CB480EBD-2C8E-4FE3-96B8-ECDC184EF120}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:19.1.0"
+        "ProductVersion" = "8:19.1.1"
         "Manufacturer" = "8:Anders Klinting"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:"

@@ -480,7 +480,7 @@ namespace Divisionsmatch
                 else if (_config.Layout == "Blå overskrifter")
                 {
                     output.AppendLine("</tbody></table>");
-                    output.AppendLine("</div>");
+                    output.AppendLine("</div></div>");
                 }
             }
             return output.ToString();
@@ -778,7 +778,7 @@ namespace Divisionsmatch
         {
             StringBuilder html = new StringBuilder();
 
-            html.AppendLine("<!DOCTYPE html>");
+            //html.AppendLine("<!DOCTYPE html>");
             html.AppendLine("<html lang=\"da\">");
             html.AppendLine(GetHTMLHead());
             html.AppendLine("<body>");

@@ -29,6 +29,7 @@ namespace Divisionsmatch
         private bool _udeblevet = false;
         private string _navn = string.Empty;
         private KlubId _id = new KlubId();
+        private string _navnkort = string.Empty;
 
         /// <summary>
         /// constructor
@@ -82,6 +83,28 @@ namespace Divisionsmatch
                 if (value != null)
                 {
                     _navn = value;
+                }
+            }
+        }
+
+        /// <summary>
+        /// kort navn for klubben
+        /// </summary>
+        public string NavnKort
+        {
+            get
+            {
+                if (_navnkort != string.Empty)
+                    return _navnkort;
+                else
+                    return _navn;
+            }
+
+            set
+            {
+                if (value != null)
+                {
+                    _navnkort = value;
                 }
             }
         }

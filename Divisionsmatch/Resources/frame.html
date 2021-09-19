@@ -1,137 +1,130 @@
-﻿<html>
+﻿<!DOCTYPE html>
+<html>
 <head>
-<script src="/scroll?jquery-1.11.0.js"></script>
-<script>
-    // do animation of frames ?
-    doAnmation = true;
+    <title>Divisionsmatch</title>
+    <script src="/scroll?jquery-1.11.0.js"></script>
+    <script>
+        // do animation of frames ?
+        doAnmation = true;
 
-    // overview reloads every
-    reloadtime = 300; // seconds
+        // overview reloads every
+        reloadtime = 300; // seconds
 
-    // we would like this scroll rate
-    pixelspersecond = 32; // 32 is a good number for reading
+        // we would like this scroll rate
+        pixelspersecond = 32; // 32 is a good number for reading
 
-    // parse any search parameters
-    arrQ = location.search.substr(1).split("&")
-    for (i = 0; i < arrQ.length; i++)
-    {
-        arrKV = arrQ[i].split("=")
-        if (arrKV.length == 2 && arrKV[0] == "refresh") { reloadtime = 1 * arrKV[1];}
-        if (arrKV.length == 2 && arrKV[0] == "speed") { pixelspersecond = 1 * arrKV[1]; }
-    }
+        // parse any search parameters
+        arrQ = location.search.substr(1).split("&")
+        for (i = 0; i < arrQ.length; i++) {
+            arrKV = arrQ[i].split("=")
+            if (arrKV.length == 2 && arrKV[0] == "refresh") { reloadtime = 1 * arrKV[1]; }
+            if (arrKV.length == 2 && arrKV[0] == "speed") { pixelspersecond = 1 * arrKV[1]; }
+        }
 
-    // we have reloadtime number of seconds to display the content
-    minreloadinterval = reloadtime * 1000;
+        // we have reloadtime number of seconds to display the content
+        minreloadinterval = reloadtime * 1000;
 
-    // delay beofre and after animation (milisecs)
-    topbottomdelay = 2000;
-    scrollduration = 10000;
+        // delay beofre and after animation (milisecs)
+        topbottomdelay = 2000;
+        scrollduration = 10000;
 
-    myDate = new Date();
-    myDate1 = new Date();
-    myDate1.setSeconds(myDate.getSeconds() + reloadtime);
+        myDate = new Date();
+        myDate1 = new Date();
+        myDate1.setSeconds(myDate.getSeconds() + reloadtime);
 
-    tid = dateStr(myDate.getHours(), myDate.getMinutes(), myDate.getSeconds());
-    tid1 = dateStr(myDate1.getHours(), myDate1.getMinutes(), myDate1.getSeconds());
+        tid = dateStr(myDate.getHours(), myDate.getMinutes(), myDate.getSeconds());
+        tid1 = dateStr(myDate1.getHours(), myDate1.getMinutes(), myDate1.getSeconds());
 
-function setupReload()
-{
-	// give the date and time to top fram
-    frames.topframe.postMessage("tid=" + tid + "&cnt=" + (minreloadinterval/1000).toFixed() +"&tid1="+tid1 , this.location)
+        function setupReload() {
+            // give the date and time to top fram
+            frames.topframe.postMessage("tid=" + tid + "&cnt=" + (minreloadinterval / 1000).toFixed() + "&tid1=" + tid1, this.location)
 
-	// reload entire framset
-    setTimeout("location.reload()", minreloadinterval);
-}
+            // reload entire framset
+            setTimeout("location.reload()", minreloadinterval);
+        }
 
-function dateStr(h,m,s)
-{
-	return padStr(h) + ":" + padStr(m) + ":" + padStr(s);
-}
+        function dateStr(h, m, s) {
+            return padStr(h) + ":" + padStr(m) + ":" + padStr(s);
+        }
 
-function padStr(t)
-{
-	x = t + "";
-	if (t<10)
-	{
-		x = "0" + x;
-	}
+        function padStr(t) {
+            x = t + "";
+            if (t < 10) {
+                x = "0" + x;
+            }
 
-	return x;
-}
+            return x;
+        }
 
-// this function calculates the proper scroll parameters for the animation and starts it
-function setupAnimation(refFrame)
-{
-	if (!doAnmation)
-	{
-		return;
-	}
-
-	try
-	{
-
-		// get the size of the frame
-		h = refFrame.contentWindow.innerHeight
-
-		// get the number of pixels from the top to scroll
-		headerOffset=refFrame.contentWindow.document.body.offsetHeight - h;
-
-		// calculate the time to scroll the whole page in the fram (milisecs)
-		scrollduration = 1000 * headerOffset / pixelspersecond;
-
-		// returnduration is the time to scroll back to the top (milisecs)
-		returnduration = 1000;
-
-		// the amount of time to perform a cycle gives
-		// calculate how long the number of scrolls
-		cycletime = (scrollduration + 2 * topbottomdelay + returnduration).toFixed(0);
-		// scroll fast enough to at least one scroll
-		if (cycletime > minreloadinterval)
-		{
-            minreloadinterval = scrollduration;
-		}
-
-		// get a reference to the body in the frame
-		bodyTag = $("body", refFrame.contentDocument)
-
-		// start the animation in a separate thread
-		setTimeout(startAnimation, 0, bodyTag, topbottomdelay, headerOffset, scrollduration, returnduration);
-
-        setupReload();
-	}
-	catch(err)
-	{
-		x=1; // dummy
-	}
-}
+        // this fucntion starts the animation
+        function startAnimation(bodyTag, topbottomdelay, headerOffset, scrollduration, returnduration) {
+            // start animation after topbottomdelay
+            // one scroll takes scroll duration
+            // after a scroll wait topbottom delay
+            // and then sroll to the top in returnduration
+            // and start a new animation scroll
+            bodyTag.delay(topbottomdelay).animate({ scrollTop: headerOffset },
+                {
+                    duration: scrollduration,
+                    easing: "linear",
+                    complete: function () { bodyTag.delay(topbottomdelay).animate({ scrollTop: 0 }, returnduration, "linear"); setTimeout(startAnimation, 0, bodyTag, topbottomdelay, headerOffset, scrollduration, returnduration); }
+                });
+        }
 
 
+        // this function calculates the proper scroll parameters for the animation and starts it
+        function setupAnimation(refFrame) {
+            if (!doAnmation) {
+                return;
+            }
 
-function startAnimation(bodyTag, topbottomdelay, headerOffset,scrollduration, returnduration)
-{
-	// start animation after topbottomdelay
-	// one scroll takes scroll duration
-	// after a scroll wait topbottom delay
-	// and then sroll to the top in returnduration
-	// and start a new animation scroll
-	bodyTag.delay(topbottomdelay).animate(  { scrollTop: headerOffset} ,
-                                  { duration: scrollduration,
-                                    easing: "linear" ,
-                                    complete: function() { bodyTag.delay(topbottomdelay).animate({scrollTop: 0}, returnduration, "linear"); setTimeout(startAnimation, 0, bodyTag, topbottomdelay, headerOffset, scrollduration, returnduration);}
-                                  });
-}
+            try {
 
+                // get the size of the frame
+                h = refFrame.contentWindow.innerHeight
+
+                // get the number of pixels from the top to scroll
+                headerOffset = refFrame.contentWindow.document.body.offsetHeight - h;
+
+                // calculate the time to scroll the whole page in the fram (milisecs)
+                scrollduration = 1000 * headerOffset / pixelspersecond;
+
+                // returnduration is the time to scroll back to the top (milisecs)
+                returnduration = 1000;
+
+                // the amount of time to perform a cycle gives
+                // calculate how long the number of scrolls
+                cycletime = (scrollduration + 2 * topbottomdelay + returnduration).toFixed(0);
+                // scroll fast enough to at least one scroll
+                if (cycletime > minreloadinterval) {
+                    minreloadinterval = scrollduration;
+                }
+
+                // get a reference to the body in the frame
+                bodyTag = $("body", refFrame.contentDocument)
+
+                // start the animation in a separate thread
+                setTimeout(startAnimation, 0, bodyTag, topbottomdelay, headerOffset, scrollduration, returnduration);
+
+                setupReload();
+            }
+            catch (err) {
+                x = 1; // dummy
+            }
+        }
     </script>
 </head>
 <frameset rows="30,*">
     <frame name="topframe" frameborder="0" src="/scroll?top.html">
     <frame name="res1" src="@@url@@" frameborder="0" onload="setupAnimation(this)">
 
-    <noframes>
-        <body>
-            <p>denne side bruger frames....</p>
-        </body>
-    </noframes>
+        <noframes>
+            <body>
+                <p>denne side bruger frames....</p>
+            </body>
+        </noframes>
 </frameset>
-<div align="right" id="clock" style="position: absolute; left:0px; top:0px; z-index:20; visibility:hidden;width:30px;"><font color="red">clock</font></div>
+<!--
+    <div align="right" id="clock" style="position: absolute; left:0px; top:0px; z-index:20; visibility:hidden;width:30px;"><font color="red">clock</font></div>
+-->
 </html>

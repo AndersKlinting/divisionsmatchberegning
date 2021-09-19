@@ -14,6 +14,8 @@ namespace Divisionsmatch.DivisionsResultat
     /// </summary>
     public class Klub : ICloneable
     {
+        private string _navnkort = string.Empty;
+
         /// <summary>
         /// klubbens id
         /// </summary>
@@ -25,6 +27,26 @@ namespace Divisionsmatch.DivisionsResultat
         /// </summary>
         [XmlElement(ElementName = "Navn")]
         public string Navn { get; set; }
+
+        /// <summary>
+        /// klubbens navn
+        /// </summary>
+        [XmlElement(ElementName = "NavnKort")]
+        public string NavnKort { get
+            {
+                if (_navnkort != string.Empty)
+                    return _navnkort;
+                else
+                    return Navn;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    _navnkort = value;
+                }
+            }
+        }
 
         /// <summary>
         /// klubbens placering i en divisionsmatch
@@ -65,6 +87,7 @@ namespace Divisionsmatch.DivisionsResultat
             Klub clone = new Klub();
             clone.Id = this.Id.Clone() as KlubId;
             clone.Navn = this.Navn;
+            clone.NavnKort = this.NavnKort;
             clone.Placering = this.Placering;
             clone.MatchPoint = this.MatchPoint;
             clone.LøbsPoint = this.LøbsPoint;
@@ -733,6 +756,7 @@ namespace Divisionsmatch.DivisionsResultat
                     klub.Id = new KlubId(k.Id.Id, k.Id.Type);
                 }
                 klub.Navn = k.Navn;
+                klub.NavnKort = k.NavnKort;
                 klub.Placering = klubresultatliste.IndexOf(k) + 1;
                 klub.MatchPoint = k.Point;
                 klub.LøbsPoint = k.Score1;
@@ -755,7 +779,7 @@ namespace Divisionsmatch.DivisionsResultat
             foreach (var l in staevne.Loebere)
             {
                 // if klubben findes i matchen
-                if (l.Value.Inkl && staevne.Klubber.Exists(k => k.Navn.Equals(l.Value.Klub.Navn)))
+                if (l.Value.Inkl && staevne.Klubber.Exists(k => k.Navn.Equals(l.Value.Klub.Navn) || k.NavnKort.Equals(l.Value.Klub.Navn)))
                 {
                     Divisionsmatch.DivisionsResultat.Løber løber = new Divisionsmatch.DivisionsResultat.Løber();
                     løber.StNr = l.Value.Stnr;
@@ -1187,12 +1211,12 @@ namespace Divisionsmatch.DivisionsResultat
             if (this.Division == 8)
             {
                 // op/ned
-                line += ", op/ned";
+                line += ", op/ned " + staevne.Config.Beskrivelse;
             }
             else if (this.Division == 9)
             {
                 // finale
-                line += ", finale";
+                line += ", finale" + staevne.Config.Beskrivelse;
             }
             output.AppendLine(line);
             output.AppendLine(new string('-', line.Count()));
@@ -1270,12 +1294,12 @@ namespace Divisionsmatch.DivisionsResultat
             if (this.Division == 8)
             {
                 // op/ned
-                line += ", op/ned";
+                line += ", op/ned " + staevne.Config.Beskrivelse;
             }
-            else if (this.Division == 8)
+            else if (this.Division == 9)
             {
                 // finale
-                line += ", finale ";
+                line += ", finale " + staevne.Config.Beskrivelse;
             }
             line += "</h3>";
             output.AppendLine(line);
@@ -1489,6 +1513,7 @@ namespace Divisionsmatch.DivisionsResultat
         /// convert a data table to a nice txt table
         /// </summary>
         /// <param name="dataTable"></param>
+        /// <param name="layout"></param>
         /// <returns></returns>
         private string ConvertDataTableToHtml(DataTable dataTable, string layout)
         {
