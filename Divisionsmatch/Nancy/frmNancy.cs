@@ -146,6 +146,11 @@ namespace Divisionsmatch
             SetText("Api Worked");
         }
 
+        public void SetTitle(string title)
+        {
+            this.Text = "Nancy REST API Server" + (!string.IsNullOrWhiteSpace(title) ? " - " + title : string.Empty);
+        }
+
         internal void SetText(string text)
         {
             if (this.textBox1.InvokeRequired)

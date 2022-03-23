@@ -70,9 +70,13 @@ namespace Divisionsmatch
                 {
                     _resultatDefinition = new ResultatDefinition(txtResultFile.Text);
                 }
-                else
+                else if (radioButton2.Checked)
                 {
                     _resultatDefinition = new ResultatDefinition(txtMeOS.Text, (int)numericUpDownMeOS.Value);
+                }
+                else
+                {
+                    _resultatDefinition = new ResultatDefinition();
                 }
             }
             catch (Exception ex)
@@ -117,6 +121,11 @@ namespace Divisionsmatch
                 txtResultFile.Text = openFile.FileName;
                 btnOK.Focus();
             }
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

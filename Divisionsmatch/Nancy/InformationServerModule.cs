@@ -36,41 +36,38 @@ namespace Divisionsmatch
                     html += "<h1>Divisionsmatch web server  og REST API</h1>";
                     html += Nancy.Helpers.HttpUtility.HtmlEncode("Divisionsmatch (" + frmDivi.Instance.mitstaevne.Config.Skov + ", " + frmDivi.Instance.mitstaevne.Config.Dato.ToString("yyyy-MM-dd") + ")");
 
-
+                    string scrollspeed = "&scroll&refresh=300&speed=32";
                     html += "<h2>Fuld resultat</h2>";
                     html += "<p>HTML format: ";
-                    html += "<a target=\"_blank\" href=\"all?format=html\">all?format=html</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"all?format=html&scroll&refresh=300&speed=32\">all?format=html&scroll&refresh=300&speed=32</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "all?format=html", scrollspeed);
                     html += "<p>TXT format: ";
-                    html += "<a target=\"_blank\" href=\"all?format=txt\">all?format=txt</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"all?format=txt&scroll&refresh=300&speed=32\">all?format=txt&scroll&refresh=300&speed=32</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "all?format=txt", scrollspeed);
                     html += "<p>XML format: ";
-                    html += "<a target=\"_blank\" href=\"all?format=xml\">all?format=xml</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>", "all?format=xml");
 
                     html += "<h2>Divisionsstilling</h2>";
                     html += "<p>HTML format: ";
-                    html += "<a target=\"_blank\" href=\"divi?format=html\">divi?format=html</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"divi?format=html&scroll&refresh=300&speed=32\">divi?format=html&scroll&refresh=300&speed=32</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "divi?format=html", scrollspeed);
                     html += "<p>TXT format: ";
-                    html += "<a target=\"_blank\" href=\"divi?format=txt\">divi?format=txt</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"divi?format=txt&scroll&refresh=300&speed=32\">divi?format=txt&scroll&refresh=300&speed=32</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "divi?format=txt", scrollspeed);
 
                     html += "<h2>Match-stilling</h2>";
                     html += "<p>HTML format: ";
-                    html += "<a target=\"_blank\" href=\"match?format=html\">match?format=html</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"match?format=html&scroll&refresh=300&speed=32\">all?format=match&scroll&refresh=300&speed=32</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "matchstilling?format=html", scrollspeed);
                     html += "<p>TXT format: ";
-                    html += "<a target=\"_blank\" href=\"match?format=txt\">match?format=txt</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"match?format=txt&scroll&refresh=300&speed=32\">all?format=txt&scroll&refresh=300&speed=32</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "matchstilling?format=txt", scrollspeed);
+
+                    html += "<h2>Matcher detaljer</h2>";
+                    html += "<p>HTML format: ";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "matchdetaljer?format=html", scrollspeed);
+                    html += "<p>TXT format: ";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "matchdetaljer?format=txt", scrollspeed);
 
                     html += "<h2>Match-resultat</h2>";
                     html += "<p>HTML format: ";
-                    html += "<a target=\"_blank\" href=\"matchresultat?format=html\">matchresultat?format=html</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"matchresultat?format=html&scroll&refresh=300&speed=32\">matchresultat?format=html&scroll&refresh=300&speed=32</a>";
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "matchresultater?format=html", scrollspeed);
                     html += "<p>TXT format: ";
-                    html += "<a target=\"_blank\" href=\"matchresultat?format=txt\">matchresultat?format=txt</a>";
-                    html += "    med autoscroll: <a target=\"_blank\" href=\"matchresultat?format=txt&scroll&refresh=300&speed=32\">matchresultat?format=txt&scroll&refresh=300&speed=32</a>";
-
+                    html += string.Format("<a target=\"_blank\" href=\"{0}\">{0}</a>    med autoscroll: <a target=\"_blank\" href=\"{0}{1}\">{0}{1}</a>", "matchresultater?format=txt", scrollspeed);
 
                     html += "</body></html>";
                     
@@ -155,8 +152,10 @@ namespace Divisionsmatch
                             List<string> afsnit = new List<string>();
 
                             afsnit.Add(form1._mitDivisionsResultat.PrintResultHtml(form1.mitstaevne));
-                            afsnit.Add(form1.mitstaevne.Printstilling(true));
-                            afsnit.AddRange(form1.mitstaevne.LavHTMLafsnit());
+                            //afsnit.Add(form1.mitstaevne.Printstilling(true));
+                            //afsnit.AddRange(form1.mitstaevne.LavHTMLafsnit());
+
+                            afsnit.AddRange(form1.mitstaevne.LavResultatSektioner(true, true, true, true));
 
                             output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(afsnit)).LocalPath, Encoding.Default);
                         }
@@ -167,9 +166,15 @@ namespace Divisionsmatch
                         else
                         {
                             StringBuilder sb = new StringBuilder();
+                            //sb.Append(form1._mitDivisionsResultat.PrintResultText(form1.mitstaevne));
+                            //sb.AppendLine(form1.mitstaevne.Printmatcher());
+                            //foreach (string t in form1.mitstaevne.LavTXTafsnit())
+                            //{
+                            //    sb.AppendLine(t);
+                            //}
+
                             sb.Append(form1._mitDivisionsResultat.PrintResultText(form1.mitstaevne));
-                            sb.AppendLine(form1.mitstaevne.Printmatcher());
-                            foreach (string t in form1.mitstaevne.LavTXTafsnit())
+                            foreach (string t in form1.mitstaevne.LavResultatSektioner(false, true, true, true))
                             {
                                 sb.AppendLine(t);
                             }
@@ -215,6 +220,7 @@ namespace Divisionsmatch
                         Url newUrl = this.Request.Url;
                         newUrl.Query = "format=" + (formatTxt ? "txtx" : format)  + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
                         output = output.Replace("@@url@@", newUrl.ToString());
+                        return HtmlResponse(output);
                     }
 
                     if (form1._mitDivisionsResultat != null)
@@ -247,7 +253,7 @@ namespace Divisionsmatch
                     }
                 });
                 
-                Get("/match/", args =>
+                Get("/matchstilling/", args =>
                 {
                     log(this.Request);
 
@@ -273,11 +279,19 @@ namespace Divisionsmatch
                     {
                         if (formatHtml)
                         {
-                            output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(new List<string>() { form1.mitstaevne.Printstilling(true), form1.mitstaevne.LavHTMLStilling(form1.mitstaevne.Config) })).LocalPath, Encoding.Default);
+                            //output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(new List<string>() { form1.mitstaevne.Printstilling(true), form1.mitstaevne.LavHTMLStilling(form1.mitstaevne.Config) })).LocalPath, Encoding.Default);
+                            output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(form1.mitstaevne.LavResultatSektioner(true, true, false, false))).LocalPath, Encoding.Default);
                         }
                         else
                         {
-                            output = form1.mitstaevne.Printmatcher();
+                            //output = form1.mitstaevne.Printmatcher();
+                            StringBuilder sb = new StringBuilder();
+                            foreach (string t in form1.mitstaevne.LavResultatSektioner(false, true, false, false))
+                            {
+                                sb.AppendLine(t);
+                            }
+
+                            output = sb.ToString();
                         }
                     }
 
@@ -300,7 +314,69 @@ namespace Divisionsmatch
                     }
                 });
 
-                Get("/matchresultat/", args =>
+                Get("/matchdetaljer/", args =>
+                {
+                    log(this.Request);
+
+                    string output = "resultatet findes ikke";
+                    var form1 = frmDivi.Instance;
+                    bool scroll = this.Request.Query["scroll"] != null;
+                    string format = this.Request.Query["format"];
+                    string refresh = this.Request.Query["refresh"];
+                    string speed = this.Request.Query["speed"];
+                    bool formatHtml = format.ToLower() == "html";
+                    bool formatTxt = format.ToLower() == "txt";
+
+                    if (scroll)
+                    {
+                        output = getResource("frame.html");
+                        Url newUrl = this.Request.Url;
+                        newUrl.Query = "format=" + (formatTxt ? "txtx" : format)  + (string.IsNullOrWhiteSpace(refresh) ? "" : "&refresh=" + refresh) + (string.IsNullOrWhiteSpace(speed) ? "" : "&speed=" + refresh);
+                        output = output.Replace("@@url@@", newUrl.ToString());
+                        return HtmlResponse(output);
+                    }
+
+                    if (form1._mitDivisionsResultat != null)
+                    {
+                        if (formatHtml)
+                        {
+                            //output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(new List<string>() { form1.mitstaevne.LavHTMLStilling(form1.mitstaevne.Config) })).LocalPath, Encoding.Default);
+                            output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(form1.mitstaevne.LavResultatSektioner(true,false,true,false))).LocalPath, Encoding.Default);
+                        }
+                        else
+                        {
+                            //output = form1.mitstaevne.Printmatcher(false);
+                            StringBuilder sb = new StringBuilder();
+                            //foreach (string t in form1.mitstaevne.LavTXTafsnit())
+                            foreach (string t in form1.mitstaevne.LavResultatSektioner(false, false, true, false))
+                            {
+                                sb.AppendLine(t);
+                            }
+
+                            output = sb.ToString();
+                        }
+                    }
+
+                    if (formatHtml)
+                    {
+                        return HtmlResponse(output);
+                    }
+                    else
+                    {
+                        if (formatTxt)
+                        {
+                            return Response.AsText(output);
+                        }
+                        else 
+                        {
+                            // wrap txt in pre-tags to make it html
+                            output = "<html><head><meta content=\"text/html;charset=utf-8\" http-equiv=\"Content-Type\"></head><body><pre>\n" + output + "\n</pre></body></html>";
+                            return HtmlResponse(output);
+                         }
+                    }
+                });
+
+                Get("/matchresultater/", args =>
                 {
                     log(this.Request);
 
@@ -326,12 +402,14 @@ namespace Divisionsmatch
                     {
                         if (formatHtml)
                         {
-                            output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(form1.mitstaevne.LavHTMLafsnit())).LocalPath, Encoding.Default);
+                            // output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(form1.mitstaevne.LavHTMLafsnit())).LocalPath, Encoding.Default);
+                            output = System.IO.File.ReadAllText(new System.Uri(form1.mitstaevne.LavHTML(form1.mitstaevne.LavResultatSektioner(true, false, false, true))).LocalPath, Encoding.Default);
                         }
                         else
                         {
                             StringBuilder sb = new StringBuilder();
-                            foreach (string t in form1.mitstaevne.LavTXTafsnit())
+                            //foreach (string t in form1.mitstaevne.LavTXTafsnit())
+                            foreach (string t in form1.mitstaevne.LavResultatSektioner(false, false, false, true))
                             {
                                 sb.AppendLine(t);
                             }

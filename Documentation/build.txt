@@ -8,7 +8,7 @@ bygge ny version
 Build
 ------
 
-edit assemblyversion og AssemblyFileVersion i AsemblyInfo.cs
+edit assemblyversion og AssemblyFileVersion i AssemblyInfo.cs
 
 opdater dokumentation - divisionsmatchberegning.docx
 gem som pdf og generer chm vha Word2CHM
@@ -29,6 +29,7 @@ upload
 * AutoUpdates\versionhistory.htm 
 * AutoUpdates\DivisionsmatchX.Y.Z.msi 
 til ftp://fif-orientering.dk@www.fif-orientering.dk/public_html/divisionsmatch
+ftp://orientering.dk@orientering.dk/public_html/divisionsmatch
 
 (for at teste uploades versioninfo.xml til subfolder "test" og programmet køres med argument "test")
 

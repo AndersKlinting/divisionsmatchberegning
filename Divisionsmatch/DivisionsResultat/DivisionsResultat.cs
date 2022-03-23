@@ -49,6 +49,11 @@ namespace Divisionsmatch.DivisionsResultat
         }
 
         /// <summary>
+        /// liste af klubber i klubsamarbejde
+        /// </summary>
+        public List<Klub> Klubber { get; set; }
+
+        /// <summary>
         /// klubbens placering i en divisionsmatch
         /// </summary>
         [XmlElement(ElementName = "Placering")]
@@ -65,6 +70,12 @@ namespace Divisionsmatch.DivisionsResultat
         /// </summary>
         [XmlElement(ElementName = "LoebsPoint")]
         public double LøbsPoint { get; set; }
+
+        /// <summary>
+        /// klubbens løbspoint  i en divisionsmatch
+        /// </summary>
+        [XmlElement(ElementName = "ModstanderLoebsPoint")]
+        public double ModstanderLøbsPoint { get; set; }
 
         /// <summary>
         /// 
@@ -91,6 +102,7 @@ namespace Divisionsmatch.DivisionsResultat
             clone.Placering = this.Placering;
             clone.MatchPoint = this.MatchPoint;
             clone.LøbsPoint = this.LøbsPoint;
+            clone.ModstanderLøbsPoint = this.ModstanderLøbsPoint;
             clone.Kommentar = this.Kommentar;
             clone.Udebleven = this.Udebleven;
 
@@ -174,6 +186,12 @@ namespace Divisionsmatch.DivisionsResultat
             _MatchKlubber[1] = new MatchKlub();
         }
 
+        public int Id
+        {
+            get;
+            set;
+        }
+
         public MatchKlub[] MatchKlubber
         {
             get
@@ -186,6 +204,8 @@ namespace Divisionsmatch.DivisionsResultat
                 _MatchKlubber = value;
             }
         }
+
+        public List<GruppePoint> MatchGruppePoint { get; set; }
 
         ///// <summary>
         ///// navn på klub 1
@@ -259,8 +279,17 @@ namespace Divisionsmatch.DivisionsResultat
         /// <returns></returns>
         public object Clone()
         {
-            Match clone = new Match();
-            clone.MatchKlubber = this.MatchKlubber;
+            Match clone = new Match{Id = this.Id, MatchKlubber = new MatchKlub[this.MatchKlubber.Length]};
+            for (int i = 0; i < this.MatchKlubber.Length; i++)
+            {
+                clone.MatchKlubber[i] = new MatchKlub() { Navn = this.MatchKlubber[i].Navn, Score = this.MatchKlubber[i].Score };
+            }
+
+            clone.MatchGruppePoint = new List<GruppePoint>();
+            foreach (var gp in this.MatchGruppePoint)
+            {
+                clone.MatchGruppePoint.Add(new GruppePoint() { GruppeNavn = gp.GruppeNavn, PointsTilFordeling = gp.PointsTilFordeling, KlubPoint1 = gp.KlubPoint1, KlubPoint2 = gp.KlubPoint2 });
+            }
 
             return clone;
         }
@@ -308,6 +337,14 @@ namespace Divisionsmatch.DivisionsResultat
                 _score = value;
             }
         }
+    }
+
+    public class GruppePoint
+    {
+        public string GruppeNavn { get; set; }
+        public string PointsTilFordeling { get; set; }
+        public double KlubPoint1 { get; set; }
+        public double KlubPoint2 { get; set; }
     }
 
     //[XmlRoot(ElementName = "Løber")]
@@ -383,6 +420,11 @@ namespace Divisionsmatch.DivisionsResultat
         public string Status { get; set; }
 
         /// <summary>
+        /// liste af løberns point i matcherne i stævnet
+        /// </summary>
+        public List<MatchPoint> MatchPoints { get; set; }
+
+        /// <summary>
         /// lav en klon
         /// </summary>
         /// <returns></returns>
@@ -401,9 +443,48 @@ namespace Divisionsmatch.DivisionsResultat
             clone.Placering = this.Placering;
             clone.Status = this.Status;
 
+            clone.MatchPoints = new List<MatchPoint>();
+            foreach (var mp in this.MatchPoints)
+            {
+                clone.MatchPoints.Add((MatchPoint) mp.Clone());
+            }
             return clone;
         }
     }
+
+
+    //[XmlRoot(ElementName = "MatchPoint")]
+    /// <summary>
+    /// en løbers point i en match
+    /// </summary>
+    public class MatchPoint : ICloneable
+    {
+        /// <summary>
+        /// reference til match
+        /// </summary>
+        [XmlElement(ElementName = "MatchId")]
+        public int MatchId { get; set; }
+
+        /// <summary>
+        /// point
+        /// </summary>
+        [XmlElement(ElementName = "Point")]
+        public double Point{ get; set; }
+
+        /// <summary>
+        /// lav en klon
+        /// </summary>
+        /// <returns></returns>
+        public object Clone()
+        {
+            MatchPoint clone = new MatchPoint();
+            clone.MatchId = this.MatchId;
+            clone.Point= this.Point;
+
+            return clone;
+        }
+    }
+
 
     //[XmlRoot(ElementName = "DivisionsMatchResultat")]
     /// <summary>
@@ -700,6 +781,19 @@ namespace Divisionsmatch.DivisionsResultat
             return ok;
         }
 
+        public void FixMatcher()
+        {
+            foreach (var dr in DivisionsMatchResultater)
+            {
+                int i = 1;
+                foreach (var m in dr.Matcher)
+                {
+                    m.Id = i++;
+                }
+            }
+        }
+
+
         /// <summary>
         /// lave en klon
         /// </summary>
@@ -757,9 +851,17 @@ namespace Divisionsmatch.DivisionsResultat
                 }
                 klub.Navn = k.Navn;
                 klub.NavnKort = k.NavnKort;
+                klub.Klubber = new List<Klub>();
+                foreach (var kk in k.Klubber)
+                {
+                    Klub newKlub = new Klub() { Id = new KlubId(kk.Id.Id, kk.Id.Type), Navn = kk.Navn, NavnKort = kk.NavnKort };
+                    klub.Klubber.Add(newKlub);
+                }
+
                 klub.Placering = klubresultatliste.IndexOf(k) + 1;
                 klub.MatchPoint = k.Point;
                 klub.LøbsPoint = k.Score1;
+                klub.ModstanderLøbsPoint = k.Score2;
                 klub.Kommentar = k.Kommentar;
 
                 detteResultat.Klubber.Add(klub);
@@ -768,10 +870,19 @@ namespace Divisionsmatch.DivisionsResultat
             foreach (var m in staevne.Matcher)
             {
                 Divisionsmatch.DivisionsResultat.Match match = new Divisionsmatch.DivisionsResultat.Match();
+                match.Id = m.Id;
                 match.MatchKlubber[0].Navn = m.Klub1.Navn;
                 match.MatchKlubber[1].Navn = m.Klub2.Navn;
                 match.MatchKlubber[0].Score = m.Score1();
                 match.MatchKlubber[1].Score = m.Score2();
+
+                match.MatchGruppePoint = new List<GruppePoint>();
+                foreach (var g in staevne.Grupper)
+                {
+                    double p1 = m.Loebspoint1(g.Loebere);
+                    double p2 = m.Loebspoint2(g.Loebere);
+                    match.MatchGruppePoint.Add(new GruppePoint() { GruppeNavn = g.navn, PointsTilFordeling = g.PrintPointsForGruppe(), KlubPoint1 = p1, KlubPoint2 = p2 });
+                }
 
                 detteResultat.Matcher.Add(match);
             }
@@ -793,6 +904,17 @@ namespace Divisionsmatch.DivisionsResultat
                     løber.StartTid = l.Value.StartTid;
                     løber.Tid = l.Value.Tid;
                     løber.Status = l.Value.Status;
+
+                    løber.MatchPoints = new List<MatchPoint>();
+                    foreach (var m in staevne.Matcher)
+                    {
+                        double p = l.Value.GetPoint(m);
+                        if (p > 0)
+                        {
+                            MatchPoint mp = new MatchPoint() { MatchId = m.Id, Point = p };
+                            løber.MatchPoints.Add(mp);
+                        }
+                    }
 
                     detteResultat.Løbere.Add(løber);
                 }
@@ -835,7 +957,7 @@ namespace Divisionsmatch.DivisionsResultat
                         totalKlubResultat = new TotalKlubResultat() { Klubnavn = k.Navn };
                         TotalResultat.Add(totalKlubResultat);
                     }
-                    var rundeResultat = new RundeResultat() { Runde = r.Runde.ToString(), LøbsPoint = Convert.ToDouble(k.LøbsPoint), MatchPoint = Convert.ToDouble(k.MatchPoint), Kommentar = k.Kommentar, Matcher = new List<RundeMatch>() };
+                    var rundeResultat = new RundeResultat() { Runde = r.Runde.ToString(), LøbsPoint = Convert.ToDouble(k.LøbsPoint), ModstanderLøbsPoint = Convert.ToDouble(k.ModstanderLøbsPoint), MatchPoint = Convert.ToDouble(k.MatchPoint), Kommentar = k.Kommentar, Matcher = new List<RundeMatch>() };
                     foreach (var m in r.Matcher)
                     {
                         if (m.MatchKlubber[0].Navn.Equals(k.Navn, StringComparison.InvariantCultureIgnoreCase))
@@ -1115,6 +1237,10 @@ namespace Divisionsmatch.DivisionsResultat
             [XmlElement("LoebsPoint")]
             public double LøbsPoint { get; set; }
 
+            [XmlElement("ModstanderLoebsPoint")]
+            public double ModstanderLøbsPoint { get; set; }
+
+
             public double MatchPoint { get; set; }
 
             public string Kommentar { get; set; }
@@ -1167,6 +1293,7 @@ namespace Divisionsmatch.DivisionsResultat
                     {
                         x.MatchPoint += r.MatchPoint;
                         x.LøbsPoint += r.LøbsPoint;
+                        x.ModstanderLøbsPoint += r.ModstanderLøbsPoint;
                     }
                     return x;
                 }

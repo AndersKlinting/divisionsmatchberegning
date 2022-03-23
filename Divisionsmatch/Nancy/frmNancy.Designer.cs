@@ -140,7 +140,7 @@
             this.MinimizeBox = false;
             this.MinimumSize = new System.Drawing.Size(480, 274);
             this.Name = "frmNancy";
-            this.Text = "Nancy REST API Server";
+            this.Text = "";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmNancy_FormClosing);
             this.Load += new System.EventHandler(this.frmNancy_Load);
             this.ResumeLayout(false);

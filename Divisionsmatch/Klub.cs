@@ -17,6 +17,7 @@
  */
 
 using System;
+using System.Collections.Generic;
 using System.Xml.Serialization;
 
 namespace Divisionsmatch
@@ -50,7 +51,7 @@ namespace Divisionsmatch
         }
 
         /// <summary>
-        /// navnet på klubben
+        /// o-service id på klubben
         /// </summary>
         public KlubId Id
         {
@@ -108,6 +109,11 @@ namespace Divisionsmatch
                 }
             }
         }
+
+        /// <summary>
+        /// liste af klubber i i klubsamarbejde
+        /// </summary>
+        public List<Klub> Klubber { get; set; }
 
         /// <summary>
         /// er klubben udenblevet?
@@ -197,4 +203,5 @@ namespace Divisionsmatch
             set { _type = value; }
         }
     }
+
 }

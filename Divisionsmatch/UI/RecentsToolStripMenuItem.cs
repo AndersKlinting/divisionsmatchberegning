@@ -8,17 +8,20 @@ using System.Windows.Forms;
 using System.Windows.Forms.Design;
 using Microsoft.Win32;
 using System.ComponentModel;
-[ToolStripItemDesignerAvailability(ToolStripItemDesignerAvailability.All)]
 
-[Description("This is a menu item that reads and writes to the registry to store a list of recently opened documents.")]
 /// <summary>
 /// This is a menu item that reads and writes to the registry to store a list of recently opened documents.
 /// </summary>
+[Description("This is a menu item that reads and writes to the registry to store a list of recently opened documents.")]
+[ToolStripItemDesignerAvailability(ToolStripItemDesignerAvailability.All)]
 public class RecentsToolStripMenuItem : ToolStripMenuItem
 {
 
     private int varMaxItems = 5;
     private RegistryKey varRegistryKey = Registry.CurrentUser.CreateSubKey("Software\\" + Application.CompanyName + "\\" + Application.ProductName + "\\Recent");
+    /// <summary>
+    /// Constructor of the menu item
+    /// </summary>
     public RecentsToolStripMenuItem()
     {
         this.Enabled = false;

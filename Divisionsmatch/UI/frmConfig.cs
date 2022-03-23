@@ -19,6 +19,7 @@ using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.IO;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -92,7 +93,12 @@ namespace Divisionsmatch
 
             textBox1.BackColor = System.Drawing.Color.White;
             textBox1.ForeColor = System.Drawing.Color.Red;
-}
+
+            if (!btnOK.Enabled)
+            {
+                MessageBox.Show("Konfigurationen er ikke komplet. Indlæs evt. en fil med løbsklasser og/eller kontroller flueben for klubberne", "Kontroller konfigurationen");
+            }
+        }
 
         private void btnLoad_Click(object sender, EventArgs e)
         {
@@ -122,8 +128,20 @@ namespace Divisionsmatch
 
                     _PreselectKlasser();
 
-                    dataGridView1.Enabled = true;
-                    checkedListClubs.Enabled = true;
+                    string msg = "Kontroller at alle reglementsklasser har en korrekt tilknyttet løbsklasse eller '-', og at klubber er markeret med rigtige flueben.";
+                    if (Config.classes.Count>2)
+                    {
+                        dataGridView1.Enabled = true;
+                        checkedListClubs.Enabled = true;
+
+                        msg = string.Format("Der blev fundet {0} baner og {1} klasser.\n{2}\n", Config.baner.Count, Config.classes.Count, (Config.baner.Count>0 ? string.Empty : "Baner er ikke påkrævet.\n")) + msg;
+                    }
+                    else
+                    {
+                        msg = "Der blev ikke fundet klasser og baner i den indlæste fil. Kontroller lige om den er OK";
+                    }
+
+                    MessageBox.Show(msg, "Check konfigurationen", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 catch (Exception ex)
                 {
@@ -144,6 +162,12 @@ namespace Divisionsmatch
             dataGridView1.Rows.Clear();
             dataGridView1.Columns.Clear();
 
+            // reset løbsklasse for grupperne
+            foreach (GruppeOgKlasse gk in Config.gruppeOgKlasse)
+            {
+                gk.LøbsKlasse = null;
+            }
+
             dataGridView1.DataSource = Config.gruppeOgKlasse;
             dataGridView1.Columns[0].DataPropertyName = "Gruppe";
             dataGridView1.Columns[0].ReadOnly = true;
@@ -151,6 +175,7 @@ namespace Divisionsmatch
 
             dataGridView1.Columns[1].DataPropertyName = "Klasse";
             dataGridView1.Columns[1].ReadOnly = true;
+            dataGridView1.Columns[1].HeaderText = "Reglementsklasse";
 
             indexLoebsklasse = 2;
             dataGridView1.Columns.RemoveAt(indexLoebsklasse);
@@ -310,12 +335,12 @@ namespace Divisionsmatch
             bool bDouble = false;
             for (int k = 0; k < dataGridView1.Rows.Count; k++)
             {
-                Klasse kl = dataGridView1.Rows[k].Cells[indexLoebsklasse].Value as Klasse;
-                if (kl != null && (kl.Navn != "" && kl.Navn != " - "))
+                string kl = dataGridView1.Rows[k].Cells[indexLoebsklasse].Value as string;
+                if (kl != null && (kl != "" && kl != " - "))
                 {
                     for (int r = k + 1; r < dataGridView1.Rows.Count; r++)
                     {
-                        if (kl == dataGridView1.Rows[r].Cells[indexLoebsklasse].Value)
+                        if (kl == dataGridView1.Rows[r].Cells[indexLoebsklasse].Value as string)
                         {
                             bDouble = true;
                             break;
@@ -330,34 +355,38 @@ namespace Divisionsmatch
         private void _updateButtons()
         {
             string msg = string.Empty;
+            bool bKlasserOK = true;
 
             // er alle klasser tildelt?
             if (Config.gruppeOgKlasse.Exists(item => item.LøbsKlasse == null || item.LøbsKlasse == string.Empty))
             {
-                msg += "Ikke alle klasser har fået matchende løbsklasse";
+                msg += "Ikke alle klasser har fået matchende løbsklasse. Reglementsklasser, som ikke har løbere i løbet, skal markeres med '-'.\n";
+                bKlasserOK = false;
             }
 
             if (checkduplicate())
             {
                 msg += msg != string.Empty ? System.Environment.NewLine : string.Empty;
-                msg += "Mindst en løbsklasse er brugt flere gange";
+                msg += "Mindst en løbsklasse er brugt flere gange\n";
+                bKlasserOK = false;
             }
 
-            if (checkedListClubs.Items.Count == 0)
+            if (Config.Klubber.Count > 0 && Config.Klubber.Count == Config.udeblevneKlubber.Count)
             {
                 msg += msg != string.Empty ? System.Environment.NewLine : string.Empty;
-                msg += "Du mangler at vælge klubber";
+                msg += "Er alle klubber udeblevet? Du mangler at vælge klubber\n";
             }
 
             if (string.IsNullOrWhiteSpace(textBoxSkov.Text))
             {
                 msg += msg != string.Empty ? System.Environment.NewLine : string.Empty;
-                msg += "Du mangler at angive en skov";
+                msg += "Du mangler at angive en skov\n";
             }
 
             textBox1.Text = msg;
             textBox1.Visible = (msg != string.Empty);
             btnOK.Enabled = msg == string.Empty;
+            btnLoad.BackColor = bKlasserOK ? Control.DefaultBackColor : Color.LightPink;
         }
 
         private void _updateGrid(int r)
@@ -377,7 +406,8 @@ namespace Divisionsmatch
             Config.udeblevneKlubber.Clear();
             for(int i=0; i< checkedListClubs.Items.Count;i++)
             {
-                if (!checkedListClubs.GetItemChecked(i))
+                (checkedListClubs.Items[i] as Klub).Udeblevet = !checkedListClubs.GetItemChecked(i);
+                if ((checkedListClubs.Items[i] as Klub).Udeblevet)
                 {
                     Config.udeblevneKlubber.Add(checkedListClubs.Items[i] as Klub);
                 }
@@ -389,7 +419,7 @@ namespace Divisionsmatch
             // check alle undtagen de udeblevne
             for (int i=0; i< checkedListClubs.Items.Count;i++)
             {
-                if (!Config.udeblevneKlubber.Contains(checkedListClubs.Items[i] as Klub))
+                if (!Config.udeblevneKlubber.Exists(k=> k.Navn == (checkedListClubs.Items[i] as Klub).Navn))
                 {
                     checkedListClubs.SetItemChecked(i, true);
                 }
@@ -409,18 +439,22 @@ namespace Divisionsmatch
             Klub club = checkedListClubs.Items[e.Index] as Klub;
             if (e.NewValue == CheckState.Checked)
             {
-                if (Config.udeblevneKlubber.Contains(club))
+                Klub c = Config.udeblevneKlubber.FirstOrDefault(k => k.Navn == club.Navn);
+                if (c!=null)
                 {
-                    Config.udeblevneKlubber.Remove(club);
+                    Config.udeblevneKlubber.Remove(c);
                 }
             }
             else
             {
-                if (!Config.udeblevneKlubber.Contains(club))
+                Klub c = Config.udeblevneKlubber.FirstOrDefault(k => k.Navn == club.Navn);
+                if (c == null)
                 {
                     Config.udeblevneKlubber.Add(club);
                 }
             }
+
+            _updateButtons();
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -443,16 +477,6 @@ namespace Divisionsmatch
         }
 
         private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListClubs_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
@@ -533,11 +557,6 @@ namespace Divisionsmatch
         }
 
         private void groupBox3_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void checkedListClubs_SelectedIndexChanged_1(object sender, EventArgs e)
         {
 
         }

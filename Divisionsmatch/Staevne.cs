@@ -77,12 +77,14 @@ namespace Divisionsmatch
 
         private static IList<Match> makeMatcher(Staevne staevne, IList<Klub> klubber)
         {
+            int m = 1;
             IList<Match> matcher = new List<Match>();
             for (int k = 0; k < klubber.Count; k++)
             {
                 for (int l = k + 1; l < klubber.Count; l++)
                 {
-                    matcher.Add(new Match(staevne, klubber[k], klubber[l]));
+                    matcher.Add(new Match(m, staevne, klubber[k], klubber[l]));
+                    m++;
                 }
             }
 
@@ -209,6 +211,7 @@ namespace Divisionsmatch
                     k.Point = p;
                     k.Score1 = score1;
                     k.Score2 = score2;
+                    k.Kommentar = string.Empty;
                 }
 
                 // tjek om der er matchpoint lighed - i så fald skal man vurdere hvilken klub som har flest løbspoint
@@ -397,6 +400,8 @@ namespace Divisionsmatch
             // for hver gruppe - fordel point
             foreach (Gruppe g in Grupper)
             {
+                g.OpdaterPlacering();
+
                 foreach (Match m in Matcher)
                 {
                     g.FordelPoint(m);
@@ -489,8 +494,9 @@ namespace Divisionsmatch
         /// <summary>
         /// formatter hele resultatlisten som txt
         /// </summary>
+        /// <param name="includeStilling">skal output inkludere match stillingen?</param>
         /// <returns>hele resultatet som txt</returns>
-        public string Printmatcher()
+        public string Printmatcher(bool includeStilling = true)
         {
             if (_printOutput != string.Empty)
             {
@@ -500,8 +506,11 @@ namespace Divisionsmatch
             {
                 StringBuilder output = new StringBuilder();
 
-                // lav stilling
-                output.AppendLine(Printstilling(false));
+                if (includeStilling)
+                {
+                    // lav stilling
+                    output.AppendLine(Printstilling(false));
+                }
 
                 int n = 1;
                 int maxL = 0;
@@ -699,7 +708,7 @@ namespace Divisionsmatch
         }
 
         /// <summary>
-        /// lav en liste af HTML formatterede afsnit tilburg ved sammenligning
+        /// lav en liste af HTML formatterede afsnit tilbrug ved sammenligning
         /// </summary>
         /// <returns>liste af html strings</returns>
         public List<string> LavHTMLafsnit()
@@ -747,6 +756,622 @@ namespace Divisionsmatch
 
             return htmlSections;
         }
+
+        #region nye formatterings rutiner
+
+        public List<string> LavResultatSektioner(bool asHtml = false, bool doMatchStilling = false, bool doMatchDetaljer = false, bool doBaneKlasseDetaljer = false)
+        {
+            List<string> sektioner = new List<string>();
+
+            if (doMatchStilling)
+            {
+                if (asHtml)
+                {
+                    sektioner.Add(_LavMatchStillingHTML());
+
+                }
+                else
+                {
+                    sektioner.Add(_LavMatchStillingTXT());
+
+                }
+            }
+
+            if (doMatchDetaljer)
+            {
+                if (asHtml)
+                {
+                    sektioner.Add(_LavMatchDetaljerHTML());
+
+                }
+                else
+                {
+                    sektioner.Add(_LavMatchDetaljerTXT());
+
+                }
+            }
+
+            if (doBaneKlasseDetaljer)
+            {
+                if (asHtml)
+                {
+                    sektioner.AddRange(_LavKlasseBanerHTML());
+                }
+                else
+                {
+                    sektioner.AddRange(_LavKlasseBanerTXT());
+                }
+            }
+
+            return sektioner;
+        }
+
+        private string _LavMatchStillingHTML()
+        {
+            return _LavMatchStilling(true);
+        }
+
+        private string _LavMatchStilling(bool html)
+        {
+            StringBuilder output = new StringBuilder();
+
+            //Divisionsmatch (St. Dyrehave Vest, 2021-09-26)
+            //----------------------------------------------
+            //											   score      point
+            //Farum Orienteringsklub                       502 -   440      4   (322) 
+            //Allerød OK                                   498 -   458      4   (318), 17 1. pl 
+            //Tisvilde Hegn OK                             493 -   445      4   (318), 13 1. pl 
+            //Ballerup OK                                  385 -   535      0    
+            //
+            //1 : Allerød OK - Ballerup OK                  :   180 -   136
+            //2 : Allerød OK - Farum Orienteringsklub       :   152 -   166
+            //3 : Allerød OK - Tisvilde Hegn OK             :   166 -   156
+            //4 : Ballerup OK - Farum Orienteringsklub      :   126 -   180
+            //5 : Ballerup OK - Tisvilde Hegn OK            :   123 -   175
+            //6 : Farum Orienteringsklub - Tisvilde Hegn OK :   156 -   162
+
+            if (!html)
+            {
+                string line = "Divisionsmatch (" + this.Config.Skov + ", " + this.Config.Dato.ToString("yyyy-MM-dd") + ")";
+                output.AppendLine(line);
+                output.AppendLine(new string('-', line.Length));
+                output.AppendLine("".PadRight(40) + "   " + "    score      point");
+            }
+            else
+            {
+                if (_config.Layout == "Standard")
+                {
+                    output.AppendLine("<h3 class=\"stilling\">Divisionsmatch (" + this.Config.Skov + ", " + this.Config.Dato.ToString("yyyy-MM-dd") + ")</h3>");
+                    output.AppendLine("<table class=\"stilling\">");
+                    output.AppendLine("<tbody class=\"stilling\">");
+                    output.AppendLine("<tr class=\"stilling\"><td>&nbsp;</td><td colspan=3>score</td><td>point</td><td>&nbsp;</td></tr>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    output.AppendLine("<div class=\"stillingContainer\">");
+                    output.AppendLine("<div class=\"stillingHeader\">Divisionsmatch (" + this.Config.Skov + ", " + this.Config.Dato.ToString("yyyy-MM-dd") + ")</div>");
+                    output.AppendLine("<div class=\"stilling\">");
+                    output.AppendLine("<table class=\"stilling\">");
+                    output.AppendLine("<thead>");
+                    output.AppendLine("<tr><th class=\"knavn\">Klubnavn</th><th colspan=3 style=\"text-align:center\">score</th><th>point</th><th>&nbsp;</th></tr>");
+                    output.AppendLine("</thead>");
+                    output.AppendLine("<tbody>");
+                }
+            }
+
+            foreach (Klub k in KlubberEfterPlacering)
+            {
+                string ude = k.Udeblevet ? "(udeblevet)" : string.Empty;
+
+                if (html)
+                {
+                    if (_config.Layout == "Standard")
+                    {
+                        output.AppendLine("<tr class=\"stilling\"><td>" + k.Navn.PadRight(40) + "</td><td>" + k.Score1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + "</td><td>-</td><td>" + k.Score2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + "</td><td style=\"text-align:right\">" + k.Point.ToString("##0").PadLeft(5) + "</td><td style=\"text-align:left\">" + k.Kommentar + "&nbsp;" + ude + "</td></tr>");
+                    }
+                    else if (_config.Layout == "Blå overskrifter")
+                    {
+                        output.AppendLine("<tr><td class=\"knavn\">" + k.Navn + "</td><td>" + k.Score1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td>-</td><td>" + k.Score2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td>" + k.Point.ToString("##0") + "</td><td style=\"text-align:left\">" + k.Kommentar + "&nbsp;" + ude + "</td></tr>");
+                    }
+                }
+                else
+                {
+                    output.AppendLine(k.Navn.PadRight(40) + "   " + k.Score1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + " - " + k.Score2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + "  " + k.Point.ToString("##0").PadLeft(5) + "   " + k.Kommentar + " " + ude);
+                }
+            }
+
+            if (html)
+            {
+                if (_config.Layout == "Standard")
+                {
+                    output.AppendLine("</tbody></table>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    output.AppendLine("</tbody></table>");
+                    output.AppendLine("</div></div>");
+                }
+            }
+            else
+            {
+                output.AppendLine();
+            }
+
+            if (html)
+            {
+                if (_config.Layout == "Standard")
+                {
+                    output.AppendLine("<p>");
+
+                    output.AppendLine("<table class=\"matcher\">");
+                    output.AppendLine("<tbody class=\"matcher\">");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    output.AppendLine("<div class=\"matcher\">");
+                    output.AppendLine("<table class=\"matcher\">");
+                    output.AppendLine("<tbody>");
+                }
+
+                int n = 1;
+                foreach (Match m in Matcher)
+                {
+                    if (_config.Layout == "Standard")
+                    {
+                        output.Append("<tr class=\"matcher\"><td>" + n.ToString() + "</td><td> : </td><td>" + m.Klub1.Navn + "</td><td> - </td><td>" + m.Klub2.Navn + "</td><td> : </td><td style=\"text-align:right\">");
+                    }
+                    else if (_config.Layout == "Blå overskrifter")
+                    {
+                        output.Append("<tr><td>" + n.ToString() + "</td><td> : </td><td class=\"knavn\">" + m.Klub1.Navn + "</td><td> - </td><td class=\"knavn\">" + m.Klub2.Navn + "</td><td> : </td><td style=\"text-align:right\">");
+                    }
+
+                    //double p1 = loebere.Where(item => item.Value.klub == m.klub1).Sum(item => item.Value.GetSumPoint(m));
+                    //double p2 = loebere.Where(item => item.Value.klub == m.klub2).Sum(item => item.Value.GetSumPoint(m));
+
+                    double p1 = m.Score1();
+                    double p2 = m.Score2();
+
+                    output.AppendLine(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td> - </td><td style=\"text-align:right\">" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td></tr>");
+
+                    n++;
+                }
+                output.AppendLine("</tbody></table>");
+                if (_config.Layout == "Blå overskrifter")
+                {
+                    output.AppendLine("</div>");
+                    output.AppendLine("</div>");
+                }
+            }
+            else
+            {
+                int n = 1;
+                int maxL = 0;
+                foreach (Match m in Matcher)
+                {
+                    int L = (n.ToString() + " : " + m.Klub1.Navn + " - " + m.Klub2.Navn).PadRight(40).Length;
+                    if (L > maxL)
+                    {
+                        maxL = L;
+                    }
+                    n++;
+                }
+                n = 1;
+                foreach (Match m in Matcher)
+                {
+                    output.Append(((n.ToString() + " : " + m.Klub1.Navn + " - " + m.Klub2.Navn).PadRight(maxL) + " : "));
+                    double p1 = m.Score1();
+                    double p2 = m.Score2();
+
+                    output.AppendLine(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + " - " + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5));
+
+                    n++;
+                }
+
+                output.AppendLine();
+            }
+
+            return output.ToString();
+        }
+
+        private string _LavMatchDetaljerHTML()
+        {
+            StringBuilder html = new StringBuilder();
+            //if (_config.Layout == "Standard")
+            //{
+            //    html.AppendLine("<p>");
+
+            //    html.AppendLine("<table class=\"matcher\">");
+            //    html.AppendLine("<tbody class=\"matcher\">");
+            //}
+            //else if (_config.Layout == "Blå overskrifter")
+            //{
+            //    html.AppendLine("<div class=\"matcher\">");
+            //    html.AppendLine("<table class=\"matcher\">");
+            //    html.AppendLine("<tbody>");
+            //}
+
+            int n = 1;
+            //foreach (Match m in Matcher)
+            //{
+            //    if (_config.Layout == "Standard")
+            //    {
+            //        html.Append("<tr class=\"matcher\"><td>" + n.ToString() + "</td><td> : </td><td>" + m.Klub1.Navn + "</td><td> - </td><td>" + m.Klub2.Navn + "</td><td> : </td><td style=\"text-align:right\">");
+            //    }
+            //    else if (_config.Layout == "Blå overskrifter")
+            //    {
+            //        html.Append("<tr><td>" + n.ToString() + "</td><td> : </td><td class=\"knavn\">" + m.Klub1.Navn + "</td><td> - </td><td class=\"knavn\">" + m.Klub2.Navn + "</td><td> : </td><td style=\"text-align:right\">");
+            //    }
+
+            //    //double p1 = loebere.Where(item => item.Value.klub == m.klub1).Sum(item => item.Value.GetSumPoint(m));
+            //    //double p2 = loebere.Where(item => item.Value.klub == m.klub2).Sum(item => item.Value.GetSumPoint(m));
+
+            //    double p1 = m.Score1();
+            //    double p2 = m.Score2();
+
+            //    html.AppendLine(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td> - </td><td style=\"text-align:right\">" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td></tr>");
+
+            //    n++;
+            //}
+            //html.AppendLine("</tbody></table>");
+            //if (_config.Layout == "Blå overskrifter")
+            //{
+            //    html.AppendLine("</div>");
+            //    html.AppendLine("</div>");
+            //}
+
+            // matcherneper gruppe
+            // make match numbers
+            if (_config.Layout == "Standard")
+            {
+                html.AppendLine("<p><table class=\"matchgruppe\">");
+                html.AppendLine("<thead class=\"matchgruppe\">");
+                html.Append("<tr class=\"matchgruppe\"><th>&nbsp;</th>");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("<div class=\"matchgruppe\">");
+                html.AppendLine("<div class=\"matchgruppeHeader\">Klasse oversigt</div>");
+                html.AppendLine("<table class=\"matchgruppe\">");
+                html.AppendLine("<thead>");
+                html.Append("<tr><th>&nbsp;</th>");
+            }
+
+            n = 1;
+            foreach (Match m in Matcher)
+            {
+                if (_config.Layout == "Standard")
+                {
+                    html.Append("<th class='matchgruppe' >m" + n.ToString() + "</th>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    html.Append("<th>m" + n.ToString() + "</th>");
+                }
+                n = n + 1;
+            }
+            html.AppendLine("</tr>");
+            if (_config.Layout == "Standard")
+            {
+                html.AppendLine("</thead><tbody class=\"matchgruppe\">");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("</thead><tbody>");
+            }
+            // print data
+            foreach (Gruppe g in Grupper)
+            {
+                if (_config.Layout == "Standard")
+                {
+                    html.Append("<tr class=\"matchgruppe\"><td class='matchgruppe'>" + g.navn);
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    html.Append("<tr><td class=\"bnavn\">" + g.navn);
+                }
+                html.Append("</td>");
+
+                foreach (Match m in Matcher)
+                {
+                    //double p1 = g.loebere.Where(item => item.Value.klub == m.klub1).Sum(item => item.Value.GetSumPoint(m));
+                    //double p2 = g.loebere.Where(item => item.Value.klub == m.klub2).Sum(item => item.Value.GetSumPoint(m));
+                    double p1 = m.Loebspoint1(g.Loebere);
+                    double p2 = m.Loebspoint2(g.Loebere);
+                    ////if (m.harUdeblevne)
+                    ////{
+                    ////    // halver point antallet
+                    ////    p1 /= 2;
+                    ////    p2 /= 2;
+                    ////}
+
+                    if (_config.Layout == "Standard")
+                    {
+                        html.Append("<td class='matchgruppe'>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                    }
+                    else if (_config.Layout == "Blå overskrifter")
+                    {
+                        html.Append("<td>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                    }
+                }
+                html.AppendLine("</tr>");
+            }
+
+            // for 'ialt'
+            if (_config.Layout == "Standard")
+            {
+                html.Append("<tr class=\"matchgruppe\"><td class='matchgruppe'>Ialt:");
+            }
+            else if (_config.Layout == "Blå overskrifter")
+            {
+                html.Append("<tr><td>Ialt:");
+            }
+            html.Append("</td>");
+            foreach (Match m in Matcher)
+            {
+                double p1 = m.Loebspoint1(this.Loebere);
+                double p2 = m.Loebspoint2(this.Loebere);
+                if (_config.Layout == "Standard")
+                {
+                    html.Append("<td class='matchgruppe'>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                }
+                else if (_config.Layout == "Blå overskrifter")
+                {
+                    html.Append("<td>" + p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td>");
+                }
+            }
+            html.AppendLine("</tr>");
+
+            html.AppendLine("</tbody></table>");
+            if (_config.Layout == "Blå overskrifter")
+            {
+                html.AppendLine("</div>");
+            }
+            return html.ToString();
+        }
+
+        private List<string> _LavKlasseBanerHTML()
+        {
+            List<string> htmlSections = new List<string>();
+
+            if (!Config.PrintBaner)
+            {
+                // gruppe detalje resultater
+                foreach (Gruppe g in Grupper)
+                {
+                    var lll = g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle);
+                    if (lll.Count() > 0 || Config.PrintAlleGrupper)
+                    {
+                        StringBuilder html = new StringBuilder();
+                        if (_config.Layout == "Blå overskrifter")
+                            html.AppendLine("<div class=\"gruppe\">");
+                        html.AppendLine(g.LavHTMLoverskrift(Config.Layout));
+                        html.AppendLine(htmlTable(g.navn, g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle).Select(ll => ll.Value).ToList()));
+                        if (_config.Layout == "Blå overskrifter")
+                            html.AppendLine("</div>");
+
+                        htmlSections.Add(html.ToString());
+                    }
+                }
+            }
+            else
+            {
+                foreach (Bane b in Config.baner.OrderBy(bb => bb.Navn))
+                {
+                    StringBuilder html = new StringBuilder();
+
+                    var kl = Config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
+                    // find løbere på samme bane - og vælg dem i matchen, eller alle
+                    var lll = Loebere.Where(l => kl.Contains(l.Value.Løbsklassenavn) && (l.Value.Inkl == true || Config.PrintAlle)).Select(ll => ll.Value).ToList();
+                    if (lll.Count > 0 || Config.PrintAlleGrupper)
+                    {
+                        html.AppendLine(b.LavHTMLoverskrift());
+                        html.AppendLine(htmlTable(b.Navn, lll));
+
+                        htmlSections.Add(html.ToString());
+                    }
+                }
+            }
+
+            return htmlSections;
+        }
+
+        private string _LavMatchStillingTXT()
+        {
+            return _LavMatchStilling(false);
+        }
+
+        private string _LavMatchDetaljerTXT()
+        {
+            StringBuilder output = new StringBuilder();
+
+            int n = 1;
+            //foreach (Match m in Matcher)
+            //{
+            //    int L = (n.ToString() + " : " + m.Klub1.Navn + " - " + m.Klub2.Navn).PadRight(40).Length;
+            //    if (L > maxL)
+            //    {
+            //        maxL = L;
+            //    }
+            //    n++;
+            //}
+            //n = 1;
+            //foreach (Match m in Matcher)
+            //{
+            //    output.Append(((n.ToString() + " : " + m.Klub1.Navn + " - " + m.Klub2.Navn).PadRight(maxL) + " : "));
+            //    double p1 = m.Score1();
+            //    double p2 = m.Score2();
+
+            //    output.AppendLine(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5) + " - " + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(5));
+
+            //    n++;
+            //}
+
+            //output.AppendLine();
+
+            // first calculate the width of each column
+            List<int> p1widths = new List<int>();
+            List<int> p2widths = new List<int>();
+            int mm = 0;
+            n = 0;
+            foreach (Gruppe g in Grupper)
+            {
+                mm = 0;
+                foreach (Match m in Matcher)
+                {
+                    // double p1 = g.loebere.Where(item => item.Value.klub == m.klub1).Sum(item => item.Value.GetSumPoint(m));
+                    // double p2 = g.loebere.Where(item => item.Value.klub == m.klub2).Sum(item => item.Value.GetSumPoint(m));
+
+                    double p1 = m.Loebspoint1(g.Loebere);
+                    double p2 = m.Loebspoint2(g.Loebere);
+
+                    int o1 = p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).Length;
+                    int o2 = p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).Length;
+
+                    if (n == 0)
+                    {
+                        p1widths.Add(o1);
+                        p2widths.Add(o2);
+                    }
+                    else
+                    {
+                        p1widths[mm] = p1widths[mm] < o1 ? o1 : p1widths[mm];
+                        p2widths[mm] = p2widths[mm] < o2 ? o2 : p2widths[mm];
+                    }
+                    mm++;
+                }
+                n++;
+            }
+
+            // og for 'ialt'
+            mm = 0;
+            foreach (Match m in Matcher)
+            {
+                double p1 = m.Loebspoint1(this.Loebere);
+                double p2 = m.Loebspoint2(this.Loebere);
+
+                int o1 = p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).Length;
+                int o2 = p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).Length;
+
+                if (n == 0)
+                {
+                    p1widths.Add(o1);
+                    p2widths.Add(o2);
+                }
+                else
+                {
+                    p1widths[mm] = p1widths[mm] < o1 ? o1 : p1widths[mm];
+                    p2widths[mm] = p2widths[mm] < o2 ? o2 : p2widths[mm];
+                }
+                mm++;
+            }
+
+            // make match numbers
+            int w = 0;
+            foreach (Gruppe g in Grupper)
+            {
+                int wx = g.navn.PadRight(6).Length;
+                if (wx > w) w = wx;
+            }
+
+            output.Append("".PadRight(w, ' '));
+            n = 1;
+            mm = 0;
+            foreach (Match m in Matcher)
+            {
+                int w1 = p1widths[mm];
+                int w2 = p2widths[mm];
+                output.Append("m".PadLeft(w1) + n.ToString().PadRight(w2) + "  ");
+                mm++;
+                n++;
+            }
+            output.AppendLine();
+
+            // print underline
+            output.Append("".PadRight(w, ' '));
+            mm = 0;
+            foreach (Match m in Matcher)
+            {
+                int w1 = p1widths[mm];
+                int w2 = p2widths[mm];
+                output.Append(" ".PadLeft(w1 + w2 + 1 + 1, '-'));
+                mm++;
+            }
+            output.AppendLine();
+
+            // print data
+            foreach (Gruppe g in Grupper)
+            {
+                mm = 0;
+                output.Append(g.navn.PadRight(w));
+                foreach (Match m in Matcher)
+                {
+                    int w1 = p1widths[mm];
+                    int w2 = p2widths[mm];
+
+                    //double p1 = g.loebere.Where(item => item.Value.klub == m.klub1).Sum(item => item.Value.GetSumPoint(m));
+                    //double p2 = g.loebere.Where(item => item.Value.klub == m.klub2).Sum(item => item.Value.GetSumPoint(m));
+                    double p1 = m.Loebspoint1(g.Loebere);
+                    double p2 = m.Loebspoint2(g.Loebere);
+
+                    output.Append(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(w1) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadRight(w2) + " ");
+                    mm++;
+                }
+                output.AppendLine();
+            }
+
+            // tilføj ialt:
+            mm = 0;
+            output.Append("Ialt:".PadRight(w, ' '));
+            foreach (Match m in Matcher)
+            {
+                int w1 = p1widths[mm];
+                int w2 = p2widths[mm];
+
+                //double p1 = g.loebere.Where(item => item.Value.klub == m.klub1).Sum(item => item.Value.GetSumPoint(m));
+                //double p2 = g.loebere.Where(item => item.Value.klub == m.klub2).Sum(item => item.Value.GetSumPoint(m));
+                double p1 = m.Loebspoint1(this.Loebere);
+                double p2 = m.Loebspoint2(this.Loebere);
+
+                output.Append(p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadLeft(w1) + "-" + p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo).PadRight(w2) + " ");
+                mm++;
+            }
+            output.AppendLine();
+
+
+            return output.ToString();
+        }
+
+        private List<string> _LavKlasseBanerTXT()
+        {
+            List<string> output = new List<string>();
+
+            if (!Config.PrintBaner)
+            {
+                foreach (Gruppe g in Grupper)
+                {
+                    var lg = g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle);
+                    if (lg.Count() > 0 || Config.PrintAlleGrupper)
+                    {
+                        output.Add(g.LavTXTOverskrift() + txtTable(g.Loebere.Where(l => l.Value.Inkl == true || Config.PrintAlle).Select(ll => ll.Value).ToList()));
+                    }
+                }
+            }
+            else
+            {
+                foreach (Bane b in Config.baner.OrderBy(bb => bb.Navn))
+                {
+                    var kl = Config.classes.Where(k => k.Bane != null && k.Bane.Navn.Equals(b.Navn)).Select(kk => kk.Navn);
+                    // find løbere på samme bane - og vælg dem i matchen, eller alle
+                    var lll = Loebere.Where(l => kl.Contains(l.Value.Løbsklassenavn) && (l.Value.Inkl == true || Config.PrintAlle)).Select(ll => ll.Value).ToList();
+                    if (lll.Count > 0 || Config.PrintAlleGrupper)
+                    {
+                        output.Add(b.LavTXToverskrift() + txtTable(lll));
+                    }
+                }
+            }
+            return output;
+        }
+        #endregion
 
         /// <summary>
         /// lav HTML head sektion
@@ -906,7 +1531,6 @@ namespace Divisionsmatch
         }        
         #endregion
 
-        #region private methods
         public string LavHTMLStilling(Config config)
         {
             StringBuilder html = new StringBuilder();
@@ -1061,6 +1685,7 @@ namespace Divisionsmatch
             return html.ToString();
         }
 
+        #region private methods
         private void _load(Config config)
         {
             // clear det hele
@@ -1081,9 +1706,10 @@ namespace Divisionsmatch
 
             foreach (GruppeOgKlasse gk in _config.gruppeOgKlasse) //.Where(item => item.LøbsKlasse.Trim() != "-" && item.LøbsKlasse.Trim() != string.Empty))
             {
-                if (gk.LøbsKlasse != null && gk.LøbsKlasse.Trim() != "-" && gk.LøbsKlasse.Trim() != string.Empty)
+                if (gk.LøbsKlasse != null && gk.LøbsKlasse.Trim() != string.Empty)
                 {
-                    Gruppe g = Grupper.Find(item => item.navn == gk.Gruppe);
+                    // er gruppern ikke adderet før?
+                    Gruppe g = Grupper.Find(item => item.navn == gk.Gruppe /*&& gk.LøbsKlasse.Trim() != "--" 20210930 */ ); // inkluder alle grupper, også dem uden løbsklasse
                     if (g == null)
                     {
                         // lav gruppen
@@ -1091,7 +1717,7 @@ namespace Divisionsmatch
                         Grupper.Add(g);
                     }
 
-                    // tilføj klasse definitionen
+                    // tilføj klasse definitionen hvis den ikke allerede findes
                     if (!g.Klasser.Exists(k => k.LøbsKlasse != null && k.LøbsKlasse.Navn.Equals(gk.LøbsKlasse)))
                     {
                         Klasse kk = _config.classes.Find(c => c.Navn == gk.LøbsKlasse);

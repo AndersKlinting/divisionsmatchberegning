@@ -1,5 +1,5 @@
 rootURL = "http://divisionsmatch.codeplex.com"
-rootURL = "http://www.fif-orientering.dk/divisionsmatch"
+rootURL = "http://www.orientering.dk/divisionsmatch"
 
 ' find placering
 Set objShell = CreateObject("Wscript.Shell")

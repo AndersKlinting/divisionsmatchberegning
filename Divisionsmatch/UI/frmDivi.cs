@@ -25,6 +25,7 @@ using System.Linq;
 using System.Management;
 using System.Text;
 using System.Threading;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml.Serialization;
 using CommandLineParser.Arguments;
@@ -45,24 +46,24 @@ namespace Divisionsmatch
         /// <summary>
         /// URL for auto update
         /// </summary>
-        public static string autoUpdateSiteURL = @"http://www.fif-orientering.dk/divisionsmatch";
+        public static string autoUpdateSiteURL = @"http://www.orientering.dk/divisionsmatch";
 
         /// <summary>
         /// URL for auto update
         /// </summary>
-        public static string autoUpdateURL = @"http://www.fif-orientering.dk/divisionsmatch/versioninfo.xml";
+        public static string autoUpdateURL = @"http://www.orientering.dk/divisionsmatch/versioninfo.xml";
 
         /// <summary>
         /// URL for auto update
         /// </summary>
-        public static string autoUpdateTestURL = @"http://www.fif-orientering.dk/divisionsmatch/test/versioninfo.xml";
+        public static string autoUpdateTestURL = @"http://www.orientering.dk/divisionsmatch/test/versioninfo.xml";
 
         internal static frmDivi Instance;
 
         private Hashtable ieOriginalPageSetup = new Hashtable();
         private Hashtable ieNewPageSetup = new Hashtable();
         private Config config = null;
-        private string configFile = string.Empty;
+        private string _configFile = string.Empty;
         private Staevne _mitstaevne = null; // new Staevne(Application.ProductVersion);
         private FileSystemWatcher watcher = null;
         private string _txtResultatFil = string.Empty;
@@ -135,6 +136,20 @@ namespace Divisionsmatch
             set
             {
                 _frmNancy = value;
+            }
+        }
+
+        internal string configFile
+        {
+            get
+            {
+                return _configFile;
+            }
+            set
+            {
+                _configFile = value;
+
+                setTitle();
             }
         }
 
@@ -483,32 +498,43 @@ namespace Divisionsmatch
             }
             if (frmResultat.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-
-                // check om resultat er samme type som blev brugt til konfiguration
-                bool isTxt = false;
-                bool isEntryXml = false;
-                bool isStartXml = false;
-                bool isResultXml = false;
-                string fileVersion = Util.CheckFileVersion(frmResultat.resultatDefinition.Filnavn, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
-                if (config.ConfigClassSrc != "" && config.ConfigClassSrc != fileVersion)
+                if (!string.IsNullOrWhiteSpace(frmResultat.resultatDefinition.Filnavn))
                 {
-                    if (MessageBox.Show("Du brugte " + config.ConfigClassSrc + " data til at konfigurere klubber og klasser.\nNu læser du resultater i " + fileVersion + " format.\nDet kan give problemer at bruge forskelligt format. Ønsker du at fortsætte?", "Advarsel", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
+                    // check om resultat er samme type som blev brugt til konfiguration
+                    bool isTxt = false;
+                    bool isEntryXml = false;
+                    bool isStartXml = false;
+                    bool isResultXml = false;
+                    string fileVersion = Util.CheckFileVersion(frmResultat.resultatDefinition.Filnavn, out isEntryXml, out isStartXml, out isResultXml, out isTxt);
+                    if (config.ConfigClassSrc != "" && config.ConfigClassSrc != fileVersion)
                     {
-                        return;
+                        if (MessageBox.Show("Du brugte " + config.ConfigClassSrc + " data til at konfigurere klubber og klasser.\nNu læser du resultater i " + fileVersion + " format.\nDet kan give problemer at bruge forskelligt format. Ønsker du at fortsætte?", "Advarsel", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.No)
+                        {
+                            return;
+                        }
                     }
+
+                    _currentResultDirectory = Path.GetDirectoryName(frmResultat.resultatDefinition.Filnavn);
+                    _loadResultatFil(frmResultat.resultatDefinition.Filnavn);
+
+                    resultatDefinition = frmResultat.resultatDefinition;
+
+                    // juster UI
+                    txtCSVFile.Text = resultatDefinition.ToString();
+                    btnBeregn.Enabled = true;
+
+                    _watchFile();
+                    _beregn();
                 }
+                else
+                {
+                    // juster UI
+                    txtCSVFile.Text = string.Empty;
+                    btnBeregn.Enabled = false;
 
-                _currentResultDirectory = Path.GetDirectoryName(frmResultat.resultatDefinition.Filnavn);
-                _loadResultatFil(frmResultat.resultatDefinition.Filnavn);
-
-                resultatDefinition = frmResultat.resultatDefinition;
-
-                // juster UI
-                txtCSVFile.Text = resultatDefinition.ToString();
-                btnBeregn.Enabled = true;
-
-                _watchFile();
-                _beregn();
+                    resultatDefinition = frmResultat.resultatDefinition;
+                    _watchFile();
+                }
             }
         }
         #endregion
@@ -527,7 +553,6 @@ namespace Divisionsmatch
         List<string> AllTextToPrint = new List<string>();
         int pageNum;
         int grpNum;
-        bool firstPage;
         string printDate = string.Empty;
 
         /// <summary>
@@ -538,7 +563,6 @@ namespace Divisionsmatch
         {
             // document skal indeholde en liste af text output, som hver skal skifte side
             nyeSider = new List<PageText>();
-            firstPage = true;
             pageNum = 0;
             grpNum = 0;
             this.HeaderText = string.Empty;
@@ -547,8 +571,9 @@ namespace Divisionsmatch
             {
                 this.AllTextToPrint.Add(mitDivisionsResultat.PrintResultText(mitstaevne));
             }
-            this.AllTextToPrint.Add(mitstaevne.Printmatcher());
-            this.AllTextToPrint.AddRange(mitstaevne.LavTXTafsnit());
+            //this.AllTextToPrint.Add(mitstaevne.Printmatcher());
+            //this.AllTextToPrint.AddRange(mitstaevne.LavTXTafsnit());
+            this.AllTextToPrint.AddRange(mitstaevne.LavResultatSektioner(false, true, true, true));
             if (!config.SideSkift)
             {
                 // ikke sideskift, dvs alle printes som første side
@@ -1064,6 +1089,11 @@ namespace Divisionsmatch
             {
                 this.Text += " *";
             }
+
+            if (frmNancy != null)
+            {
+                frmNancy.SetTitle(configFile != string.Empty ? Path.GetFileName(configFile) :  "(uden titel)");
+            }
         }
 
         private void _resetBeregnOgPrint()
@@ -1098,6 +1128,7 @@ namespace Divisionsmatch
             informationToolStripMenuItem.Enabled = true;
             btnPrint.BackColor = Control.DefaultBackColor;
             btnPrint.UseVisualStyleBackColor = true;
+            progressBarMeOS.Visible = false;
 
             if (gamleSider != null)
             {
@@ -1137,14 +1168,16 @@ namespace Divisionsmatch
                     {
                         text += mitDivisionsResultat.PrintResultText(mitstaevne) + System.Environment.NewLine;
                     }
-                    text += mitstaevne.Printmatcher();
+                    //text += mitstaevne.Printmatcher();
+                    text += String.Concat(mitstaevne.LavResultatSektioner(false, true, true, false));
                     textBox1.Text = text;
                     textBox1.Font = config.font.FontValue;
                     textBox1.SelectionStart = pos;
                     textBox1.ScrollToCaret();
 
                     pos = textBox3.SelectionStart;
-                    textBox3.Text = string.Concat(mitstaevne.LavTXTafsnit().ToArray());
+                    //textBox3.Text = string.Concat(mitstaevne.LavTXTafsnit().ToArray());
+                    textBox3.Text = string.Concat(mitstaevne.LavResultatSektioner(false, false, false, true));
                     textBox3.Font = config.font.FontValue;
                     textBox3.SelectionStart = pos;
                     textBox3.ScrollToCaret();
@@ -1157,9 +1190,10 @@ namespace Divisionsmatch
                     {
                         (webOutput.Tag as List<string>).Add(mitDivisionsResultat.PrintResultHtml(mitstaevne));
                     }
-                    (webOutput.Tag as List<string>).Add(mitstaevne.Printstilling(true));
-                    (webOutput.Tag as List<string>).Add(mitstaevne.LavHTMLStilling(config));
-                    (webOutput.Tag as List<string>).AddRange(mitstaevne.LavHTMLafsnit());
+                    //(webOutput.Tag as List<string>).Add(mitstaevne.Printstilling(true));
+                    //(webOutput.Tag as List<string>).Add(mitstaevne.LavHTMLStilling(config));
+                    //(webOutput.Tag as List<string>).AddRange(mitstaevne.LavHTMLafsnit());
+                    (webOutput.Tag as List<string>).AddRange(mitstaevne.LavResultatSektioner(true, true, true, true));
                     webOutput.Navigate(mitstaevne.LavHTML(webOutput.Tag as List<string>));
                     Application.DoEvents();
                 }
@@ -1178,61 +1212,82 @@ namespace Divisionsmatch
         private void _watchFile()
         {
             // Create a new FileSystemWatcher and set its properties.
-            if (watcher == null)
+            if (!string.IsNullOrWhiteSpace(resultatDefinition.Filnavn))
             {
-                watcher = new FileSystemWatcher();
-                watcher.Path = Path.GetDirectoryName(resultatDefinition.Filnavn);
-                watcher.Filter = Path.GetFileName(resultatDefinition.Filnavn);
-
-                /* Watch for changes in LastWrite times*/
-                watcher.NotifyFilter = NotifyFilters.Attributes | NotifyFilters.CreationTime | NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.Size;
-
-                // Add event handlers.
-                watcher.Created += new FileSystemEventHandler(_csvFileOnChanged);
-                watcher.Changed += new FileSystemEventHandler(_csvFileOnChanged);
-
-                // link to the form
-                watcher.SynchronizingObject = this;
-
-                // Begin watching.
-                watcher.EnableRaisingEvents = true;
-            }
-            else
-            {
-                // update the file to watch for
-                watcher.EnableRaisingEvents = false;
-                watcher.Path = Path.GetDirectoryName(resultatDefinition.Filnavn);
-                watcher.Filter = Path.GetFileName(resultatDefinition.Filnavn);
-                watcher.EnableRaisingEvents = true;
-            }
-
-            // start timer hvs det er meos 
-            if (resultatDefinition.IsMeOS)
-            {
-                if (_meosTimer == null)
+                // file to watch
+                if (watcher == null)
                 {
-                    progressBarMeOS.Maximum = resultatDefinition.IntervalMeOS;
-                    progressBarMeOS.Value = resultatDefinition.IntervalMeOS;
-                    progressBarMeOS.Visible = true;
-                    _meosTimerCount = resultatDefinition.IntervalMeOS;
-                    _meosTimer = new System.Timers.Timer();
-                    _meosTimer.Interval = 1000;
-                    _meosTimer.AutoReset = true;
-                    _meosTimer.Elapsed += OnMeOSTimerEvent;
-                    _meosTimer.Start();
+                    watcher = new FileSystemWatcher();
+                    watcher.Path = Path.GetDirectoryName(resultatDefinition.Filnavn);
+                    watcher.Filter = Path.GetFileName(resultatDefinition.Filnavn);
+
+                    /* Watch for changes in LastWrite times*/
+                    watcher.NotifyFilter = NotifyFilters.Attributes | NotifyFilters.CreationTime | NotifyFilters.LastAccess | NotifyFilters.LastWrite | NotifyFilters.Size;
+
+                    // Add event handlers.
+                    watcher.Created += new FileSystemEventHandler(_csvFileOnChanged);
+                    watcher.Changed += new FileSystemEventHandler(_csvFileOnChanged);
+
+                    // link to the form
+                    watcher.SynchronizingObject = this;
+
+                    // Begin watching.
+                    watcher.EnableRaisingEvents = true;
                 }
                 else
                 {
-                    // update
-                    _meosTimer.Stop();
-                    _meosTimerCount = resultatDefinition.IntervalMeOS;
-                    progressBarMeOS.Maximum = resultatDefinition.IntervalMeOS;
-                    progressBarMeOS.Value = progressBarMeOS.Maximum;
-                    _meosTimer.Start();
+                    // update the file to watch for
+                    watcher.EnableRaisingEvents = false;
+                    watcher.Path = Path.GetDirectoryName(resultatDefinition.Filnavn);
+                    watcher.Filter = Path.GetFileName(resultatDefinition.Filnavn);
+                    watcher.EnableRaisingEvents = true;
+                }
+
+                // start timer hvs det er meos 
+                if (resultatDefinition.IsMeOS)
+                {
+                    if (_meosTimer == null)
+                    {
+                        progressBarMeOS.Maximum = resultatDefinition.IntervalMeOS;
+                        progressBarMeOS.Value = resultatDefinition.IntervalMeOS;
+                        progressBarMeOS.Visible = true;
+                        _meosTimerCount = resultatDefinition.IntervalMeOS;
+                        _meosTimer = new System.Timers.Timer();
+                        _meosTimer.Interval = 1000;
+                        _meosTimer.AutoReset = true;
+                        _meosTimer.Elapsed += OnMeOSTimerEvent;
+                        _meosTimer.Start();
+                    }
+                    else
+                    {
+                        // update
+                        _meosTimer.Stop();
+                        _meosTimerCount = resultatDefinition.IntervalMeOS;
+                        progressBarMeOS.Maximum = resultatDefinition.IntervalMeOS;
+                        progressBarMeOS.Value = progressBarMeOS.Maximum;
+                        _meosTimer.Start();
+                    }
+                }
+                else
+                {
+                    progressBarMeOS.Visible = false;
+                    if (_meosTimer != null)
+                    {
+                        _meosTimer.Stop();
+                        _meosTimer.Elapsed -= OnMeOSTimerEvent;
+                        _meosTimer.Dispose();
+                        _meosTimer = null;
+                    }
                 }
             }
             else
             {
+                if (watcher != null)
+                {
+                    watcher.Dispose();
+                    watcher = null;
+                }
+
                 progressBarMeOS.Visible = false;
                 if (_meosTimer != null)
                 {
@@ -1256,12 +1311,14 @@ namespace Divisionsmatch
                     _meosTimerCount = resultatDefinition.IntervalMeOS;
                 }
                 progressBarMeOS.Invoke(new Action(delegate () { 
+                                                        progressBarMeOS.BackColor = Color.Green;
                                                         progressBarMeOS.Value = _meosTimerCount;
                                                         progressBarMeOS.Text = _meosTimerCount.ToString();
                                                         }));
             }
-            finally
+            catch (Exception ex)
             {
+                MessageBox.Show(string.Format("FEJL : {0} \r\n\r\nVælg data igen.", ex), "Fejl ved kald til MeOS server", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -1273,6 +1330,7 @@ namespace Divisionsmatch
             DateTime lastWriteTime = File.GetLastWriteTime(e.FullPath);
             if (lastWriteTime != lastRead)
             {
+                lastRead = lastWriteTime;
                 frmBeregnPop pop = new frmBeregnPop();
                 try
                 {
@@ -1519,9 +1577,11 @@ namespace Divisionsmatch
             if (mitDivisionsResultat != null)
             {
                 sections.Add(mitDivisionsResultat.PrintResultHtml(mitstaevne));
-            }            sections.Add(mitstaevne.Printstilling(true));
-            sections.Add(mitstaevne.LavHTMLStilling(config));
-            sections.AddRange(mitstaevne.LavHTMLafsnit());
+            }
+            //sections.Add(mitstaevne.Printstilling(true));
+            //sections.Add(mitstaevne.LavHTMLStilling(config));
+            //sections.AddRange(mitstaevne.LavHTMLafsnit());
+            sections.AddRange(mitstaevne.LavResultatSektioner(true, true, true, true));
             string path = new Uri(mitstaevne.LavHTML(sections)).LocalPath;
             File.Copy(path, exportFil, true);
 
@@ -1552,7 +1612,8 @@ namespace Divisionsmatch
             {
                 allText += mitDivisionsResultat.PrintResultText(mitstaevne) + Environment.NewLine;
             }
-            allText += mitstaevne.Printmatcher() + Environment.NewLine + string.Concat(mitstaevne.LavTXTafsnit().ToArray());
+            //allText += mitstaevne.Printmatcher() + Environment.NewLine + string.Concat(mitstaevne.LavTXTafsnit().ToArray());
+            allText += string.Concat(mitstaevne.LavResultatSektioner(false, true, true, true));
             File.WriteAllText(exportFil, allText, Encoding.Default);
         }
 
@@ -1561,7 +1622,11 @@ namespace Divisionsmatch
         private void _printWebPage(bool auto)
         {
             _setIEPageSetup(ieNewPageSetup);
-            string oldWebDoc = File.ReadAllText(webOutput.Url.AbsolutePath, Encoding.Default);
+            string oldWebDoc = String.Empty;
+            if (webOutput.Url != null)
+            {
+                oldWebDoc = File.ReadAllText(webOutput.Url.AbsolutePath, Encoding.UTF8);
+            }
             List<string> newHTMLsections = new List<string>();
 
             if (config.PrintNye)
@@ -1581,9 +1646,10 @@ namespace Divisionsmatch
                 {
                     newHTMLsections = new List<string>();
                     newHTMLsections.Add(mitDivisionsResultat.PrintResultHtml(mitstaevne));
-                    newHTMLsections.Add(mitstaevne.Printstilling(true));
-                    newHTMLsections.Add(mitstaevne.LavHTMLStilling(config));
-                    newHTMLsections.AddRange(mitstaevne.LavHTMLafsnit());
+                    //newHTMLsections.Add(mitstaevne.Printstilling(true));
+                    //newHTMLsections.Add(mitstaevne.LavHTMLStilling(config));
+                    //newHTMLsections.AddRange(mitstaevne.LavHTMLafsnit());
+                    newHTMLsections.AddRange(mitstaevne.LavResultatSektioner(true, true, true, true));
                 }
                 else
                 {
@@ -1600,12 +1666,12 @@ namespace Divisionsmatch
                 }
                 else
                 {
-                    // load an print new content
+                    // load and print new content
                     webOutput.Navigate(docPath);
                     webOutput.ShowPrintDialog();
 
-                    // reset
-                    File.WriteAllText(new Uri(docPath).LocalPath, oldWebDoc, Encoding.Default);
+                    // reset to content before print
+                    File.WriteAllText(new Uri(docPath).LocalPath, oldWebDoc, Encoding.UTF8);
                     webOutput.Navigate(docPath);
                     Application.DoEvents();
                 }
@@ -1621,28 +1687,107 @@ namespace Divisionsmatch
             }
         }
 
+        // navigate WebBrowser to the list of urls in a loop
+        // by Noseratio - http://stackoverflow.com/users/1768303/noseratio
+        static async Task<object> DoPrintWebAsync(object[] args)
+        {
+            Console.WriteLine("Start printing...");
+
+            using (var wb = new WebBrowser())
+            {
+                wb.ScriptErrorsSuppressed = true;
+
+                if (wb.Document == null && wb.ActiveXInstance == null)
+                    throw new ApplicationException("Unable to initialize the underlying WebBrowserActiveX");
+
+                // get the underlying WebBrowser ActiveX object;
+                // this code depends on SHDocVw.dll COM interop assembly,
+                // generate SHDocVw.dll: "tlbimp.exe ieframe.dll",
+                // and add as a reference to the project
+                var wbax = (SHDocVw.WebBrowser)wb.ActiveXInstance;
+
+                TaskCompletionSource<bool> loadedTcs = null;
+                WebBrowserDocumentCompletedEventHandler documentCompletedHandler = (s, e) =>
+                    loadedTcs.TrySetResult(true); // turn event into awaitable task
+
+                TaskCompletionSource<bool> printedTcs = null;
+                SHDocVw.DWebBrowserEvents2_PrintTemplateTeardownEventHandler printTemplateTeardownHandler = (p) =>
+                    printedTcs.TrySetResult(true); // turn event into awaitable task
+
+                // navigate to each URL in the list
+                foreach (var url in args)
+                {
+                    loadedTcs = new TaskCompletionSource<bool>();
+                    wb.DocumentCompleted += documentCompletedHandler;
+                    try
+                    {
+                        wb.Navigate(url.ToString());
+                        // await for DocumentCompleted
+                        await loadedTcs.Task;
+                    }
+                    finally
+                    {
+                        wb.DocumentCompleted -= documentCompletedHandler;
+                    }
+
+                    // the DOM is ready, 
+                    //Console.WriteLine(url.ToString());
+                    //Console.WriteLine(wb.Document.Body.OuterHtml);
+
+                    // print the document
+                    printedTcs = new TaskCompletionSource<bool>();
+                    wbax.PrintTemplateTeardown += printTemplateTeardownHandler;
+                    try
+                    {
+                        wb.Print();
+                        // await for PrintTemplateTeardown - the end of printing
+                        await printedTcs.Task;
+                    }
+                    finally
+                    {
+                        wbax.PrintTemplateTeardown -= printTemplateTeardownHandler;
+                    }
+                    Console.WriteLine(string.Format("... '{}' printed",Path.GetFileName(url.ToString())));
+                }
+            }
+            //Console.WriteLine("End working.");
+            return null;
+        }
+
         private void PrintHtmlPage(string doc)
         {
-            // Create a WebBrowser instance. 
-            WebBrowser webBrowserForPrinting = new WebBrowser();
-
-            // Add an event handler that prints the document after it loads.
-            webBrowserForPrinting.DocumentCompleted +=
-                new WebBrowserDocumentCompletedEventHandler(PrintDocument);
-
-            // load the document
-            // open a document
-            webBrowserForPrinting.Navigate(doc);
+            // by Noseratio - http://stackoverflow.com/users/1768303/noseratio
+            var task = MessageLoopWorker.Run(DoPrintWebAsync, doc);
+            task.Wait(10000); // added interval to ensure it closes in batch
         }
 
-        private void PrintDocument(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-            // Print the document now that it is fully loaded.
-            ((WebBrowser)sender).Print();
+        //private void PrintHtmlPage_old(string doc)
+        //{
+        //    // Create a WebBrowser instance. 
+        //    WebBrowser webBrowserForPrinting = new WebBrowser();
 
-            // Dispose the WebBrowser now that the task is complete. 
-            ((WebBrowser)sender).Dispose();
-        }
+        //    webBrowserForPrinting.Visible = true;
+        //    webBrowserForPrinting.ScrollBarsEnabled = false;
+        //    webBrowserForPrinting.ScriptErrorsSuppressed = true;
+        //    webBrowserForPrinting.AllowNavigation = false;
+
+        //    // Add an event handler that prints the document after it loads.
+        //    // see https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.webbrowser.documentcompleted?view=netframework-4.5.2
+        //    webBrowserForPrinting.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(PrintDocument);
+
+        //    // load the document
+        //    // open a document
+        //    webBrowserForPrinting.Url = new Uri(doc);
+        //}
+
+        //private void PrintDocument(object sender, WebBrowserDocumentCompletedEventArgs e)
+        //{
+        //    // Print the document now that it is fully loaded.
+        //    ((WebBrowser)sender).Print();
+
+        //    // Dispose the WebBrowser now that the task is complete. 
+        //    ((WebBrowser)sender).Dispose();
+        //}
 
         // sample commandline arguments: -d "3-4 Division Op-Ned.divi" -c resultat.csv -p TXT
         private bool _doBatch(string[] args)
@@ -1677,6 +1822,7 @@ namespace Divisionsmatch
 
                 if (!nologo.Parsed)
                 {
+                    Console.WriteLine("");
                     Console.WriteLine("Divisionsmatch -  Copyright (C) 2013 Anders Klinting");
                     Console.WriteLine("");
                     Console.WriteLine("This program comes with ABSOLUTELY NO WARRANTY; for details see the About page");
@@ -1725,7 +1871,7 @@ namespace Divisionsmatch
                                 }
                                 else if (format.Value.ToUpperInvariant() == "WWW")
                                 {
-                                    Console.WriteLine("priner HTML");
+                                    Console.WriteLine("printer HTML");
                                     _printWebPage(true);
                                 }
                                 else
@@ -1856,27 +2002,27 @@ namespace Divisionsmatch
 
         private void rødToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.MistyRose;
+            setColor(Color.MistyRose);
         }
 
         private void grønToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.LightGreen;
+            setColor(Color.LightGreen);
         }
 
         private void gulToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.LightGoldenrodYellow;
+            setColor(Color.LightGoldenrodYellow);
         }
 
         private void blåToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.LightBlue;
+            setColor(Color.LightBlue);
         }
 
         private void standardToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.BackColor = Color.FromName("Control");
+            setColor(Color.FromName("Control"));
         }
 
         private void startlisteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -1923,6 +2069,9 @@ namespace Divisionsmatch
             if (frmNancy == null || frmNancy.IsDisposed)
             {
                 frmNancy = new frmNancy();
+                frmNancy.SetTitle ((configFile != string.Empty ?  Path.GetFileName(configFile) :  "(uden titel)"));
+                frmNancy.BackColor = this.BackColor;
+
                 frmNancy.Show();
             }
             else if (frmNancy != null)
@@ -1930,6 +2079,16 @@ namespace Divisionsmatch
                 frmNancy.Focus();
             }
         }
+
+        private void setColor(Color color)
+        {
+            this.BackColor = color;
+            
+            if (frmNancy != null)
+            {
+               frmNancy.BackColor = this.BackColor;
+            }
+        }       
 
         private void txtCSVFile_TextChanged(object sender, EventArgs e)
         {
@@ -1950,6 +2109,66 @@ namespace Divisionsmatch
         public static string GetDefaultPrinter()
         {
             return new PrinterSettings().PrinterName;
+        }
+    }
+
+    // a helper class to start the message loop and execute an asynchronous task
+    // by Noseratio - http://stackoverflow.com/users/1768303/noseratio
+    public static class MessageLoopWorker
+    {
+        public static async Task<object> Run(Func<object[], Task<object>> worker, params object[] args)
+        {
+            var tcs = new TaskCompletionSource<object>();
+
+            var thread = new Thread(() =>
+            {
+                EventHandler idleHandler = null;
+
+                idleHandler = async (s, e) =>
+                {
+                    // handle Application.Idle just once
+                    Application.Idle -= idleHandler;
+
+                    // return to the message loop
+                    await Task.Yield();
+
+                    // and continue asynchronously
+                    // propogate the result or exception
+                    try
+                    {
+                        var result = await worker(args);
+                        tcs.SetResult(result);
+                    }
+                    catch (Exception ex)
+                    {
+                        tcs.SetException(ex);
+                    }
+
+                    // signal to exit the message loop
+                    // Application.Run will exit at this point
+                    Application.ExitThread();
+                };
+
+                // handle Application.Idle just once
+                // to make sure we're inside the message loop
+                // and SynchronizationContext has been correctly installed
+                Application.Idle += idleHandler;
+                Application.Run();
+            });
+
+            // set STA model for the new thread
+            thread.SetApartmentState(ApartmentState.STA);
+
+            // start the thread and await for the task
+            thread.Start();
+            try
+            {
+                return await tcs.Task;
+            }
+            finally
+            {
+                thread.Join();
+            }
         }
     }
 }

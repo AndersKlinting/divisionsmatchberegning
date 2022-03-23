@@ -90,7 +90,7 @@ namespace Divisionsmatch
                 baner = new List<Bane>();
                 Dato = DateTime.Now.Date;
 
-                _TilfoejGruppeOgKlasse("Beg", "Beg");
+                _TilfoejGruppeOgKlasse("Begynder", "Begynder");
                 _TilfoejGruppeOgKlasse("D10", "D10");
                 _TilfoejGruppeOgKlasse("D12", "D12");
                 _TilfoejGruppeOgKlasse("D12B", "D12B");
@@ -837,8 +837,6 @@ namespace Divisionsmatch
 
         private void _loadclassesfromcsv(string filnavn)
         {
-            bool isOE = true;
-
             // find klasser og evt baner
             // open the file "data.csv" which is a CSV file with headers
             using (CsvReader csv = new CsvReader(new StreamReader(filnavn, ASCIIEncoding.Default), false, ';'))
@@ -855,7 +853,6 @@ namespace Divisionsmatch
                     // EResults Pro Tilpasset csv format - no header
                     idxKlasse = 0;
                     idxBane = csv.FieldCount - 1;
-                    isOE = false;
                 }
                 else
                 {

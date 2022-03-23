@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBoxRunde = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBoxSkov = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,8 +54,6 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBoxRunde = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -85,6 +85,25 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Stævnedetaljer";
             this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(551, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(39, 13);
+            this.label2.TabIndex = 51;
+            this.label2.Text = "Runde";
+            // 
+            // textBoxRunde
+            // 
+            this.textBoxRunde.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxRunde.Enabled = false;
+            this.textBoxRunde.Location = new System.Drawing.Point(591, 44);
+            this.textBoxRunde.Name = "textBoxRunde";
+            this.textBoxRunde.Size = new System.Drawing.Size(50, 20);
+            this.textBoxRunde.TabIndex = 50;
             // 
             // label9
             // 
@@ -230,7 +249,7 @@
             this.groupBox2.Size = new System.Drawing.Size(445, 443);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Grupper/Klasser";
+            this.groupBox2.Text = "Knyt reglementsklasser og løbsklasser";
             this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnLoad
@@ -240,7 +259,7 @@
             this.btnLoad.Name = "btnLoad";
             this.btnLoad.Size = new System.Drawing.Size(376, 23);
             this.btnLoad.TabIndex = 28;
-            this.btnLoad.Text = "&Load baner fra Tilmelding/Start/Resultaliste/Klasser (XML, CSV), TXT";
+            this.btnLoad.Text = "&Load løbsklasser fra Tilmelding/Start/Resultaliste/Klasser (XML, CSV), TXT";
             this.btnLoad.UseVisualStyleBackColor = true;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
@@ -271,7 +290,6 @@
             this.checkedListClubs.Size = new System.Drawing.Size(208, 139);
             this.checkedListClubs.TabIndex = 3;
             this.checkedListClubs.ItemCheck += new System.Windows.Forms.ItemCheckEventHandler(this.checkedListClubs_ItemCheck);
-            this.checkedListClubs.SelectedIndexChanged += new System.EventHandler(this.checkedListClubs_SelectedIndexChanged_1);
             // 
             // label3
             // 
@@ -343,25 +361,6 @@
             this.textBox1.Size = new System.Drawing.Size(352, 58);
             this.textBox1.TabIndex = 37;
             this.textBox1.Text = "hello";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(551, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(39, 13);
-            this.label2.TabIndex = 51;
-            this.label2.Text = "Runde";
-            // 
-            // textBoxRunde
-            // 
-            this.textBoxRunde.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxRunde.Enabled = false;
-            this.textBoxRunde.Location = new System.Drawing.Point(591, 44);
-            this.textBoxRunde.Name = "textBoxRunde";
-            this.textBoxRunde.Size = new System.Drawing.Size(50, 20);
-            this.textBoxRunde.TabIndex = 50;
             // 
             // frmConfig
             // 

@@ -11,16 +11,10 @@ namespace Divisionsmatch
 {
     public class ResultatDefinition
     {
-        private FileSystemWatcher watcher = null;
-        private Timer _meosTimer = null;
-
         private string _filnavn = null;
         private string _tmpFileName = null;
         private string _meosUrl = null;
         private int _interval = -1;
-
-        public event EventHandler ResultChanged;
-
 
         public ResultatDefinition()
         {
@@ -75,7 +69,7 @@ namespace Divisionsmatch
 
         public override string ToString()
         {
-            return string.IsNullOrWhiteSpace(_meosUrl) ? _filnavn : _meosUrl;
+            return string.IsNullOrWhiteSpace(_filnavn) ? string.Empty: (string.IsNullOrWhiteSpace(_meosUrl) ? _filnavn : _meosUrl);
         }
 
         private void OnTimerEvent(object sender, EventArgs e)
@@ -99,13 +93,7 @@ namespace Divisionsmatch
                 {
                     using (StreamReader reader = new StreamReader(dataStream))
                     {
-                        try
-                        {
-                            File.WriteAllText(_tmpFileName, reader.ReadToEnd());
-                        }
-                        catch
-                        {
-                        }
+                        File.WriteAllText(_tmpFileName, reader.ReadToEnd());
                     }
                 }
             }

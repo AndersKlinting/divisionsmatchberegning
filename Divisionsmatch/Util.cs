@@ -17,7 +17,6 @@ namespace Divisionsmatch
             // xml eller csv?
             string version = string.Empty;
             XmlDocument xmlDoc = new XmlDocument();
-            bool isCSV = false;
             bool isXml = true;
             isEntryXml = false;
             isStartXml = false;
@@ -90,7 +89,6 @@ namespace Divisionsmatch
                 }
                 else
                 {
-                    isCSV = true;
                     fileVersion = "csv";
                 }
             }
@@ -763,12 +761,12 @@ namespace Divisionsmatch
             try
             {
                 DivisionsResultat.DivisionsResultat mitDivisionsResultat = DeSerializeObject<DivisionsResultat.DivisionsResultat>(fil, xmlAttributeOverrides);
-
+                mitDivisionsResultat.FixMatcher();
                 return mitDivisionsResultat;
             }
             catch (Exception e)
             {
-                throw new Exception("Stillingsfilen " + stillingsFil + "kunne ikke findes. Ret evt divifilen eller læg filen fra o-service sammen med divi-filen", e);
+                throw new Exception("Stillingsfilen '" + stillingsFil + "' kunne ikke findes. Ret evt divifilen eller læg filen fra o-service sammen med divi-filen", e);
             }
         }
 
@@ -954,6 +952,7 @@ namespace Divisionsmatch
                 catch (Exception ex)
                 {
                     //Log exception here
+                    Console.WriteLine(ex.ToString());
                 }
             }
 
@@ -1001,6 +1000,7 @@ namespace Divisionsmatch
             }
             catch (Exception ex)
             {
+                Console.WriteLine(ex.ToString());
                 throw; //Log exception here
             }
 

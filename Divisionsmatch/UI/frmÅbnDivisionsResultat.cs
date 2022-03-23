@@ -132,8 +132,15 @@ namespace Divisionsmatch
             foreach (var rk in denneMatch.Klubber)
             {
                 Klub klub = new Klub();
-                klub.Id =new KlubId(rk.Id.Id,rk.Id.Type);
+                klub.Id = new KlubId(rk.Id.Id,rk.Id.Type);
                 klub.Navn = rk.Navn;
+                klub.NavnKort = rk.NavnKort;
+                klub.Klubber = new List<Klub>();
+                foreach (var k in rk.Klubber)
+                {
+                    Klub newKlub = new Klub() { Id = new KlubId(k.Id.Id, k.Id.Type), Navn = k.Navn, NavnKort = k.NavnKort };
+                    klub.Klubber.Add(newKlub);
+                }
                 Staevne.Config.Klubber.Add(klub);
             }
 

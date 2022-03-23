@@ -29,6 +29,11 @@ namespace Divisionsmatch
         private Staevne _staevne = null;
 
         /// <summary>
+        /// id
+        /// </summary>
+        public int Id { get; set; }
+
+        /// <summary>
         /// klub1
         /// </summary>
         public Klub Klub1 { get; set; }
@@ -44,8 +49,9 @@ namespace Divisionsmatch
         /// <param name="staevne"></param>
         /// <param name="k1"></param>
         /// <param name="k2"></param>
-        public Match(Staevne staevne, Klub k1, Klub k2)
+        public Match(int id, Staevne staevne, Klub k1, Klub k2)
         {
+            Id = id;
             _staevne = staevne;
             Klub1 = k1;
             Klub2 = k2;

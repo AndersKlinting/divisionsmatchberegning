@@ -37,6 +37,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.numericUpDownMeOS = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownMeOS)).BeginInit();
             this.SuspendLayout();
             // 
@@ -99,7 +100,7 @@
             // 
             this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOK.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.btnOK.Location = new System.Drawing.Point(645, 173);
+            this.btnOK.Location = new System.Drawing.Point(645, 192);
             this.btnOK.Name = "btnOK";
             this.btnOK.Size = new System.Drawing.Size(75, 23);
             this.btnOK.TabIndex = 7;
@@ -111,7 +112,7 @@
             // 
             this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnCancel.Location = new System.Drawing.Point(726, 173);
+            this.btnCancel.Location = new System.Drawing.Point(726, 192);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 8;
@@ -151,12 +152,24 @@
             this.label2.TabIndex = 20;
             this.label2.Text = "sekunder refresh";
             // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(35, 166);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(135, 17);
+            this.radioButton3.TabIndex = 21;
+            this.radioButton3.Text = "Reset resultat definition";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
+            // 
             // frmÅbnResultat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnCancel;
-            this.ClientSize = new System.Drawing.Size(829, 216);
+            this.ClientSize = new System.Drawing.Size(829, 235);
+            this.Controls.Add(this.radioButton3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.numericUpDownMeOS);
             this.Controls.Add(this.btnCancel);
@@ -189,5 +202,6 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.NumericUpDown numericUpDownMeOS;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton3;
     }
 }

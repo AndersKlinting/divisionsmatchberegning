@@ -34,7 +34,6 @@ namespace Divisionsmatch
         private string _navn = string.Empty;
 
         private int[] _points;
-        private int[] _upoints;
 
         private int[] _pointTilDeling;
 
@@ -145,7 +144,7 @@ namespace Divisionsmatch
                 StringBuilder output = new StringBuilder();
 
                 string grp = navn;
-                grp += " - " + _printPointsForGruppe();
+                grp += " - " + PrintPointsForGruppe();
                 output.AppendLine(grp);
                 output.AppendLine("".PadLeft(grp.Length, '-'));
 
@@ -164,12 +163,12 @@ namespace Divisionsmatch
             if (layout == "Standard")
             {
                 output.AppendLine("<h3 class=\"gruppe\" id=\"" + navn + "\">" + navn + "</h3>");
-                output.AppendLine("<p>" + _printPointsForGruppe() + "</p>");
+                output.AppendLine("<p>" + PrintPointsForGruppe() + "</p>");
             }
             else if (layout == "Blå overskrifter")
             {
                 output.AppendLine("<div class=\"gruppeHeader\" id=\"" + navn + "\">" + navn + "</div>");
-                output.AppendLine("<div class=\"gruppepoint\">" + _printPointsForGruppe() + "</div>");
+                output.AppendLine("<div class=\"gruppepoint\">" + PrintPointsForGruppe() + "</div>");
             }
             return output.ToString();
         }
@@ -178,7 +177,7 @@ namespace Divisionsmatch
         #region private methods
         private void _setPoints()
         {
-            if (navn == "Beg") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
+            if (navn == "Beg" || navn == "Begynder") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
             else if (navn == "D10") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
             else if (navn == "D12") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
             else if (navn == "D12B") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
@@ -216,20 +215,20 @@ namespace Divisionsmatch
             else if (navn == "H-Let") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
         }
 
-        private string _printPointsForGruppe()
+        public string PrintPointsForGruppe()
         {
             string grp = string.Empty;
             if (_points != null && _points.Length > 0)
             {
                 grp += "[" + string.Join(", ", _points) + "]";
             }
-            if (_upoints != null && _upoints.Length > 0)
-            {
-                grp += " + [";
-                grp += _upoints[0].ToString();
-                for (int p = 1; p < _upoints.Length; p++) grp += ", " + _upoints[p].ToString();
-                grp += "]";
-            }
+            //if (_upoints != null && _upoints.Length > 0)
+            //{
+            //    grp += " + [";
+            //    grp += _upoints[0].ToString();
+            //    for (int p = 1; p < _upoints.Length; p++) grp += ", " + _upoints[p].ToString();
+            //    grp += "]";
+            //}
 
             return grp;
         }
@@ -358,6 +357,31 @@ namespace Divisionsmatch
             }
         }
 
+        /// <summary>
+        /// opdate løberens placering i klassen/gruppen da den ikke altid kommer fra løbsprogrammmet
+        /// </summary>
+        public void OpdaterPlacering()
+        {
+            string oldTid = "";
+            int cnt = 0;
+            foreach (var sl in this.Loebere) // kun løbere i stævnet
+            {
+                var l = sl.Value;
+                l.Placering = string.Empty;
+                if (l.Inkl && l.PrintStatus != "Inaktiv")
+                {
+                    cnt++;
+                    if (l.IsStatusOK)
+                    {
+                        if (oldTid != l.Tid)
+                        {
+                            l.Placering = cnt.ToString();
+                        }
+                        oldTid = l.Tid;
+                    }
+                }
+            }
+        }
         #endregion
     }
 }
