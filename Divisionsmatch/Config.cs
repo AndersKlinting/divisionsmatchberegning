@@ -218,6 +218,11 @@ namespace Divisionsmatch
         public string Kreds { get; set; }
 
         /// <summary>
+        /// stævnets kreds id i o-service
+        /// </summary>
+        public string KredsId { get; set; }
+
+        /// <summary>
         /// stævnets skov
         /// </summary>
         public string Skov { get; set; }

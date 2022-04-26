@@ -1391,16 +1391,19 @@ namespace Divisionsmatch
                 values["header"] = (string)key.GetValue("header");
                 values["footer"] = (string)key.GetValue("footer");
                 values["orientation"] = (string)key.GetValue("orientation");
+                values["Print_Background"] = (string)key.GetValue("Print_Background");
             }
         }
 
         private void _makeNewPageSetup(PageSettings pageSettings)
         {
-            ieNewPageSetup["margin_left"] = (pageSettings.Margins.Left / 100.0).ToString();
-            ieNewPageSetup["margin_right"] = (pageSettings.Margins.Right / 100.0).ToString();
-            ieNewPageSetup["margin_top"] = (pageSettings.Margins.Top / 100.0).ToString();
-            ieNewPageSetup["margin_bottom"] = (pageSettings.Margins.Bottom / 100.0).ToString();
+            ieNewPageSetup["margin_left"] = (pageSettings.Margins.Left / 100.0).ToString(System.Globalization.CultureInfo.InvariantCulture);
+            ieNewPageSetup["margin_right"] = (pageSettings.Margins.Right / 100.0).ToString(System.Globalization.CultureInfo.InvariantCulture);
+            ieNewPageSetup["margin_top"] = (pageSettings.Margins.Top / 100.0).ToString(System.Globalization.CultureInfo.InvariantCulture);
+            ieNewPageSetup["margin_bottom"] = (pageSettings.Margins.Bottom / 100.0).ToString(System.Globalization.CultureInfo.InvariantCulture);
             ieNewPageSetup["orientation"] = pageSettings.Landscape ? "2" : "1";
+            ieNewPageSetup["orientation"] = pageSettings.Landscape ? "2" : "1";
+            ieNewPageSetup["Print_Background"] = "yes";
         }
 
         private void _getNewPageSetup(ref Config config)
@@ -1464,7 +1467,7 @@ namespace Divisionsmatch
                 divisionsResultat = new DivisionsResultat.DivisionsResultat();
                 divisionsResultat.År = mitstaevne.Dato.Year;
                 divisionsResultat.Division = mitstaevne.Config.Division;
-                divisionsResultat.Kreds = mitstaevne.Config.Kreds;
+                divisionsResultat.Kreds = new DivisionsResultat.KredsId(mitstaevne.Config.Kreds, mitstaevne.Config.KredsId);
             }
             else
             {

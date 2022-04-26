@@ -45,6 +45,8 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBoxStaevneSkov = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.textBoxBeskrivelse = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.textBoxStaevneDivision = new System.Windows.Forms.TextBox();
             this.listBoxMatchKlubber = new System.Windows.Forms.ListBox();
@@ -59,8 +61,8 @@
             this.label9 = new System.Windows.Forms.Label();
             this.buttonOK = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.textBoxBeskrivelse = new System.Windows.Forms.TextBox();
+            this.textBoxKredsId = new System.Windows.Forms.TextBox();
+            this.textBoxStaevneKredsId = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -206,6 +208,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.textBoxStaevneKredsId);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.textBoxBeskrivelse);
             this.groupBox1.Controls.Add(this.label12);
@@ -228,6 +231,25 @@
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Denne match";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 178);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(61, 13);
+            this.label14.TabIndex = 23;
+            this.label14.Text = "Beskrivelse";
+            this.label14.Click += new System.EventHandler(this.label14_Click);
+            // 
+            // textBoxBeskrivelse
+            // 
+            this.textBoxBeskrivelse.Enabled = false;
+            this.textBoxBeskrivelse.Location = new System.Drawing.Point(77, 175);
+            this.textBoxBeskrivelse.Name = "textBoxBeskrivelse";
+            this.textBoxBeskrivelse.Size = new System.Drawing.Size(100, 20);
+            this.textBoxBeskrivelse.TabIndex = 22;
+            this.textBoxBeskrivelse.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label12
             // 
@@ -283,6 +305,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxKredsId);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.textBoxÅr);
             this.groupBox2.Controls.Add(this.listBoxDiviKlubber);
@@ -372,24 +395,21 @@
             this.buttonCancel.Text = "Annuller";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
-            // label14
+            // textBoxKredsId
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(12, 178);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(61, 13);
-            this.label14.TabIndex = 23;
-            this.label14.Text = "Beskrivelse";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
+            this.textBoxKredsId.Enabled = false;
+            this.textBoxKredsId.Location = new System.Drawing.Point(168, 71);
+            this.textBoxKredsId.Name = "textBoxKredsId";
+            this.textBoxKredsId.Size = new System.Drawing.Size(37, 20);
+            this.textBoxKredsId.TabIndex = 24;
             // 
-            // textBoxBeskrivelse
+            // textBoxStaevneKredsId
             // 
-            this.textBoxBeskrivelse.Enabled = false;
-            this.textBoxBeskrivelse.Location = new System.Drawing.Point(77, 175);
-            this.textBoxBeskrivelse.Name = "textBoxBeskrivelse";
-            this.textBoxBeskrivelse.Size = new System.Drawing.Size(100, 20);
-            this.textBoxBeskrivelse.TabIndex = 22;
-            this.textBoxBeskrivelse.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxStaevneKredsId.Enabled = false;
+            this.textBoxStaevneKredsId.Location = new System.Drawing.Point(183, 71);
+            this.textBoxStaevneKredsId.Name = "textBoxStaevneKredsId";
+            this.textBoxStaevneKredsId.Size = new System.Drawing.Size(38, 20);
+            this.textBoxStaevneKredsId.TabIndex = 24;
             // 
             // frmÅbnDivisionsResultat
             // 
@@ -454,5 +474,7 @@
         private System.Windows.Forms.ListBox listBoxDiviKlubber;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBoxBeskrivelse;
+        private System.Windows.Forms.TextBox textBoxStaevneKredsId;
+        private System.Windows.Forms.TextBox textBoxKredsId;
     }
 }

@@ -54,6 +54,7 @@
             this.btnOK = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxKredsId = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -64,6 +65,7 @@
             // 
             this.groupBox3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox3.Controls.Add(this.textBoxKredsId);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.textBoxRunde);
             this.groupBox3.Controls.Add(this.label9);
@@ -362,6 +364,15 @@
             this.textBox1.TabIndex = 37;
             this.textBox1.Text = "hello";
             // 
+            // textBoxKredsId
+            // 
+            this.textBoxKredsId.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBoxKredsId.Enabled = false;
+            this.textBoxKredsId.Location = new System.Drawing.Point(840, 19);
+            this.textBoxKredsId.Name = "textBoxKredsId";
+            this.textBoxKredsId.Size = new System.Drawing.Size(37, 20);
+            this.textBoxKredsId.TabIndex = 52;
+            // 
             // frmConfig
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -418,5 +429,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBoxRunde;
+        private System.Windows.Forms.TextBox textBoxKredsId;
     }
 }

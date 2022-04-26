@@ -41,7 +41,8 @@ namespace Divisionsmatch
             {
                 this.textBoxÅr.Text = DivisionsResultat.År.ToString();
                 this.textBoxDivision.Text = DivisionsResultat.Division.ToString();
-                this.textBoxKreds.Text = DivisionsResultat.Kreds.ToString();
+                this.textBoxKreds.Text = DivisionsResultat.Kreds.Navn;
+                this.textBoxKredsId.Text = DivisionsResultat.Kreds.Id;
                 if (DivisionsResultat.DivisionsMatchResultater != null)
                 {
                     foreach (var m in DivisionsResultat.DivisionsMatchResultater)
@@ -71,7 +72,7 @@ namespace Divisionsmatch
                 {
                     gemDivisionsResultat.År = Convert.ToInt32(this.textBoxÅr.Text);
                     gemDivisionsResultat.Division = Convert.ToInt32(this.textBoxDivision.Text);
-                    gemDivisionsResultat.Kreds = this.textBoxKreds.Text;
+                    gemDivisionsResultat.Kreds = new DivisionsResultat.KredsId(this.textBoxKreds.Text, this.textBoxKredsId.Text);
                     gemDivisionsResultat.DivisionsMatchResultater = new List<Divisionsmatch.DivisionsResultat.DivisionsMatchResultat>();
                 }
 

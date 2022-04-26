@@ -60,7 +60,8 @@ namespace Divisionsmatch
                         {
                             this.textBoxDivision.Text = mitDivisionsResultat.Division.ToString();
                         }
-                        this.textBoxKreds.Text = mitDivisionsResultat.Kreds.ToString();
+                        this.textBoxKreds.Text = mitDivisionsResultat.Kreds.Navn.ToString();
+                        this.textBoxKredsId.Text = mitDivisionsResultat.Kreds.Id.ToString();
                         this.listBoxMatcher.Items.Clear();
                         foreach (var m in mitDivisionsResultat.DivisionsMatchResultater.OrderBy(item => item.Runde).Where(item => item.Runde < mitDivisionsResultat.DivisionsMatchResultater.Count))
                         {
@@ -85,7 +86,8 @@ namespace Divisionsmatch
                         {
                             this.textBoxStaevneDivision.Text = mitDivisionsResultat.Division.ToString();
                         }
-                        this.textBoxStaevneKreds.Text = mitDivisionsResultat.Kreds.ToString();
+                        this.textBoxStaevneKreds.Text = mitDivisionsResultat.Kreds.Navn.ToString();
+                        this.textBoxStaevneKredsId.Text = mitDivisionsResultat.Kreds.Id.ToString();
 
                         this.textBoxStaevneSkov.Text = denneMatch.Skov;
                         this.textBoxStaevneType.Text = mitDivisionsResultat.Division == 8 ? "Op/Ned" : mitDivisionsResultat.Division == 9 ? "Finale" : "Divisionsmatch";
@@ -123,7 +125,8 @@ namespace Divisionsmatch
             Staevne.Config.Skov = denneMatch.Skov;
             Staevne.Config.Type = DivisionsResultat.Division == 8 ? "Op/Ned" : DivisionsResultat.Division == 9 ? "Finale" : "Divisionsmatch";
             Staevne.Config.Division = DivisionsResultat.Division;
-            Staevne.Config.Kreds = DivisionsResultat.Kreds;
+            Staevne.Config.Kreds = DivisionsResultat.Kreds.Navn;
+            Staevne.Config.KredsId = DivisionsResultat.Kreds.Id;
             Staevne.Config.Beskrivelse = denneMatch.Beskriv;
             Staevne.Config.Runde = denneMatch.Runde;
             Staevne.Config.DivisionsResultatFil = this.txtXMLFile.Text;

@@ -51,7 +51,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.buttonGem = new System.Windows.Forms.Button();
             this.buttonCancel = new System.Windows.Forms.Button();
+            this.textBoxKredsId = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxÅr
@@ -212,6 +214,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.textBoxKredsId);
             this.groupBox2.Location = new System.Drawing.Point(12, 11);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(291, 212);
@@ -271,6 +274,14 @@
             this.buttonCancel.Text = "Annuller";
             this.buttonCancel.UseVisualStyleBackColor = true;
             // 
+            // textBoxKredsId
+            // 
+            this.textBoxKredsId.Enabled = false;
+            this.textBoxKredsId.Location = new System.Drawing.Point(183, 69);
+            this.textBoxKredsId.Name = "textBoxKredsId";
+            this.textBoxKredsId.Size = new System.Drawing.Size(43, 20);
+            this.textBoxKredsId.TabIndex = 33;
+            // 
             // frmGemDivisionsResultat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -301,6 +312,8 @@
             this.Load += new System.EventHandler(this.frmDivisionsResultat_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -331,5 +344,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button buttonGem;
         private System.Windows.Forms.Button buttonCancel;
+        private System.Windows.Forms.TextBox textBoxKredsId;
     }
 }

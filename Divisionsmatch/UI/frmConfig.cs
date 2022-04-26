@@ -208,6 +208,10 @@ namespace Divisionsmatch
             {
                 textBoxKreds.Text = Config.Kreds;
             }
+            if (Config.KredsId != null)
+            {
+                textBoxKredsId.Text = Config.KredsId;
+            }
             textBoxRunde.Text = string.Empty;
             if (Config.Division >= 1 && Config.Division <= 6)
             {

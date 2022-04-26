@@ -941,7 +941,7 @@ namespace Divisionsmatch
                     {
                         Indent = true,
                         OmitXmlDeclaration = false,
-                        Encoding = Encoding.GetEncoding("ISO-8859-1")
+                        Encoding = Encoding.Unicode
                     }))
                     {
                         serializer.Serialize(xmlwriter, serializableObject);
@@ -962,7 +962,8 @@ namespace Divisionsmatch
         public static void SerializeObjectToFile<T>(T serializableObject, string fileName, XmlAttributeOverrides xmlAttributeOverrides = null)
         {
             if (serializableObject == null) { return; }
-            File.WriteAllText(fileName, SerializeObject(serializableObject, xmlAttributeOverrides));
+
+            File.WriteAllText(fileName, SerializeObject(serializableObject, xmlAttributeOverrides), Encoding.Unicode);
         }
 
         /// <summary>

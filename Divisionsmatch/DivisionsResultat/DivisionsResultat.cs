@@ -645,7 +645,7 @@ namespace Divisionsmatch.DivisionsResultat
         /// Kredsen for divisionen - alle stævner skal have samme kreds
         /// </summary>
         [XmlElement(ElementName = "Kreds")]
-        public string Kreds { get; set; }
+        public KredsId Kreds { get; set; }
 
         /// <summary>
         /// liste af stævner
@@ -732,7 +732,7 @@ namespace Divisionsmatch.DivisionsResultat
                 msg = "Stævnets division passer ikke med divisionsresultaterne";
             }
 
-            if (staevne.Config.Type != "Finale" && this.Kreds != staevne.Config.Kreds)
+            if (staevne.Config.Type != "Finale" && this.Kreds.Navn != staevne.Config.Kreds)
             {
                 ok = false;
                 msg = "Stævnets kreds stemmer ikke med divisionsresultaterne";
@@ -803,7 +803,7 @@ namespace Divisionsmatch.DivisionsResultat
             DivisionsResultat clone = new DivisionsResultat();
             clone.År = this.År;
             clone.Division = this.Division;
-            clone.Kreds = this.Kreds;
+            clone.Kreds = this.Kreds.Clone() as Divisionsmatch.DivisionsResultat.KredsId; // new KredsId(this.Kreds.Kreds, this.Kreds.Id);
             clone.DivisionsMatchResultater = new List<Divisionsmatch.DivisionsResultat.DivisionsMatchResultat>();
             if (this.DivisionsMatchResultater != null)
             {
@@ -1148,9 +1148,16 @@ namespace Divisionsmatch.DivisionsResultat
                         for (int j = 0; j < props2.Count; j++)
                         {
                             PropertyDescriptor prop2 = props2[j];
-                            if (prop2.Name != "Matcher" && props2[j].Name != "Kommentar")
+                            if (prop2.Name != "Matcher" && props2[j].Name != "Kommentar" && props2[j].Name != "Runde" && props2[j].Name != "ModstanderLøbsPoint")
                             {
-                                table.Columns.Add(string.Format("{0}. runde\r{1}", r, prop2.Name), prop2.PropertyType);
+                                if (props2[j].Name == "LøbsPoint")
+                                {
+                                    table.Columns.Add(string.Format("{0}. runde\r{1}", r, prop2.Name), typeof(string));
+                                }
+                                else
+                                {
+                                    table.Columns.Add(string.Format("{0}. runde\r{1}", r, prop2.Name), prop2.PropertyType);
+                                }
                             }
                         }
                     }
@@ -1161,9 +1168,16 @@ namespace Divisionsmatch.DivisionsResultat
                     for (int j = 0; j < props2.Count; j++)
                     {
                         PropertyDescriptor prop2 = props2[j];
-                        if (prop2.Name != "Matcher" && props2[j].Name != "Kommentar")
+                        if (prop2.Name != "Matcher" && props2[j].Name != "Kommentar" && props2[j].Name != "Runde" && props2[j].Name != "ModstanderLøbsPoint")
                         {
-                            table.Columns.Add(string.Format("{0}\r{1}", prop.Name, prop2.Name), prop2.PropertyType);
+                            if (props2[j].Name == "LøbsPoint")
+                            {
+                                table.Columns.Add(string.Format("{0}\r{1}", prop.Name, prop2.Name), typeof(string));
+                            }
+                            else
+                            {
+                                table.Columns.Add(string.Format("{0}\r{1}", prop.Name, prop2.Name), prop2.PropertyType);
+                            }
                         }
                     }
                 }
@@ -1184,10 +1198,25 @@ namespace Divisionsmatch.DivisionsResultat
                         for (int r = 0; r < item.Runder.Count; r++)
                         {
                             for (int j = 0; j < props2.Count; j++)
-                           {
-                                if (props2[j].Name != "Matcher" && props2[j].Name != "Kommentar")
+                            {
+                                if (props2[j].Name != "Matcher" && props2[j].Name != "Kommentar" && props2[j].Name != "Runde" && props2[j].Name != "ModstanderLøbsPoint")
                                 {
-                                    values[vx++] = props2[j].GetValue(item.Runder[r]);
+                                    if (props2[j].Name == "LøbsPoint")
+                                    {
+                                        double p1 = (double) props2[j].GetValue(item.Runder[r]);
+                                        for (int jj = j + 1; jj < props2.Count; jj++)
+                                        {
+                                            if (props2[jj].Name == "ModstanderLøbsPoint")
+                                            {
+                                                double p2 = (double)props2[jj].GetValue(item.Runder[r]);
+                                                values[vx++] = string.Format("{0} - {1}", p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo), p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo));
+                                            }
+                                        }
+                                    }
+                                    else
+                                    {
+                                        values[vx++] = props2[j].GetValue(item.Runder[r]);
+                                    }
                                 }
                             }
                         }
@@ -1197,9 +1226,24 @@ namespace Divisionsmatch.DivisionsResultat
                         PropertyDescriptorCollection props2 = TypeDescriptor.GetProperties(typeof(RundeResultat));
                             for (int j = 0; j < props2.Count; j++)
                         {
-                            if (props2[j].Name != "Matcher" && props2[j].Name != "Kommentar")
+                            if (props2[j].Name != "Matcher" && props2[j].Name != "Kommentar" && props2[j].Name != "Runde" && props2[j].Name != "ModstanderLøbsPoint")
                             {
-                                values[vx++] = props2[j].GetValue(item.Stilling);
+                                if (props2[j].Name == "LøbsPoint")
+                                {
+                                    double p1 = (double) props2[j].GetValue(item.Stilling);
+                                    for (int jj = j + 1; jj < props2.Count; jj++)
+                                    {
+                                        if (props2[jj].Name == "ModstanderLøbsPoint")
+                                        {
+                                            double p2 = (double) props2[jj].GetValue(item.Stilling);
+                                            values[vx++] = string.Format("{0} - {1}", p1.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo), p2.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo));
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    values[vx++] = props2[j].GetValue(item.Stilling);
+                                }
                             }
                         }
                     }
@@ -1760,6 +1804,75 @@ namespace Divisionsmatch.DivisionsResultat
                 output.AppendLine("</div>");
             }
             return output.ToString();
+        }
+    }
+
+    /// <summary>
+    /// klasse til at holde id og type
+    /// </summary>
+    public class KredsId : ICloneable
+    {
+        private string _kredsnavn = string.Empty;
+        private string _id = string.Empty;
+
+        /// <summary>
+        /// constructor
+        /// </summary>
+        public KredsId()
+        {
+        }
+
+        /// <summary>
+        /// constructor
+        /// </summary>
+        public KredsId(string kreds, string id)
+        {
+            _id = id;
+            _kredsnavn= kreds;
+        }
+
+        /// <summary>
+        /// navn på kredsen
+        /// </summary>
+        [XmlText]
+        public string Navn
+        {
+            get { return _kredsnavn; }
+
+            set { _kredsnavn = value; }
+        }
+
+        /// <summary>
+        /// kredsens id
+        /// </summary>
+        [XmlAttribute("Id")]
+        public string Id
+        {
+            get { return _id; }
+
+            set { _id = value; }
+        }
+
+        /// <summary>
+        /// skal be klon
+        /// </summary>
+        /// <returns></returns>
+        public object Clone()
+        {
+            KredsId clone = new KredsId();
+            clone.Id = this.Id;
+            clone.Navn = this.Navn;
+
+            return clone;
+        }
+
+        /// <summary>
+        /// return KredsId as string
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return _kredsnavn;
         }
     }
 }
