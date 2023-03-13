@@ -8,7 +8,7 @@ bygge ny version
 Build
 ------
 
-edit assemblyversion og AssemblyFileVersion i AssemblyInfo.cs
+edit assemblyversion og AssemblyFileVersion i AssemblyInfo.cs  (year.major.minor)
 
 opdater dokumentation - divisionsmatchberegning.docx
 gem som pdf og generer chm vha Word2CHM

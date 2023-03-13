@@ -1628,7 +1628,7 @@ namespace Divisionsmatch
             string oldWebDoc = String.Empty;
             if (webOutput.Url != null)
             {
-                oldWebDoc = File.ReadAllText(webOutput.Url.AbsolutePath, Encoding.UTF8);
+                oldWebDoc = File.ReadAllText(webOutput.Url.LocalPath, Encoding.UTF8);
             }
             List<string> newHTMLsections = new List<string>();
 

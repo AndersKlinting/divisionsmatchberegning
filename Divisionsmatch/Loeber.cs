@@ -17,6 +17,7 @@
  */
 using System;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 
 namespace Divisionsmatch
 {
@@ -29,6 +30,8 @@ namespace Divisionsmatch
         private Dictionary<Match, double> upoint = new Dictionary<Match, double>();
 
         private string _status = string.Empty;
+
+        private string _samLoebGruppe = null;
 
         /// <summary>
         /// startnummer
@@ -262,6 +265,46 @@ namespace Divisionsmatch
             }
         }
 
+        /// <summary>
+        /// få navenet på SamLoebGruppe
+        /// </summary>
+        public string SamLoebGruppe
+        {
+            get
+            {
+                _checkSamLoebGruppe();
+                return _samLoebGruppe;
+            }
+        }
+
+        /// <summary>
+        /// er løberen i en SamLoebGruppe ?
+        /// </summary>
+        public bool IsInSamLoebGruppe
+        {
+            get
+            {
+                _checkSamLoebGruppe();
+                return !string.IsNullOrEmpty(_samLoebGruppe);
+            }
+        }
+
+        private void _checkSamLoebGruppe()
+        { 
+            if (_samLoebGruppe==null)
+            {
+                string n = Fornavn + Efternavn;
+                System.Text.RegularExpressions.Match m = Regex.Match(n, @"\[(.*?)\]");
+                if (m != System.Text.RegularExpressions.Match.Empty)
+                {
+                    _samLoebGruppe = m.Groups[1].Value;
+                }
+                else
+                {
+                    _samLoebGruppe = string.Empty; // checked but no SamLoebGruppe
+                }
+            }
+        }
 
         private string _lavNumStatus(string st)
         {

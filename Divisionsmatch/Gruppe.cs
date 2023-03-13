@@ -247,9 +247,37 @@ namespace Divisionsmatch
 
             List<string> tider = new List<string>();
 
+            List<string> SamLoebGrupper = new List<string>();
+            List<Loeber> SamLoebere = new List<Loeber>(); // løbere i grupper, men ikke de bedste i gruppen
+
+            List<KeyValuePair<string, Loeber>> bestmatchloebere = new List<KeyValuePair<string, Loeber>>();
+
             // for gennemførte løbere fra de 2 klubber i matchen
             var matchloebere = Loebere.Where(item => ((item.Value.Klub == match.Klub1 && !match.Klub1.Udeblevet) || (item.Value.Klub == match.Klub2 && !match.Klub2.Udeblevet)) && item.Value.IsStatusOK);
+
+            // kun individuelle eller løbere med bedste tid i sin SamLoebGruppe
             foreach (var kv in matchloebere)
+            {
+                Loeber l = kv.Value;
+
+                if (l.IsInSamLoebGruppe)
+                {
+                    if (!SamLoebGrupper.Contains(l.SamLoebGruppe))
+                    {
+                        // first Loeber in this group
+                        SamLoebGrupper.Add(l.SamLoebGruppe);
+                    }
+                    else
+                    {
+                        // do not include in points
+                        continue;
+                    }
+                }
+
+                bestmatchloebere.Add(kv);
+            }
+                
+            foreach (var kv in bestmatchloebere)
             {
                 Loeber l = kv.Value;
 
@@ -261,8 +289,8 @@ namespace Divisionsmatch
                     // noter om vi allerede har restrictioner
                     bool restrict = loebereRestrict.Count > 0;
 
-                    // find alle løbere med denne tid og foretag beregning hvis der er nogle                    
-                    var loebereMedSammeTid = matchloebere.Where(pair => pair.Value.Tid == l.Tid);
+                    // find alle løbere med denne tid og foretag beregning hvis der er nogle
+                    var loebereMedSammeTid = bestmatchloebere.Where(pair => pair.Value.Tid == l.Tid);
 
                     foreach (var samme in loebereMedSammeTid)
                     {
