@@ -101,7 +101,7 @@
                 }
 
                 // get a reference to the body in the frame
-                bodyTag = $("body", refFrame.contentDocument)
+                bodyTag = $("html, body", refFrame.contentDocument)
 
                 // start the animation in a separate thread
                 setTimeout(startAnimation, 0, bodyTag, topbottomdelay, headerOffset, scrollduration, returnduration);
