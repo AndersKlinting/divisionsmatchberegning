@@ -8,6 +8,15 @@ Set objFSO = CreateObject("Scripting.FileSystemObject")
 Set objFile = objFSO.GetFile(strPath)
 strFolder = objFSO.GetParentFolderName(objFile) 
 
+
+wscript.echo strPath
+Set myArgs = WScript.Arguments.Unnamed
+For i = 0 to myargs.count -1
+  wscript.Echo "Argument" & i & " = " & myArgs.item(i)
+Next
+' debug/release
+v= myArgs.item(0)
+
 ' lav guid
 Set TypeLib = CreateObject("Scriptlet.TypeLib")
 guid = TypeLib.Guid
@@ -37,10 +46,11 @@ for i=0 to 2
 next
 
 copyDest = strFolder & "\AutoUpdates\"
-copySource = strFolder & "\Setup\Release\setup.msi"
+copySource = strFolder & "\Setup\" & v & "\setup.msi"
 if Not objFSO.FolderExists(copyDest) then
     objFSO.CreateFolder(copyDest)
 end if
+wscript.echo copySource & " --> " & copyDest & "Divisionsmatch" & textVersion & ".msi"
 objFSO.CopyFile copySource, copyDest & "Divisionsmatch" & textVersion & ".msi", true
 
 
