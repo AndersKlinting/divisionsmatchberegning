@@ -1519,11 +1519,11 @@ namespace Divisionsmatch.DivisionsResultat
                         {
                             if (staevne.Config.Layout == "Standard")
                             {
-                                output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + k.Navn + "</td><td class=\"matcher\">" + k.LøbsPoint.ToString() + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n != k.Navn).ToList()).ToString() + "</td><td class=\"matcher\">" + k.MatchPoint.ToString() + "</td><td class=\"matcher\"  style=\"text-align:left\">" + k.Kommentar + "</td></tr>");
+                                output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + k.Navn + "</td><td class=\"matcher\">" + k.LøbsPoint.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n != k.Navn).ToList()).ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td class=\"matcher\">" + k.MatchPoint.ToString() + "</td><td class=\"matcher\"  style=\"text-align:left\">" + k.Kommentar + "</td></tr>");
                             }
                             else if (staevne.Config.Layout == "Blå overskrifter")
                             {
-                                output.AppendLine("<tr><td class=\"knavn\">" + k.Navn + "</td><td>" + k.LøbsPoint.ToString() + "</td><td>-</td><td>" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n != k.Navn).ToList()).ToString() + "</td><td>" + k.MatchPoint.ToString() + "</td><td class=\"kommentar\"  style=\"text-align:left\">" + k.Kommentar + "</td></tr>");
+                                output.AppendLine("<tr><td class=\"knavn\">" + k.Navn + "</td><td>" + k.LøbsPoint.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td>-</td><td>" + r.ModstanderPoint(k.Navn, r.Klubber.Select(klub => klub.Navn).Where(n => n != k.Navn).ToList()).ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td>" + k.MatchPoint.ToString() + "</td><td class=\"kommentar\"  style=\"text-align:left\">" + k.Kommentar + "</td></tr>");
                             }
                         }
 
@@ -1547,11 +1547,11 @@ namespace Divisionsmatch.DivisionsResultat
                         {
                             if (staevne.Config.Layout == "Standard")
                             {
-                                output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + m.MatchKlubber[0].Navn + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + m.MatchKlubber[1].Navn + "</td><td class=\"matcher\">" + m.MatchKlubber[0].Score + "</td><td class=\"matcher\">-</td><td>" + m.MatchKlubber[1].Score + "</td></tr>");
+                                output.AppendLine("<tr class=\"matcher\"><td class=\"matcher\">" + m.MatchKlubber[0].Navn + "</td><td class=\"matcher\">-</td><td class=\"matcher\">" + m.MatchKlubber[1].Navn + "</td><td class=\"matcher\">" + m.MatchKlubber[0].Score.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td class=\"matcher\">-</td><td>" + m.MatchKlubber[1].Score.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td></tr>");
                             }
                             else if (staevne.Config.Layout == "Blå overskrifter")
                             {
-                                output.AppendLine("<tr><td class=\"knavn\">" + m.MatchKlubber[0].Navn + "</td><td>-</td><td class=\"knavn\">" + m.MatchKlubber[1].Navn + "</td><td>" + m.MatchKlubber[0].Score + "</td><td>-</td><td>" + m.MatchKlubber[1].Score + "</td></tr>");
+                                output.AppendLine("<tr><td class=\"knavn\">" + m.MatchKlubber[0].Navn + "</td><td>-</td><td class=\"knavn\">" + m.MatchKlubber[1].Navn + "</td><td>" + m.MatchKlubber[0].Score.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td><td>-</td><td>" + m.MatchKlubber[1].Score.ToString("##0.#", System.Globalization.NumberFormatInfo.InvariantInfo) + "</td></tr>");
                             }
                         }
                         if (staevne.Config.Layout == "Standard")
