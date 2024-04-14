@@ -30,7 +30,8 @@ namespace Divisionsmatch
                     log(this.Request);
 
                     string html = string.Empty;
-                    html = "<html>";
+                    html = "<!DOCTYPE html>";
+                    html += "<html>";
                     html += frmDivi.Instance.mitstaevne.GetHTMLHead();
                     html += "<body>";
                     html += "<h1>Divisionsmatch web server  og REST API</h1>";
@@ -105,9 +106,11 @@ namespace Divisionsmatch
                         output = getResource("divi.css");
                         outputType = "html";
                     }
-                    else if (this.Request.Url.ToString().EndsWith("jquery-1.11.0.js"))
+                    else if (this.Request.Url.Query.ToString().Contains("jquery"))
                     {
-                        output = getResource("jquery-1.11.0.js");
+                        int idx = this.Request.Url.Query.ToString().IndexOf("jquery");
+                        string jq = this.Request.Url.Query.ToString().Substring(idx);
+                        output = getResource(jq);
                         outputType = "js";
                     }
 
@@ -446,12 +449,7 @@ namespace Divisionsmatch
         private Response HtmlResponse(string html)
         {
             byte[]b = Encoding.UTF8.GetBytes(html);
-            return new Response()
-            {
-                StatusCode = HttpStatusCode.OK,
-                ContentType = "text/html",
-                Contents = c => c.Write(b, 0, b.Length)
-            }; 
+            return new Response() { StatusCode = HttpStatusCode.OK, ContentType = "text/html", Contents = c => c.Write(b, 0, b.Length) }; 
         }
 
         private void log(Request req)

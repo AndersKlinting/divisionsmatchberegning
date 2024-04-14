@@ -4,3 +4,4 @@ bin
 *.csproj.user
 *.suo
 *.msi
+*.exe
