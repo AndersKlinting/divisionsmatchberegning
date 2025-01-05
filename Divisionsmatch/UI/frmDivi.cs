@@ -2115,10 +2115,18 @@ namespace Divisionsmatch
         }
     }
 
-    // a helper class to start the message loop and execute an asynchronous task
-    // by Noseratio - http://stackoverflow.com/users/1768303/noseratio
+    /// <summary>
+    /// a helper class to start the message loop and execute an asynchronous task
+    /// by Noseratio - http://stackoverflow.com/users/1768303/noseratio
+    /// </summary>
     public static class MessageLoopWorker
     {
+        /// <summary>
+        /// asynkron eksekvering af beregning
+        /// </summary>
+        /// <param name="worker">reference til workser metode</param>
+        /// <param name="args">eventuelle argumenter</param>
+        /// <returns></returns>
         public static async Task<object> Run(Func<object[], Task<object>> worker, params object[] args)
         {
             var tcs = new TaskCompletionSource<object>();

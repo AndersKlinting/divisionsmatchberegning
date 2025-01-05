@@ -8,10 +8,16 @@ using System.Threading;
 
 namespace Divisionsmatch
 {
+    /// <summary>
+    /// dialog til at hoste en information server og vise links
+    /// </summary>
     public class InformationServerModule : NancyModule
     {
         private frmNancy _frmNancy = null;
 
+        /// <summary>
+        /// dialog til at hoste en information server og vise links
+        /// </summary>
         public InformationServerModule()
         {
             if (_frmNancy == null)

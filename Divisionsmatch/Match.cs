@@ -46,6 +46,7 @@ namespace Divisionsmatch
         /// <summary>
         /// constructor for en match imellem klub1 og klub2 i stævnet
         /// </summary>
+        /// <param name="id"></param>
         /// <param name="staevne"></param>
         /// <param name="k1"></param>
         /// <param name="k2"></param>

@@ -10,15 +10,24 @@ using System.Windows.Forms;
 
 namespace Divisionsmatch
 {
+    /// <summary>
+    /// dialog til at åbne et divisionsresultat fra o-service
+    /// </summary>
     public partial class frmÅbnResultat : Form
     {
         private ResultatDefinition _resultatDefinition;
 
+        /// <summary>
+        /// creator
+        /// </summary>
         public frmÅbnResultat()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// egenskab til at holde resultatedefinition
+        /// </summary>
         public ResultatDefinition resultatDefinition
         {
             get

@@ -674,8 +674,7 @@ namespace Divisionsmatch
         /// <summary>
         /// returner en lista af stillinger i txt per gruppe eller bane til brug ved sammenlingning
         /// </summary>
-        /// <param name="config">configurationen som definerer hvad der skal laves</param>
-        /// <returns></returns>
+        /// <returns>liste af text sektioner</returns>
         public List<string> LavTXTafsnit()
         {
             List<string> output = new List<string>();
@@ -759,6 +758,14 @@ namespace Divisionsmatch
 
         #region nye formatterings rutiner
 
+        /// <summary>
+        /// metode for at skabe resultster i sektioner enkeltvis
+        /// </summary>
+        /// <param name="asHtml">true=formatter som html, false=formatter som text</param>
+        /// <param name="doMatchStilling">skal match stilling formatteres?</param>
+        /// <param name="doMatchDetaljer">skal stillingen indehode match detaljer?</param>
+        /// <param name="doBaneKlasseDetaljer">skal stillingen indeholder bane og klasse detaljer?</param>
+        /// <returns></returns>
         public List<string> LavResultatSektioner(bool asHtml = false, bool doMatchStilling = false, bool doMatchDetaljer = false, bool doBaneKlasseDetaljer = false)
         {
             List<string> sektioner = new List<string>();
@@ -1531,6 +1538,11 @@ namespace Divisionsmatch
         }        
         #endregion
 
+        /// <summary>
+        /// metode for at få resultater i HTML format
+        /// </summary>
+        /// <param name="config">konfigurationen</param>
+        /// <returns></returns>
         public string LavHTMLStilling(Config config)
         {
             StringBuilder html = new StringBuilder();
