@@ -34,6 +34,8 @@
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel3 = new System.Windows.Forms.LinkLabel();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -94,7 +96,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(156, 163);
+            this.button1.Location = new System.Drawing.Point(156, 203);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(172, 23);
             this.button1.TabIndex = 5;
@@ -102,11 +104,35 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // linkLabel3
+            // 
+            this.linkLabel3.AutoSize = true;
+            this.linkLabel3.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel3.Location = new System.Drawing.Point(223, 158);
+            this.linkLabel3.Name = "linkLabel3";
+            this.linkLabel3.Size = new System.Drawing.Size(154, 15);
+            this.linkLabel3.TabIndex = 6;
+            this.linkLabel3.TabStop = true;
+            this.linkLabel3.Text = "Open Source på GitHub";
+            this.linkLabel3.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel3_LinkClicked);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(104, 158);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(119, 15);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Koden findes som";
+            // 
             // frmOm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(481, 209);
+            this.ClientSize = new System.Drawing.Size(481, 261);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.linkLabel3);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
@@ -114,11 +140,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(497, 247);
+            this.MaximumSize = new System.Drawing.Size(497, 300);
             this.MinimizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(497, 247);
+            this.MinimumSize = new System.Drawing.Size(497, 300);
             this.Name = "frmOm";
-            this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "Om...";
             this.Load += new System.EventHandler(this.frmOm_Load);
             this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.frmOm_MouseClick);
@@ -135,5 +160,7 @@
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.LinkLabel linkLabel2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel3;
+        private System.Windows.Forms.Label label4;
     }
 }

@@ -36,7 +36,7 @@ namespace Divisionsmatch
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             linkLabel1.LinkVisited = true;
-            System.Diagnostics.Process.Start("http://www.fiforientering.dk"); 
+            System.Diagnostics.Process.Start("https://info.fiforientering.dk/"); 
         }
 
         private void frmOm_MouseClick(object sender, MouseEventArgs e)
@@ -64,6 +64,12 @@ namespace Divisionsmatch
         private void button1_Click(object sender, System.EventArgs e)
         {
             System.Diagnostics.Process.Start(frmDivi.autoUpdateSiteURL);
+        }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel3.LinkVisited = true;
+            System.Diagnostics.Process.Start("https://github.com/AndersKlinting/divisionsmatchberegning");
         }
     }
 }
