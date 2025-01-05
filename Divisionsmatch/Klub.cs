@@ -175,6 +175,11 @@ namespace Divisionsmatch
         {
         }
 
+        /// <summary>
+        /// klasse tilat holde o-service id og type xml attributter
+        /// </summary>
+        /// <param name="id">o-service id</param>
+        /// <param name="type">o-service type</param>
         public KlubId(string id, string type)
         {
             _id = id;

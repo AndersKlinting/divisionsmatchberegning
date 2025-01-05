@@ -12,11 +12,17 @@ using System.Windows.Forms;
 
 namespace Divisionsmatch
 {
+    /// <summary>
+    /// nancy dialog
+    /// </summary>
     public partial class frmNancy : Form
     {
         delegate void SetTextCallback(string text);
         private HostingAPI nancy;
 
+        /// <summary>
+        /// Nacy dialog
+        /// </summary>
         public frmNancy()
         {
             InitializeComponent();
@@ -141,11 +147,10 @@ namespace Divisionsmatch
             }
         }
 
-        public void startTestAPI()
-        {
-            SetText("Api Worked");
-        }
-
+        /// <summary>
+        /// metoe til at skrive titlen på Nancy vinduet
+        /// </summary>
+        /// <param name="title"></param>
         public void SetTitle(string title)
         {
             this.Text = "Nancy REST API Server" + (!string.IsNullOrWhiteSpace(title) ? " - " + title : string.Empty);

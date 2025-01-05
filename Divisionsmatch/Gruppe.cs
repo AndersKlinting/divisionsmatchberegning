@@ -194,6 +194,7 @@ namespace Divisionsmatch
             else if (navn == "D50") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
             else if (navn == "D60") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
             else if (navn == "D70") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "D80") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
             else if (navn == "D-Let") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
             else if (navn == "H10") { _pointTilDeling = new int[] { 1, 1, 1, 1, 1, 1 }; }
             else if (navn == "H12") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
@@ -211,10 +212,14 @@ namespace Divisionsmatch
             else if (navn == "H50") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
             else if (navn == "H60") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
             else if (navn == "H70") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
-            else if (navn == "H80") { _pointTilDeling = new int[] { 6, 5, 4, 3, 2, 1 }; }
+            else if (navn == "H80") { _pointTilDeling = new int[] { 4, 3, 2, 1 }; }
             else if (navn == "H-Let") { _pointTilDeling = new int[] { 2, 2, 2, 1, 1, 1 }; }
         }
 
+        /// <summary>
+        /// metode til at formattere points til deleing i en gupper
+        /// </summary>
+        /// <returns></returns>
         public string PrintPointsForGruppe()
         {
             string grp = string.Empty;

@@ -107,6 +107,7 @@ namespace Divisionsmatch
                 _TilfoejGruppeOgKlasse("D50", "D50");
                 _TilfoejGruppeOgKlasse("D60", "D60");
                 _TilfoejGruppeOgKlasse("D70", "D70");
+                _TilfoejGruppeOgKlasse("D80", "D80");
                 _TilfoejGruppeOgKlasse("D-Let", "D-Let");
                 _TilfoejGruppeOgKlasse("H10", "H10");
                 _TilfoejGruppeOgKlasse("H12", "H12");
@@ -431,6 +432,9 @@ namespace Divisionsmatch
             }
         }
 
+        /// <summary>
+        /// navnety på valgt HTML layout
+        /// </summary>
         public string Layout
         {
             get

@@ -90,7 +90,7 @@ namespace Divisionsmatch.DivisionsResultat
         public bool Udebleven { get; set; }
 
         /// <summary>
-        /// skal be klon
+        /// skab en klon
         /// </summary>
         /// <returns></returns>
         public object Clone()
@@ -109,6 +109,10 @@ namespace Divisionsmatch.DivisionsResultat
             return clone;
         }
 
+        /// <summary>
+        /// standard formattering a klub
+        /// </summary>
+        /// <returns>klubnavn</returns>
         public override string ToString()
         {
             return this.Navn;
@@ -116,7 +120,7 @@ namespace Divisionsmatch.DivisionsResultat
     }
 
     /// <summary>
-    /// klasse til at holde id og type
+    /// klasse til at holde id og type fra o-service
     /// </summary>
     public class KlubId : ICloneable
     {
@@ -130,6 +134,11 @@ namespace Divisionsmatch.DivisionsResultat
         {
         }
 
+        /// <summary>
+        /// o-service klub id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="type"></param>
         public KlubId(string id, string type)
         {
             _id = id;
@@ -180,18 +189,27 @@ namespace Divisionsmatch.DivisionsResultat
     {
         private MatchKlub[] _MatchKlubber = new MatchKlub[2];
 
+        /// <summary>
+        /// default creator
+        /// </summary>
         public Match()
         {
             _MatchKlubber[0] = new MatchKlub();
             _MatchKlubber[1] = new MatchKlub();
         }
 
+        /// <summary>
+        /// id for 2 klubbers match
+        /// </summary>
         public int Id
         {
             get;
             set;
         }
 
+        /// <summary>
+        /// liste af matcher imallem klubber i et divisionsesutltat
+        /// </summary>
         public MatchKlub[] MatchKlubber
         {
             get
@@ -205,6 +223,9 @@ namespace Divisionsmatch.DivisionsResultat
             }
         }
 
+        /// <summary>
+        /// liste af GruppePoint i en match
+        /// </summary>
         public List<GruppePoint> MatchGruppePoint { get; set; }
 
         ///// <summary>
@@ -296,22 +317,33 @@ namespace Divisionsmatch.DivisionsResultat
     }
 
     /// <summary>
-    /// klubber i en match
+    /// 2 klubbers match
     /// </summary>
     public class MatchKlub
     {
         private string _navn = string.Empty;
         private double _score;
+        /// <summary>
+        /// tom creator
+        /// </summary>
         public MatchKlub()
         {
         }
 
+        /// <summary>
+        /// creator
+        /// </summary>
+        /// <param name="navn"></param>
+        /// <param name="score"></param>
         public MatchKlub(string navn, double score)
         {
             _navn = navn;
             _score = score;
         }
 
+        /// <summary>
+        /// klubnavn i en mmatch
+        /// </summary>
         public string Navn
         {
             get
@@ -325,6 +357,9 @@ namespace Divisionsmatch.DivisionsResultat
             }
         }
 
+        /// <summary>
+        /// score for en klub i en match
+        /// </summary>
         public double Score
         {
             get
@@ -339,11 +374,29 @@ namespace Divisionsmatch.DivisionsResultat
         }
     }
 
+    /// <summary>
+    /// klasse til at holde definitionen for point iemllem to klubber i en grppe i en match 
+    /// </summary>
     public class GruppePoint
     {
+        /// <summary>
+        /// gruppens navn
+        /// </summary>
         public string GruppeNavn { get; set; }
+        
+        /// <summary>
+        /// semicokolon separeret liste af points
+        /// </summary>
         public string PointsTilFordeling { get; set; }
+
+        /// <summary>
+        /// point i en gruppe for klub 1 (hjemme) i en match imellem 2 klubber
+        /// </summary>
         public double KlubPoint1 { get; set; }
+
+        /// <summary>
+        /// point i en gruppe for klub 2 (ude) i en match imellem 2 klubber
+        /// </summary>
         public double KlubPoint2 { get; set; }
     }
 
@@ -781,6 +834,9 @@ namespace Divisionsmatch.DivisionsResultat
             return ok;
         }
 
+        /// <summary>
+        /// metode til at sikre det rigtige ID svarende til antal matcher
+        /// </summary>
         public void FixMatcher()
         {
             foreach (var dr in DivisionsMatchResultater)
@@ -1257,10 +1313,24 @@ namespace Divisionsmatch.DivisionsResultat
             return table;
         }
 
+        /// <summary>
+        /// klasse til at holde et resultat i en match imellem 2 klubber
+        /// </summary>
         public class RundeMatch
         {
+            /// <summary>
+            /// modstanderens klubnavn
+            /// </summary>
             public string modstander { get; set; }
+            
+            /// <summary>
+            /// egen score i en match
+            /// </summary>
             public double egenscore { get; set; }
+
+            /// <summary>
+            /// modstanderens score i en match
+            /// </summary>
             public double modstanderscore { get; set; }
 
             /// <summary>
@@ -1274,21 +1344,42 @@ namespace Divisionsmatch.DivisionsResultat
             }
         }
 
+        /// <summary>
+        /// klasse for at holde et runderesultat for en klub
+        /// </summary>
         public class RundeResultat
         {
+            /// <summary>
+            /// rundens nummer
+            /// </summary>
             public string Runde { get; set; }
 
+            /// <summary>
+            /// samlet score
+            /// </summary>
             [XmlElement("LoebsPoint")]
             public double LøbsPoint { get; set; }
 
+            /// <summary>
+            /// antal point score imod
+            /// </summary>
             [XmlElement("ModstanderLoebsPoint")]
             public double ModstanderLøbsPoint { get; set; }
 
 
+            /// <summary>
+            /// samlet antal matchpoint point
+            /// </summary>
             public double MatchPoint { get; set; }
 
+            /// <summary>
+            /// kommentarer til resultatet (special afgørelser på point, antal førstepladser osv)
+            /// </summary>
             public string Kommentar { get; set; }
 
+            /// <summary>
+            /// liste af matcher i denne divi fil
+            /// </summary>
             public List<RundeMatch> Matcher { get; set; }
 
             /// <summary>
@@ -1309,11 +1400,26 @@ namespace Divisionsmatch.DivisionsResultat
             }
         }
 
+        /// <summary>
+        /// det samlede resultat for denne klub
+        /// </summary>
         public class TotalKlubResultat
         {
             private List<RundeResultat> _runder = null;
+            
+            /// <summary>
+            /// samlede placering for denne klub
+            /// </summary>
             public int Placering { get; set; }
+            
+            /// <summary>
+            /// klubben for dette resultat
+            /// </summary>
             public string Klubnavn { get; set; }
+
+            /// <summary>
+            /// liste af resultater i de enkelte runder
+            /// </summary>
             public List<RundeResultat> Runder
             {
                 get
@@ -1326,6 +1432,9 @@ namespace Divisionsmatch.DivisionsResultat
                 }
             }
 
+            /// <summary>
+            /// samlet stilling efter alle runder
+            /// </summary>
             public RundeResultat Stilling
             {
                 get

@@ -10,8 +10,20 @@ using System.ComponentModel;
 
 namespace Divisionsmatch
 {
+    /// <summary>
+    /// klasse med diverse hjælpemetoder
+    /// </summary>
     public static class Util
     {
+        /// <summary>
+        /// test versionen af den indlæste fil
+        /// </summary>
+        /// <param name="filePath">sti til filen som undersøges</param>
+        /// <param name="isEntryXml">er det IOF xml entry list?</param>
+        /// <param name="isStartXml">er det IOF xml start list?</param>
+        /// <param name="isResultXml">er det IOF xml result list?</param>
+        /// <param name="isTxt">er det text format (csv,....)</param>
+        /// <returns></returns>
         public static string CheckFileVersion(string filePath, out bool isEntryXml, out bool isStartXml, out bool isResultXml, out bool isTxt)
         {
             // xml eller csv?
@@ -107,6 +119,14 @@ namespace Divisionsmatch
             return fileVersion;
         }
 
+        /// <summary>
+        /// metode til at indlæse løbere fra en OE2003/OE2010 csv star fil
+        /// </summary>
+        /// <param name="filnavn">sti til filen</param>
+        /// <param name="config">reference til konfigurationen</param>
+        /// <param name="klubber">liste af klubber i matchen som populeres ved indlæsning</param>
+        /// <returns></returns>
+        /// <exception cref="Exception">liste med løbere som ikke kan læses</exception>
         public static IList<Loeber> ReadRunnersFromCsv(string filnavn, Config config, List<Klub> klubber)
         {
             string msg = string.Empty;
@@ -204,6 +224,14 @@ namespace Divisionsmatch
             return loebere;
         }
 
+        /// <summary>
+        /// metode til at indlæse løbere fra en IOF XML 2.0.3 resultatliste fil
+        /// </summary>
+        /// <param name="filnavn">sti til filen</param>
+        /// <param name="config">reference til konfigurationen</param>
+        /// <param name="klubber">liste af klubber i matchen som populeres ved indlæsning</param>
+        /// <returns></returns>
+        /// <exception cref="Exception">liste med løbere som ikke kan læses</exception>
         public static IList<Loeber> ReadRunnersFromResultXML2(string filnavn, Config config, List<Klub> klubber)
         {
             string msg = string.Empty;
@@ -304,6 +332,14 @@ namespace Divisionsmatch
             return loebere;
         }
 
+        /// <summary>
+        /// metode til at indlæse løbere fra en IOF XML 3.0 resultat liste fil
+        /// </summary>
+        /// <param name="filnavn">sti til filen</param>
+        /// <param name="config">reference til konfigurationen</param>
+        /// <param name="klubber">liste af klubber i matchen som populeres ved indlæsning</param>
+        /// <returns></returns>
+        /// <exception cref="Exception">liste med løbere som ikke kan læses</exception>
         public static IList<Loeber> ReadRunnersFromResultXML3(string filnavn, Config config, List<Klub> klubber)
         {
             string msg = string.Empty;
@@ -427,11 +463,27 @@ namespace Divisionsmatch
             return loebere;
         }
 
+        /// <summary>
+        /// metode til at indlæse løbere fra en OE2003/OE2010 csv star fil
+        /// </summary>
+        /// <param name="filnavn">sti til filen</param>
+        /// <param name="config">reference til konfigurationen</param>
+        /// <param name="klubber">liste af klubber i matchen som populeres ved indlæsning</param>
+        /// <returns></returns>
+        /// <exception cref="Exception">liste med løbere som ikke kan læses</exception>
         public static IList<Loeber> ReadRunnersFromStartCsv(string filnavn, Config config, List<Klub> klubber)
         {
             return ReadRunnersFromCsv(filnavn, config, klubber);
         }
 
+        /// <summary>
+        /// metode til at indlæse løbere fra en IOF XML 2.0.3 start liste fil
+        /// </summary>
+        /// <param name="filnavn">sti til filen</param>
+        /// <param name="config">reference til konfigurationen</param>
+        /// <param name="klubber">liste af klubber i matchen som populeres ved indlæsning</param>
+        /// <returns></returns>
+        /// <exception cref="Exception">liste med løbere som ikke kan læses</exception>
         public static IList<Loeber> ReadRunnersFromStartlistXML2(string filnavn, Config config, List<Klub> klubber)
         {
             string msg = string.Empty;
@@ -530,6 +582,14 @@ namespace Divisionsmatch
             return loebere;
         }
 
+        /// <summary>
+        /// metode til at indlæse løbere fra en IOF XML 3.0 start liste fil
+        /// </summary>
+        /// <param name="filnavn">sti til filen</param>
+        /// <param name="config">reference til konfigurationen</param>
+        /// <param name="klubber">liste af klubber i matchen som populeres ved indlæsning</param>
+        /// <returns></returns>
+        /// <exception cref="Exception">liste med løbere som ikke kan læses</exception>
         public static IList<Loeber> ReadRunnersFromStartlistXML3(string filnavn, Config config, List<Klub> klubber)
         {
             string msg = string.Empty;
@@ -637,6 +697,14 @@ namespace Divisionsmatch
             return loebere;
         }
 
+        /// <summary>
+        /// skab en text med en start liste per bane 
+        /// </summary>
+        /// <param name="isTxt">true=text, false=html</param>
+        /// <param name="includeAll">inkluder også løbere udenfor klubberne i divisionmatchen</param>
+        /// <param name="loebere">reference til indlæste løbere</param>
+        /// <param name="config">referene til konfigurationen</param>
+        /// <returns></returns>
         public static string BaneStartListe(bool isTxt, bool includeAll, IList<Loeber> loebere, Config config)
         {
             StringBuilder sb = new StringBuilder();
@@ -684,6 +752,14 @@ namespace Divisionsmatch
             return sb.ToString();
         }
 
+        /// <summary>
+        /// skab en text med en startliste per gruppe
+        /// </summary>
+        /// <param name="isTxt">text eller HTML ?</param>
+        /// <param name="includeAll">inkluder løbere udenfor matchens klubber</param>
+        /// <param name="loebere">reference til indlæste løbere</param>
+        /// <param name="config">reference til konfiguratioen</param>
+        /// <returns></returns>
         public static string GruppeStartListe(bool isTxt, bool includeAll, IList<Loeber> loebere, Config config)
         {
             List<Gruppe> grupper = new List<Gruppe>();
@@ -749,6 +825,11 @@ namespace Divisionsmatch
             return sb.ToString();
         }
 
+        /// <summary>
+        /// metode til at indlæse et divisions match resultat
+        /// </summary>
+        /// <param name="stillingsFil">sti til filen som der skal læses fra</param>
+        /// <returns>indlæst DivisionsResultat</returns>
         public static DivisionsResultat.DivisionsResultat OpenDivisionsResultat(string stillingsFil)
         {
             XmlAttributeOverrides xmlAttributeOverrides = new XmlAttributeOverrides();
@@ -770,6 +851,12 @@ namespace Divisionsmatch
             }
         }
 
+        /// <summary>
+        /// metode til at skrive divisionsresultat som XML i fil
+        /// </summary>
+        /// <param name="gemDivisionsResultat">resultatet som skal skrives</param>
+        /// <param name="staevne">reference til stævnet</param>
+        /// <param name="stillingsFil">sti til filen</param>
         public static void SaveDivisionsResultat(DivisionsResultat.DivisionsResultat gemDivisionsResultat, Staevne staevne, string stillingsFil)
         {
             XmlAttributeOverrides xOver = new XmlAttributeOverrides();
@@ -781,6 +868,12 @@ namespace Divisionsmatch
             Util.SerializeObjectToFile(gemDivisionsResultat.TotalDivisionsResultat(staevne), stillingsFil, xOver);
         }
 
+        /// <summary>
+        /// metode til at fomrattere DivisionsResultat som XML
+        /// </summary>
+        /// <param name="gemDivisionsResultat">resultatet som skal skrives</param>
+        /// <param name="staevne">reference til stævnet</param>
+        /// <returns></returns>
         public static string SerializeDivisionsResultat(DivisionsResultat.DivisionsResultat gemDivisionsResultat, Staevne staevne)
         {
             XmlAttributeOverrides xOver = new XmlAttributeOverrides();
@@ -959,6 +1052,13 @@ namespace Divisionsmatch
             return result;
         }
 
+        /// <summary>
+        /// metode for at skrive en klasse til XML 
+        /// </summary>
+        /// <typeparam name="T">typen</typeparam>
+        /// <param name="serializableObject">ohjektet som skal skrive som XML</param>
+        /// <param name="fileName">sti til output filen</param>
+        /// <param name="xmlAttributeOverrides">liste af overrides</param>
         public static void SerializeObjectToFile<T>(T serializableObject, string fileName, XmlAttributeOverrides xmlAttributeOverrides = null)
         {
             if (serializableObject == null) { return; }

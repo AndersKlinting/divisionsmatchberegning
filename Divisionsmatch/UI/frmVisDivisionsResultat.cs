@@ -9,20 +9,33 @@ using System.Windows.Forms;
 
 namespace Divisionsmatch
 {
+    /// <summary>
+    /// klasse til dialog med divisionsresultat
+    /// </summary>
     public partial class frmVisDivisionsResultat : Form
     {
         Staevne _staevne = null;
+        
+        /// <summary>
+        /// creator
+        /// </summary>
         public frmVisDivisionsResultat()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// egenskab til at holde divisionsresultat for denne dialog
+        /// </summary>
         public DivisionsResultat.DivisionsResultat DivisionsResultat
         {
             get;
             set;
         }
 
+        /// <summary>
+        /// reference til nærværende stævne
+        /// </summary>
         public Staevne Staevne
         {
             set
@@ -38,6 +51,9 @@ namespace Divisionsmatch
                 }
             }
         }
+        /// <summary>
+        /// metode til at gentegne resultatet
+        /// </summary>
         public override void Refresh()
         {
             _VisResultat();

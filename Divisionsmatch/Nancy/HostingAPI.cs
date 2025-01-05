@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Divisionsmatch
 {
+    /// <summary>
+    /// klasse til at hoste en Nancy server
+    /// </summary>
     public class HostingAPI
     {
         private NancyHost hostNancy;
@@ -14,11 +17,18 @@ namespace Divisionsmatch
         private string _hostUrl;
         private string _port;
 
+        /// <summary>
+        /// klasse til at hoste en Nancy server
+        /// </summary>
         public HostingAPI()
         {
             InformationServerModule ism = new InformationServerModule();
         }
 
+        /// <summary>
+        /// metode til at starte serveren
+        /// </summary>
+        /// <param name="port"></param>
         public void Start(string port)
         {
             _port = port;
@@ -37,6 +47,9 @@ namespace Divisionsmatch
             hostNancy.Start();
         }
 
+        /// <summary>
+        /// metode til at stoppe serveren
+        /// </summary>
         public void Stop()
         {
             hostNancy.Stop();

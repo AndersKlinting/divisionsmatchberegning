@@ -9,13 +9,17 @@ using System.IO;
 
 namespace OffLine.Installer
 {
-    // Taken from:http://msdn2.microsoft.com/en-us/library/
-    // system.configuration.configurationmanager.aspx
-    // Set 'RunInstaller' attribute to true.
-
+    /// <summary>
+    /// Taken from:http://msdn2.microsoft.com/en-us/library/
+    /// system.configuration.configurationmanager.aspx
+    /// Set 'RunInstaller' attribute to true.
+    /// </summary>
     [RunInstaller(true)]
     public class InstallerClass : System.Configuration.Install.Installer
     {
+        /// <summary>
+        /// creator
+        /// </summary>
         public InstallerClass()
             : base()
         {
@@ -49,19 +53,28 @@ namespace OffLine.Installer
             }
         }
 
-        // Override the 'Install' method.
+        /// <summary>
+        /// Override the 'Install' method.
+        /// </summary>
+        /// <param name="savedState"></param>
         public override void Install(IDictionary savedState)
         {
             base.Install(savedState);
         }
 
-        // Override the 'Commit' method.
+        /// <summary>
+        /// Override the 'Commit' method.
+        /// </summary>
+        /// <param name="savedState"></param>
         public override void Commit(IDictionary savedState)
         {
             base.Commit(savedState);
         }
 
-        // Override the 'Rollback' method.
+        /// <summary>
+        /// Override the 'Rollback' method.
+        /// </summary>
+        /// <param name="savedState"></param>
         public override void Rollback(IDictionary savedState)
         {
             base.Rollback(savedState);

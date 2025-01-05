@@ -28,17 +28,17 @@ upload
 * AutoUpdates\versioninfo.xml
 * AutoUpdates\versionhistory.htm 
 * AutoUpdates\DivisionsmatchX.Y.Z.msi 
-til ftp://fif-orientering.dk@www.fif-orientering.dk/public_html/divisionsmatch
-ftp://orientering.dk@orientering.dk/public_html/divisionsmatch
+til ftp://orientering.dk@orientering.dk/public_html/divisionsmatch
 
-(for at teste uploades versioninfo.xml til subfolder "test" og programmet køres med argument "test")
+(for at teste inden upload a xml og htm filerne, uploades versioninfo.xml til subfolder "test" og programmet køres med argument "test")
 
 
 opdatere Github
 ---------------
 	- log på https://github.com/AndersKlinting/divisionsmatchberegning
+	- push+pull ændret kode i den aktuelle branch til master
 	- lav en ny release under Downloads
-	- upload msi-filen
+	- upload msi-filen fra divisionamatchberegning/AutoUpdates
 
 snd\AndersKlinting_cp
 test command line

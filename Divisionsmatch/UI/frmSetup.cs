@@ -26,7 +26,11 @@ namespace Divisionsmatch
     /// </summary>
     public partial class frmSetup : Form
     {
+        /// <summary>
+        /// egenskab med senete brugte printer navn
+        /// </summary>
         public string printerName = string.Empty;
+
         private Config _config = new Config(true);
         private SerializableFont _font = null;
         private PrintDocument _pd = new PrintDocument();
@@ -39,6 +43,9 @@ namespace Divisionsmatch
             InitializeComponent();
         }
 
+        /// <summary>
+        /// reference til nærværende konfiguration
+        /// </summary>
         public Config config
         {
             get

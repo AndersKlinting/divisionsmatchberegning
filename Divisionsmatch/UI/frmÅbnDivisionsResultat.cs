@@ -12,15 +12,32 @@ using System.Xml.Serialization;
 
 namespace Divisionsmatch
 {
+    /// <summary>
+    /// dialog til at udpege o-service fil med tidligere resultater
+    /// </summary>
     public partial class frmÅbnDivisionsResultat : Form
     {
+        /// <summary>
+        /// creator
+        /// </summary>
         public frmÅbnDivisionsResultat()
         {
             InitializeComponent();
         }
 
+        /// <summary>
+        /// egenskab med reference til tidligere resultarter
+        /// </summary>
         public DivisionsResultat.DivisionsResultat DivisionsResultat { get; internal set; }
+        
+        /// <summary>
+        /// egenskab med reference til stævnet
+        /// </summary>
         public Staevne Staevne { get; set; }
+        
+        /// <summary>
+        /// egenskab for folderen med resultater
+        /// </summary>
         public string InitialDirectory { get; set; }
 
         private void frmDivisionsResultat_Load(object sender, EventArgs e)
